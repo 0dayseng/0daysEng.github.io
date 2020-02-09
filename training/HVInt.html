@@ -1,0 +1,278 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+        <title>Training: Hypervisor Exploitation 1</title>
+        <style>
+            body {
+                color: silver;
+                background: black;
+            }
+            a:link {
+                color: teal;
+            }
+            a:active {
+                color: crimson
+            }
+            h1 {
+                color: peachpuff;
+            }
+            h2 {
+                color: rosybrown;
+            }
+            div.note {
+                font-family: 'Lucida Console', monospace;
+                font-size: 14;
+                white-space: pre-line;
+                margin-left: auto;
+                margin-right: auto;
+                width: 43em;
+                margin-top: 11%;
+                margin-bottom: 11%;
+            }
+            div.footer {
+                font-family: 'Lucida Console', monospace;
+                font-size: 14;
+                white-space: pre-line;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: right;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class = "note">
+
+Training Description
+<a name="abstract"><h1>Hypervisor Exploitation 1:<br>System Internals & Vulnerabilities</h1></a>
+This 3-days intensive class provides a systematical introduction and a solid foundation to vulnerability discovery and exploit development for modern software virtualization systems. 
+
+The focus of this class is on essential fundamentals of the art of exploitation: universal theoretical models, target systems internals, attack vectors, and security vulnerabilities. The knowledge is communicated through both theoretical explanations and practical assignments.
+
+The goal of this class "level 1" is to introduce students to systematical vulnerability discovery in arbitrary virtualization software systems. 
+
+Major implementations in scope: Oracle VirtualBox, VMWare Workstation, and Microsoft Hyper-V. 
+
+Codename: "HVInt"
+Level: Intermediate-Advanced
+
+<pre>
+<a href="#overview">Overview</a>
+  <a href="#abstract">Abstract</a>
+  <a href="#introduction">Introduction</a>
+  <a href="#objectives">Learning Objectives</a> 
+  <a href="#audience">Who Should Attend</a>
+  <a href="#prerequisites">Prerequisites</a>
+<a href="#agenda">Agenda</a>
+  <a href="#day1">Day 1. Foundation</a> 
+  <a href="#day2">Day 2. Advanced Topics</a>
+  <a href="#day3">Day 3. More Advanced Topics</a>
+  <a href="#requirements">Requirements</a>
+<a href="#author">About the Author</a>
+<a href="#references">References</a>
+
+</pre>
+
+<a name="introduction"><h2>Introduction</h2></a>
+Virtualization software invisibly permeates our lifes. You deal with it transparently each time when you work with a public cloud instance based on KVM or Microsoft Hyper-V, or a corporate workstation hosted on a VMWare ESXi server. Type 2 hypervisors are an essential part of many professional lab environments. Even some modern smartphones rely on a hardware-based hypervisor under the hood for enhanced security and privilege separation. 
+
+Despite implementation-level differences, all modern virtualization systems share a common abstract model, which is suggested and enforced by their deployment purposes and responsibilities. The goal of this training is to introduce the students to efficient vulnerability discovery and exploit development for arbitrary virtualization systems through the perspective of their common abstract model, implementation-specific technical case studies, and the author's many-year experience in operating systems introspection and vulnerability research. 
+
+The structure of this training is a mix of theoretical and hands-on experience. Each training day is divided into four 1.5-2-hour topical blocks. Each topical block consists of a theoretical lecture, a practical exercise/lab/CTF task, and finally, a solution or a walkthrough. The author's personal cognitive optimization and time management techniques will be engaged for better learning efficiency.
+
+This is a deep technical class of intermediate to advanced level, focused on system internals for vulnerability discovery. Students are expected to have solid knowledge of x86_64 assembly and C/C++, and general understanding of Operating Systems concepts. Some prior experience with software vulnerabilities and  mastery of a Linux command line and building environment are recommended. Relevant theory will be introduced during the training.
+
+Materials of this training class are based on independent technical research and reverse-engineering performed by the author in 2016-2018, and illustrated with security vulnerabilities discovered by the author herself.
+
+
+<a name="objectives"><h2>Learning Objectives</h2></a>
+- Review essential OS theory and hardware theory which is relevant to hypervisor security research.
+- Comprehend the abstract design model of a virtualization system, and how to apply it to generalized vulnerability discovery.
+- Identify common attack surfaces and attack vectors in virtualization systems, and how to reach them.
+- Familiarize with implementation specifics of dominant virtualization systems.
+- Investigate the internals of selected virtualization sybsystems through their open source implementations and vulnerability cases. 
+- Study common classes in virtualization systems through the historical perspective of known security bugs. 
+- Learn to set up a research platform for mainstream virtualization systems (compilation, debugging, fuzzing environment).
+- Create a vulnerability proof-of-concept from a binary security patch.
+- Review essential research publications and trends.
+
+
+<a name="audience"><h2>Who Should Attend</h2></a>
+This class is primarily intended for professional security and vulnerability researchers coming from other specialization areas who wish to re-focus on virtualization systems, familiarize with popular hypervisors from the security research perspective, or extend and enhance their in-depth understanding of modern computer systems in general.
+
+Materials of this class constitute essential knowledge for aspiring zero-day vulnerability researchers who are considering or have chosen Hyper-V, VMware Workstation, VirtualBox or other virtualization system as their research target.
+
+Security engineers and software developers of low-level software and firmware systems, C-level technical staff of cloud solutions providers, and newcomers to vulnerability research will benefit from this class.
+
+
+<a name="prerequisites"><h2>Prerequisites</h2></a>
+- x86_64 
+- C/C++
+- Operating Systems concepts
+- Linux command line and build environment.
+
+
+<a name="agenda"><h1>Agenda</h1></a>
+Day 1: Foundation.
+Top level abstract models. Relevant OS theory. Source-level case studies. Userland-reachable attack surface. Bugs in guest additions. VirtualBox specifics. 
+
+Day 2: Advanced Topics.
+Hardware device models. Relevant hardware theory. Binary-level case studies. Kernel-accessible attack surface. Bugs in virtualized and emulated devices. Binary patch analysis. VMWare Workstation. 
+
+Day 3: More Advanced Topics.
+Hypervisor monitor model. Relevant OS & hardware theory. Deep, unique, and hypervisor-specific bugs. Review of research publications. Microsoft Hyper-V. 
+
+Notes:
+- All practical assignments will have a walk-through.
+- The daily plans can slightly change. 
+
+
+<a name="day1"><h2>Day 1. Foundation</h2></a>
+Block 1. Abstract Models & Relevant Theory
+- General design model of a virtualization system.
+- Attack surfaces and attack vectors.
+- Recap of relevant Operating Systems concepts. 
+- Recap of Memory Safety concepts and common vulnerability classes.
+Exercise: investigate a popular implementation of a virtualization system in source code.
+
+Block 2. Bugs Reachable from the Guest OS Userland
+- Common attack vectors.
+- Guest additions: an overview.
+- Known bugs in graphics virtualization.
+- Known bugs in virtual networking (userland).
+- Other known bugs which are reachable from the guest userland.
+Exercise: a known vulnerability analysis in source code (VirtualBox).
+
+Block 3. VirtualBox Specifics
+- System architecture.
+- Technical implementation details.
+- Guest additions specifics.
+- Compilation instructions.
+- Notable known bugs.
+- Research platform set up for debugging and fuzzing.
+- Case study: VirtualBox 3D acceleration.
+Exercise: find bugs in a specific attack vector by static code analysis (VirtualBox).
+
+Block 4. Research Topics 
+- How to make a Linux-based virtualization research OS.
+- Linux Kernel Module (LKM) fundamentals.
+Lab: build and test an out-of-tree LKM.
+Exercise: customize a guest additions module for research purposes.
+
+
+<a name="day2"><h2>Day 2. Advanced Topics</h2></a>
+Block 1. Abstract Models & Relevant Theory
+- Relevant hardware theory.
+- OS Kernel concepts.
+- Common hardware device models.
+- Linux device driver models.
+Lab: investigate virtual device management and I/O via debugging introspection and source code analysis.
+Exercise: study a virtual device driver implementation in source code.
+
+Block 2. Bugs Reachable from the Guest OS Kernel. 
+- Common attack vectors.
+- Guest additions: the kernel side.
+- Known bugs in emulated and virtualized devices.
+- Known bugs in ISA handling.
+- Other known bugs which are reachable from a VM kernel.
+Exercise: a known vulnerability analysis in binary code (VMWare).
+
+Block 3. VMWare Workstation Specifics
+- System architecture. 
+- Technical implementation details.
+- Guest additions specifics.
+- Advanced configuration.
+- Known bugs.
+- Research platform set up for debugging and fuzzing.
+- Case study: VMWare Backdoor subsystem.
+Exercise A: study a virtual device implementation in binary code.
+Exercise B: create a vulnerability proof-of-concept from a binary security patch.
+
+Block 4. Research Topics 
+- Common virtual device models.
+- Useful Linux device drivers.
+Exercise: investigate a common low-level hardware device driver implementation in source code (Linux).  
+
+
+<a name="day3"><h2>Day 3. More Advanced Topics </h2></a>
+Block 1. Abstract Models & Relevant Theory
+- A hypervisor model.
+- Virtual memory management.
+- Hypervisor exit scenarios.
+- Hardware-based virtualization.
+Lab: investigate a hypervisor monitor implementation via debugging and source-level introspection.
+
+Block 2. Deep & Hypervisor-specific Bugs
+- Common attack vectors.
+- Race conditions via shared memory.
+- Known bugs in hyper calls.
+- Known bugs in deep hardware virtualization.
+- Other known bugs which are deeply specific to virtualization systems.
+Exercise: a known vulnerability analysis (Hyper-V).
+
+Block 3. Hyper-V Specifics
+- System architecture.
+- Technical implementation details.
+- Guest additions specifics.
+- Advanced configuration.
+- Known bugs.
+- Research platform set up for debugging and fuzzing.
+- Case study: Hyper-V hypercall interface.
+Exercise A: create a proof-of-concept(s) for publicly known bugs in Microsoft Hyper-V.
+Exercise B: binary analysis of an Hyper-V security patch.
+
+Block 4. Research Topics 
+- Review of important research publications.
+- Future trends for strategic research.
+
+
+<a name="requirements"><h2>Requirements</h2></a>
+Hardware and software requirements:
+- Productivity-grade laptop with hardware support for nested virtualization (see Notes below).
+- Ubuntu Linux 18.04 LTS x64 (either VM or native) - REQUIRED.
+- Professional disassembler.
+- An IDE with C/C++ syntax intelligence.
+
+Notes:
+1) Essential labs are based on a self-compiled VirtualBox on Ubuntu Linux 18.04 LTS x64. Nested virtualization is only required to run a VM inside a VM. 
+2) VirtualBox can only support nested virtualization on AMD hardware. VMWare Workstation and Parallels for Mac have full support for nested virtualization. 
+3) Recommended hardware/software options: 
+- MacBook Pro with Mac OS X + Parallels Workstation + VM Ubuntu Linux 18.04 LTS x64.
+- Laptop with Ubuntu Linux 18.04 LTS x64.
+- Laptop* with Windows 10 x64 + VMWare Workstation + VM Ubuntu Linux 18.04 LTS x64.
+- AMD-based laptop* with any OS supported by VirtualBox + Oracle VirtualBox + VM Ubuntu Linux 18.04 LTS x64. 
+
+Students must test their hardware/software setup for compatibility with Notes pt.1 prior to attending the class.
+
+--
+* Hardware support for nested virtualization is required for this option. 
+
+
+<a name="author"><h1>About the Author</h1></a>
+Alisa Esage (Alisa Shevchenko) is a vulnerability researcher, hacker, and entrepreneur. As a technical expert, Alisa is specialized on target-invariant zero-day vulnerability discovery and exploit development, reverse engineering, and low-level system internals. Alisa has the Zero Day Initiative's Silver status of 2018, the 1st award in "Hack the Smart City" competition of 2014, and a track record of zero-day security bugs discovered in nearly all dominant software systems. 
+
+More info: <a href="https://alisa.sh">alisa.sh</a>. 
+Twitter: <a href="https://twitter.com/alisaesage">@alisaesage</a>.
+
+<a name="references"><h1>References</h1></a>
+- Multiple security bugs in Oracle VirtualBox (CVE-2018-XXXX): <a href="https://github.com/badd1e/Disclosures/tree/master/CVE-2018-XXXX_VirtualBox">technical analysis</a>.
+- VMWare Workstation & ESXi vmxnet3 Uninitialized Veriable RCE (CVE-2018-6981): <a href="https://github.com/badd1e/Disclosures/tree/master/CVE-2018-6981_VMWare_ESXi">proof-of-concept testcase</a> created via <a href="https://twitter.com/alisaesage/status/1146059432255582211">security patch reverse-engineering</a>.
+- Microsoft Hyper-V Virtual Network Switch Memory Corruption (CVE-2018-0717) - TBA.
+
+
+<a href="mailto:contact@0days.engineer?subject=HVInt Booking">Book this</a>
+<a href="/">Back to index</a>
+
+    </div>
+
+
+        <div class = "footer">
+Copyright 2020 <a href="https://0days.engineer">0days.engineer</a>
+        </div>
+
+        <script async defer src="https://cdn.simpleanalytics.io/hello.js"></script>
+        <noscript><img src="https://api.simpleanalytics.io/hello.gif" alt=""></noscript>
+
+    </body>
+</html>
