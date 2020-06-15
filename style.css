@@ -19,7 +19,7 @@ h2 {
     color: darkgoldenrod;
 }
 div.note {
-    font-family: 'Lucida Console', monospace;
+    font-family: 'Monaco', monospace;
     font-size: 14;
     white-space: pre-line;
     margin-left: auto;
@@ -29,7 +29,7 @@ div.note {
     margin-bottom: 11%;
 }
 div.footer {
-    font-family: 'Lucida Console', monospace;
+    font-family: 'Monaco', monospace;
     font-size: 14;
     white-space: pre-line;
     margin-left: auto;
