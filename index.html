@@ -1,48 +1,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+        <link rel="stylesheet" href="style.css">
         <title>Zero Day Engineering</title>
-        <style>
-            body {
-                color: silver;
-                background: black;
-            }
-            a:link {
-                color: teal;
-            }
-            a:visited {
-                color: teal;            }
-            }
-            a:active {
-                color: crimson
-            }
-            h1 {
-                color: black;
-                background: rgb(247, 247, 66)
-            }
-            h2 {
-                color: darkgoldenrod;
-            }
-            div.note {
-                font-family: 'Lucida Console', monospace;
-                font-size: 14;
-                white-space: pre-line;
-                margin-left: auto;
-                margin-right: auto;
-                width: 43em;
-                margin-top: 11%;
-                margin-bottom: 11%;
-            }
-            div.footer {
-                font-family: 'Lucida Console', monospace;
-                font-size: 14;
-                white-space: pre-line;
-                margin-left: auto;
-                margin-right: auto;
-                text-align: right;
-            }
-
-        </style>
     </head>
 
     <body>
@@ -50,13 +10,12 @@
 
 Zero Day Engineering
 <h1>Training Classes</h1>
-<h2>Hypervisor Exploitation 1:<br>System Internals & Vulnerabilities</h2>
+<h2>Hypervisor Exploitation One:<br>System Internals & Vulnerabilities</h2>
 Learn to discover, analyze, and prototype security vulnerabilities in arbitrary virtualization software through a generalized and systematical perspective, based on effective abstractions, concrete implementation details, inspection of known bugs, and cross-domain insights of the instructor. <a href="training/HVInt.html">More details</a>.
 
 - 20th May, 06 June, 13 June, 2020: ONLINE (3 days, 09-17 UTC)
-- November, 2020: ONLINE (3 days, 09-17 UTC)
 
-Can't wait? Recordings available :) 
+- 26-29th August, 2020: ONLINE (4 days, 09-17 UTC)
 
 
 <h2>iBootcamp</h2>
@@ -67,6 +26,36 @@ Stage 0: Reconnaissance
 
 - 25-29 May, 2020: ONLINE (5 days, 2 hours per day)
 Stage 3: iOS Kernel
+
+- TBA, 2020
+Stage 4: iOS Bootchain
+
+
+<h1>Research</h1>
+<h2>System Internals</h2>
+<a href="https://re.alisa.sh/notes/Hyper-V-LIS.html">Hyper-V Internals and LIS</a>
+Microsoft Hyper-V relies on two core mechanisms for inter-partition and hypervisor communications: the hypercall interface and the VMBUS. This note constitutes a fairly complete and technically concise overview of an implementation of both at the core level. 
+
+<a href="https://re.alisa.sh/notes/iBoot-heap-internals.html">iBoot Heap Internals</a>
+This research note provides a basic technical outline of the Apple bootchain's heap internals, key algorithms, and security mitigations. 
+
+<a href="https://re.alisa.sh/notes/iBoot-address-space.html">iBoot Address Space</a>
+This Research Note documents a generalized perspective on Apple devices' bootchain memory layout  across all stages of the boot process, and specifically relevant to SecuROM and iBoot. As a case study, a detailed memory map of iPhone 5 during boot is presented.
+
+* links to <a href="https://re.alisa.sh">Alisa's Research Notes</a>&nbsp;
+
+<h2>Proof of Concepts</h2>
+
+<a href="https://github.com/badd1e/Disclosures/tree/master/CVE-2018-6981_VMWare_ESXi">CVE-2018-6981: VMWare Workstation and ESXi vmxnet3 Uninitialized Variable Vulnerability</a>
+Proof-of-concept testcase for one of the bugs leveraged at GeekPwn2018 to achieve a full VM escape from VMWare ESXi, <a href="https://twitter.com/alisaesage/status/1146059432255582211">recreated</a> from the respective binary security patch. Technically it's a patch for Linux vmxnet3 kernel mode driver implementation.
+
+<a href="https://github.com/badd1e/Disclosures/tree/master/CVE-2019-0717_Hyper-V">CVE-2019-0717: Hyper-V Virtual Network Switch (vmswitch.sys) VmsMpCommonPvtSetRequestCommon Out of Bounds Read DoS Vulnerability</a>
+Proof-of-concept testcase for a Tier 1 (host partition kernel) vulnerability in Microsoft Hyper-V. This is a patch for rndis_filter.c Linux kernel mode driver, on of the Hyper-V paravirtualization drivers built-in in the Linux kernel.
+
+<a href="https://github.com/badd1e/Disclosures/tree/master/CVE-2018-XXXX_VirtualBox">CVE-2018-XXXX: VirtualBox 3D Virtualization Memory Corruption Elevation of Privilege Vulnerability (multiple)</a>
+In 2018 I found a few dozens of bugs in the Oracle VirtualBox (old) 3D acceleration implementation, based on Chromium. This repo contains a subset of analysis reports sent to the Zero Day Initiative.
+
+* selected links to my <a href="https://github.com/badd1e/">github</a> stash
 
 
 <h1>About Us</h1>
@@ -79,6 +68,8 @@ Feel free to contact us if you want to book a public or private class, purchase 
 Email: <a href="mailto:contact@0days.engineer">contact@0days.engineer</a> [<a href="0days.engineer.asc">PGP key</a>]
 
 Warning: this email is the only point of contact with us, or in person with <a href="https://alisa.sh">Alisa Esage</a>, creator of the project. 
+
+Telegram channel: <a href="https://t.me/alisaesagechan">@alisaesagechan</a>
 
         </div>
 
