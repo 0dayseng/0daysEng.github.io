@@ -1,66 +1,303 @@
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
-        <link rel="stylesheet" href="style.css">
-        <title>Zero Day Engineering</title>
-    </head>
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <!--Meta Tags-->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content=""/>
+      <meta name="keywords" content=""/>
+      <meta name="author" content=""/>
+      <!--Favicons-->
+      <link rel="shortcut icon" href="images/favicon.png">
+      <!--Page Title-->
+      <title>Zero Day Engineering: state-of-the-art code security, system internals, vulnerability research and exploit development</title>
 
-    <body>
-        <div class = "note">
+      <!-- Stylesheets -->
 
-Zero Day Engineering
-<h1>Training Classes</h1>
-<h2>Hypervisor Exploitation One:<br>System Internals & Vulnerabilities</h2>
-Learn to discover, analyze, and prototype security vulnerabilities in arbitrary virtualization software through a generalized and systematical perspective, based on effective abstractions, concrete implementation details, inspection of known bugs, and cross-domain insights of the instructor. <a href="training/HVInt.html">More details</a>.
+      <!-- bootstrap -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Animate -->
+      <link rel="stylesheet" href="css/animate.min.css">
+      <!-- Owl carusel -->
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <!-- Aos Css-->
+      <link rel="stylesheet" href="css/aos.css"/>
+      <!-- font awesome -->
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <!-- main css -->
+      <link rel="stylesheet" href="css/style.css">
+   </head>
 
-- 22-25th February, 2021; ONLINE (4 days, 09-17 UTC)
-Price: €3900,- 
+   <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
+
+      <!-- Preloader -->
+      <div class="loader">
+         <div class="intro">
+            <div class="intro-title"><img src="images/logo-large.png" class="logo-img light-logo img-fluid" alt=""></div>
+         </div>
+      </div>
+      <!-- preloader End --> 
+
+      <!-- Nav mobile -->
+      <nav class="site-mobile-menu">
+         <div class="close-wrap d-flex">
+            <a href="#" class="d-flex ml-auto js-menu-toggle">
+               <span class="close-label">Close</span>
+               <div class="close-times">
+                  <span class="bar1"></span>
+                  <span class="bar2"></span>
+               </div>
+            </a>
+         </div>
+         <div class="site-mobile-inner"></div>
+      </nav>
+      <!-- Nav mobile end -->
+
+      <!-- Main content wrap -->
+      <div class="site-wrap">
+
+         <!-- Main content inner -->
+         <div class="site-inner">
+
+            <!-- Main Nav -->
+            <nav class="site-nav site-nav-target">
+               <div class="container">
+                  <div class="row align-items-center justify-content-between text-left">
+                     <div class="col-3">
+                        <div class="site-logo">
+                           <a href="index.html" class="site-logo main-logo"><img src="images/logo.png" class="logo-img light-logo img-fluid" alt=""><span></span></a>
+                        </div>
+                     </div>
+                     <div class="col text-right">
+                        <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
+                           <li><a href="index.html" class="nav-link cursor-item">Home</a></li>
+                           <li><a href="about.html" class="nav-link cursor-item">About</a></li>
+                           <li><a href="training/index.html" class="nav-link cursor-item">Training</a></li>
+                           <li><a href="blog.html" class="nav-link cursor-item">Blog</a></li>
+                           <li><a href="contact.html" class="nav-link cursor-item">Contact</a></li>
+                        </ul>
+                        <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
+                           <li><a href="#" class="js-menu-toggle">Menu</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+            <!-- Main Nav end -->
 
 
-<h2>iBootcamp</h2>
-iBootcamp is an experimental, online-only, multistaged training course on iOS internals, vulnerability discovery and exploit development, created for beginners. <a href="https://ibootcamp.training">More details</a>.
+            <div class="cover-v1 jarallax">
+               <div class="container">
+                  <div class="row align-items-center">
+                     <div class="col-md-8">
+                        <h1 class="heading">Zero Day <br> <span id="quote">Engineering</span></h1>
+                        <p class="subheading text-white">State-of-the-art code security research, system internals, and exploit development knowledge<br></p>
+                        <a class="btn-draw btn--white cursor-item mt-3" href="contact.html"><span class="btn-draw__text"><span>Get in touch</span></span></a>
+                     </div>
+                     <div class="coverimage need-space"> <!--<img src="images/alisa-red.png" class="img-fluid">--></div>
+                     <div class="coverimage-desc need-space">
+                        <p class="hero-desc"><i>Alisa Esage, Head of Research</i>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="section">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-2">
+                        <h3 class="section-title">About</h3>
+                     </div>
+                     <div class="col-lg-4">
+                        <p>In the field of computer security, zero day engineering stands for the process of research and development of cutting edge offensive technologies that bypass all the defenses, by design.</p>
+                     </div>
+                     <div class="col-lg-6">
+                        <p>We like to indulge in the complex, dynamic, and highly adversarial nature of challenges in this space, while sharing the knowledge and insights collected in the process in an ethically neutral way.</p>
+                        <a class="btn-draw btn--white cursor-item mt-4" href="about.html"><span class="btn-draw__text"><span>More</span></span></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="section" id="services-section">
+               <div class="container">
+                  <div class="row mb-80 border-section">
+                     <div class="col-lg-6">
+                        <h3 class="section-title">What we do</h3>
+                     </div>
+                     <div class="col-lg-6">
+                        <p>Advanced vulnerability research, system internals reverse engineering, and exploit development</p>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-6">
+                        <div class="project-list">
+                        <div class="project">
+                              <div class="project-title">
+                                 <h5>Independent research</h5>
+                                 <p>Cutting edge deep technical research is always a priority and the primary source of the expertise, knowledge, and insights offered in our products. Note: this is a self-funded and self-directed activity, and we typically won't be interested in conducting it as a service. 
+                                 </p>
+                              </div>
+                              <div class="project-categ">00</div>
+                           </div>      
+                           <div class="project">
+                              <div class="project-title">
+                                 <h5>Hands-on training</h5>
+                                 <p>With professional security researchers being the core audience of our training classes, we also optimize training materials for arbitrary technical audiences, from beginners to seasoned experts, from e-sports players to professional white-hat hackers, and from software engineers to CTO.</p>
+                              </div>
+                              <div class="project-categ">01</div>
+                           </div>
+                           <div class="project">
+                              <div class="project-title">
+                                 <h5>Vulnerability research feeds</h5>
+                                 <p>Ongoing software vulnerability and system internals research in several common directions is an essential baseline of all offensive, defensive and creative workflows in the exponentially accelerating technological security landscape. We do this continuously as part of our own workflows, and share the research output in subscription-based knowledge products.</p>
+                              </div>
+                              <div class="project-categ">02</div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-6">
+                        <div class="services_active owl-carousel">
+                           <div class="single_testmonial">
+                              <div class="testmonial_info">
+                                 <img src="images/services-1.gif" class="img-fluid" alt="">
+                              </div>
+                           </div>
+                           <div class="single_testmonial">
+                              <div class="testmonial_info">
+                                 <img src="images/services-2.gif" class="img-fluid" alt="">
+                              </div>
+                           </div>
+                           <div class="single_testmonial">
+                              <div class="testmonial_info">
+                                 <img src="images/services-3.gif" class="img-fluid" alt="">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- reserved for some cute logos :)
+                  <div class="row mt-100">
+                     <div class="owl-carousel logo-slider">
+                        <div class="logo-v1 cursor-item ">
+                           <img src="images/logos/logo01.png" alt="Image" class="img-fluid">
+                        </div>
+                        <div class="logo-v1 cursor-item">
+                           <img src="images/logos/logo02.png" alt="Image" class="img-fluid">
+                        </div>
+                        <div class="logo-v1 cursor-item">
+                           <img src="images/logos/logo05.png" alt="Image" class="img-fluid">
+                        </div>
+                        <div class="logo-v1 cursor-item">
+                           <img src="images/logos/logo06.png" alt="Image" class="img-fluid">
+                        </div>
+                     </div>
+                  </div>
+                  -->
+               </div>
+            </div>
+
+            <div class="section">
+               <div class="container">
+                  <div class="row mb-80 border-section">
+                     <div class="col-lg-6">
+                        <h3 class="section-title">Upcoming trainings</h3>
+                     </div>
+                     <div class="col-lg-6">
+                        <div class="filter-wrap">
+                           <ul class="filter-wrapper clearfix">
+                              <li><a href="#" data-filter="*" class="selected cursor-item">View all</a></li>
+                              <li><a href="#" class="cursor-item" data-filter=".virtualization">Virtualization</a></li>
+                              <li><a href="#" class="cursor-item" data-filter=".vulnerability-research">Vulnerability Research</a></li>
+                              <li><a href="#" class="cursor-item" data-filter=".system-internals">System Internals</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row portfolio-items">
+                     <div class="col-lg-12 p-0">
+                        <div class="work-gallery">
+                           <div class="col-md-6 single-item vulnerability-research virtualization system-internals c0de1 ">
+                              <div class="portfolio-wrap gsap-reveal">
+                                 <a href="training/hypervisor-exploitation-1.html" class="portfolio-item"><img src="images/portfolio/hypervisor-exploitation-1-frontpage.png" alt="" class="img-fluid"></a>
+                                 <div class="portfolio-content">
+                                    <p>Vulnerability Research, System Internals, Virtualization</p>
+                                    <h3><a href="training/hypervisor-exploitation-1.html">Hypervisor Exploitation I</a></h3>
+                                    <a href="training/hypervisor-exploitation-1.html" class="portfolio-link"></a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer section">
+               <div class="container">
+                  <div class="row justify-content-center">
+                     <div class="col-md-12">
+                        <div class="go-top cursor-item" id="go-to-top"><i class="fa fa-chevron-up"></i></div>
+                        <div class="hr-footer"></div>
+                        <div class="footer-site-logo"><a href="index.html" class="main-logo"><img src="images/logo.png" class="logo-img light-logo img-fluid" alt=""></a></div>
+                        <p class="site-copyright">
+                           <small>&copy; 2021 An Exponential Limited. All Rights Reserved.</small>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </footer>
+            <!-- Footer end -->
+
+            <!-- Circle Scroll -->
+            <div class="circular-text">
+               <span id="rotated">1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 •</span>
+            </div>
+
+         </div>
+         <!-- Main content inner end -->
+      </div>
+      <!-- Main content wrap end -->
+
+      <!-- Back to top button -->
+      <a id="back-to-top" href="#" class="cursor-item"><i class="fa fa-chevron-up"></i></a>
+
+      <div class="cursor"></div>
+      <div class="cursor-follower"></div>
 
 
-<h1>Research</h1>
-<h2>System Internals</h2>
-<a href="https://re.alisa.sh/notes/Hyper-V-LIS.html">Hyper-V Internals and LIS</a>
-Microsoft Hyper-V relies on two core mechanisms for inter-partition and hypervisor communications: the hypercall interface and the VMBUS. This note constitutes a fairly complete and technically concise overview of an implementation of both at the core level. 
+      <!-- jquery -->
+      <script src="js/query-3.4.1.min.js"></script>
+      <!-- bootstrap -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- aos -->
+      <script src="js/aos.js"></script>
+      <!-- owl.carusel js -->
+      <script src="js/owl.carousel.min.js"></script>
+      <!-- isotope js -->
+      <script src="js/isotope.pkgd.min.js"></script>
+      <!-- isotope image loader js -->
+      <script src="js/imagesloaded.pkgd.min.js"></script>
+      <!-- three -->
+      <script src="js/three.min.js"></script>
+      <!-- anime -->
+      <script src="js/anime.min.js"></script>
+      <!-- tweenmax -->
+      <script src="js/TweenMax.min.js"></script>
+      <!-- circletype-->
+      <script src="js/circletype.min.js"></script>
+      <!-- hover-effect -->
+      <script src="js/hover-effect.umd.js"></script>
+      <!-- gsap -->
+      <script src="js/gsap.min.js"></script>
+      <!-- ScrollMagic gsap -->
+      <script src="js/ScrollMagic.min.js"></script>
+      <script src="js/scrollmagic.animation.gsap.min.js"></script>
+      <!-- custom -->
+      <script src="js/custom.js"></script>
 
-<a href="https://re.alisa.sh/notes/iBoot-heap-internals.html">iBoot Heap Internals</a>
-This research note provides a basic technical outline of the Apple bootchain's heap internals, key algorithms, and security mitigations. 
-
-<a href="https://re.alisa.sh/notes/iBoot-address-space.html">iBoot Address Space</a>
-This Research Note documents a generalized perspective on Apple devices' bootchain memory layout  across all stages of the boot process, and specifically relevant to SecuROM and iBoot. As a case study, a detailed memory map of iPhone 5 during boot is presented.
-
-* links to <a href="https://re.alisa.sh">Alisa's Research Notes</a>.
-
-<h2>Proof of Concepts</h2>
-<a href="https://github.com/badd1e/Disclosures/tree/master/CVE-2018-6981_VMWare_ESXi">CVE-2018-6981: VMWare Workstation and ESXi vmxnet3 Uninitialized Variable Vulnerability</a>
-Proof-of-concept testcase for one of the bugs leveraged at GeekPwn2018 to achieve a full VM escape from VMWare ESXi, <a href="https://twitter.com/alisaesage/status/1146059432255582211">recreated</a> from the respective binary security patch. Technically it's a patch for Linux vmxnet3 kernel mode driver implementation.
-
-<a href="https://github.com/badd1e/Disclosures/tree/master/CVE-2019-0717_Hyper-V">CVE-2019-0717: Hyper-V Virtual Network Switch (vmswitch.sys) VmsMpCommonPvtSetRequestCommon Out of Bounds Read DoS Vulnerability</a>
-Proof-of-concept testcase for a Tier 1 (host partition kernel) vulnerability in Microsoft Hyper-V. This is a patch for rndis_filter.c Linux kernel mode driver, on of the Hyper-V paravirtualization drivers built-in in the Linux kernel.
-
-<a href="https://github.com/badd1e/Disclosures/tree/master/CVE-2018-XXXX_VirtualBox">CVE-2018-XXXX: VirtualBox 3D Virtualization Memory Corruption Elevation of Privilege Vulnerability (multiple)</a>
-In 2018 I found a few dozens of bugs in the Oracle VirtualBox (old) 3D acceleration implementation, based on Chromium. This repo contains a subset of analysis reports sent to the Zero Day Initiative.
-
-* more on <a href="https://github.com/badd1e/Disclosures/">github</a>.
-
-
-<h1>About Us</h1>
-0days.engineer is an educational project focused on advanced vulnerability discovery and exploit development for modern and popular software systems. 
-
-We maintain a continuous internal research process aiming at strategic zero-day vulnerability discovery in many modern software systems; participate in official security bounty programs of major software vendors; share selected research and analysis notes with the community; and develop commercial training classes based on the privately and independently obtained deep technical knowledge. 
-
-Feel free to contact us if you want to book a public or private class, purchase e-learning materials based on our past trainings, suggest a collab project, or host our training classes at your venue. 
-
-Email: <a href="mailto:contact@0days.engineer">contact@0days.engineer</a> 
-
-        </div>
-
-        <div class = "footer">
-Project by <a href="https://alisa.sh">Alisa Esage</a>. Copyright 2020, all rights reserved.
-        </div>
-                
-    </body>
+   </body>
 </html>
