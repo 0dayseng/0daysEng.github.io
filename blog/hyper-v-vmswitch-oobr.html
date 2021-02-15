@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <!--Meta Tags-->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content=""/>
+      <meta name="keywords" content=""/>
+      <meta name="author" content=""/>
+      <base href="../"> 
+      <!--Favicons-->
+      <link rel="shortcut icon" href="images/favicon.png">
+      <!--Page Title-->
+      <title>Microsoft Hyper-V Virtual Network Switch VmsMpCommonPvtSetRequestCommon Out of Bounds Read – Zero Day Engineering Blog</title>
+      <!-- Stylesheets -->
+      <!-- bootstrap -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Animate -->
+      <link rel="stylesheet" href="css/animate.min.css">
+      <!-- Owl carusel -->
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <!-- Aos Css-->
+      <link rel="stylesheet" href="css/aos.css"/>
+      <!-- font awesome -->
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <!-- main css -->
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
+      
+      <!-- Preloader -->
+      <div class="loader">
+         <div class="intro">
+            <div class="intro-title"><img src="images/logo-large.png" class="logo-img light-logo img-fluid" alt=""></div>
+         </div>
+      </div>
+      <!-- preloader End --> 
+
+      <!-- Nav mobile -->
+      <nav class="site-mobile-menu">
+         <div class="close-wrap d-flex">
+            <a href="#" class="d-flex ml-auto js-menu-toggle">
+               <span class="close-label">Close</span>
+               <div class="close-times">
+                  <span class="bar1"></span>
+                  <span class="bar2"></span>
+               </div>
+            </a>
+         </div>
+         <div class="site-mobile-inner"></div>
+      </nav>
+      <!-- Nav mobile end -->
+
+      <!-- Main content wrap -->
+      <div class="site-wrap">
+         <!-- Main content inner -->
+         <div class="site-inner">
+
+            <!-- Main Nav -->
+            <nav class="site-nav site-nav-target">
+               <div class="container">
+                  <div class="row align-items-center justify-content-between text-left">
+                     <div class="col-3">
+                        <div class="site-logo">
+                           <a href="index.html" class="site-logo main-logo"><img src="images/logo.png" class="logo-img light-logo img-fluid" alt=""><span></span></a>
+                        </div>
+                     </div>
+                     <div class="col text-right">
+                        <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
+                              <li><a href="index.html" class="nav-link cursor-item">Home</a></li>
+                              <li><a href="about.html" class="nav-link cursor-item">About</a></li>
+                              <li><a href="training/index.html" class="nav-link cursor-item">Training</a></li>
+                              <li><a href="blog/index.html" class="nav-link cursor-item">Blog</a></li>
+                              <li><a href="contact.html" class="nav-link cursor-item">Contact</a></li>
+                           </ul>
+                           <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
+                           <li><a href="#" class="js-menu-toggle">Menu</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+
+            <!-- Main Nav end -->
+            <div class="section">
+               <div class="blog-single-inner">
+                  <div class="container">
+                     <div class="row justify-content-center">
+                        <div class="col-md-8">
+                           <div id="quote"></div>
+                           <h3 class="mb-4">Microsoft Hyper-V Virtual Network Switch VmsMpCommonPvtSetRequestCommon Out of Bounds Read</h3>
+
+                           <p>Hyper-V relies on a component named Virtual Network Switch to provide various networking services to virtual machines. Virtual Network Switch (vmswitch.sys) is an RNDIS-compliant virtual device that lives in the kernel of the root partition. It is directly exposed to Generation 2 VMs as a paravirtualized virtual ethernet controller, and in Generation 1 VMs it is utilized indirectly by serving as a backend for the emulated DEC ethernet controller. In all cases, vmswitch is the bigbone behind everything networking in a Hyper-V cloud, from providing internet connectivity and virtual LAN to VMs, to bridging all that into physical ethernet adapters on the host. </p>
+
+                           <p>Generation 2 VMs talk to the vmswitch directly by sending RNDIS protocol data and networking streams over the VMBUS. The vmswitch.sys module in the root partition listens to data availability on the VMBUS in a DPC thread on Windows, that would be woken up with a synthetic interrupt generated by the VM. The RNDIS protocol data provided by VM is then parsed and scheduled for processing in respective subsystems of the virtual device. </p>
+                           
+                           <p>When vmswitch receives an RNDIS message of type Set, and after a series of data sanitizations, VmsMpCommonPvtSetRequestCommon() procedure will be eventually called to process it. Inside VmsMpCommonPvtSetRequestCommon one particular path is responsible for handling RNDIS Set requests with OID RNDIS_OID_GEN_RNDIS_CONFIG_PARAMETER:</p>
+                           
+<pre>.text:00000001C001FB07 loc_1C001FB07:                          ; CODE XREF: VmsMpCommonPvtSetRequestCommon+D0↑j
+.text:00000001C001FB07                 movups  xmm0, xmmword ptr [r9]
+.text:00000001C001FB0B                 mov     r12d, [r9+10h]
+.text:00000001C001FB0F                 mov     [rbp+var_10], r12d
+.text:00000001C001FB13                 movd    edx, xmm0
+.text:00000001C001FB17                 movups  [rbp+arg_offset_copy2], xmm0
+.text:00000001C001FB1B                 cmp     edi, edx        ; size < parameter_name_offset ?
+.text:00000001C001FB1D                 jb      @@error
+.text:00000001C001FB23                 mov     rcx, qword ptr [rbp+arg_offset_copy2]
+.text:00000001C001FB27                 mov     eax, edi
+.text:00000001C001FB29                 shr     rcx, 20h
+.text:00000001C001FB2D                 sub     eax, edx
+.text:00000001C001FB2F                 cmp     eax, ecx        ; size - parameter_name_offset < parameter_name_length ?
+.text:00000001C001FB31                 jb      @@error
+.text:00000001C001FB37                 mov     rcx, qword ptr [rbp+arg_offset_copy2+8]
+.text:00000001C001FB3B                 shr     rcx, 20h
+.text:00000001C001FB3F                 cmp     edi, ecx        ; size < parameter_value_offset ?
+.text:00000001C001FB41                 jb      @@error2
+.text:00000001C001FB47                 mov     eax, edi
+.text:00000001C001FB49                 sub     eax, ecx
+.text:00000001C001FB4B                 cmp     eax, r12d       ; size - parameter_value_offset < parameter_value_length ?
+.text:00000001C001FB4E                 jb      @@error2
+.text:00000001C001FB54                 mov     r15d, edx
+.text:00000001C001FB57                 lea     r13, [r9+rcx]
+.text:00000001C001FB5B                 add     r15, r9
+.text:00000001C001FB5E                 lea     rcx, aNetworkaddress ; "NetworkAddress"
+.text:00000001C001FB65                 mov     rdx, r15        ; Buf2
+.text:00000001C001FB68                 mov     r8d, 1Ch        ; Size
+.text:00000001C001FB6E                 call    memcmp</pre>
+                           
+                           <p>At the start of the above code snippet, $r9 register points to InformationBuffer of type rndis_config_parameter_info:</p>
+                           
+<pre>/* Linux Integration Services */
+/* Format of Information buffer passed in a SetRequest for the OID */
+/* OID_GEN_RNDIS_CONFIG_PARAMETER. */
+struct rndis_config_parameter_info {
+   u32 parameter_name_offset;
+   u32 parameter_name_length;
+   u32 parameter_type;
+   u32 parameter_value_offset;
+   u32 parameter_value_length;
+};</pre>
+                           
+                           <p>The contents and the length of this data are fully controlled by the VM.</p>
+                           
+                           <p>The four checks in the above snippet correctly validate that the data offsets provided by rndis_config_parameter_info members fall within the bounds of the request. However, there is a narrow edge case which is not validate. When memcmp() is finally called at 00000001C001FB6E with a static length value of 0x1c, $r15 points to a VM-controlled value of parameter_name, that can be smaller than 0x1c. In case that parameter_name is smaller than 0x1c and also falls at the end of the allocated memory page which is adjacent to unallocated space, the root partition OS will bugcheck due to a read access violation. </p>
+                           
+                           <p>Potential impact of this bug is a persistent DoS of the entire Hyper-V cloud. Exploitation is not straightforward, and the heap must be groomed specifically in order to crash a vulnerable Hyper-V host in the absence of specialized debugging instrumentation. </p>
+                           
+                           <p>CVE ID: CVE-2019-0717<br>
+                           <a href="https://github.com/badd1e/Disclosures/blob/master/CVE-2019-0717_Hyper-V/PoC_CVE-2019-0717.c">Proof-of-concept testcase</a><br>
+                           Vulnerability discovery: Alisa Esage, Zero Day Engineering</p>
+   
+                           <p>Written by <a href="https://twitter.com/alisaesage">Alisa</a> on 15 February 2021.</p>
+                                                      
+                           <div class="pt-5 mb-5 categories_tags ">
+                              <p class="categories">Categories: Vulnerability Analysis, Virtualization</p>
+                           </div>
+                           
+                           <div class="post-single-navigation d-flex align-items-stretch">
+                              <a href="blog/introducing-vulnerability-research-feeds.html" class="mr-auto w-50 pr-4">
+                                 <span class="d-block cursor-item"><i class="fa fa-chevron-left mr-2"></i> Previous Post</span></a>
+                                 <a href="blog/index.html" class="ml-auto w-50 text-right pl-4">
+                                 <span class="d-block cursor-item">Next Post <i class="fa fa-chevron-right ml-2"></i></span></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer section">
+               <div class="container">
+                  <div class="row justify-content-center">
+                     <div class="col-md-12">
+                        <div class="go-top cursor-item" id="go-to-top"><i class="fa fa-chevron-up"></i></div>
+                        <div class="hr-footer"></div>
+                        <div class="footer-site-logo"><a href="index.html" class="main-logo"><img src="images/logo.png" class="logo-img light-logo img-fluid" alt=""></a></div>
+                        <ul class="footer-site-social">
+                        </ul>
+                        <p class="site-copyright">
+                           <small>&copy; 2021 An Exponential Limited. All Rights Reserved.</small>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </footer>
+            <!-- Footer end -->
+
+            <!-- Circle Scroll -->
+            <div class="circular-text">
+               <span id="rotated">1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 •</span>
+            </div>
+
+         </div>
+         <!-- Main content inner end -->
+      </div>
+      <!-- Main content wrap end -->
+
+      <!-- Back to top button -->
+      <a id="back-to-top" href="#" class="cursor-item"><i class="fa fa-chevron-up"></i></a>
+
+      <div class="cursor"></div>
+      <div class="cursor-follower"></div>
+
+      <!-- jquery -->
+      <script src="js/query-3.4.1.min.js"></script>
+      <!-- bootstrap -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- aos -->
+      <script src="js/aos.js"></script>
+      <!-- owl.carusel js -->
+      <script src="js/owl.carousel.min.js"></script>
+      <!-- isotope js -->
+      <script src="js/isotope.pkgd.min.js"></script>
+      <!-- isotope image loader js -->
+      <script src="js/imagesloaded.pkgd.min.js"></script>
+      <!-- three -->
+      <script src="js/three.min.js"></script>
+      <!-- anime -->
+      <script src="js/anime.min.js"></script>
+      <!-- tweenmax -->
+      <script src="js/TweenMax.min.js"></script>
+      <!-- jquery.waypoints.min.js -->
+      <script src="js/jquery.waypoints.min.js"></script>
+      <!-- circletype-->
+      <script src="js/circletype.min.js"></script>
+      <!-- hover-effect -->
+      <script src="js/hover-effect.umd.js"></script>
+      <!-- gsap -->
+      <script src="js/gsap.min.js"></script>
+      <!-- ScrollMagic gsap -->
+      <script src="js/ScrollMagic.min.js"></script>
+      <script src="js/scrollmagic.animation.gsap.min.js"></script>
+      <!-- custom -->
+      <script src="js/custom.js"></script>
+   </body>
+</html>
