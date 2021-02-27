@@ -28,8 +28,8 @@
       <link rel="stylesheet" href="css/style.css">
    </head>
    <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
-      
-      <!-- Preloader -->
+
+     <!-- Preloader -->
       <div class="loader">
          <div class="intro">
             <div class="intro-title"><img src="images/logo-large.png" class="logo-img light-logo img-fluid" alt=""></div>
@@ -145,12 +145,68 @@ struct rndis_config_parameter_info {
                            <p>The four checks in the above snippet correctly validate that the data offsets provided by rndis_config_parameter_info members fall within the bounds of the request. However, there is a narrow edge case which is not validate. When memcmp() is finally called at 00000001C001FB6E with a static length value of 0x1c, $r15 points to a VM-controlled value of parameter_name, that can be smaller than 0x1c. In case that parameter_name is smaller than 0x1c and also falls at the end of the allocated memory page which is adjacent to unallocated space, the root partition OS will bugcheck due to a read access violation. </p>
                            
                            <p>Potential impact of this bug is a persistent DoS of the entire Hyper-V cloud. Exploitation is not straightforward, and the heap must be groomed specifically in order to crash a vulnerable Hyper-V host in the absence of specialized debugging instrumentation. </p>
-                           
+
+
+                           <h5>Exploitation notes</h5>
+
+                           <p>It is theoretically possible to exploit this issue without the Driver Verifier enabled, and cause a persistent DoS in the Hyper-V root partition OS from an arbitrary Guest OS and in default configuration.</p>
+
+                           <p>First, note that a Guest VM has a significant degree of control over memory management in vmswitch. For example, consider the output from !verifier on the faulting memory:</p>
+
+<pre>1: kd> !verifier 80 r9
+...
+======================================================================
+Pool block ffffd90f1b0f2fa0, Size 0000000000000060, Thread ffffd90f189d5080
+fffff8005d74ee0d nt!VfAllocPoolNotification+0x31
+fffff8005d73c21f nt!VeAllocatePoolWithTagPriority+0x2cf
+fffff8005d74a6b8 nt!XdvExAllocatePoolInternal+0x18
+fffff8005d73c6b7 nt!VerifierExAllocatePoolWithTag+0x87
+fffff8005fd2949a vmswitch!RndisDevHostDispatchControlMessage+0x72
+fffff8005fd28c26 vmswitch!VmsVmNicPvtKmclProcessingComplete+0x156
+fffff808e58727a5 VmsProxy!VmsProxyVmNicPvtKmclProcessingComplete+0x15
+fffff808e5882772 vmbkmclr!InpFillAndProcessQueue+0x242
+fffff808e588243c vmbkmclr!KmclpVmbusIsr+0x13c
+fffff8005fc610b0 vmbusr!ParentRingInterruptDpc+0xa0
+fffff8005cecfc67 nt!KiExecuteAllDpcs+0x2e7
+fffff8005cecf2ae nt!KiRetireDpcList+0x1ae
+fffff8005cfd1445 nt!KxRetireDpcList+0x5
+
+RndisDevHostDispatchControlMessage:
+.text:00000001C0039485                 movsxd  rdx, edi        ; NumberOfBytes
+.text:00000001C0039488                 mov     ecx, 200h       ; PoolType
+.text:00000001C003948D                 mov     r8d, 44527356h  ; Tag
+.text:00000001C0039493                 call    cs:__imp_ExAllocatePoolWithTag
+.text:00000001C003949A                 nop     dword ptr [rax+rax+00h]
+.text:00000001C003949F                 mov     rbp, rax
+.text:00000001C00394A2                 test    rax, rax
+.text:00000001C00394A5                 jz      loc_1C0069E31
+.text:00000001C00394AB                 mov     rax, [r15]
+.text:00000001C00394AE                 mov     rdx, r12        ; Src
+.text:00000001C00394B1                 mov     ecx, [rax+28h]
+.text:00000001C00394B4                 mov     [rbp+10h], ecx
+.text:00000001C00394B7                 mov     r8d, ecx        ; Size
+.text:00000001C00394BA                 lea     rcx, [rbp+14h]  ; Dst
+.text:00000001C00394BE                 call    memmove</pre>
+
+                           <p>RndisDevHostDispatchControlMessage in the allocation backtrace is the top-level function that dispatches RNDIS requests from the guest. For each incoming request it allocates memory based on the size of the request, as it is provided by the Guest VM. Thus the Guest VM controls both the timing and the size of memory allocations in vmswitch, which is conductive to heap grooming.</p>
+
+                           <p>It is not clear whether the Guest VM has the same degree of control over freeing of memory. The memory allocated for a request is freed once vmswitch has finished processing it. However, a free() primitive may be synthetically constructed (at least) by exploiting the fact that some RNDIS requests may take longer to process than the others.  </p>
+
+                           <p>The general idea of exploitation is to create an alternating pattern of two types of memory pages: one, which is groomed such that our malicious request is the last byte sequence in the memory page; and another one, which is either free or may be predictably free'd by the VM.</p>
+
+                           <p>Type 1 page may be crafted by first flushing the look-aside and freelists in the Windows kernel by sendins lots of small RNDIS requests of apropriate sizes, that will trigger the allocation of a new memory page; and then occupying the new page with small allocations in a controlled manner.</p>
+
+                           <p>Type 2 page seems trickier to construct due to both limitations of the attacker's control over memory freeing, and KASLR mitigations. However I expect that an unallocated memory page may happen naturally following the Type 0 page in certain conditions, due to KASLR.</p>
+
+                           <p>After the host BSODs and reboots, the Guest VM will start automatically, and run the exploit again. Thus a persistent DoS of the Hyper-V cloud may be achieved.</p>
+                                                      
+                           <p>This vulnerability and the relevant technical architectural context is further discussed in the <a href="training/hypervisor-exploitation-1.html">"Hypervisor Exploitation I"</a> training.</p>
+
                            <p>CVE ID: CVE-2019-0717<br>
                            <a href="https://github.com/badd1e/Disclosures/blob/master/CVE-2019-0717_Hyper-V/PoC_CVE-2019-0717.c">Proof-of-concept testcase</a><br>
                            Vulnerability discovery: Alisa Esage, Zero Day Engineering</p>
    
-                           <p>Written by <a href="https://twitter.com/alisaesage">Alisa</a> on 15 February 2021.</p>
+                           <p>Written by <a href="https://twitter.com/alisaesage">Alisa</a> on 15 February 2021, updated on 27 February (added Exploitation notes).</p>
                                                       
                            <div class="pt-5 mb-5 categories_tags ">
                               <p class="tags">Categories: Deep Technical, Vulnerability Analysis, Virtualization</p>
