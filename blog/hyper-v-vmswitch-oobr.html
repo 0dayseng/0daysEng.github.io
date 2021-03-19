@@ -97,48 +97,20 @@
                            
                            <p>When vmswitch receives an RNDIS message of type Set, and after a series of data sanitizations, VmsMpCommonPvtSetRequestCommon() procedure will be eventually called to process it. Inside VmsMpCommonPvtSetRequestCommon one particular path is responsible for handling RNDIS Set requests with OID RNDIS_OID_GEN_RNDIS_CONFIG_PARAMETER:</p>
                            
-<pre>.text:00000001C001FB07 loc_1C001FB07:                          ; CODE XREF: VmsMpCommonPvtSetRequestCommon+D0↑j
-.text:00000001C001FB07                 movups  xmm0, xmmword ptr [r9]
-.text:00000001C001FB0B                 mov     r12d, [r9+10h]
-.text:00000001C001FB0F                 mov     [rbp+var_10], r12d
-.text:00000001C001FB13                 movd    edx, xmm0
-.text:00000001C001FB17                 movups  [rbp+arg_offset_copy2], xmm0
-.text:00000001C001FB1B                 cmp     edi, edx        ; size < parameter_name_offset ?
-.text:00000001C001FB1D                 jb      @@error
-.text:00000001C001FB23                 mov     rcx, qword ptr [rbp+arg_offset_copy2]
-.text:00000001C001FB27                 mov     eax, edi
-.text:00000001C001FB29                 shr     rcx, 20h
-.text:00000001C001FB2D                 sub     eax, edx
-.text:00000001C001FB2F                 cmp     eax, ecx        ; size - parameter_name_offset < parameter_name_length ?
-.text:00000001C001FB31                 jb      @@error
-.text:00000001C001FB37                 mov     rcx, qword ptr [rbp+arg_offset_copy2+8]
-.text:00000001C001FB3B                 shr     rcx, 20h
-.text:00000001C001FB3F                 cmp     edi, ecx        ; size < parameter_value_offset ?
-.text:00000001C001FB41                 jb      @@error2
-.text:00000001C001FB47                 mov     eax, edi
-.text:00000001C001FB49                 sub     eax, ecx
-.text:00000001C001FB4B                 cmp     eax, r12d       ; size - parameter_value_offset < parameter_value_length ?
-.text:00000001C001FB4E                 jb      @@error2
-.text:00000001C001FB54                 mov     r15d, edx
-.text:00000001C001FB57                 lea     r13, [r9+rcx]
-.text:00000001C001FB5B                 add     r15, r9
-.text:00000001C001FB5E                 lea     rcx, aNetworkaddress ; "NetworkAddress"
-.text:00000001C001FB65                 mov     rdx, r15        ; Buf2
-.text:00000001C001FB68                 mov     r8d, 1Ch        ; Size
-.text:00000001C001FB6E                 call    memcmp</pre>
+                           <script src="https://gist.github.com/badd1e/6e0df779c03ffc2c4d0e7053cc8c58b5.js"></script>
                            
                            <p>At the start of the above code snippet, $r9 register points to InformationBuffer of type rndis_config_parameter_info:</p>
                            
-<pre>/* Linux Integration Services */
-/* Format of Information buffer passed in a SetRequest for the OID */
-/* OID_GEN_RNDIS_CONFIG_PARAMETER. */
-struct rndis_config_parameter_info {
-   u32 parameter_name_offset;
-   u32 parameter_name_length;
-   u32 parameter_type;
-   u32 parameter_value_offset;
-   u32 parameter_value_length;
-};</pre>
+                           <p>/* Linux Integration Services */<br>
+                           /* Format of Information buffer passed in a SetRequest for the OID */<br>
+                           /* OID_GEN_RNDIS_CONFIG_PARAMETER. */<br>
+                           struct rndis_config_parameter_info {<br>
+                           &nbsp;&nbsp;u32 parameter_name_offset;<br>
+                           &nbsp;&nbsp;u32 parameter_name_length;<br>
+                           &nbsp;&nbsp;u32 parameter_type;<br>
+                           &nbsp;&nbsp;u32 parameter_value_offset;<br>
+                           &nbsp;&nbsp;u32 parameter_value_length;<br>
+                           };</p>
                            
                            <p>The contents and the length of this data are fully controlled by the VM.</p>
                            
@@ -153,40 +125,7 @@ struct rndis_config_parameter_info {
 
                            <p>First, note that a Guest VM has a significant degree of control over memory management in vmswitch. For example, consider the output from !verifier on the faulting memory:</p>
 
-<pre>1: kd> !verifier 80 r9
-...
-======================================================================
-Pool block ffffd90f1b0f2fa0, Size 0000000000000060, Thread ffffd90f189d5080
-fffff8005d74ee0d nt!VfAllocPoolNotification+0x31
-fffff8005d73c21f nt!VeAllocatePoolWithTagPriority+0x2cf
-fffff8005d74a6b8 nt!XdvExAllocatePoolInternal+0x18
-fffff8005d73c6b7 nt!VerifierExAllocatePoolWithTag+0x87
-fffff8005fd2949a vmswitch!RndisDevHostDispatchControlMessage+0x72
-fffff8005fd28c26 vmswitch!VmsVmNicPvtKmclProcessingComplete+0x156
-fffff808e58727a5 VmsProxy!VmsProxyVmNicPvtKmclProcessingComplete+0x15
-fffff808e5882772 vmbkmclr!InpFillAndProcessQueue+0x242
-fffff808e588243c vmbkmclr!KmclpVmbusIsr+0x13c
-fffff8005fc610b0 vmbusr!ParentRingInterruptDpc+0xa0
-fffff8005cecfc67 nt!KiExecuteAllDpcs+0x2e7
-fffff8005cecf2ae nt!KiRetireDpcList+0x1ae
-fffff8005cfd1445 nt!KxRetireDpcList+0x5
-
-RndisDevHostDispatchControlMessage:
-.text:00000001C0039485                 movsxd  rdx, edi        ; NumberOfBytes
-.text:00000001C0039488                 mov     ecx, 200h       ; PoolType
-.text:00000001C003948D                 mov     r8d, 44527356h  ; Tag
-.text:00000001C0039493                 call    cs:__imp_ExAllocatePoolWithTag
-.text:00000001C003949A                 nop     dword ptr [rax+rax+00h]
-.text:00000001C003949F                 mov     rbp, rax
-.text:00000001C00394A2                 test    rax, rax
-.text:00000001C00394A5                 jz      loc_1C0069E31
-.text:00000001C00394AB                 mov     rax, [r15]
-.text:00000001C00394AE                 mov     rdx, r12        ; Src
-.text:00000001C00394B1                 mov     ecx, [rax+28h]
-.text:00000001C00394B4                 mov     [rbp+10h], ecx
-.text:00000001C00394B7                 mov     r8d, ecx        ; Size
-.text:00000001C00394BA                 lea     rcx, [rbp+14h]  ; Dst
-.text:00000001C00394BE                 call    memmove</pre>
+                           <script src="https://gist.github.com/badd1e/652d205beca7b8a2cbe0659648c14197.js"></script>
 
                            <p>RndisDevHostDispatchControlMessage in the allocation backtrace is the top-level function that dispatches RNDIS requests from the guest. For each incoming request it allocates memory based on the size of the request, as it is provided by the Guest VM. Thus the Guest VM controls both the timing and the size of memory allocations in vmswitch, which is conductive to heap grooming.</p>
 
@@ -206,7 +145,7 @@ RndisDevHostDispatchControlMessage:
                            <a href="https://github.com/badd1e/Disclosures/blob/master/CVE-2019-0717_Hyper-V/PoC_CVE-2019-0717.c">Proof-of-concept testcase</a><br>
                            Vulnerability discovery: Alisa Esage, Zero Day Engineering</p>
    
-                           <p>Written by <a href="https://twitter.com/alisaesage">Alisa</a> on 15 February 2021, updated on 27 February (added Exploitation notes).</p>
+                           <p>Written by <a href="https://twitter.com/alisaesage">Alisa</a> on 15 February 2021, updated on 19 March 2021 (cutified the code).</p>
                                                       
                            <div class="pt-5 mb-5 categories_tags ">
                               <p class="tags">Categories: Deep Technical, Vulnerability Analysis, Virtualization</p>
