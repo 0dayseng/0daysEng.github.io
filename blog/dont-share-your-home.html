@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <!--Meta Tags-->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content=""/>
+      <meta name="keywords" content=""/>
+      <meta name="author" content=""/>
+      <base href="../"> 
+      <!--Favicons-->
+      <link rel="shortcut icon" href="images/favicon.png">
+      <!--Page Title-->
+      <title>Don't Share Your $HOME with Untrusted Guests – Zero Day Engineering Blog</title>
+      <!-- Stylesheets -->
+      <!-- bootstrap -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Animate -->
+      <link rel="stylesheet" href="css/animate.min.css">
+      <!-- Owl carusel -->
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <!-- Aos Css-->
+      <link rel="stylesheet" href="css/aos.css"/>
+      <!-- font awesome -->
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <!-- main css -->
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
+
+      <!-- Nav mobile -->
+      <nav class="site-mobile-menu">
+         <div class="close-wrap d-flex">
+            <a href="#" class="d-flex ml-auto js-menu-toggle">
+               <span class="close-label">Close</span>
+               <div class="close-times">
+                  <span class="bar1"></span>
+                  <span class="bar2"></span>
+               </div>
+            </a>
+         </div>
+         <div class="site-mobile-inner"></div>
+      </nav>
+      <!-- Nav mobile end -->
+
+      <!-- Main content wrap -->
+      <div class="site-wrap">
+         <!-- Main content inner -->
+         <div class="site-inner">
+
+            <!-- Main Nav -->
+            <nav class="site-nav site-nav-target">
+               <div class="container">
+                  <div class="row align-items-center justify-content-between text-left">
+                     <div class="col-3">
+                        <div class="site-logo">
+                           <a href="index.html" class="site-logo main-logo"><img src="images/logo.png" class="logo-img light-logo img-fluid" alt=""><span></span></a>
+                        </div>
+                     </div>
+                     <div class="col text-right">
+                        <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
+                              <li><a href="index.html" class="nav-link cursor-item">Home</a></li>
+                              <li><a href="about.html" class="nav-link cursor-item">About</a></li>
+                              <li><a href="training/index.html" class="nav-link cursor-item">Training</a></li>
+                              <li><a href="blog/index.html" class="nav-link cursor-item">Blog</a></li>
+                              <li><a href="contact.html" class="nav-link cursor-item">Contact</a></li>
+                           </ul>
+                           <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
+                           <li><a href="#" class="js-menu-toggle">Menu</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+
+            <!-- Main Nav end -->
+            <div class="section">
+               <div class="blog-single-inner">
+                  <div class="container">
+                     <div class="row justify-content-center">
+                        <div class="col-md-8">
+                           <div id="quote"></div>
+                           <h3 class="mb-4">Don't Share Your $HOME with Untrusted Guests</h3>
+                           <p>This year I participated in the iconic Pwn2Own competition targeting Parallels Desktop in the Virtualization category (and if you haven't seen the livestream of my 0day exploit attempt, it's <a href="https://www.youtube.com/watch?v=6FYfUv1pwAg">right here</a> in the record, around 5 hours mark into the day, enjoy). While my Pwn2Own exploit is under embargo of responsible disclosure, I wanted to share a little fun "not-a-bug" proof-of-concept for Parallels Desktop.</p>
+
+                           <h6>Not-a-bug</h6>
+
+                           <p>While searching for security issues for Pwn2Own, I noticed an odd design pecularity with my research target: Parallels Desktop shares the user's home directory on the host operating system (MacOS) as a Parallels Shared Folder to the Guest OS *by default*, as soon as Parallels Tools are installed, which is also kind of default, unless you choose to opt out and tolerate virtualization usability issues. For anyone with a bit of knowledge about Unix-based operating systems (of which MacOS is an instance), and familiar with standard security expectations for hypervisors<sup>1</sup>, such a design decision would raise an instant "WTF?!". That said, it's not my job to judge any software vendor's design decisions, let's see how it works.</p>
+
+                           <h6>Details</h6>
+
+                           <p>On all Unix-based operating systems of which MacOS is an instance, a write access to the user's home folder is essentially a "game over" from the attacker's perspective. While classic operating systems have long accepted the fact and routinely ensure privilege separation where it's due, hypervisors have to factor in their Host OS design specifics in new and unprecedented ways. </p>
+
+                           <p>The first attack vector here would be an essential script which is most commonly known as the "bash profile":</p>
+
+                           <p class="quote">When  bash  is invoked as an interactive login shell, or as a non-interac
+                           tive shell with the --login option, it first reads and  executes  commands
+                           from the file /etc/profile, if that file exists.  After reading that file,
+                           it looks for  ~/.bash_profile,  ~/.bash_login,  and  ~/.profile,  in  that
+                           order,  and reads and executes commands from the first one that exists and
+                           is readable.  The --noprofile option may be used when the shell is started
+                           to inhibit this behavior. -- MacOS Big Sur man pages for 'bash'</p>
+
+                           <p>Obviously, on Linux this provides the login shell, but what about MacOS? Nothing special here: the registered interactive shell binary is executed each time when you launch the Terminal app (or some other process does it for you invisibly). As seen in the quoted man extracts from MacOS Big Sur, interactive shells behavior on Mac is fully compliant with Unix standards with respect to profile readings.</p>
+
+                           <p>We also know that MacOS has switched from bash to zsh as a default interactive shell some time ago, which unsurprizingly, conforms to the same fashion:</p>
+
+                           <p class="quote">Commands  are  then  read  from $ZDOTDIR/.zshenv.  If the shell is a login
+                           shell, commands are read from /etc/zprofile and  then  $ZDOTDIR/.zprofile.
+                           Then,  if  the shell is interactive, commands are read from /etc/zshrc and
+                           then $ZDOTDIR/.zshrc.  Finally, if the shell is a login shell, /etc/zlogin
+                           and $ZDOTDIR/.zlogin are read. -- MacOS Big Sur man pages for 'zsh'</p>
+
+                           <p>Let's put it together: drop a malicious binary in the shared Home folder, and call it from .zprofile or whatever else interactive shell profile file. The binary will be executed on the host OS each time when the Terminal is launched. This constitutes a user-interacted RCE *plus* persistence and, in the virtualization context, a complete guest-to-host virtual machine escape. Don't forget about the .dot filename pattern to hide your malice from ls.</p>
+
+                           <p>Does it have to be user-interacted? Not necessarily. Transcending from the classics and defaults of Unix-based OS, Macs have a directory named LaunchAgents under user's home, which is essentially a startup folder. User's apps can register themselves to run on startup (or more specifically, upon the user's login) by dropping a specially formatted configuration file here, named a ".plist". More details in the <a href="https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html">Apple's documentation</a>.</p>
+
+                           <p>It is important to note that the attacker's options for user's home folder are not exhausted by interactive shell profiles and LaunchAgents. One other thing that I noticed some software processes (such as Google Chrome's ksfetch updater binary) can run directly from ~/Library/Caches, that also may be hijacked for a fully automated arbitrary code execution. The general principle here is that a write access to the user's home folder is essentially an equivalent of executing a binary under the user's permissions in a potentially uncountable number of ways. </p>
+
+                           <h6>Proof-of-concept</h6>
+                           <p>This demonstrates a full guest-to-host VM escape with persistence on Parallels Desktop 16.5.0 (both M1 and Intel), Ubuntu 20.04 guest OS with Parallels Tools installed:</p>
+
+                           <p class="code">cp mybinary /media/psf/Home/.hello
+                              chmod +x /media/psf/Home/.hello
+                              echo "~/.hello" >> /media/psf/Home/.zprofile
+                           </p>
+
+                           <p>Proof-of-concept code with a sample "malicious payload" is also mirrored on my <a href="https://github.com/badd1e/Proof-of-Concept/prl_not0day">github</a>. Note that it only includes a prebuilt payload for M1, which you need to rebuild if you want to test it on an Intel Mac.</p>
+
+                           <h6>Conclusions</h6>
+                           <p>As of today, a hypervisor is commonly assumed to enforce at least some basic security boundary and privilege separation between a virtual machine and the host OS. If a particular hypervisor product or deployment includes design points that break this assumption, a user must be explicitly warned at the moment of starting a VM, without the need to dig out for some special hidden options or documentation notices.</p> 
+
+                           <p>On the user's side, it is important to be aware of at least the most trivial ways how your system can be compromised. The easiest attack vectors are typically exploited by the most destructive types of malware. </p>
+                           
+                           <p>––<br>
+                           <sup>1</sup> and is not entirely adjusted to the security realities of modern software
+                           </p>
+                              
+                           <hr>
+                           <p class="blog-meta">Written by <a href="https://twitter.com/alisaesage">Alisa</a> on 23 April 2021.</p>
+
+                           <p class="blog-meta"><a href="https://twitter.com/zerodaytraining">Follow us on Twitter</a> and <a href="https://t.me/zerodaytraining">Telegram</a> for new blogs and training availability updates, and get in touch via email: contact@zerodayengineering.com.</p>
+                              
+                           <div class="pt-5 mb-5 categories_tags ">
+                              <p class="tags">Categories: Virtualization, Proof-of-concept, Not-a-bug</p>
+                              <div class="social float-right">
+                                 <a href="https://www.facebook.com/sharer/sharer.php?u=https://zerodayengineering.com/blog/dont-share-your-home.html&t=Don't Share Your $HOME with Untrusted Guests" class="mr-3"><i class="fa fa-facebook"></i></a>
+                                 <a href="https://twitter.com/intent/tweet?url=https://zerodayengineering.com/blog/dont-share-your-home.html&text=Don't Share Your $HOME with Untrusted Guests" class="mr-3"><i class="fa fa-twitter"></i></a>
+                                 <a href="https://plus.google.com/share?url=https://zerodayengineering.com/blog/dont-share-your-home.html" class="mr-3"><i class="fa fa-google-plus"></i></a>
+                                 <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://zerodayengineering.com/blog/dont-share-your-home.html&title=Don't Share Your $HOME with Untrusted Guests" class="mr-3"><i class="fa fa-linkedin"></i></a>
+                              </div>
+                           </div>
+                           
+                           <div class="post-single-navigation d-flex align-items-stretch">
+                              <a href="blog/introducing-nightly-training.html" class="mr-auto w-50 pr-4">
+                                 <span class="d-block cursor-item"><i class="fa fa-chevron-left mr-2"></i> Previous Post</span></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer section">
+               <div class="container">
+                  <div class="row justify-content-center">
+                     <div class="col-md-12">
+                        <div class="go-top cursor-item" id="go-to-top"><i class="fa fa-chevron-up"></i></div>
+                        <div class="hr-footer"></div>
+                        <div class="footer-site-logo"><a href="index.html" class="main-logo"><img src="images/logo.png" class="logo-img light-logo img-fluid" alt=""></a></div>
+                        <ul class="footer-site-social">
+                        </ul>
+                        <p class="site-copyright">
+                           <small>&copy; 2021 An Exponential Limited. All Rights Reserved.</small>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </footer>
+            <!-- Footer end -->
+
+            <!-- Circle Scroll -->
+            <div class="circular-text">
+               <span id="rotated">1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 •</span>
+            </div>
+
+         </div>
+         <!-- Main content inner end -->
+      </div>
+      <!-- Main content wrap end -->
+
+      <!-- Back to top button -->
+      <a id="back-to-top" href="#" class="cursor-item"><i class="fa fa-chevron-up"></i></a>
+
+      <div class="cursor"></div>
+      <div class="cursor-follower"></div>
+
+      <!-- jquery -->
+      <script src="js/query-3.4.1.min.js"></script>
+      <!-- bootstrap -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- aos -->
+      <script src="js/aos.js"></script>
+      <!-- owl.carusel js -->
+      <script src="js/owl.carousel.min.js"></script>
+      <!-- isotope js -->
+      <script src="js/isotope.pkgd.min.js"></script>
+      <!-- isotope image loader js -->
+      <script src="js/imagesloaded.pkgd.min.js"></script>
+      <!-- three -->
+      <script src="js/three.min.js"></script>
+      <!-- anime -->
+      <script src="js/anime.min.js"></script>
+      <!-- tweenmax -->
+      <script src="js/TweenMax.min.js"></script>
+      <!-- jquery.waypoints.min.js -->
+      <script src="js/jquery.waypoints.min.js"></script>
+      <!-- circletype-->
+      <script src="js/circletype.min.js"></script>
+      <!-- hover-effect -->
+      <script src="js/hover-effect.umd.js"></script>
+      <!-- gsap -->
+      <script src="js/gsap.min.js"></script>
+      <!-- ScrollMagic gsap -->
+      <script src="js/ScrollMagic.min.js"></script>
+      <script src="js/scrollmagic.animation.gsap.min.js"></script>
+      <!-- custom -->
+      <script src="js/custom.js"></script>
+   </body>
+</html>

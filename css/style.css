@@ -124,6 +124,21 @@ p {
   letter-spacing: .025em;
 }
 
+.quote {
+  margin-left: 42px;
+  color: gray;
+}
+
+.blog-meta {
+}
+
+.code {
+  margin-left: 42px;
+  white-space: pre-line;
+  font-family: monospace;
+  color: gray;
+}
+
 label {
   display: inline-block;
   margin-bottom: 0.5rem;
