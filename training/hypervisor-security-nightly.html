@@ -126,7 +126,12 @@
                                          <div id="paypal-button-container"></div>
                                        </div>
                                      </div>
-                                   <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=EUR" data-sdk-integration-source="button-factory"></script>
+                                     <div id="smart-button-container">
+                                       <div style="text-align: center;">
+                                         <div id="paypal-button-container"></div>
+                                       </div>
+                                     </div>
+                                   <script src="https://www.paypal.com/sdk/js?client-id=AX9fM4iEA0QIdnWUCZfbFuSkPu6rOjm9jiD2WSTSWy3l-sQXhwxGqWgjwMicjw1aw5GDGdAmiXtmDuni&currency=EUR" data-sdk-integration-source="button-factory"></script>
                                    <script>
                                      function initPayPalButton() {
                                        paypal.Buttons({
@@ -134,13 +139,13 @@
                                            shape: 'rect',
                                            color: 'gold',
                                            layout: 'horizontal',
-                                           label: 'buynow',
+                                           label: 'paypal',
                                            
                                          },
                                  
                                          createOrder: function(data, actions) {
                                            return actions.order.create({
-                                             purchase_units: [{"description":"Hypervisor Exploitation Nightly mini-class, 8th May 2021","amount":{"currency_code":"EUR","value":520}}]
+                                             purchase_units: [{"description":"Hypervisor Security Nightly - live mini-class","amount":{"currency_code":"EUR","value":520}}]
                                            });
                                          },
                                  
