@@ -122,6 +122,7 @@ p {
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   letter-spacing: .025em;
+  white-space: pre-line;
 }
 
 .quote {

@@ -81,37 +81,96 @@
                <div class="portfolio-single-inner">
                   <div class="container">
                      <div id="quote"></div>
-                     <h2 class="heading-portfolio-single-h2">Hypervisor Exploitation II:<br>Exploit Engineering</h2>
+                     <h2 class="heading-portfolio-single-h2">Hypervisor Security Nightly (mini-classes)</h2>
                      <div class="row justify-content-between align-items-stretch">
                         <div class="col-lg-8">
-                          <p><img src="images/portfolio/work_3_a_full.jpg" alt="Image" class="img-fluid"></p>
+                          <p><img src="images/portfolio/pwn2own2021.png" alt="Image" class="img-fluid"></p>
                         </div>
                         <div class="col-lg-4 pl-lg-5">
                            <div class="sticky">
                               <div class="row">
                                  <div class="col-md-12 mb-4">
                                     <div class="detail-v1">
-                                       <p>In development
-                                       </p>
-                                       <p>See also: <a href="training/hypervisor-exploitation-1.html">"Hypervisor Exploitation I: System Internals and Vulnerabilities"</a></p>
+                                       <p>4-hour mini-classes, deep technical, 50/50 hands-on with lectures and feedback. Offensive vulnerability research perspective. No recurrence of live events.</p>                                   
+                                       <p><a href="blog/introducing-nightly-training.html">About Nightly trainings</a></p>
+                                       <p>Note: picture from my Pwn2Own 2021 exploit attempt livestream</p>
                                     </div>
                                     <hr>
                                  </div>
                                  <div class="col-md-12 mb-4">
                                     <div class="detail-v1">
-                                       <span class="detail-label">Dates & Location</span>
-                                       <span class="detail-val">2022</span>
+                                       <span class="detail-label">Availability</span>
+                                       <span class="detail-val">Live: 8th, 15th, 29th May 2021 (online)</span>
                                     </div>
                                  </div>
-                                    <div class="col-md-12 mb-4">
+                                 <div class="col-md-12 mb-4">
+                                    <div class="detail-v1">
+                                       <span class="detail-label">Details</span>
+                                       <span class="detail-val"><a href="blog/hypervisor-security-nightly-2021.html">Topics and descriptions 2021</a>                                       
+                                       </span>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-12 mb-4">
+                                    <div class="detail-v1">
+                                       <span class="detail-label">Price</span>
+                                       <span class="detail-val">
+                                       Any live class: €520,- per person                                
+                                       <div id="smart-button-container">
+                                          <div style="text-align: center;">
+                                            <div id="paypal-button-container"></div>
+                                          </div>
+                                        </div>
+                                      <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+                                      <script>
+                                        function initPayPalButton() {
+                                          paypal.Buttons({
+                                            style: {
+                                              shape: 'rect',
+                                              color: 'gold',
+                                              layout: 'horizontal',
+                                              label: 'buynow',
+                                              
+                                            },
+                                    
+                                            createOrder: function(data, actions) {
+                                              return actions.order.create({
+                                                purchase_units: [{"description":"Hypervisor Exploitation Nightly mini-class, 8th May 2021","amount":{"currency_code":"USD","value":520}}]
+                                              });
+                                            },
+                                    
+                                            onApprove: function(data, actions) {
+                                              return actions.order.capture().then(function(details) {
+                                                alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                                              });
+                                            },
+                                    
+                                            onError: function(err) {
+                                              console.log(err);
+                                            }
+                                          }).render('#paypal-button-container');
+                                        }
+                                        initPayPalButton();
+                                      </script>
+                                       </span>
+                                    </div>
+                                 </div>
+                                 
+                                 <div class="col-md-12 mb-4">
                                     <div class="detail-v1">
                                        <span class="detail-label">Category</span>
                                        <span class="detail-val">Exploit Development, Vulnerability Research, Virtualization</span>
                                     </div>
                                  </div>
+                                 
                                  <div class="col-md-12 mb-4">
                                     <div class="detail-v1">
                                        <span class="detail-label">Share</span>
+                                       <div class="social">
+                                          <a href="https://www.facebook.com/sharer/sharer.php?u=https://zerodayengineering.com/training/hypervisor-security-nightly.html&t=Mini-classes: Hypervisor Security Nightly" class="mr-3"><i class="fa fa-facebook"></i></a>
+                                          <a href="https://twitter.com/intent/tweet?url=https://zerodayengineering.com/training/hypervisor-security-nightly.html&text=Mini-classes: Hypervisor Security Nightly" class="mr-3"><i class="fa fa-twitter"></i></a>
+                                          <a href="https://plus.google.com/share?url=https://zerodayengineering.com/training/hypervisor-security-nightly.html" class="mr-3"><i class="fa fa-google-plus"></i></a>
+                                          <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://zerodayengineering.com/training/hypervisor-security-nightly.html&title=Mini-classes: Hypervisor Security Nightly" class="mr-3"><i class="fa fa-linkedin"></i></a>
+                                       </div>
                                        </div>
                                     </div>
                                  </div>      
