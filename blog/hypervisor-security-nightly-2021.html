@@ -88,7 +88,7 @@
                            <p>Date: 8th May 2021 (Saturday), 13:00-17:00 UTC.
                            Level: beginners.</p>
                            
-                           <p class>Topics:
+                           <p>Topics:
                            * The Hypervisor Threat (meta)Model.
                            * Overview of required theoretical knowledge.
                            * First exposure to a popular hypervisor code. (Static analysis)
@@ -97,6 +97,14 @@
                            * Common classes of bugs. 
                            * Practical tips.</p>
                            
+                           <p>You will learn:
+                           * The "Big Picture" and the "Deep Picture" of hypervisor technologies.
+                           * What you need to read and the skills for attacking and securing hypervisors.
+                           * How to get started with huge code bases.
+                           * How to map some simple hypervisor attack vectors without looking at the code.
+                           * How and where you can find some simple bugs in hypervisors as a beginner.
+                           </p>
+
                            <p>For those thinking about entering the complex area of hypervisor security research, bug hunting for some bounty programs, and maybe compete at Pwn2Own in virtualisation category: this mini-training should clear the decision by exposing you to the "big picture" of what we're dealing with, introducing you to basic practical skills, and getting started with your first hypervisor vulnerability research ideas. </p>
                            
                            <p>Pre-requisites: C, basic familiarity with OS theory and appsec theory, any desktop hypervisor (for introspection lab).</p>
@@ -109,8 +117,16 @@
                            <p>Topics:
                            * Relevant theoretical background.
                            * Recap of the hypervisor threat model, and where we're at.
+                           * Protocol details (OpenSLP).
                            * Vulnerability research workflow: from patch to PoC.
                            * Setting up the environment and testing the bug.</p>
+
+                           <p>You will learn:
+                           * Bug history and technical case studies in the same attack surface across the virtualisation industry.
+                           * How to research and analyze security bugs when no writeup is available. 
+                           * How to create a proof-of-concept based on a security patch (source-code level).
+                           * How to build a VMware ESXi research platform.
+                           </p>
                            
                            <p>This bug (originally leveraged in a private competition exploit against VMware ESXi in 2018) was discussed in my "<a href="training/hypervisor-vulnerability-research.html">Hypervisor Exploitation I</a>" training since its inception. Now it's reported in cyber news to be actively exploited in the wild, and with this mini-training I hope not only to inspire professional vulnerability and malware researchers to dig into the less-popular attack surfaces of a hugely popular corporate hypervisor, but also to let system administrators, incident responders and self-taught computer security enthusiasts (yes, you are invited and I promise to be not too much intimidating) to know their threats at the byte level, and potentially learn to avoid similar attack scenarios early before the bug was weaponized by malicious parties. </p>
                            
@@ -128,6 +144,14 @@
                            * Review of previously published vulnerabilities in vmswitch. 
                            * Vulnerability analysis CVE-2019-0717.
                            * System internals of vmswitch.</p>
+
+                           <p>You will learn:
+                           * Everything that you need to know about paravirtualized devices.
+                           * How to set up an Microsoft Hyper-V research platform.
+                           * The threat model, system internals, and known bugs in one of the largest and most important attack surfaces of Hyper-V.
+                           * How to write a simple fuzzer for vmswitch.
+                           * How to analyze bugs and estimate exploitability.
+                           </p>
                            
                            <p>Microsoft Hyper-V Virtual Network Switch proved to be very popular with bug hunters for more than one good reason, which I started to discuss in my conference talk "<a href="https://alisa.sh/slides/HypervisorVulnerabilityResearch2020.pdf">Hypervisor Vulnerability Research: State of the Art in 2020</a>". In addition, this component was quickly included in my "<a href="training/hypervisor-vulnerability-research.html">Hypervisor Vulnerability Research</a>" training, and as I see my past students successfully pushing this attack vector forward, I want to inspire more vulnerability researchers to look at it. </p>
                            
