@@ -109,6 +109,10 @@ a {
   text-decoration: none !important;
 }
 
+.underline {
+  text-decoration: underline !important;
+}
+
 a:hover {
   text-decoration: none !important;
   color: #fff!important;
