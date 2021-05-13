@@ -1,0 +1,257 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <!--Meta Tags-->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content=""/>
+      <meta name="keywords" content=""/>
+      <meta name="author" content=""/>
+      <base href="../"> 
+      <!--Favicons-->
+      <link rel="shortcut icon" href="images/favicon.png">
+      <!--Page Title-->
+      <title>From Binary Patch to Proof-of-concept: a VMware ESXi vmxnet3 Case Study – Zero Day Engineering Blog</title>
+      <!-- Stylesheets -->
+      <!-- bootstrap -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Animate -->
+      <link rel="stylesheet" href="css/animate.min.css">
+      <!-- Owl carusel -->
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <!-- Aos Css-->
+      <link rel="stylesheet" href="css/aos.css"/>
+      <!-- font awesome -->
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <!-- main css -->
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
+
+      <!-- Nav mobile -->
+      <nav class="site-mobile-menu">
+         <div class="close-wrap d-flex">
+            <a href="#" class="d-flex ml-auto js-menu-toggle">
+               <span class="close-label">Close</span>
+               <div class="close-times">
+                  <span class="bar1"></span>
+                  <span class="bar2"></span>
+               </div>
+            </a>
+         </div>
+         <div class="site-mobile-inner"></div>
+      </nav>
+      <!-- Nav mobile end -->
+
+      <!-- Main content wrap -->
+      <div class="site-wrap">
+         <!-- Main content inner -->
+         <div class="site-inner">
+
+            <!-- Main Nav -->
+            <nav class="site-nav site-nav-target">
+               <div class="container">
+                  <div class="row align-items-center justify-content-between text-left">
+                     <div class="col-3">
+                        <div class="site-logo">
+                           <a href="index.html" class="site-logo main-logo"><img src="images/logo.png" class="logo-img light-logo img-fluid" alt=""><span></span></a>
+                        </div>
+                     </div>
+                     <div class="col text-right">
+                        <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
+                              <li><a href="index.html" class="nav-link cursor-item">Home</a></li>
+                              <li><a href="about.html" class="nav-link cursor-item">About</a></li>
+                              <li><a href="research/index.html" class="nav-link cursor-item">Research</a></li>
+                              <li><a href="training/index.html" class="nav-link cursor-item">Training</a></li>
+                              <li><a href="blog/index.html" class="nav-link cursor-item">Blog</a></li>
+                              <li><a href="contact.html" class="nav-link cursor-item">Contact</a></li>
+                           </ul>
+                           <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
+                           <li><a href="#" class="js-menu-toggle">Menu</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+
+            <!-- Main Nav end -->
+            <div class="section">
+               <div class="blog-single-inner">
+                  <div class="container">
+                     <div class="row justify-content-center">
+                        <div class="col-md-8">
+                           <div id="quote"></div>
+                           <h3 class="mb-4">From Binary Patch to Proof-of-concept: a VMware ESXi vmxnet3 Case Study </h3>
+
+                           <p>A couple of years ago I reverse-engineered an important critical security bug in VMware ESXi vmxnet3 virtual network adapter that was leveraged in a full guest-to-host VM escape exploit demonstrated at GeekPwn 2018 competition. I published the results in <a class="underline" href="https://twitter.com/alisaesage/status/1146059432255582211?s=20">my twitter</a> and <a class="underline" href="https://github.com/badd1e/Disclosures/tree/master/CVE-2018-6981_VMWare_ESXi">github</a>, and later <a class="underline" href="https://twitter.com/alisaesage/status/1161561150250598400?s=20">confirmed</a> it against the official bug details. This blog article is a quick wrap-up of that research project.</p>
+
+                              <h6>Background</h6>
+
+                           <p>In mid 2019 I <a class="underline" href="https://twitter.com/alisaesage/status/1142814772179566592?s=20">noticed</a> that the world's probably most popular corporate-grade hypervisor VMware ESXi (perhaps better known by its full product name VMware vSphere) is suspiciously low on known security bugs. While security issues in VMware Workstation are very common to show up in the VMware Security Advisories and at security conferences, similar issues in ESXi are significantly more rare<sup>1</sup>. In fact, based on a nearly total absense of any vulnerability research writeups or whitepapers targeting it, ESXi seemed like a forbidden territory that saw no security research scrutiny whatsoever. For an experienced security researcher situations like this look like a big red flag.</p>
+
+                           <p>After some OSINT research I found only one reputable mention of a serious (and proved exploitable) security issue in VMware ESXi: just a couple months before then, a full guest-to-host escape from a VMware ESXi virtual machine was publicly demonstrated at the Chinese Pwn2Own competition GeekPwn 2018. However, no details of the bug were available, aside from a brief non-technical mention in the VMware advisory. I decided to spare a few nights and investigate the vulnerability by myself, based on the binary security patches that were already rolled out by the vendor. </p>
+
+                           <p>The project was very curious for me, because at that moment I had no knowledge about ESXi system internals, no research platform, no debugging capabilities, and very limited understanding of virtual hardware in general. However, I had a solid basic skill of analyzing binary security patches which enables you to recover patched vulnerability details and create a proof-of-concept or exploit in situations when no technical details of bug are available. The combination of "something that you are good at", "something that you want to learn" and "something novel and intriguing" is an ideal combo that drives you to learn new things fast. So I jumped in, analyzed the patch, and created a proof of concept that I later published on my github. </p>
+
+                           <p>Meanwhile, the original vulnerability finders decided to publish a whitepaper about their exploit, that was presented at the Usenix WOOT 2019 conference. You can find the paper <a class="underline" href="https://www.usenix.org/system/files/woot19-paper_zhao.pdf">here</a>. You'll see that the bug details that they chose to disclose are quite scarce, they don't discuss the virtual device protocol or how to trigger the bug, and never published the exploit. The proof-of-concept that I published is still a unique connection between the issue and exploit development workflows.</p>
+
+                              <h6>From patch to PoC</h6>
+
+                           <p>The process of recovering vulnerability details and root cause analysis based on a binary patch is well understood, though it's somewhat underestimated in hardness. In fact, in many security patches for mainstream software products, a bug's details are simply impossible to identify, unless you know exactly what you are looking for.</p> 
+
+                           <p>For complex systems such as hypervisors the workflow is quite complex, and consists of several steps that involve completely different skills and sets of knowledge. This is the algorithm required for the bug in question:</p>
+                           <p class="list">0. Collect all the information that is available in the public scope. 
+                           This is important. Even tiny details such as class of bug (uninitialized variable in this case) may be critical for success of the project.
+
+                           1. Inspect the binary security patch. 
+                           Identify the affected subsystem and the insecurity pattern in the low-level code. Input from step (0) is critical here.
+
+                           2. Reverse-engineering (partial) of the target software/subsystem. 
+                           Goal is to understand the abstract model, input flows, and potential attack vectors. 
+
+                           3. Analyze the binary patch again. 
+                           Now with (2) you can make sense of the security issue in the high-level context of the target subsystem. (Virtual networking adapter in this case).
+
+                           4. See if you can find some external code that uses the affected subsystem, that may help you to reach it with inputs. Map the code to the abstract model of the subsystem (2) and the security issue (3). If no ready code was found, you'll have to write it yourself. 
+
+                           5. Now the goal is to figure out which exactly malformed input you need in order to trigger the bug, and how exactly (by which interface, protocol, timing) it must be supplied into the target subsystem (4).
+
+                           6. Put everything together, write some code, set up debuggers and sanitizers, test it. Now you have a PoC testcase (usually it demonstrates a crash of the target system, though in some cases the malicious effect can be observed only in debugger) which can be further developed into an exploit.</p>
+
+                           <p>The important thing about this workflow is that it uses a lot of generic "dots connection" cognitive processes, so being attentive here is just as important as being technical. If you miss just one bit of information, any of the next steps may fail. For example, for this bug the "uninitialized variable" bit turned out to be immensely helpful (if necessary) for identifying the bug in the patch relatively quickly. </p>
+
+                           <p>It may be interesting to note that I used both Diaphora and BinDiff for this workflow, the two most usable open source binary diffing tools available today. This is a common approach, as the two tools tend to produce very different output. However, none of them was able to solve the task right away, so I ended using custom in-lab heuristics to quickly pin down the culprit code.</p>
+
+                           <h6>The bug</h6>
+
+                           <p>VMware ESXi is based on a custom operating system named VMkernel. The bug in question, however, resides not in the VMkernel per se, but in the additional software layer which implements virtualized devices (which is attack surface #2 in the custom taxonomy of my <a class="underline" href="images/portfolio/hypervisor-exploitation-1-abstract-model.png">Hypervisor Threat Model</a>, greatly simplified on this picture).</p>
+
+                           <p>VMXNET3 is a synthetic virtual PCI device (a virtual network adapter) model developed by VMware for use in their virtualisation products. Technically it's an emulated device, though no real prototype of it exists in the physical world, it still uses emulated hardware I/O and emulated PCI bus and thus cannot be considered as a paravirtualized device (which is how VMware publications position it). In VMware ESXi the VMXNET3 adapter is default, while in Workstation it can be enabled with undocumented configuration properties. The code overlaps, which makes it possible to analyze the issue based on Workstation binaries. </p>
+
+                           <p>VMXNET3 uses a relatively simple hardware I/O protocol that involves MMIO to two PCI BARs and some DMA, which is similar to common I/O protocols of real networking hardware. The security issue lays in the fact that VMware failed to properly handle invalid DMA address access emulation in the virtual device code, a variable was left uninitialized that could further lead to memory corruption<sup>2</sup> due to internal code logic.</p>
+
+                           <p>Triggering the bug consists of several distinct steps:</p>
+
+                           <p class="list">0. Put the device in the operational state by completing initializations and set up. 
+                           In my proof-of-concept this step is done by the original VMware vmxnet3 kernel mode driver (included in the Linux kernel)
+
+                           1. Supply a malformed DMA address of the shared memory region to one of the registers of the virtual device model. It would be saved in internal state.
+
+                           2. Send a special device command according to the device protocol via one of the PCI MMIO BARs, that would execute the code branch that tries to use the saved DMA address. </p>
+
+                           <p>This leads to an access violation in most tests. I did not pursue further development or weaponizaton of this proof-of-concept into a full exploit. </p>
+
+                           <p>The proof-of-concept code is <a class="underline" href="https://github.com/badd1e/Disclosures/tree/master/CVE-2018-6981_VMWare_ESXi">here</a>. Apply the patch against vmxnet3 driver and build it. </p>
+
+                           <p>An astute reader of technical vulnerability blogs may notice a curious similarity of this security issue to another critical bug that affected VMware Workstation. </p>
+
+
+                           <h6>Related opportunities</h6>
+
+                           <p>I am discussing this vulnerability in complete details and technical context in the training "<a class="underline" href="training/hypervisor-vulnerability-research.html">Hypervisor Vulnerability Research</a>". A full set of exercises is included, that follows my workflow inspecting the bug, from patch to proof-of-concept. </p>
+
+                           <p>If you are interested in VMware ESXi specifically, the mini-class "<a class="underline" href="blog/hypervisor-security-nightly-2021.html">Deep Dive ESXi OpenSLP heap overflow (CVE-2019-5544)</a>" may also be worthy of consideration.</p>
+
+                           <p>VMware ESXi is one of my research interests. If you have an idea of a research or collab project, you can reach me at: alisa@zerodayengineering.com.</p>
+
+                           <p>––<br>
+                           <sup>1</sup> If you take a closer look at VMware security advisories, you'll notice that some vulnerabilities in VMware workstation also affect ESXi. However, in most of these advisories, the bug either affects a non-default configuration (Workstation and ESXi have different defaults), or an unexploitable issue such as a DoS. 
+
+                           <sup>2</sup> Uninitialized variable bugs are not usually exploitable for an RCE, and is primarily useful for infoleaks, though in some rare cases an uninitialized variable issue can lead to a memory corruption. 
+                           </p>
+                              
+                           <hr>
+                           <p class="blog-meta">Written by <a href="https://twitter.com/alisaesage">Alisa</a> on 13th May 2021.</p>
+                              
+                           <div class="pt-5 mb-5 categories_tags ">
+                              <p class="categories">Categories: Virtualization, Vulnerability Analysis, Howto</p>
+                              <p class="tags">Tags: VMware ESXi, patch analysis, binary diffing, proof-of-concept</p>
+                              <div class="social float-right">
+                                 <a href="https://www.facebook.com/sharer/sharer.php?u=https://zerodayengineering.com/research/vmware-esxi-vmxnet3-from-patch-to-poc.html&t=Don't Share Your $HOME with Untrusted Guests" class="mr-3"><i class="fa fa-facebook"></i></a>
+                                 <a href="https://twitter.com/intent/tweet?url=https://zerodayengineering.com/research/vmware-esxi-vmxnet3-from-patch-to-poc.html&text=Don't Share Your $HOME with Untrusted Guests" class="mr-3"><i class="fa fa-twitter"></i></a>
+                                 <a href="https://plus.google.com/share?url=https://zerodayengineering.com/research/vmware-esxi-vmxnet3-from-patch-to-poc.html" class="mr-3"><i class="fa fa-google-plus"></i></a>
+                                 <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://zerodayengineering.com/research/vmware-esxi-vmxnet3-from-patch-to-poc.html&title=Don't Share Your $HOME with Untrusted Guests" class="mr-3"><i class="fa fa-linkedin"></i></a>
+                              </div>
+                           </div>
+                           
+                           <div class="post-single-navigation d-flex align-items-stretch">
+                              <a href="research/dont-share-your-home.html" class="mr-auto w-50 pr-4">
+                                 <span class="d-block cursor-item"><i class="fa fa-chevron-left mr-2"></i> Previous Post</span></a>
+                              <!-- <a href="#" class="ml-auto w-50 text-right pl-4">
+                                 <span class="d-block cursor-item">Next Post <i class="fa fa-chevron-right ml-2"></i></span></a> -->
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer section">
+               <div class="container">
+                  <div class="row justify-content-center">
+                     <div class="col-md-12">
+                        <div class="go-top cursor-item" id="go-to-top"><i class="fa fa-chevron-up"></i></div>
+                        <div class="hr-footer"></div>
+                        <div class="footer-site-logo"><a href="index.html" class="main-logo"><img src="images/logo.png" class="logo-img light-logo img-fluid" alt=""></a></div>
+                        <ul class="footer-site-social">
+                        </ul>
+                        <p class="site-copyright">
+                           <small>&copy; 2021 An Exponential Limited. All Rights Reserved.</small>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </footer>
+            <!-- Footer end -->
+
+            <!-- Circle Scroll -->
+            <div class="circular-text">
+               <span id="rotated">1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 • 0 • 1 •</span>
+            </div>
+
+         </div>
+         <!-- Main content inner end -->
+      </div>
+      <!-- Main content wrap end -->
+
+      <!-- Back to top button -->
+      <a id="back-to-top" href="#" class="cursor-item"><i class="fa fa-chevron-up"></i></a>
+
+      <div class="cursor"></div>
+      <div class="cursor-follower"></div>
+
+      <!-- jquery -->
+      <script src="js/query-3.4.1.min.js"></script>
+      <!-- bootstrap -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- aos -->
+      <script src="js/aos.js"></script>
+      <!-- owl.carusel js -->
+      <script src="js/owl.carousel.min.js"></script>
+      <!-- isotope js -->
+      <script src="js/isotope.pkgd.min.js"></script>
+      <!-- isotope image loader js -->
+      <script src="js/imagesloaded.pkgd.min.js"></script>
+      <!-- three -->
+      <script src="js/three.min.js"></script>
+      <!-- anime -->
+      <script src="js/anime.min.js"></script>
+      <!-- tweenmax -->
+      <script src="js/TweenMax.min.js"></script>
+      <!-- jquery.waypoints.min.js -->
+      <script src="js/jquery.waypoints.min.js"></script>
+      <!-- circletype-->
+      <script src="js/circletype.min.js"></script>
+      <!-- hover-effect -->
+      <script src="js/hover-effect.umd.js"></script>
+      <!-- gsap -->
+      <script src="js/gsap.min.js"></script>
+      <!-- ScrollMagic gsap -->
+      <script src="js/ScrollMagic.min.js"></script>
+      <script src="js/scrollmagic.animation.gsap.min.js"></script>
+      <!-- custom -->
+      <script src="js/custom.js"></script>
+   </body>
+</html>

@@ -130,8 +130,12 @@ p {
 }
 
 .quote {
-  margin-left: 42px;
+  margin-left: 29px;
   color: gray;
+}
+
+.list {
+  margin-left: 29px;
 }
 
 .blog-meta {
@@ -165,6 +169,16 @@ label {
   }
 }
 
+ol {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-weight: 300;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: .025em;
+  white-space: pre-line;
+}
 
 /*======================
       3.HELPER
@@ -2351,6 +2365,10 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 }
 
 .tags {
+  display: inline-block;
+}
+
+.categories {
   display: inline-block;
 }
 
