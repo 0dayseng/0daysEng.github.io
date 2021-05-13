@@ -94,7 +94,7 @@
 
                            <p>The project was very curious for me, because at that moment I had no knowledge about ESXi system internals, no research platform, no debugging capabilities, and very limited understanding of virtual hardware in general. However, I had a solid basic skill of analyzing binary security patches which enables you to recover patched vulnerability details and create a proof-of-concept or exploit in situations when no technical details of bug are available. The combination of "something that you are good at", "something that you want to learn" and "something novel and intriguing" is an ideal combo that drives you to learn new things fast. So I jumped in, analyzed the patch, and created a proof of concept that I later published on my github. </p>
 
-                           <p>Meanwhile, the original vulnerability finder and his team decided to publish a whitepaper about their exploit, that was presented at the Usenix WOOT 2019 conference. You can find the paper <a class="underline" href="https://www.usenix.org/system/files/woot19-paper_zhao.pdf">here</a>. You'll see that the bug details that they chose to disclose are quite scarce, they don't discuss the virtual device protocol or how to trigger the bug, and never published the exploit. The proof-of-concept that I published is still a unique connection between the issue and exploit development workflows.</p>
+                           <p>Meanwhile, the original vulnerability finder and his team decided to publish a whitepaper about their exploit, that was presented at the Usenix WOOT 2019 conference. You can find the paper <a class="underline" href="https://www.usenix.org/system/files/woot19-paper_zhao.pdf">here</a>. You'll see that the bug details that they chose to disclose are quite scarce, they don't discuss the virtual device protocol or how to trigger the bug, and never published the exploit. The proof-of-concept that I published remains a unique connection between the issue and exploit development workflows.</p>
 
                               <h6>From patch to PoC</h6>
 
@@ -111,15 +111,15 @@
                            Goal is to understand the abstract model, input flows, and potential attack vectors. 
 
                            3. Analyze the binary patch again. 
-                           Now with (2) you can make sense of the security issue in the high-level context of the target subsystem. (Virtual networking adapter in this case).
+                           Now with (2) you can make sense of the security issue in the high-level context of the target subsystem (Virtual networking adapter in this case). For example, get a general idea which device commands would potentially trigger the vulnerable code branch from inside the guest OS. 
 
-                           4. See if you can find some external code that uses the affected subsystem, that may help you to reach it with inputs. Map the code to the abstract model of the subsystem (2) and the security issue (3). If no ready code was found, you'll have to write it yourself. 
+                           4. See if you can find some external code that uses the affected subsystem, that may help you to reach the vulnerable code with inputs. Map the code to the abstract model of the subsystem (2) and the security issue (3). If such code exists, it can serve as the base for rapid prototyping of the PoC or as a testing harness. If no ready code was found, you'll have to write it yourself. 
 
                            5. Now the goal is to figure out which exactly malformed input you need in order to trigger the bug, and how exactly (by which interface, protocol, timing) it must be supplied into the target subsystem (4).
 
                            6. Put everything together, write some code, set up debuggers and sanitizers, test it. Now you have a PoC testcase (usually it demonstrates a crash of the target system, though in some cases the malicious effect can be observed only in debugger) which can be further developed into an exploit.</p>
 
-                           <p>The important thing about this workflow is that it uses a lot of generic "dots connection" cognitive processes, so being attentive here is just as important as being technical. If you miss just one bit of information, any of the next steps may fail. For example, for this bug the "uninitialized variable" bit turned out to be immensely helpful (if necessary) for identifying the bug in the patch relatively quickly. </p>
+                           <p>The important thing about this workflow is that it uses a lot of generic "connecting the dots" cognitive processes, so being attentive here is just as important as being technical. If you miss just one bit of information, any of the next steps may fail. For example, for this bug the "uninitialized variable" bit turned out to be immensely helpful (if necessary) for identifying the bug in the patch relatively quickly. </p>
 
                            <p>It may be interesting to note that I used both Diaphora and BinDiff for this workflow, the two most usable open source binary diffing tools available today. This is a common approach, as the two tools tend to produce very different output. However, none of them was able to solve the task right away, so I ended using custom in-lab heuristics to quickly pin down the culprit code.</p>
 
