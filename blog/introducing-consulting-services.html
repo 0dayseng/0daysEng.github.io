@@ -12,7 +12,7 @@
       <!--Favicons-->
       <link rel="shortcut icon" href="images/favicon.png">
       <!--Page Title-->
-      <title>New Training: "Reverse Engineering Parallels Desktop for Vulnerability Research" - Zero Day Engineering Blog</title>
+      <title>Introducing Zero Day Engineering Consulting Services - Zero Day Engineering Blog</title>
       <!-- Stylesheets -->
       <!-- bootstrap -->
       <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -82,72 +82,44 @@
                      <div class="row justify-content-center">
                         <div class="col-md-8">
                            <div id="quote"></div>
-                           <h3 class="mb-4">New Training: "Reverse Engineering Parallels Desktop for Vulnerability Research"</h3>
+                           <h3 class="mb-4">Introducing Zero Day Engineering Consulting Services</h3>
+                           <p>I never dreamt of a consulting career. Quite the opposite, I'd scoff at it. In my perception, a consultant was  a kind of extremely boring middle-aged white collar dude making a living by solving nonexistent problems with fake expertise (sorry, guys!). That's a major anti-hero role for someone as passionate about one's work as myself, so even as I gained expertise and learned to solve arbitrarily complex technical challenges, the idea of technical consulting never touched my mind.</p>
+                           
+                           <p>It all has changed when I started receiving very interesting and advanced technical questions from extremely serious technical professionals. Think of top 5 your favorite technological companies, that's the kind of specialist that came for advice with long deep technical emails describing the nature of the challenge they're facing. As I answered their questions (and I have to admit that was a sort of relieving experience, as true knowledge sharing is not really common in this industry, in which everybody considers everybody else as a potential malicious adversary, and a definite cut-throat competitor), I was surprized to learn a few things not just technical, but also personal.</p>
+                           
+                           <p>First: somehow I was able to accurately see the solution, even if I never touched the subject in practice. It turns out, as I later reflected, that at some level of experience your theoretical modeling capability becomes accurate enough to transcend your immediate practical specialization. So people asked me some crazy questions about low-level intricacies of writing their own OS based on a proprietary hypervisor, and I instantly knew the answer by way of "connecting the dots" (MANY dots!) from my hands-on technical research experience with deep-systematical insights about how systems work in general, collected over two decades of multi-specialized low-level hacking. That was a surprize.</p>
+                           
+                           <p>Second and most importantly: I felt self-realized, and completely at home. As an engineer, there is only so much information which is required to solve a specific technical challenge at hand; as a highly experienced multi-specialized engineer, the "only so much" part is a tiny fraction of your knowledge, so most of it remains unused and feels like a burden. You can write books, or read lectures, or shift to management, or hire a team that would put your knowledge to work and scale it; or you can optimize its applications by solving technical problems theoretically for those who are in a good position to implement it in practice. Maybe all of that? So I thought, why not.</p>
+                           
+                           <p>This is how the idea of Zero Day Engineering consulting services was born, and with this blog I make it officially available. </p>
+                           
+                           <p>Subject-wise, your consulting offer may be anything within the scope of this project (reverse-engineering, vulnerability research, exploit development, hypervisors or any other <a class="underline" href="https://github.com/badd1e/Disclosures">software system internals most of which I am familiar with</a>). If you have a challenge that your team can't solve for some reason (and I mean "can't" as in no capability, vs. don't want to do it because it's too boring or routine), that would be a perfect thing for me. Cutting edge technical challenges that haven't seen enough public info or tools to solve trivially is always my favorite type of research, and so is advanced exploit development for non-trivial vulns. </p>
+                           
+                           <p>Important note: consulting will never be my main job, just as trainings and bug bounty hunting never were - all of those I consider as late hour treats, that I may like to do for fun or a public service. In practice it means that I would be extremely discrete with what I accept, and choose only those opportinities that value and respect my work, time and knowledge.</p>
+                           
+                           <p>Did I mention that those people to whose emails I wrote detailed answers never bothered to bounce even a "thank you" in return? So, neither should you bother me asking to give away my work, time and knowledge for free.</p>
+                           
+                           <p>Booking and further details are available by email: <a class="underline" href="mailto:contact@zerodayengineering.com">contact@zerodayengineering.com</a>.</p>
 
-                           <p>This 2-day intermediate level training will introduce students to the system internals of a widely dominant desktop virtualisation product for MacOS, Parallels Desktop. </p>
-                           
-                           <p>In complex systems such as hypervisors, knowledge of system internals is an essential prerequisite for effective vulnerability discovery, be it by static analysis or fuzzing. If you don't know your target's threat model and how it maps to the actual implementation low-level details, your work would be constrained to publicly known attack vectors for bug hunting, which is rarely a good idea.</p>
-                           
-                           <p>Much of the content in this training is based on the original research that I did for Pwn2Own 2021. For those who attended the "<a class="underline" href="training/hypervisor-vulnerability-research.html">Hypervisor Vulnerability Research</a>" training, everything would be very familiar and easily falling into place, as we'll follow essentially the same theoretical models (the hypervisor threat model, subsystems, attack vectors, as well as the general structure of the training...) and the same pedagogical approach. For those who didn't, it's up to you to prep yourself, as we will not have time to explore general basics (aside from the first 2-hour block dedicated for that purpose) in the two days of this specialized training.</p>
-                           
-                           <p>The training is split in eight 1.5-2 hour blocks, each one focused on one specific topic and complete with an exercise or a lab. </p>
-                           
-                           <p>Topics: </p>
-                           <p class="list">1. The Big Picture and the Hypervisor Threat Model.
-                           A brief recap of the general and technical hypervisor theory, attack surfaces and vectors.
-                           2. Mapping Parallels Desktop to the Hypervisor Threat Model. 
-                           Implementation details as it pertains to specific subsystems and attack vectors that we know theoretically.
-                           3. Parallels Tools.
-                           Guest OS tools/additions is always a gateway to many interesting hypervisor subsystems. 
-                           4. RE platform set up.
-                           Symbolizing the unsymbolized, where to get started, key anchor points in the binary, and so on.
-                           5. Subsystem: Guest Services. 
-                           Deep dive into the subsystem which provides shared capabilities with the host and other non-essential but handy functionality. 
-                           6. Subsystem: Virtual Hardware.
-                           As expected, Parallels uses a lot of emulated peripheral devices which represent a timeless attack surface in virtualisation providers. 
-                           7. Subsystem: Interfaces. 
-                           The hypercall interface, the Toolgate (low level part of it), and other technical glue which puts together the guest OS, the host OS, and the Hypervisor. 
-                           8. Subsystem: VMM.
-                           CPU & MMU virtualization.</p>
-                           
-                           <p>In each block of Day 2 (blocks 4-8) I will put it in the broad perspective of the industry: how this subsystem is typically implemented in other hypervisors, common security issues and case studies. </p>
-                           
-                           <p>Note that this training is primarily focused on reverse-engineering and system internals without much emphasize on fuzzing or static analysis, though we will be discussing threat models and examples of security issues. </p>
-                           
-                           <p>Essential prerequisites:</p>
-                           <p class="list">* C-lang
-                           * x86_64 assembly at reading level 
-                           * Python  
-                           * Linux
-                           * IDA </p>
-                           
-                           <p>Recommended prerequisites: </p>
-                           <p class="list">* "<a class="underline" href="training/hypervisor-vulnerability-research.html">Hypervisor Vulnerability Research</a>" training, or an equivalent theoretical foundation.
-                           * Some background in binary vulnerability research.</p>
-                           
-                           <p>As I mentioned above, this training will follow the general structure and theoretical models of the "Hypervisor Vulnerability Research" training, so you may want to check out the <a class="underline" href="training/details/hypervisor-vulnerability-research.pdf">details</a> of the latter.</p>
-                           
-                           <p>Training dates and booking will be announced soon. </p>
+                           <p class="blog-meta"><a class="underline" href="https://twitter.com/zerodaytraining">Follow us on Twitter</a> for new blogs and training updates.</p>
 
-                           <p class="blog-meta"><a href="https://twitter.com/zerodaytraining">Follow us on Twitter</a> for new blogs and training updates.</p>
-
-                           <p>Written by <a href="about.html">Alisa</a> on 21st May 2021.</p>
+                           <p>Written by <a href="about.html">Alisa</a> on 1st June 2021.</p>
 
                            <div class="pt-5 mb-5 categories_tags ">
-                              <p class="tags">Categories: Products, Training, Virtualization</p>
+                              <p class="tags">Categories: Products, Consulting</p>
                               <div class="social float-right">
-                                 <a href="https://www.facebook.com/sharer/sharer.php?u=https://zerodayengineering.com/blog/new-training-parallels-desktop-internals.html&t=New Training: Reverse Engineering Parallels Desktop for Vulnerability Research" class="mr-3"><i class="fa fa-facebook"></i></a>
-                                 <a href="https://twitter.com/intent/tweet?url=https://zerodayengineering.com/blog/new-training-parallels-desktop-internals.html&text=New Training: Reverse Engineering Parallels Desktop for Vulnerability Research%20(via%20@zerodaytraining)" class="mr-3"><i class="fa fa-twitter"></i></a>
-                                 <a href="https://plus.google.com/share?url=https://zerodayengineering.com/blog/new-training-parallels-desktop-internals.html" class="mr-3"><i class="fa fa-google-plus"></i></a>
-                                 <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://zerodayengineering.com/blog/new-training-parallels-desktop-internals.html&title=New Training: Reverse Engineering Parallels Desktop for Vulnerability Research%20" class="mr-3"><i class="fa fa-linkedin"></i></a>
+                                 <a href="https://www.facebook.com/sharer/sharer.php?u=https://zerodayengineering.com/blog/introducing-consulting-services.html&t=Introducing Zero Day Engineering Consulting Services" class="mr-3"><i class="fa fa-facebook"></i></a>
+                                 <a href="https://twitter.com/intent/tweet?url=https://zerodayengineering.com/blog/introducing-consulting-services.html&text=Introducing Zero Day Engineering Consulting Services%20(via%20@zerodaytraining)" class="mr-3"><i class="fa fa-twitter"></i></a>
+                                 <a href="https://plus.google.com/share?url=https://zerodayengineering.com/blog/introducing-consulting-services.html" class="mr-3"><i class="fa fa-google-plus"></i></a>
+                                 <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://zerodayengineering.com/blog/introducing-consulting-services.html&title=Introducing Zero Day Engineering Consulting Services" class="mr-3"><i class="fa fa-linkedin"></i></a>
                               </div>
                            </div>
                            
                            <div class="post-single-navigation d-flex align-items-stretch">
-                              <a href="blog/hypervisor-security-nightly-2021.html" class="mr-auto w-50 pr-4">
+                              <a href="blog/new-training-parallels-desktop-internals.html" class="mr-auto w-50 pr-4">
                                  <span class="d-block cursor-item"><i class="fa fa-chevron-left mr-2"></i> Previous Post</span></a>
-                              <a href="blog/introducing-consulting-services.html" class="ml-auto w-50 text-right pl-4">
-                                 <span class="d-block cursor-item">Next Post <i class="fa fa-chevron-right ml-2"></i></span></a>
+                              <!-- <a href="#" class="ml-auto w-50 text-right pl-4">
+                                 <span class="d-block cursor-item">Next Post <i class="fa fa-chevron-right ml-2"></i></span></a> -->
                            </div>
                         </div>
                      </div>
