@@ -148,6 +148,10 @@ p {
   color: gray;
 }
 
+.date {
+  font-weight: 700; 
+}
+
 table, th, td {
   font-family: "Poppins", sans-serif;
   color: #fff;

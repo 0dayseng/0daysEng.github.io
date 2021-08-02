@@ -62,6 +62,8 @@
                         <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
                               <li><a href="index.html" class="nav-link cursor-item">Home</a></li>
                               <li><a href="about.html" class="nav-link cursor-item">About</a></li>
+                              <li><a href="research/index.html" class="nav-link cursor-item">Research</a></li>
+                              <li><a href="projects/index.html" class="nav-link cursor-item">Projects</a></li>
                               <li><a href="training/index.html" class="nav-link cursor-item">Training</a></li>
                               <li><a href="blog/index.html" class="nav-link cursor-item">Blog</a></li>
                               <li><a href="contact.html" class="nav-link cursor-item">Contact</a></li>
@@ -82,6 +84,7 @@
                         <div class="col-md-8">
                            <div id="quote"></div>
                            <h3 class="mb-4">Microsoft Hyper-V Virtual Network Switch VmsMpCommonPvtSetRequestCommon Out of Bounds Read</h3>
+                           <p class="date">February 15th, 2021 – Alisa Esage</p>
 
                            <p>Hyper-V relies on a component named Virtual Network Switch to provide various networking services to virtual machines. Virtual Network Switch (vmswitch.sys) is an RNDIS-compliant virtual device that lives in the kernel of the root partition. It is directly exposed to Generation 2 VMs as a paravirtualized virtual ethernet controller, and in Generation 1 VMs it is utilized indirectly by serving as a backend for the emulated DEC ethernet controller. In all cases, vmswitch is the bigbone behind everything networking in a Hyper-V cloud, from providing internet connectivity and virtual LAN to VMs, to bridging all that into physical ethernet adapters on the host. </p>
 
@@ -136,9 +139,7 @@
                            <p>CVE ID: CVE-2019-0717<br>
                            <a href="https://github.com/badd1e/Disclosures/blob/master/CVE-2019-0717_Hyper-V/PoC_CVE-2019-0717.c">Proof-of-concept testcase</a><br>
                            Vulnerability discovery: Alisa Esage, Zero Day Engineering</p>
-   
-                           <p>Written by <a href="https://twitter.com/alisaesage">Alisa</a> on 15 February 2021, updated on 19 March 2021 (cutified the code).</p>
-                                                      
+                                                         
                            <div class="pt-5 mb-5 categories_tags ">
                               <p class="tags">Categories: Vulnerability Research, Virtualization</p>
                               <div class="social float-right">

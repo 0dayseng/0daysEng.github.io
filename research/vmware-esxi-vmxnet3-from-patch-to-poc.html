@@ -63,6 +63,7 @@
                               <li><a href="index.html" class="nav-link cursor-item">Home</a></li>
                               <li><a href="about.html" class="nav-link cursor-item">About</a></li>
                               <li><a href="research/index.html" class="nav-link cursor-item">Research</a></li>
+                              <li><a href="projects/index.html" class="nav-link cursor-item">Projects</a></li>
                               <li><a href="training/index.html" class="nav-link cursor-item">Training</a></li>
                               <li><a href="blog/index.html" class="nav-link cursor-item">Blog</a></li>
                               <li><a href="contact.html" class="nav-link cursor-item">Contact</a></li>
@@ -83,12 +84,13 @@
                         <div class="col-md-8">
                            <div id="quote"></div>
                            <h3 class="mb-4">From Binary Patch to Proof-of-concept: a VMware ESXi vmxnet3 Case Study </h3>
+                           <p class="date">May 13th, 2021 – Alisa Esage</p>
 
                            <p>A couple of years ago I reverse-engineered an important critical security bug in VMware ESXi vmxnet3 virtual network adapter (CVE-2018-6981) that was leveraged in a full guest-to-host VM escape exploit demonstrated at GeekPwn 2018 competition. I published the results in <a class="underline" href="https://twitter.com/alisaesage/status/1146059432255582211?s=20">my twitter</a> and <a class="underline" href="https://github.com/badd1e/Disclosures/tree/master/CVE-2018-6981_VMWare_ESXi">github</a>, and (since there was no way to know if I identified the right bug) later <a class="underline" href="https://twitter.com/alisaesage/status/1161561150250598400?s=20">confirmed</a> it against the official bug details. This blog article is a quick wrap-up of that research project.</p>
 
                               <h6>Background</h6>
 
-                           <p>In mid 2019 I <a class="underline" href="https://twitter.com/alisaesage/status/1142814772179566592?s=20">noticed</a> that the world's probably most popular corporate-grade hypervisor VMware ESXi (perhaps better known by its full product name VMware vSphere) is suspiciously low on known security bugs. While security issues in VMware Workstation are very common to show up in the VMware Security Advisories and at security conferences, similar issues in ESXi are significantly more rare<sup>1</sup>. In fact, based on a nearly total absense of any vulnerability research writeups or whitepapers targeting it, ESXi seemed like a forbidden territory that saw no security research scrutiny whatsoever. For an experienced security researcher situations like this look like a big red flag.</p>
+                           <p>In mid 2019 I <a class="underline" href="https://twitter.com/alisaesage/status/1142814772179566592?s=20">noticed</a> that the world's probably most popular corporate-grade hypervisor VMware ESXi (perhaps better known by the full product name VMware vSphere, or simply as "VMware hypervisor") is suspiciously low on known security bugs. While security issues in VMware Workstation are very common to show up in the VMware Security Advisories and at security conferences, similar issues in ESXi are significantly more rare<sup>1</sup>. In fact, based on a nearly total absense of any vulnerability research writeups or whitepapers targeting it, ESXi seemed like a forbidden territory that saw no security research scrutiny whatsoever. For an experienced security researcher situations like this look like a big red flag.</p>
 
                            <p>After some OSINT research I found only one reputable mention of a serious (and proved exploitable) security issue in VMware ESXi: just a couple months before then, a full guest-to-host escape (zero day exploit) from a VMware ESXi virtual machine was publicly demonstrated at the Chinese Pwn2Own competition GeekPwn 2018. However, no details of the bug were available, aside from a brief non-technical mention in the <a class="underline" href="https://www.vmware.com/security/advisories/VMSA-2018-0027.html">VMware security advisory</a> crediting Zhangyanyu of Chaitin Tech. I decided to spare a few nights and investigate the vulnerability by myself, based on the binary security patches that were already rolled out by the vendor. </p>
 
@@ -167,10 +169,7 @@
 
                            <sup>2</sup> Uninitialized variable bugs are not usually exploitable for an RCE, and is primarily useful for infoleaks, though in some rare cases an uninitialized variable issue can lead to a memory corruption. 
                            </p>
-                              
-                           <hr>
-                           <p class="blog-meta">Written by <a href="https://twitter.com/alisaesage">Alisa</a> on 13th May 2021.</p>
-                              
+                                                            
                            <div class="pt-5 mb-5 categories_tags ">
                               <p class="categories">Categories: Virtualization, Vulnerability Research, Howto</p>
                               <p class="tags">Tags: VMware ESXi, patch analysis, binary diffing, proof-of-concept</p>
