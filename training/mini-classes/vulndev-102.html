@@ -1,0 +1,293 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <!--Meta Tags-->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content=""/>
+      <meta name="keywords" content=""/>
+      <meta name="author" content=""/>
+      <base href="../../"> 
+      <!--Favicons-->
+      <link rel="shortcut icon" href="images/favicon.png">
+      <!--Page Title-->
+      <title>Mini-classes: VULNDEV 102 - Zero Day Engineering Training</title>
+      <!-- Stylesheets -->
+      <!-- bootstrap -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Animate -->
+      <link rel="stylesheet" href="css/animate.min.css">
+      <!-- Owl carusel -->
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <!-- Aos Css-->
+      <link rel="stylesheet" href="css/aos.css"/>
+      <!-- font awesome -->
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <!-- main css -->
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
+      
+
+      <!-- Nav mobile -->
+      <nav class="site-mobile-menu">
+         <div class="close-wrap d-flex">
+            <a href="#" class="d-flex ml-auto js-menu-toggle">
+               <span class="close-label">Close</span>
+               <div class="close-times">
+                  <span class="bar1"></span>
+                  <span class="bar2"></span>
+               </div>
+            </a>
+         </div>
+         <div class="site-mobile-inner"></div>
+      </nav>
+      <!-- Nav mobile end -->
+
+      <!-- Main content wrap -->
+      <div class="site-wrap">
+         <!-- Main content inner -->
+         <div class="site-inner">
+
+            <!-- Main Nav -->
+            <nav class="site-nav site-nav-target">
+               <div class="container">
+                  <div class="row align-items-center justify-content-between text-left">
+                     <div class="col-3">
+                        <div class="site-logo">
+                           <a href="index.html" class="site-logo main-logo"><img src="images/logo.png" class="logo-img light-logo img-fluid" alt=""><span></span></a>
+                        </div>
+                     </div>
+                     <div class="col text-right">
+                        <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
+                              <li><a href="index.html" class="nav-link cursor-item">Home</a></li>
+                              <li><a href="about.html" class="nav-link cursor-item">About</a></li>
+                              <li><a href="research/index.html" class="nav-link cursor-item">Research</a></li>
+                              <li><a href="projects/index.html" class="nav-link cursor-item">Projects</a></li>
+                              <li><a href="training/index.html" class="nav-link cursor-item">Training</a></li>
+                              <li><a href="blog/index.html" class="nav-link cursor-item">Blog</a></li>
+                              <li><a href="contact.html" class="nav-link cursor-item">Contact</a></li>
+                           </ul>
+                           <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
+                           <li><a href="#" class="js-menu-toggle">Menu</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+
+            <!-- Main Nav end -->
+            <div class="section">
+               <div class="blog-single-inner">
+                  <div class="container">
+                     <div class="row justify-content-center">
+                        <div class="col-md-8">
+                           <div id="quote"></div>
+                           <h3 class="mb-4">Mini-classes: VULNDEV 102</h3>
+                           <p>This series of mini-classes is specialized on essential and universal topics of vulnerability research, useful for both beginners and advanced researchers regardless of the target. We'll skip the "101" trivial basics and jump straight to emerging models, tactics and tools that can make a huge difference in your bughunting progress. In addition, we will play with certain classical and proven techniques that usually become available with many years of experience in reverse engineering and vulnerability research.</p>
+                           
+                           <p>All our mini-classes are practical. Interleaved with solid theoretical studies to get a strong grasp of the topic, we dig into the code, build things, and play with tools, as much as time allows.</p>
+                           
+                           <p>Each mini-class is essentially a "howto" on one specific topic, taught from the perspective of a highly experienced hacker, pwner and reverse engineer. Coming out of the class you are expected to easily apply the acquired skill in your specialized workflow with a lot of fun and profit. </p>
+                           
+                           <p>Each class is 4 hours, with 25-30% of hands on exercises or labs. </p>
+                        
+                           
+                           <a name="fuzzing"><h6>Mini-class: Hacking open source fuzzers for smarter bughunting</h6></a>
+                           <p>Instructor: Alisa Esage.
+                           On-demand: <font style="background-color:blue">recording available</font>
+                           Level: beginners to advanced </p>
+
+                           <p>Featuring afl, WinAFL, libfuzzer, and everything else that you know and love, but was afraid to apply to something that they can't support out of the box. We'll take a look at the code, how other researchers extend public fuzzers for custom purposes and non-trivial fuzzing, and set up basic practical skills for that.</p>
+                           
+                           <p>Topics: 
+                           * Anatomy of a fuzzer. 
+                           * Motivation. When an "off the shelf" fuzzer is not enough?
+                           * Anti-motivation. When your favorite fuzzer is a bad take for your goal?
+                           * Basic theory of modern evolutionary fuzzing with code coverage guidance. 
+                           * Architecture and implementation of the most successful modern fuzzers.
+                           * Hacking on public fuzzers: case studies. Architecture and implementations of successful fuzzer mods. 
+                           * Theory and practice of code coverage. 
+                           * Common fuzzing instrumentation explained, and how to modify it for your research purposes. 
+                           * Common mutation algorithms and open questions in research.
+                           * Review of successful academic and community research projects based on modified open source fuzzers. </p>
+                           
+                           <p>You will learn: 
+                           * How to choose the right fuzzer for your goals.
+                           * When do you modify a fuzzer, what exactly and how to do it effectively.
+                           * How to mod successful public fuzzers to find bugs that they failed at.
+                           * How to instrument arbitrary complex targets for fuzzing with public tools.
+                           * Understanding and controlling low-level code coverage instrumentation and probes. 
+                           * How to write a fuzzing harness for something which is not supported by your fuzzer out of the box.</p>
+                           
+                           <p>Pre-requisites:
+                           * C-code 
+                           * (optional) x86 assembly 
+                           * Linux VM</p>
+
+                           <p><a href="#booking">Booking & availability >></a></p>
+                           
+                           <a name="codeql"><h6>Mini-class: Fun and games with CodeQL </h6></a>
+                           <p>Livestream date: to be announced. 
+                           Instructor: Alisa Esage.
+                           Level: beginners to advanced </p>
+                           
+                           <p>CodeQL is a shiny new tool to assist you with static analysis for bug hunting. Known as Semmle QL previously (Semmle was acquired by Github/Microsoft), CodeQL quickly became popular due to the power and versatility of its custom programming language that lets you query arbitrary code bases for generically defined bug patterns, and has been successfully used by many professional software security teams to find new bugs. Think grep with code semantics awareness.</p>
+
+                           <p>While CodeQL is typically applied to the problem of bug variant analysis, nothing prevents a smart bughunter to use some creativity and build queries for totally new bug classes. Mozilla runs a dedicated CodeQL security bounty. This mini-class is designed to get you started with CodeQL in no time, with the big picture in mind. </p>
+                                                            
+                           <p><a href="#booking">Booking & availability >></a></p>
+
+                           <a name="symbols"><h6>Mini-class: Symbolizing the unsymbolizable</h6></a>
+                           <p>Livestream date: August 14th, 2021 (Saturday), 13:00-17:00 UTC. 
+                           Instructor: Alisa Esage. 
+                           Level: beginners to advanced </p>
+
+                           <p>Symbolic information for binaries, or "debug symbols", typically consist of procedure names as defined in the source code, occasionally with some extra details such as global variable names, structure definitions, and function arguments. While debug symbols are more or less trivially available for open source projects, majority of proprietary software vendors do not expose it. Systems such as embedded firmware, proprietary hypervisors, basebands, and majority of "normal" proprietary software are thus presented to the reverse engineer as a huge mess of many megabytes of assembly code, hard to make sense of. </p>
+                              
+                           <p>In addition, a general trend nowadays is that propriatary software vendors increasingly revoke and manage access to debug symbols to complicate reverse engineering, as it was observed for example with iOS kernel a couple years ago, Microsoft Hyper-V hypervisor, and VMware Workstation for Linux binaries. </p>
+
+                           <p>In advanced reverse engineering several smart approaches may be used to solve this problem, and apply or create (at least semi-automatically, not by manual naming) some meaningful names to a reverse-engineered code base. In this mini-class we'll walk through these techniques, and apply it to some real life big software RE.
+                           </p>
+                             
+                           <p><a href="#booking">Booking & availability >></a></p>
+
+                           <a name="intelpt"><h6>Mini-class: Exploring hardware assisted fuzzing</h6></a>
+                           <p>Livestream date: to be announced. 
+                           Instructor: Alisa Esage.
+                           Level: beginners to advanced </p>
+
+                           <p>We'll take a look at IntelPT: how it is defined in the specifications, how it works in practice, how do you use it outside of public fuzzer integrations, existing software drivers ecosystem for various OS's and fuzzing targets, successful use cases, known research publications, and open research areas that hold the most opportunities. Learn practical skills to apply it trivially, and see what is needed for non-trivial applications. 
+                           </p>
+
+                           <h6><a name="booking">Booking & availability</a></h6>
+
+                           <p>Each mini-class would be typically live-streamed once, afterwards it's available on-demand in recording. If you purchase an on-demand mini-class, you can ask the instructor questions by email.</p> 
+                           
+                           <p>Price of each mini-class (livestreamed or on-demand) is EUR 520,-. Book by clicking the button below.</p>
+
+                           <p>Notes:
+                           1. We will contact you within 1-2 business days after the payment to confirm the topic/date.
+                           2. The payment via PayPal is non-refundable. For more payment flexibility options, contact us via <a href="mailto:contact@zerodayengineering.com?Subject=Booking: mini-classes">email</a>.
+                           3. In case of connectivity issues, reach out via <a href="https://twitter.com/@zerodaytraining">@zerodaytraining</a> Twitter DM.</p>
+
+                           <p>Topic suggestions and interest indications are <a class="underline" href="contact.html">welcome</a>.</p>
+                           
+                           <div id="smart-button-container">
+                              <div style="text-align: center;">
+                                <div id="paypal-button-container"></div>
+                              </div>
+                            </div>
+                            <div id="smart-button-container">
+                              <div style="text-align: center;">
+                                <div id="paypal-button-container"></div>
+                              </div>
+                            </div>
+                          <script src="https://www.paypal.com/sdk/js?client-id=AX9fM4iEA0QIdnWUCZfbFuSkPu6rOjm9jiD2WSTSWy3l-sQXhwxGqWgjwMicjw1aw5GDGdAmiXtmDuni&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>
+                          <script>
+                            function initPayPalButton() {
+                              paypal.Buttons({
+                                style: {
+                                  shape: 'rect',
+                                  color: 'gold',
+                                  layout: 'vertical',
+                                  label: 'paypal',
+                                  
+                                },
+                        
+                                createOrder: function(data, actions) {
+                                  return actions.order.create({
+                                    purchase_units: [{"description":"VULNDEV 102 mini-class","amount":{"currency_code":"EUR","value":520}}]
+                                  });
+                                },
+                        
+                                onApprove: function(data, actions) {
+                                  return actions.order.capture().then(function(details) {
+                                    alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                                  });
+                                },
+                        
+                                onError: function(err) {
+                                  console.log(err);
+                                }
+                              }).render('#paypal-button-container');
+                            }
+                            initPayPalButton();
+                          </script>
+
+                           <div class="post-single-navigation d-flex align-items-stretch">
+                              <a href="training/index.html" class="mr-auto w-50 pr-4">
+                                 <span class="d-block cursor-item"><i class="fa fa-chevron-left mr-2"></i> Training</span></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer section">
+               <div class="container">
+                  <div class="row justify-content-center">
+                     <div class="col-md-12">
+                        <div class="go-top cursor-item" id="go-to-top"><i class="fa fa-chevron-up"></i></div>
+                        <div class="hr-footer"></div>
+                        <div class="footer-site-logo"><a href="index.html" class="main-logo"><img src="images/logo.png" class="logo-img light-logo img-fluid" alt=""></a></div>
+                        <ul class="footer-site-social">
+                           <a href="https://twitter.com/zerodaytraining"><i class="fa fa-twitter"></a></i>
+                           <a href="https://t.me/zerodaytraining"><i class="fa fa-telegram"></a></i>
+                        </ul>
+                        <p class="site-copyright">
+                           <small>&copy; 2021 An Exponential Limited. All Rights Reserved.</small>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </footer>
+            <!-- Footer end -->
+
+         </div>
+         <!-- Main content inner end -->
+      </div>
+      <!-- Main content wrap end -->
+
+      <!-- Back to top button -->
+      <a id="back-to-top" href="#" class="cursor-item"><i class="fa fa-chevron-up"></i></a>
+
+      <div class="cursor"></div>
+      <div class="cursor-follower"></div>
+
+      <!-- jquery -->
+      <script src="js/query-3.4.1.min.js"></script>
+      <!-- bootstrap -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- aos -->
+      <script src="js/aos.js"></script>
+      <!-- owl.carusel js -->
+      <script src="js/owl.carousel.min.js"></script>
+      <!-- isotope js -->
+      <script src="js/isotope.pkgd.min.js"></script>
+      <!-- isotope image loader js -->
+      <script src="js/imagesloaded.pkgd.min.js"></script>
+      <!-- three -->
+      <script src="js/three.min.js"></script>
+      <!-- anime -->
+      <script src="js/anime.min.js"></script>
+      <!-- tweenmax -->
+      <script src="js/TweenMax.min.js"></script>
+      <!-- jquery.waypoints.min.js -->
+      <script src="js/jquery.waypoints.min.js"></script>
+      <!-- circletype-->
+      <script src="js/circletype.min.js"></script>
+      <!-- hover-effect -->
+      <script src="js/hover-effect.umd.js"></script>
+      <!-- gsap -->
+      <script src="js/gsap.min.js"></script>
+      <!-- ScrollMagic gsap -->
+      <script src="js/ScrollMagic.min.js"></script>
+      <script src="js/scrollmagic.animation.gsap.min.js"></script>
+      <!-- custom -->
+      <script src="js/custom.js"></script>
+   </body>
+</html>

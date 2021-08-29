@@ -1,0 +1,337 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <!--Meta Tags-->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content=""/>
+      <meta name="keywords" content=""/>
+      <meta name="author" content=""/>
+      <base href="../../"> 
+      <!--Favicons-->
+      <link rel="shortcut icon" href="images/favicon.png">
+      <!--Page Title-->
+      <title>Mini-classes: Hypervisor Security Nightly - Zero Day Engineering Training</title>
+      <!-- Stylesheets -->
+      <!-- bootstrap -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Animate -->
+      <link rel="stylesheet" href="css/animate.min.css">
+      <!-- Owl carusel -->
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <!-- Aos Css-->
+      <link rel="stylesheet" href="css/aos.css"/>
+      <!-- font awesome -->
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <!-- main css -->
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
+
+      
+      <!-- Nav mobile -->
+      <nav class="site-mobile-menu">
+         <div class="close-wrap d-flex">
+            <a href="#" class="d-flex ml-auto js-menu-toggle">
+               <span class="close-label">Close</span>
+               <div class="close-times">
+                  <span class="bar1"></span>
+                  <span class="bar2"></span>
+               </div>
+            </a>
+         </div>
+         <div class="site-mobile-inner"></div>
+      </nav>
+      <!-- Nav mobile end -->
+
+      <!-- Main content wrap -->
+      <div class="site-wrap">
+         <!-- Main content inner -->
+         <div class="site-inner">
+
+            <!-- Main Nav -->
+            <nav class="site-nav site-nav-target">
+               <div class="container">
+                  <div class="row align-items-center justify-content-between text-left">
+                     <div class="col-3">
+                        <div class="site-logo">
+                           <a href="index.html" class="site-logo main-logo"><img src="images/logo.png" class="logo-img light-logo img-fluid" alt=""><span></span></a>
+                        </div>
+                     </div>
+                     <div class="col text-right">
+                        <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
+                              <li><a href="index.html" class="nav-link cursor-item">Home</a></li>
+                              <li><a href="about.html" class="nav-link cursor-item">About</a></li>
+                              <li><a href="research/index.html" class="nav-link cursor-item">Research</a></li>
+                              <li><a href="projects/index.html" class="nav-link cursor-item">Projects</a></li>
+                              <li><a href="training/index.html" class="nav-link cursor-item">Training</a></li>
+                              <li><a href="blog/index.html" class="nav-link cursor-item">Blog</a></li>
+                              <li><a href="contact.html" class="nav-link cursor-item">Contact</a></li>
+                           </ul>
+                           <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
+                           <li><a href="#" class="js-menu-toggle">Menu</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+
+            <!-- Main Nav end -->
+            <div class="section">
+               <div class="blog-single-inner">
+                  <div class="container">
+                     <div class="row justify-content-center">
+                        <div class="col-md-8">
+                           <div id="quote"></div>
+                           <h3 class="mb-4">Hypervisor Security Nightly</h3>
+                           <p>4-hour livestream or video deep-dives into various aspects of hypervisor (in)security: including vulnerability research and exploit development, reverse engineering, implementation studies, and technology. </p>
+                           
+                           <p>All mini-classes are taught by specialists in the subject who have demonstrated a solid and credible achievement in the respective miniclass subject. Expect deeply systematical theory with 25-40% of hands-on experience, abundant with practical tips and insights from practitioners.</p>
+                        
+                           <h6><a name="intro">Mini-class: Hypervisor Vulnerability Research 101</a></h6>
+                           <p>Livestream date: 26th June 2021 (Saturday), 13:00-17:00 UTC.
+                           On demand: not available.
+                           Instructor: Alisa Esage.
+                           Level: beginners.</p>
+                           
+                           <p>Topics:
+                           * The Hypervisor Threat (meta)Model.
+                           * Overview of required theoretical knowledge.
+                           * First exposure to a popular hypervisor code. (Static analysis)
+                           * Hypervisor introspection lab. What can you learn about your hypervisor from within a VM?
+                           * Hardware Assist demystified. 
+                           * Common classes of bugs. 
+                           * Practical tips.</p>
+                           
+                           <p>You will learn:
+                           * The "Big Picture" and the "Deep Picture" of hypervisor technologies.
+                           * What you need to read and the skills for attacking and securing hypervisors.
+                           * How to get started with huge code bases.
+                           * How to map some simple hypervisor attack vectors without looking at the code.
+                           * How and where you can find some simple bugs in hypervisors as a beginner.
+                           </p>
+
+                           <p>For those thinking about entering the complex area of hypervisor security research, bug hunting for some bounty programs, and maybe compete at Pwn2Own in virtualisation category: this mini-training should clear the decision by exposing you to the "big picture" of what we're dealing with, introducing you to basic practical skills, and getting started with your first hypervisor vulnerability research ideas. </p>
+                           
+                           <p>Pre-requisites: C, basic familiarity with OS theory and appsec theory, any desktop hypervisor (for introspection lab).</p>
+                           
+
+                           <h6><a name="openslp">Mini-class: Deep Dive VMWare ESXi OpenSLP Heap Overflow (CVE-2019-5544)</a></h6>
+                           <p>Livestream date: 19th June 2021 (Saturday), 13:00-17:00 UTC.
+                           Instructor: Alisa Esage.
+                           On demand: not available.
+                           Level: intermediate.</p>
+                           
+                           <p>Topics:
+                           * Relevant theoretical background.
+                           * Recap of the hypervisor threat model, and where we're at.
+                           * Protocol details (OpenSLP).
+                           * Vulnerability research workflow: from patch to PoC.
+                           * Setting up the environment and testing the bug.</p>
+
+                           <p>You will learn:
+                           * Bug history and technical case studies in the same attack surface across the virtualisation industry.
+                           * How to research and analyze security bugs when no writeup is available. 
+                           * How to create a proof-of-concept based on a security patch (source-code level).
+                           * How to build a VMware ESXi research platform.
+                           </p>
+                           
+                           <p>This bug (originally leveraged in a private competition exploit against VMware ESXi in 2018) was discussed in my "<a href="training/hypervisor-vulnerability-research.html">Hypervisor Vulnerability Research</a>" training since its inception. Now it's reported in cyber news to be actively exploited in the wild, and with this mini-training I hope not only to inspire professional vulnerability and malware researchers to dig into the less-popular attack surfaces of a hugely popular corporate hypervisor, but also to let system administrators, incident responders and self-taught computer security enthusiasts (yes, you are invited and I promise to be not too much intimidating) to know their threats at the byte level, and potentially learn to avoid similar attack scenarios early before the bug was weaponized by malicious parties. </p>
+                           
+                           <p>Pre-requisites: C, ability to build and use things on Linux, basic familiarity with appsec. Assembly x86 knowledge would be helpful, but not strictly required to get most of the class. </p>
+                                       
+
+                           <h6><a name="vmswitch">Mini-class: Deep Dive Microsoft Hyper-V Virtual Network Switch</a></h6>
+                           <p>Livestream date: 12th June 2021 (Saturday), 13:00-17:00 UTC.     
+                           Instructor: Alisa Esage. 
+                           On demand: <font style="background-color:blue">recording available</font>
+                           Level: advanced.</p>
+                           
+                           <p>Topics:
+                           * Relevant theoretical background.
+                           * Recap of hypervisor threat models, and where are we.
+                           * Setting up the Hyper-V testing and debugging environment.
+                           * Review of previously published vulnerabilities in vmswitch. 
+                           * Vulnerability analysis CVE-2019-0717.
+                           * System internals of vmswitch.</p>
+
+                           <p>You will learn:
+                           * Everything that you need to know about paravirtualized devices.
+                           * How to set up an Microsoft Hyper-V research platform.
+                           * The threat model, system internals, and known bugs in one of the largest and most important attack surfaces of Hyper-V.
+                           * How to write a simple fuzzer for vmswitch.
+                           * How to analyze bugs and estimate exploitability.
+                           </p>
+                           
+                           <p>Microsoft Hyper-V Virtual Network Switch proved to be very popular with bug hunters for more than one good reason, which I started to discuss in my conference talk "<a href="https://alisa.sh/slides/HypervisorVulnerabilityResearch2020.pdf">Hypervisor Vulnerability Research: State of the Art in 2020</a>". In addition, this component was quickly included in my "<a href="training/hypervisor-vulnerability-research.html">Hypervisor Vulnerability Research</a>" training, and as I see my past students successfully pushing this attack vector forward, I want to inspire more vulnerability researchers to look at it. </p>
+                           
+                           <p>Pre-requisites: x86_64 assembly, a powerful laptop (if you want to set up a Hyper-V research platform, which is resource-hungry), some practical background in reverse engineering and vulnerability research. </p>
+
+                           <h6><a name="intelvtx">Mini-class: Virtualization Hardware Assist Demystified</a></h6>
+                           <p>Livestream date: 28th August 2021 (Saturday), 13:00-17:00 UTC. 
+                           Instructor: Alisa Esage.
+                           On-demand: <font style="background-color:blue">recording available</font>
+                           Level: advanced.</p>
+
+                           <p>Virtualization hardware assist technologies such as AMD-V (previously marketed under the name SVM) and Intel VT-x (VMX) were introduced in 2006, but only now they are getting some serious traction in practical implementations due to lots of legacy code that mainstream hypervisors had to deal with, plus a period of de-facto lazy testing of the technology in production. As an example, legacy non-HVT code was removed from Oracle VirtualBox only around last year, while nested virtualization support (a popular target for security bugs in this attack surface so far) for Intel CPUs was added literally a few months ago. As such, hardware assist technology and the new code that it brings about represents the cutting edge of attack surfaces in modern hypervisor implementations. </p>
+
+                           <p>Virtualization hardware assist technology (it's implemented similarly on Intel and AMD) represents a compact hardware-based framework of new privilege separation modes and ISA extentions, designed to simplify the work of a hypervisor software developer, but not at all to make in redundant. In fact, most of the HVT-based hypervisor functionality still has to be written in higl level code, while specific details of the hypervisor implementation based on it remain at discretion of the software developer. </p>
+
+                           <p>In this mini-class we'll look at Intel VT-x hardware assist technology as it's defined in the Intel's specifications and used in the code of some popular hypervisors, understand the threat model and attack vectors, and a deep dive into security bugs specific to hardware assist code that have been publicly disclosed so far. </p>
+
+                           <p>Topics:
+                           * A quick overview of the Intel VT-x specification.
+                           * Core concepts of hardware assist: root/non-root mode, VMCS struct, VM exists, ISA extention instructions. 
+                           * Inspection of hardware assist code in a popular open source hypervisor.
+                           * Threat modeling, attack surfaces and attack vectors. 
+                           * Known vulnerabilities in popular hypervisor implementations. 
+                           </p>
+
+                           <p>You will learn:
+                           * A very clear model of how virtualization hardware assist works.
+                           * How hardware assist technology is used in practice, in the open source code. 
+                           * Where to look for bugs. 
+                           </p>
+
+                           <p>Prerequisites:
+                           * C++.
+                           * x86 assembly (not mandatory, but highly recommended).
+                           * Basic concepts of memory safety and application security.
+                           * Some experience with privileged CPU modes and/or OS kernels would help.
+                           </p>
+
+                           <h6>Further details & booking</h6>
+                           
+                           <p>Price of each mini-class (livestreamed or on-demand) is EUR 520,-. Book by clicking the button below. </p>
+
+                           <p>Notes:
+                           1. We will contact you within 1-2 business days after the payment to confirm the topic/date.
+                           2. The payment via PayPal is non-refundable. For more payment flexibility options, contact us via <a href="mailto:contact@zerodayengineering.com?Subject=Booking: mini-classes">email</a>.
+                           3. In case of connectivity issues, reach out via <a href="https://twitter.com/@zerodaytraining">@zerodaytraining</a> Twitter DM.
+                  
+                           </p> 
+        
+                           <div id="smart-button-container">
+                              <div style="text-align: center;">
+                                 <div id="paypal-button-container"></div>
+                              </div>
+                              </div>
+                           <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+                           <div id="smart-button-container">
+                           <div style="text-align: center;">
+                              <div id="paypal-button-container"></div>
+                           </div>
+                           </div>
+                           <div id="smart-button-container">
+                           <div style="text-align: center;">
+                              <div id="paypal-button-container"></div>
+                           </div>
+                           </div>
+                           <script src="https://www.paypal.com/sdk/js?client-id=AX9fM4iEA0QIdnWUCZfbFuSkPu6rOjm9jiD2WSTSWy3l-sQXhwxGqWgjwMicjw1aw5GDGdAmiXtmDuni&currency=EUR" data-sdk-integration-source="button-factory"></script>
+                           <script>
+                              function initPayPalButton() {
+                                 paypal.Buttons({
+                                 style: {
+                                    shape: 'rect',
+                                    color: 'gold',
+                                    layout: 'horizontal',
+                                    label: 'paypal',
+                                    
+                                 },
+                           
+                                 createOrder: function(data, actions) {
+                                    return actions.order.create({
+                                       purchase_units: [{"description":"Hypervisor Security Nightly - live mini-class","amount":{"currency_code":"EUR","value":520}}]
+                                    });
+                                 },
+                           
+                                 onApprove: function(data, actions) {
+                                    return actions.order.capture().then(function(details) {
+                                       alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                                    });
+                                 },
+                           
+                                 onError: function(err) {
+                                    console.log(err);
+                                 }
+                                 }).render('#paypal-button-container');
+                              }
+                              initPayPalButton();
+                           </script>
+                           
+                           <div class="post-single-navigation d-flex align-items-stretch">
+                              <a href="training/index.html" class="mr-auto w-50 pr-4">
+                                 <span class="d-block cursor-item"><i class="fa fa-chevron-left mr-2"></i> Training</span></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer section">
+               <div class="container">
+                  <div class="row justify-content-center">
+                     <div class="col-md-12">
+                        <div class="go-top cursor-item" id="go-to-top"><i class="fa fa-chevron-up"></i></div>
+                        <div class="hr-footer"></div>
+                        <div class="footer-site-logo"><a href="index.html" class="main-logo"><img src="images/logo.png" class="logo-img light-logo img-fluid" alt=""></a></div>
+                        <ul class="footer-site-social">
+                           <a href="https://twitter.com/zerodaytraining"><i class="fa fa-twitter"></a></i>
+                           <a href="https://t.me/zerodaytraining"><i class="fa fa-telegram"></a></i>
+                        </ul>
+                        <p class="site-copyright">
+                           <small>&copy; 2021 An Exponential Limited. All Rights Reserved.</small>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </footer>
+            <!-- Footer end -->
+
+         </div>
+         <!-- Main content inner end -->
+      </div>
+      <!-- Main content wrap end -->
+
+      <!-- Back to top button -->
+      <a id="back-to-top" href="#" class="cursor-item"><i class="fa fa-chevron-up"></i></a>
+
+      <div class="cursor"></div>
+      <div class="cursor-follower"></div>
+
+      <!-- jquery -->
+      <script src="js/query-3.4.1.min.js"></script>
+      <!-- bootstrap -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- aos -->
+      <script src="js/aos.js"></script>
+      <!-- owl.carusel js -->
+      <script src="js/owl.carousel.min.js"></script>
+      <!-- isotope js -->
+      <script src="js/isotope.pkgd.min.js"></script>
+      <!-- isotope image loader js -->
+      <script src="js/imagesloaded.pkgd.min.js"></script>
+      <!-- three -->
+      <script src="js/three.min.js"></script>
+      <!-- anime -->
+      <script src="js/anime.min.js"></script>
+      <!-- tweenmax -->
+      <script src="js/TweenMax.min.js"></script>
+      <!-- jquery.waypoints.min.js -->
+      <script src="js/jquery.waypoints.min.js"></script>
+      <!-- circletype-->
+      <script src="js/circletype.min.js"></script>
+      <!-- hover-effect -->
+      <script src="js/hover-effect.umd.js"></script>
+      <!-- gsap -->
+      <script src="js/gsap.min.js"></script>
+      <!-- ScrollMagic gsap -->
+      <script src="js/ScrollMagic.min.js"></script>
+      <script src="js/scrollmagic.animation.gsap.min.js"></script>
+      <!-- custom -->
+      <script src="js/custom.js"></script>
+   </body>
+</html>
