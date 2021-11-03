@@ -91,7 +91,7 @@
                         
                            <h6><a name="intro">Mini-class: Hypervisor Vulnerability Research 101</a></h6>
                            <p>Livestream date: 26th June 2021 (Saturday), 13:00-17:00 UTC.
-                           On demand: not available.
+                           On-demand: not available.
                            Instructor: Alisa Esage.
                            Level: beginners.</p>
                            
@@ -120,7 +120,7 @@
                            <h6><a name="openslp">Mini-class: Deep Dive VMWare ESXi OpenSLP Heap Overflow (CVE-2019-5544)</a></h6>
                            <p>Livestream date: 19th June 2021 (Saturday), 13:00-17:00 UTC.
                            Instructor: Alisa Esage.
-                           On demand: not available.
+                           On-demand: not available.
                            Level: intermediate.</p>
                            
                            <p>Topics:
@@ -145,7 +145,7 @@
                            <h6><a name="vmswitch">Mini-class: Deep Dive Microsoft Hyper-V Virtual Network Switch</a></h6>
                            <p>Livestream date: 12th June 2021 (Saturday), 13:00-17:00 UTC.     
                            Instructor: Alisa Esage. 
-                           On demand: <font style="background-color:blue">recording available</font>
+                           On-demand: <font style="background-color:blue">recording available</font>
                            Level: advanced.</p>
                            
                            <p>Topics:
@@ -168,10 +168,17 @@
                            
                            <p>Pre-requisites: x86_64 assembly, a powerful laptop (if you want to set up a Hyper-V research platform, which is resource-hungry), some practical background in reverse engineering and vulnerability research. </p>
 
+                           <p><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                              <input type="hidden" name="cmd" value="_s-xclick">
+                              <input type="hidden" name="hosted_button_id" value="28D38259GR5Z4">
+                              <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                              <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                           </form></p>
+
                            <h6><a name="intelvtx">Mini-class: Virtualization Hardware Assist Demystified</a></h6>
                            <p>Livestream date: 28th August 2021 (Saturday), 13:00-17:00 UTC. 
                            Instructor: Alisa Esage.
-                           On-demand: <font style="background-color:blue">recording available</font>
+                           On-demand: not available.
                            Level: advanced.</p>
 
                            <p>Virtualization hardware assist technologies such as AMD-V (previously marketed under the name SVM) and Intel VT-x (VMX) were introduced in 2006, but only now they are getting some serious traction in practical implementations due to lots of legacy code that mainstream hypervisors had to deal with, plus a period of de-facto lazy testing of the technology in production. As an example, legacy non-HVT code was removed from Oracle VirtualBox only around last year, while nested virtualization support (a popular target for security bugs in this attack surface so far) for Intel CPUs was added literally a few months ago. As such, hardware assist technology and the new code that it brings about represents the cutting edge of attack surfaces in modern hypervisor implementations. </p>
@@ -201,65 +208,17 @@
                            * Some experience with privileged CPU modes and/or OS kernels would help.
                            </p>
 
-                           <h6>Further details & booking</h6>
-                           
-                           <p>Price of each mini-class (livestreamed or on-demand) is EUR 520,-. Book by clicking the button below. </p>
+                           <h6><a name="booking">Booking & availability</a></h6>
 
+                           <p>Each mini-class would be typically live-streamed once, afterwards it's available on-demand in recording. If you purchase an on-demand mini-class, you can ask the instructor questions by email.</p> 
+                           
                            <p>Notes:
-                           1. We will contact you within 1-2 business days after the payment to confirm the topic/date.
+                           1. We will contact you shortly after the payment on the email that you provided.
                            2. The payment via PayPal is non-refundable. For more payment flexibility options, contact us via <a href="mailto:contact@zerodayengineering.com?Subject=Booking: mini-classes">email</a>.
-                           3. In case of connectivity issues, reach out via <a href="https://twitter.com/@zerodaytraining">@zerodaytraining</a> Twitter DM.
-                  
-                           </p> 
-        
-                           <div id="smart-button-container">
-                              <div style="text-align: center;">
-                                 <div id="paypal-button-container"></div>
-                              </div>
-                              </div>
-                           <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
-                           <div id="smart-button-container">
-                           <div style="text-align: center;">
-                              <div id="paypal-button-container"></div>
-                           </div>
-                           </div>
-                           <div id="smart-button-container">
-                           <div style="text-align: center;">
-                              <div id="paypal-button-container"></div>
-                           </div>
-                           </div>
-                           <script src="https://www.paypal.com/sdk/js?client-id=AX9fM4iEA0QIdnWUCZfbFuSkPu6rOjm9jiD2WSTSWy3l-sQXhwxGqWgjwMicjw1aw5GDGdAmiXtmDuni&currency=EUR" data-sdk-integration-source="button-factory"></script>
-                           <script>
-                              function initPayPalButton() {
-                                 paypal.Buttons({
-                                 style: {
-                                    shape: 'rect',
-                                    color: 'gold',
-                                    layout: 'vertical',
-                                    label: 'paypal',
-                                    
-                                 },
-                           
-                                 createOrder: function(data, actions) {
-                                    return actions.order.create({
-                                       purchase_units: [{"description":"Hypervisor Security Nightly - live mini-class","amount":{"currency_code":"EUR","value":520}}]
-                                    });
-                                 },
-                           
-                                 onApprove: function(data, actions) {
-                                    return actions.order.capture().then(function(details) {
-                                       alert('Transaction completed by ' + details.payer.name.given_name + '!');
-                                    });
-                                 },
-                           
-                                 onError: function(err) {
-                                    console.log(err);
-                                 }
-                                 }).render('#paypal-button-container');
-                              }
-                              initPayPalButton();
-                           </script>
-                           
+                           3. If you don't hear from us in 3 business days (may be due to email systems issues), reach out via <a href="https://twitter.com/@zerodaytraining">@zerodaytraining</a> Twitter DM.</p>
+
+                           <p>Topic suggestions and interest indications are <a class="underline" href="contact.html">welcome</a>.</p>
+
                            <div class="post-single-navigation d-flex align-items-stretch">
                               <a href="training/index.html" class="mr-auto w-50 pr-4">
                                  <span class="d-block cursor-item"><i class="fa fa-chevron-left mr-2"></i> Training</span></a>
@@ -282,6 +241,12 @@
                            <a href="https://twitter.com/zerodaytraining"><i class="fa fa-twitter"></a></i>
                            <a href="https://t.me/zerodaytraining"><i class="fa fa-telegram"></a></i>
                         </ul>
+                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+                           <input type="hidden" name="cmd" value="_s-xclick">
+                           <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+                           <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_viewcart_SM.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                           <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                        </form>                           
                         <p class="site-copyright">
                            <small>&copy; 2021 An Exponential Limited. All Rights Reserved.</small>
                         </p>
