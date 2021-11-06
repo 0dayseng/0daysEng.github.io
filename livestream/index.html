@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <!--Meta Tags-->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content=""/>
+      <meta name="keywords" content=""/>
+      <meta name="author" content=""/>
+      <base href="../"> 
+      <!--Favicons-->
+      <link rel="shortcut icon" href="images/favicon.png">
+      <!--Page Title-->
+      <title>Livestream – Zero Day Engineering Project</title>
+      <!-- Stylesheets -->
+      <!-- bootstrap -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Animate -->
+      <link rel="stylesheet" href="css/animate.min.css">
+      <!-- Owl carusel -->
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <!-- Aos Css-->
+      <link rel="stylesheet" href="css/aos.css"/>
+      <!-- font awesome -->
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <!-- main css -->
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
+
+      <!-- Nav mobile -->
+      <nav class="site-mobile-menu">
+         <div class="close-wrap d-flex">
+            <a href="#" class="d-flex ml-auto js-menu-toggle">
+               <span class="close-label">Close</span>
+               <div class="close-times">
+                  <span class="bar1"></span>
+                  <span class="bar2"></span>
+               </div>
+            </a>
+         </div>
+         <div class="site-mobile-inner"></div>
+      </nav>
+      <!-- Nav mobile end -->
+
+      <!-- Main content wrap -->
+      <div class="site-wrap">
+         <!-- Main content inner -->
+         <div class="site-inner">
+
+            <!-- Main Nav -->
+            <nav class="site-nav site-nav-target">
+               <div class="container">
+                  <div class="row align-items-center justify-content-between text-left">
+                     <div class="col-3">
+                        <div class="site-logo">
+                           <a href="index.html" class="site-logo main-logo"><img src="images/logo.png" class="logo-img light-logo img-fluid" alt=""><span></span></a>
+                        </div>
+                     </div>
+                     <div class="col text-right">
+                        <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
+                              <li><a href="index.html" class="nav-link cursor-item">Home</a></li>
+                              <li><a href="about.html" class="nav-link cursor-item">About</a></li>
+                              <li><a href="research/index.html" class="nav-link cursor-item">Research</a></li>
+                              <li><a href="projects/index.html" class="nav-link cursor-item">Projects</a></li>
+                              <li><a href="training/index.html" class="nav-link cursor-item">Training</a></li>
+                              <li><a href="blog/index.html" class="nav-link cursor-item">Blog</a></li>
+                              <li><a href="contact.html" class="nav-link cursor-item">Contact</a></li>
+                           </ul>
+                           <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
+                           <li><a href="#" class="js-menu-toggle">Menu</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+
+            <!-- Main Nav end -->
+            <div class="section">
+               <div class="blog-single-inner">
+                  <div class="container">
+                     <div class="row justify-content-center">
+                        <div class="col-md-8">
+                           <div id="quote"></div>
+                           <h3 class="mb-4">Livestream</h3>
+                           <p></p> 
+
+                           <a name="pwn2own2021"><h6>Technical talk: "Advanced Exploitation of Simple Bugs: a Parallels Desktop Case Study (Pwn2Own 2021)"</h6></a>
+                           <p>Speaker: <a href="about.html#founder">Alisa Esage</a>
+                              Date and time: 11th November 2021, 13:00 UTC (online)
+                              Format: deep technical 60 min. talk with Q&A
+                              Availability: <font style="background-color: green;">registration is open</font>
+                              Keywords: Virtualization, Vulnerability Research, Exploit Development, Logic Bugs, VM Escape
+                           </p>
+
+                           <h10>Abstract</h10>
+                           <p>At Pwn2Own Vancouver 2021 I have demonstrated an 0day VM escape exploit for Parallels Desktop hypervisor. The exploit chain that I developed was based on logic issues. In this deep technical presentation I will share the technical details of the exploit, as well as various preliminary and contextual knowledge related to it.</p>
+
+                           <p>Logic security vulnerabilities (i.e. those that can be exploited without any memory corruptions) are becoming increasingly important in offensive security research right now, as Rust and other memory-safe programming languages are rapidly taking over popular code bases. When evaluating the attack surface of Parallels Desktop, as an expert in both hypervisors and memory corruption bugs, I saw many opportunities for classical buffer overflows, but chose to try and find a logic bug instead. As hypervisors are ultra-complex low level software, exploitable logic bugs in them are extremely rare. I was lucky to find such a “one of a kind” bug.</p>
+
+                           <p>Despite the bug was quite simple, the exploit turned out to be not so easy. Exploitation of the bug required me to develop a kernel module for the guest OS from which I was escaping, reverse-engineer some internal RPC protocol of the hypervisor, and emulate it in the exploit code. Eventually the exploit was reliable 100% by design, and executed arbitrary code on the host Mac.</p>
+
+                           <p>During the Pwn2Own competitions it came as a surprize that my exploit did not meet any collisions with other competition entries. Because the bug itself was quite easy, I expected that at least one participant would find and utilize it independently in their own Pwn2Own exploit. But it didn’t happen. That made me aware of the fact that a bug that looks easy does not necessarily imply an easy discovery or an easy exploitation process, an estimation which is very important for strategic aspects of offensive security research. </p>
+
+                           <p>I will adjust the presentation to be approachable for all security-conscious technical audiences, not just specialists in hypervisor security.</p>
+
+                           <p><a class="underline" href="https://us02web.zoom.us/webinar/register/WN_yeyn3ifpSyeQQuMgmkmZvQ">Registration link</a> (note: entry fee 50,- EUR)</p>
+
+                           <div class="post-single-navigation d-flex align-items-stretch">
+                              <a href="/index.html" class="mr-auto w-50 pr-4">
+                                 <span class="d-block cursor-item"><i class="fa fa-chevron-left mr-2"></i> Home</span></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer section">
+               <div class="container">
+                  <div class="row justify-content-center">
+                     <div class="col-md-12">
+                        <div class="go-top cursor-item" id="go-to-top"><i class="fa fa-chevron-up"></i></div>
+                        <div class="hr-footer"></div>
+                        <div class="footer-site-logo"><a href="index.html" class="main-logo"><img src="images/logo.png" class="logo-img light-logo img-fluid" alt=""></a></div>
+                        <ul class="footer-site-social">
+                           <a href="https://twitter.com/zerodaytraining"><i class="fa fa-twitter"></a></i>
+                           <a href="https://t.me/zerodaytraining"><i class="fa fa-telegram"></a></i>
+                        </ul>
+                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+                           <input type="hidden" name="cmd" value="_s-xclick">
+                           <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+                           <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_viewcart_SM.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                           <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                        </form>                           
+                        <p class="site-copyright">
+                           <small>&copy; 2021 An Exponential Limited. All Rights Reserved.</small>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </footer>
+            <!-- Footer end -->
+
+         </div>
+         <!-- Main content inner end -->
+      </div>
+      <!-- Main content wrap end -->
+
+      <!-- Back to top button -->
+      <a id="back-to-top" href="#" class="cursor-item"><i class="fa fa-chevron-up"></i></a>
+
+      <div class="cursor"></div>
+      <div class="cursor-follower"></div>
+
+      <!-- jquery -->
+      <script src="js/query-3.4.1.min.js"></script>
+      <!-- bootstrap -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- aos -->
+      <script src="js/aos.js"></script>
+      <!-- owl.carusel js -->
+      <script src="js/owl.carousel.min.js"></script>
+      <!-- isotope js -->
+      <script src="js/isotope.pkgd.min.js"></script>
+      <!-- isotope image loader js -->
+      <script src="js/imagesloaded.pkgd.min.js"></script>
+      <!-- three -->
+      <script src="js/three.min.js"></script>
+      <!-- anime -->
+      <script src="js/anime.min.js"></script>
+      <!-- tweenmax -->
+      <script src="js/TweenMax.min.js"></script>
+      <!-- jquery.waypoints.min.js -->
+      <script src="js/jquery.waypoints.min.js"></script>
+      <!-- circletype-->
+      <script src="js/circletype.min.js"></script>
+      <!-- hover-effect -->
+      <script src="js/hover-effect.umd.js"></script>
+      <!-- gsap -->
+      <script src="js/gsap.min.js"></script>
+      <!-- ScrollMagic gsap -->
+      <script src="js/ScrollMagic.min.js"></script>
+      <script src="js/scrollmagic.animation.gsap.min.js"></script>
+      <!-- custom -->
+      <script src="js/custom.js"></script>
+   </body>
+</html>
