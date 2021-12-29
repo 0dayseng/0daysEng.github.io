@@ -5,8 +5,7 @@
   mobileToggleClick();
   onePageNavigation();
   animateReveal();
-
-
+  
   AOS.init({
     duration: 800,
     easing: 'ease',
@@ -80,7 +79,6 @@
       }
     }
   });
-
 
   // Isotope Filter
   var $container = $('.work-gallery');
