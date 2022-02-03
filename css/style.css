@@ -152,7 +152,7 @@ p {
   font-weight: 700; 
 }
 
-table, th, td {
+table, th, td, thead {
   font-family: "Poppins", sans-serif;
   color: #fff;
   font-size: 14px;
