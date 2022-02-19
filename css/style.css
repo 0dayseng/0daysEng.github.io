@@ -94,7 +94,7 @@ h6 {
   margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.2;
-  color: #a11023;
+  color: #331111;
 }
 
 h3.section-title {
@@ -417,7 +417,7 @@ ion-icon {
 .coverimage {
   width: 600px;
   height: 800px;
-  background-image: url('../images/alisa-red.png');
+  background-image: url('../images/alisa-bordeau.png');
   max-width: 600px;
   max-height: 800px;
   position: absolute;
@@ -577,7 +577,7 @@ ion-icon {
 .cover-v1 .heading {
   font-size: 5rem;
   font-weight: 900;
-  color: #a11023;
+  color: #331111; 
   mix-blend-mode: difference;
   z-index: 9998;
   position: relative;
@@ -933,7 +933,7 @@ hr {
 .h-title {
   font-size: 5rem;
   font-weight: 900;
-  color: #a11023;
+  color: #331111;
   mix-blend-mode: difference;
   z-index: 9998;
   position: relative;
