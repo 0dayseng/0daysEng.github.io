@@ -94,7 +94,7 @@ h6 {
   margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.2;
-  color: #331111;
+  color: #d3330b;
 }
 
 h3.section-title {
@@ -583,7 +583,7 @@ ion-icon {
 .cover-v1 .heading {
   font-size: 5rem;
   font-weight: 900;
-  color: #331111; 
+  color: #d3330b; 
   mix-blend-mode: difference;
   z-index: 9998;
   position: relative;
@@ -939,7 +939,7 @@ hr {
 .h-title {
   font-size: 5rem;
   font-weight: 900;
-  color: #331111;
+  color: #d3330b;
   mix-blend-mode: difference;
   z-index: 9998;
   position: relative;
