@@ -147,9 +147,21 @@
                                        <span class="detail-label">Booking & Purchase</span>
                                        
                                        <span class="detail-val">
-                                       <a class="underline" href="mailto:contact@zerodayengineering.com?subject=Booking: Zero Day Engineering training">Live Online Training - Early Rate (3,900 EUR)</a>
-                                       <a class="underline" href="mailto:contact@zerodayengineering.com?subject=Purchase: Zero Day Engineering SP Advanced">Self-paced Advanced package (3,900 EUR)</a><br>
-                                       <a class="underline" href="mailto:contact@zerodayengineering.com?subject=Purchase: Zero Day Engineering SP Basic">Self-paced Basic package (2,500 EUR)</a><br>
+                                          <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                             <input type="hidden" name="cmd" value="_s-xclick">
+                                             <input type="hidden" name="hosted_button_id" value="3FQZS2M2B4BNU">
+                                             <table>
+                                             <tr><td><input type="hidden" name="on0" value="Package options">Package options</td></tr><tr><td><select name="os0">
+                                                <option value="Self-paced Basic package">Self-paced Basic package €2,500.00 EUR</option>
+                                                <option value="Self-paced Complete package">Self-paced Complete package €3,900.00 EUR</option>
+                                             </select> </td></tr>
+                                             </table>
+                                             <input type="hidden" name="currency_code" value="EUR">
+                                             <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                                             <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                                          </form>
+                                             
+                                       <a class="underline" href="mailto:contact@zerodayengineering.com?subject=Booking: Zero Day Engineering training">Live Online Training: contact us to reserve a seat (3,900 EUR)</a><br>
                                        
                                        * Details of packages: see the <a href="training/details/Zero-Day-Engineering.pdf">training booklet</a><br>
                                        
