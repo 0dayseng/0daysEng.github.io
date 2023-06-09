@@ -383,7 +383,7 @@ ol {
 .circular-text {
   position: fixed;
   bottom: 50px;
-  left: calc(50%);
+  left: calc(85%);
   transform: translate(-50%, -50%);
   color: rgba(255, 255, 255, 0);
   font-size: 24px;
@@ -412,7 +412,7 @@ ion-icon {
 #back-to-top {
   position: fixed;
   bottom: 120px;
-  left: calc(50% - 22px);
+  left: calc(85% - 22px);
   color: #fff;
   padding: 10px 15px;
   display: none;
