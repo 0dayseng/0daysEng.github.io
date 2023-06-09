@@ -2182,7 +2182,14 @@ hr {
 
   .desktop-only {
      display: none !important;
+  }
+}
+  @media screen and (min-width: 1200px) {
+
+  .mobile-only {
+      display: none !important;
   } 
+  
  }
 
 /*===========================
