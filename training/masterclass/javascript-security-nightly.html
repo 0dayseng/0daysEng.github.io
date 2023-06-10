@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <!--Meta Tags-->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content=""/>
+      <meta name="keywords" content=""/>
+      <meta name="author" content=""/>
+      <base href="../../"> 
+      <!--Favicons-->
+      <link rel="shortcut icon" href="images/favicon.png">
+      <!--Page Title-->
+      <title>Masterclasses: JavaScript Security Nightly - Zero Day Engineering</title>
+      <!-- Stylesheets -->
+      <!-- bootstrap -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Animate -->
+      <link rel="stylesheet" href="css/animate.min.css">
+      <!-- Owl carusel -->
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <!-- Aos Css-->
+      <link rel="stylesheet" href="css/aos.css"/>
+      <!-- font awesome -->
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <!-- main css -->
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
+
+      
+      <!-- Nav mobile -->
+      <nav class="site-mobile-menu">
+         <div class="close-wrap d-flex">
+            <a href="#" class="d-flex ml-auto js-menu-toggle">
+               <span class="close-label">Close</span>
+               <div class="close-times">
+                  <span class="bar1"></span>
+                  <span class="bar2"></span>
+               </div>
+            </a>
+         </div>
+         <div class="site-mobile-inner"></div>
+      </nav>
+      <!-- Nav mobile end -->
+
+      <!-- Main content wrap -->
+      <div class="site-wrap">
+         <!-- Main content inner -->
+         <div class="site-inner">
+
+            <!-- Main Nav -->
+            <nav class="site-nav site-nav-target">
+               <div class="container">
+                  <div class="row align-items-center justify-content-between text-left">
+                     <div class="col-3">
+                        <div class="site-logo">
+                           <a href="index.html" class="site-logo main-logo"><img src="images/logo.png" class="logo-img light-logo img-fluid" alt=""><span></span></a>
+                        </div>
+                     </div>
+                     <div class="col text-right">
+                        <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
+                              <li><a href="index.html" class="nav-link cursor-item">Home</a></li>
+                              <li><a href="research/index.html" class="nav-link cursor-item">Research</a></li>
+                              <li><a href="training/index.html" class="nav-link cursor-item">Training</a></li>
+                              <li><a href="contact.html" class="nav-link cursor-item">Contact</a></li>
+                           </ul>
+                           <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
+                           <li><a href="#" class="js-menu-toggle">Menu</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+            <!-- Main Nav end -->
+            
+            <div class="section">
+               <div class="blog-single-inner">
+                  <div class="container">
+                     <div class="row justify-content-center">
+                        <div class="col-md-8">
+                           <div id="quote"></div>
+                           <h3 class="mb-4">JavaScript Security Nightly</h3>
+                           <p>JavaScript Security Nightly line of masterclasses is comprised of individual 4-hour livestream or recorded online events which dive deep into various aspects of JavaScript Engines security and system internals. </p>
+                           
+                           <p>All masterclasses are taught by an independent vulnerability researcher with 10+ years of experience, who is a participant in major software developers' bugbounty programs, and contestant in competitions at international level. Our system for masterclasses involves up to 50% hands on experience (labs and exercises), and an ultra-narrow specialization allowing for a focused deep dive. Expect same as from the <a class="underline" href="training">trainings</a>: 100% original content sourced from our own in-lab research work, state-of-the-art knowledge, a mix of `big picture` abstract models and relevant theory with ultra-deep dives into specific up-to-date case studies, plenty of practical tips and personal insights. The instructor will be available for communication during the class, and answer attendees' questions in real time.</p>
+
+                           <hr>
+                        
+                           <h6><a name="intro">Masterclass: JavaScript Engines for Hackers</a></h6>
+                           <p>Date: June 17th, 2023, 09:00-13:00 UTC
+                           Duration: 4 hours
+                           Location: online
+                           Instructor: Alisa Esage
+                           Level: any</p>
+                           
+                           <p>A gentle introduction to inner workings and security trends of JavaScript engines for purposes of professional vulnerability research and arbitrary curiousity. Implementation case study and practicals will be on Google v8.
+
+                           Class time will be split in two parts: general and v8. General part will focus on fundamental abstract models and trends that are shared between all JavaScript engines. Such models allow us to study specific implementations with a prepared mind, and predict things about unfamiliar code that we do not know.  Second part will take Google's v8 javascript engine as a case study, and focus on fundamental implementation aspects of it - think objects, shapes, and bytecodes - while excluding higher level machinery such as specific compilers or optimizations, whose code is more transient.</p>
+
+                           <p>Topics - general:
+                           * ECMAScript specification (what we need to know)
+                           * Anatomy of a JavaScript engine
+                           * Attack surface models
+                           * Common classes of bugs 
+                           * Common vulnerability trends 
+                           * Exploitation patterns </p>
+                           
+                           <p>Topics - v8:
+                           * Building on Linux (a dockerscript will be given)
+                           * Interesting build tweaks
+                           * d8 command line parameters
+                           * Intrinsics for live introspection
+                           * Debugging with gdb
+                           * Codebase overview & patterns 
+                           * v8 pipeline (as of 2023Q2)
+                           * How fundamental JavaScript concepts are implemented in v8
+                           * Inspecting low-level JavaScript entities in runtime</p>
+
+                           <p>You will learn:
+                           * How every JavaScript engine works internally 
+                           * What to expect from a codebase of unfamiliar engine 
+                           * Where and how to look/fuzz for bugs
+                           * How to build/debug/audit v8
+                           </p>
+
+                           <p>Who should attend:
+                           * Professional vulnerability researchers transitioning to JavaScript from other specializations
+                           * Security researchers working with or interested in JavaScript engines 
+                           * JavaScript engines core developers and testers
+                           * Electron and nodejs develepers who are curious about how javascript engines work internally 
+                           </p>
+                           
+                           <p>Pre-requisites: 
+                           * JavaScript 
+                           * C++ 
+                           * Linux command line
+                           </p>
+
+                           <p>The class is designed with a structured depth which makes it suitable for all level audiences, from beginners/webdevs (provided they have a certain readiness for low-level introspection labs, or able to skip it), to professional security and vulnerability researchers who wish to enter JavaScript specialization.</p>
+
+                           <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                              <input type="hidden" name="cmd" value="_s-xclick">
+                              <input type="hidden" name="hosted_button_id" value="FR9ECLWZNRT88">
+                              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                              <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                           </form>
+                           <hr>   
+
+
+                           <h6><a name="booking">Booking rules</a></h6>
+                           <p>Price of each masterclass, either live or on-demand, is 500 Euro, plus merchant fees. Price is per student/seat.</p>
+
+                           <p>Each masterclass would be typically live-streamed once, afterwards it may or may not be available on-demand in recording. If you purchase an on-demand masterclass, you can ask the instructor questions by email.</p> 
+                           
+                           <p>Notes:
+                           1. We will contact you within 1-2 business days following your purchase on the email associated with the payment. If that doesn't happen, first check your spam box, then send a notification of payment privately in Twitter  <a href="https://twitter.com/@zerodaytraining">@zerodaytraining</a>.
+                           2. Website payment is non-refundable, except when it's cancelled by the organizer. For more flexible payment options, contact us by <a href="mailto:contact@zerodayengineering.com?Subject=Booking: masterclass">email</a>.</p>
+
+                           <div class="post-single-navigation d-flex align-items-stretch">
+                              <a href="training/index.html" class="mr-auto w-50 pr-4">
+                                 <span class="d-block cursor-item"><i class="fa fa-chevron-left mr-2"></i> Training</span></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer section">
+               <div class="container">
+                  <div class="row justify-content-center">
+                     <div class="col-md-12">
+                        <div class="go-top cursor-item" id="go-to-top"><i class="fa fa-chevron-up"></i></div>
+                        <div class="hr-footer"></div>
+                        <div class="footer-site-logo"><a href="index.html" class="main-logo"><img src="images/logo.png" class="logo-img light-logo img-fluid" alt=""></a></div>                       
+                        <p class="site-copyright">
+                           <small>&copy; 2023 Zero Day Engineering LLC. All Rights Reserved.</small>
+                           
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </footer>
+            <!-- Footer end -->
+
+         </div>
+         <!-- Main content inner end -->
+      </div>
+      <!-- Main content wrap end -->
+
+      <!-- Back to top button -->
+      <a id="back-to-top" href="#" class="cursor-item desktop-only"><i class="fa fa-chevron-up"></i></a>
+
+      <div class="cursor"></div>
+      <div class="cursor-follower"></div>
+
+      <!-- jquery -->
+      <script src="js/query-3.4.1.min.js"></script>
+      <!-- bootstrap -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- aos -->
+      <script src="js/aos.js"></script>
+      <!-- owl.carusel js -->
+      <script src="js/owl.carousel.min.js"></script>
+      <!-- isotope js -->
+      <script src="js/isotope.pkgd.min.js"></script>
+      <!-- isotope image loader js -->
+      <script src="js/imagesloaded.pkgd.min.js"></script>
+      <!-- three -->
+      <script src="js/three.min.js"></script>
+      <!-- anime -->
+      <script src="js/anime.min.js"></script>
+      <!-- tweenmax -->
+      <script src="js/TweenMax.min.js"></script>
+      <!-- jquery.waypoints.min.js -->
+      <script src="js/jquery.waypoints.min.js"></script>
+      <!-- circletype-->
+      <script src="js/circletype.min.js"></script>
+      <!-- hover-effect -->
+      <script src="js/hover-effect.umd.js"></script>
+      <!-- gsap -->
+      <script src="js/gsap.min.js"></script>
+      <!-- ScrollMagic gsap -->
+      <script src="js/ScrollMagic.min.js"></script>
+      <script src="js/scrollmagic.animation.gsap.min.js"></script>
+      <!-- custom -->
+      <script src="js/custom.js"></script>
+   </body>
+</html>
