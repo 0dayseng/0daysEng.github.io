@@ -97,7 +97,7 @@
 
                            <hr>
                         
-                           <h6><a name="intro">Masterclass: JavaScript Engines Internals</a></h6>
+                           <h6><a name="jsinternals">Masterclass: JavaScript Engines Internals</a></h6>
                            <p>Date: June 24th, 2023, 09:00-13:00 UTC
                            Duration: 6 hours
                            Location: online
@@ -166,6 +166,59 @@
                            </form>                           
                            <hr>   
 
+                           <h6><a name="jsevulns">Masterclass: JavaScript Engine Vulnerabilities</a></h6>
+                           <p>Date: August 19th, 2023, 09:00-13:00 UTC
+                           Duration: 4 hours
+                           Location: online
+                           Instructor: Alisa Esage
+                           Level: intermediate
+                           Availability: <font style="background-color:green">registration open</font>
+                           <p>JavaScript engines come with their own special (if unique) classes of security vulnerabilities. For example, it can be easily verified by CVE history that buffer overflows are more or less nonexistent in modern engines (such as those baked into web browsers), while type confusion bugs are extremely common. Why is it so? The knowledge about JavaScript engines architecture and implementation as well as ECMAScript specification demands - that was covered comprehensively in the <a href="jsinternals">JavaScript Engine Internals masterclass</a> - lets us understand the bug trends and project it onto specific targets, to make predictions about bug classes that should be targetted or expected in a vulnerability research project. In this class we take architectural awareness and system internals as a pre-requisite starting point to explore exclusively the world of vulnerabilities which are specific to JavaScript engines, and establish related analysis skills, in depth.
+                              
+                           A large part of this masterclass will be looking at previously known bugs in a variety of JavaScript engines. It is by analysing known vulnerabilities that bug trends and classes can be identified, and new ideas for vulnerability research can be found. Self-study of vulnerability history for such complex systems as a JavaScript engine usually takes many weeks and months: aside from the actual vulnerability analysis, you'll need to set up the conceptual context for almost every one bug by studying nuances of architecture and implementation. One of the purposes of this masterclass is to 'pack' the knowledge obtained by that lengthy and tedious analytical process into a compact 4-hour session.
+
+                           In the second part of the class we'll take a closer look at one exploitable vulnerability in Google v8 of year 2022. Without attempting the patch analysis (which is a very different and highly non-trivial workflow), we'll first analyse the vulnerability in the code, then attempt to understand how it manifests in runtime with testing, introspection and a bit of debugging, and set up some path markers toward exploit development.  
+                        
+                           Note: we won't have time for any refreshers on basic appsec theory or JavaScript engines internals in this class; make sure that you meet the pre-requisites before booking.</p>
+
+                           <p>Topics:
+                           * The big picture: vulnerability classes that affect our target
+                           * Case studies of known vulnerabilities in JavaScript engines (C++ code level)
+                           * Historcial and modern trends in JSE VR
+                           * Type confusion bugs
+                           </p>
+
+                           <p>You will learn:
+                           * What to expect when bughunting a JavaScript engine 
+                           * Common patterns in JavaScript engine vulnerabilities
+                           * 
+                           </p>
+
+                           <p>Who should attend:
+                           * Professional vulnerability researchers transitioning to JavaScript from other specializations
+                           * Security researchers working with or interested in JavaScript engines 
+                           * JavaScript engines core developers and testers
+                           * Electron and nodejs develepers who are curious about how javascript engines work internally 
+                           </p>
+                           
+                           <p>Pre-requisites: 
+                           * JavaScript 
+                           * C++ 
+                           * Linux command line
+                           * Application security concepts
+                           * <a href="#jsinternals">Masterclass: JavaScript Engines Internals</a> or equivalent knowledge by self-study
+                           * Self-built v8-debug on Linux (<a href="https://gist.github.com/badd1e/d03ef5c67d04caccccbfba6747a2689d">Dockerfile</a>)
+                           </p>
+
+                           <p>Recommended setup:
+                           * Laptop for test & exercise
+                           * Linux virtual machine (Ubuntu 18.04 LTS is used in most open source dev setups)
+                           * Large second monitor for watching the stream
+                           </p>
+
+                           <p>Audience note: this is a medium specialized class which requires some knowledge of application security concepts as a prerequisite (such as C++ bug classes, memory corruption, etc.), as well as solid understanding of inner workings of JavaScript engines. Attendees should consider taking the <a href="#jsinternals">JavaScript Engines Internals masterclass</a> first to ensure apprehension.</p>
+
+                           <hr>   
 
                            <h6><a name="booking">Booking rules</a></h6>
                            <p>Price of each masterclass, either live or on-demand, is 500 Euro, plus merchant fees. Price is per student/seat.</p>
