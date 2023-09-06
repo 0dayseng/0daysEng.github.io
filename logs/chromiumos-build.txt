@@ -1,0 +1,1489 @@
+$ cros_sdk --create
+15:53:44.572: NOTICE: Downloading tarball cros-sdk-2023.08.15.211339.tar.xz ...
+15:55:57.151: NOTICE: Creating chroot. This may take a few minutes...
+15:55:57.152: INFO: run: tar --sparse -xf /home/ubuntu/code/chromiumos/.cache/sdks/cros-sdk-2023.08.15.211339.tar.xz --directory /home/ubuntu/code/chromiumos/chroot --use-compress-program /home/ubuntu/code/chromiumos/chromite/scripts/xz_auto
+16:02:14.467: INFO: cros_sdk_lib.ChrootCreator.run.ExtractSdkTarball: 6m17.315s
+16:02:14.474: INFO: /home contains: /home/ubuntu/code/chromiumos/chroot/home/chronos
+16:02:14.474: INFO: cros_sdk_lib.ChrootCreator.run.init: 0.007s
+16:02:14.615 INFO    cros_sdk:make_chroot: Running init_setup()...
+16:02:14.716 INFO    cros_sdk:make_chroot: Setting up /etc/make.*...
+16:02:14.729 INFO    cros_sdk:make_chroot: Running post-inst configuration hacks
+16:02:14 [early_enter_chroot] env-update
+16:02:14.942 INFO    cros_sdk:enter_chroot: Cleaning up '/mnt/host/depot_tools'
+>>> Regenerating /etc/ld.so.cache...
+16:02:15.314 INFO    cros_sdk:make_chroot: Cleaning stale binpkgs
+16:02:15 [early_enter_chroot] /bin/bash -c 
+    source /mnt/host/source/src/scripts/common.sh &&
+    eclean -e <(get_eclean_exclusions) packages
+qlist: ignoring parent with unknown repo in profile /mnt/host/source/src/third_party/chromiumos-overlay/profiles/targets/sdk: chromiumos:features/llvm
+qlist: ignoring parent with unknown repo in profile /mnt/host/source/src/third_party/chromiumos-overlay/profiles/targets/sdk: chromiumos:features/selinux
+cli --exclude option
+ * Building file list for packages cleaning...
+ * Your packages directory was already clean.
+16:02:15.833 INFO    cros_sdk:make_chroot: Updating portage
+16:02:15 [early_enter_chroot] emerge -uNv --quiet --ignore-world portage
+>>> 16:02:18.081 Emerging (1 of 1) sys-apps/portage-2.3.75-r149::chromiumos
+>>> 16:02:32.828 Installing (1 of 1) sys-apps/portage-2.3.75-r149::chromiumos
+>>> 16:02:38.333 Completed (1 of 1) sys-apps/portage-2.3.75-r149::chromiumos
+>>> 16:02:38.335 Jobs: 1 of 1 complete                           Load avg: 1.31, 0.97, 0.73
+16:02:45.295 INFO    cros_sdk:make_chroot: Updating host toolchain
+16:02:45 [early_enter_chroot] /mnt/host/source/chromite/bin/parallel_emerge -uNv --getbinpkg --usepkg --with-bdeps y --usepkgonly sys-devel/binutils
+16:02:45.635: INFO: Running: emerge -uNv --getbinpkg --usepkg --with-bdeps y --usepkgonly sys-devel/binutils --root-deps '--jobs=32'
+16:02:46.623: INFO: run: /usr/lib/python-exec/python3.8/python3 /home/ubuntu/code/chromiumos/.cache/common/gsutil_5.23.tar.gz/gsutil/gsutil -o 'Boto:num_retries=10' cp -v -- gs://chromeos-prebuilt/host/amd64/amd64-host/chroot-2023.08.31.201551/packages/Packages /tmp/tmpv1wzxf4t.tmp
+
+These are the packages that would be merged, in order:
+
+Calculating dependencies... done in 0:00:01.109894
+
+Total: 0 packages, Size of downloads: 0 KiB
+
+Nothing to merge; quitting.
+
+16:02:50 [early_enter_chroot] /mnt/host/source/chromite/bin/parallel_emerge -uNv --getbinpkg --usepkg --with-bdeps y --usepkgonly sys-kernel/linux-headers sys-libs/glibc
+16:02:50.441: INFO: Running: emerge -uNv --getbinpkg --usepkg --with-bdeps y --usepkgonly sys-kernel/linux-headers sys-libs/glibc --root-deps '--jobs=32'
+
+These are the packages that would be merged, in order:
+
+Calculating dependencies... done in 0:00:01.448427
+[binary     U  ] sys-kernel/linux-headers-4.14-r90::chromiumos [4.14-r3::chromiumos] USE="cros_host -headers-only" 1339 KiB
+
+Total: 1 package (1 upgrade, 1 binary), Size of downloads: 1339 KiB
+
+>>> 16:02:52.623 Emerging binary (1 of 1) sys-kernel/linux-headers-4.14-r90::chromiumos
+>>> 16:02:54.379 Installing (1 of 1) sys-kernel/linux-headers-4.14-r90::chromiumos
+>>> 16:02:57.950 Completed (1 of 1) sys-kernel/linux-headers-4.14-r90::chromiumos
+>>> 16:02:57.952 Jobs: 1 of 1 complete                           Load avg: 1.22, 0.97, 0.74
+16:02:58 [early_enter_chroot] /mnt/host/source/chromite/bin/parallel_emerge -uN --nodeps --getbinpkg --usepkg --with-bdeps y sys-libs/llvm-libunwind sys-libs/libcxx
+16:02:59.042: INFO: Running: emerge -uN --nodeps --getbinpkg --usepkg --with-bdeps y sys-libs/llvm-libunwind sys-libs/libcxx --root-deps '--jobs=32'
+>>> 16:03:00.012 Emerging binary (1 of 2) sys-libs/llvm-libunwind-17.0_pre496208-r12::chromiumos
+>>> 16:03:00.020 Emerging binary (2 of 2) sys-libs/libcxx-17.0_pre496208-r16::chromiumos
+>>> 16:03:01.741 Installing (1 of 2) sys-libs/llvm-libunwind-17.0_pre496208-r12::chromiumos
+>>> 16:03:01.859 Installing (2 of 2) sys-libs/libcxx-17.0_pre496208-r16::chromiumos
+>>> 16:03:04.952 Completed (1 of 2) sys-libs/llvm-libunwind-17.0_pre496208-r12::chromiumos
+>>> 16:03:05.442 Completed (2 of 2) sys-libs/libcxx-17.0_pre496208-r16::chromiumos
+>>> 16:03:05.443 Jobs: 2 of 2 complete                           Load avg: 1.27, 0.99, 0.75
+16:03:06 [early_enter_chroot] /mnt/host/source/chromite/bin/cros_setup_toolchains --hostonly --deleteold
+16:03:06.663: INFO: Determining required toolchain updates...
+16:03:06.691: INFO: Updating packages:
+16:03:06.692: INFO: ['sys-devel/gcc', 'sys-devel/llvm']
+16:03:06.692: INFO: run: /mnt/host/source/chromite/bin/parallel_emerge --oneshot --update --getbinpkg --usepkgonly sys-devel/gcc sys-devel/llvm
+16:03:06.781: INFO: Running: emerge --oneshot --update --getbinpkg --usepkgonly sys-devel/gcc sys-devel/llvm --root-deps '--jobs=32'
+Calculating dependencies... done in 0:00:01.491103
+>>> 16:03:09.018 Emerging binary (1 of 2) sys-devel/gcc-10.2.0-r36::chromiumos
+>>> 16:03:14.728 Installing (1 of 2) sys-devel/gcc-10.2.0-r36::chromiumos
+>>> 16:03:19.739 Completed (1 of 2) sys-devel/gcc-10.2.0-r36::chromiumos
+>>> 16:03:19.747 Emerging binary (2 of 2) sys-devel/llvm-17.0_pre496208_p20230501-r25::chromiumos
+>>> 16:03:45.046 Installing (2 of 2) sys-devel/llvm-17.0_pre496208_p20230501-r25::chromiumos
+>>> 16:04:07.670 Completed (2 of 2) sys-devel/llvm-17.0_pre496208_p20230501-r25::chromiumos
+>>> 16:04:07.671 Jobs: 2 of 2 complete                           Load avg: 1.33, 1.06, 0.79
+
+ * Regenerating GNU info directory index...
+ * Processed 6 info files.
+16:04:08.826: INFO: Nothing to clean!
+16:04:08 [enter_chroot] /mnt/host/source/src/scripts/update_chroot --skip_toolchain_update --noeclean --usepkg
+16:04:09.169 WARNING : /mnt/host/source/src/scripts/update_chroot: This script is deprecated and will be removed.
+16:04:09.171 WARNING : All users must migrate to update_chroot in chromite/bin.
+16:04:09.172 WARNING : You can simply change all references of /mnt/host/source/src/scripts/update_chroot to `update_chroot` from $PATH (in chromite/bin/).
+16:04:09.174 WARNING : This old script will be removed by June 2024.
+16:04:09.175 WARNING : If you have questions or found code that needs updating, please contact chromium-os-dev@, or file a bug at go/cros-build-bug.
+16:04:09.846: WARNING: Argument --skip_toolchain_update is deprecated: Argument will be removed Jun 2024. Use --skip-toolchain-update instead.
+16:04:09.846: WARNING: Argument --noeclean is deprecated: Argument will be removed Jun 2024. Use --no-eclean instead.
+16:04:09.847: INFO: Updating chroot in /.
+16:04:09.847: INFO: run: /mnt/host/source/src/scripts/update_chroot.sh --script-is-run-only-by-chromite-and-not-users --usepkg '--backtrack=10' --noeclean
+16:04:10.029: INFO: run: bash /mnt/host/source/src/scripts/chroot_version_hooks.d/226_purge_sdk
+qlist: ignoring parent with unknown repo in profile /mnt/host/source/src/third_party/chromiumos-overlay/profiles/targets/sdk: chromiumos:features/llvm
+qlist: ignoring parent with unknown repo in profile /mnt/host/source/src/third_party/chromiumos-overlay/profiles/targets/sdk: chromiumos:features/selinux
+chromeos-base/chromeos-activate-date: 0.0.1-r10 none none 
+chromeos-base/crosvm-base: 0.1.0-r9 none none 
+chromeos-base/vpd: 0.0.1-r189 none none 
+dev-libs/libnl: 3.4.0 none none 
+dev-libs/wayland: 1.22.0 none none 
+dev-python/pyshark: 0.4.3-r1 none none 
+dev-rust/minijail: 0.2.3-r27 none none 
+dev-rust/minijail-sys: 0.0.14-r114 none none 
+dev-rust/sync: 0.1.149-r3 none none 
+net-analyzer/wireshark: 3.4.7-r3 none none 
+net-libs/grpc-web: 1.0.3-r2 none none 
+net-libs/libpcap: 1.10.4 none none 
+virtual/chromeos-activate-date: 1-r3 none none 
+
+All selected packages: =dev-libs/wayland-1.22.0 =net-analyzer/wireshark-3.4.7-r3 =dev-rust/minijail-0.2.3-r27 =dev-python/pyshark-0.4.3-r1 =virtual/chromeos-activate-date-1-r3 =net-libs/libpcap-1.10.4 =chromeos-base/chromeos-activate-date-0.0.1-r10 =dev-libs/libnl-3.4.0 =dev-rust/minijail-sys-0.0.14-r114 =dev-rust/sync-0.1.149-r3 =net-libs/grpc-web-1.0.3-r2 =chromeos-base/vpd-0.0.1-r189 =chromeos-base/crosvm-base-0.1.0-r9
+>>> Unmerging (1 of 13) chromeos-base/chromeos-activate-date-0.0.1-r10...
+>>> Unmerging (2 of 13) chromeos-base/crosvm-base-0.1.0-r9...
+>>> Unmerging (3 of 13) chromeos-base/vpd-0.0.1-r189...
+>>> Unmerging (4 of 13) dev-libs/libnl-3.4.0...
+>>> Unmerging (5 of 13) dev-libs/wayland-1.22.0...
+>>> Unmerging (6 of 13) dev-python/pyshark-0.4.3-r1...
+>>> Unmerging (7 of 13) dev-rust/minijail-0.2.3-r27...
+>>> Unmerging (8 of 13) dev-rust/minijail-sys-0.0.14-r114...
+>>> Unmerging (9 of 13) dev-rust/sync-0.1.149-r3...
+>>> Unmerging (10 of 13) net-analyzer/wireshark-3.4.7-r3...
+>>> Unmerging (11 of 13) net-libs/grpc-web-1.0.3-r2...
+>>> Unmerging (12 of 13) net-libs/libpcap-1.10.4...
+>>> Unmerging (13 of 13) virtual/chromeos-activate-date-1-r3...
+16:04:26.701 INFO    : Updating chroot
+16:04:26.709 INFO    : Clearing shadow utils lockfiles under /
+16:04:26.714 INFO    : Updating cross-compilers
+16:04:26.716 INFO    : Running: sudo -E /mnt/host/source/chromite/bin/cros_setup_toolchains
+16:04:27.076: INFO: The following targets need to be re-initialized:
+16:04:27.076: INFO: {'x86_64-cros-linux-gnu': {'sdk': True, 'crossdev': '', 'default': True, 'have-binpkg': True}, 'arm-none-eabi': {'sdk': True, 'crossdev': '', 'default': False, 'have-binpkg': True}, 'i686-cros-linux-gnu': {'sdk': True, 'crossdev': '', 'default': False, 'have-binpkg': True}, 'armv7a-cros-linux-gnueabihf': {'sdk': True, 'crossdev': '', 'default': False, 'have-binpkg': True}, 'aarch64-cros-linux-gnu': {'sdk': True, 'crossdev': '', 'default': False, 'have-binpkg': True}, 'armv7m-cros-eabi': {'sdk': True, 'crossdev': '', 'default': False, 'have-binpkg': True}}
+16:04:27.254: INFO: run: crossdev --stable --show-fail-log --env 'FEATURES=splitdebug' -P --oneshot -P --getbinpkg -P --usepkgonly --without-headers --overlays '/mnt/host/source/src/third_party/chromiumos-overlay /mnt/host/source/src/third_party/eclass-overlay /mnt/host/source/src/third_party/portage-stable' --ov-output /usr/local/portage/crossdev -t x86_64-cros-linux-gnu --ex-pkg sys-libs/libxcrypt --ex-pkg sys-libs/llvm-libunwind --ex-pkg sys-libs/libcxx --ex-pkg dev-lang/go --binutils '[stable]' --gcc '[stable]' --kernel '[stable]' --libc '[stable]' --ex-gdb
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ * crossdev version:      20211027
+ * Host Portage ARCH:     amd64
+ * Host Portage System:   x86_64-pc-linux-gnu (i686-pc-linux-gnu x86_64-pc-linux-gnu)
+ * Target Portage ARCH:   amd64
+ * Target System:         x86_64-cros-linux-gnu
+ * Stage:                 4 (C/C++ compiler)
+ * USE=multilib:          no
+ * Target ABIs:           amd64
+
+ * binutils:              binutils-[stable]
+ * gcc:                   gcc-[stable]
+ * headers:               linux-headers-[stable]
+ * libc:                  glibc-[stable]
+ * Extra: gdb:            DO IT
+ * Extra:                 sys-libs/libxcrypt sys-libs/llvm-libunwind sys-libs/libcxx dev-lang/go
+
+ * CROSSDEV_OVERLAY:      /usr/local/portage/crossdev
+ * PORT_LOGDIR:           /var/log/portage
+ * PORTAGE_CONFIGROOT:    /
+ * Portage flags:          --oneshot --getbinpkg --usepkgonly
+  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _
+ * getting sys-devel/binutils from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-devel/gcc from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-kernel/linux-headers from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-libs/glibc from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-devel/gdb from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-libs/libxcrypt from /mnt/host/source/src/third_party/portage-stable
+ * getting sys-libs/llvm-libunwind from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-libs/libcxx from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting dev-lang/go from /mnt/host/source/src/third_party/chromiumos-overlay
+ * enabling thin-manifests due to /mnt/host/source/src/third_party/chromiumos-overlay
+  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _
+ * Log: /var/log/portage/cross-x86_64-cros-linux-gnu-binutils.log
+ * Emerging cross-binutils ...                                                                                                                           [ ok ]
+ * Log: /var/log/portage/cross-x86_64-cros-linux-gnu-gcc-stage1.log
+ * Emerging cross-gcc-stage1 ...                                                                                                                         [ ok ]
+ * Log: /var/log/portage/cross-x86_64-cros-linux-gnu-linux-headers.log
+ * Emerging cross-linux-headers ...                                                                                                                      [ ok ]
+ * Log: /var/log/portage/cross-x86_64-cros-linux-gnu-glibc.log
+ * Emerging cross-glibc ...                                                                                                                              [ ok ]
+ * Log: /var/log/portage/cross-x86_64-cros-linux-gnu-gcc-stage2.log
+ * Emerging cross-gcc-stage2 ...                                                                                                                         [ ok ]
+ * Log: /var/log/portage/cross-x86_64-cros-linux-gnu-gdb.log
+ * Emerging cross-gdb ...                                                                                                                                [ ok ]
+ * Log: /var/log/portage/cross-x86_64-cros-linux-gnu-libxcrypt.log
+ * Emerging cross-libxcrypt ...                                                                                                                          [ ok ]
+ * Log: /var/log/portage/cross-x86_64-cros-linux-gnu-llvm-libunwind.log
+ * Emerging cross-llvm-libunwind ...                                                                                                                     [ ok ]
+ * Log: /var/log/portage/cross-x86_64-cros-linux-gnu-libcxx.log
+ * Emerging cross-libcxx ...                                                                                                                             [ ok ]
+ * Log: /var/log/portage/cross-x86_64-cros-linux-gnu-go.log
+ * Emerging cross-go ...                                                                                                                                 [ ok ]
+16:04:27.254: INFO: run: crossdev --stable --show-fail-log --env 'FEATURES=splitdebug' -P --oneshot -P --getbinpkg -P --usepkgonly --without-headers --overlays '/mnt/host/source/src/third_party/chromiumos-overlay /mnt/host/source/src/third_party/eclass-overlay /mnt/host/source/src/third_party/portage-stable' --ov-output /usr/local/portage/crossdev -t arm-none-eabi --ex-pkg sys-libs/compiler-rt --ex-pkg sys-libs/llvm-libunwind --ex-pkg sys-libs/libcxx --binutils '[stable]' --gcc '[stable]' --libc '[stable]' --ex-gdb
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ * crossdev version:      20211027
+ * Host Portage ARCH:     amd64
+ * Host Portage System:   x86_64-pc-linux-gnu (i686-pc-linux-gnu x86_64-pc-linux-gnu)
+ * Target Portage ARCH:   arm
+ * Target System:         arm-none-eabi
+ * Stage:                 3 (C compiler & libc)
+ * USE=multilib:          yes
+ * Target ABIs:           default
+
+ * binutils:              binutils-[stable]
+ * gcc:                   gcc-[stable]
+ * libc:                  newlib-[latest]
+ * Extra: gdb:            DO IT
+ * Extra:                 sys-libs/compiler-rt sys-libs/llvm-libunwind sys-libs/libcxx
+
+ * CROSSDEV_OVERLAY:      /usr/local/portage/crossdev
+ * PORT_LOGDIR:           /var/log/portage
+ * PORTAGE_CONFIGROOT:    /
+ * Portage flags:          --oneshot --getbinpkg --usepkgonly
+  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _
+ * getting sys-devel/binutils from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-devel/gcc from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-libs/newlib from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-devel/gdb from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-libs/compiler-rt from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-libs/llvm-libunwind from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-libs/libcxx from /mnt/host/source/src/third_party/chromiumos-overlay
+ * leaving metadata/layout.conf alone in /usr/local/portage/crossdev
+  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _
+!!! WARNING - Cannot auto-configure CHOST arm-none-eabi;
+!!! You should edit /usr/arm-none-eabi/etc/portage/make.conf /usr/arm-none-eabi/etc/portage/profile/make.defaults /usr/arm-none-eabi/etc/portage/profile/use.force
+!!! by hand to complete your configuration.
+!!!  No KERNEL is known for this target.
+ * Log: /var/log/portage/cross-arm-none-eabi-binutils.log
+ * Emerging cross-binutils ...                                                                                                                           [ ok ]
+ * Log: /var/log/portage/cross-arm-none-eabi-gcc-stage1.log
+ * Emerging cross-gcc-stage1 ...                                                                                                                         [ ok ]
+ * Log: /var/log/portage/cross-arm-none-eabi-newlib.log
+ * Emerging cross-newlib ...                                                                                                                             [ ok ]
+ * Log: /var/log/portage/cross-arm-none-eabi-gdb.log
+ * Emerging cross-gdb ...                                                                                                                                [ ok ]
+ * Log: /var/log/portage/cross-arm-none-eabi-compiler-rt.log
+ * Emerging cross-compiler-rt ...                                                                                                                        [ ok ]
+ * Log: /var/log/portage/cross-arm-none-eabi-llvm-libunwind.log
+ * Emerging cross-llvm-libunwind ...                                                                                                                     [ ok ]
+ * Log: /var/log/portage/cross-arm-none-eabi-libcxx.log
+ * Emerging cross-libcxx ...                                                                                                                             [ ok ]
+16:04:27.254: INFO: run: crossdev --stable --show-fail-log --env 'FEATURES=splitdebug' -P --oneshot -P --getbinpkg -P --usepkgonly --without-headers --overlays '/mnt/host/source/src/third_party/chromiumos-overlay /mnt/host/source/src/third_party/eclass-overlay /mnt/host/source/src/third_party/portage-stable' --ov-output /usr/local/portage/crossdev -t i686-cros-linux-gnu --ex-pkg sys-libs/libxcrypt --ex-pkg sys-libs/llvm-libunwind --ex-pkg sys-libs/libcxx --binutils '[stable]' --gcc '[stable]' --kernel '[stable]' --libc '[stable]' --ex-gdb
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ * crossdev version:      20211027
+ * Host Portage ARCH:     amd64
+ * Host Portage System:   x86_64-pc-linux-gnu (i686-pc-linux-gnu x86_64-pc-linux-gnu)
+ * Target Portage ARCH:   x86
+ * Target System:         i686-cros-linux-gnu
+ * Stage:                 4 (C/C++ compiler)
+ * USE=multilib:          no
+ * Target ABIs:           default
+
+ * binutils:              binutils-[stable]
+ * gcc:                   gcc-[stable]
+ * headers:               linux-headers-[stable]
+ * libc:                  glibc-[stable]
+ * Extra: gdb:            DO IT
+ * Extra:                 sys-libs/libxcrypt sys-libs/llvm-libunwind sys-libs/libcxx
+
+ * CROSSDEV_OVERLAY:      /usr/local/portage/crossdev
+ * PORT_LOGDIR:           /var/log/portage
+ * PORTAGE_CONFIGROOT:    /
+ * Portage flags:          --oneshot --getbinpkg --usepkgonly
+  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _
+ * getting sys-devel/binutils from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-devel/gcc from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-kernel/linux-headers from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-libs/glibc from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-devel/gdb from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-libs/libxcrypt from /mnt/host/source/src/third_party/portage-stable
+ * getting sys-libs/llvm-libunwind from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-libs/libcxx from /mnt/host/source/src/third_party/chromiumos-overlay
+ * enabling thin-manifests due to /mnt/host/source/src/third_party/chromiumos-overlay
+  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _
+ * Log: /var/log/portage/cross-i686-cros-linux-gnu-binutils.log
+ * Emerging cross-binutils ...                                                                                                                           [ ok ]
+ * Log: /var/log/portage/cross-i686-cros-linux-gnu-gcc-stage1.log
+ * Emerging cross-gcc-stage1 ...                                                                                                                         [ ok ]
+ * Log: /var/log/portage/cross-i686-cros-linux-gnu-linux-headers.log
+ * Emerging cross-linux-headers ...                                                                                                                      [ ok ]
+ * Log: /var/log/portage/cross-i686-cros-linux-gnu-glibc.log
+ * Emerging cross-glibc ...                                                                                                                              [ ok ]
+ * Log: /var/log/portage/cross-i686-cros-linux-gnu-gcc-stage2.log
+ * Emerging cross-gcc-stage2 ...                                                                                                                         [ ok ]
+ * Log: /var/log/portage/cross-i686-cros-linux-gnu-gdb.log
+ * Emerging cross-gdb ...                                                                                                                                [ ok ]
+ * Log: /var/log/portage/cross-i686-cros-linux-gnu-libxcrypt.log
+ * Emerging cross-libxcrypt ...                                                                                                                          [ ok ]
+ * Log: /var/log/portage/cross-i686-cros-linux-gnu-llvm-libunwind.log
+ * Emerging cross-llvm-libunwind ...                                                                                                                     [ ok ]
+ * Log: /var/log/portage/cross-i686-cros-linux-gnu-libcxx.log
+ * Emerging cross-libcxx ...                                                                                                                             [ ok ]
+16:04:27.254: INFO: run: crossdev --stable --show-fail-log --env 'FEATURES=splitdebug' -P --oneshot -P --getbinpkg -P --usepkgonly --without-headers --overlays '/mnt/host/source/src/third_party/chromiumos-overlay /mnt/host/source/src/third_party/eclass-overlay /mnt/host/source/src/third_party/portage-stable' --ov-output /usr/local/portage/crossdev -t armv7a-cros-linux-gnueabihf --ex-pkg sys-libs/libxcrypt --ex-pkg sys-libs/compiler-rt --ex-pkg sys-libs/llvm-libunwind --ex-pkg sys-libs/libcxx --ex-pkg dev-lang/go --binutils '[stable]' --gcc '[stable]' --kernel '[stable]' --libc '[stable]' --ex-gdb
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ * crossdev version:      20211027
+ * Host Portage ARCH:     amd64
+ * Host Portage System:   x86_64-pc-linux-gnu (i686-pc-linux-gnu x86_64-pc-linux-gnu)
+ * Target Portage ARCH:   arm
+ * Target System:         armv7a-cros-linux-gnueabihf
+ * Stage:                 4 (C/C++ compiler)
+ * USE=multilib:          no
+ * Target ABIs:           default
+
+ * binutils:              binutils-[stable]
+ * gcc:                   gcc-[stable]
+ * headers:               linux-headers-[stable]
+ * libc:                  glibc-[stable]
+ * Extra: gdb:            DO IT
+ * Extra:                 sys-libs/libxcrypt sys-libs/compiler-rt sys-libs/llvm-libunwind sys-libs/libcxx dev-lang/go
+
+ * CROSSDEV_OVERLAY:      /usr/local/portage/crossdev
+ * PORT_LOGDIR:           /var/log/portage
+ * PORTAGE_CONFIGROOT:    /
+ * Portage flags:          --oneshot --getbinpkg --usepkgonly
+  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _
+ * getting sys-devel/binutils from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-devel/gcc from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-kernel/linux-headers from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-libs/glibc from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-devel/gdb from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-libs/libxcrypt from /mnt/host/source/src/third_party/portage-stable
+ * getting sys-libs/compiler-rt from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-libs/llvm-libunwind from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-libs/libcxx from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting dev-lang/go from /mnt/host/source/src/third_party/chromiumos-overlay
+ * enabling thin-manifests due to /mnt/host/source/src/third_party/chromiumos-overlay
+  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _
+ * Log: /var/log/portage/cross-armv7a-cros-linux-gnueabihf-binutils.log
+ * Emerging cross-binutils ...                                                                                                                           [ ok ]
+ * Log: /var/log/portage/cross-armv7a-cros-linux-gnueabihf-gcc-stage1.log
+ * Emerging cross-gcc-stage1 ...                                                                                                                         [ ok ]
+ * Log: /var/log/portage/cross-armv7a-cros-linux-gnueabihf-linux-headers.log
+ * Emerging cross-linux-headers ...                                                                                                                      [ ok ]
+ * Log: /var/log/portage/cross-armv7a-cros-linux-gnueabihf-glibc.log
+ * Emerging cross-glibc ...                                                                                                                              [ ok ]
+ * Log: /var/log/portage/cross-armv7a-cros-linux-gnueabihf-gcc-stage2.log
+ * Emerging cross-gcc-stage2 ...                                                                                                                         [ ok ]
+ * Log: /var/log/portage/cross-armv7a-cros-linux-gnueabihf-gdb.log
+ * Emerging cross-gdb ...                                                                                                                                [ ok ]
+ * Log: /var/log/portage/cross-armv7a-cros-linux-gnueabihf-libxcrypt.log
+ * Emerging cross-libxcrypt ...                                                                                                                          [ ok ]
+ * Log: /var/log/portage/cross-armv7a-cros-linux-gnueabihf-compiler-rt.log
+ * Emerging cross-compiler-rt ...                                                                                                                        [ ok ]
+ * Log: /var/log/portage/cross-armv7a-cros-linux-gnueabihf-llvm-libunwind.log
+ * Emerging cross-llvm-libunwind ...                                                                                                                     [ ok ]
+ * Log: /var/log/portage/cross-armv7a-cros-linux-gnueabihf-libcxx.log
+ * Emerging cross-libcxx ...                                                                                                                             [ ok ]
+ * Log: /var/log/portage/cross-armv7a-cros-linux-gnueabihf-go.log
+ * Emerging cross-go ...                                                                                                                                 [ ok ]
+16:04:27.255: INFO: run: crossdev --stable --show-fail-log --env 'FEATURES=splitdebug' -P --oneshot -P --getbinpkg -P --usepkgonly --without-headers --overlays '/mnt/host/source/src/third_party/chromiumos-overlay /mnt/host/source/src/third_party/eclass-overlay /mnt/host/source/src/third_party/portage-stable' --ov-output /usr/local/portage/crossdev -t aarch64-cros-linux-gnu --ex-pkg sys-libs/libxcrypt --ex-pkg sys-libs/compiler-rt --ex-pkg sys-libs/llvm-libunwind --ex-pkg sys-libs/libcxx --ex-pkg dev-lang/go --binutils '[stable]' --gcc '[stable]' --kernel '[stable]' --libc '[stable]' --ex-gdb
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ * crossdev version:      20211027
+ * Host Portage ARCH:     amd64
+ * Host Portage System:   x86_64-pc-linux-gnu (i686-pc-linux-gnu x86_64-pc-linux-gnu)
+ * Target Portage ARCH:   arm64
+ * Target System:         aarch64-cros-linux-gnu
+ * Stage:                 4 (C/C++ compiler)
+ * USE=multilib:          no
+ * Target ABIs:           arm64
+
+ * binutils:              binutils-[stable]
+ * gcc:                   gcc-[stable]
+ * headers:               linux-headers-[stable]
+ * libc:                  glibc-[stable]
+ * Extra: gdb:            DO IT
+ * Extra:                 sys-libs/libxcrypt sys-libs/compiler-rt sys-libs/llvm-libunwind sys-libs/libcxx dev-lang/go
+
+ * CROSSDEV_OVERLAY:      /usr/local/portage/crossdev
+ * PORT_LOGDIR:           /var/log/portage
+ * PORTAGE_CONFIGROOT:    /
+ * Portage flags:          --oneshot --getbinpkg --usepkgonly
+  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _
+ * getting sys-devel/binutils from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-devel/gcc from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-kernel/linux-headers from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-libs/glibc from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-devel/gdb from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-libs/libxcrypt from /mnt/host/source/src/third_party/portage-stable
+ * getting sys-libs/compiler-rt from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-libs/llvm-libunwind from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-libs/libcxx from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting dev-lang/go from /mnt/host/source/src/third_party/chromiumos-overlay
+ * enabling thin-manifests due to /mnt/host/source/src/third_party/chromiumos-overlay
+  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _
+ * Log: /var/log/portage/cross-aarch64-cros-linux-gnu-binutils.log
+ * Emerging cross-binutils ...                                                                                                                           [ ok ]
+ * Log: /var/log/portage/cross-aarch64-cros-linux-gnu-gcc-stage1.log
+ * Emerging cross-gcc-stage1 ...                                                                                                                         [ ok ]
+ * Log: /var/log/portage/cross-aarch64-cros-linux-gnu-linux-headers.log
+ * Emerging cross-linux-headers ...                                                                                                                      [ ok ]
+ * Log: /var/log/portage/cross-aarch64-cros-linux-gnu-glibc.log
+ * Emerging cross-glibc ...                                                                                                                              [ ok ]
+ * Log: /var/log/portage/cross-aarch64-cros-linux-gnu-gcc-stage2.log
+ * Emerging cross-gcc-stage2 ...                                                                                                                         [ ok ]
+ * Log: /var/log/portage/cross-aarch64-cros-linux-gnu-gdb.log
+ * Emerging cross-gdb ...                                                                                                                                [ ok ]
+ * Log: /var/log/portage/cross-aarch64-cros-linux-gnu-libxcrypt.log
+ * Emerging cross-libxcrypt ...                                                                                                                          [ ok ]
+ * Log: /var/log/portage/cross-aarch64-cros-linux-gnu-compiler-rt.log
+ * Emerging cross-compiler-rt ...                                                                                                                        [ ok ]
+ * Log: /var/log/portage/cross-aarch64-cros-linux-gnu-llvm-libunwind.log
+ * Emerging cross-llvm-libunwind ...                                                                                                                     [ ok ]
+ * Log: /var/log/portage/cross-aarch64-cros-linux-gnu-libcxx.log
+ * Emerging cross-libcxx ...                                                                                                                             [ ok ]
+ * Log: /var/log/portage/cross-aarch64-cros-linux-gnu-go.log
+ * Emerging cross-go ...                                                                                                                                 [ ok ]
+16:04:27.255: INFO: run: crossdev --stable --show-fail-log --env 'FEATURES=splitdebug' -P --oneshot -P --getbinpkg -P --usepkgonly --without-headers --overlays '/mnt/host/source/src/third_party/chromiumos-overlay /mnt/host/source/src/third_party/eclass-overlay /mnt/host/source/src/third_party/portage-stable' --ov-output /usr/local/portage/crossdev -t armv7m-cros-eabi --ex-pkg sys-libs/compiler-rt --ex-pkg sys-libs/llvm-libunwind --ex-pkg sys-libs/libcxx --binutils '[stable]' --gcc '[stable]' --libc '[stable]' --ex-gdb
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ * crossdev version:      20211027
+ * Host Portage ARCH:     amd64
+ * Host Portage System:   x86_64-pc-linux-gnu (i686-pc-linux-gnu x86_64-pc-linux-gnu)
+ * Target Portage ARCH:   arm
+ * Target System:         armv7m-cros-eabi
+ * Stage:                 3 (C compiler & libc)
+ * USE=multilib:          yes
+ * Target ABIs:           default
+
+ * binutils:              binutils-[stable]
+ * gcc:                   gcc-[stable]
+ * libc:                  newlib-[latest]
+ * Extra: gdb:            DO IT
+ * Extra:                 sys-libs/compiler-rt sys-libs/llvm-libunwind sys-libs/libcxx
+
+ * CROSSDEV_OVERLAY:      /usr/local/portage/crossdev
+ * PORT_LOGDIR:           /var/log/portage
+ * PORTAGE_CONFIGROOT:    /
+ * Portage flags:          --oneshot --getbinpkg --usepkgonly
+  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _
+ * getting sys-devel/binutils from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-devel/gcc from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-libs/newlib from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-devel/gdb from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-libs/compiler-rt from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-libs/llvm-libunwind from /mnt/host/source/src/third_party/chromiumos-overlay
+ * getting sys-libs/libcxx from /mnt/host/source/src/third_party/chromiumos-overlay
+ * enabling thin-manifests due to /mnt/host/source/src/third_party/chromiumos-overlay
+  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _  -  ~  -  _
+!!! WARNING - Cannot auto-configure CHOST armv7m-cros-eabi;
+!!! You should edit /usr/armv7m-cros-eabi/etc/portage/make.conf /usr/armv7m-cros-eabi/etc/portage/profile/make.defaults /usr/armv7m-cros-eabi/etc/portage/profile/use.force
+!!! by hand to complete your configuration.
+!!!  No KERNEL is known for this target.
+ * Log: /var/log/portage/cross-armv7m-cros-eabi-binutils.log
+ * Emerging cross-binutils ...                                                                                                                           [ ok ]
+ * Log: /var/log/portage/cross-armv7m-cros-eabi-gcc-stage1.log
+ * Emerging cross-gcc-stage1 ...                                                                                                                         [ ok ]
+ * Log: /var/log/portage/cross-armv7m-cros-eabi-newlib.log
+ * Emerging cross-newlib ...                                                                                                                             [ ok ]
+ * Log: /var/log/portage/cross-armv7m-cros-eabi-gdb.log
+ * Emerging cross-gdb ...                                                                                                                                [ ok ]
+ * Log: /var/log/portage/cross-armv7m-cros-eabi-compiler-rt.log
+ * Emerging cross-compiler-rt ...                                                                                                                        [ ok ]
+ * Log: /var/log/portage/cross-armv7m-cros-eabi-llvm-libunwind.log
+ * Emerging cross-llvm-libunwind ...                                                                                                                     [ ok ]
+ * Log: /var/log/portage/cross-armv7m-cros-eabi-libcxx.log
+ * Emerging cross-libcxx ...                                                                                                                             [ ok ]
+16:06:24.143: INFO: Determining required toolchain updates...
+16:06:24.361: INFO: Updating packages:
+16:06:24.361: INFO: ['dev-lang/rust', 'virtual/target-sdk-post-cross', 'dev-embedded/hps-sdk']
+16:06:24.362: INFO: run: /mnt/host/source/chromite/bin/parallel_emerge --oneshot --update --getbinpkg --usepkgonly dev-lang/rust virtual/target-sdk-post-cross dev-embedded/hps-sdk
+16:06:24.449: INFO: Running: emerge --oneshot --update --getbinpkg --usepkgonly dev-lang/rust virtual/target-sdk-post-cross dev-embedded/hps-sdk --root-deps '--jobs=32'
+Calculating dependencies... done in 0:00:01.189652
+>>> 16:06:26.381 Emerging binary (1 of 4) dev-embedded/hps-sdk-0.0.1-r8::chromiumos
+>>> 16:06:26.389 Emerging binary (2 of 4) dev-lang/rust-1.70.0::chromiumos
+>>> 16:06:34.181 Installing (2 of 4) dev-lang/rust-1.70.0::chromiumos
+>>> 16:06:37.802 Completed (2 of 4) dev-lang/rust-1.70.0::chromiumos
+>>> 16:06:39.392 Installing (1 of 4) dev-embedded/hps-sdk-0.0.1-r8::chromiumos
+>>> 16:06:44.364 Completed (1 of 4) dev-embedded/hps-sdk-0.0.1-r8::chromiumos
+>>> 16:06:44.370 Emerging binary (3 of 4) virtual/target-chromium-os-sdk-post-cross-1-r19::chromiumos
+>>> 16:06:44.778 Installing (3 of 4) virtual/target-chromium-os-sdk-post-cross-1-r19::chromiumos
+>>> 16:06:47.793 Completed (3 of 4) virtual/target-chromium-os-sdk-post-cross-1-r19::chromiumos
+>>> 16:06:47.800 Emerging binary (4 of 4) virtual/target-sdk-post-cross-1-r3::chromiumos
+>>> 16:06:48.170 Installing (4 of 4) virtual/target-sdk-post-cross-1-r3::chromiumos
+>>> 16:06:50.269 Completed (4 of 4) virtual/target-sdk-post-cross-1-r3::chromiumos
+>>> 16:06:50.270 Jobs: 4 of 4 complete                           Load avg: 2.89, 2.13, 1.26
+16:06:51.242 INFO    : Bootstrapping depot_tools
+16:07:11: NOTICE: Installed packages in SDK: 932
+16:07:11: NOTICE: Outdated packages in SDK: 108
+16:07:11: NOTICE: 14 outdated system-critical packages were not deleted
+*** unmerging app-misc/jq-1.4-r1
+*** unmerging dev-python/cycler-0.10.0
+*** unmerging dev-python/grpcio-1.43.0
+*** unmerging dev-python/protobuf-python-4.21.9
+*** unmerging dev-python/more-itertools-4.2.0-r1
+*** unmerging dev-python/webcolors-1.5
+*** unmerging dev-python/matplotlib-2.2.2-r2
+*** unmerging dev-python/setuptools_scm-3.2.0
+*** unmerging sys-fs/erofs-utils-1.6-r1
+*** unmerging sys-fs/mtd-utils-2.1.3
+*** unmerging dev-go/moby-0.5.0
+*** unmerging dev-go/docker-20.10.8-r5
+*** unmerging dev-go/go-optional-0.2.0-r1
+*** unmerging dev-go/go-tpm-0.9.0-r1
+*** unmerging dev-go/ep-pvg-0.6.2-r3
+*** unmerging dev-go/gonum-0.11.0-r2
+*** unmerging dev-go/perfetto-protos-37.0-r3
+*** unmerging net-analyzer/netperf-2.7.0-r4
+*** unmerging media-sound/audio_streams-0.1.0-r82
+ * Removed audio_streams-0.1.0 from Cargo registry
+*** unmerging app-admin/webapp-config-1.55-r1
+*** unmerging chromeos-base/devserver-0.0.3-r2019
+*** unmerging chromeos-base/xdr-proto-0.0.1-r166
+*** unmerging chromeos-base/vm_protos-0.0.1-r486
+*** unmerging chromeos-base/hardware_verifier_proto-0.0.1-r589
+*** unmerging chromeos-base/imageloader-0.0.1-r1909
+*** unmerging chromeos-base/chromeos-ec-headers-0.0.1-r11353
+*** unmerging chromeos-base/crosid-0.0.1-r188
+*** unmerging chromeos-base/update_engine-0.0.3-r4784
+*** unmerging chromeos-base/libcrossystem-0.0.1-r189
+*** unmerging chromeos-base/tast-remote-tests-cros-0.0.2-r18012
+*** unmerging chromeos-base/system_api-0.0.1-r5400
+*** unmerging chromeos-base/cros-config-api-0.0.1-r650
+*** unmerging chromeos-base/chromeos-common-script-0.0.1-r538
+*** unmerging chromeos-base/power_manager-client-0.0.1-r2733
+*** unmerging chromeos-base/update_engine-client-0.0.1-r2283
+*** unmerging chromeos-base/metrics-0.0.1-r3669
+*** unmerging chromeos-base/libec-0.0.1-r502
+*** unmerging chromeos-base/wilco-dtc-grpc-protos-0.0.1-r404
+*** unmerging chromeos-base/aosp-frameworks-base-proto-20220906-r2
+*** unmerging chromeos-base/zephyr-build-tools-0.0.1-r253
+*** unmerging chromeos-base/reporting-proto-0.0.1-r224
+*** unmerging chromeos-base/libbrillo-0.0.1-r2280
+*** unmerging chromeos-base/update_payload-0.0.1-r526
+*** unmerging chromeos-base/vboot_reference-1.0-r2616
+*** unmerging chromeos-base/debugd-client-0.0.1-r2529
+*** unmerging chromeos-base/perfetto-37.0-r3
+*** unmerging chromeos-base/session_manager-client-0.0.1-r2609
+*** unmerging chromeos-base/tast-cmd-0.0.1-r2109
+*** unmerging chromeos-base/verity-0.0.1-r445
+*** unmerging chromeos-base/mojo-tools-0.0.1-r65
+*** unmerging chromeos-base/hps-sign-rom-0.1.0-r98
+*** unmerging chromeos-base/tast-proto-0.0.1-r974
+*** unmerging chromeos-base/chromeos-base-1-r34
+*** unmerging chromeos-base/libchrome-0.0.1-r782
+*** unmerging chromeos-base/tast-build-deps-2-r41
+*** unmerging chromeos-base/chromeos-config-host-0.0.2-r835
+*** unmerging chromeos-base/ec-devutils-0.0.2-r13325
+*** unmerging chromeos-base/policy-go-proto-0.0.1-r458
+*** unmerging chromeos-base/ec-utils-0.0.2-r15258
+*** unmerging chromeos-base/tast-tests-remote-data-0.0.1-r10283
+*** unmerging chromeos-base/modemfwd-proto-0.0.1-r301
+*** unmerging chromeos-base/shill-client-0.0.1-r3918
+*** unmerging chromeos-base/protofiles-0.0.107
+*** unmerging virtual/cargo-workflow-deps-0.0.1-r2
+*** unmerging virtual/target-chromium-os-sdk-1-r322
+*** unmerging app-emulation/qemu-6.2.0-r2
+*** unmerging media-video/ffmpeg-5.1.1-r4
+*** unmerging dev-embedded/u-boot-tools-2018.05
+*** unmerging dev-embedded/binman-0.0.1-r15
+*** unmerging dev-embedded/dtoc-0.0.1-r9
+*** unmerging net-wireless/floss_tools-0.0.1-r2734
+*** unmerging app-crypt/sbsigntools-0.9.2
+*** unmerging dev-rust/third-party-crates-src-0.0.1-r174
+*** unmerging dev-lang/perl-5.36.0-r4
+ * Removing dead symlink /usr/bin/ptar
+ * Removing dead symlink /usr/share/man/man1/ptar.1.gz
+ * Removing dead symlink /usr/bin/ptardiff
+ * Removing dead symlink /usr/share/man/man1/ptardiff.1.gz
+ * Removing dead symlink /usr/bin/ptargrep
+ * Removing dead symlink /usr/share/man/man1/ptargrep.1.gz
+ * Removing dead symlink /usr/bin/cpan
+ * Removing dead symlink /usr/share/man/man1/cpan.1.gz
+ * Removing dead symlink /usr/bin/shasum
+ * Removing dead symlink /usr/share/man/man1/shasum.1.gz
+ * Removing dead symlink /usr/bin/enc2xs
+ * Removing dead symlink /usr/share/man/man1/enc2xs.1.gz
+ * Removing dead symlink /usr/bin/piconv
+ * Removing dead symlink /usr/share/man/man1/piconv.1.gz
+ * Removing dead symlink /usr/bin/instmodsh
+ * Removing dead symlink /usr/share/man/man1/instmodsh.1.gz
+ * Removing dead symlink /usr/bin/xsubpp
+ * Removing dead symlink /usr/share/man/man1/xsubpp.1.gz
+ * Removing dead symlink /usr/bin/zipdetails
+ * Removing dead symlink /usr/share/man/man1/zipdetails.1.gz
+ * Removing dead symlink /usr/bin/json_pp
+ * Removing dead symlink /usr/share/man/man1/json_pp.1.gz
+ * Removing dead symlink /usr/bin/corelist
+ * Removing dead symlink /usr/share/man/man1/corelist.1.gz
+ * Removing dead symlink /usr/bin/podchecker
+ * Removing dead symlink /usr/share/man/man1/podchecker.1.gz
+ * Removing dead symlink /usr/bin/perldoc
+ * Removing dead symlink /usr/share/man/man1/perldoc.1.gz
+ * Removing dead symlink /usr/bin/pod2usage
+ * Removing dead symlink /usr/share/man/man1/pod2usage.1.gz
+ * Removing dead symlink /usr/bin/prove
+ * Removing dead symlink /usr/share/man/man1/prove.1.gz
+ * Removing dead symlink /usr/bin/pod2man
+ * Removing dead symlink /usr/share/man/man1/pod2man.1.gz
+ * Removing dead symlink /usr/bin/pod2text
+ * Removing dead symlink /usr/share/man/man1/pod2text.1.gz
+ * Removing dead symlink /usr/share/man/man1/perlpodstyle.1.gz
+*** unmerging x11-libs/libdrm-2.4.115-r2
+*** unmerging dev-util/cros-test-0.0.1-r60
+*** unmerging dev-util/hdctools-0.0.1-r1975
+*** unmerging dev-util/cros-test-finder-0.0.1-r71
+*** unmerging dev-util/pre-process-0.0.1-r10
+*** unmerging dev-util/vulkan-headers-1.3.250
+*** unmerging dev-util/meson-0.61.1-r1
+*** unmerging dev-util/gperf-3.1
+*** unmerging dev-util/glslang-1.3.250
+*** unmerging dev-util/bazel-5.3.0-r3
+*** unmerging dev-util/cros-servod-0.0.1-r250
+*** unmerging dev-util/test-services-0.0.1-r483
+*** unmerging dev-util/bazel-6.2.0-r2
+*** unmerging dev-util/ccache-3.7.7
+Removing masquerade for ccache ...
+removed '/usr/lib/ccache/bin/c++'
+removed '/usr/lib/ccache/bin/gcc'
+removed '/usr/lib/ccache/bin/clang++'
+removed '/usr/lib/ccache/bin/cc'
+removed '/usr/lib/ccache/bin/clang'
+removed '/usr/lib/ccache/bin/g++'
+removed directory '/usr/lib/ccache/bin'
+*** unmerging dev-util/perf-5.15.68-r3
+*** unmerging dev-util/toolchain-utils-0.0.1-r1046
+*** unmerging dev-util/shellcheck-0.8.0-r60
+ * Recaching GHC package DB
+/var/db/pkg/dev-util/shellcheck-0.8.0-r60/temp/environment: line 3133: BDEPEND: command not found
+*** unmerging sys-firmware/sgabios-0.1_pre8-r1
+*** unmerging media-libs/opencv-4.5.5-r1
+16:07:12: NOTICE: Looking for unsatisfiable packages.
+16:07:17: NOTICE: 1 outdated system-critical packages were not deleted
+16:07:17: NOTICE: Packages with slot conflict in SDK: 11
+*** unmerging dev-rust/rustc-demangle-capi-0.1.0-r2
+*** unmerging dev-rust/dbus-codegen-0.10.0-r5
+*** unmerging dev-rust/svd2rust-0.20.0-r15
+*** unmerging dev-rust/bindgen-0.63.0-r1
+*** unmerging dev-rust/protobuf-codegen-2.27.1
+*** unmerging dev-rust/data_model-0.1.50-r52
+ * Removed data_model-0.1.50 from Cargo registry
+*** unmerging dev-util/pdl-compiler-0.1.1
+*** unmerging dev-util/cxxbridge-cmd-1.0.97
+*** unmerging dev-util/bsdiff-4.3.1-r39
+*** unmerging dev-util/puffin-1.0.0-r446
+*** unmerging sci-electronics/prjoxide-0.1.0_p20220928-r6
+16:07:17.445 INFO    : Rebuilding Portage cache
+16:07:17.447 INFO    : Running: /mnt/host/source/chromite/bin/parallel_emerge --regen --quiet
+16:07:17.533: INFO: Running: emerge --regen --quiet --root-deps '--jobs=32'
+16:07:19.146 INFO    : Updating the SDK
+16:07:20.164 INFO    : Running: sudo -E /mnt/host/source/chromite/bin/parallel_emerge -uNv --with-bdeps=y --backtrack=10 --getbinpkg --useoldpkg-atoms=dev-lang/go --useoldpkg-atoms=dev-lang/rust-bootstrap --useoldpkg-atoms=dev-lang/rust-host --useoldpkg-atoms=dev-libs/elfutils --useoldpkg-atoms=sys-devel/binutils --useoldpkg-atoms=sys-devel/gcc --useoldpkg-atoms=sys-devel/llvm --useoldpkg-atoms=sys-kernel/linux-headers --useoldpkg-atoms=sys-libs/glibc --useoldpkg-atoms=sys-libs/libcxx --useoldpkg-atoms=sys-libs/llvm-libunwind --useoldpkg-atoms=dev-lang/rust --useoldpkg-atoms=virtual/target-sdk-post-cross --useoldpkg-atoms=dev-embedded/hps-sdk --deep virtual/target-sdk world
+16:07:20.253: INFO: Running: emerge -uNv '--with-bdeps=y' '--backtrack=10' --getbinpkg '--useoldpkg-atoms=dev-lang/go' '--useoldpkg-atoms=dev-lang/rust-bootstrap' '--useoldpkg-atoms=dev-lang/rust-host' '--useoldpkg-atoms=dev-libs/elfutils' '--useoldpkg-atoms=sys-devel/binutils' '--useoldpkg-atoms=sys-devel/gcc' '--useoldpkg-atoms=sys-devel/llvm' '--useoldpkg-atoms=sys-kernel/linux-headers' '--useoldpkg-atoms=sys-libs/glibc' '--useoldpkg-atoms=sys-libs/libcxx' '--useoldpkg-atoms=sys-libs/llvm-libunwind' '--useoldpkg-atoms=dev-lang/rust' '--useoldpkg-atoms=virtual/target-sdk-post-cross' '--useoldpkg-atoms=dev-embedded/hps-sdk' --deep virtual/target-sdk world --root-deps '--jobs=32'
+
+These are the packages that would be merged, in order:
+
+Calculating dependencies... done in 0:00:13.299868
+[binary  N     ] dev-util/gperf-3.1-r1::portage-stable  180 KiB
+[binary     U  ] sys-devel/automake-wrapper-20221207::portage-stable [11::portage-stable] 19 KiB
+[binary  N     ] dev-libs/oniguruma-6.9.8:0/5::portage-stable  USE="-crnl-as-line-terminator -static-libs" ABI_X86="(64) -32 (-x32)" 344 KiB
+[binary  N     ] dev-util/re2c-2.2::portage-stable  USE="-debug -test" 502 KiB
+[binary  N     ] sys-firmware/sgabios-0.1_pre10::portage-stable  USE="binary" 26 KiB
+[binary  N     ] dev-go/logex-1.2.0-r1::chromiumos  USE="-test" 34 KiB
+[binary  N     ] dev-go/blackfriday-2.1.0::chromiumos  USE="-test" 102 KiB
+[binary  N     ] dev-go/readline-1.4-r2::chromiumos  61 KiB
+[binary  N     ] acct-group/sshd-0-r1::eclass-overlay  19 KiB
+[binary  N     ] dev-go/uio-0.0.1-r1::chromiumos  32 KiB
+[binary  N     ] dev-go/kr-fs-0.1.0-r1::chromiumos  34 KiB
+[ebuild  N     ] dev-go/go-optional-0.2.0-r2::chromiumos  6 KiB
+[binary  N     ] dev-go/tomb-1.0.0::chromiumos  33 KiB
+[binary  N     ] dev-go/svgo-0.0.1-r1::chromiumos  2411 KiB
+[binary  N     ] dev-go/rsc-io-pdf-0.0.1-r1::chromiumos  75 KiB
+[binary  N     ] dev-go/snappy-0.0.3-r1::chromiumos  81 KiB
+[binary  N     ] dev-go/test-0.0.1-r1::chromiumos  33 KiB
+[binary  N     ] dev-go/objx-0.3.0::chromiumos  USE="-test" 63 KiB
+[binary  N     ] dev-go/fsnotify-1.4.2-r2::chromiumos  58 KiB
+[binary  N     ] dev-go/go-image-0.6.0_p20-r1::chromiumos  2136 KiB
+[binary  N     ] dev-go/go-md2man-2.0.2::chromiumos  USE="-test" 868 KiB
+[ebuild  N     ] dev-go/mountinfo-0.5.0-r2::chromiumos  60 KiB
+[binary  N     ] acct-user/sshd-0-r1::eclass-overlay  0 KiB
+[ebuild  N     ] dev-go/go-tpm-0.9.0-r2::chromiumos  188 KiB
+[binary  N     ] net-analyzer/netperf-2.7.0-r5::portage-stable  USE="-demo -sctp" 251 KiB
+[binary  N     ] dev-go/golang-freetype-0.0.1-r1::chromiumos  81 KiB
+[ebuild  N     ] dev-go/mount-0.5.0-r2::chromiumos  0 KiB
+[binary  N     ] dev-go/gobusybox-0.0.1_p20221228-r1::chromiumos  67 KiB
+[binary  N     ] dev-go/sftp-1.13.4-r1::chromiumos  139 KiB
+[binary     U  ] dev-go/u-root-0.11.0-r1::chromiumos [0.11.0::chromiumos] 54121 KiB
+[ebuild  N     ] dev-go/gonum-0.11.0-r3::chromiumos  3352 KiB
+[binary  N     ] dev-go/ep-pvg-0.6.2-r4::chromiumos  50 KiB
+[ebuild  N     ] dev-go/docker-20.10.8-r6::chromiumos  11556 KiB
+[binary  N     ] dev-libs/vala-common-0.56.3::portage-stable  20 KiB
+[binary  N     ] app-misc/jq-1.7_pre20201109-r1::portage-stable  USE="oniguruma -static-libs -test" 260 KiB
+[binary  N     ] dev-cpp/gtest-1.13.0-r11::chromiumos  USE="cros_host -doc -examples -test" ABI_X86="(64) -32 (-x32)" 502 KiB
+[ebuild  N     ] chromeos-base/aosp-frameworks-base-proto-20220906-r3::chromiumos  215 KiB
+[binary  N     ] x11-base/xorg-proto-2022.2::portage-stable  USE="cros_host -test" 404 KiB
+[binary  N     ] dev-rust/third-party-crates-src-0.0.1-r176:0/0.0.1-r176::chromiumos  USE="cros_host lto panic-abort -asan -cfi -cfi_diag -cfi_recover -coverage -cros-debug -fuzzer -lsan -msan -rust-coverage -sccache -test -thinlto -tsan -ubsan" PYTHON_SINGLE_TARGET="python3_6 -python3_7 -python3_8 -python3_9" 54785 KiB
+[binary  N     ] media-gfx/pngcrush-1.7.81::portage-stable  USE="system-libs" 79 KiB
+[binary     U  ] dev-cpp/abseil-cpp-20230125.2-r2:0/20230125::chromiumos [20230125.2:0/20230125::chromiumos] USE="-asan -cfi -cfi_diag -cfi_recover -coverage -fuzzer -msan -test -thinlto -tsan -ubsan" 1423 KiB
+[binary     U  ] sys-apps/file-5.44-r3::portage-stable [5.42::portage-stable] USE="bzip2 zlib -lzip% -lzma -python -seccomp -static-libs -verify-sig -zstd%" ABI_X86="(64) -32 (-x32)" PYTHON_TARGETS="python3_6 python3_8 -python3_10% -python3_11% -python3_12% -python3_7 -python3_9" 987 KiB
+[binary     U  ] dev-libs/modp_b64-0.0.1-r380::chromiumos [0.0.1-r379::chromiumos] USE="cpp20 cros_host -asan -cfi -cfi_diag -cfi_recover -compdb_only -compilation_database -coverage -cros-debug -function_elimination_experiment -fuzzer -lto_experiment -msan -test -thinlto -tsan -ubsan" 47 KiB
+[binary  N     ] chromeos-base/protofiles-0.0.110:0/0.0.110::chromiumos  USE="cros_host" 519 KiB
+[binary  N     ] x11-libs/xtrans-1.5.0::portage-stable  USE="-doc -static-libs" 74 KiB
+[binary  N     ] chromeos-base/signingtools-bin-0.0.1-r1::chromiumos  USE="cros_host" 8633 KiB
+[binary  N     ] dev-rust/bindgen-0.63.0-r1:0/0.63.0-r1::chromiumos  USE="cros_host lto panic-abort -asan -cfi -cfi_diag -cfi_recover -coverage -cros-debug -fuzzer -lsan -msan -rust-coverage -sccache -test -thinlto -tsan -ubsan" 1349 KiB
+[binary  N     ] dev-rust/dbus-codegen-0.10.0-r5:0/0.10.0-r5::chromiumos  USE="cros_host lto panic-abort -asan -cfi -cfi_diag -cfi_recover -coverage -cros-debug -fuzzer -lsan -msan -rust-coverage -sccache -test -thinlto -tsan -ubsan" 430 KiB
+[binary  N     ] dev-rust/protobuf-codegen-2.27.1:0/2.27.1::chromiumos  USE="cros_host lto panic-abort -asan -cfi -cfi_diag -cfi_recover -coverage -cros-debug -fuzzer -lsan -msan -rust-coverage -sccache -test -thinlto -tsan -ubsan" 514 KiB
+[binary  N     ] dev-util/cxxbridge-cmd-1.0.97:0/1.0.97::chromiumos  USE="cros_host lto panic-abort -asan -cfi -cfi_diag -cfi_recover -coverage -cros-debug -fuzzer -lsan -msan -rust-coverage -sccache -test -thinlto -tsan -ubsan" 761 KiB
+[binary  N     ] chromeos-base/hps-sign-rom-0.1.0-r99:0/0.1.0-r99::chromiumos  USE="cros_host lto panic-abort -asan -cfi -cfi_diag -cfi_recover -coverage -cros-debug -fuzzer -lsan -msan -rust-coverage -sccache -test -thinlto -tsan -ubsan" 395 KiB
+[binary  N     ] dev-rust/svd2rust-0.20.0-r15:0.20.0/r15::chromiumos  USE="cros_host lto panic-abort -asan -cfi -cfi_diag -cfi_recover -coverage -cros-debug -fuzzer -lsan -msan -rust-coverage -sccache -test -thinlto -tsan -ubsan" 1358 KiB
+[binary  N     ] dev-util/pdl-compiler-0.1.1:0/0.1.1::chromiumos  USE="cros_host lto panic-abort -asan -cfi -cfi_diag -cfi_recover -coverage -cros-debug -fuzzer -lsan -msan -rust-coverage -sccache -test -thinlto -tsan -ubsan" 812 KiB
+[binary  N     ] sci-libs/gsl-2.7.1-r1:0/27::chromiumos  USE="deprecated -cblas-external -static-libs" 2113 KiB
+[binary  N     ] dev-libs/tinyxml2-8.0.0:0/8::portage-stable  USE="-test" ABI_X86="(64) -32 (-x32)" 89 KiB
+[binary  N     ] sci-electronics/prjoxide-0.1.0_p20220928-r6::chromiumos  USE="cros_host lto panic-abort -asan -cfi -cfi_diag -cfi_recover -coverage -cros-debug -fuzzer -lsan -msan -rust-coverage -sccache -test -thinlto -tsan -ubsan" 1439 KiB
+[binary     U  ] sys-apps/flashrom-0.9.9-r1660:0/0.9.9-r1660::chromiumos [0.9.9-r1651:0/0.9.9-r1651::chromiumos] USE="cli cros_host dediprog dummy ft2232_spi internal it8212 linux_mtd linux_spi mediatek_i2c_spi parade_lspcon raiden_debug_spi realtek_mst_i2c_spi serprog stlinkv3_spi usbblaster_spi -asan -atahpt -atapromise -atavia -buspirate_spi -cfi -cfi_diag -cfi_recover -ch341a_spi -coverage -developerbox_spi -digilent_spi -docs -drkaiser -fuzzer -gfxnvidia -ich_descriptors -jlink_spi -manpages -msan -mstarddc_spi -nic3com -nicintel -nicintel_eeprom -nicintel_spi -nicnatsemi -nicrealtek -ogp_spi -pickit2_spi -pony_spi -rayer_spi -satamv -satasii -static -test -thinlto -tsan -ubsan -wiki" 662 KiB
+[binary  N     ] chromeos-base/crosid-0.0.1-r196:0/0.0.1-r196::chromiumos  USE="cros_host -asan -cfi -cfi_diag -cfi_recover -coverage -fuzzer -msan -test -thinlto -tsan -ubsan" 60 KiB
+[binary  N     ] dev-rust/rustc-demangle-capi-0.1.0-r2:0/0.1.0-r2::chromiumos  USE="cros_host lto panic-abort -asan -cfi -cfi_diag -cfi_recover -coverage -cros-debug -fuzzer -lsan -msan -rust-coverage -sccache -test -thinlto -tsan -ubsan" 396 KiB
+[binary  N     ] media-sound/audio_streams-0.1.0-r83:0/0.1.0-r83::chromiumos  USE="cros_host lto panic-abort -asan -cfi -cfi_diag -cfi_recover -coverage -cros-debug -fuzzer -lsan -msan -rust-coverage -sccache -test -thinlto -tsan -ubsan" 58 KiB
+[binary  N     ] dev-rust/data_model-0.1.50-r52:0/0.1.50-r52::chromiumos  USE="cros_host lto panic-abort -asan -cfi -cfi_diag -cfi_recover -coverage -cros-debug -fuzzer -lsan -msan -rust-coverage -sccache -test -thinlto -tsan -ubsan" 57 KiB
+[binary  N     ] virtual/cargo-workflow-deps-0.0.1-r3::chromiumos  USE="cros_host" 35 KiB
+[binary     U  ] dev-libs/openssl-1.1.1u-r1:0/1.1::chromiumos [1.1.1u:0/1.1::chromiumos] USE="asm (-bindist) -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla -verify-sig -weak-ssl-ciphers" ABI_X86="(64) -32 (-x32)" CPU_FLAGS_X86="sse2" 5302 KiB
+[binary     U  ] dev-vcs/git-2.39.2-r1::portage-stable [2.39.2::portage-stable] USE="blksha1 curl iconv pcre safe-directory -cgi -cvs -doc -gnome-keyring -gpg -highlight -mediawiki -mediawiki-experimental -nls -perforce -perl -selinux -subversion -test -tk -webdav -xinetd" PYTHON_SINGLE_TARGET="python3_6 -python3_7 -python3_8 -python3_9" 10978 KiB
+[ebuild     U  ] sys-apps/coreboot-utils-0.0.1-r5461::chromiumos [0.0.1-r5440::chromiumos] USE="cros_host pci -asan -cfi -cfi_diag -cfi_recover -coverage -fuzzer -mma -msan -static -thinlto -tsan -ubsan" 0 KiB
+[ebuild  N     ] chromeos-base/chromeos-ec-headers-0.0.1-r11378:0/0.0.1-r11378::chromiumos  USE="cros_host" 0 KiB
+[ebuild  N     ] chromeos-base/tast-tests-remote-data-0.0.1-r10642::chromiumos  USE="cros_host" 0 KiB
+[binary  N     ] dev-embedded/u-boot-tools-2023.01-r1::portage-stable  USE="-envtools" 255 KiB
+[binary     U  ] net-misc/wget-1.21.4::portage-stable [1.20.3-r3::portage-stable] USE="ipv6 nls ssl zlib -cookie-check% -debug -gnutls -idn -metalink -ntlm -pcre -static -test -uuid -verify-sig% (-cookie_check%) (-libressl%)" 386 KiB
+[binary     U  ] dev-libs/libzip-1.10.0-r1:0/5::portage-stable [1.8.0-r1:0/5::portage-stable] USE="bzip2 ssl -gnutls -lzma -mbedtls -static-libs -test -tools -zstd" 276 KiB
+[binary  N     ] dev-util/glib-utils-2.74.1::chromiumos  USE="-cros-host" PYTHON_SINGLE_TARGET="python3_6 -python3_7 -python3_8 -python3_9" 68 KiB
+[binary     U  ] sys-devel/gdb-9.2.20200923-r12::chromiumos [9.2.20200923-r11::chromiumos] USE="client nls python server xml -lzma -mounted_sources -multitarget -test -vanilla" PYTHON_SINGLE_TARGET="python3_6 -python3_7 -python3_8 -python3_9" 4690 KiB
+[ebuild  N     ] dev-lang/perl-5.36.1-r3:0/5.36::portage-stable  USE="minimal -berkdb -debug -doc -gdbm -ithreads -quadmath" 12883 KiB
+[binary  N     ] virtual/perl-ExtUtils-MakeMaker-7.640.0::portage-stable  16 KiB
+[binary  N     ] virtual/perl-Module-Metadata-1.0.37-r2::portage-stable  16 KiB
+[binary  N     ] virtual/perl-Getopt-Long-2.520.0-r1::portage-stable  16 KiB
+[binary  N     ] virtual/perl-CPAN-Meta-Requirements-2.140.0-r8::portage-stable  16 KiB
+[binary  N     ] dev-perl/Canary-Stability-2013.0.0::portage-stable  27 KiB
+[binary  N     ] dev-perl/Devel-CheckLib-1.160.0::portage-stable  40 KiB
+[binary  N     ] sys-fs/mtd-utils-2.1.5::portage-stable  USE="lzo ssl xattr zstd -test" 514 KiB
+[binary  N     ] virtual/python-futures-1::portage-stable  PYTHON_TARGETS="python3_6 python3_8 -pypy3 -python3_7 -python3_9" 29 KiB
+[ebuild  N     ] chromeos-base/wilco-dtc-grpc-protos-0.0.1-r406::chromiumos  USE="cpp20 cros_host -asan -cfi -cfi_diag -cfi_recover -compdb_only -compilation_database -coverage -cros-debug -function_elimination_experiment -fuzzer -lto_experiment -msan -test -thinlto -tsan -ubsan" 0 KiB
+[ebuild  N     ] chromeos-base/cros-config-api-0.0.1-r665::chromiumos  USE="cros_host" PYTHON_TARGETS="python3_6 python3_8 -python3_7 -python3_9" 0 KiB
+[binary  N     ] dev-python/setuptools_scm-3.2.0-r1::portage-stable  USE="-test" PYTHON_TARGETS="python3_6 python3_8 -python3_10 -python3_11 -python3_12 -python3_7 -python3_9" 158 KiB
+[binary  N     ] dev-python/protobuf-python-4.21.9-r1:0/32::chromiumos  USE="-test" PYTHON_TARGETS="python3_6 python3_8 -python3_7 -python3_9" 533 KiB
+[binary  N     ] dev-libs/u_boot_pylib-0.0.1-r1::chromiumos  USE="cros_host" PYTHON_TARGETS="python3_6 python3_8 -python3_10 -python3_11 -python3_7 -python3_9" 92 KiB
+[binary  N     ] dev-java/javatoolkit-0.6.1::portage-stable  PYTHON_TARGETS="python3_6 python3_8 -python3_7 -python3_9" 82 KiB
+[binary  N     ] dev-python/mistune-0.8.4::portage-stable  USE="-test" PYTHON_TARGETS="python3_6 python3_8 -pypy3 -python3_10 -python3_11 -python3_7 -python3_9" 119 KiB
+[binary  N     ] dev-python/googleapis-common-protos-1.6.0-r1::chromiumos  PYTHON_TARGETS="python3_6 python3_8 -python3_7 -python3_9" 134 KiB
+[binary  N     ] dev-python/cachetools-2.1.0::portage-stable  USE="-test" PYTHON_TARGETS="python3_6 python3_8 -python3_7 -python3_9" 86 KiB
+[binary  N     ] dev-python/more-itertools-4.2.0-r2::portage-stable  USE="-doc -test" PYTHON_TARGETS="python3_6 python3_8 -pypy3 -python3_7 -python3_9" 227 KiB
+[ebuild  N     ] dev-python/grpcio-1.43.0-r1::chromiumos  PYTHON_TARGETS="python3_6 python3_8 -python3_7 -python3_9" 20959 KiB
+[ebuild  N     ] chromeos-base/tast-proto-0.0.1-r993::chromiumos  USE="cros_host" 0 KiB
+[binary  N     ] chromeos-base/update_payload-0.0.1-r527:0/0.0.1-r527::chromiumos  USE="cros_host" PYTHON_TARGETS="python3_6 python3_8 -python3_7 -python3_9" 79 KiB
+[binary  N     ] dev-python/cycler-0.10.0-r1::portage-stable  USE="-test" PYTHON_TARGETS="python3_6 python3_8 -python3_10 -python3_11 -python3_12 -python3_7 -python3_9" 54 KiB
+[binary  N     ] dev-python/webcolors-1.11.1::portage-stable  USE="-test" PYTHON_TARGETS="python3_6 python3_8 -python3_10 -python3_11 -python3_12 -python3_7 -python3_9" 66 KiB
+[binary  N     ] dev-python/rsa-4.7.2::portage-stable  USE="-test" PYTHON_TARGETS="python3_6 python3_8 -python3_10 -python3_11 -python3_12 -python3_7 -python3_9" 98 KiB
+[binary  N     ] dev-util/cros-servod-0.0.1-r259:0/0.0.1-r259::chromiumos  USE="cros_host" 4620 KiB
+[binary  N     ] sys-libs/libseccomp-2.5.4::portage-stable  USE="python -experimental-loong -static-libs -test" ABI_X86="(64) -32 (-x32)" PYTHON_TARGETS="python3_6 python3_8 -python3_10 -python3_11 -python3_12 -python3_7 -python3_9" 232 KiB
+[binary  N     ] dev-embedded/dtoc-0.0.1-r10::chromiumos  USE="cros_host" PYTHON_TARGETS="python3_6 python3_8 -python3_10 -python3_11 -python3_7 -python3_9" 185 KiB
+[binary     U  ] dev-vcs/patman-0.0.1-r349::chromiumos [0.0.1-r348::chromiumos] USE="cros_host" PYTHON_TARGETS="python3_6 python3_8 -python3_10% -python3_11% -python3_7 -python3_9" 180 KiB
+[binary  N     ] dev-python/google-auth-2.22.0::portage-stable  USE="-test" PYTHON_TARGETS="python3_6 python3_8 -python3_10 -python3_11 -python3_12 -python3_7 -python3_9" 475 KiB
+[binary  N     ] dev-embedded/binman-0.0.1-r16::chromiumos  USE="cros_host" PYTHON_TARGETS="python3_8 -python3_10 -python3_11 -python3_6 -python3_7 -python3_9" 566 KiB
+[binary  N     ] chromeos-base/mojo-tools-0.0.1-r66:0/0.0.1-r66::chromiumos  USE="cros_host" PYTHON_TARGETS="python3_6 python3_8 -python3_7 -python3_9" 595 KiB
+[binary  N     ] dev-python/m2r-0.2.1::portage-stable  USE="-test" PYTHON_TARGETS="python3_6 python3_8 -pypy3 -python3_10 -python3_11 -python3_7 -python3_9" 88 KiB
+[binary  N     ] chromeos-base/chromeos-config-host-0.0.2-r843::chromiumos  USE="cros_host" PYTHON_TARGETS="python3_8 -python3_6 -python3_7 -python3_9" 259 KiB
+[binary     U  ] sys-devel/automake-1.16.5-r2:1.16::portage-stable [1.16.5-r1:1.16::portage-stable] USE="-test" 1020 KiB
+[binary  N     ] sys-fs/erofs-utils-1.6-r2::chromiumos  USE="selinux" 107 KiB
+[binary  N     ] app-admin/webapp-config-1.55-r2::portage-stable  USE="-portage" PYTHON_TARGETS="python3_6 python3_8 -python3_10 -python3_11 -python3_12 -python3_7 -python3_9" 170 KiB
+[ebuild  N     ] dev-util/toolchain-utils-0.0.1-r1062::chromiumos  USE="cros_host" 0 KiB
+[ebuild  N     ] chromeos-base/vboot_reference-1.0-r2637:0/1.0-r2637::chromiumos  USE="cros_host flashrom -asan -cfi -cfi_diag -cfi_recover -coverage -cros-debug -dev_debug_force -fuzzer -msan -pd_sync -test -thinlto -tpm -tpm2 -tpm2_simulator -tpm_dynamic -tpmtests -tsan -ubsan -vtpm_proxy" 0 KiB
+[binary  N     ] dev-python/bcrypt-3.1.7-r2::portage-stable  USE="-test" PYTHON_TARGETS="python3_6 python3_8 -pypy3 -python3_10 -python3_11 -python3_7 -python3_9" 73 KiB
+[ebuild  N     ] chromeos-base/devserver-0.0.3-r2047:0/0.0.3-r2047::chromiumos  USE="cros_host" 0 KiB
+[binary  N     ] dev-python/google-resumable-media-0.3.3-r2::chromiumos  PYTHON_TARGETS="python3_6 python3_8 -python3_7 -python3_9" 89 KiB
+[binary  N     ] dev-python/google-api-core-1.19.0-r2::chromiumos  PYTHON_TARGETS="python3_6 python3_8 -python3_7 -python3_9" 176 KiB
+[binary  N     ] dev-python/google-cloud-core-1.4.1-r1::chromiumos  PYTHON_TARGETS="python3_6 python3_8 -pypy3 -python3_7 -python3_9" 81 KiB
+[binary  N     ] dev-python/google-cloud-storage-1.19.0-r2::chromiumos  PYTHON_TARGETS="python3_6 python3_8 -python3_7 -python3_9" 165 KiB
+[binary     U  ] sys-apps/dtc-1.6.0-r4::chromiumos [1.6.0-r3::chromiumos] USE="python -static-libs" PYTHON_TARGETS="python3_6 python3_8 -python3_7 -python3_9" 248 KiB
+[binary  N     ] chromeos-base/zephyr-build-tools-0.0.1-r258::chromiumos  USE="cros_host" PYTHON_TARGETS="python3_8 -python3_6 -python3_7 -python3_9" 130 KiB
+[binary  N     ] app-crypt/sbsigntools-0.9.4-r1::portage-stable  85 KiB
+[binary  N     ] dev-util/ccache-4.8.2::portage-stable  USE="static-c++ -doc -redis -test -verify-sig" 981 KiB
+[binary  N     ] dev-util/perf-5.15.68-r4::chromiumos  USE="audit coresight crypt doc zlib -babeltrace -clang -debug -gtk -java -libpfm -lzma -numa -perl -python -slang -systemtap -unwind -zstd" PYTHON_TARGETS="python3_6 python3_8 -python3_10 -python3_11 -python3_7 -python3_9" 2155 KiB
+[binary  N     ] dev-libs/xmlrpc-c-1.51.06-r3:0/4.51::chromiumos  USE="cgi curl cxx libxml2 -abyss -test -threads" ABI_X86="(64) -32 (-x32)" 427 KiB
+[binary  N     ] dev-python/matplotlib-2.2.2-r3::portage-stable  USE="-cairo -doc -examples -excel -gtk2 -gtk3 -latex -qt5 -test -tk -wxwidgets" PYTHON_TARGETS="python3_6 python3_8 -python3_7 -python3_9" 19089 KiB
+[binary  N     ] media-libs/opencv-4.7.0:0/4.7.0::chromiumos  USE="eigen features2d jpeg png python -contrib -contribcvv -contribdnn -contribfreetype -contribhdf -contribovis -contribsfm -contribxfeatures2d -cpu_flags_ppc_vsx -cpu_flags_ppc_vsx3 -cuda -debug -dnnsamples -download -examples -ffmpeg -gdal -gflags -glog -gphoto2 -gstreamer -gtk3 -ieee1394 -java -jpeg2k -lapack -lto -opencl -opencvapps -openexr -opengl -openmp -qt5 -tesseract -testprograms -threads -tiff -v4l -vaapi -vtk -webp -xine" ABI_X86="(64) -32 (-x32)" CPU_FLAGS_ARM="-neon -vfpv3" CPU_FLAGS_X86="sse sse2 -avx -avx2 -avx512f -f16c -fma3 -popcnt -sse3 -sse4_1 -sse4_2 -ssse3" PYTHON_TARGETS="python3_6 python3_8 -python3_10 -python3_11 -python3_12 -python3_7 -python3_9" 11573 KiB
+[ebuild  N     ] chromeos-base/perfetto-37.0-r13:0/37.0-r13::chromiumos  USE="cros_host -asan -lsan -msan -tsan -ubsan" 0 KiB
+[binary  N     ] chromeos-base/chromeos-base-1-r35::chromiumos  USE="cros_host -chromeless_tty -cros_embedded -kernel-4_4 -pam -uefi -vtconsole" 49 KiB
+[binary     U  ] net-misc/openssh-9.4_p1::portage-stable [8.1_p1-r6::portage-stable] USE="kerberos pie ssl -X -audit -debug -ldns -libedit -livecd -pam -security-key% -selinux -static -test -verify-sig% -xmss (-X509%) (-bindist%) (-hpn%*) (-libressl%) (-sctp%)" 1629 KiB
+[binary  N     ] dev-util/meson-0.64.1::portage-stable  USE="-test" PYTHON_TARGETS="python3_8 -python3_10 -python3_11 -python3_12 -python3_6 -python3_7 -python3_9" 1851 KiB
+[ebuild  N     ] media-video/ffmpeg-5.1.1-r5:0/57.59.59::chromiumos  USE="bzip2 dav1d encode gnutls iconv network pic threads zlib -X -alsa -amf -amr -amrenc -appkit -bluray -bs2b -cdio -chromaprint -chromium -codec2 -cpu_flags_ppc_altivec -cpu_flags_ppc_vsx -cpu_flags_ppc_vsx2 -cpudetection -cuda -debug -doc -fdk -flite -fontconfig -frei0r -fribidi -gcrypt -gme -gmp -gpl -gsm -hardcoded-tables -iec61883 -ieee1394 -jack -jpeg2k -jpegxl -kvazaar -ladspa -lcms -libaom -libaribb24 -libass -libcaca -libdrm -libilbc -libplacebo -librtmp -libsoxr -libtesseract -libv4l -libxml2 -lv2 -lzma -mipsdspr1 -mipsdspr2 -mipsfpu -mmal -modplug -mp3 -nvenc -openal -opencl -opengl -openh264 -openssl -opus -oss -postproc -pulseaudio -rav1e -rubberband -samba -sdl -snappy -sndio -speex -srt -ssh -static-libs -svg -svt-av1 -test -theora -truetype -twolame -v4l -vaapi -vdpau -vidstab -vmaf -vorbis -vpx -vulkan -webp -x264 -x265 -xvid -zeromq -zimg -zvbi" ABI_X86="(64) -32 (-x32)" CPU_FLAGS_ARM="-neon -thumb -thumb2 -v6 -v8 -vfp -vfpv3" CPU_FLAGS_X86="mmx mmxext sse sse2 -3dnow -3dnowext -aes -avx -avx2 -fma3 -fma4 -sse3 -sse4_1 -sse4_2 -ssse3 -xop" FFTOOLS="aviocat cws2fws ffescape ffeval ffhash fourcc2pixfmt graph2dot ismindex pktdumper qt-faststart sidxindex trasher" 0 KiB
+[ebuild  N     ] chromeos-base/libchrome-0.0.1-r807:0/0.0.1-r807::chromiumos  USE="cpp20 cros_host crypto dbus mojo -asan -cfi -cfi_diag -cfi_recover -compdb_only -compilation_database -coverage -cros-debug -function_elimination_experiment -fuzzer -lto_experiment -msan -test -thinlto -tsan -ubsan" 0 KiB
+[ebuild  N     ] dev-util/vulkan-headers-1.3.261::portage-stable  1999 KiB
+[ebuild  N     ] dev-util/glslang-1.3.261:0/12::portage-stable  ABI_X86="(64) -32 (-x32)" 3619 KiB
+[ebuild  N     ] chromeos-base/system_api-0.0.1-r5424:0/0.0.1-r5424::chromiumos  USE="cpp20 cros_host -asan -cfi -cfi_diag -cfi_recover -compdb_only -compilation_database -coverage -cros-debug -function_elimination_experiment -fuzzer -lto_experiment -msan -test -thinlto -tsan -ubsan" 0 KiB
+[binary  N     ] app-emulation/qemu-6.2.0-r3::portage-stable  USE="aio bzip2 caps curl fdt gnutls jpeg ncurses nls oss png python seccomp slirp static-user usb vhost-net virtfs vnc xattr -accessibility -alsa -bpf -capstone -debug -doc -filecaps -fuse -glusterfs -gtk -infiniband -io-uring -iscsi -jack -jemalloc -lzo -multipath -nfs -numa -opengl -pin-upstream-blobs -plugins -pulseaudio -rbd -sasl -sdl -sdl-image -selinux -smartcard -snappy -spice -ssh -static -systemtap -test -udev -usbredir -vde -vhost-user-fs -virgl -vte -xen -xfs -zstd" PYTHON_TARGETS="python3_6 python3_8 -python3_7 -python3_9" QEMU_SOFTMMU_TARGETS="aarch64 arm i386 x86_64 -alpha -avr -cris -hppa -m68k -microblaze -microblazeel -mips -mips64 -mips64el -mipsel -nios2 -or1k -ppc -ppc64 -riscv32 -riscv64 -rx -s390x -sh4 -sh4eb -sparc -sparc64 -tricore -xtensa -xtensaeb" QEMU_USER_TARGETS="aarch64 arm i386 x86_64 -aarch64_be -alpha -armeb -cris -hexagon -hppa -m68k -microblaze -microblazeel -mips -mips64 -mips64el -mipsel -mipsn32 -mipsn32el -nios2 -or1k -ppc -ppc64 -ppc64abi32 -ppc64le -riscv32 -riscv64 -s390x -sh4 -sh4eb -sparc -sparc32plus -sparc64 -xtensa -xtensaeb" 51047 KiB
+[ebuild  N     ] net-wireless/floss_tools-0.0.1-r2884:0/0.0.1-r2884::chromiumos  USE="cpp20 cros_host -asan -cfi -cfi_diag -cfi_recover -compdb_only -compilation_database -coverage -cros-debug -floss_upstream -function_elimination_experiment -fuzzer -lto_experiment -msan -test -thinlto -tsan -ubsan" 0 KiB
+[binary  N     ] dev-util/bazel-6.2.0-r3:6::chromiumos  USE="-examples (-prefix) -static-libs -tools" 30599 KiB
+[binary  N     ] dev-util/bazel-5.3.0-r4:5::chromiumos  USE="-examples (-prefix) -static-libs -tools" 29403 KiB
+[ebuild  N     ] chromeos-base/libbrillo-0.0.1-r2291:0/0.0.1-r2291::chromiumos  USE="cpp20 cros_host dbus device_mapper udev -asan -cfi -cfi_diag -cfi_recover -compdb_only -compilation_database -coverage -cros-debug -enterprise_rollback_reven -function_elimination_experiment -fuzzer -lto_experiment -msan -test -thinlto -tsan -ubsan -usb" 0 KiB
+[ebuild     U  ] sys-apps/hwids-20150717-r17::chromiumos [20150717-r16::chromiumos] USE="hwids-lite udev" 1705 KiB
+[ebuild  N     ] chromeos-base/verity-0.0.1-r447:0/0.0.1-r447::chromiumos  USE="cpp20 cros_host -asan -cfi -cfi_diag -cfi_recover -compdb_only -compilation_database -coverage -cros-debug -function_elimination_experiment -fuzzer -lto_experiment -msan -test -thinlto -tsan -ubsan" 0 KiB
+[ebuild  N     ] chromeos-base/update_engine-client-0.0.1-r2285::chromiumos  USE="cpp20 cros_host -asan -cfi -cfi_diag -cfi_recover -compdb_only -compilation_database -coverage -cros-debug -function_elimination_experiment -fuzzer -lto_experiment -msan -test -thinlto -tsan -ubsan" 0 KiB
+[ebuild  N     ] chromeos-base/power_manager-client-0.0.1-r2744:0/0.0.1-r2744::chromiumos  USE="cpp20 cros_host -asan -cfi -cfi_diag -cfi_recover -compdb_only -compilation_database -coverage -cros-debug -function_elimination_experiment -fuzzer -lto_experiment -msan -test -thinlto -tsan -ubsan" 0 KiB
+[ebuild  N     ] chromeos-base/session_manager-client-0.0.1-r2616:0/0.0.1-r2616::chromiumos  USE="cpp20 cros_host -asan -cfi -cfi_diag -cfi_recover -compdb_only -compilation_database -coverage -cros-debug -function_elimination_experiment -fuzzer -lto_experiment -msan -test -thinlto -tsan -ubsan" 0 KiB
+[ebuild  N     ] dev-util/bsdiff-4.3.1-r39:0/4.3.1-r39::chromiumos  USE="cpp20 cros_host -asan -cfi -cfi_diag -cfi_recover -compdb_only -compilation_database -coverage -cros-debug -function_elimination_experiment -fuzzer -lto_experiment -msan -test -thinlto -tsan -ubsan" 0 KiB
+[ebuild  N     ] chromeos-base/chromeos-common-script-0.0.1-r540::chromiumos  USE="cpp20 cros_host -asan -cfi -cfi_diag -cfi_recover -compdb_only -compilation_database -coverage -cros-debug -direncryption -fsverity -function_elimination_experiment -fuzzer -kernel-4_4 -lto_experiment -msan -prjquota -test -thinlto -tsan -ubsan" 0 KiB
+[ebuild  N     ] chromeos-base/modemfwd-proto-0.0.1-r304:0/0.0.1-r304::chromiumos  USE="cpp20 cros_host -asan -cfi -cfi_diag -cfi_recover -compdb_only -compilation_database -coverage -cros-debug -function_elimination_experiment -fuzzer -lto_experiment -msan -test -thinlto -tsan -ubsan" 0 KiB
+[ebuild  N     ] chromeos-base/policy-go-proto-0.0.1-r460:0/0.0.1-r460::chromiumos  USE="cpp20 cros_host -asan -cfi -cfi_diag -cfi_recover -compdb_only -compilation_database -coverage -cros-debug -function_elimination_experiment -fuzzer -lto_experiment -msan -test -thinlto -tsan -ubsan" 0 KiB
+[ebuild  N     ] chromeos-base/reporting-proto-0.0.1-r236:0/0.0.1-r236::chromiumos  USE="cpp20 cros_host -asan -cfi -cfi_diag -cfi_recover -compdb_only -compilation_database -coverage -cros-debug -function_elimination_experiment -fuzzer -lto_experiment -msan -test -thinlto -tsan -ubsan" 0 KiB
+[ebuild  N     ] chromeos-base/vm_protos-0.0.1-r488:0/0.0.1-r488::chromiumos  USE="cpp20 cros_host -asan -cfi -cfi_diag -cfi_recover -compdb_only -compilation_database -coverage -cros-debug -function_elimination_experiment -fuzzer -lto_experiment -msan -test -thinlto -tsan -ubsan" 0 KiB
+[ebuild  N     ] chromeos-base/xdr-proto-0.0.1-r173:0/0.0.1-r173::chromiumos  USE="cpp20 cros_host -asan -cfi -cfi_diag -cfi_recover -compdb_only -compilation_database -coverage -cros-debug -function_elimination_experiment -fuzzer -lto_experiment -msan -test -thinlto -tsan -ubsan" 0 KiB
+[ebuild  N     ] dev-go/perfetto-protos-37.0-r13::chromiumos  USE="cpp20 cros_host -asan -cfi -cfi_diag -cfi_recover -compdb_only -compilation_database -coverage -cros-debug -function_elimination_experiment -fuzzer -lto_experiment -msan -test -thinlto -tsan -ubsan" 0 KiB
+[ebuild  N     ] chromeos-base/libcrossystem-0.0.1-r190:0/0.0.1-r190::chromiumos  USE="cpp20 cros_host -asan -cfi -cfi_diag -cfi_recover -compdb_only -compilation_database -coverage -cros-debug -function_elimination_experiment -fuzzer -lto_experiment -msan -test -thinlto -tsan -ubsan" 0 KiB
+[ebuild  N     ] chromeos-base/debugd-client-0.0.1-r2533:0/0.0.1-r2533::chromiumos  USE="cpp20 cros_host -asan -cfi -cfi_diag -cfi_recover -compdb_only -compilation_database -coverage -cros-debug -function_elimination_experiment -fuzzer -lto_experiment -msan -test -thinlto -tsan -ubsan" 0 KiB
+[ebuild  N     ] chromeos-base/imageloader-0.0.1-r1912:0/0.0.1-r1912::chromiumos  USE="cpp20 cros_host -asan -cfi -cfi_diag -cfi_recover -compdb_only -compilation_database -coverage -cros-debug -function_elimination_experiment -fuzzer -lto_experiment -msan -test -thinlto -tsan -ubsan" 0 KiB
+[ebuild  N     ] chromeos-base/shill-client-0.0.1-r3959::chromiumos  USE="cpp20 cros_host -asan -cfi -cfi_diag -cfi_recover -compdb_only -compilation_database -coverage -cros-debug -function_elimination_experiment -fuzzer -lto_experiment -msan -test -thinlto -tsan -ubsan" 0 KiB
+[ebuild  N     ] chromeos-base/libec-0.0.1-r506:0/0.0.1-r506::chromiumos  USE="cpp20 cros_host -asan -cfi -cfi_diag -cfi_recover -compdb_only -compilation_database -coverage -cros-debug -function_elimination_experiment -fuzzer -lto_experiment -msan -test -thinlto -tsan -ubsan" 0 KiB
+[ebuild  N     ] chromeos-base/metrics-0.0.1-r3676:0/0.0.1-r3676::chromiumos  USE="cpp20 cros_host passive_metrics -asan -cfi -cfi_diag -cfi_recover -compdb_only -compilation_database -coverage -cros-debug -function_elimination_experiment -fuzzer -lto_experiment -metrics_uploader -msan -systemd -test -thinlto -tsan -ubsan" 0 KiB
+[ebuild  N     ] dev-util/puffin-1.0.0-r446:0/1.0.0-r446::chromiumos  USE="cpp20 cros_host -asan -cfi -cfi_diag -cfi_recover -compdb_only -compilation_database -coverage -cros-debug -function_elimination_experiment -fuzzer -lto_experiment -msan -test -thinlto -tsan -ubsan" 0 KiB
+[ebuild  N     ] chromeos-base/ec-utils-0.0.2-r15303:0/0.0.2-r15303::chromiumos  USE="cros_ec_utils cros_host -static -updater_utils" 0 KiB
+[ebuild  N     ] chromeos-base/update_engine-0.0.3-r4786:0/0.0.3-r4786::chromiumos  USE="cpp20 cros_host -asan -cfi -cfi_diag -cfi_recover -cfm -compdb_only -compilation_database -coverage -cros-debug -cros_p2p -dlc -function_elimination_experiment -fuzzer -hibernate -hw_details -hwid_override -lto_experiment -lvm_stateful_partition -minios -msan -power_management -report_requisition -systemd -test -thinlto -tsan -ubsan" 0 KiB
+[ebuild  N     ] chromeos-base/hardware_verifier_proto-0.0.1-r597:0/0.0.1-r597::chromiumos  USE="cpp20 cros_host -asan -cfi -cfi_diag -cfi_recover -compdb_only -compilation_database -coverage -cros-debug -function_elimination_experiment -fuzzer -lto_experiment -msan -test -thinlto -tsan -ubsan" 0 KiB
+[ebuild  N     ] chromeos-base/ec-devutils-0.0.2-r13370::chromiumos  USE="cros_host -hammerd" PYTHON_TARGETS="python3_6 python3_8 -python3_7 -python3_9" 0 KiB
+[binary  N     ] chromeos-base/tast-build-deps-2-r43:0/2-r43::chromiumos  USE="cros_host" 38 KiB
+[ebuild  N     ] chromeos-base/tast-cmd-0.0.1-r2128::chromiumos  USE="cros_host -coverage" 0 KiB
+[ebuild  N     ] dev-util/hdctools-0.0.1-r2034:0/0.0.1-r2034::chromiumos  USE="cros_host -asan -cfi -cfi_diag -cfi_recover -coverage -fuzzer -msan -test -thinlto -tsan -ubsan" PYTHON_TARGETS="python3_6 python3_8 -python3_7 -python3_9" 0 KiB
+[ebuild  N     ] chromeos-base/tast-remote-tests-cros-0.0.2-r18382:0/0.0.2-r18382::chromiumos  USE="cros_host" 0 KiB
+[binary  N     ] dev-util/cros-test-0.0.1-r62:0/0.0.1-r62::chromiumos  USE="cros_host" 4087 KiB
+[binary  N     ] dev-util/cros-test-finder-0.0.1-r72:0/0.0.1-r72::chromiumos  USE="cros_host" 3881 KiB
+[binary  N     ] dev-util/pre-process-0.0.1-r11:0/0.0.1-r11::chromiumos  USE="cros_host" 5247 KiB
+[ebuild  N     ] dev-util/test-services-0.0.1-r493:0/0.0.1-r493::chromiumos  USE="cros_host" 0 KiB
+[binary  N     ] virtual/target-chromium-os-sdk-1-r334::chromiumos  USE="cros_host" PYTHON_TARGETS="python3_6 python3_8" 56 KiB
+
+Total: 172 packages (17 upgrades, 155 new, 118 binaries), Size of downloads: 392574 KiB
+
+!!! The following binary packages have been ignored due to changed dependencies:
+
+     chromeos-base/chromeos-common-script-0.0.1-r540::chromiumos
+     chromeos-base/verity-0.0.1-r447::chromiumos
+     chromeos-base/update_engine-client-0.0.1-r2285::chromiumos
+     chromeos-base/update_engine-0.0.3-r4786::chromiumos
+     chromeos-base/libec-0.0.1-r506::chromiumos
+     chromeos-base/modemfwd-proto-0.0.1-r304::chromiumos
+     chromeos-base/policy-go-proto-0.0.1-r460::chromiumos
+     chromeos-base/reporting-proto-0.0.1-r236::chromiumos
+     chromeos-base/vm_protos-0.0.1-r488::chromiumos
+     chromeos-base/session_manager-client-0.0.1-r2616::chromiumos
+     chromeos-base/libcrossystem-0.0.1-r190::chromiumos
+     dev-util/bsdiff-4.3.1-r39::chromiumos
+     dev-util/puffin-1.0.0-r446::chromiumos
+     chromeos-base/debugd-client-0.0.1-r2533::chromiumos
+     chromeos-base/imageloader-0.0.1-r1912::chromiumos
+
+NOTE: The --binpkg-changed-deps=n option will prevent emerge
+      from ignoring these binary packages if possible.
+      Using --binpkg-changed-deps=y will silence this warning.
+
+>>> 16:07:34.807 Emerging binary (1 of 172) dev-util/gperf-3.1-r1::portage-stable
+>>> 16:07:34.816 Emerging binary (2 of 172) sys-devel/automake-wrapper-20221207::portage-stable
+>>> 16:07:34.824 Emerging binary (3 of 172) dev-libs/oniguruma-6.9.8::portage-stable
+>>> 16:07:34.833 Emerging binary (4 of 172) dev-util/re2c-2.2::portage-stable
+>>> 16:07:34.841 Emerging binary (5 of 172) sys-firmware/sgabios-0.1_pre10::portage-stable
+>>> 16:07:34.850 Emerging binary (6 of 172) dev-go/logex-1.2.0-r1::chromiumos
+>>> 16:07:34.858 Emerging binary (7 of 172) dev-go/blackfriday-2.1.0::chromiumos
+>>> 16:07:34.867 Emerging binary (8 of 172) dev-go/readline-1.4-r2::chromiumos
+>>> 16:07:34.876 Emerging binary (9 of 172) acct-group/sshd-0-r1::eclass-overlay
+>>> 16:07:34.885 Emerging binary (10 of 172) dev-go/uio-0.0.1-r1::chromiumos
+>>> 16:07:34.894 Emerging binary (11 of 172) dev-go/kr-fs-0.1.0-r1::chromiumos
+>>> 16:07:34.902 Emerging (12 of 172) dev-go/go-optional-0.2.0-r2::chromiumos
+>>> 16:07:34.909 Emerging binary (13 of 172) dev-go/tomb-1.0.0::chromiumos
+>>> 16:07:34.918 Emerging binary (14 of 172) dev-go/svgo-0.0.1-r1::chromiumos
+>>> 16:07:34.928 Emerging binary (15 of 172) dev-go/rsc-io-pdf-0.0.1-r1::chromiumos
+>>> 16:07:34.937 Emerging binary (16 of 172) dev-go/snappy-0.0.3-r1::chromiumos
+>>> 16:07:34.946 Emerging binary (17 of 172) dev-go/objx-0.3.0::chromiumos
+>>> 16:07:34.954 Emerging binary (18 of 172) dev-go/fsnotify-1.4.2-r2::chromiumos
+>>> 16:07:34.963 Emerging binary (19 of 172) dev-go/go-image-0.6.0_p20-r1::chromiumos
+>>> 16:07:34.972 Emerging (20 of 172) dev-go/mountinfo-0.5.0-r2::chromiumos
+>>> 16:07:34.979 Emerging (21 of 172) dev-go/go-tpm-0.9.0-r2::chromiumos
+>>> 16:07:34.985 Emerging binary (22 of 172) net-analyzer/netperf-2.7.0-r5::portage-stable
+>>> 16:07:34.994 Emerging binary (23 of 172) dev-go/gobusybox-0.0.1_p20221228-r1::chromiumos
+>>> 16:07:37.277 Installing (1 of 172) dev-util/gperf-3.1-r1::portage-stable
+>>> 16:07:37.563 Installing (5 of 172) sys-firmware/sgabios-0.1_pre10::portage-stable
+>>> 16:07:37.715 Installing (8 of 172) dev-go/readline-1.4-r2::chromiumos
+>>> 16:07:37.816 Installing (6 of 172) dev-go/logex-1.2.0-r1::chromiumos
+>>> 16:07:37.860 Installing (18 of 172) dev-go/fsnotify-1.4.2-r2::chromiumos
+>>> 16:07:37.946 Installing (23 of 172) dev-go/gobusybox-0.0.1_p20221228-r1::chromiumos
+>>> 16:07:37.978 Installing (22 of 172) net-analyzer/netperf-2.7.0-r5::portage-stable
+>>> 16:07:38.128 Installing (13 of 172) dev-go/tomb-1.0.0::chromiumos
+>>> 16:07:38.297 Installing (2 of 172) sys-devel/automake-wrapper-20221207::portage-stable
+>>> 16:07:38.334 Installing (17 of 172) dev-go/objx-0.3.0::chromiumos
+>>> 16:07:38.395 Installing (16 of 172) dev-go/snappy-0.0.3-r1::chromiumos
+>>> 16:07:38.470 Installing (10 of 172) dev-go/uio-0.0.1-r1::chromiumos
+>>> 16:07:38.526 Installing (4 of 172) dev-util/re2c-2.2::portage-stable
+>>> 16:07:38.641 Installing (9 of 172) acct-group/sshd-0-r1::eclass-overlay
+>>> 16:07:38.677 Installing (7 of 172) dev-go/blackfriday-2.1.0::chromiumos
+>>> 16:07:38.731 Installing (3 of 172) dev-libs/oniguruma-6.9.8::portage-stable
+>>> 16:07:38.796 Installing (11 of 172) dev-go/kr-fs-0.1.0-r1::chromiumos
+>>> 16:07:38.869 Installing (19 of 172) dev-go/go-image-0.6.0_p20-r1::chromiumos
+>>> 16:07:38.939 Installing (15 of 172) dev-go/rsc-io-pdf-0.0.1-r1::chromiumos
+>>> 16:07:38.987 Installing (14 of 172) dev-go/svgo-0.0.1-r1::chromiumos
+>>> 16:07:40.348 Installing (12 of 172) dev-go/go-optional-0.2.0-r2::chromiumos
+>>> 16:07:40.934 Completed (1 of 172) dev-util/gperf-3.1-r1::portage-stable
+>>> 16:07:41.579 Installing (20 of 172) dev-go/mountinfo-0.5.0-r2::chromiumos
+>>> 16:07:42.419 Completed (5 of 172) sys-firmware/sgabios-0.1_pre10::portage-stable
+>>> 16:07:43.940 Installing (21 of 172) dev-go/go-tpm-0.9.0-r2::chromiumos
+>>> 16:07:45.548 Completed (18 of 172) dev-go/fsnotify-1.4.2-r2::chromiumos
+>>> 16:07:45.811 Completed (6 of 172) dev-go/logex-1.2.0-r1::chromiumos
+>>> 16:07:45.820 Emerging binary (24 of 172) dev-go/test-0.0.1-r1::chromiumos
+>>> 16:07:46.236 Installing (24 of 172) dev-go/test-0.0.1-r1::chromiumos
+>>> 16:07:46.787 Completed (8 of 172) dev-go/readline-1.4-r2::chromiumos
+>>> 16:07:47.609 Completed (9 of 172) acct-group/sshd-0-r1::eclass-overlay
+>>> 16:07:47.617 Emerging binary (25 of 172) acct-user/sshd-0-r1::eclass-overlay
+>>> 16:07:48.037 Completed (22 of 172) net-analyzer/netperf-2.7.0-r5::portage-stable
+>>> 16:07:48.073 Installing (25 of 172) acct-user/sshd-0-r1::eclass-overlay
+>>> 16:07:48.265 Completed (23 of 172) dev-go/gobusybox-0.0.1_p20221228-r1::chromiumos
+>>> 16:07:48.552 Completed (13 of 172) dev-go/tomb-1.0.0::chromiumos
+>>> 16:07:48.894 Completed (16 of 172) dev-go/snappy-0.0.3-r1::chromiumos
+>>> 16:07:49.186 Completed (17 of 172) dev-go/objx-0.3.0::chromiumos
+>>> 16:07:49.479 Completed (10 of 172) dev-go/uio-0.0.1-r1::chromiumos
+>>> 16:07:49.493 Emerging binary (26 of 172) dev-go/u-root-0.11.0-r1::chromiumos
+>>> 16:07:49.729 Completed (4 of 172) dev-util/re2c-2.2::portage-stable
+>>> 16:07:50.301 Installing (26 of 172) dev-go/u-root-0.11.0-r1::chromiumos
+>>> 16:07:50.451 Completed (3 of 172) dev-libs/oniguruma-6.9.8::portage-stable
+>>> 16:07:50.749 Completed (7 of 172) dev-go/blackfriday-2.1.0::chromiumos
+>>> 16:07:50.758 Emerging binary (27 of 172) dev-go/go-md2man-2.0.2::chromiumos
+>>> 16:07:51.164 Installing (27 of 172) dev-go/go-md2man-2.0.2::chromiumos
+>>> 16:07:51.386 Completed (14 of 172) dev-go/svgo-0.0.1-r1::chromiumos
+>>> 16:07:51.650 Completed (15 of 172) dev-go/rsc-io-pdf-0.0.1-r1::chromiumos
+>>> 16:07:51.912 Completed (11 of 172) dev-go/kr-fs-0.1.0-r1::chromiumos
+>>> 16:07:51.921 Emerging binary (28 of 172) dev-go/sftp-1.13.4-r1::chromiumos
+>>> 16:07:52.231 Completed (19 of 172) dev-go/go-image-0.6.0_p20-r1::chromiumos
+>>> 16:07:52.241 Emerging binary (29 of 172) dev-go/golang-freetype-0.0.1-r1::chromiumos
+>>> 16:07:52.326 Installing (28 of 172) dev-go/sftp-1.13.4-r1::chromiumos
+>>> 16:07:52.504 Completed (12 of 172) dev-go/go-optional-0.2.0-r2::chromiumos
+>>> 16:07:52.706 Installing (29 of 172) dev-go/golang-freetype-0.0.1-r1::chromiumos
+>>> 16:07:52.766 Completed (20 of 172) dev-go/mountinfo-0.5.0-r2::chromiumos
+>>> 16:07:52.778 Emerging (30 of 172) dev-go/mount-0.5.0-r2::chromiumos
+>>> 16:07:53.377 Completed (2 of 172) sys-devel/automake-wrapper-20221207::portage-stable
+>>> 16:07:53.403 Emerging binary (31 of 172) dev-libs/vala-common-0.56.3::portage-stable
+>>> 16:07:53.412 Emerging binary (32 of 172) app-misc/jq-1.7_pre20201109-r1::portage-stable
+>>> 16:07:53.689 Completed (21 of 172) dev-go/go-tpm-0.9.0-r2::chromiumos
+>>> 16:07:53.817 Installing (31 of 172) dev-libs/vala-common-0.56.3::portage-stable
+>>> 16:07:53.882 Installing (32 of 172) app-misc/jq-1.7_pre20201109-r1::portage-stable
+>>> 16:07:54.701 Completed (24 of 172) dev-go/test-0.0.1-r1::chromiumos
+>>> 16:07:55.266 Completed (25 of 172) acct-user/sshd-0-r1::eclass-overlay
+>>> 16:07:56.482 Completed (27 of 172) dev-go/go-md2man-2.0.2::chromiumos
+>>> 16:07:57.110 Completed (28 of 172) dev-go/sftp-1.13.4-r1::chromiumos
+>>> 16:07:57.121 Emerging binary (33 of 172) dev-go/ep-pvg-0.6.2-r4::chromiumos
+>>> 16:07:57.368 Installing (30 of 172) dev-go/mount-0.5.0-r2::chromiumos
+>>> 16:07:57.632 Completed (29 of 172) dev-go/golang-freetype-0.0.1-r1::chromiumos
+>>> 16:07:57.645 Emerging (34 of 172) dev-go/gonum-0.11.0-r3::chromiumos
+>>> 16:07:57.680 Installing (33 of 172) dev-go/ep-pvg-0.6.2-r4::chromiumos
+>>> 16:07:57.782 Completed (31 of 172) dev-libs/vala-common-0.56.3::portage-stable
+>>> 16:07:58.251 Completed (32 of 172) app-misc/jq-1.7_pre20201109-r1::portage-stable
+>>> 16:07:58.262 Emerging binary (35 of 172) dev-cpp/gtest-1.13.0-r11::chromiumos
+>>> 16:07:58.270 Emerging (36 of 172) chromeos-base/aosp-frameworks-base-proto-20220906-r3::chromiumos
+>>> 16:07:58.277 Emerging binary (37 of 172) x11-base/xorg-proto-2022.2::portage-stable
+>>> 16:07:58.285 Emerging binary (38 of 172) dev-rust/third-party-crates-src-0.0.1-r176::chromiumos
+>>> 16:07:58.294 Emerging binary (39 of 172) media-gfx/pngcrush-1.7.81::portage-stable
+>>> 16:07:58.302 Emerging binary (40 of 172) dev-cpp/abseil-cpp-20230125.2-r2::chromiumos
+>>> 16:07:58.311 Emerging binary (41 of 172) sys-apps/file-5.44-r3::portage-stable
+>>> 16:07:58.908 Installing (37 of 172) x11-base/xorg-proto-2022.2::portage-stable
+>>> 16:07:58.986 Completed (26 of 172) dev-go/u-root-0.11.0-r1::chromiumos
+>>> 16:07:59.002 Installing (35 of 172) dev-cpp/gtest-1.13.0-r11::chromiumos
+>>> 16:08:00.032 Installing (39 of 172) media-gfx/pngcrush-1.7.81::portage-stable
+>>> 16:08:00.205 Installing (38 of 172) dev-rust/third-party-crates-src-0.0.1-r176::chromiumos
+>>> 16:08:00.313 Installing (41 of 172) sys-apps/file-5.44-r3::portage-stable
+>>> 16:08:00.409 Installing (40 of 172) dev-cpp/abseil-cpp-20230125.2-r2::chromiumos
+>>> 16:08:01.568 Completed (33 of 172) dev-go/ep-pvg-0.6.2-r4::chromiumos
+>>> 16:08:01.876 Completed (30 of 172) dev-go/mount-0.5.0-r2::chromiumos
+>>> 16:08:01.887 Emerging (42 of 172) dev-go/docker-20.10.8-r6::chromiumos
+>>> 16:08:02.901 Completed (37 of 172) x11-base/xorg-proto-2022.2::portage-stable
+>>> 16:08:03.199 Completed (35 of 172) dev-cpp/gtest-1.13.0-r11::chromiumos
+>>> 16:08:05.619 Completed (39 of 172) media-gfx/pngcrush-1.7.81::portage-stable
+>>> 16:08:06.977 Completed (41 of 172) sys-apps/file-5.44-r3::portage-stable
+>>> 16:08:06.988 Emerging binary (43 of 172) dev-libs/modp_b64-0.0.1-r380::chromiumos
+>>> 16:08:06.997 Emerging binary (44 of 172) chromeos-base/protofiles-0.0.110::chromiumos
+>>> 16:08:07.005 Emerging binary (45 of 172) x11-libs/xtrans-1.5.0::portage-stable
+>>> 16:08:07.016 Emerging binary (46 of 172) sci-libs/gsl-2.7.1-r1::chromiumos
+>>> 16:08:07.030 Emerging binary (47 of 172) dev-libs/tinyxml2-8.0.0::portage-stable
+>>> 16:08:07.042 Emerging binary (48 of 172) sys-apps/flashrom-0.9.9-r1660::chromiumos
+>>> 16:08:07.054 Emerging binary (49 of 172) chromeos-base/crosid-0.0.1-r196::chromiumos
+>>> 16:08:07.068 Emerging binary (50 of 172) dev-libs/openssl-1.1.1u-r1::chromiumos
+>>> 16:08:07.271 Completed (40 of 172) dev-cpp/abseil-cpp-20230125.2-r2::chromiumos
+>>> 16:08:07.592 Installing (45 of 172) x11-libs/xtrans-1.5.0::portage-stable
+>>> 16:08:08.142 Installing (44 of 172) chromeos-base/protofiles-0.0.110::chromiumos
+>>> 16:08:08.181 Installing (43 of 172) dev-libs/modp_b64-0.0.1-r380::chromiumos
+>>> 16:08:08.754 Installing (36 of 172) chromeos-base/aosp-frameworks-base-proto-20220906-r3::chromiumos
+>>> 16:08:09.055 Installing (48 of 172) sys-apps/flashrom-0.9.9-r1660::chromiumos
+>>> 16:08:09.112 Installing (47 of 172) dev-libs/tinyxml2-8.0.0::portage-stable
+>>> 16:08:09.155 Installing (49 of 172) chromeos-base/crosid-0.0.1-r196::chromiumos
+>>> 16:08:09.272 Installing (46 of 172) sci-libs/gsl-2.7.1-r1::chromiumos
+>>> 16:08:11.185 Completed (45 of 172) x11-libs/xtrans-1.5.0::portage-stable
+>>> 16:08:14.182 Completed (44 of 172) chromeos-base/protofiles-0.0.110::chromiumos
+>>> 16:08:14.549 Completed (47 of 172) dev-libs/tinyxml2-8.0.0::portage-stable
+>>> 16:08:14.832 Completed (49 of 172) chromeos-base/crosid-0.0.1-r196::chromiumos
+>>> 16:08:15.481 Completed (46 of 172) sci-libs/gsl-2.7.1-r1::chromiumos
+>>> 16:08:15.801 Completed (36 of 172) chromeos-base/aosp-frameworks-base-proto-20220906-r3::chromiumos
+>>> 16:08:16.520 Completed (43 of 172) dev-libs/modp_b64-0.0.1-r380::chromiumos
+>>> 16:08:16.900 Completed (38 of 172) dev-rust/third-party-crates-src-0.0.1-r176::chromiumos
+>>> 16:08:17.153 Completed (48 of 172) sys-apps/flashrom-0.9.9-r1660::chromiumos
+>>> 16:08:40.981 Installing (42 of 172) dev-go/docker-20.10.8-r6::chromiumos
+>>> 16:08:42.369 Installing (34 of 172) dev-go/gonum-0.11.0-r3::chromiumos
+>>> 16:08:45.577 Completed (34 of 172) dev-go/gonum-0.11.0-r3::chromiumos
+>>> 16:08:45.971 Completed (42 of 172) dev-go/docker-20.10.8-r6::chromiumos
+>>> 16:08:45.975 Installing (50 of 172) dev-libs/openssl-1.1.1u-r1::chromiumos
+>>> 16:08:52.918 Completed (50 of 172) dev-libs/openssl-1.1.1u-r1::chromiumos
+>>> 16:08:52.926 Emerging binary (51 of 172) chromeos-base/signingtools-bin-0.0.1-r1::chromiumos
+>>> 16:08:52.935 Emerging binary (52 of 172) dev-rust/bindgen-0.63.0-r1::chromiumos
+>>> 16:08:52.943 Emerging binary (53 of 172) dev-rust/dbus-codegen-0.10.0-r5::chromiumos
+>>> 16:08:52.951 Emerging binary (54 of 172) dev-rust/protobuf-codegen-2.27.1::chromiumos
+>>> 16:08:52.959 Emerging binary (55 of 172) dev-util/cxxbridge-cmd-1.0.97::chromiumos
+>>> 16:08:52.967 Emerging binary (56 of 172) chromeos-base/hps-sign-rom-0.1.0-r99::chromiumos
+>>> 16:08:52.979 Emerging binary (57 of 172) dev-rust/svd2rust-0.20.0-r15::chromiumos
+>>> 16:08:52.987 Emerging binary (58 of 172) dev-util/pdl-compiler-0.1.1::chromiumos
+>>> 16:08:52.994 Emerging binary (59 of 172) sci-electronics/prjoxide-0.1.0_p20220928-r6::chromiumos
+>>> 16:08:53.002 Emerging binary (60 of 172) dev-rust/rustc-demangle-capi-0.1.0-r2::chromiumos
+>>> 16:08:53.010 Emerging binary (61 of 172) media-sound/audio_streams-0.1.0-r83::chromiumos
+>>> 16:08:53.018 Emerging binary (62 of 172) dev-rust/data_model-0.1.50-r52::chromiumos
+>>> 16:08:53.026 Emerging binary (63 of 172) dev-vcs/git-2.39.2-r1::portage-stable
+>>> 16:08:54.011 Installing (52 of 172) dev-rust/bindgen-0.63.0-r1::chromiumos
+>>> 16:08:54.042 Installing (58 of 172) dev-util/pdl-compiler-0.1.1::chromiumos
+>>> 16:08:54.077 Installing (57 of 172) dev-rust/svd2rust-0.20.0-r15::chromiumos
+>>> 16:08:54.108 Installing (55 of 172) dev-util/cxxbridge-cmd-1.0.97::chromiumos
+>>> 16:08:54.143 Installing (54 of 172) dev-rust/protobuf-codegen-2.27.1::chromiumos
+>>> 16:08:54.182 Installing (53 of 172) dev-rust/dbus-codegen-0.10.0-r5::chromiumos
+>>> 16:08:54.250 Installing (60 of 172) dev-rust/rustc-demangle-capi-0.1.0-r2::chromiumos
+>>> 16:08:54.288 Installing (51 of 172) chromeos-base/signingtools-bin-0.0.1-r1::chromiumos
+>>> 16:08:54.321 Installing (56 of 172) chromeos-base/hps-sign-rom-0.1.0-r99::chromiumos
+>>> 16:08:54.359 Installing (59 of 172) sci-electronics/prjoxide-0.1.0_p20220928-r6::chromiumos
+>>> 16:08:54.396 Installing (63 of 172) dev-vcs/git-2.39.2-r1::portage-stable
+>>> 16:08:54.431 Installing (62 of 172) dev-rust/data_model-0.1.50-r52::chromiumos
+>>> 16:08:54.467 Installing (61 of 172) media-sound/audio_streams-0.1.0-r83::chromiumos
+>>> 16:08:59.315 Completed (52 of 172) dev-rust/bindgen-0.63.0-r1::chromiumos
+>>> 16:09:00.085 Completed (54 of 172) dev-rust/protobuf-codegen-2.27.1::chromiumos
+>>> 16:09:00.361 Completed (55 of 172) dev-util/cxxbridge-cmd-1.0.97::chromiumos
+>>> 16:09:00.637 Completed (53 of 172) dev-rust/dbus-codegen-0.10.0-r5::chromiumos
+>>> 16:09:00.911 Completed (60 of 172) dev-rust/rustc-demangle-capi-0.1.0-r2::chromiumos
+>>> 16:09:01.196 Completed (58 of 172) dev-util/pdl-compiler-0.1.1::chromiumos
+>>> 16:09:01.448 Completed (57 of 172) dev-rust/svd2rust-0.20.0-r15::chromiumos
+>>> 16:09:01.741 Completed (51 of 172) chromeos-base/signingtools-bin-0.0.1-r1::chromiumos
+>>> 16:09:02.368 Completed (59 of 172) sci-electronics/prjoxide-0.1.0_p20220928-r6::chromiumos
+>>> 16:09:02.643 Completed (56 of 172) chromeos-base/hps-sign-rom-0.1.0-r99::chromiumos
+>>> 16:09:02.913 Completed (62 of 172) dev-rust/data_model-0.1.50-r52::chromiumos
+>>> 16:09:03.183 Completed (61 of 172) media-sound/audio_streams-0.1.0-r83::chromiumos
+>>> 16:09:04.766 Completed (63 of 172) dev-vcs/git-2.39.2-r1::portage-stable
+>>> 16:09:04.775 Emerging binary (64 of 172) virtual/cargo-workflow-deps-0.0.1-r3::chromiumos
+>>> 16:09:04.785 Emerging (65 of 172) sys-apps/coreboot-utils-0.0.1-r5461::chromiumos
+>>> 16:09:04.791 Emerging (66 of 172) chromeos-base/chromeos-ec-headers-0.0.1-r11378::chromiumos
+>>> 16:09:04.797 Emerging (67 of 172) chromeos-base/tast-tests-remote-data-0.0.1-r10642::chromiumos
+>>> 16:09:04.802 Emerging binary (68 of 172) dev-embedded/u-boot-tools-2023.01-r1::portage-stable
+>>> 16:09:04.810 Emerging binary (69 of 172) net-misc/wget-1.21.4::portage-stable
+>>> 16:09:04.819 Emerging binary (70 of 172) dev-libs/libzip-1.10.0-r1::portage-stable
+>>> 16:09:04.827 Emerging binary (71 of 172) dev-util/glib-utils-2.74.1::chromiumos
+>>> 16:09:04.835 Emerging binary (72 of 172) sys-devel/gdb-9.2.20200923-r12::chromiumos
+>>> 16:09:04.843 Emerging (73 of 172) dev-lang/perl-5.36.1-r3::portage-stable
+>>> 16:09:05.511 Installing (71 of 172) dev-util/glib-utils-2.74.1::chromiumos
+>>> 16:09:06.158 Installing (64 of 172) virtual/cargo-workflow-deps-0.0.1-r3::chromiumos
+>>> 16:09:06.190 Installing (69 of 172) net-misc/wget-1.21.4::portage-stable
+>>> 16:09:06.222 Installing (68 of 172) dev-embedded/u-boot-tools-2023.01-r1::portage-stable
+>>> 16:09:06.256 Installing (70 of 172) dev-libs/libzip-1.10.0-r1::portage-stable
+>>> 16:09:06.367 Installing (72 of 172) sys-devel/gdb-9.2.20200923-r12::chromiumos
+>>> 16:09:10.343 Completed (71 of 172) dev-util/glib-utils-2.74.1::chromiumos
+>>> 16:09:10.751 Completed (64 of 172) virtual/cargo-workflow-deps-0.0.1-r3::chromiumos
+>>> 16:09:11.079 Completed (68 of 172) dev-embedded/u-boot-tools-2023.01-r1::portage-stable
+>>> 16:09:11.231 Installing (66 of 172) chromeos-base/chromeos-ec-headers-0.0.1-r11378::chromiumos
+>>> 16:09:11.430 Completed (69 of 172) net-misc/wget-1.21.4::portage-stable
+>>> 16:09:11.986 Completed (72 of 172) sys-devel/gdb-9.2.20200923-r12::chromiumos
+>>> 16:09:12.279 Completed (70 of 172) dev-libs/libzip-1.10.0-r1::portage-stable
+>>> 16:09:13.813 Completed (66 of 172) chromeos-base/chromeos-ec-headers-0.0.1-r11378::chromiumos
+>>> 16:09:16.954 Installing (65 of 172) sys-apps/coreboot-utils-0.0.1-r5461::chromiumos
+>>> 16:09:17.471 Installing (67 of 172) chromeos-base/tast-tests-remote-data-0.0.1-r10642::chromiumos
+>>> 16:09:20.985 Completed (67 of 172) chromeos-base/tast-tests-remote-data-0.0.1-r10642::chromiumos
+>>> 16:09:21.202 Completed (65 of 172) sys-apps/coreboot-utils-0.0.1-r5461::chromiumos
+>>> 16:10:52.056 Installing (73 of 172) dev-lang/perl-5.36.1-r3::portage-stable
+>>> 16:10:56.048 Completed (73 of 172) dev-lang/perl-5.36.1-r3::portage-stable
+>>> 16:10:56.056 Emerging binary (74 of 172) virtual/perl-ExtUtils-MakeMaker-7.640.0::portage-stable
+>>> 16:10:56.447 Installing (74 of 172) virtual/perl-ExtUtils-MakeMaker-7.640.0::portage-stable
+>>> 16:10:58.821 Completed (74 of 172) virtual/perl-ExtUtils-MakeMaker-7.640.0::portage-stable
+>>> 16:10:58.829 Emerging binary (75 of 172) virtual/perl-Module-Metadata-1.0.37-r2::portage-stable
+>>> 16:10:59.223 Installing (75 of 172) virtual/perl-Module-Metadata-1.0.37-r2::portage-stable
+>>> 16:11:01.602 Completed (75 of 172) virtual/perl-Module-Metadata-1.0.37-r2::portage-stable
+>>> 16:11:01.610 Emerging binary (76 of 172) virtual/perl-Getopt-Long-2.520.0-r1::portage-stable
+>>> 16:11:01.998 Installing (76 of 172) virtual/perl-Getopt-Long-2.520.0-r1::portage-stable
+>>> 16:11:04.866 Completed (76 of 172) virtual/perl-Getopt-Long-2.520.0-r1::portage-stable
+>>> 16:11:04.874 Emerging binary (77 of 172) virtual/perl-CPAN-Meta-Requirements-2.140.0-r8::portage-stable
+>>> 16:11:05.266 Installing (77 of 172) virtual/perl-CPAN-Meta-Requirements-2.140.0-r8::portage-stable
+>>> 16:11:07.671 Completed (77 of 172) virtual/perl-CPAN-Meta-Requirements-2.140.0-r8::portage-stable
+>>> 16:11:07.678 Emerging binary (78 of 172) dev-perl/Canary-Stability-2013.0.0::portage-stable
+>>> 16:11:07.687 Emerging binary (79 of 172) dev-perl/Devel-CheckLib-1.160.0::portage-stable
+>>> 16:11:08.100 Installing (78 of 172) dev-perl/Canary-Stability-2013.0.0::portage-stable
+>>> 16:11:08.152 Installing (79 of 172) dev-perl/Devel-CheckLib-1.160.0::portage-stable
+>>> 16:11:10.583 Completed (78 of 172) dev-perl/Canary-Stability-2013.0.0::portage-stable
+>>> 16:11:11.197 Completed (79 of 172) dev-perl/Devel-CheckLib-1.160.0::portage-stable
+>>> 16:11:11.204 Emerging binary (80 of 172) sys-fs/mtd-utils-2.1.5::portage-stable
+>>> 16:11:11.212 Emerging binary (81 of 172) virtual/python-futures-1::portage-stable
+>>> 16:11:11.221 Emerging (82 of 172) chromeos-base/wilco-dtc-grpc-protos-0.0.1-r406::chromiumos
+>>> 16:11:11.227 Emerging (83 of 172) chromeos-base/cros-config-api-0.0.1-r665::chromiumos
+>>> 16:11:11.233 Emerging binary (84 of 172) dev-python/setuptools_scm-3.2.0-r1::portage-stable
+>>> 16:11:11.241 Emerging binary (85 of 172) dev-python/protobuf-python-4.21.9-r1::chromiumos
+>>> 16:11:11.249 Emerging binary (86 of 172) dev-libs/u_boot_pylib-0.0.1-r1::chromiumos
+>>> 16:11:11.257 Emerging binary (87 of 172) dev-java/javatoolkit-0.6.1::portage-stable
+>>> 16:11:11.265 Emerging binary (88 of 172) dev-python/mistune-0.8.4::portage-stable
+>>> 16:11:11.273 Emerging binary (89 of 172) dev-python/googleapis-common-protos-1.6.0-r1::chromiumos
+>>> 16:11:11.281 Emerging binary (90 of 172) dev-python/cachetools-2.1.0::portage-stable
+>>> 16:11:11.290 Emerging binary (91 of 172) dev-python/more-itertools-4.2.0-r2::portage-stable
+>>> 16:11:11.301 Emerging binary (92 of 172) dev-python/cycler-0.10.0-r1::portage-stable
+>>> 16:11:11.310 Emerging binary (93 of 172) dev-python/webcolors-1.11.1::portage-stable
+>>> 16:11:11.319 Emerging binary (94 of 172) dev-python/rsa-4.7.2::portage-stable
+>>> 16:11:11.328 Emerging binary (95 of 172) sys-libs/libseccomp-2.5.4::portage-stable
+>>> 16:11:11.338 Emerging binary (96 of 172) chromeos-base/mojo-tools-0.0.1-r66::chromiumos
+>>> 16:11:11.348 Emerging binary (97 of 172) chromeos-base/chromeos-config-host-0.0.2-r843::chromiumos
+>>> 16:11:11.359 Emerging binary (98 of 172) sys-devel/automake-1.16.5-r2::portage-stable
+>>> 16:11:12.281 Installing (80 of 172) sys-fs/mtd-utils-2.1.5::portage-stable
+>>> 16:11:12.496 Installing (81 of 172) virtual/python-futures-1::portage-stable
+>>> 16:11:12.583 Installing (85 of 172) dev-python/protobuf-python-4.21.9-r1::chromiumos
+>>> 16:11:12.614 Installing (84 of 172) dev-python/setuptools_scm-3.2.0-r1::portage-stable
+>>> 16:11:12.647 Installing (87 of 172) dev-java/javatoolkit-0.6.1::portage-stable
+>>> 16:11:12.678 Installing (92 of 172) dev-python/cycler-0.10.0-r1::portage-stable
+>>> 16:11:12.708 Installing (88 of 172) dev-python/mistune-0.8.4::portage-stable
+>>> 16:11:12.741 Installing (90 of 172) dev-python/cachetools-2.1.0::portage-stable
+>>> 16:11:12.772 Installing (93 of 172) dev-python/webcolors-1.11.1::portage-stable
+>>> 16:11:12.806 Installing (86 of 172) dev-libs/u_boot_pylib-0.0.1-r1::chromiumos
+>>> 16:11:12.839 Installing (89 of 172) dev-python/googleapis-common-protos-1.6.0-r1::chromiumos
+>>> 16:11:12.946 Installing (91 of 172) dev-python/more-itertools-4.2.0-r2::portage-stable
+>>> 16:11:12.981 Installing (94 of 172) dev-python/rsa-4.7.2::portage-stable
+>>> 16:11:13.014 Installing (95 of 172) sys-libs/libseccomp-2.5.4::portage-stable
+>>> 16:11:13.056 Installing (98 of 172) sys-devel/automake-1.16.5-r2::portage-stable
+>>> 16:11:13.094 Installing (96 of 172) chromeos-base/mojo-tools-0.0.1-r66::chromiumos
+>>> 16:11:13.135 Installing (97 of 172) chromeos-base/chromeos-config-host-0.0.2-r843::chromiumos
+>>> 16:11:17.741 Completed (81 of 172) virtual/python-futures-1::portage-stable
+>>> 16:11:21.965 Completed (80 of 172) sys-fs/mtd-utils-2.1.5::portage-stable
+>>> 16:11:22.545 Installing (83 of 172) chromeos-base/cros-config-api-0.0.1-r665::chromiumos
+>>> 16:11:23.989 Completed (93 of 172) dev-python/webcolors-1.11.1::portage-stable
+>>> 16:11:24.644 Completed (92 of 172) dev-python/cycler-0.10.0-r1::portage-stable
+>>> 16:11:25.271 Completed (89 of 172) dev-python/googleapis-common-protos-1.6.0-r1::chromiumos
+>>> 16:11:25.950 Completed (85 of 172) dev-python/protobuf-python-4.21.9-r1::chromiumos
+>>> 16:11:26.603 Completed (84 of 172) dev-python/setuptools_scm-3.2.0-r1::portage-stable
+>>> 16:11:26.913 Installing (82 of 172) chromeos-base/wilco-dtc-grpc-protos-0.0.1-r406::chromiumos
+>>> 16:11:27.265 Completed (90 of 172) dev-python/cachetools-2.1.0::portage-stable
+>>> 16:11:27.886 Completed (88 of 172) dev-python/mistune-0.8.4::portage-stable
+>>> 16:11:28.169 Completed (86 of 172) dev-libs/u_boot_pylib-0.0.1-r1::chromiumos
+>>> 16:11:28.444 Completed (87 of 172) dev-java/javatoolkit-0.6.1::portage-stable
+>>> 16:11:28.824 Completed (95 of 172) sys-libs/libseccomp-2.5.4::portage-stable
+>>> 16:11:29.106 Completed (97 of 172) chromeos-base/chromeos-config-host-0.0.2-r843::chromiumos
+>>> 16:11:29.706 Completed (91 of 172) dev-python/more-itertools-4.2.0-r2::portage-stable
+>>> 16:11:29.980 Completed (94 of 172) dev-python/rsa-4.7.2::portage-stable
+>>> 16:11:30.259 Completed (96 of 172) chromeos-base/mojo-tools-0.0.1-r66::chromiumos
+>>> 16:11:31.717 Completed (98 of 172) sys-devel/automake-1.16.5-r2::portage-stable
+>>> 16:11:31.726 Emerging (99 of 172) dev-python/grpcio-1.43.0-r1::chromiumos
+>>> 16:11:31.732 Emerging binary (100 of 172) chromeos-base/update_payload-0.0.1-r527::chromiumos
+>>> 16:11:31.741 Emerging binary (101 of 172) dev-embedded/dtoc-0.0.1-r10::chromiumos
+>>> 16:11:31.749 Emerging binary (102 of 172) dev-vcs/patman-0.0.1-r349::chromiumos
+>>> 16:11:31.763 Emerging binary (103 of 172) dev-python/google-auth-2.22.0::portage-stable
+>>> 16:11:31.772 Emerging binary (104 of 172) dev-python/m2r-0.2.1::portage-stable
+>>> 16:11:31.781 Emerging binary (105 of 172) sys-fs/erofs-utils-1.6-r2::chromiumos
+>>> 16:11:31.789 Emerging binary (106 of 172) app-admin/webapp-config-1.55-r2::portage-stable
+>>> 16:11:31.798 Emerging (107 of 172) dev-util/toolchain-utils-0.0.1-r1062::chromiumos
+>>> 16:11:31.805 Emerging (108 of 172) chromeos-base/vboot_reference-1.0-r2637::chromiumos
+>>> 16:11:31.812 Emerging binary (109 of 172) dev-python/bcrypt-3.1.7-r2::portage-stable
+>>> 16:11:31.821 Emerging (110 of 172) chromeos-base/devserver-0.0.3-r2047::chromiumos
+>>> 16:11:31.828 Emerging binary (111 of 172) dev-python/google-resumable-media-0.3.3-r2::chromiumos
+>>> 16:11:31.838 Emerging binary (112 of 172) sys-apps/dtc-1.6.0-r4::chromiumos
+>>> 16:11:31.847 Emerging binary (113 of 172) app-crypt/sbsigntools-0.9.4-r1::portage-stable
+>>> 16:11:31.857 Emerging binary (114 of 172) dev-util/ccache-4.8.2::portage-stable
+>>> 16:11:31.867 Emerging binary (115 of 172) dev-util/perf-5.15.68-r4::chromiumos
+>>> 16:11:31.878 Emerging binary (116 of 172) dev-libs/xmlrpc-c-1.51.06-r3::chromiumos
+>>> 16:11:31.888 Emerging binary (117 of 172) dev-python/matplotlib-2.2.2-r3::portage-stable
+>>> 16:11:31.898 Emerging binary (118 of 172) media-libs/opencv-4.7.0::chromiumos
+>>> 16:11:31.908 Emerging (119 of 172) chromeos-base/perfetto-37.0-r13::chromiumos
+>>> 16:11:31.916 Emerging binary (120 of 172) chromeos-base/chromeos-base-1-r35::chromiumos
+>>> 16:11:31.927 Emerging binary (121 of 172) net-misc/openssh-9.4_p1::portage-stable
+>>> 16:11:31.939 Emerging binary (122 of 172) dev-util/meson-0.64.1::portage-stable
+>>> 16:11:32.940 Completed (83 of 172) chromeos-base/cros-config-api-0.0.1-r665::chromiumos
+>>> 16:11:32.958 Completed (82 of 172) chromeos-base/wilco-dtc-grpc-protos-0.0.1-r406::chromiumos
+>>> 16:11:33.315 Installing (104 of 172) dev-python/m2r-0.2.1::portage-stable
+>>> 16:11:33.418 Installing (106 of 172) app-admin/webapp-config-1.55-r2::portage-stable
+>>> 16:11:33.449 Installing (100 of 172) chromeos-base/update_payload-0.0.1-r527::chromiumos
+>>> 16:11:33.485 Installing (109 of 172) dev-python/bcrypt-3.1.7-r2::portage-stable
+>>> 16:11:33.584 Installing (103 of 172) dev-python/google-auth-2.22.0::portage-stable
+>>> 16:11:33.623 Installing (113 of 172) app-crypt/sbsigntools-0.9.4-r1::portage-stable
+>>> 16:11:33.718 Installing (105 of 172) sys-fs/erofs-utils-1.6-r2::chromiumos
+>>> 16:11:33.750 Installing (111 of 172) dev-python/google-resumable-media-0.3.3-r2::chromiumos
+>>> 16:11:33.785 Installing (101 of 172) dev-embedded/dtoc-0.0.1-r10::chromiumos
+>>> 16:11:33.817 Installing (102 of 172) dev-vcs/patman-0.0.1-r349::chromiumos
+>>> 16:11:33.902 Installing (112 of 172) sys-apps/dtc-1.6.0-r4::chromiumos
+>>> 16:11:33.949 Installing (116 of 172) dev-libs/xmlrpc-c-1.51.06-r3::chromiumos
+>>> 16:11:34.000 Installing (114 of 172) dev-util/ccache-4.8.2::portage-stable
+>>> 16:11:34.052 Installing (115 of 172) dev-util/perf-5.15.68-r4::chromiumos
+>>> 16:11:34.085 Installing (118 of 172) media-libs/opencv-4.7.0::chromiumos
+>>> 16:11:34.141 Installing (121 of 172) net-misc/openssh-9.4_p1::portage-stable
+>>> 16:11:34.198 Installing (117 of 172) dev-python/matplotlib-2.2.2-r3::portage-stable
+>>> 16:11:34.401 Installing (122 of 172) dev-util/meson-0.64.1::portage-stable
+>>> 16:11:35.984 Installing (120 of 172) chromeos-base/chromeos-base-1-r35::chromiumos
+>>> 16:11:37.182 Installing (107 of 172) dev-util/toolchain-utils-0.0.1-r1062::chromiumos
+>>> 16:11:37.629 Installing (110 of 172) chromeos-base/devserver-0.0.3-r2047::chromiumos
+>>> 16:11:38.284 Completed (104 of 172) dev-python/m2r-0.2.1::portage-stable
+>>> 16:11:43.245 Completed (109 of 172) dev-python/bcrypt-3.1.7-r2::portage-stable
+>>> 16:11:45.405 Completed (103 of 172) dev-python/google-auth-2.22.0::portage-stable
+>>> 16:11:48.649 Completed (113 of 172) app-crypt/sbsigntools-0.9.4-r1::portage-stable
+>>> 16:11:49.397 Completed (105 of 172) sys-fs/erofs-utils-1.6-r2::chromiumos
+>>> 16:11:50.191 Completed (100 of 172) chromeos-base/update_payload-0.0.1-r527::chromiumos
+>>> 16:11:50.826 Completed (106 of 172) app-admin/webapp-config-1.55-r2::portage-stable
+>>> 16:11:51.487 Completed (111 of 172) dev-python/google-resumable-media-0.3.3-r2::chromiumos
+>>> 16:11:52.137 Completed (101 of 172) dev-embedded/dtoc-0.0.1-r10::chromiumos
+>>> 16:11:53.057 Completed (115 of 172) dev-util/perf-5.15.68-r4::chromiumos
+>>> 16:11:53.877 Completed (114 of 172) dev-util/ccache-4.8.2::portage-stable
+>>> 16:11:54.387 Completed (116 of 172) dev-libs/xmlrpc-c-1.51.06-r3::chromiumos
+>>> 16:11:54.973 Completed (122 of 172) dev-util/meson-0.64.1::portage-stable
+>>> 16:11:54.995 Emerging (123 of 172) chromeos-base/tast-proto-0.0.1-r993::chromiumos
+>>> 16:11:55.009 Emerging binary (124 of 172) dev-util/cros-servod-0.0.1-r259::chromiumos
+>>> 16:11:55.059 Emerging binary (125 of 172) dev-python/google-api-core-1.19.0-r2::chromiumos
+>>> 16:11:55.098 Emerging (126 of 172) media-video/ffmpeg-5.1.1-r5::chromiumos
+>>> 16:11:55.126 Emerging (127 of 172) dev-util/vulkan-headers-1.3.261::portage-stable
+>>> 16:11:55.141 Emerging (128 of 172) dev-util/glslang-1.3.261::portage-stable
+>>> 16:11:55.160 Emerging binary (129 of 172) dev-util/bazel-6.2.0-r3::chromiumos
+>>> 16:11:55.180 Emerging binary (130 of 172) dev-util/bazel-5.3.0-r4::chromiumos
+>>> 16:11:55.202 Emerging (131 of 172) sys-apps/hwids-20150717-r17::chromiumos
+>>> 16:11:56.393 Completed (107 of 172) dev-util/toolchain-utils-0.0.1-r1062::chromiumos
+>>> 16:11:56.694 Completed (118 of 172) media-libs/opencv-4.7.0::chromiumos
+>>> 16:11:57.521 Completed (117 of 172) dev-python/matplotlib-2.2.2-r3::portage-stable
+>>> 16:11:57.797 Installing (125 of 172) dev-python/google-api-core-1.19.0-r2::chromiumos
+>>> 16:11:59.105 Installing (129 of 172) dev-util/bazel-6.2.0-r3::chromiumos
+>>> 16:11:59.267 Installing (124 of 172) dev-util/cros-servod-0.0.1-r259::chromiumos
+>>> 16:11:59.374 Installing (130 of 172) dev-util/bazel-5.3.0-r4::chromiumos
+>>> 16:11:59.494 Completed (110 of 172) chromeos-base/devserver-0.0.3-r2047::chromiumos
+>>> 16:11:59.560 Completed (120 of 172) chromeos-base/chromeos-base-1-r35::chromiumos
+>>> 16:12:00.991 Completed (121 of 172) net-misc/openssh-9.4_p1::portage-stable
+>>> 16:12:02.460 Completed (102 of 172) dev-vcs/patman-0.0.1-r349::chromiumos
+>>> 16:12:02.491 Emerging binary (132 of 172) dev-embedded/binman-0.0.1-r16::chromiumos
+>>> 16:12:03.929 Completed (112 of 172) sys-apps/dtc-1.6.0-r4::chromiumos
+>>> 16:12:03.959 Emerging binary (133 of 172) app-emulation/qemu-6.2.0-r3::portage-stable
+>>> 16:12:05.152 Installing (132 of 172) dev-embedded/binman-0.0.1-r16::chromiumos
+>>> 16:12:08.027 Installing (133 of 172) app-emulation/qemu-6.2.0-r3::portage-stable
+>>> 16:12:09.550 Completed (129 of 172) dev-util/bazel-6.2.0-r3::chromiumos
+>>> 16:12:10.478 Completed (125 of 172) dev-python/google-api-core-1.19.0-r2::chromiumos
+>>> 16:12:11.285 Completed (124 of 172) dev-util/cros-servod-0.0.1-r259::chromiumos
+>>> 16:12:13.151 Completed (130 of 172) dev-util/bazel-5.3.0-r4::chromiumos
+>>> 16:12:17.222 Completed (132 of 172) dev-embedded/binman-0.0.1-r16::chromiumos
+>>> 16:12:17.248 Emerging binary (134 of 172) chromeos-base/zephyr-build-tools-0.0.1-r258::chromiumos
+>>> 16:12:18.735 Installing (131 of 172) sys-apps/hwids-20150717-r17::chromiumos
+>>> 16:12:20.122 Installing (123 of 172) chromeos-base/tast-proto-0.0.1-r993::chromiumos
+>>> 16:12:20.590 Installing (127 of 172) dev-util/vulkan-headers-1.3.261::portage-stable
+>>> 16:12:20.768 Installing (134 of 172) chromeos-base/zephyr-build-tools-0.0.1-r258::chromiumos
+>>> 16:12:21.482 Completed (133 of 172) app-emulation/qemu-6.2.0-r3::portage-stable
+>>> 16:12:28.878 Completed (123 of 172) chromeos-base/tast-proto-0.0.1-r993::chromiumos
+>>> 16:12:30.433 Completed (134 of 172) chromeos-base/zephyr-build-tools-0.0.1-r258::chromiumos
+>>> 16:12:30.878 Completed (127 of 172) dev-util/vulkan-headers-1.3.261::portage-stable
+>>> 16:12:30.989 Installing (108 of 172) chromeos-base/vboot_reference-1.0-r2637::chromiumos
+>>> 16:12:31.643 Completed (131 of 172) sys-apps/hwids-20150717-r17::chromiumos
+>>> 16:12:33.833 Completed (108 of 172) chromeos-base/vboot_reference-1.0-r2637::chromiumos
+>>> 16:12:46.573 Installing (128 of 172) dev-util/glslang-1.3.261::portage-stable
+>>> 16:12:54.433 Completed (128 of 172) dev-util/glslang-1.3.261::portage-stable
+>>> 16:13:54.185 Installing (99 of 172) dev-python/grpcio-1.43.0-r1::chromiumos
+>>> 16:14:05.714 Completed (99 of 172) dev-python/grpcio-1.43.0-r1::chromiumos
+>>> 16:14:05.754 Emerging binary (135 of 172) dev-python/google-cloud-core-1.4.1-r1::chromiumos
+>>> 16:14:08.476 Installing (135 of 172) dev-python/google-cloud-core-1.4.1-r1::chromiumos
+>>> 16:14:17.757 Completed (135 of 172) dev-python/google-cloud-core-1.4.1-r1::chromiumos
+>>> 16:14:17.778 Emerging binary (136 of 172) dev-python/google-cloud-storage-1.19.0-r2::chromiumos
+>>> 16:14:19.884 Installing (136 of 172) dev-python/google-cloud-storage-1.19.0-r2::chromiumos
+>>> 16:14:26.102 Completed (136 of 172) dev-python/google-cloud-storage-1.19.0-r2::chromiumos
+>>> 16:14:41.999 Installing (126 of 172) media-video/ffmpeg-5.1.1-r5::chromiumos
+>>> 16:14:44.809 Completed (126 of 172) media-video/ffmpeg-5.1.1-r5::chromiumos
+>>> 16:14:45.022 Installing (119 of 172) chromeos-base/perfetto-37.0-r13::chromiumos
+>>> 16:14:50.649 Completed (119 of 172) chromeos-base/perfetto-37.0-r13::chromiumos
+>>> 16:14:50.656 Emerging (137 of 172) chromeos-base/libchrome-0.0.1-r807::chromiumos
+>>> 16:17:07.226 Installing (137 of 172) chromeos-base/libchrome-0.0.1-r807::chromiumos
+>>> 16:17:10.647 Completed (137 of 172) chromeos-base/libchrome-0.0.1-r807::chromiumos
+>>> 16:17:10.654 Emerging (138 of 172) chromeos-base/system_api-0.0.1-r5424::chromiumos
+>>> 16:17:10.661 Emerging (139 of 172) net-wireless/floss_tools-0.0.1-r2884::chromiumos
+>>> 16:17:41.454 Installing (139 of 172) net-wireless/floss_tools-0.0.1-r2884::chromiumos
+>>> 16:17:44.395 Completed (139 of 172) net-wireless/floss_tools-0.0.1-r2884::chromiumos
+>>> 16:18:09.387 Installing (138 of 172) chromeos-base/system_api-0.0.1-r5424::chromiumos
+>>> 16:18:14.305 Completed (138 of 172) chromeos-base/system_api-0.0.1-r5424::chromiumos
+>>> 16:18:14.312 Emerging (140 of 172) chromeos-base/libbrillo-0.0.1-r2291::chromiumos
+>>> 16:19:01.212 Installing (140 of 172) chromeos-base/libbrillo-0.0.1-r2291::chromiumos
+>>> 16:19:04.020 Completed (140 of 172) chromeos-base/libbrillo-0.0.1-r2291::chromiumos
+>>> 16:19:04.026 Emerging (141 of 172) chromeos-base/verity-0.0.1-r447::chromiumos
+>>> 16:19:04.034 Emerging (142 of 172) chromeos-base/update_engine-client-0.0.1-r2285::chromiumos
+>>> 16:19:04.040 Emerging (143 of 172) chromeos-base/power_manager-client-0.0.1-r2744::chromiumos
+>>> 16:19:04.046 Emerging (144 of 172) chromeos-base/session_manager-client-0.0.1-r2616::chromiumos
+>>> 16:19:04.052 Emerging (145 of 172) dev-util/bsdiff-4.3.1-r39::chromiumos
+>>> 16:19:04.058 Emerging (146 of 172) chromeos-base/chromeos-common-script-0.0.1-r540::chromiumos
+>>> 16:19:04.064 Emerging (147 of 172) chromeos-base/modemfwd-proto-0.0.1-r304::chromiumos
+>>> 16:19:04.069 Emerging (148 of 172) chromeos-base/policy-go-proto-0.0.1-r460::chromiumos
+>>> 16:19:04.075 Emerging (149 of 172) chromeos-base/reporting-proto-0.0.1-r236::chromiumos
+>>> 16:19:04.081 Emerging (150 of 172) chromeos-base/vm_protos-0.0.1-r488::chromiumos
+>>> 16:19:04.087 Emerging (151 of 172) chromeos-base/xdr-proto-0.0.1-r173::chromiumos
+>>> 16:19:04.094 Emerging (152 of 172) dev-go/perfetto-protos-37.0-r13::chromiumos
+>>> 16:19:04.100 Emerging (153 of 172) chromeos-base/libcrossystem-0.0.1-r190::chromiumos
+>>> 16:19:04.106 Emerging (154 of 172) chromeos-base/debugd-client-0.0.1-r2533::chromiumos
+>>> 16:19:04.111 Emerging (155 of 172) chromeos-base/imageloader-0.0.1-r1912::chromiumos
+>>> 16:19:04.117 Emerging (156 of 172) chromeos-base/shill-client-0.0.1-r3959::chromiumos
+>>> 16:19:15.736 Installing (145 of 172) dev-util/bsdiff-4.3.1-r39::chromiumos
+>>> 16:19:16.476 Installing (141 of 172) chromeos-base/verity-0.0.1-r447::chromiumos
+>>> 16:19:17.018 Installing (142 of 172) chromeos-base/update_engine-client-0.0.1-r2285::chromiumos
+>>> 16:19:18.886 Completed (145 of 172) dev-util/bsdiff-4.3.1-r39::chromiumos
+>>> 16:19:18.896 Emerging (157 of 172) dev-util/puffin-1.0.0-r446::chromiumos
+>>> 16:19:19.334 Installing (143 of 172) chromeos-base/power_manager-client-0.0.1-r2744::chromiumos
+>>> 16:19:20.038 Completed (141 of 172) chromeos-base/verity-0.0.1-r447::chromiumos
+>>> 16:19:20.549 Completed (142 of 172) chromeos-base/update_engine-client-0.0.1-r2285::chromiumos
+>>> 16:19:21.708 Installing (144 of 172) chromeos-base/session_manager-client-0.0.1-r2616::chromiumos
+>>> 16:19:22.155 Completed (143 of 172) chromeos-base/power_manager-client-0.0.1-r2744::chromiumos
+>>> 16:19:22.165 Emerging (158 of 172) chromeos-base/libec-0.0.1-r506::chromiumos
+>>> 16:19:23.266 Installing (146 of 172) chromeos-base/chromeos-common-script-0.0.1-r540::chromiumos
+>>> 16:19:24.482 Completed (144 of 172) chromeos-base/session_manager-client-0.0.1-r2616::chromiumos
+>>> 16:19:24.491 Emerging (159 of 172) chromeos-base/metrics-0.0.1-r3676::chromiumos
+>>> 16:19:25.901 Installing (147 of 172) chromeos-base/modemfwd-proto-0.0.1-r304::chromiumos
+>>> 16:19:26.398 Completed (146 of 172) chromeos-base/chromeos-common-script-0.0.1-r540::chromiumos
+>>> 16:19:28.921 Completed (147 of 172) chromeos-base/modemfwd-proto-0.0.1-r304::chromiumos
+>>> 16:19:32.242 Installing (153 of 172) chromeos-base/libcrossystem-0.0.1-r190::chromiumos
+>>> 16:19:33.822 Installing (149 of 172) chromeos-base/reporting-proto-0.0.1-r236::chromiumos
+>>> 16:19:34.780 Completed (153 of 172) chromeos-base/libcrossystem-0.0.1-r190::chromiumos
+>>> 16:19:36.386 Completed (149 of 172) chromeos-base/reporting-proto-0.0.1-r236::chromiumos
+>>> 16:19:37.272 Installing (148 of 172) chromeos-base/policy-go-proto-0.0.1-r460::chromiumos
+>>> 16:19:37.918 Installing (154 of 172) chromeos-base/debugd-client-0.0.1-r2533::chromiumos
+>>> 16:19:39.947 Completed (148 of 172) chromeos-base/policy-go-proto-0.0.1-r460::chromiumos
+>>> 16:19:40.017 Installing (151 of 172) chromeos-base/xdr-proto-0.0.1-r173::chromiumos
+>>> 16:19:40.418 Completed (154 of 172) chromeos-base/debugd-client-0.0.1-r2533::chromiumos
+>>> 16:19:42.639 Completed (151 of 172) chromeos-base/xdr-proto-0.0.1-r173::chromiumos
+>>> 16:19:45.602 Installing (150 of 172) chromeos-base/vm_protos-0.0.1-r488::chromiumos
+>>> 16:19:46.264 Installing (152 of 172) dev-go/perfetto-protos-37.0-r13::chromiumos
+>>> 16:19:49.251 Installing (156 of 172) chromeos-base/shill-client-0.0.1-r3959::chromiumos
+>>> 16:19:50.418 Completed (150 of 172) chromeos-base/vm_protos-0.0.1-r488::chromiumos
+>>> 16:19:52.084 Completed (152 of 172) dev-go/perfetto-protos-37.0-r13::chromiumos
+>>> 16:19:56.192 Completed (156 of 172) chromeos-base/shill-client-0.0.1-r3959::chromiumos
+>>> 16:20:04.801 Installing (157 of 172) dev-util/puffin-1.0.0-r446::chromiumos
+>>> 16:20:05.284 Installing (155 of 172) chromeos-base/imageloader-0.0.1-r1912::chromiumos
+>>> 16:20:07.427 Installing (158 of 172) chromeos-base/libec-0.0.1-r506::chromiumos
+>>> 16:20:07.672 Completed (157 of 172) dev-util/puffin-1.0.0-r446::chromiumos
+>>> 16:20:10.059 Completed (155 of 172) chromeos-base/imageloader-0.0.1-r1912::chromiumos
+>>> 16:20:10.606 Completed (158 of 172) chromeos-base/libec-0.0.1-r506::chromiumos
+>>> 16:20:10.613 Emerging (160 of 172) chromeos-base/ec-utils-0.0.2-r15303::chromiumos
+>>> 16:20:12.686 Installing (159 of 172) chromeos-base/metrics-0.0.1-r3676::chromiumos
+>>> 16:20:17.360 Completed (159 of 172) chromeos-base/metrics-0.0.1-r3676::chromiumos
+>>> 16:20:17.368 Emerging (161 of 172) chromeos-base/update_engine-0.0.3-r4786::chromiumos
+>>> 16:20:17.375 Emerging (162 of 172) chromeos-base/hardware_verifier_proto-0.0.1-r597::chromiumos
+>>> 16:20:30.925 Installing (160 of 172) chromeos-base/ec-utils-0.0.2-r15303::chromiumos
+>>> 16:20:38.641 Completed (160 of 172) chromeos-base/ec-utils-0.0.2-r15303::chromiumos
+>>> 16:20:38.656 Emerging (163 of 172) chromeos-base/ec-devutils-0.0.2-r13370::chromiumos
+>>> 16:20:39.036 Installing (162 of 172) chromeos-base/hardware_verifier_proto-0.0.1-r597::chromiumos
+>>> 16:20:46.734 Completed (162 of 172) chromeos-base/hardware_verifier_proto-0.0.1-r597::chromiumos
+>>> 16:20:46.762 Emerging binary (164 of 172) chromeos-base/tast-build-deps-2-r43::chromiumos
+>>> 16:20:48.580 Installing (164 of 172) chromeos-base/tast-build-deps-2-r43::chromiumos
+>>> 16:20:55.114 Completed (164 of 172) chromeos-base/tast-build-deps-2-r43::chromiumos
+>>> 16:20:55.129 Emerging (165 of 172) chromeos-base/tast-cmd-0.0.1-r2128::chromiumos
+>>> 16:20:55.142 Emerging (166 of 172) chromeos-base/tast-remote-tests-cros-0.0.2-r18382::chromiumos
+>>> 16:21:08.956 Installing (161 of 172) chromeos-base/update_engine-0.0.3-r4786::chromiumos
+>>> 16:21:12.248 Completed (161 of 172) chromeos-base/update_engine-0.0.3-r4786::chromiumos
+>>> 16:21:25.868 Installing (165 of 172) chromeos-base/tast-cmd-0.0.1-r2128::chromiumos
+>>> 16:21:28.004 Installing (163 of 172) chromeos-base/ec-devutils-0.0.2-r13370::chromiumos
+>>> 16:21:30.989 Completed (165 of 172) chromeos-base/tast-cmd-0.0.1-r2128::chromiumos
+>>> 16:21:31.018 Emerging binary (167 of 172) dev-util/cros-test-0.0.1-r62::chromiumos
+>>> 16:21:32.079 Installing (167 of 172) dev-util/cros-test-0.0.1-r62::chromiumos
+>>> 16:21:33.585 Completed (163 of 172) chromeos-base/ec-devutils-0.0.2-r13370::chromiumos
+>>> 16:21:33.595 Emerging (168 of 172) dev-util/hdctools-0.0.1-r2034::chromiumos
+>>> 16:21:35.061 Completed (167 of 172) dev-util/cros-test-0.0.1-r62::chromiumos
+>>> 16:21:35.070 Emerging binary (169 of 172) dev-util/cros-test-finder-0.0.1-r72::chromiumos
+>>> 16:21:35.079 Emerging binary (170 of 172) dev-util/pre-process-0.0.1-r11::chromiumos
+>>> 16:21:35.635 Installing (169 of 172) dev-util/cros-test-finder-0.0.1-r72::chromiumos
+>>> 16:21:35.667 Installing (170 of 172) dev-util/pre-process-0.0.1-r11::chromiumos
+>>> 16:21:40.753 Completed (170 of 172) dev-util/pre-process-0.0.1-r11::chromiumos
+>>> 16:21:41.867 Completed (169 of 172) dev-util/cros-test-finder-0.0.1-r72::chromiumos
+>>> 16:21:41.881 Emerging (171 of 172) dev-util/test-services-0.0.1-r493::chromiumos
+>>> 16:21:52.588 Installing (171 of 172) dev-util/test-services-0.0.1-r493::chromiumos
+>>> 16:21:56.575 Completed (171 of 172) dev-util/test-services-0.0.1-r493::chromiumos
+>>> 16:22:05.422 Installing (166 of 172) chromeos-base/tast-remote-tests-cros-0.0.2-r18382::chromiumos
+>>> 16:22:09.113 Completed (166 of 172) chromeos-base/tast-remote-tests-cros-0.0.2-r18382::chromiumos
+>>> 16:22:36.632 Installing (168 of 172) dev-util/hdctools-0.0.1-r2034::chromiumos
+>>> 16:22:40.255 Completed (168 of 172) dev-util/hdctools-0.0.1-r2034::chromiumos
+>>> 16:22:40.261 Emerging binary (172 of 172) virtual/target-chromium-os-sdk-1-r334::chromiumos
+>>> 16:22:40.712 Installing (172 of 172) virtual/target-chromium-os-sdk-1-r334::chromiumos
+>>> 16:22:43.357 Completed (172 of 172) virtual/target-chromium-os-sdk-1-r334::chromiumos
+>>> 16:22:43.358 Jobs: 172 of 172 complete                       Load avg: 15.0, 20.0, 13.9
+
+ * Messages for package app-admin/webapp-config-1.55-r2:
+ * Log file: /var/log/portage/app-admin:webapp-config-1.55-r2:20230906-161132.log
+
+ * Now that you have upgraded webapp-config, you **must** update your
+ * config files in /etc/vhosts/webapp-config before you emerge any
+ * packages that use webapp-config.
+
+ * Messages for package net-misc/openssh-9.4_p1:
+ * Log file: /var/log/portage/net-misc:openssh-9.4_p1:20230906-161132.log
+
+ * After upgrading to openssh-8.2p1 please restart sshd, otherwise you
+ * will not be able to establish new sessions. Restarting sshd over a ssh
+ * connection is generally safe.
+
+ * Messages for package app-emulation/qemu-6.2.0-r3:
+ * Log file: /var/log/portage/app-emulation:qemu-6.2.0-r3:20230906-161204.log
+
+ * If you don't have kvm compiled into the kernel, make sure you have the
+ * kernel module loaded before running kvm. The easiest way to ensure that the
+ * kernel module is loaded is to load it on boot.
+ * For AMD CPUs the module is called 'kvm-amd'.
+ * For Intel CPUs the module is called 'kvm-intel'.
+ * Please review /etc/conf.d/modules for how to load these.
+ * 
+ * Make sure your user is in the 'kvm' group. Just run
+ * $ gpasswd -a <USER> kvm
+ * then have <USER> re-login.
+ * 
+ * For brand new installs, the default permissions on /dev/kvm might not let
+ * you access it.  You can tell udev to reset ownership/perms:
+ * $ udevadm trigger -c add /dev/kvm
+ * 
+ * If you want to register binfmt handlers for qemu user targets:
+ * For openrc:
+ * # rc-update add qemu-binfmt
+ * For systemd:
+ * # ln -s /usr/share/qemu/binfmt.d/qemu.conf /etc/binfmt.d/qemu.conf
+ * 
+ * (Note: Above message is only printed the first time package is
+ * installed. Please look at /usr/share/doc/qemu-6.2.0-r3/README.gentoo*
+ * for future reference)
+
+ * Messages for package chromeos-base/perfetto-37.0-r13:
+ * Log file: /var/log/portage/chromeos-base:perfetto-37.0-r13:20230906-161132.log
+
+ * Could not find "/mnt/host/source/src/aosp/external/perfetto".
+ * The CROS_WORKON_LOCALNAME for this ebuild should be updated
+ * to be relative to "/mnt/host/source/src".
+
+ * Messages for package net-wireless/floss_tools-0.0.1-r2884:
+ * Log file: /var/log/portage/net-wireless:floss_tools-0.0.1-r2884:20230906-161710.log
+
+ * Could not find "/mnt/host/source/src/third_party/../aosp/packages/modules/Bluetooth/local".
+ * The CROS_WORKON_LOCALNAME for this ebuild should be updated
+ * to be relative to "/mnt/host/source/src/third_party".
+ * Could not find "/mnt/host/source/src/third_party/../aosp/frameworks/proto_logging".
+ * The CROS_WORKON_LOCALNAME for this ebuild should be updated
+ * to be relative to "/mnt/host/source/src/third_party".
+
+ * Messages for package chromeos-base/update_engine-client-0.0.1-r2285:
+ * Log file: /var/log/portage/chromeos-base:update_engine-client-0.0.1-r2285:20230906-161904.log
+
+ * generate_pc_file.sh is deprecated.  Please switch to generate_pkg_config in BUILD.gn.
+
+ * Messages for package chromeos-base/power_manager-client-0.0.1-r2744:
+ * Log file: /var/log/portage/chromeos-base:power_manager-client-0.0.1-r2744:20230906-161904.log
+
+ * generate_pc_file.sh is deprecated.  Please switch to generate_pkg_config in BUILD.gn.
+
+ * Messages for package chromeos-base/session_manager-client-0.0.1-r2616:
+ * Log file: /var/log/portage/chromeos-base:session_manager-client-0.0.1-r2616:20230906-161904.log
+
+ * generate_pc_file.sh is deprecated.  Please switch to generate_pkg_config in BUILD.gn.
+
+ * Messages for package dev-go/perfetto-protos-37.0-r13:
+ * Log file: /var/log/portage/dev-go:perfetto-protos-37.0-r13:20230906-161904.log
+
+ * Could not find "/mnt/host/source/src/third_party/../aosp/external/perfetto".
+ * The CROS_WORKON_LOCALNAME for this ebuild should be updated
+ * to be relative to "/mnt/host/source/src/third_party".
+
+ * Messages for package chromeos-base/shill-client-0.0.1-r3959:
+ * Log file: /var/log/portage/chromeos-base:shill-client-0.0.1-r3959:20230906-161904.log
+
+ * generate_pc_file.sh is deprecated.  Please switch to generate_pkg_config in BUILD.gn.
+
+ * Regenerating GNU info directory index...
+ * Processed 93 info files.
+16:22:46.873: INFO: Running: emerge -uNv '--with-bdeps=y' --oneshot --getbinpkg --deep --usepkgonly '--rebuilt-binaries=n' dev-lang/rust virtual/target-sdk-post-cross dev-embedded/hps-sdk --root-deps '--jobs=32'
+
+These are the packages that would be merged, in order:
+
+Calculating dependencies... done in 0:00:03.726871
+[binary   R    ] dev-lang/rust-host-1.70.0:stable/1.70::chromiumos  USE="cros_host rust_cros_llvm rust_profile_frontend_use rust_profile_llvm_use -continue-on-patch-failure -rust_profile_frontend_generate -rust_profile_frontend_use_local -rust_profile_llvm_generate -rust_profile_llvm_use_local" CROS_WORKON_TREE="-fbfdaa24e61c4e41d8110a3851ddc0968bf525c6% (-%)" PYTHON_TARGETS="python3_6" 345803 KiB
+
+Total: 1 package (1 reinstall, 1 binary), Size of downloads: 345803 KiB
+
+>>> 16:22:51.399 Emerging binary (1 of 1) dev-lang/rust-host-1.70.0::chromiumos
+>>> 16:23:01.576 Installing (1 of 1) dev-lang/rust-host-1.70.0::chromiumos
+>>> 16:23:09.974 Completed (1 of 1) dev-lang/rust-host-1.70.0::chromiumos
+>>> 16:23:09.977 Jobs: 1 of 1 complete                           Load avg: 10.3, 18.4, 13.6
+16:23:11.289 INFO    : Running: sudo -E /mnt/host/source/chromite/bin/parallel_emerge -uNv --with-bdeps=n --oneshot --getbinpkg --deep --usepkgonly --rebuilt-binaries=n virtual/target-sdk-nobdeps
+16:23:11.382: INFO: Running: emerge -uNv '--with-bdeps=n' --oneshot --getbinpkg --deep --usepkgonly '--rebuilt-binaries=n' virtual/target-sdk-nobdeps --root-deps '--jobs=32'
+
+These are the packages that would be merged, in order:
+
+Calculating dependencies... done in 0:00:01.353966
+[binary  N     ] dev-util/shellcheck-0.8.0-r61:0/0.8.0::chromiumos  USE="cros_host -doc -hscolour -profile -test" 8682 KiB
+
+Total: 1 package (1 new, 1 binary), Size of downloads: 8682 KiB
+
+>>> 16:23:13.510 Emerging binary (1 of 1) dev-util/shellcheck-0.8.0-r61::chromiumos
+>>> 16:23:15.879 Installing (1 of 1) dev-util/shellcheck-0.8.0-r61::chromiumos
+>>> 16:23:18.325 Completed (1 of 1) dev-util/shellcheck-0.8.0-r61::chromiumos
+>>> 16:23:18.326 Jobs: 1 of 1 complete                           Load avg: 8.8, 17.9, 13.4
+
+ * Messages for package dev-util/shellcheck-0.8.0-r61:
+ * Log file: /var/log/portage/dev-util:shellcheck-0.8.0-r61:20230906-162315.log
+
+ * ghc not found
+ * ghc-pkg not found
+Scanning Configuration files...
+Exiting: Nothing left to do; exiting. :)
+16:23:19.486 INFO    : Running: generate_reclient_inputs
+16:23:19.644 INFO    : Elapsed time (update_chroot.sh): 19m10s
+16:23:19 [enter_chroot] sudo eselect java-vm set system openjdk-bin-11
+16:23:19.997 INFO    cros_sdk:make_chroot: Elapsed time (make_chroot.sh): 21m5s
+16:23:19.998: INFO: cros_sdk_lib.ChrootCreator._make_chroot: 21m5.493s
+16:23:19.998: INFO: 
+All set up.  To enter the chroot, run:
+$ cros_sdk --enter
+
+CAUTION: Do *NOT* rm -rf the chroot directory; if there are stale bind mounts
+you may end up deleting your source tree too.  To unmount & delete cleanly, use:
+$ cros_sdk --delete
+
+16:23:19.999: INFO: cros_sdk_lib.ChrootCreator.run: 27m22.847s
+16:23:19.999: INFO: cros_sdk_lib.CreateChroot: 27m22.847s
+$ 
