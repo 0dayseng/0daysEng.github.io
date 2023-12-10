@@ -1156,12 +1156,13 @@ hr {
 .site-nav .site-nav-ul-none-onepage>li.has-children>ul {
   visibility: hidden;
   opacity: 0;
+  border: 1px solid white;
   z-index: 2;
   position: absolute;
   left: 0;
   top: 100%;
   min-width: 200px;
-  background: #fff;
+  background: black;
   padding: 20px 0px;
   margin-top: 20px;
   -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
@@ -1207,7 +1208,7 @@ hr {
 .site-nav .site-nav-ul-none-onepage>li.has-children>.dropdown>li a:hover,
 .site-nav .site-nav-ul-none-onepage>li.has-children>ul>li a:hover {
   color: #000;
-  background: #f9f9f9;
+  background: #d3330b;
   padding-left: 30px;
 }
 
