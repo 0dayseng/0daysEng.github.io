@@ -1663,18 +1663,18 @@ hr {
 .site-mobile-menu ul>li.has-children .arrow-collapse:before {
   font-size: 11px !important;
   z-index: 20;
-  font-family: "icomoon";
-  content: "\f078";
+  content: ">";
   position: absolute;
   top: 50%;
   left: 50%;
-  color: #000;
-  -webkit-transform: translate(-50%, -50%) rotate(-180deg);
-  -ms-transform: translate(-50%, -50%) rotate(-180deg);
-  transform: translate(-50%, -50%) rotate(-180deg);
+  color: white;
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+  -ms-transform: translate(-50%, -50%) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(90deg);
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
+
 }
 
 .site-mobile-menu ul>li.has-children .arrow-collapse.collapsed:before {
