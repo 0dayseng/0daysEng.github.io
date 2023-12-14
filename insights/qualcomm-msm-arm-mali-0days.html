@@ -226,7 +226,7 @@
 
                            <p>The bug is in aDSP device driver code which implements FastRPC. The <a class="underline" target="_blank" href="https://git.codelinaro.org/clo/la/kernel/msm-5.15/-/commit/2643808ddbedfaabbb334741873fb2857f78188a">patch</a> too long to show here in full. We'll need some extra background information for this one. 
 
-                           Modern Snapdragon SoCs have not one, but <a class="underline" target="_blank" href="https://developer.qualcomm.com/qfile/27696/qualcomm-hexagon-architecture.pdf">multiple DSP processors</a>, specialized for different classes of computation tasks. aDSP (Application DSP) was historically responsible for audio and sensor input processing (nowadays sensor processing is offloaded to a dedicated sDSP core), while mDSP runs cellular modem code, and cDSP runs AI compute. All DSP cores are architecturally based on <a class="underline" target="_blank" href="https://developer.qualcomm.com/software/hexagon-dsp-sdk/dsp-processor">Hexagon</a>, Qualcomm's proprietary processor architecture with unique traits and assembly coding patterns, and one of the very fiew <a class="underline" target="_blank" href="https://en.wikipedia.org/wiki/Very_long_instruction_word">VLIW</a> ISA designs that managed to succeed.
+                           Modern Snapdragon SoCs have not one, but <a class="underline" target="_blank" href="https://developer.qualcomm.com/qfile/27696/qualcomm-hexagon-architecture.pdf">multiple DSP processors</a>, specialized for different classes of computation tasks. aDSP (Application DSP) was historically responsible for audio and sensor input processing (nowadays sensor processing is offloaded to a dedicated sDSP core), while mDSP runs cellular modem code, and cDSP runs AI compute. All DSP cores are architecturally based on <a class="underline" target="_blank" href="https://developer.qualcomm.com/software/hexagon-dsp-sdk/dsp-processor">Hexagon</a>, Qualcomm's proprietary processor architecture with unique traits and assembly coding patterns, and one of the very few <a class="underline" target="_blank" href="https://en.wikipedia.org/wiki/Very_long_instruction_word">VLIW</a> ISA designs that managed to succeed.
                         
                            From the hardware architecture perspective, DSP cores are stand alone and largely independent from the CPU, and managed by a separate operating system. CPU runs HLOS, such as Android Open Source Project or its OEM customizations. DSP runs RTOS, which is QuRT, in case of modern Qualcomm chipsets. CPU and DSP cores are isolated from each other, and programs they execute cannot talk to each other directly - so they must communicate through some interface, which is (on the CPU/HLOS side) implemented in MSM kernel. <a class="underline" target="_blank" href="https://en.wikipedia.org/wiki/Remote_procedure_call">RPC</a> protocols generally encode high level aspects of the communication interface. The adsprpc.c source module in which the vulnerability resides, implements this code.
 
@@ -349,8 +349,8 @@
                            <div class="post-single-navigation d-flex align-items-stretch">
                               <a href="research/index.html" class="mr-auto w-50 pr-4">
                                  <span class="d-block cursor-item"><i class="fa fa-chevron-left mr-2"></i> Research</span></a>
-                              <!-- <a href="#" class="ml-auto w-50 text-right pl-4">
-                                 <span class="d-block cursor-item">Next Post <i class="fa fa-chevron-right ml-2"></i></span></a> -->
+                              <a href="training/index.html" class="ml-auto w-50 text-right pl-4">
+                                 <span class="d-block cursor-item">Training <i class="fa fa-chevron-right ml-2"></i></span></a>
                            </div>
                         </div>
                      </div>
