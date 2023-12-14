@@ -101,6 +101,14 @@ h3.section-title {
   font-size: 38px;
 }
 
+code {
+  font-size:100%;
+  font-family:monospace;
+  font-style:italic;
+  color:lightgrey;
+  word-break:break-word
+}
+
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
