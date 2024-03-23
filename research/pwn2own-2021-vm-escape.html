@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-RBMCFM6G1Z"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'G-RBMCFM6G1Z');
+      </script>
+      <!--Meta Tags-->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content=""/>
+      <meta name="keywords" content=""/>
+      <meta name="author" content=""/>
+      <base href="../"> 
+      <!--Favicons-->
+      <link rel="shortcut icon" href="images/favicon.png">
+      <!--Page Title-->
+      <title>Release: VM Escape Exploit for Parallels Desktop Hypervisor (Pwn2Own 2021)</title>
+      <!-- Stylesheets -->
+      <!-- bootstrap -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Animate -->
+      <link rel="stylesheet" href="css/animate.min.css">
+      <!-- Owl carusel -->
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <!-- Aos Css-->
+      <link rel="stylesheet" href="css/aos.css"/>
+      <!-- font awesome -->
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <!-- highlight.js -->
+      <link rel="stylesheet" href="css/default-dark.min.css">
+      <!-- main css -->
+      <link rel="stylesheet" href="css/style_20231213.css">
+   </head>
+   <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
+
+
+      <!-- Nav mobile -->
+      <nav class="site-mobile-menu">
+         <div class="close-wrap d-flex">
+            <a href="#" class="d-flex ml-auto js-menu-toggle">
+               <span class="close-label">Close</span>
+               <div class="close-times">
+                  <span class="bar1"></span>
+                  <span class="bar2"></span>
+               </div>
+            </a>
+         </div>
+         <div class="site-mobile-inner"></div>
+      </nav>
+      <!-- Nav mobile end -->
+
+      <!-- Main content wrap -->
+      <div class="site-wrap">
+         <!-- Main content inner -->
+         <div class="site-inner">
+
+            <!-- Main Nav -->
+            <nav class="site-nav site-nav-target">
+               <div class="container">
+                  <div class="row align-items-center justify-content-between text-left">
+                     <div class="col-3">
+                        <div class="site-logo">
+                           <a href="index.html" class="site-logo main-logo"><img src="images/logo.png" class="logo-img light-logo img-fluid" alt=""><span></span></a>
+                        </div>
+                     </div>
+                     <div class="col text-right">
+                        <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
+                              <li><a href="index.html" class="nav-link cursor-item">Home</a></li>
+                              <li class="has-children">
+                                 <a href="research/index.html" class="nav-link cursor-item">Research</a>
+                                 <ul class="dropdown">
+                                    <li><a href="insights/index.html">0-Day Insights</a></li>
+                                    <li><a href="research/index.html">Reverse Engineering</a></li>
+                                    <li><a href="research/index.html">Vulnerability Research</a></li>
+                                    <li><a href="research/index.html">Exploit Development</a></li>
+                                 </ul>
+                              </li>
+
+                              <li class="has-children">
+                                 <a href="training/index.html" class="nav-link cursor-item">Training</a>
+                                 <ul class="dropdown">
+                                    <li><a href="training/index.html">Courses</a></li>
+                                    <li><a href="training/index.html#nightly">Masterclasses</a></li>
+                                 </ul>
+                              </li>
+
+                              <li class="has-children">
+                                 <a href="about.html" class="nav-link cursor-item">About</a>
+                                 <ul class="dropdown">
+                                    <li><a href="about.html">Company</a></li>
+                                    <li><a href="policy.html">Terms & Conditions</a></li>     
+                                    <li><a href="training/feedback.html">Testimonials</a></li>                                                                   
+                                    <li><a href="faq.html">Frequently Asked Questions</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                           <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
+                           <li><a href="#" class="js-menu-toggle">Menu</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+            <!-- Main Nav end -->
+
+            <div class="section">
+               <div class="blog-single-inner">
+                  <div class="container">
+                     <div class="row justify-content-center">
+                        <div class="col-md-8">
+                           <div id="quote"></div>
+                           <h3 class="mb-4">Release: VM Escape Exploit for Parallels Desktop Hypervisor (Pwn2Own 2021)</h3>
+                           <p class="date">March 20th, 2024 – Alisa Esage</p>
+
+                           <p>In April 2021 I participated in Pwn2Own Vancouvver competition as a single player, and successfully demonstrated a 0-day virtual machine escape exploit with code execution on Parallels hypervisor. Today I am finally releasing the exploit source code together with a technical walkthrough video talk that I gave on Zero Day Engineering livestream in November 2021.</p>
+
+                           <div align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/xZg0l7Cg2qg?si=zSpBwtPwL5NuP_o0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><p><i>Pwn, pwn!</i></p></div>
+
+                           <p style="text-align: center;"><img src="images/blog/pwn2own21-thezdi.png" alt="" title="" class="img-fluid" width="70%">                         
+                           <i>Pwn2Own rocks!</i></p>
+
+                           <p style="text-align: center;"><img src="images/blog/pwn2own21-alisaesage.png" alt="" title="" class="img-fluid" width="70%">                       
+                           <i>✅</i></p>
+
+                           <p style="text-align: center;"><img src="images/blog/pwn2own21-dragosr.png" alt="" title="" class="img-fluid" width="70%">                         
+                           <i>Dragos Ruiu, Founder Pwn2Own</i></p>
+
+                           <p style="text-align: center;"><img src="images/blog/pwn2own21-abdhariri.png" alt="" title="" class="img-fluid" width="70%">                         
+                           <i>Abdul Aziz Hariri, Pwn2Own staff (formerly)</i></p>
+
+                           <p>Fun fact: the exploit code was privately shared with attendees of my <a class="underline" href="training/universal-vulnerability-research.html">Zero Day Vulnerability Research</a> training since June 2022, and a few of them gently pointed out to me (seemingly in disbelief) that the code was not published on my github. :) This hints at the state of security trainings today: apparently, sharing novel research-grade information - which is the quality standard that I set for my own <a class="underline" href="training">vulnerability research trainings</a> from day 1 - as opposed to selling repackaged publicly available content, is uncommon. 
+
+                           <p style="text-align: center;"><img src="training/images/reviews/zdvr-kapil-khot.jpeg" alt="" title="" class="img-fluid" width="70%">                         
+                           <i>One of many raving reviews for my Zero Day VR training - thanks Kapil!</i></p>
+      
+                           <p>The specific Parallels hypervisor subsystem in which I found the vulnerability was since then publicly documented in community blogs, so I don't feel that it needs yet another technical writeup. Instead, I invite you to look at the code, and watch the technical walkthrough video, which covers the bug and the exploit through all the relevant aspects of my workflow, from attack surface modeling and reverse engineering, to vulnerability discovery and exploit development. And if you like hypervisors, I strongly recommend my <a class="underline" href="training/hypervisor-vulnerability-research.html">Hypervisor Vulnerability Research</a> course as the next step in your research journey. It is the most comprehensive and systematical source on hypervisor system internals and vulnerabilities knowledge today.
+
+                           <a class="underline" target="_blank" href="https://github.com/badd1e/Pwn/prl_pwn_v1.1">Exploit source code</a>
+                           <a class="underline" target="_blank" href="https://youtu.be/6UhgLteN-PU">Technical walkthrough video</a>
+                           <a class="underline" target="_blank" href="research/slides/ZDE2021_AdvancedEasyPwn2Own2021.pdf">Slides</a>
+                           </p>
+                                                            
+                           <div class="pt-5 mb-5 categories_tags ">
+                              <div class="social float-right">
+                                 <a href="https://www.facebook.com/sharer/sharer.php?u=https://zerodayengineering.com/research/pwn2own-2021-vm-escape.html&t=Release: VM Escape Exploit for Parallels Desktop Hypervisor (Pwn2Own 2021)" class="mr-3"><i class="fa fa-facebook"></i></a>
+                                 <a href="https://twitter.com/intent/tweet?url=https://zerodayengineering.com/research/pwn2own-2021-vm-escape.html&text=Release: VM Escape Exploit for Parallels Desktop Hypervisor (Pwn2Own 2021)" class="mr-3"><i class="fa fa-twitter"></i></a>
+                                 <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://zerodayengineering.com/research/pwn2own-2021-vm-escape.html&title=Release: VM Escape Exploit for Parallels Desktop Hypervisor (Pwn2Own 2021)" class="mr-3"><i class="fa fa-linkedin"></i></a>
+                              </div>
+                           </div>
+                           
+                           <div class="post-single-navigation d-flex align-items-stretch">
+                              <a href="research/index.html" class="mr-auto w-50 pr-4">
+                                 <span class="d-block cursor-item"><i class="fa fa-chevron-left mr-2"></i> Research</span></a>
+                              <a href="training/index.html" class="ml-auto w-50 text-right pl-4">
+                                 <span class="d-block cursor-item">Training <i class="fa fa-chevron-right ml-2"></i></span></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer section">
+               <div class="container">
+                  <div class="row justify-content-center">
+                     <div class="col-md-12">
+                        <div class="go-top cursor-item" id="go-to-top"><i class="fa fa-chevron-up"></i></div>
+                        <div class="hr-footer"></div>
+                        <div class="footer-site-logo"><a href="index.html" class="main-logo"><img src="images/logo.png" class="logo-img light-logo img-fluid" alt=""></a></div>                       
+                        <p class="site-copyright">
+                           <small>&copy; 2023 Zero Day Engineering LLC. All Rights Reserved.</small>
+                           
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </footer>
+            <!-- Footer end -->
+            
+         </div>
+         <!-- Main content inner end -->
+      </div>
+      <!-- Main content wrap end -->
+
+      <!-- Back to top button -->
+      <a id="back-to-top" href="#" class="cursor-item desktop-only"><i class="fa fa-chevron-up"></i></a>
+
+      <div class="cursor"></div>
+      <div class="cursor-follower"></div>
+
+      <!-- jquery -->
+      <script src="js/query-3.4.1.min.js"></script>
+      <!-- bootstrap -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- aos -->
+      <script src="js/aos.js"></script>
+      <!-- owl.carusel js -->
+      <script src="js/owl.carousel.min.js"></script>
+      <!-- isotope js -->
+      <script src="js/isotope.pkgd.min.js"></script>
+      <!-- isotope image loader js -->
+      <script src="js/imagesloaded.pkgd.min.js"></script>
+      <!-- three -->
+      <script src="js/three.min.js"></script>
+      <!-- anime -->
+      <script src="js/anime.min.js"></script>
+      <!-- tweenmax -->
+      <script src="js/TweenMax.min.js"></script>
+      <!-- jquery.waypoints.min.js -->
+      <script src="js/jquery.waypoints.min.js"></script>
+      <!-- circletype-->
+      <script src="js/circletype.min.js"></script>
+      <!-- hover-effect -->
+      <script src="js/hover-effect.umd.js"></script>
+      <!-- gsap -->
+      <script src="js/gsap.min.js"></script>
+      <!-- ScrollMagic gsap -->
+      <script src="js/ScrollMagic.min.js"></script>
+      <script src="js/scrollmagic.animation.gsap.min.js"></script>
+      <!-- highlight.js -->
+      <script src="js/highlight.min.js"></script>
+      <!-- custom -->
+      <script src="js/custom.js"></script>
+      <script>hljs.highlightAll();</script>
+   </body>
+</html>
