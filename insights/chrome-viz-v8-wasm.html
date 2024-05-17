@@ -1,0 +1,309 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-RBMCFM6G1Z"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'G-RBMCFM6G1Z');
+      </script>
+      <!--Meta Tags-->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content=""/>
+      <meta name="keywords" content=""/>
+      <meta name="author" content=""/>
+      <base href="../"> 
+      <!--Favicons-->
+      <link rel="shortcut icon" href="images/favicon.png">
+      <!--Page Title-->
+      <title>Chrome bug chain on Viz & v8 (May 2024) - Zero Day Engineering Insights</title>
+      <!-- Stylesheets -->
+      <!-- bootstrap -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Animate -->
+      <link rel="stylesheet" href="css/animate.min.css">
+      <!-- Owl carusel -->
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <!-- Aos Css-->
+      <link rel="stylesheet" href="css/aos.css"/>
+      <!-- font awesome -->
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <!-- highlight.js -->
+      <link rel="stylesheet" href="css/default-dark.min.css">
+      <!-- main css -->
+      <link rel="stylesheet" href="css/style_20231213.css">
+   </head>
+   <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
+
+
+      <!-- Nav mobile -->
+      <nav class="site-mobile-menu">
+         <div class="close-wrap d-flex">
+            <a href="#" class="d-flex ml-auto js-menu-toggle">
+               <span class="close-label">Close</span>
+               <div class="close-times">
+                  <span class="bar1"></span>
+                  <span class="bar2"></span>
+               </div>
+            </a>
+         </div>
+         <div class="site-mobile-inner"></div>
+      </nav>
+      <!-- Nav mobile end -->
+
+      <!-- Main content wrap -->
+      <div class="site-wrap">
+         <!-- Main content inner -->
+         <div class="site-inner">
+
+            <!-- Main Nav -->
+            <nav class="site-nav site-nav-target">
+               <div class="container">
+                  <div class="row align-items-center justify-content-between text-left">
+                     <div class="col-3">
+                        <div class="site-logo">
+                           <a href="index.html" class="site-logo main-logo"><img src="images/logo.png" class="logo-img light-logo img-fluid" alt=""><span></span></a>
+                        </div>
+                     </div>
+                     <div class="col text-right">
+                        <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
+                              <li><a href="index.html" class="nav-link cursor-item">Home</a></li>
+                              <li class="has-children">
+                                 <a href="research/index.html" class="nav-link cursor-item">Research</a>
+                                 <ul class="dropdown">
+                                    <li><a href="insights/index.html">0-Day Insights</a></li>
+                                    <li><a href="research/index.html">Reverse Engineering</a></li>
+                                    <li><a href="research/index.html">Vulnerability Research</a></li>
+                                    <li><a href="research/index.html">Exploit Development</a></li>
+                                 </ul>
+                              </li>
+
+                              <li class="has-children">
+                                 <a href="training/index.html" class="nav-link cursor-item">Training</a>
+                                 <ul class="dropdown">
+                                    <li><a href="training/index.html">Courses</a></li>
+                                    <li><a href="training/index.html#nightly">Masterclasses</a></li>
+                                 </ul>
+                              </li>
+
+                              <li class="has-children">
+                                 <a href="about.html" class="nav-link cursor-item">About</a>
+                                 <ul class="dropdown">
+                                    <li><a href="about.html">Company</a></li>
+                                    <li><a href="policy.html">Terms & Conditions</a></li>     
+                                    <li><a href="training/feedback.html">Testimonials</a></li>                                                                   
+                                    <li><a href="faq.html">Frequently Asked Questions</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                           <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
+                           <li><a href="#" class="js-menu-toggle">Menu</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+            <!-- Main Nav end -->
+
+            <div class="section">
+               <div class="blog-single-inner">
+                  <div class="container">
+                     <div class="row justify-content-center">
+                        <div class="col-md-8">
+                           <h1>Zero Day Engineering Insights</h1>
+                           <h3 class="mb-4">Google Chrome "actively exploited" bug chain on Viz & v8-wasm (May 2024)</h3>
+                              <p class="date">17th May 2024 - Alisa Esage</p>
+                           <h6>Overview</h6>
+                              <p>Emergency security updates were recently released by Google for a two-bug exploit chain under active exploitation targeting Chrome browser. The bugs were patched on <a class="underline" target="_blank" href="https://chromereleases.googleblog.com/2024/05/stable-channel-update-for-desktop_9.html">9th May</a> (sandbox bypass) and <a class="underline" target="_blank" href="https://chromereleases.googleblog.com/2024/05/stable-channel-update-for-desktop_13.html">13th May</a> (remote code execution). This quick technical note looks at the bug chain from a cutting edge vulnerability research perspective, placing root cause analysis in the context of both system internals and offensive research trends.
+
+                              Disclaimer: due to theoretical analysis approach based on reverse-engineering security patches, some details about the bugs may be off. </p>
+
+                              <h6>Attack insights</h6>
+                              <p>From the general attack & defense perspective, the exploit chain is rather common. It is based on two bugs, first to compromise the renderer (remote code execution in v8), second to escape browser sandbox. There might be a third bug involved to elevate privileges to kernel, which is also a common arrangement "in the wild", that wasn't publicly disclosed. However, both bugs are slightly interesting from vulnerability research perspective, which is the main topic of this technical note.
+
+                              Based on my evaluation, the exploit can be recreated in about a week by someone with good knowledge and experience in Chrome exploitation, so it's definitely worth updating Chrome-based infrastructures as soon as possible. 
+                              </p>
+
+                           <h6>Root Cause Analysis: Remote Code Execution</h6>
+                              <p>Browser renderer process was compromised with a type confusion bug in v8, patch is <a class="underline" target="_blank"  href="https://chromium-review.googlesource.com/c/v8/v8/+/5527397">here</a> (CVE-2024-4761).</p>
+
+                              <a target="_blank" href="insights/images/CVE-2024-4761_patch.png"><img src="insights/images/CVE-2024-4761_patch.png" alt="Missing check in JSReceiver::SetOrCopyDataProperties (CVE-2024-4761)" title="Missing check in JSReceiver::SetOrCopyDataProperties (CVE-2024-4761)" class="img-fluid"></a><p style="text-align: center;"><i>Missing check in JSReceiver::SetOrCopyDataProperties (CVE-2024-4761)</i></p>
+   
+                              <p><code>SetOrCopyDataProperties</code> is a core engine function which "Reads all enumerable own properties of source [object] and adds them to target [object], using either Set or CreateDataProperty depending on the use_set argument." (js-objects.h). Rather than being exposed directly to JavaScript, this function is used internally in a variety of runtime scenarios where slow-path copying of object properties is involved.</p>
+
+                              <a target="_blank" href="insights/images/CVE-2024-4761_code_builtins.png"><img src="insights/images/CVE-2024-4761_code_builtins.png" alt="SetOrCopyDataProperties to builtins" title="SetOrCopyDataProperties to builtins" class="img-fluid"></a><p style="text-align: center;"><i>SetOrCopyDataProperties to runtime</i></p>
+
+                              <p>The easiest way to trigger the bug from JavaScript code in release configuration seems to be with a call to Object.assign (via <code>Builtin::kSetDataProperties</code>):</p>
+
+                              <a target="_blank" href="insights/images/CVE-2024-4761_code_Object.assign.png"><img src="insights/images/CVE-2024-4761_code_Object.assign.png" alt="Object.assign to JSReceiver::SetOrCopyDataProperties" title="Object.assign to JSReceiver::SetOrCopyDataProperties" class="img-fluid"></a><p style="text-align: center;"><i>Object.assign to JSReceiver::SetOrCopyDataProperties</i></p>
+
+                              <p>Root cause of the issue lies in the branch within the function which performs normalization of object properties (with <code>JSObject::NormalizeProperties</code>). The code wrongly assumes that, after a few initial checks, the target can only be a JSObject type, which leads to memory corruption during target object map normalization, as it attempts to low-level copy source object contents to incompatible structure type. In practice this assumption can be broken with a target which is a WebAssembly object for instance, as demonstrated in <a class="underline" target="_blank" href="https://docs.google.com/document/d/e/2PACX-1vSpCvBik81OppzMXbPjb0uRlWTdn4I1kttNSlbHtNMCT3xZJJiyKAsCcUxzNBimlBdXoKxrktlgJjOZ/pub">this proof of concept</a> (courtesy of <a class="underline" target="_blank" href="https://x.com/@buptdsb">buptdsb</a>). The patch adds a minimal check to ensure that the target is a JSObject.  </p>
+
+                              <p>This bug represents a recently new trend in JavaScript engine vulnerabilities related to WebAssembly. Wasm was leveraged in JavaScript engine exploits for a long time, but previously, mostly for exploitation primitives.</p>
+
+                           <h6>Root Cause Analysis: Sandbox Escape</h6>
+                              <p>Sandbox escape bug is a Use-after-free in Visuals, patched <a class="underline" target="_blank" href="https://chromium-review.googlesource.com/c/chromium/src/+/5523748">here</a> (CVE-2024-4671).</p>
+
+                              <p>Visuals is a privileged subsystem in Chrome which serves as a backend for various operations related to rendering graphics with GPU. This extract from documentation gives an idea how it's used:</p>
+                              
+                              <p class="quote">The Viz (Visuals) service is a collection of subservices: compositing, gl, hit
+                              testing, and media. Viz bugs are tracked with the Internals>Viz component if
+                              no more specific component (e.g. Internals>Compositing, Internals>GPU) would
+                              serve.
+                              
+                              Viz has two types of clients: a single privileged client and one or more
+                              unprivileged clients.
+                              
+                              The privileged client is responsible for starting and restarting Viz after a
+                              crash and for facilitating connections to Viz from unprivileged clients. The
+                              privileged client is trusted by all other clients, and is expected to be
+                              long-lived and not prone to crashes.
+                              
+                              Unprivileged clients request connections to Viz through the privileged client
+                              such as the browser process or the window server. Furthermore, unprivileged
+                              clients may be malicious or may crash at any time. Unprivileged clients are
+                              expected to be mutually distrusting of one another. Thus, an unprivileged client
+                              cannot be provided interfaces by which it can impact the operation of another
+                              client.
+                              
+                              For example, a channel to the GL service can only be dispensed by the privileged
+                              client, but can be used by unprivileged clients. GL commands are exposed as a
+                              stable public API to the command buffer by the client library whereas the
+                              underlying IPC messages and their semantics are constantly changing and
+                              meaningless without deep knowledge of implementation details.
+
+                           -- viz/README.md</p>
+
+                           <p>Viz is built on top of Mojo, Chrome's modern IPC/RPC which enables communication between depriveleged renderer process and various privileged backends, such as browser process and GPU process. Generally in Mojo, clients (such as renderer process) are free to implement their own protocols of calling into the backend service, while Mojo provides a universal low-level communication framework. How it seems to work in viz specifically is client-server data is split into 'frames' in blink, that are bundled in 'bundles', to be submitted through the endpoints named 'sinks' on a flush event. </p>
+                              
+                           <a target="_blank" href="insights/images/CVE-2024-4671_code_FlushMessages.png"><img src="insights/images/CVE-2024-4671_code_FlushMessages.png" alt="Snippet of frame_sink_bundle.mojom" title="Snippet of frame_sink_bundle.mojom" class="img-fluid"></a><p style="text-align: center;"><i>Visuals client submission (Blink side)</i></p>
+
+                           <p>On the service side, which is where the bug was, those bundles would be deserialized back into separate frames and further dispatched to associated handlers for processing in the privileged GPU process.</p>
+
+                           <p>Here is the most relevant snippet of the patch that pretty much explains the bug:</p>
+
+                           <a target="_blank" href="insights/images/CVE-2024-4671_patch.png"><img src="insights/images/CVE-2024-4671_patch.png" alt="Patched FrameSinkBundleImpl::Submit (CVE-2024-4671)" title="Patched FrameSinkBundleImpl::Submit (CVE-2024-4671)" class="img-fluid"></a><p style="text-align: center;"><i>Patched FrameSinkBundleImpl::Submit (CVE-2024-4671)</i></p>
+
+                           <p>In this code, submitted frame bundles from blink side are preprocessed by grouping them about the associated frame sinks (<code>viz::FrameSinkBundleImpl::SinkGroup *</code>). A local set named <code>groups</code> holds pointers to sink groups in current bundle, while active sink groups are independently stored and managed elsewhere on class scope. If a sink group would be freed in the middle of this code - which seems likely as there is a bunch of far-fetching and potentially asynchronous calls here, then a dangling pointer to it in <code>groups</code> set would point to attacker-controlled memory, a use-after-free situation. With a virtual call on that pointer coming next in <code>group->DidFinishFrame();</code> and <code>group->FlushMessages();</code> the use-after-free can be exploited to execute attacker's code in the context of the privileged GPU process. </p>
+
+                           <p>The buggy function <code>FrameSinkBundleImpl::Submit</code> is directly accessible from the renderer process, as suggested by this mojo interface definition - but not from webpage JavaScript in release configuration:</p>
+
+                           <a target="_blank" href="insights/images/CVE-2024-4671_code_mojo.png"><img src="insights/images/CVE-2024-4671_code_mojo.png" alt="Snippet of frame_sink_bundle.mojom" title="Snippet of frame_sink_bundle.mojom" class="img-fluid"></a><p style="text-align: center;"><i>Snippet of frame_sink_bundle.mojom</i></p>
+                           
+                           <p>The logic of the <a class="underline" target="_blank" href="https://chromium-review.googlesource.com/c/chromium/src/+/5523748">patch</a> may elude those who are not familiar with specialized Chrome exploit mitigations, so let's take another look at it. While the algorithm in the affected code is mostly unchanged (<code>groups</code> variable changed from set to map?), security is achieved by strengthening the pointers. Especially, <code>SinkGroup</code> pointers are locally wrapped in <code>raw_ptr<></code> type, which is a smart pointer designed to protect the code against Use-after-free bugs; also known as <a target="_blank" class="underline" href="https://docs.google.com/document/d/1pnnOAIz_DMWDI4oIOFoMAqLnf_MZ2GsrJNb_dbQ3ZBg/edit#heading=h.p1fqfm5alk4a">MiraclePtr</a> exploit mitigation. In addition, a <code>WeakPtr<></code> smart pointer type applied underneath to null out freed pointers (although <a target="_blank" class="underline" href="https://www.chromium.org/developers/smart-pointer-guidelines/#what-types-of-smart-pointers-exist">Chrome developer documentation</a> claims that <code>WeakPtr</code> is not smart, I'll just leave it here).
+                           
+                           Why I find this bug interesting is that MiraclePtr mitigation <a target="_blank" class="underline" href="https://security.googleblog.com/2022/09/use-after-freedom-miracleptr.html">was applied</a> to this subsystem since 2022, suggesting that finding another exploitable Use-after-free here wasn't an easy dang.</p>
+
+                           <h6>Conclusions</h6>
+                           <p>Full-chain exploits for Google Chrome keep following largely same trends over years, despite numerous initiatives of hardening code.
+
+                              Bypassing relevant exploit mitigations is an essential part of 0-day exploit development workflow. While it can be argued here that MiraclePtr mitigation wasn't technically "bypassed", as it wasn't there in the first place, relevant <a target="_blank" class="underline" href="https://security.googleblog.com/2024/01/miracleptr-protecting-users-from-use.html">code hardening announcements</a> definitely suggest an impression that this attack surface is supposed to be covered by it.
+
+                              Researchers are quick with reverse-engineering patches, too. It is important to be aware that, aside from the Chrome browser from Google, Chromium open source project and v8 open source JavaScript engine are both widely used underneath a huge amount of independently developed apps, such as those built on Electron framework. Patching Chromium embeddings in these scenarios remains at the discretion of app developers. So, if you suspect that Chromium code is used in your software, it's worth checking with app developers about their patching procedures, especially if the software is not widespread or well known. 
+                           </p>
+
+                           <h6>References</h6>
+                              <p>Vendor advisory - 
+                                 <a class="underline" target="_blank" href="https://chromereleases.googleblog.com/2024/05/stable-channel-update-for-desktop_13.html">Stable Channel Update for Desktop</a> (13th May, CVE-2024-4761, v8)
+                                 <a class="underline" target="_blank" href="https://chromereleases.googleblog.com/2024/05/stable-channel-update-for-desktop_9.html">Stable Channel Update for Desktop</a> (9th May, CVE-2024-4671, viz)</p>
+
+                           <h6>Relevant training</h6>
+                              <p><a class="underline" target="_blank" href="training/masterclass/browser-security-nightly.html">Masterclasses: Browser Security Nightly</a> 
+                              <a class="underline" target="_blank" href="training/universal-vulnerability-research.html">Training course: Zero Day Vulnerability Research</a> 
+
+                           <div class="pt-5 mb-5 categories_tags ">
+                              <h6>Metadata</h6>
+                              <p>Discussions: <a target="_blank" class="underline" href="https://x.com/zerodaytraining/">Twitter</a>, <a target="_blank" class="underline" href="https://t.me/zerodaytraining/">Telegram</a></p>
+                              <p class="categories">Categories: 0-Day Insights</p><br>
+                              <p class="tags">Tags: Chrome, v8, viz, full-chain</p>
+                              <div class="social float-right">
+                                 <a href="https://www.facebook.com/sharer/sharer.php?u=https://zerodayengineering.com/insights/chrome-viz-v8-wasm.html&t=0-Day Insights: Chrome bug chain on Viz & v8 (May 2024) - Zero Day Engineering Insights" class="mr-3"><i class="fa fa-facebook"></i></a>
+                                 <a href="https://twitter.com/intent/tweet?url=https://zerodayengineering.com/insights/chrome-viz-v8-wasm.html&text=0-Day Insights: Chrome bug chain on Viz & v8 (May 2024) - Zero Day Engineering Insights (via @zerodaytraining)" class="mr-3"><i class="fa fa-twitter"></i></a>
+                                 <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://zerodayengineering.com/insights/chrome-viz-v8-wasm.html&title=0-Day Insights: Chrome bug chain on Viz & v8 (May 2024) - Zero Day Engineering Insights" class="mr-3"><i class="fa fa-linkedin"></i>
+                                 <a href="https://t.me/share/url?url=https://zerodayengineering.com/insights/chrome-viz-v8-wasm.html&text=0-Day Insights: Chrome bug chain on Viz & v8 (May 2024) - Zero Day Engineering Insights (via @zerodaytraining)" class="mr-3"><i class="fa fa-telegram"></i></a>
+                              </div>
+                           </div>
+                           
+                           <div class="post-single-navigation d-flex align-items-stretch">
+                              <a href="insights/index.html" class="mr-auto w-50 pr-4">
+                                 <span class="d-block cursor-item"><i class="fa fa-chevron-left mr-2"></i>0-Day Insights</span></a>
+                              <a href="training/index.html" class="ml-auto w-50 text-right pl-4">
+                                 <span class="d-block cursor-item">Training <i class="fa fa-chevron-right ml-2"></i></span></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer section">
+               <div class="container">
+                  <div class="row justify-content-center">
+                     <div class="col-md-12">
+                        <div class="go-top cursor-item" id="go-to-top"><i class="fa fa-chevron-up"></i></div>
+                        <div class="hr-footer"></div>
+                        <div class="footer-site-logo"><a href="index.html" class="main-logo"><img src="images/logo.png" class="logo-img light-logo img-fluid" alt=""></a></div>                       
+                        <p class="site-copyright">
+                           <small>&copy; 2024 Zero Day Engineering LLC. All Rights Reserved. <a href="rss" class="social-icon"><i class="fa fa-rss"></i></a></small>
+                           
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </footer>
+            <!-- Footer end -->
+            
+         </div>
+         <!-- Main content inner end -->
+      </div>
+      <!-- Main content wrap end -->
+
+      <!-- Back to top button -->
+      <a id="back-to-top" href="#" class="cursor-item desktop-only"><i class="fa fa-chevron-up"></i></a>
+
+      <div class="cursor"></div>
+      <div class="cursor-follower"></div>
+
+      <!-- jquery -->
+      <script src="js/query-3.4.1.min.js"></script>
+      <!-- bootstrap -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- aos -->
+      <script src="js/aos.js"></script>
+      <!-- owl.carusel js -->
+      <script src="js/owl.carousel.min.js"></script>
+      <!-- isotope js -->
+      <script src="js/isotope.pkgd.min.js"></script>
+      <!-- isotope image loader js -->
+      <script src="js/imagesloaded.pkgd.min.js"></script>
+      <!-- three -->
+      <script src="js/three.min.js"></script>
+      <!-- anime -->
+      <script src="js/anime.min.js"></script>
+      <!-- tweenmax -->
+      <script src="js/TweenMax.min.js"></script>
+      <!-- jquery.waypoints.min.js -->
+      <script src="js/jquery.waypoints.min.js"></script>
+      <!-- circletype-->
+      <script src="js/circletype.min.js"></script>
+      <!-- hover-effect -->
+      <script src="js/hover-effect.umd.js"></script>
+      <!-- gsap -->
+      <script src="js/gsap.min.js"></script>
+      <!-- ScrollMagic gsap -->
+      <script src="js/ScrollMagic.min.js"></script>
+      <script src="js/scrollmagic.animation.gsap.min.js"></script>
+      <!-- highlight.js -->
+      <script src="js/highlight.min.js"></script>
+      <!-- custom -->
+      <script src="js/custom.js"></script>
+      <script>hljs.highlightAll();</script>
+   </body>
+</html>
