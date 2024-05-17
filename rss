@@ -18,6 +18,13 @@
             <description>A virtual machine escape exploit will typically require kernel privileges in the guest OS. In this exploit I chose to offload the reverse-engineered toolgate protocol implementation to a Python module, while keeping my low-level kernel code minimal, just enough to implement the attack interface - a nod to the principle of least privilege in systematic software engineering, which we miss a lot in non-trivial exploit development.</description>
             <pubDate>Wed, 08 Apr 2024 12:00:00 GMT</pubDate>
         </item>
-        
+
+        <item>
+            <title>⚡️0-Day Insights: Google Chrome "actively exploited" bug chain on Viz & v8-wasm (May 2024)</title>
+            <link>https://zerodayengineering.com/insights/chrome-viz-v8-wasm.html</link>
+            <description>Emergency security updates were recently released by Google for a two-bug exploit chain under active exploitation targeting Chrome browser. This quick technical note looks at the bug chain from a cutting edge vulnerability research perspective, placing root cause analysis in the context of both system internals and offensive research trends.</description>
+            <pubDate>Wed, 17 May 2024 11:20:00 GMT</pubDate>
+        </item>
+
     </channel>
 </rss>
