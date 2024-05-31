@@ -26,5 +26,12 @@
             <pubDate>Wed, 17 May 2024 11:20:00 GMT</pubDate>
         </item>
 
+        <item>
+            <title>Video: "JavaScript Engines Vulnerability Research: State of the Art"</title>
+            <link>https://youtu.be/YpsfQl0V_3k</link>
+            <description>Published recording of technical conference talk: "JavaScript Engines Vulnerability Research: State of the Art" https://youtu.be/YpsfQl0V_3k (Hack in the Box x Positive Hack Days 2024 Bangkok, Alisa Esage)</description>
+            <pubDate>Wed, 31 May 2024 07:30:00 GMT</pubDate>
+        </item>
+
     </channel>
 </rss>
