@@ -1,0 +1,7 @@
+<map id="kvm_mmu_invlpg" name="kvm_mmu_invlpg">
+<area shape="rect" id="node1" title=" " alt="" coords="208,81,347,108"/>
+<area shape="rect" id="node2" href="$x86_8c.html#a27882674361bc8037ba7bf5851fc622b" title=" " alt="" coords="19,5,147,32"/>
+<area shape="rect" id="node3" href="$vmx_8c.html#a2961a21c1d410bdc92b2a70b881dd3df" title=" " alt="" coords="26,56,139,83"/>
+<area shape="rect" id="node4" href="$svm_8c.html#ad9d8323f0ea03667c1a23178340f6fe9" title=" " alt="" coords="9,107,156,133"/>
+<area shape="rect" id="node5" href="$svm_8c.html#a23b9203e454b799b6abf131912cf296c" title=" " alt="" coords="5,157,160,184"/>
+</map>

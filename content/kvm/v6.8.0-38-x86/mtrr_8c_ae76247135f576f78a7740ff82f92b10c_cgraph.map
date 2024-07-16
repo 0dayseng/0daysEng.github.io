@@ -1,0 +1,9 @@
+<map id="set_var_mtrr_msr" name="set_var_mtrr_msr">
+<area shape="rect" id="node1" title=" " alt="" coords="5,93,143,120"/>
+<area shape="rect" id="node2" href="$mtrr_8c.html#a175681f9bc2f7ce2f99dd5e5f9d1da84" title=" " alt="" coords="213,5,352,32"/>
+<area shape="rect" id="node3" href="$cpuid_8c.html#a8bf272b370f8a27bb68bf5bf9e5ae7d5" title=" " alt="" coords="191,57,375,98"/>
+<area shape="rect" id="node6" href="$mtrr_8c.html#a48767cfb0bdec5a2a38ea0395fad54e9" title=" " alt="" coords="195,123,370,149"/>
+<area shape="rect" id="node7" href="$mtrr_8c.html#a22190e25344b28da2687639ffac2599e" title=" " alt="" coords="193,173,372,200"/>
+<area shape="rect" id="node4" href="$cpuid_8h.html#a1678e00b10264045277c1abfcb6eec3e" title=" " alt="" coords="423,39,569,65"/>
+<area shape="rect" id="node5" href="$mmu_8h.html#a20a41b0166b13eb22b15786964f5de9d" title=" " alt="" coords="455,89,537,116"/>
+</map>

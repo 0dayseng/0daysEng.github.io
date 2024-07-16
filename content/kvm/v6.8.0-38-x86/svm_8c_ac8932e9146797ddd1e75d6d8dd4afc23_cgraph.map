@@ -1,0 +1,12 @@
+<map id="svm_vcpu_deliver_sipi_vector" name="svm_vcpu_deliver_sipi_vector">
+<area shape="rect" id="node1" title=" " alt="" coords="5,139,176,181"/>
+<area shape="rect" id="node2" href="$x86_8c.html#a7afd565914b50c480be127ae5f1bb8e5" title=" " alt="" coords="224,59,395,101"/>
+<area shape="rect" id="node8" href="$svm_8h.html#a14877439e9d41030cb21612eecc8f3f9" title=" " alt="" coords="254,147,365,173"/>
+<area shape="rect" id="node10" href="$sev_8c.html#a9809425cf0d198f1c65811a4716ceecf" title=" " alt="" coords="227,198,392,239"/>
+<area shape="rect" id="node3" href="$x86_8c.html#a50008deef9c4ea0555bf2d6294cd9813" title=" " alt="" coords="443,5,585,32"/>
+<area shape="rect" id="node4" href="$kvm__cache__regs_8h.html#aa70071fd3a98f236b0b57a30cbec124f" title=" " alt="" coords="457,56,571,83"/>
+<area shape="rect" id="node7" href="$x86_8c.html#a6818ed0db6dca9dc6dfc7b59963a0e18" title=" " alt="" coords="443,107,585,133"/>
+<area shape="rect" id="node5" href="$kvm__cache__regs_8h.html#a5117377174dc7ebf722e4976c0ae736b" title=" " alt="" coords="633,56,812,83"/>
+<area shape="rect" id="node6" href="$kvm__cache__regs_8h.html#a0f6830d8a03ec49d8ac457e2a9c1d687" title=" " alt="" coords="860,56,1047,83"/>
+<area shape="rect" id="node9" href="$svm_8h.html#ac27f6fe2ff4beeb5ad1b11681d0386fd" title=" " alt="" coords="461,157,567,184"/>
+</map>

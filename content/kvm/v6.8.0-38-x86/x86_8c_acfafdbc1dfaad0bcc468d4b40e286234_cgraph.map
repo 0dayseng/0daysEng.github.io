@@ -1,0 +1,15 @@
+<map id="kvm_vcpu_ioctl_enable_cap" name="kvm_vcpu_ioctl_enable_cap">
+<area shape="rect" id="node1" title=" " alt="" coords="5,85,211,112"/>
+<area shape="rect" id="node2" href="$irq_8h.html#a96951e3a1bfa402d8bee67713e267b39" title=" " alt="" coords="285,5,417,32"/>
+<area shape="rect" id="node3" href="$hyperv_8c.html#a414d75c373184ccacce1b629cc6c1bbe" title=" " alt="" coords="263,56,438,83"/>
+<area shape="rect" id="node9" href="$hyperv_8c.html#ae6fab392ac98b0916de57de3a122c565" title=" " alt="" coords="272,107,429,149"/>
+<area shape="rect" id="node10" href="$cpuid_8c.html#a30771fd4ef9230ee864f4d7ac9cf0514" title=" " alt="" coords="259,173,443,200"/>
+<area shape="rect" id="node4" href="$hyperv_8c.html#a6b9b9a8864c87d56aa2c400fa1331b0b" title=" " alt="" coords="501,85,641,112"/>
+<area shape="rect" id="node5" href="$hyperv_8c.html#ad212ee2bcf02cad45e2911fdb7d31861" title=" " alt="" coords="740,35,832,61"/>
+<area shape="rect" id="node8" href="$hyperv_8c.html#acb0df6ea627c64fe5fe88dc5a52d648e" title=" " alt="" coords="744,85,828,112"/>
+<area shape="rect" id="node6" href="$hyperv_8c.html#a053c0a6cdb6becc46a74a7b69fe791eb" title=" " alt="" coords="927,9,1083,36"/>
+<area shape="rect" id="node7" href="$hyperv_8c.html#affaae94ac35c1a1ea573e2f1014ea259" title=" " alt="" coords="921,60,1088,87"/>
+<area shape="rect" id="node11" href="$cpuid_8c.html#a6d8deb4e45da8c580e5830057541fd8b" title=" " alt="" coords="491,166,651,207"/>
+<area shape="rect" id="node12" href="$cpuid_8c.html#a57e37154fafc08d4400cac72d0a0b91d" title=" " alt="" coords="699,166,873,207"/>
+<area shape="rect" id="node13" href="$cpuid_8c.html#a7220f0f9a6d0047aef7619e272fa9518" title=" " alt="" coords="936,173,1073,200"/>
+</map>

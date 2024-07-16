@@ -1,0 +1,13 @@
+<map id="kvm_cpu_has_pending_timer" name="kvm_cpu_has_pending_timer">
+<area shape="rect" id="node1" title=" " alt="" coords="5,162,176,203"/>
+<area shape="rect" id="node2" href="$irq_8h.html#afcf66d0c1c15dcbd414e2dbf830d7b29" title=" " alt="" coords="225,81,405,108"/>
+<area shape="rect" id="node9" href="$xen_8h.html#ab737e94ddc49624447bfc9c3387d5c2d" title=" " alt="" coords="230,133,401,174"/>
+<area shape="rect" id="node10" href="$xen_8h.html#a4219d1f48739ef7e6ccf35229c343a4d" title=" " alt="" coords="224,199,407,225"/>
+<area shape="rect" id="node11" href="$lapic_8h.html#a1d8c9378fcbf62390a89dc3b7f0bdbd4" title=" " alt="" coords="256,249,375,276"/>
+<area shape="rect" id="node3" href="$lapic_8c.html#ab0bd88f2e9609cef51f64e40f0635c9d" title=" " alt="" coords="467,56,575,83"/>
+<area shape="rect" id="node6" href="$lapic_8c.html#a2800acddbbe439c5ae4fab24c1eaf9ff" title=" " alt="" coords="455,107,587,133"/>
+<area shape="rect" id="node4" href="$lapic_8h.html#a1d8660ecbda996b11b10b179013e52d4" title=" " alt="" coords="635,5,805,32"/>
+<area shape="rect" id="node5" href="$lapic_8h.html#a447b1b971acaf871dd62669b4aa3116f" title=" " alt="" coords="635,56,805,83"/>
+<area shape="rect" id="node7" href="$lapic_8h.html#a8cd1df8b4c079c23a522d09c964da0ee" title=" " alt="" coords="647,107,793,133"/>
+<area shape="rect" id="node8" href="$lapic_8h.html#aa28a43e0f54449e2ec4d25e1f8ecb178" title=" " alt="" coords="853,107,1012,133"/>
+</map>

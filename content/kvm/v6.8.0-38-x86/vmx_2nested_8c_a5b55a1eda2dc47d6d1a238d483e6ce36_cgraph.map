@@ -1,0 +1,20 @@
+<map id="vmx_switch_vmcs" name="vmx_switch_vmcs">
+<area shape="rect" id="node1" title=" " alt="" coords="5,171,148,197"/>
+<area shape="rect" id="node2" href="$vmx_8h.html#a6e0cb34c77519a9be4432b4dd4ec11b4" title=" " alt="" coords="453,171,523,197"/>
+<area shape="rect" id="node3" href="$vmx_2nested_8c.html#a502237213cfe23fdbe2ec0468f6b06de" title=" " alt="" coords="197,105,362,146"/>
+<area shape="rect" id="node13" href="$vmx_8c.html#a7b282a828cac2d1ae55bb522a0c42c1f" title=" " alt="" coords="196,221,363,248"/>
+<area shape="rect" id="node4" href="$vmx_8c.html#a632e0045640f1fb4b490db30ca2baabf" title=" " alt="" coords="411,112,565,139"/>
+<area shape="rect" id="node5" href="$vmx__ops_8h.html#a25c2200a7bcdc61f46fc40df2aa25a6a" title=" " alt="" coords="637,107,751,133"/>
+<area shape="rect" id="node10" href="$vmx__ops_8h.html#a053ad90862efca58007aa2827f072fe8" title=" " alt="" coords="643,180,745,207"/>
+<area shape="rect" id="node6" href="$vmx__ops_8h.html#abd38efcacf0b873c6e9ca1f940f39008" title=" " alt="" coords="846,107,961,133"/>
+<area shape="rect" id="node7" href="$vmx__onhyperv_8h.html#a1a97474a0e736504a7f46d37606d354d" title=" " alt="" coords="843,56,964,83"/>
+<area shape="rect" id="node8" href="$vmx__onhyperv_8h.html#ab35d8d7479c3c62d461012dcabc04b11" title=" " alt="" coords="823,259,984,285"/>
+<area shape="rect" id="node9" href="$vmx__ops_8h.html#a99d3cd27b0b9d3e69fcc2e1cae4225fa" title=" " alt="" coords="844,5,963,32"/>
+<area shape="rect" id="node11" href="$vmx__onhyperv_8h.html#ab8d4fdb2c9a0ae33024dd8b9ecf14961" title=" " alt="" coords="843,208,964,235"/>
+<area shape="rect" id="node12" href="$vmx__ops_8h.html#ac411fdca9086093e5690910de4382641" title=" " alt="" coords="850,157,957,184"/>
+<area shape="rect" id="node14" href="$vmx_8c.html#acffc6d01ff543c9abee613b5fe1b1bd4" title=" " alt="" coords="415,333,561,360"/>
+<area shape="rect" id="node17" href="$vmx__ops_8h.html#a33ef2cd0708406b39123ddd368eeb996" title=" " alt="" coords="442,272,534,299"/>
+<area shape="rect" id="node15" href="$vmx_8c.html#a70760e20007fba075a5170ffbdc80fa6" title=" " alt="" coords="613,355,775,381"/>
+<area shape="rect" id="node16" href="$vmx__ops_8h.html#adefc7dc8e1885fe973b3e8d58e23e0aa" title=" " alt="" coords="855,355,951,381"/>
+<area shape="rect" id="node18" href="$vmx__onhyperv_8h.html#ae52cbc37c9ad5d2d3ce269912ae976da" title=" " alt="" coords="644,304,744,331"/>
+</map>

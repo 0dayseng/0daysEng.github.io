@@ -1,0 +1,11 @@
+<map id="vmx_deliver_posted_interrupt" name="vmx_deliver_posted_interrupt">
+<area shape="rect" id="node1" title=" " alt="" coords="5,74,160,115"/>
+<area shape="rect" id="node2" href="$vmx_8c.html#ab7adcd17aa4fc7dd52d8138fa2c9f06d" title=" " alt="" coords="411,23,601,65"/>
+<area shape="rect" id="node5" href="$posted__intr_8h.html#a049ca7aae7006d1ca3ab02d285800f6d" title=" " alt="" coords="212,31,359,57"/>
+<area shape="rect" id="node6" href="$posted__intr_8h.html#a9c5245bae9ec3cd094478cc2992ede1f" title=" " alt="" coords="211,81,359,108"/>
+<area shape="rect" id="node7" href="$vmx_8h.html#a6e0cb34c77519a9be4432b4dd4ec11b4" title=" " alt="" coords="471,195,541,221"/>
+<area shape="rect" id="node8" href="$vmx_8c.html#a0d39047ad3d4c1fb52248b959d001feb" title=" " alt="" coords="208,133,363,174"/>
+<area shape="rect" id="node3" href="$kvm__main_8c.html#ac5a3afd8e2d8d1139dc7711c4b9e07e3" title=" " alt="" coords="649,5,823,32"/>
+<area shape="rect" id="node4" href="$kvm__main_8c.html#ad9f0140eebcdef9a9ebae54431d2fba5" title=" " alt="" coords="659,56,813,83"/>
+<area shape="rect" id="node9" href="$kvm__cache__regs_8h.html#afbcfc413ceedb460734eb5fd7c5c4fbc" title=" " alt="" coords="446,140,566,167"/>
+</map>

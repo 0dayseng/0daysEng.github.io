@@ -1,0 +1,6 @@
+<map id="intel_pmu_reset" name="intel_pmu_reset">
+<area shape="rect" id="node1" title=" " alt="" coords="5,13,132,39"/>
+<area shape="rect" id="node2" href="$pmu__intel_8c.html#a062c0b628c72336025d0c3b5e1f0229f" title=" " alt="" coords="180,5,365,47"/>
+<area shape="rect" id="node3" href="$vmx_8h.html#aa3f9a4735e6ff00497c0086664b433bd" title=" " alt="" coords="413,13,548,39"/>
+<area shape="rect" id="node4" href="$vmx_8h.html#a6e0cb34c77519a9be4432b4dd4ec11b4" title=" " alt="" coords="596,13,667,39"/>
+</map>

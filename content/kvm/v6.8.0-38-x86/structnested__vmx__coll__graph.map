@@ -1,0 +1,11 @@
+<map id="nested_vmx" name="nested_vmx">
+<area shape="rect" id="node1" title=" " alt="" coords="145,291,248,317"/>
+<area shape="rect" id="node2" href="$structpi__desc.html" title=" " alt="" coords="5,200,76,227"/>
+<area shape="rect" id="node3" href="$structvmcs12.html" title=" " alt="" coords="97,147,171,173"/>
+<area shape="rect" id="node4" href="$structvmcs__hdr.html" title=" " alt="" coords="138,5,223,32"/>
+<area shape="rect" id="node7" href="$structvmcs.html" title=" " alt="" coords="195,95,252,121"/>
+<area shape="rect" id="node5" href="$structnested__vmx__msrs.html" title=" " alt="" coords="447,200,589,227"/>
+<area shape="rect" id="node6" href="$structloaded__vmcs.html" title=" " alt="" coords="315,200,423,227"/>
+<area shape="rect" id="node8" href="$structvmcs__controls__shadow.html" title=" " alt="" coords="279,95,453,121"/>
+<area shape="rect" id="node9" href="$structvmcs__host__state.html" title=" " alt="" coords="477,95,609,121"/>
+</map>

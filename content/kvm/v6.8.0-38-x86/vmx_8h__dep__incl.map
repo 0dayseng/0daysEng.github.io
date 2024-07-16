@@ -1,0 +1,12 @@
+<map id="arch/x86/kvm/vmx/vmx.h" name="arch/x86/kvm/vmx/vmx.h">
+<area shape="rect" id="node1" title=" " alt="" coords="453,5,642,32"/>
+<area shape="rect" id="node2" href="$kvm-asm-offsets_8c.html" title=" " alt="" coords="60,80,237,121"/>
+<area shape="rect" id="node3" href="$vmx_2hyperv_8h.html" title=" " alt="" coords="516,87,720,114"/>
+<area shape="rect" id="node4" href="$nested_8h.html" title=" " alt="" coords="415,169,619,196"/>
+<area shape="rect" id="node5" href="$vmx_2hyperv_8c.html" title=" " alt="" coords="213,251,415,278"/>
+<area shape="rect" id="node7" href="$sgx_8c.html" title=" " alt="" coords="5,251,188,278"/>
+<area shape="rect" id="node8" href="$vmx_2nested_8c.html" title=" " alt="" coords="642,251,845,278"/>
+<area shape="rect" id="node9" href="$vmx_8c.html" title=" " alt="" coords="869,251,1057,278"/>
+<area shape="rect" id="node10" href="$posted__intr_8c.html" title=" " alt="" coords="846,80,1038,121"/>
+<area shape="rect" id="node6" href="$pmu__intel_8c.html" title=" " alt="" coords="440,244,617,285"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="nested_exit_on_nmi" name="nested_exit_on_nmi">
+<area shape="rect" id="node1" title=" " alt="" coords="440,119,593,145"/>
+<area shape="rect" id="node2" href="$svm_2nested_8c.html#a3286f29b650004d599595557d310136e" title=" " alt="" coords="6,5,203,32"/>
+<area shape="rect" id="node3" href="$svm_8c.html#a20c1180c4bb6850bae73e3cbda53c695" title=" " alt="" coords="35,68,175,95"/>
+<area shape="rect" id="node4" href="$svm_8c.html#a37477553ea45acae098350e7d572ae2e" title=" " alt="" coords="253,43,391,69"/>
+<area shape="rect" id="node5" href="$vmx_2nested_8c.html#ae8bd3aaa6d3ea61d98732dc54ced8578" title=" " alt="" coords="5,156,204,183"/>
+<area shape="rect" id="node6" href="$vmx_8c.html#a4546be655e5968c462322858ecf68c49" title=" " alt="" coords="34,232,175,259"/>
+<area shape="rect" id="node7" href="$vmx_8c.html#ae92f23c5709cc4f9fe4fe2d794deef50" title=" " alt="" coords="252,195,392,221"/>
+</map>

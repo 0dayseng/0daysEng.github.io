@@ -1,0 +1,13 @@
+<map id="vmx_update_exception_bitmap" name="vmx_update_exception_bitmap">
+<area shape="rect" id="node1" title=" " alt="" coords="5,99,180,141"/>
+<area shape="rect" id="node2" href="$nested_8h.html#a65c62b59f6be374d9da24feaef363497" title=" " alt="" coords="265,5,366,32"/>
+<area shape="rect" id="node3" href="$vmx_8h.html#a6e0cb34c77519a9be4432b4dd4ec11b4" title=" " alt="" coords="496,5,567,32"/>
+<area shape="rect" id="node4" href="$kvm__cache__regs_8h.html#afbcfc413ceedb460734eb5fd7c5c4fbc" title=" " alt="" coords="255,107,375,133"/>
+<area shape="rect" id="node5" href="$vmx__ops_8h.html#a2a7e7c5e8ee913ae1811b078174df0c9" title=" " alt="" coords="259,157,372,184"/>
+<area shape="rect" id="node10" href="$vmx_8h.html#a046cd100cd1f1b77bfa5ba028dcd52ff" title=" " alt="" coords="228,233,403,260"/>
+<area shape="rect" id="node6" href="$vmx__ops_8h.html#abd38efcacf0b873c6e9ca1f940f39008" title=" " alt="" coords="474,56,589,83"/>
+<area shape="rect" id="node7" href="$vmx__onhyperv_8h.html#a76f5e23936d63b1aa1a525e7f4181cf0" title=" " alt="" coords="471,107,592,133"/>
+<area shape="rect" id="node8" href="$vmx__onhyperv_8h.html#ab35d8d7479c3c62d461012dcabc04b11" title=" " alt="" coords="451,157,612,184"/>
+<area shape="rect" id="node9" href="$vmx__ops_8h.html#af5ce3717bbcc96eeddead8b57ac3fa6a" title=" " alt="" coords="472,208,591,235"/>
+<area shape="rect" id="node11" href="$cpuid_8h.html#a1678e00b10264045277c1abfcb6eec3e" title=" " alt="" coords="458,259,605,285"/>
+</map>

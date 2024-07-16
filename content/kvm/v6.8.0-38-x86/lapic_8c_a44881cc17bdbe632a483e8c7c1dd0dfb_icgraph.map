@@ -1,0 +1,13 @@
+<map id="kvm_set_lapic_tscdeadline_msr" name="kvm_set_lapic_tscdeadline_msr">
+<area shape="rect" id="node1" title=" " alt="" coords="851,85,1081,112"/>
+<area shape="rect" id="node2" href="$x86_8c.html#a7b5659746726fd8443c25a3faca86d7c" title=" " alt="" coords="638,37,793,78"/>
+<area shape="rect" id="node8" href="$x86_8c.html#aec2b7dd73668f030b4e2f8d8815d7299" title=" " alt="" coords="628,115,803,141"/>
+<area shape="rect" id="node3" href="$x86_8c.html#a8a37294ff599bdc5183d75ecdd61412a" title=" " alt="" coords="425,23,580,65"/>
+<area shape="rect" id="node4" href="$svm_8c.html#a82c8447e70f06dd52623c696446104b5" title=" " alt="" coords="171,5,377,32"/>
+<area shape="rect" id="node6" href="$vmx_8c.html#a3217468b58ef72d3e7e7d40024c24b67" title=" " alt="" coords="171,56,377,83"/>
+<area shape="rect" id="node5" href="$svm_8c.html#a5d2703bd914c4ae4fcb1eb83c208b085" title=" " alt="" coords="6,5,122,32"/>
+<area shape="rect" id="node7" href="$vmx_8c.html#a909291866931c22138fd3ba80f0a7651" title=" " alt="" coords="5,56,123,83"/>
+<area shape="rect" id="node9" href="$svm_8c.html#acb46126747f78036462437a7bcdc2e47" title=" " alt="" coords="462,89,543,116"/>
+<area shape="rect" id="node10" href="$svm_8c.html#aac18b9094154a2c8b8e27c3b08c9e359" title=" " alt="" coords="448,140,557,167"/>
+<area shape="rect" id="node11" href="$vmx_8c.html#a0fb610ce041405729e4296dfc871c30e" title=" " alt="" coords="447,191,558,217"/>
+</map>

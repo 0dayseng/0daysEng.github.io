@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['_5f_5favic_5fgatag_10524',['__AVIC_GATAG',['../avic_8c.html#a591769978fd794e332f217d97f35bfec',1,'avic.c']]],
+  ['_5f_5fbuild_5fvmx_5fmsr_5fbitmap_5fhelper_10525',['__BUILD_VMX_MSR_BITMAP_HELPER',['../vmx_8h.html#a757a1e161942ada247245d3c0101345f',1,'vmx.h']]],
+  ['_5f_5fcr4_5freserved_5fbits_10526',['__cr4_reserved_bits',['../x86_8h.html#a04c1d2c8a6651e35309cd9bd9f129e4d',1,'x86.h']]],
+  ['_5f_5ffop_5ffunc_10527',['__FOP_FUNC',['../emulate_8c.html#af5495d00c6e5aecdcf5128e98bc51c89',1,'emulate.c']]],
+  ['_5f_5ffop_5fret_10528',['__FOP_RET',['../emulate_8c.html#a401551bd4271772a091c0c71c6e42e71',1,'emulate.c']]],
+  ['_5f_5ffop_5fstart_10529',['__FOP_START',['../emulate_8c.html#a73d15a48d76ca247653436c3d1457702',1,'emulate.c']]],
+  ['_5f_5ffopnop_10530',['__FOPNOP',['../emulate_8c.html#a1d354e543d0fb2ce335899c43b9f9077',1,'emulate.c']]],
+  ['_5f_5ffor_5feach_5ftdp_5fmmu_5froot_5fyield_5fsafe_10531',['__for_each_tdp_mmu_root_yield_safe',['../tdp__mmu_8c.html#ab9d1583c53d0b2660327c4dea8fae4e3',1,'tdp_mmu.c']]],
+  ['_5f_5fkvm_5fcpu_5fcap_5fhas_10532',['__kvm_cpu_cap_has',['../x86_8c.html#adec85c6104b59bcecb33a07ba4662825',1,'x86.c']]],
+  ['_5f_5fkvm_5frequired_5fvmx_5fcpu_5fbased_5fvm_5fexec_5fcontrol_10533',['__KVM_REQUIRED_VMX_CPU_BASED_VM_EXEC_CONTROL',['../vmx_8h.html#a48c820479e00d43028d492e5c465d420',1,'vmx.h']]],
+  ['_5f_5fkvm_5frequired_5fvmx_5fvm_5fentry_5fcontrols_10534',['__KVM_REQUIRED_VMX_VM_ENTRY_CONTROLS',['../vmx_8h.html#a440ec36a8bb2a1f972b685a0f890e2bf',1,'vmx.h']]],
+  ['_5f_5fkvm_5frequired_5fvmx_5fvm_5fexit_5fcontrols_10535',['__KVM_REQUIRED_VMX_VM_EXIT_CONTROLS',['../vmx_8h.html#a3226148db9313f3562dccd09e360283d',1,'vmx.h']]],
+  ['_5f_5fkvm_5fx86_5fop_10536',['__KVM_X86_OP',['../x86_8c.html#a4e34cd9fd1d233c04974346c8e3f4d57',1,'x86.c']]],
+  ['_5f_5fkvm_5fx86_5fpmu_5fop_10537',['__KVM_X86_PMU_OP',['../pmu_8c.html#ae5c0a034d38f7a096fb15806b5b69a33',1,'pmu.c']]],
+  ['_5f_5fpt_5fbase_5faddr_5fmask_10538',['__PT_BASE_ADDR_MASK',['../mmu__internal_8h.html#a4b6970d6633932672fc70d928d33caf7',1,'mmu_internal.h']]],
+  ['_5f_5fpt_5fent_5fper_5fpage_10539',['__PT_ENT_PER_PAGE',['../mmu__internal_8h.html#a199e92057728f48c65a7f4a50f20837c',1,'mmu_internal.h']]],
+  ['_5f_5fpt_5findex_10540',['__PT_INDEX',['../mmu__internal_8h.html#ae517cada2296a9b8146861ea38acb20f',1,'mmu_internal.h']]],
+  ['_5f_5fpt_5flevel_5fshift_10541',['__PT_LEVEL_SHIFT',['../mmu__internal_8h.html#a04121414999dc564561467fb67c56e20',1,'mmu_internal.h']]],
+  ['_5f_5fpt_5flvl_5faddr_5fmask_10542',['__PT_LVL_ADDR_MASK',['../mmu__internal_8h.html#a7834b038f6e9c92ecb58615b0dde56cb',1,'mmu_internal.h']]],
+  ['_5f_5fpt_5flvl_5foffset_5fmask_10543',['__PT_LVL_OFFSET_MASK',['../mmu__internal_8h.html#ad6693d6a5ca8c28c635e8e64d200ecd1',1,'mmu_internal.h']]],
+  ['_5f_5fsme_5fpage_5fpa_10544',['__sme_page_pa',['../svm_8h.html#a006ecae20fd705ed2184ec4e6f0f5dd9',1,'svm.h']]],
+  ['_5f_5fsse128_5fu_10545',['__sse128_u',['../fpu_8h.html#afe463eb7054bf7ee5d64ca494ef88cf8',1,'fpu.h']]],
+  ['_5ftrace_5fkvm_5fh_10546',['_TRACE_KVM_H',['../trace_8h.html#abb2c940589621197f024dd66ec3faaf5',1,'trace.h']]],
+  ['_5ftrace_5fkvmmmu_5fh_10547',['_TRACE_KVMMMU_H',['../mmutrace_8h.html#a13be11a9259bfd4b1501b529299cca31',1,'mmutrace.h']]]
+];

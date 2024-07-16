@@ -1,0 +1,11 @@
+<map id="kvm_steal_time_set_preempted" name="kvm_steal_time_set_preempted">
+<area shape="rect" id="node1" title=" " alt="" coords="5,64,160,105"/>
+<area shape="rect" id="node2" href="$kvm__main_8c.html#ae4806d9a69b751639c175cb98e468f15" title=" " alt="" coords="208,71,391,98"/>
+<area shape="rect" id="node3" href="$dirty__ring_8c.html#ac1878b63f1f337e93cf186ebd4fffcc4" title=" " alt="" coords="439,5,611,47"/>
+<area shape="rect" id="node4" href="$dirty__ring_8c.html#a81ebbf462440ed5392d6d3412a859ae7" title=" " alt="" coords="446,71,605,98"/>
+<area shape="rect" id="node9" href="$kvm__main_8c.html#ac5a3afd8e2d8d1139dc7711c4b9e07e3" title=" " alt="" coords="439,122,612,149"/>
+<area shape="rect" id="node5" href="$dirty__ring_8c.html#ad6e626257c739b2ac3d397119a7cf798" title=" " alt="" coords="660,21,852,47"/>
+<area shape="rect" id="node6" href="$dirty__ring_8c.html#a6fe5cd75b9bac6497e1ae7340f2a5f7b" title=" " alt="" coords="682,71,830,98"/>
+<area shape="rect" id="node8" href="$dirty__ring_8c.html#a22c9a239acf3463a8599a21c0a756538" title=" " alt="" coords="667,122,845,149"/>
+<area shape="rect" id="node7" href="$dirty__ring_8c.html#acd0a1e586324b4c49b429c7a392db73f" title=" " alt="" coords="900,97,1059,123"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="intel_pmu_cleanup" name="intel_pmu_cleanup">
+<area shape="rect" id="node1" title=" " alt="" coords="5,77,151,104"/>
+<area shape="rect" id="node2" href="$pmu__intel_8c.html#a062c0b628c72336025d0c3b5e1f0229f" title=" " alt="" coords="199,19,384,61"/>
+<area shape="rect" id="node5" href="$vmx__ops_8h.html#a2088262a71496c55f21ddab30c364663" title=" " alt="" coords="237,107,346,133"/>
+<area shape="rect" id="node3" href="$vmx_8h.html#aa3f9a4735e6ff00497c0086664b433bd" title=" " alt="" coords="445,5,580,32"/>
+<area shape="rect" id="node4" href="$vmx_8h.html#a6e0cb34c77519a9be4432b4dd4ec11b4" title=" " alt="" coords="681,5,752,32"/>
+<area shape="rect" id="node6" href="$vmx__ops_8h.html#a4e53c9e55e0e6a94f7304f0f672e1168" title=" " alt="" coords="457,56,568,83"/>
+<area shape="rect" id="node9" href="$vmx__onhyperv_8h.html#ab02646b06f78249d1315b2affdeb6572" title=" " alt="" coords="454,107,571,133"/>
+<area shape="rect" id="node10" href="$vmx__onhyperv_8h.html#ab35d8d7479c3c62d461012dcabc04b11" title=" " alt="" coords="432,157,593,184"/>
+<area shape="rect" id="node11" href="$vmx__ops_8h.html#a482358473ceab579ad9c93b46e13fe25" title=" " alt="" coords="453,208,572,235"/>
+<area shape="rect" id="node7" href="$x86_8c.html#aa600a8b690e74e45d1ce6b590b74a60b" title=" " alt="" coords="641,56,792,83"/>
+<area shape="rect" id="node8" href="$vmx__ops_8h.html#a5bd8b5279566f5cedece56ca03955271" title=" " alt="" coords="661,107,772,133"/>
+</map>

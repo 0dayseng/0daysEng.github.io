@@ -1,0 +1,9 @@
+<map id="kvm_x86_check_processor_compatibility" name="kvm_x86_check_processor_compatibility">
+<area shape="rect" id="node1" title=" " alt="" coords="828,23,1025,65"/>
+<area shape="rect" id="node2" href="$x86_8c.html#ac1582780a8801f86aa06da8b95cbcfe9" title=" " alt="" coords="571,5,776,32"/>
+<area shape="rect" id="node3" href="$x86_8c.html#a48f93f51d0a93f4cb170e549d8fa5a12" title=" " alt="" coords="567,56,780,83"/>
+<area shape="rect" id="node4" href="$x86_8c.html#a0ad8fc4784d6d316f3d9f5afe640af81" title=" " alt="" coords="343,56,519,83"/>
+<area shape="rect" id="node5" href="$x86_8c.html#ae295ff45fc91a432658e57dda4dfea68" title=" " alt="" coords="132,56,295,83"/>
+<area shape="rect" id="node6" href="$svm_8c.html#aa667b0a0f202f83aa1533825aeecb402" title=" " alt="" coords="5,31,84,57"/>
+<area shape="rect" id="node7" href="$vmx_8c.html#aa8f62a8c3a5a5da29c69565d2645a371" title=" " alt="" coords="5,81,84,108"/>
+</map>

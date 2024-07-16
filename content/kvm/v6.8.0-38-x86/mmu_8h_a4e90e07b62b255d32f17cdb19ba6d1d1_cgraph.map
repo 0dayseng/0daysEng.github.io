@@ -1,0 +1,8 @@
+<map id="kvm_get_active_cr3_lam_bits" name="kvm_get_active_cr3_lam_bits">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,159,97"/>
+<area shape="rect" id="node2" href="$cpuid_8h.html#acf67f5848a2ddd59dc852e37bc330390" title=" " alt="" coords="207,38,325,65"/>
+<area shape="rect" id="node5" href="$kvm__cache__regs_8h.html#aa80de2ba11d877ef825788b0c9768378" title=" " alt="" coords="209,89,323,115"/>
+<area shape="rect" id="node3" href="$cpuid_8h.html#a786eea4c1fa59be0155455a72125e0ff" title=" " alt="" coords="615,5,788,47"/>
+<area shape="rect" id="node4" href="$cpuid_8h.html#a72da5444b01d72d935ebc411b99ba166" title=" " alt="" coords="375,38,565,65"/>
+<area shape="rect" id="node6" href="$kvm__cache__regs_8h.html#a6b9ea8c019490183db2a81569aad2bf9" title=" " alt="" coords="373,89,567,115"/>
+</map>

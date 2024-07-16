@@ -1,0 +1,9 @@
+<map id="kvm_load_host_xsave_state" name="kvm_load_host_xsave_state">
+<area shape="rect" id="node1" title=" " alt="" coords="5,60,172,101"/>
+<area shape="rect" id="node2" href="$cpuid_8h.html#acf67f5848a2ddd59dc852e37bc330390" title=" " alt="" coords="234,42,353,69"/>
+<area shape="rect" id="node5" href="$kvm__cache__regs_8h.html#a2b779657b20f7afa44c0172b1478ac65" title=" " alt="" coords="220,93,367,119"/>
+<area shape="rect" id="node3" href="$cpuid_8h.html#a786eea4c1fa59be0155455a72125e0ff" title=" " alt="" coords="663,5,837,47"/>
+<area shape="rect" id="node4" href="$cpuid_8h.html#a72da5444b01d72d935ebc411b99ba166" title=" " alt="" coords="415,42,605,69"/>
+<area shape="rect" id="node6" href="$kvm__cache__regs_8h.html#a24ffc81fe5ed7998e29134351275b4dd" title=" " alt="" coords="437,93,583,119"/>
+<area shape="rect" id="node7" href="$kvm__cache__regs_8h.html#a6b9ea8c019490183db2a81569aad2bf9" title=" " alt="" coords="653,93,847,119"/>
+</map>

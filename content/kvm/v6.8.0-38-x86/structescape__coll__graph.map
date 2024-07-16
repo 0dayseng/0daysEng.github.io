@@ -1,0 +1,8 @@
+<map id="escape" name="escape">
+<area shape="rect" id="node1" title=" " alt="" coords="272,5,340,32"/>
+<area shape="rect" id="node2" href="$structopcode.html" title=" " alt="" coords="271,109,341,136"/>
+<area shape="rect" id="node3" href="$structmode__dual.html" title=" " alt="" coords="20,243,115,269"/>
+<area shape="rect" id="node4" href="$structgroup__dual.html" title=" " alt="" coords="161,243,256,269"/>
+<area shape="rect" id="node5" href="$structgprefix.html" title=" " alt="" coords="338,243,405,269"/>
+<area shape="rect" id="node6" href="$structinstr__dual.html" title=" " alt="" coords="503,243,589,269"/>
+</map>

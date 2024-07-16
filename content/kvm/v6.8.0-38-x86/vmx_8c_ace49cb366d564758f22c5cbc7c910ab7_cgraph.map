@@ -1,0 +1,10 @@
+<map id="vmx_get_mt_mask" name="vmx_get_mt_mask">
+<area shape="rect" id="node1" title=" " alt="" coords="5,85,152,112"/>
+<area shape="rect" id="node2" href="$x86_8c.html#a07ecc086564147d2003e0699cd506aa4" title=" " alt="" coords="200,5,440,32"/>
+<area shape="rect" id="node3" href="$x86_8h.html#adf8330176a8805826ed4711a51ce93cf" title=" " alt="" coords="237,56,403,83"/>
+<area shape="rect" id="node4" href="$mtrr_8c.html#a92c398e9dacb06cf11f5f5364f3e1c36" title=" " alt="" coords="241,107,399,149"/>
+<area shape="rect" id="node7" href="$kvm__cache__regs_8h.html#a5fbb40e1f7661ccfd5accdaef3d8c378" title=" " alt="" coords="247,173,393,200"/>
+<area shape="rect" id="node5" href="$mtrr_8c.html#aeb25e3cab8f1edf904c9b8c93a0ee055" title=" " alt="" coords="515,68,654,95"/>
+<area shape="rect" id="node6" href="$mtrr_8c.html#ac83b78738987e5fddd004c50acccafc1" title=" " alt="" coords="511,119,659,145"/>
+<area shape="rect" id="node8" href="$kvm__cache__regs_8h.html#a6b9ea8c019490183db2a81569aad2bf9" title=" " alt="" coords="488,173,681,200"/>
+</map>

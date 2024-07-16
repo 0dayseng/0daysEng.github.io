@@ -1,0 +1,11 @@
+<map id="kvm_mmu_vendor_module_exit" name="kvm_mmu_vendor_module_exit">
+<area shape="rect" id="node1" title=" " alt="" coords="571,81,803,108"/>
+<area shape="rect" id="node2" href="$x86_8c.html#a0ad8fc4784d6d316f3d9f5afe640af81" title=" " alt="" coords="347,56,523,83"/>
+<area shape="rect" id="node6" href="$x86_8c.html#a6b0e9d5b7fc8842b6316f94643af7023" title=" " alt="" coords="351,107,518,133"/>
+<area shape="rect" id="node3" href="$x86_8c.html#ae295ff45fc91a432658e57dda4dfea68" title=" " alt="" coords="136,56,299,83"/>
+<area shape="rect" id="node4" href="$svm_8c.html#aa667b0a0f202f83aa1533825aeecb402" title=" " alt="" coords="7,56,86,83"/>
+<area shape="rect" id="node5" href="$vmx_8c.html#aa8f62a8c3a5a5da29c69565d2645a371" title=" " alt="" coords="7,107,86,133"/>
+<area shape="rect" id="node7" href="$svm_8c.html#a5b14d1e0632116bdfd341cd3c892a5eb" title=" " alt="" coords="169,5,265,32"/>
+<area shape="rect" id="node9" href="$vmx_8c.html#acac20580f6f7fdad4ef0e94f2465c889" title=" " alt="" coords="176,157,259,184"/>
+<area shape="rect" id="node8" href="$svm_8c.html#ae292292ef2cf8cb0d48cfa27ce94ef88" title=" " alt="" coords="5,5,88,32"/>
+</map>

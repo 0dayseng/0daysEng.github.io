@@ -1,0 +1,9 @@
+<map id="vmx_enable_intercept_for_msr" name="vmx_enable_intercept_for_msr">
+<area shape="rect" id="node1" title=" " alt="" coords="5,99,172,141"/>
+<area shape="rect" id="node2" href="$capabilities_8h.html#ab417100ad999a4402c4b0698ada5dc9b" title=" " alt="" coords="220,5,416,32"/>
+<area shape="rect" id="node3" href="$vmx_8c.html#a5742d1df3fb94e98dd1a0f0443b529a4" title=" " alt="" coords="223,56,413,83"/>
+<area shape="rect" id="node4" href="$vmx_8c.html#aa4973cf70be6e2559648a74eab4987a5" title=" " alt="" coords="464,74,627,115"/>
+<area shape="rect" id="node5" href="$vmx_8h.html#a6e0cb34c77519a9be4432b4dd4ec11b4" title=" " alt="" coords="283,157,353,184"/>
+<area shape="rect" id="node6" href="$vmx_8c.html#a4322412ccf65775174621cab858dd234" title=" " alt="" coords="237,209,399,250"/>
+<area shape="rect" id="node7" href="$vmx__onhyperv_8h.html#ab35d8d7479c3c62d461012dcabc04b11" title=" " alt="" coords="465,216,626,243"/>
+</map>

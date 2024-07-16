@@ -1,0 +1,5 @@
+<map id="cpu_need_tpr_shadow" name="cpu_need_tpr_shadow">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,172,57"/>
+<area shape="rect" id="node2" href="$capabilities_8h.html#a10fb313aa55eb0e65c799d1a4f145e17" title=" " alt="" coords="220,5,413,32"/>
+<area shape="rect" id="node3" href="$lapic_8h.html#a1d8c9378fcbf62390a89dc3b7f0bdbd4" title=" " alt="" coords="257,56,376,83"/>
+</map>

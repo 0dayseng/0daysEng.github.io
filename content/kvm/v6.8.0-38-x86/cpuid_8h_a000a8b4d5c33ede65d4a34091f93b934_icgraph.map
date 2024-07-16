@@ -1,0 +1,7 @@
+<map id="guest_cpuid_model" name="guest_cpuid_model">
+<area shape="rect" id="node1" title=" " alt="" coords="439,56,587,83"/>
+<area shape="rect" id="node2" href="$cpuid_8h.html#ab99dc7d6bb2a01d43e47b5460139730a" title=" " alt="" coords="193,31,391,57"/>
+<area shape="rect" id="node5" href="$svm_8c.html#a091db4f6d8d0fc811fdd6d9b2a775889" title=" " alt="" coords="237,81,347,108"/>
+<area shape="rect" id="node3" href="$pmu__intel_8c.html#aef55e73b4b7ac8d0841b17310fc92297" title=" " alt="" coords="5,5,145,32"/>
+<area shape="rect" id="node4" href="$vmx_8c.html#a0fb610ce041405729e4296dfc871c30e" title=" " alt="" coords="20,56,131,83"/>
+</map>

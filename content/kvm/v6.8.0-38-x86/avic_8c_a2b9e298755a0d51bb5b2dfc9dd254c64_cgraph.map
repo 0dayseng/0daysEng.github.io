@@ -1,0 +1,8 @@
+<map id="avic_kick_vcpu" name="avic_kick_vcpu">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,127,83"/>
+<area shape="rect" id="node2" href="$svm_8c.html#a1faf261e116f9d9481e1bd6796e32280" title=" " alt="" coords="175,49,356,90"/>
+<area shape="rect" id="node3" href="$avic_8c.html#ac8c9ded2546dccf6e4b561e633d22e7e" title=" " alt="" coords="404,5,545,32"/>
+<area shape="rect" id="node4" href="$kvm__main_8c.html#ac82f28c95da4a0cc137c5a37f08d1f44" title=" " alt="" coords="413,56,536,83"/>
+<area shape="rect" id="node6" href="$kvm__main_8c.html#ad9f0140eebcdef9a9ebae54431d2fba5" title=" " alt="" coords="621,107,774,133"/>
+<area shape="rect" id="node5" href="$x86_8c.html#a42500cdc8706ebf4fa3ec21645530097" title=" " alt="" coords="593,56,801,83"/>
+</map>

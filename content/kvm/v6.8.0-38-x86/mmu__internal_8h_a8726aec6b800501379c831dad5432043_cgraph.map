@@ -1,0 +1,6 @@
+<map id="kvm_mmu_gfn_allow_lpage" name="kvm_mmu_gfn_allow_lpage">
+<area shape="rect" id="node1" title=" " alt="" coords="5,13,211,39"/>
+<area shape="rect" id="node2" href="$mmu_8c.html#abb10f9f8c6baa15bf3d3fc0b309d34d9" title=" " alt="" coords="259,5,415,47"/>
+<area shape="rect" id="node3" href="$mmu_8c.html#a1a8a0df061e27892bcc64a3e810e6c29" title=" " alt="" coords="463,13,584,39"/>
+<area shape="rect" id="node4" href="$mmu_8h.html#a41b79b63cae220349d8eb5a54f047939" title=" " alt="" coords="632,13,739,39"/>
+</map>

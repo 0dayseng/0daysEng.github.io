@@ -1,0 +1,17 @@
+<map id="pit_ioport_write" name="pit_ioport_write">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,129,133"/>
+<area shape="rect" id="node2" href="$i8254_8c.html#a22a2bd4705444a3b1a9d273919ab9318" title=" " alt="" coords="195,5,285,32"/>
+<area shape="rect" id="node3" href="$i8254_8c.html#acdf3d4112ea0bcbcaf54a7758fe76c77" title=" " alt="" coords="189,56,291,83"/>
+<area shape="rect" id="node4" href="$i8254_8c.html#a508345851e2e2425eb90084f6b48667c" title=" " alt="" coords="179,107,301,133"/>
+<area shape="rect" id="node8" href="$i8254_8c.html#aae6341b1c06f291efc7dae109f80f3d8" title=" " alt="" coords="177,157,303,184"/>
+<area shape="rect" id="node10" href="$i8254_8c.html#a6a8ef8d836b61d44d7d0c09f47c0947d" title=" " alt="" coords="181,208,299,235"/>
+<area shape="rect" id="node5" href="$i8254_8c.html#ac6fb86c652a078c2c309cf7dcb15c876" title=" " alt="" coords="364,107,475,133"/>
+<area shape="rect" id="node6" href="$i8254_8c.html#ae4277deef58999b76153482a8e810320" title=" " alt="" coords="569,132,674,159"/>
+<area shape="rect" id="node7" href="$i8254_8c.html#ad10c78e205adedca6adc8caaed274c2a" title=" " alt="" coords="755,132,873,159"/>
+<area shape="rect" id="node9" href="$i8254_8c.html#adb48a3a32ac7e9f924d796e75de81671" title=" " alt="" coords="372,157,467,184"/>
+<area shape="rect" id="node11" href="$i8254_8c.html#a89b5cec96a780f0f09cec72ac80ab7a0" title=" " alt="" coords="355,208,484,235"/>
+<area shape="rect" id="node15" href="$i8254_8c.html#ae6008f5371680c0e5c243fa9172afc2a" title=" " alt="" coords="351,259,488,285"/>
+<area shape="rect" id="node12" href="$ioapic_8h.html#a5efb8a822bd7119cfc8db075f12bf452" title=" " alt="" coords="558,208,685,235"/>
+<area shape="rect" id="node14" href="$i8254_8c.html#ae2e061e06e6f24f6abb8d5c9f25117e7" title=" " alt="" coords="536,259,707,285"/>
+<area shape="rect" id="node13" href="$irq_8h.html#aeedc8b3b9e709414b2db2436224b75e8" title=" " alt="" coords="757,208,871,235"/>
+</map>

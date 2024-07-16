@@ -1,0 +1,9 @@
+<map id="kvm_xen_inject_timer_irqs" name="kvm_xen_inject_timer_irqs">
+<area shape="rect" id="node1" title=" " alt="" coords="767,42,964,69"/>
+<area shape="rect" id="node2" href="$irq_8c.html#a2d54275d9e142ae8e337298689483728" title=" " alt="" coords="553,5,707,47"/>
+<area shape="rect" id="node6" href="$xen_8c.html#a0446c241eff9babb33e990edd1347b96" title=" " alt="" coords="541,71,719,98"/>
+<area shape="rect" id="node3" href="$x86_8c.html#ae90d8433a234fc6ee73cd19322f11ada" title=" " alt="" coords="412,15,493,42"/>
+<area shape="rect" id="node4" href="$x86_8c.html#adbabb8b4e50c9c51eec6373fcbc833aa" title=" " alt="" coords="177,17,364,43"/>
+<area shape="rect" id="node5" href="$kvm__main_8c.html#a2f2d3734c4cf61a1f4f94e9d47c37d55" title=" " alt="" coords="5,42,129,69"/>
+<area shape="rect" id="node7" href="$x86_8c.html#ab4ac4d44dfa1ed8985130249d6a8385e" title=" " alt="" coords="191,67,350,94"/>
+</map>

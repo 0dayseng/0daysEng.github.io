@@ -1,0 +1,11 @@
+<map id="cpuid_query_maxphyaddr" name="cpuid_query_maxphyaddr">
+<area shape="rect" id="node1" title=" " alt="" coords="1051,35,1241,61"/>
+<area shape="rect" id="node2" href="$x86_8c.html#ae2ebf37d8daf1a8b43a9823bae4ab32b" title=" " alt="" coords="831,5,1003,32"/>
+<area shape="rect" id="node4" href="$cpuid_8c.html#ae8f7489a3e05a9bcd5dfdae82c33d618" title=" " alt="" coords="840,57,993,98"/>
+<area shape="rect" id="node3" href="$kvm__main_8c.html#ab8870469dadfadf9a204346c62016293" title=" " alt="" coords="583,5,783,32"/>
+<area shape="rect" id="node5" href="$cpuid_8c.html#a0ff60eac33c1bf95a3889674e34251ad" title=" " alt="" coords="623,64,743,91"/>
+<area shape="rect" id="node6" href="$cpuid_8c.html#a5066ac0b188677d15925709568a91c9d" title=" " alt="" coords="384,23,535,65"/>
+<area shape="rect" id="node9" href="$cpuid_8c.html#ad4dde50a2939106abd2baf99683ac139" title=" " alt="" coords="384,89,535,130"/>
+<area shape="rect" id="node7" href="$x86_8c.html#ab4ac4d44dfa1ed8985130249d6a8385e" title=" " alt="" coords="177,64,336,91"/>
+<area shape="rect" id="node8" href="$kvm__main_8c.html#a2f2d3734c4cf61a1f4f94e9d47c37d55" title=" " alt="" coords="5,64,129,91"/>
+</map>

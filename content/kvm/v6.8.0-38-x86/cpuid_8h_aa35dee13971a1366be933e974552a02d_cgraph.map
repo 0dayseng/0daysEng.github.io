@@ -1,0 +1,6 @@
+<map id="guest_cpuid_is_intel" name="guest_cpuid_is_intel">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,160,57"/>
+<area shape="rect" id="node2" href="$kvm__emulate_8h.html#a61f034a07a99eee07bf2588db4d89494" title=" " alt="" coords="209,5,373,32"/>
+<area shape="rect" id="node3" href="$cpuid_8h.html#aae0475609eefc48bb151ef5a631670c0" title=" " alt="" coords="208,56,373,83"/>
+<area shape="rect" id="node4" href="$cpuid_8c.html#a7220f0f9a6d0047aef7619e272fa9518" title=" " alt="" coords="421,56,559,83"/>
+</map>

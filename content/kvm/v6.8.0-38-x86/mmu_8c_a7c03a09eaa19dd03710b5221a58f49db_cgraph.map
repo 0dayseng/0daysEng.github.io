@@ -1,0 +1,10 @@
+<map id="reset_guest_rsvds_bits_mask" name="reset_guest_rsvds_bits_mask">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,220,133"/>
+<area shape="rect" id="node2" href="$mmu_8c.html#aca62a749439306019073c5d5e04fe3e9" title=" " alt="" coords="268,56,453,83"/>
+<area shape="rect" id="node5" href="$cpuid_8h.html#acf67f5848a2ddd59dc852e37bc330390" title=" " alt="" coords="301,107,420,133"/>
+<area shape="rect" id="node8" href="$cpuid_8h.html#afe67350cf6a86de17676b9dbb85e0207" title=" " alt="" coords="283,158,438,199"/>
+<area shape="rect" id="node3" href="$mmu_8c.html#a2096473262912949e7dfdbe6f7b7457f" title=" " alt="" coords="535,5,658,32"/>
+<area shape="rect" id="node4" href="$mmu_8h.html#a20a41b0166b13eb22b15786964f5de9d" title=" " alt="" coords="556,56,637,83"/>
+<area shape="rect" id="node6" href="$cpuid_8h.html#a786eea4c1fa59be0155455a72125e0ff" title=" " alt="" coords="740,125,913,166"/>
+<area shape="rect" id="node7" href="$cpuid_8h.html#a72da5444b01d72d935ebc411b99ba166" title=" " alt="" coords="501,157,692,184"/>
+</map>

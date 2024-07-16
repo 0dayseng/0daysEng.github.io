@@ -1,0 +1,12 @@
+<map id="clear_atomic_switch_msr" name="clear_atomic_switch_msr">
+<area shape="rect" id="node1" title=" " alt="" coords="5,122,192,149"/>
+<area shape="rect" id="node2" href="$vmx_8c.html#a7f85cc51c16578af4dddf214877fa9f7" title=" " alt="" coords="272,5,427,47"/>
+<area shape="rect" id="node3" href="$capabilities_8h.html#a72419f3f04d86aae14d6dbdbc6073cb2" title=" " alt="" coords="260,71,439,98"/>
+<area shape="rect" id="node4" href="$capabilities_8h.html#a920302b2e36959afed4b793d45d26f40" title=" " alt="" coords="240,122,459,149"/>
+<area shape="rect" id="node5" href="$vmx__ops_8h.html#a2a7e7c5e8ee913ae1811b078174df0c9" title=" " alt="" coords="293,173,406,199"/>
+<area shape="rect" id="node10" href="$vmx_8c.html#a07cb8535d5c63fe54c6233e78b47d6c7" title=" " alt="" coords="274,224,425,265"/>
+<area shape="rect" id="node6" href="$vmx__ops_8h.html#abd38efcacf0b873c6e9ca1f940f39008" title=" " alt="" coords="530,97,645,123"/>
+<area shape="rect" id="node7" href="$vmx__onhyperv_8h.html#a76f5e23936d63b1aa1a525e7f4181cf0" title=" " alt="" coords="527,147,648,174"/>
+<area shape="rect" id="node8" href="$vmx__onhyperv_8h.html#ab35d8d7479c3c62d461012dcabc04b11" title=" " alt="" coords="507,198,668,225"/>
+<area shape="rect" id="node9" href="$vmx__ops_8h.html#af5ce3717bbcc96eeddead8b57ac3fa6a" title=" " alt="" coords="528,249,647,275"/>
+</map>

@@ -1,0 +1,18 @@
+<map id="prepare_vmx_msr_autostore_list" name="prepare_vmx_msr_autostore_list">
+<area shape="rect" id="node1" title=" " alt="" coords="5,163,241,190"/>
+<area shape="rect" id="node2" href="$vmx_2nested_8c.html#a160633ec3fad3e00057c5dfcac45f02e" title=" " alt="" coords="289,97,455,139"/>
+<area shape="rect" id="node4" href="$vmx_8h.html#a6e0cb34c77519a9be4432b4dd4ec11b4" title=" " alt="" coords="761,138,832,165"/>
+<area shape="rect" id="node16" href="$vmx_8c.html#a07cb8535d5c63fe54c6233e78b47d6c7" title=" " alt="" coords="297,215,447,256"/>
+<area shape="rect" id="node3" href="$nested_8h.html#a65c62b59f6be374d9da24feaef363497" title=" " alt="" coords="531,113,633,139"/>
+<area shape="rect" id="node5" href="$vmx_2nested_8c.html#a42a5312e11002d1b0513004387b8cf40" title=" " alt="" coords="503,47,661,88"/>
+<area shape="rect" id="node6" href="$kvm__main_8c.html#ae63a6f386d39aff5ffc5645780018b7a" title=" " alt="" coords="713,71,881,98"/>
+<area shape="rect" id="node14" href="$vmx_2nested_8c.html#a4a03a0f3bbceaf5056007f0112873f78" title=" " alt="" coords="709,5,884,47"/>
+<area shape="rect" id="node7" href="$kvm__main_8c.html#adfef9b2c2d6359fd443d98f51be19605" title=" " alt="" coords="932,71,1139,98"/>
+<area shape="rect" id="node13" href="$kvm__main_8c.html#a03aae88de564edba8a3a2d10bc5e7b20" title=" " alt="" coords="978,122,1093,149"/>
+<area shape="rect" id="node8" href="$kvm__main_8c.html#acc4698e3f076cdbbd5d8ca788a94decf" title=" " alt="" coords="1197,46,1379,73"/>
+<area shape="rect" id="node12" href="$kvm__main_8c.html#ac4b56de4919be80c9cd4289f20437c64" title=" " alt="" coords="1187,97,1389,123"/>
+<area shape="rect" id="node9" href="$kvm__main_8c.html#adb8a0a4f675ca16ea81acd3b88089f13" title=" " alt="" coords="1437,46,1629,73"/>
+<area shape="rect" id="node10" href="$kvm__main_8c.html#ab58025ccc253a102c64561fa61c2a514" title=" " alt="" coords="1677,21,1829,47"/>
+<area shape="rect" id="node11" href="$kvm__main_8c.html#a77ec4b9140d69a05f3b4e7836cc03a96" title=" " alt="" coords="1877,46,2040,73"/>
+<area shape="rect" id="node15" href="$vmx_2nested_8c.html#acff9f5fcd16cc452dba06069c3b2c412" title=" " alt="" coords="946,5,1125,47"/>
+</map>

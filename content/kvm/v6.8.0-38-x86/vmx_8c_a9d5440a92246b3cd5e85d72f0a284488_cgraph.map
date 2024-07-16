@@ -1,0 +1,14 @@
+<map id="vmx_flush_tlb_gva" name="vmx_flush_tlb_gva">
+<area shape="rect" id="node1" title=" " alt="" coords="5,147,149,173"/>
+<area shape="rect" id="node2" href="$vmx_8c.html#abc573a5b6bd6556fa79368ca3a0f9f7e" title=" " alt="" coords="197,92,364,119"/>
+<area shape="rect" id="node6" href="$vmx__ops_8h.html#a051e82ff3b9bda098b30ed26fac8cec0" title=" " alt="" coords="200,172,361,199"/>
+<area shape="rect" id="node3" href="$kvm__cache__regs_8h.html#afbcfc413ceedb460734eb5fd7c5c4fbc" title=" " alt="" coords="435,5,555,32"/>
+<area shape="rect" id="node4" href="$nested_8h.html#a9ef52cbdde487ef61fd78bd3b2c68642" title=" " alt="" coords="423,56,568,83"/>
+<area shape="rect" id="node5" href="$vmx_8h.html#a6e0cb34c77519a9be4432b4dd4ec11b4" title=" " alt="" coords="677,81,748,108"/>
+<area shape="rect" id="node7" href="$vmx__ops_8h.html#a198aa5b47d2f8b64a9c6d5ea159502f6" title=" " alt="" coords="847,275,931,301"/>
+<area shape="rect" id="node8" href="$capabilities_8h.html#aad8cda1e232b068225cbc32ca3ed10f2" title=" " alt="" coords="412,209,579,250"/>
+<area shape="rect" id="node9" href="$vmx__ops_8h.html#a633dfeedd30f0bb1e5246981be0f0b1f" title=" " alt="" coords="424,275,567,301"/>
+<area shape="rect" id="node10" href="$capabilities_8h.html#ac9bf3b6a07ed0b6a205392e17b2810db" title=" " alt="" coords="629,209,796,250"/>
+<area shape="rect" id="node11" href="$vmx__ops_8h.html#abda6652dab0e1ad1c726eebe17547425" title=" " alt="" coords="627,275,799,301"/>
+<area shape="rect" id="node12" href="$vmx__ops_8h.html#ac0ce4f4d155003fcdafebaa03c482c7b" title=" " alt="" coords="627,325,798,352"/>
+</map>

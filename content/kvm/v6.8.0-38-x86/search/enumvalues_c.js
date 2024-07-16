@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['vmcb_5fasid_10442',['VMCB_ASID',['../svm_8h.html#a39fca1837c5ce7715cbf571669660c13ace538c75028034c3e121fd96a0bdaf64',1,'svm.h']]],
+  ['vmcb_5favic_10443',['VMCB_AVIC',['../svm_8h.html#a39fca1837c5ce7715cbf571669660c13a3d33483aba8bab1af6c7a3a56141cd8f',1,'svm.h']]],
+  ['vmcb_5fcr_10444',['VMCB_CR',['../svm_8h.html#a39fca1837c5ce7715cbf571669660c13a4c1bf85b59430883fd2a9f4eebbac975',1,'svm.h']]],
+  ['vmcb_5fcr2_10445',['VMCB_CR2',['../svm_8h.html#a39fca1837c5ce7715cbf571669660c13ac328b9fd73e1b9d219f9890f938509e1',1,'svm.h']]],
+  ['vmcb_5fdr_10446',['VMCB_DR',['../svm_8h.html#a39fca1837c5ce7715cbf571669660c13ac7c020c96383ecc6a3d358e1fdd99be7',1,'svm.h']]],
+  ['vmcb_5fdt_10447',['VMCB_DT',['../svm_8h.html#a39fca1837c5ce7715cbf571669660c13a1c1bbe2afa896e3b5fc2f2d850eb41b3',1,'svm.h']]],
+  ['vmcb_5fintercepts_10448',['VMCB_INTERCEPTS',['../svm_8h.html#a39fca1837c5ce7715cbf571669660c13aa5c3bcc8811c26fdc5e7cda9a9b213e1',1,'svm.h']]],
+  ['vmcb_5fintr_10449',['VMCB_INTR',['../svm_8h.html#a39fca1837c5ce7715cbf571669660c13a47e03f1935e6feea250cf3d13fa4c71e',1,'svm.h']]],
+  ['vmcb_5flbr_10450',['VMCB_LBR',['../svm_8h.html#a39fca1837c5ce7715cbf571669660c13a7ffead4bb2fd939a3b453692fdc4664a',1,'svm.h']]],
+  ['vmcb_5fnpt_10451',['VMCB_NPT',['../svm_8h.html#a39fca1837c5ce7715cbf571669660c13a7c9727e792c945164c49fbd9793c4e97',1,'svm.h']]],
+  ['vmcb_5fperm_5fmap_10452',['VMCB_PERM_MAP',['../svm_8h.html#a39fca1837c5ce7715cbf571669660c13a0b96a6cb7dc2eb2f1e2471f9fdfa6972',1,'svm.h']]],
+  ['vmcb_5fseg_10453',['VMCB_SEG',['../svm_8h.html#a39fca1837c5ce7715cbf571669660c13ab13d3c949ef62a4213fe70e2ed836b91',1,'svm.h']]],
+  ['vmcb_5fsw_10454',['VMCB_SW',['../svm_8h.html#a39fca1837c5ce7715cbf571669660c13aadb6ebcdeea82b3c1ad950e8e2433d8c',1,'svm.h']]],
+  ['vmcs_5ffield_5fwidth_5fnatural_5fwidth_10455',['VMCS_FIELD_WIDTH_NATURAL_WIDTH',['../vmcs_8h.html#a76e91d483d1431726776ab694f34c584a5719b12c86c1c79c18a1e34da2a92922',1,'vmcs.h']]],
+  ['vmcs_5ffield_5fwidth_5fu16_10456',['VMCS_FIELD_WIDTH_U16',['../vmcs_8h.html#a76e91d483d1431726776ab694f34c584a522f4ee8e65662e769032371f9eb7390',1,'vmcs.h']]],
+  ['vmcs_5ffield_5fwidth_5fu32_10457',['VMCS_FIELD_WIDTH_U32',['../vmcs_8h.html#a76e91d483d1431726776ab694f34c584a31954c529ef33883fee0c34c2cfbcb7b',1,'vmcs.h']]],
+  ['vmcs_5ffield_5fwidth_5fu64_10458',['VMCS_FIELD_WIDTH_U64',['../vmcs_8h.html#a76e91d483d1431726776ab694f34c584a87b10897ba2a40a78b5010c349d66914',1,'vmcs.h']]],
+  ['vmx_5fbitmap_5fnr_10459',['VMX_BITMAP_NR',['../vmx_2nested_8c.html#af715e26dfffd1f8de1c18449e2770cffa9a2d55aff0588a394d75afdc0bd73111',1,'nested.c']]],
+  ['vmx_5fvmread_5fbitmap_10460',['VMX_VMREAD_BITMAP',['../vmx_2nested_8c.html#af715e26dfffd1f8de1c18449e2770cffa2d62ba9ca55f5e0d14d6705f3c37de91',1,'nested.c']]],
+  ['vmx_5fvmwrite_5fbitmap_10461',['VMX_VMWRITE_BITMAP',['../vmx_2nested_8c.html#af715e26dfffd1f8de1c18449e2770cffaa5f26d56405e0205f199e0c498e829c8',1,'nested.c']]]
+];

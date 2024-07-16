@@ -1,0 +1,6 @@
+<map id="kvm_pit_set_reinject" name="kvm_pit_set_reinject">
+<area shape="rect" id="node1" title=" " alt="" coords="5,64,164,91"/>
+<area shape="rect" id="node2" href="$i8254_8c.html#ae2e061e06e6f24f6abb8d5c9f25117e7" title=" " alt="" coords="214,5,385,32"/>
+<area shape="rect" id="node3" href="$irq__comm_8c.html#aa0e8495c42bef0a27d11e33d57141a78" title=" " alt="" coords="212,57,387,98"/>
+<area shape="rect" id="node4" href="$irq__comm_8c.html#ab7342d01a08ebc59d23dc42d7feceaac" title=" " alt="" coords="225,122,373,163"/>
+</map>

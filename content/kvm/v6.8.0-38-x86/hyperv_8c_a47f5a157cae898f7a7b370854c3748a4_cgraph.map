@@ -1,0 +1,10 @@
+<map id="kvm_hv_synic_send_eoi" name="kvm_hv_synic_send_eoi">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,185,108"/>
+<area shape="rect" id="node2" href="$hyperv_8c.html#a7432d42dbbd06907d83cbe1cf9479295" title=" " alt="" coords="233,31,428,57"/>
+<area shape="rect" id="node7" href="$hyperv_8c.html#af4c599ff6e5b1b327daf618845547c0d" title=" " alt="" coords="249,81,412,108"/>
+<area shape="rect" id="node8" href="$hyperv_8c.html#a5ea15c685a7e3e1abca91772c3cc3a52" title=" " alt="" coords="269,132,392,159"/>
+<area shape="rect" id="node3" href="$hyperv_8c.html#a88a2493dc6ffeea51c4325f080d797d4" title=" " alt="" coords="476,31,640,57"/>
+<area shape="rect" id="node4" href="$kvm__main_8c.html#ac82f28c95da4a0cc137c5a37f08d1f44" title=" " alt="" coords="688,31,811,57"/>
+<area shape="rect" id="node5" href="$x86_8c.html#a42500cdc8706ebf4fa3ec21645530097" title=" " alt="" coords="859,5,1067,32"/>
+<area shape="rect" id="node6" href="$kvm__main_8c.html#ad9f0140eebcdef9a9ebae54431d2fba5" title=" " alt="" coords="886,56,1039,83"/>
+</map>

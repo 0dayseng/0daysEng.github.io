@@ -1,0 +1,16 @@
+<map id="hv_check_msr_access" name="hv_check_msr_access">
+<area shape="rect" id="node1" title=" " alt="" coords="841,119,1008,145"/>
+<area shape="rect" id="node2" href="$hyperv_8c.html#acd3e0dad98bde91068115067f6ec3ae6" title=" " alt="" coords="646,43,781,69"/>
+<area shape="rect" id="node7" href="$hyperv_8c.html#ad5361485ecad0a70e99567d541738000" title=" " alt="" coords="633,93,793,120"/>
+<area shape="rect" id="node8" href="$hyperv_8c.html#adbfbc91bbdd19f529b4489eb1d8e1ec7" title=" " alt="" coords="647,144,780,171"/>
+<area shape="rect" id="node14" href="$hyperv_8c.html#ab932fdee37432b09f988174935dfa876" title=" " alt="" coords="634,195,793,221"/>
+<area shape="rect" id="node3" href="$hyperv_8c.html#a23d197f9ae27f820fa7e977aec518698" title=" " alt="" coords="387,49,585,76"/>
+<area shape="rect" id="node4" href="$x86_8c.html#a0e93cb5e88dc8c07d9357181a3a7b2e9" title=" " alt="" coords="164,49,339,76"/>
+<area shape="rect" id="node5" href="$svm_8c.html#a091db4f6d8d0fc811fdd6d9b2a775889" title=" " alt="" coords="5,5,116,32"/>
+<area shape="rect" id="node6" href="$vmx_8c.html#ab6b2c94ee2868acf5be3ac9b3e02e441" title=" " alt="" coords="5,56,116,83"/>
+<area shape="rect" id="node9" href="$hyperv_8c.html#ab6a097fa5ccc00cb31061629a4e3e2f7" title=" " alt="" coords="387,169,585,196"/>
+<area shape="rect" id="node10" href="$x86_8c.html#aec2b7dd73668f030b4e2f8d8815d7299" title=" " alt="" coords="164,169,339,196"/>
+<area shape="rect" id="node11" href="$svm_8c.html#acb46126747f78036462437a7bcdc2e47" title=" " alt="" coords="20,119,101,145"/>
+<area shape="rect" id="node12" href="$svm_8c.html#aac18b9094154a2c8b8e27c3b08c9e359" title=" " alt="" coords="6,169,115,196"/>
+<area shape="rect" id="node13" href="$vmx_8c.html#a0fb610ce041405729e4296dfc871c30e" title=" " alt="" coords="5,220,116,247"/>
+</map>

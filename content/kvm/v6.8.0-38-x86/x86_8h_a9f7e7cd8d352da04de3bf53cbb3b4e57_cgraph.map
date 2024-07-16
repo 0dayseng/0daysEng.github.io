@@ -1,0 +1,7 @@
+<map id="kvm_register_read" name="kvm_register_read">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,149,57"/>
+<area shape="rect" id="node2" href="$x86_8h.html#ada9d5e605374059a5e34c42817ed5118" title=" " alt="" coords="223,5,347,32"/>
+<area shape="rect" id="node4" href="$kvm__cache__regs_8h.html#a5d9eb0563cffb1e3ed1cccebabcf2df6" title=" " alt="" coords="197,56,372,83"/>
+<area shape="rect" id="node3" href="$x86_8h.html#aad3ee550e50892e0e340061479bb284d" title=" " alt="" coords="461,5,573,32"/>
+<area shape="rect" id="node5" href="$kvm__cache__regs_8h.html#a6b9ea8c019490183db2a81569aad2bf9" title=" " alt="" coords="420,56,613,83"/>
+</map>

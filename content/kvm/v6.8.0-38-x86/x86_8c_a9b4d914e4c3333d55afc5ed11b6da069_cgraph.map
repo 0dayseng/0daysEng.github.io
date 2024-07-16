@@ -1,0 +1,10 @@
+<map id="__get_regs" name="__get_regs">
+<area shape="rect" id="node1" title=" " alt="" coords="5,97,97,123"/>
+<area shape="rect" id="node2" href="$emulate_8c.html#ae463087a32d7421c94af455abb2a9bff" title=" " alt="" coords="145,5,297,47"/>
+<area shape="rect" id="node4" href="$x86_8c.html#aeca964de04721f39e3ec34f195707b5c" title=" " alt="" coords="160,71,283,98"/>
+<area shape="rect" id="node5" href="$kvm__cache__regs_8h.html#ad97ff6b975b461b815e6749d29c65446" title=" " alt="" coords="166,122,277,149"/>
+<area shape="rect" id="node8" href="$kvm__cache__regs_8h.html#a30f9ca7e6fd08d1cf123f57fbfba01c7" title=" " alt="" coords="164,173,279,199"/>
+<area shape="rect" id="node3" href="$emulate_8c.html#a068063f5fe57c50016d23ff322851f29" title=" " alt="" coords="357,13,508,39"/>
+<area shape="rect" id="node6" href="$kvm__cache__regs_8h.html#a5d9eb0563cffb1e3ed1cccebabcf2df6" title=" " alt="" coords="345,147,520,174"/>
+<area shape="rect" id="node7" href="$kvm__cache__regs_8h.html#a6b9ea8c019490183db2a81569aad2bf9" title=" " alt="" coords="568,147,761,174"/>
+</map>

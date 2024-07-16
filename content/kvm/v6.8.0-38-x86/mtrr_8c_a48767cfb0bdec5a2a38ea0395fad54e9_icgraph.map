@@ -1,0 +1,14 @@
+<map id="var_mtrr_msr_to_range" name="var_mtrr_msr_to_range">
+<area shape="rect" id="node1" title=" " alt="" coords="804,95,979,121"/>
+<area shape="rect" id="node2" href="$mtrr_8c.html#a81a164c2615ef1c0fc231d71e5ba9a53" title=" " alt="" coords="609,44,756,71"/>
+<area shape="rect" id="node6" href="$mtrr_8c.html#ae76247135f576f78a7740ff82f92b10c" title=" " alt="" coords="614,95,751,121"/>
+<area shape="rect" id="node12" href="$mtrr_8c.html#aca604775fbcfad49bfaf9441fc2253dc" title=" " alt="" coords="631,145,734,172"/>
+<area shape="rect" id="node3" href="$x86_8c.html#a0e93cb5e88dc8c07d9357181a3a7b2e9" title=" " alt="" coords="387,44,561,71"/>
+<area shape="rect" id="node4" href="$svm_8c.html#a091db4f6d8d0fc811fdd6d9b2a775889" title=" " alt="" coords="196,5,307,32"/>
+<area shape="rect" id="node5" href="$vmx_8c.html#ab6b2c94ee2868acf5be3ac9b3e02e441" title=" " alt="" coords="196,56,307,83"/>
+<area shape="rect" id="node7" href="$mtrr_8c.html#a2b95f238c68e317e64e57d06f2a698dd" title=" " alt="" coords="401,120,547,147"/>
+<area shape="rect" id="node8" href="$x86_8c.html#aec2b7dd73668f030b4e2f8d8815d7299" title=" " alt="" coords="164,120,339,147"/>
+<area shape="rect" id="node9" href="$svm_8c.html#acb46126747f78036462437a7bcdc2e47" title=" " alt="" coords="20,69,101,96"/>
+<area shape="rect" id="node10" href="$svm_8c.html#aac18b9094154a2c8b8e27c3b08c9e359" title=" " alt="" coords="6,120,115,147"/>
+<area shape="rect" id="node11" href="$vmx_8c.html#a0fb610ce041405729e4296dfc871c30e" title=" " alt="" coords="5,171,116,197"/>
+</map>

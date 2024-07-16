@@ -1,0 +1,12 @@
+<map id="emulator_pio_in" name="emulator_pio_in">
+<area shape="rect" id="node1" title=" " alt="" coords="873,56,1000,83"/>
+<area shape="rect" id="node2" href="$x86_8c.html#aedfacc5790d6f8911ae27e43085ca44d" title=" " alt="" coords="629,5,825,32"/>
+<area shape="rect" id="node3" href="$x86_8c.html#a2f1d4ffd4a4c779d93b2d1bdd9a2f668" title=" " alt="" coords="663,56,792,83"/>
+<area shape="rect" id="node7" href="$x86_8c.html#a4bb05cc4f2b01054d01e1947197a74c9" title=" " alt="" coords="663,107,792,133"/>
+<area shape="rect" id="node4" href="$x86_8c.html#a111cda267d4f974b03b6bb159c136c80" title=" " alt="" coords="411,56,521,83"/>
+<area shape="rect" id="node5" href="$vmx_8c.html#aa7cfba4207d0e1e93c9257e5ea0ae384" title=" " alt="" coords="195,56,280,83"/>
+<area shape="rect" id="node6" href="$svm_8c.html#a73e8f5db4571aa9511e75f30e939fe89" title=" " alt="" coords="5,132,124,159"/>
+<area shape="rect" id="node8" href="$x86_8c.html#a7174438319d810240ac051141ea5b435" title=" " alt="" coords="351,107,581,133"/>
+<area shape="rect" id="node9" href="$x86_8c.html#ac4b95013b15c215fb1fcfd251d2e006d" title=" " alt="" coords="383,157,549,184"/>
+<area shape="rect" id="node10" href="$sev_8c.html#a8381dc2e2d38fd331490bbb2fd097d0a" title=" " alt="" coords="172,157,303,184"/>
+</map>

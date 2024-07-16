@@ -1,0 +1,7 @@
+<map id="nested_vmx_cr_fixed1_bits_update" name="nested_vmx_cr_fixed1_bits_update">
+<area shape="rect" id="node1" title=" " alt="" coords="5,57,172,98"/>
+<area shape="rect" id="node2" href="$cpuid_8c.html#aae0475609eefc48bb151ef5a631670c0" title=" " alt="" coords="220,5,385,32"/>
+<area shape="rect" id="node4" href="$cpuid_8c.html#a638557b30255883157acafa55a351d0d" title=" " alt="" coords="220,57,385,98"/>
+<area shape="rect" id="node5" href="$vmx_8h.html#a6e0cb34c77519a9be4432b4dd4ec11b4" title=" " alt="" coords="267,123,338,149"/>
+<area shape="rect" id="node3" href="$cpuid_8c.html#a7220f0f9a6d0047aef7619e272fa9518" title=" " alt="" coords="433,35,571,61"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="intel_pmu_is_valid_lbr_msr" name="intel_pmu_is_valid_lbr_msr">
+<area shape="rect" id="node1" title=" " alt="" coords="5,23,149,65"/>
+<area shape="rect" id="node2" href="$vmx_8h.html#aaf2d6801dce444c2f2592a0942780f59" title=" " alt="" coords="197,5,385,32"/>
+<area shape="rect" id="node3" href="$vmx_8h.html#a499f1757999ae37f448bbadf72448fa4" title=" " alt="" coords="433,31,585,57"/>
+<area shape="rect" id="node4" href="$vmx_8h.html#aa3f9a4735e6ff00497c0086664b433bd" title=" " alt="" coords="633,31,768,57"/>
+<area shape="rect" id="node5" href="$vmx_8h.html#a6e0cb34c77519a9be4432b4dd4ec11b4" title=" " alt="" coords="816,31,887,57"/>
+</map>

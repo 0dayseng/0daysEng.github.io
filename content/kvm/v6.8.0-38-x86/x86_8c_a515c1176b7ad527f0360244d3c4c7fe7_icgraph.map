@@ -1,0 +1,9 @@
+<map id="kvm_vcpu_write_tsc_multiplier" name="kvm_vcpu_write_tsc_multiplier">
+<area shape="rect" id="node1" title=" " alt="" coords="803,23,957,65"/>
+<area shape="rect" id="node2" href="$x86_8c.html#a098b65a22d64b11ce2fce2d6bc44b57d" title=" " alt="" coords="473,31,608,57"/>
+<area shape="rect" id="node7" href="$x86_8c.html#a5f7d3bdcde9b397a9b49cc25c6929b90" title=" " alt="" coords="656,56,755,83"/>
+<area shape="rect" id="node3" href="$x86_8c.html#ae2ebf37d8daf1a8b43a9823bae4ab32b" title=" " alt="" coords="253,5,425,32"/>
+<area shape="rect" id="node5" href="$x86_8c.html#ab4ac4d44dfa1ed8985130249d6a8385e" title=" " alt="" coords="260,56,419,83"/>
+<area shape="rect" id="node4" href="$kvm__main_8c.html#ab8870469dadfadf9a204346c62016293" title=" " alt="" coords="5,5,205,32"/>
+<area shape="rect" id="node6" href="$kvm__main_8c.html#a2f2d3734c4cf61a1f4f94e9d47c37d55" title=" " alt="" coords="43,56,167,83"/>
+</map>

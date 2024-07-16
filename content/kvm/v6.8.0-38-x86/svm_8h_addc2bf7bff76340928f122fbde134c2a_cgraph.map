@@ -1,0 +1,12 @@
+<map id="svm_set_x2apic_msr_interception" name="svm_set_x2apic_msr_interception">
+<area shape="rect" id="node1" title=" " alt="" coords="5,187,164,229"/>
+<area shape="rect" id="node2" href="$svm_8c.html#ae7cebb5bd1d0e7eadb2b7df90cca0c74" title=" " alt="" coords="212,195,371,221"/>
+<area shape="rect" id="node3" href="$svm_8c.html#a7baa0f9e5f7d38e8ed066a4b8a61c09a" title=" " alt="" coords="437,137,596,178"/>
+<area shape="rect" id="node10" href="$svm_8c.html#a1ffde811cc7743857dbb3175beda4aa2" title=" " alt="" coords="419,224,615,251"/>
+<area shape="rect" id="node4" href="$x86_8c.html#aea310c0e4f695bd1c6b5d96aa1dbd940" title=" " alt="" coords="694,5,835,32"/>
+<area shape="rect" id="node5" href="$svm__onhyperv_8h.html#aa8051536beeae65d3e4645edd68850ae" title=" " alt="" coords="663,57,867,98"/>
+<area shape="rect" id="node6" href="$svm_8c.html#a35438091c40e77c617ce2ec9d521cc1f" title=" " alt="" coords="691,123,838,149"/>
+<area shape="rect" id="node7" href="$svm_8h.html#a83e420c88631faf9613ea3caa72c63b7" title=" " alt="" coords="729,224,800,251"/>
+<area shape="rect" id="node8" href="$svm_8c.html#a48f427ed9696201e388996df7ceccb9e" title=" " alt="" coords="689,173,840,200"/>
+<area shape="rect" id="node9" href="$svm_8c.html#a6a3d076f98c7c25a44d90f49f0fca2c3" title=" " alt="" coords="915,224,1088,251"/>
+</map>

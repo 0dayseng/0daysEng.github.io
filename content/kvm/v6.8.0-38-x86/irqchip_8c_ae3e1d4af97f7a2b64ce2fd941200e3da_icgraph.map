@@ -1,0 +1,11 @@
+<map id="kvm_irq_map_chip_pin" name="kvm_irq_map_chip_pin">
+<area shape="rect" id="node1" title=" " alt="" coords="843,31,1015,57"/>
+<area shape="rect" id="node2" href="$irq__comm_8c.html#a99beb5255d7cb8ee3604817b893f903a" title=" " alt="" coords="612,31,795,57"/>
+<area shape="rect" id="node3" href="$ioapic_8c.html#ac3a8acd4438c4c2163edbe2d634b7934" title=" " alt="" coords="407,5,564,32"/>
+<area shape="rect" id="node5" href="$i8259_8c.html#a23bf40906f1f0a0a84ce4af0956a8b2a" title=" " alt="" coords="422,56,549,83"/>
+<area shape="rect" id="node4" href="$ioapic_8c.html#a9e41d37256b6c8c3c80df1a752d66fbe" title=" " alt="" coords="212,5,359,32"/>
+<area shape="rect" id="node6" href="$i8259_8c.html#ad3cc418e9d82e9cca43e01425f76b366" title=" " alt="" coords="233,56,338,83"/>
+<area shape="rect" id="node7" href="$i8259_8c.html#a1dc9bd64afa719e7b8253ee3db6fa85b" title=" " alt="" coords="17,5,153,32"/>
+<area shape="rect" id="node8" href="$i8259_8c.html#af278e56bd6082ee3f6573cf2e4f23543" title=" " alt="" coords="5,56,164,83"/>
+<area shape="rect" id="node9" href="$i8259_8c.html#a64b171826283830f6a0b3ed866b7931c" title=" " alt="" coords="11,107,158,133"/>
+</map>

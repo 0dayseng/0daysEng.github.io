@@ -1,0 +1,12 @@
+<map id="cpu_has_vmx_invvpid_single" name="cpu_has_vmx_invvpid_single">
+<area shape="rect" id="node1" title=" " alt="" coords="996,61,1163,102"/>
+<area shape="rect" id="node2" href="$vmx_8c.html#a7cacd86bbd7f4ae2b8c9e5e8568fa5e4" title=" " alt="" coords="5,21,132,48"/>
+<area shape="rect" id="node3" href="$vmx__ops_8h.html#a633dfeedd30f0bb1e5246981be0f0b1f" title=" " alt="" coords="805,119,948,145"/>
+<area shape="rect" id="node4" href="$vmx_2nested_8c.html#a82fdee7a11d269320b0b30e836910587" title=" " alt="" coords="410,51,531,77"/>
+<area shape="rect" id="node6" href="$vmx_8c.html#af3ac981365567f8e3f172ebb9b42febe" title=" " alt="" coords="591,93,757,120"/>
+<area shape="rect" id="node7" href="$vmx_8c.html#a6786a4e65e41efe753494499fcb24d60" title=" " alt="" coords="596,144,752,171"/>
+<area shape="rect" id="node8" href="$vmx_8c.html#a8d0fa5e317cbd0eb67ebdc9fa5ec70ce" title=" " alt="" coords="609,195,739,221"/>
+<area shape="rect" id="node9" href="$vmx__ops_8h.html#a051e82ff3b9bda098b30ed26fac8cec0" title=" " alt="" coords="593,245,755,272"/>
+<area shape="rect" id="node5" href="$vmx_2nested_8c.html#a77ca924cd23ac875ea48b1f181f33000" title=" " alt="" coords="180,43,351,85"/>
+<area shape="rect" id="node10" href="$vmx_8c.html#a9d5440a92246b3cd5e85d72f0a284488" title=" " alt="" coords="399,245,543,272"/>
+</map>

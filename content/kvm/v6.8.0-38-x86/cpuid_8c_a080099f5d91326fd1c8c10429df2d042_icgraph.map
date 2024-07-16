@@ -1,0 +1,8 @@
+<map id="kvm_cpu_cap_init_kvm_defined" name="kvm_cpu_cap_init_kvm_defined">
+<area shape="rect" id="node1" title=" " alt="" coords="601,23,776,65"/>
+<area shape="rect" id="node2" href="$cpuid_8c.html#ac4b31e077b5a352bd48a541ad53e3162" title=" " alt="" coords="408,31,553,57"/>
+<area shape="rect" id="node3" href="$svm_8c.html#ab2ed2d9e233f1c6a1a3c806826d63401" title=" " alt="" coords="215,5,359,32"/>
+<area shape="rect" id="node5" href="$vmx_8c.html#ad6f2c2fa1ea6270fe1b55ad7e770db38" title=" " alt="" coords="215,56,360,83"/>
+<area shape="rect" id="node4" href="$svm_8c.html#aa4cdf4791105d54ebcadfeafdcdf01ac" title=" " alt="" coords="5,5,167,32"/>
+<area shape="rect" id="node6" href="$vmx_8c.html#a7cacd86bbd7f4ae2b8c9e5e8568fa5e4" title=" " alt="" coords="23,56,149,83"/>
+</map>

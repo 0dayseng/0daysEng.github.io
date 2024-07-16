@@ -1,0 +1,11 @@
+<map id="kvm_noncoherent_dma_assignment_start_or_stop" name="kvm_noncoherent_dma_assignment_start_or_stop">
+<area shape="rect" id="node1" title=" " alt="" coords="1135,49,1332,90"/>
+<area shape="rect" id="node2" href="$x86_8c.html#a541cd35068f221456141f8798a1ab7c9" title=" " alt="" coords="820,27,1087,53"/>
+<area shape="rect" id="node9" href="$x86_8c.html#aab788793558a6c5c0cdc2e3ec840ebf6" title=" " alt="" coords="874,78,1033,119"/>
+<area shape="rect" id="node3" href="$vfio_8c.html#a0f8a9bc6a328c121266b7bedf8ccbe28" title=" " alt="" coords="564,56,772,83"/>
+<area shape="rect" id="node4" href="$vfio_8c.html#a72ebd436cdee24ef38504201f2d8552c" title=" " alt="" coords="376,5,516,32"/>
+<area shape="rect" id="node7" href="$vfio_8c.html#a69f95fca834d8d52cbb826dec545bbb9" title=" " alt="" coords="378,56,514,83"/>
+<area shape="rect" id="node8" href="$vfio_8c.html#a0f0458c9f09300055baa0c892a2fbc29" title=" " alt="" coords="377,107,515,133"/>
+<area shape="rect" id="node5" href="$vfio_8c.html#a8ad4a98a112c210e854931feaef8bd63" title=" " alt="" coords="192,31,328,57"/>
+<area shape="rect" id="node6" href="$vfio_8c.html#a6e1f4ba2cd918c03e22262aa0019af12" title=" " alt="" coords="5,31,144,57"/>
+</map>

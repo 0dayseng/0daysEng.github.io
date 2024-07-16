@@ -1,0 +1,8 @@
+<map id="string_registers_quirk" name="string_registers_quirk">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,168,83"/>
+<area shape="rect" id="node2" href="$kvm__emulate_8h.html#acf507dd4c3c036fe6afe7c2cf211fd8c" title=" " alt="" coords="228,5,307,32"/>
+<area shape="rect" id="node4" href="$kvm__emulate_8h.html#a6765223c3d699954a57bfb199c37130d" title=" " alt="" coords="407,56,490,83"/>
+<area shape="rect" id="node5" href="$emulate_8c.html#a1900e2ae78a8a8c9adb4af8e539b819e" title=" " alt="" coords="216,107,319,133"/>
+<area shape="rect" id="node3" href="$kvm__emulate_8h.html#a9d631fd28ae4e5d15e41e15ea2f92b3a" title=" " alt="" coords="409,5,488,32"/>
+<area shape="rect" id="node6" href="$kvm__emulate_8h.html#a61f034a07a99eee07bf2588db4d89494" title=" " alt="" coords="367,107,531,133"/>
+</map>

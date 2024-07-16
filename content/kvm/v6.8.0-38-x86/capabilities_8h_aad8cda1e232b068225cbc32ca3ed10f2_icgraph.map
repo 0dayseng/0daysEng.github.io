@@ -1,0 +1,8 @@
+<map id="cpu_has_vmx_invvpid_individual_addr" name="cpu_has_vmx_invvpid_individual_addr">
+<area shape="rect" id="node1" title=" " alt="" coords="800,31,967,72"/>
+<area shape="rect" id="node2" href="$vmx__ops_8h.html#a051e82ff3b9bda098b30ed26fac8cec0" title=" " alt="" coords="591,38,752,65"/>
+<area shape="rect" id="node3" href="$vmx_2nested_8c.html#a82fdee7a11d269320b0b30e836910587" title=" " alt="" coords="410,13,531,39"/>
+<area shape="rect" id="node6" href="$vmx_8c.html#a9d5440a92246b3cd5e85d72f0a284488" title=" " alt="" coords="399,63,543,90"/>
+<area shape="rect" id="node4" href="$vmx_2nested_8c.html#a77ca924cd23ac875ea48b1f181f33000" title=" " alt="" coords="180,5,351,47"/>
+<area shape="rect" id="node5" href="$vmx_8c.html#a7cacd86bbd7f4ae2b8c9e5e8568fa5e4" title=" " alt="" coords="5,13,132,39"/>
+</map>

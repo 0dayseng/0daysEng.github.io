@@ -1,0 +1,11 @@
+<map id="copy_vmcs12_to_shadow" name="copy_vmcs12_to_shadow">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,193,133"/>
+<area shape="rect" id="node2" href="$vmx__ops_8h.html#abd38efcacf0b873c6e9ca1f940f39008" title=" " alt="" coords="254,5,369,32"/>
+<area shape="rect" id="node3" href="$nested_8h.html#a65c62b59f6be374d9da24feaef363497" title=" " alt="" coords="261,56,362,83"/>
+<area shape="rect" id="node5" href="$vmcs12_8h.html#ac28c20c69d1b722359c36df6651d40ec" title=" " alt="" coords="241,107,381,133"/>
+<area shape="rect" id="node6" href="$vmx__ops_8h.html#adefc7dc8e1885fe973b3e8d58e23e0aa" title=" " alt="" coords="263,157,359,184"/>
+<area shape="rect" id="node7" href="$vmx__ops_8h.html#a33ef2cd0708406b39123ddd368eeb996" title=" " alt="" coords="265,208,357,235"/>
+<area shape="rect" id="node4" href="$vmx_8h.html#a6e0cb34c77519a9be4432b4dd4ec11b4" title=" " alt="" coords="475,56,545,83"/>
+<area shape="rect" id="node8" href="$vmx__onhyperv_8h.html#ae52cbc37c9ad5d2d3ce269912ae976da" title=" " alt="" coords="460,183,560,209"/>
+<area shape="rect" id="node9" href="$vmx__onhyperv_8h.html#ab35d8d7479c3c62d461012dcabc04b11" title=" " alt="" coords="429,233,591,260"/>
+</map>

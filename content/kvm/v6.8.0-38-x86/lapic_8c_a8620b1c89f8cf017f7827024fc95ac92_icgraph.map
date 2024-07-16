@@ -1,0 +1,7 @@
+<map id="kvm_intr_is_single_vcpu_fast" name="kvm_intr_is_single_vcpu_fast">
+<area shape="rect" id="node1" title=" " alt="" coords="632,23,776,65"/>
+<area shape="rect" id="node2" href="$irq__comm_8c.html#a6de5d9a13302fceb034b8d75b4c787e2" title=" " alt="" coords="401,31,584,57"/>
+<area shape="rect" id="node3" href="$avic_8c.html#a24f70312b475fe0e0858ee3cc7e3af71" title=" " alt="" coords="212,5,344,32"/>
+<area shape="rect" id="node5" href="$posted__intr_8c.html#ac8a6413833d1c0eecbd77d4e6c7ab484" title=" " alt="" coords="203,56,353,83"/>
+<area shape="rect" id="node4" href="$avic_8c.html#a3a8b145ddec7a3dc1367a4e4e0df397e" title=" " alt="" coords="5,5,155,32"/>
+</map>

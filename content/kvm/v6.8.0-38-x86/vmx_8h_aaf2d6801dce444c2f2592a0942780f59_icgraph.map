@@ -1,0 +1,12 @@
+<map id="intel_pmu_lbr_is_enabled" name="intel_pmu_lbr_is_enabled">
+<area shape="rect" id="node1" title=" " alt="" coords="673,123,861,149"/>
+<area shape="rect" id="node2" href="$pmu__intel_8c.html#aebec0fe217b3fa5a80715120eb39a341" title=" " alt="" coords="433,5,603,32"/>
+<area shape="rect" id="node3" href="$pmu__intel_8c.html#a8bff30f14b582aa13a6a9263d09ff44b" title=" " alt="" coords="446,57,590,98"/>
+<area shape="rect" id="node8" href="$vmx_8c.html#a906eacca38431629c007c813de2ee658" title=" " alt="" coords="411,123,625,149"/>
+<area shape="rect" id="node9" href="$vmx_8c.html#a0fb610ce041405729e4296dfc871c30e" title=" " alt="" coords="226,148,337,175"/>
+<area shape="rect" id="node10" href="$vmx_8c.html#a909291866931c22138fd3ba80f0a7651" title=" " alt="" coords="459,224,577,251"/>
+<area shape="rect" id="node4" href="$pmu__intel_8c.html#a732847faae93b3f95f904168b42add71" title=" " alt="" coords="211,19,351,45"/>
+<area shape="rect" id="node5" href="$pmu__intel_8c.html#aa518f17a337585c3c6e12c054c2cec59" title=" " alt="" coords="200,70,363,111"/>
+<area shape="rect" id="node6" href="$pmu__intel_8c.html#a7bb7e7c2288534cee8bdee7f3c05126e" title=" " alt="" coords="5,52,152,79"/>
+<area shape="rect" id="node7" href="$pmu__intel_8c.html#aa0eaa27ec4bacea0eb28d3055fb3d4b8" title=" " alt="" coords="5,103,152,129"/>
+</map>

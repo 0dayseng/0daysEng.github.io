@@ -1,0 +1,8 @@
+<map id="mark_mmio_spte" name="mark_mmio_spte">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,141,57"/>
+<area shape="rect" id="node2" href="$spte_8c.html#ae55574ff3b0384504236d8fb85a3a6d0" title=" " alt="" coords="189,5,328,32"/>
+<area shape="rect" id="node4" href="$mmu_8c.html#a9943be93aca53a3193bd9e7d289290bd" title=" " alt="" coords="199,56,318,83"/>
+<area shape="rect" id="node3" href="$spte_8c.html#a941485cd3f9578fdfff7474df672b8e4" title=" " alt="" coords="376,5,591,32"/>
+<area shape="rect" id="node5" href="$mmu_8c.html#af19b3539f6ed07ed97e87a790f246ce8" title=" " alt="" coords="438,56,529,83"/>
+<area shape="rect" id="node6" href="$spte_8h.html#a7d73c1cb0114320b9dab8ba78033c686" title=" " alt="" coords="396,107,571,133"/>
+</map>

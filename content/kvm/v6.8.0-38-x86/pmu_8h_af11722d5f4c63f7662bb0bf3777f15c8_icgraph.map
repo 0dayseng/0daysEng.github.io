@@ -1,0 +1,9 @@
+<map id="reprogram_counters" name="reprogram_counters">
+<area shape="rect" id="node1" title=" " alt="" coords="581,31,735,57"/>
+<area shape="rect" id="node2" href="$pmu__intel_8c.html#aa0eaa27ec4bacea0eb28d3055fb3d4b8" title=" " alt="" coords="387,5,533,32"/>
+<area shape="rect" id="node3" href="$pmu_8c.html#a57bb9e9b63066a1ad4b7e8096b7e7cf9" title=" " alt="" coords="387,56,533,83"/>
+<area shape="rect" id="node4" href="$x86_8c.html#aec2b7dd73668f030b4e2f8d8815d7299" title=" " alt="" coords="164,56,339,83"/>
+<area shape="rect" id="node5" href="$svm_8c.html#acb46126747f78036462437a7bcdc2e47" title=" " alt="" coords="20,5,101,32"/>
+<area shape="rect" id="node6" href="$svm_8c.html#aac18b9094154a2c8b8e27c3b08c9e359" title=" " alt="" coords="6,56,115,83"/>
+<area shape="rect" id="node7" href="$vmx_8c.html#a0fb610ce041405729e4296dfc871c30e" title=" " alt="" coords="5,107,116,133"/>
+</map>

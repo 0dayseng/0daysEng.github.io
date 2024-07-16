@@ -1,0 +1,8 @@
+<map id="kvm_arch_irq_routing_update" name="kvm_arch_irq_routing_update">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,168,47"/>
+<area shape="rect" id="node2" href="$hyperv_8c.html#ac38cebb511b3d7873742792be281ff18" title=" " alt="" coords="216,5,367,47"/>
+<area shape="rect" id="node3" href="$hyperv_8c.html#ae4d51aac4ca695bacfd85543cef77376" title=" " alt="" coords="415,13,573,39"/>
+<area shape="rect" id="node4" href="$hyperv_8c.html#a39e065846fd9cf408369c44732509335" title=" " alt="" coords="621,13,705,39"/>
+<area shape="rect" id="node5" href="$hyperv_8c.html#ad543db70c1ec04720c89b624e4655229" title=" " alt="" coords="753,13,900,39"/>
+<area shape="rect" id="node6" href="$hyperv_8h.html#a019002089f0480b30c26cf6997c8fe37" title=" " alt="" coords="948,13,1109,39"/>
+</map>

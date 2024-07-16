@@ -1,0 +1,8 @@
+<map id="alloc_shadow_vmcs" name="alloc_shadow_vmcs">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,157,83"/>
+<area shape="rect" id="node2" href="$vmx_8h.html#a31f4e36482819bc92965589b265b9be6" title=" " alt="" coords="206,5,301,32"/>
+<area shape="rect" id="node5" href="$vmx_8h.html#a6e0cb34c77519a9be4432b4dd4ec11b4" title=" " alt="" coords="218,56,289,83"/>
+<area shape="rect" id="node6" href="$vmx__ops_8h.html#adefc7dc8e1885fe973b3e8d58e23e0aa" title=" " alt="" coords="205,107,301,133"/>
+<area shape="rect" id="node3" href="$vmx_8h.html#aaed5367f4fedc1d1bc3d6b140bf0f2da" title=" " alt="" coords="349,5,475,32"/>
+<area shape="rect" id="node4" href="$vmx__onhyperv_8h.html#ab35d8d7479c3c62d461012dcabc04b11" title=" " alt="" coords="523,5,684,32"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="__kvm_migrate_timers" name="__kvm_migrate_timers">
+<area shape="rect" id="node1" title=" " alt="" coords="5,147,177,173"/>
+<area shape="rect" id="node2" href="$irq_8h.html#accb9eec870235e61feeef31a7c0a6084" title=" " alt="" coords="241,110,399,151"/>
+<area shape="rect" id="node8" href="$i8254_8c.html#a4afc15024a8240a701ba1a0117a41775" title=" " alt="" coords="225,176,415,203"/>
+<area shape="rect" id="node3" href="$lapic_8c.html#ad7790e6f84a1592b5298b2da79a633a9" title=" " alt="" coords="463,70,621,111"/>
+<area shape="rect" id="node7" href="$lapic_8h.html#a1d8c9378fcbf62390a89dc3b7f0bdbd4" title=" " alt="" coords="896,132,1015,159"/>
+<area shape="rect" id="node4" href="$x86_8h.html#ace4ed625ac4852e54db110fde28d3231" title=" " alt="" coords="690,5,827,32"/>
+<area shape="rect" id="node5" href="$x86_8h.html#a8a31c0c01a5fe5dc33f7c5675ba4d376" title=" " alt="" coords="678,56,839,83"/>
+<area shape="rect" id="node6" href="$lapic_8h.html#a3af346d02eebff16886d49d3810b5358" title=" " alt="" coords="669,107,848,133"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="kvm_machine_check" name="kvm_machine_check">
+<area shape="rect" id="node1" title=" " alt="" coords="455,56,613,83"/>
+<area shape="rect" id="node2" href="$vmx_8c.html#a6d0db88868b73d46e5509d4d0bebb3ec" title=" " alt="" coords="228,5,407,32"/>
+<area shape="rect" id="node4" href="$svm_8c.html#af1c9d228af74c8b5f794a4babc5d465b" title=" " alt="" coords="249,56,385,83"/>
+<area shape="rect" id="node6" href="$vmx_8c.html#a909291866931c22138fd3ba80f0a7651" title=" " alt="" coords="259,107,376,133"/>
+<area shape="rect" id="node3" href="$vmx_8c.html#ad674cc8f7dfb181ace5f76dded311f63" title=" " alt="" coords="5,5,180,32"/>
+<area shape="rect" id="node5" href="$svm_8c.html#a5d2703bd914c4ae4fcb1eb83c208b085" title=" " alt="" coords="35,56,151,83"/>
+</map>

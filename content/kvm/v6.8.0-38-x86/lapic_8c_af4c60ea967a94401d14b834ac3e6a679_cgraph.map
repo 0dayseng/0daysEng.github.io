@@ -1,0 +1,8 @@
+<map id="kvm_use_posted_timer_interrupt" name="kvm_use_posted_timer_interrupt">
+<area shape="rect" id="node1" title=" " alt="" coords="5,49,180,90"/>
+<area shape="rect" id="node2" href="$lapic_8c.html#ad7790e6f84a1592b5298b2da79a633a9" title=" " alt="" coords="228,49,387,90"/>
+<area shape="rect" id="node3" href="$x86_8h.html#ace4ed625ac4852e54db110fde28d3231" title=" " alt="" coords="455,5,593,32"/>
+<area shape="rect" id="node4" href="$x86_8h.html#a8a31c0c01a5fe5dc33f7c5675ba4d376" title=" " alt="" coords="443,56,605,83"/>
+<area shape="rect" id="node5" href="$lapic_8h.html#a3af346d02eebff16886d49d3810b5358" title=" " alt="" coords="435,107,613,133"/>
+<area shape="rect" id="node6" href="$lapic_8h.html#a1d8c9378fcbf62390a89dc3b7f0bdbd4" title=" " alt="" coords="661,107,780,133"/>
+</map>

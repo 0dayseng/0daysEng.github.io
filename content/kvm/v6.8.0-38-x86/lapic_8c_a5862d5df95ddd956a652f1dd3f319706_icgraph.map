@@ -1,0 +1,9 @@
+<map id="kvm_apic_state_fixup" name="kvm_apic_state_fixup">
+<area shape="rect" id="node1" title=" " alt="" coords="785,46,949,73"/>
+<area shape="rect" id="node2" href="$lapic_8c.html#a623f02f0875b0883fd65e82c565c9a18" title=" " alt="" coords="584,17,737,43"/>
+<area shape="rect" id="node6" href="$lapic_8c.html#a4768d4990380510ec220c3e510d32598" title=" " alt="" coords="585,71,737,98"/>
+<area shape="rect" id="node3" href="$x86_8c.html#aca5ab82fb669f6a99e011293efed0d5d" title=" " alt="" coords="384,5,536,47"/>
+<area shape="rect" id="node4" href="$x86_8c.html#ab4ac4d44dfa1ed8985130249d6a8385e" title=" " alt="" coords="177,46,336,73"/>
+<area shape="rect" id="node5" href="$kvm__main_8c.html#a2f2d3734c4cf61a1f4f94e9d47c37d55" title=" " alt="" coords="5,46,129,73"/>
+<area shape="rect" id="node7" href="$x86_8c.html#a4426192bd0d8288db892f9fcbf4577b9" title=" " alt="" coords="385,71,535,112"/>
+</map>

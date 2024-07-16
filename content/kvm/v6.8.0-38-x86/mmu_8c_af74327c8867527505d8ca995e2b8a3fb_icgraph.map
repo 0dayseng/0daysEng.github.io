@@ -1,0 +1,6 @@
+<map id="kvm_mmu_unprotect_page_virt" name="kvm_mmu_unprotect_page_virt">
+<area shape="rect" id="node1" title=" " alt="" coords="449,31,679,57"/>
+<area shape="rect" id="node2" href="$mmu_8c.html#a4d6f2ec540cbdb86e2594df2e4d453c2" title=" " alt="" coords="223,31,401,57"/>
+<area shape="rect" id="node3" href="$vmx_8c.html#a7a38ddbd01bec99bf94ab4868ad4c6ea" title=" " alt="" coords="5,5,175,32"/>
+<area shape="rect" id="node4" href="$svm_8c.html#a589e870c8a06d1ba26f24da299e47b95" title=" " alt="" coords="30,56,150,83"/>
+</map>

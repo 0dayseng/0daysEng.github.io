@@ -1,0 +1,11 @@
+<map id="kvm_make_vcpus_request_mask" name="kvm_make_vcpus_request_mask">
+<area shape="rect" id="node1" title=" " alt="" coords="889,71,1128,98"/>
+<area shape="rect" id="node2" href="$pfncache_8c.html#a630a53d012932e7f305703169fe7e8c0" title=" " alt="" coords="633,5,841,47"/>
+<area shape="rect" id="node3" href="$hyperv_8c.html#a9ff462f663c5b81608332c950959101c" title=" " alt="" coords="669,71,805,98"/>
+<area shape="rect" id="node7" href="$x86_8c.html#a245627c533902eb126d1b2153ffee1ed" title=" " alt="" coords="649,123,826,164"/>
+<area shape="rect" id="node4" href="$hyperv_8c.html#ac96f1fa9ec6ac0ac26c24ca65cc1547e" title=" " alt="" coords="436,71,577,98"/>
+<area shape="rect" id="node5" href="$x86_8c.html#abc413db5ba414fb0a89e7ffc1fb81e60" title=" " alt="" coords="5,50,184,77"/>
+<area shape="rect" id="node6" href="$xen_8c.html#aaf398a8803a79984b06fbf9e2a64193c" title=" " alt="" coords="232,75,380,102"/>
+<area shape="rect" id="node8" href="$ioapic_8c.html#ac3a8acd4438c4c2163edbe2d634b7934" title=" " alt="" coords="428,130,585,157"/>
+<area shape="rect" id="node9" href="$ioapic_8c.html#a9e41d37256b6c8c3c80df1a752d66fbe" title=" " alt="" coords="233,130,379,157"/>
+</map>

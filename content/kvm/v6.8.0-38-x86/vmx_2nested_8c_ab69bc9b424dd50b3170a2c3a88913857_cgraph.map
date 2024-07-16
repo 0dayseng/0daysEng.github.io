@@ -1,0 +1,13 @@
+<map id="nested_vmx_get_vmcs01_guest_efer" name="nested_vmx_get_vmcs01_guest_efer">
+<area shape="rect" id="node1" title=" " alt="" coords="5,125,193,166"/>
+<area shape="rect" id="node2" href="$capabilities_8h.html#a72419f3f04d86aae14d6dbdbc6073cb2" title=" " alt="" coords="241,81,420,108"/>
+<area shape="rect" id="node3" href="$vmx__ops_8h.html#a2088262a71496c55f21ddab30c364663" title=" " alt="" coords="276,132,385,159"/>
+<area shape="rect" id="node10" href="$vmx_8c.html#a938b0ca5314d7ac2f8549065a4444df9" title=" " alt="" coords="257,208,404,235"/>
+<area shape="rect" id="node4" href="$vmx__ops_8h.html#a4e53c9e55e0e6a94f7304f0f672e1168" title=" " alt="" coords="510,31,621,57"/>
+<area shape="rect" id="node7" href="$vmx__onhyperv_8h.html#ab02646b06f78249d1315b2affdeb6572" title=" " alt="" coords="507,81,624,108"/>
+<area shape="rect" id="node8" href="$vmx__onhyperv_8h.html#ab35d8d7479c3c62d461012dcabc04b11" title=" " alt="" coords="485,132,646,159"/>
+<area shape="rect" id="node9" href="$vmx__ops_8h.html#a482358473ceab579ad9c93b46e13fe25" title=" " alt="" coords="506,183,625,209"/>
+<area shape="rect" id="node5" href="$x86_8c.html#aa600a8b690e74e45d1ce6b590b74a60b" title=" " alt="" coords="711,5,861,32"/>
+<area shape="rect" id="node6" href="$vmx__ops_8h.html#a5bd8b5279566f5cedece56ca03955271" title=" " alt="" coords="731,56,841,83"/>
+<area shape="rect" id="node11" href="$x86_8c.html#a0ee58c2f580a2b01aaa9534feb15bcc8" title=" " alt="" coords="468,233,663,260"/>
+</map>

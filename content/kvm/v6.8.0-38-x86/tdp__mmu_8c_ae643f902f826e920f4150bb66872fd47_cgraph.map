@@ -1,0 +1,7 @@
+<map id="kvm_tdp_mmu_get_vcpu_root_hpa" name="kvm_tdp_mmu_get_vcpu_root_hpa">
+<area shape="rect" id="node1" title=" " alt="" coords="5,74,192,115"/>
+<area shape="rect" id="node2" href="$mmu__internal_8h.html#a5334557775f77a151865c95f1cd224ac" title=" " alt="" coords="248,5,413,32"/>
+<area shape="rect" id="node3" href="$tdp__mmu_8h.html#ae8fe85fef7c2fb884cd2d27810a84d0b" title=" " alt="" coords="240,56,421,83"/>
+<area shape="rect" id="node4" href="$tdp__mmu_8c.html#aab91e6aa4615cd9bf4f66141ca34642b" title=" " alt="" coords="259,107,403,133"/>
+<area shape="rect" id="node5" href="$tdp__mmu_8c.html#a8d6f094dd9ef458c1c57aee653afd602" title=" " alt="" coords="263,157,398,184"/>
+</map>

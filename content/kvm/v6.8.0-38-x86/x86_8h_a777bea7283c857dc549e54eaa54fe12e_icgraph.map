@@ -1,0 +1,11 @@
+<map id="kvm_register_write" name="kvm_register_write">
+<area shape="rect" id="node1" title=" " alt="" coords="569,107,717,133"/>
+<area shape="rect" id="node2" href="$svm_8c.html#ad1887c4bb9c78c577fb20a129d73ea41" title=" " alt="" coords="401,5,519,32"/>
+<area shape="rect" id="node4" href="$svm_8c.html#a84f2d3e5d602af563ab58693bf87db77" title=" " alt="" coords="400,56,520,83"/>
+<area shape="rect" id="node5" href="$vmx_8c.html#aa55ace9429e6e94042e6602716222805" title=" " alt="" coords="417,107,503,133"/>
+<area shape="rect" id="node6" href="$vmx_8c.html#a2a3c6dbf484f2cb8256f87f8a6713e0d" title=" " alt="" coords="417,157,503,184"/>
+<area shape="rect" id="node7" href="$vmx_2nested_8c.html#a3fe22c3468a281d231b3554bdc8ab9d2" title=" " alt="" coords="399,208,521,235"/>
+<area shape="rect" id="node3" href="$svm_8c.html#af2ee2a03530f5b7a02a127d8b779d2ae" title=" " alt="" coords="182,5,349,32"/>
+<area shape="rect" id="node8" href="$vmx_2nested_8c.html#a77ca924cd23ac875ea48b1f181f33000" title=" " alt="" coords="180,201,351,242"/>
+<area shape="rect" id="node9" href="$vmx_8c.html#a7cacd86bbd7f4ae2b8c9e5e8568fa5e4" title=" " alt="" coords="5,208,132,235"/>
+</map>

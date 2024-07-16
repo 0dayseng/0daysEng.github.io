@@ -1,0 +1,10 @@
+<map id="kvm_emulate_wrmsr" name="kvm_emulate_wrmsr">
+<area shape="rect" id="node1" title=" " alt="" coords="848,31,1008,57"/>
+<area shape="rect" id="node2" href="$vmx_8c.html#a23ea2316b60c27a2c00f924b983a46e9" title=" " alt="" coords="652,5,800,32"/>
+<area shape="rect" id="node4" href="$svm_8c.html#a173c3f7c02a4287d140cc0f34564a7bd" title=" " alt="" coords="660,56,792,83"/>
+<area shape="rect" id="node3" href="$vmx_8c.html#a6ee5de3518ff2c2c20b1c1a0e17b2f1e" title=" " alt="" coords="443,5,577,32"/>
+<area shape="rect" id="node5" href="$svm_8c.html#a8afafecae406016532810194f187fe2c" title=" " alt="" coords="416,56,604,83"/>
+<area shape="rect" id="node6" href="$sev_8c.html#aac550422551b71c0afe8efe176e0b55d" title=" " alt="" coords="5,27,163,53"/>
+<area shape="rect" id="node7" href="$sev_8c.html#ae483e70b55c68f5a2405263543ce3737" title=" " alt="" coords="211,49,368,90"/>
+<area shape="rect" id="node8" href="$svm_8c.html#a3f8983432f4aae138a6f4d167c561132" title=" " alt="" coords="223,115,356,141"/>
+</map>

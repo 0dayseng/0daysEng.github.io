@@ -1,0 +1,5 @@
+<map id="apic_mmio_in_range" name="apic_mmio_in_range">
+<area shape="rect" id="node1" title=" " alt="" coords="188,31,345,57"/>
+<area shape="rect" id="node2" href="$lapic_8c.html#a18976a1e591c223c2aec9c52711c6da1" title=" " alt="" coords="7,5,138,32"/>
+<area shape="rect" id="node3" href="$lapic_8c.html#a58177b5add54a17bfa81e2a1049f324e" title=" " alt="" coords="5,56,140,83"/>
+</map>

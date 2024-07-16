@@ -1,0 +1,9 @@
+<map id="avic_vcpu_unblocking" name="avic_vcpu_unblocking">
+<area shape="rect" id="node1" title=" " alt="" coords="5,97,171,123"/>
+<area shape="rect" id="node2" href="$avic_8c.html#a7decdbafc7d47b2241e68ce3c90a9779" title=" " alt="" coords="247,71,369,98"/>
+<area shape="rect" id="node6" href="$lapic_8h.html#a3af346d02eebff16886d49d3810b5358" title=" " alt="" coords="219,122,397,149"/>
+<area shape="rect" id="node3" href="$avic_8c.html#a7b088623e16cec4875e37d8ce15231b2" title=" " alt="" coords="445,5,637,47"/>
+<area shape="rect" id="node5" href="$svm_8h.html#a83e420c88631faf9613ea3caa72c63b7" title=" " alt="" coords="741,71,811,98"/>
+<area shape="rect" id="node4" href="$x86_8c.html#ae63567e9b665b34f8c84fc4dc594f3c8" title=" " alt="" coords="685,5,867,47"/>
+<area shape="rect" id="node7" href="$lapic_8h.html#a1d8c9378fcbf62390a89dc3b7f0bdbd4" title=" " alt="" coords="482,122,601,149"/>
+</map>

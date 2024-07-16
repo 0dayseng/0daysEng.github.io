@@ -1,0 +1,8 @@
+<map id="kvm_apic_clear_irr" name="kvm_apic_clear_irr">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,151,83"/>
+<area shape="rect" id="node2" href="$lapic_8c.html#ad2b5e2187414c65e1a5876e641fee3fc" title=" " alt="" coords="199,56,308,83"/>
+<area shape="rect" id="node3" href="$lapic_8c.html#aebc526fc8720e4db45143f8e05f85c79" title=" " alt="" coords="366,5,522,32"/>
+<area shape="rect" id="node4" href="$lapic_8c.html#a734e8a2b56a9a0b0d9117f20f2bb0fc1" title=" " alt="" coords="580,31,700,57"/>
+<area shape="rect" id="node6" href="$lapic_8h.html#ada4d7479e3c0f2e45cb1565dab78c198" title=" " alt="" coords="356,107,532,133"/>
+<area shape="rect" id="node5" href="$lapic_8c.html#a656567b4197d9a5af833ffd04dff7a52" title=" " alt="" coords="748,31,897,57"/>
+</map>

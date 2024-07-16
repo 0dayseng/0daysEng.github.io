@@ -1,0 +1,8 @@
+<map id="kvm_pic_reset" name="kvm_pic_reset">
+<area shape="rect" id="node1" title=" " alt="" coords="540,56,657,83"/>
+<area shape="rect" id="node2" href="$i8259_8c.html#a23bf40906f1f0a0a84ce4af0956a8b2a" title=" " alt="" coords="365,56,492,83"/>
+<area shape="rect" id="node3" href="$i8259_8c.html#ad3cc418e9d82e9cca43e01425f76b366" title=" " alt="" coords="212,56,317,83"/>
+<area shape="rect" id="node4" href="$i8259_8c.html#a1dc9bd64afa719e7b8253ee3db6fa85b" title=" " alt="" coords="17,5,153,32"/>
+<area shape="rect" id="node5" href="$i8259_8c.html#af278e56bd6082ee3f6573cf2e4f23543" title=" " alt="" coords="5,56,164,83"/>
+<area shape="rect" id="node6" href="$i8259_8c.html#a64b171826283830f6a0b3ed866b7931c" title=" " alt="" coords="11,107,158,133"/>
+</map>

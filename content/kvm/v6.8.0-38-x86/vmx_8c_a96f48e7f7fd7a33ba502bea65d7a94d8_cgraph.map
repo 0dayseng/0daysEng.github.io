@@ -1,0 +1,10 @@
+<map id="vmx_disable_intercept_for_msr" name="vmx_disable_intercept_for_msr">
+<area shape="rect" id="node1" title=" " alt="" coords="5,125,176,166"/>
+<area shape="rect" id="node2" href="$capabilities_8h.html#ab417100ad999a4402c4b0698ada5dc9b" title=" " alt="" coords="224,5,420,32"/>
+<area shape="rect" id="node3" href="$vmx_8c.html#a5742d1df3fb94e98dd1a0f0443b529a4" title=" " alt="" coords="227,56,417,83"/>
+<area shape="rect" id="node4" href="$vmx_8c.html#aa4973cf70be6e2559648a74eab4987a5" title=" " alt="" coords="468,74,631,115"/>
+<area shape="rect" id="node5" href="$x86_8c.html#aea310c0e4f695bd1c6b5d96aa1dbd940" title=" " alt="" coords="251,157,393,184"/>
+<area shape="rect" id="node6" href="$vmx_8h.html#a6e0cb34c77519a9be4432b4dd4ec11b4" title=" " alt="" coords="287,208,357,235"/>
+<area shape="rect" id="node7" href="$vmx_8c.html#a4322412ccf65775174621cab858dd234" title=" " alt="" coords="241,259,403,301"/>
+<area shape="rect" id="node8" href="$vmx__onhyperv_8h.html#ab35d8d7479c3c62d461012dcabc04b11" title=" " alt="" coords="469,267,630,293"/>
+</map>

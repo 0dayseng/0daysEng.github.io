@@ -1,0 +1,7 @@
+<map id="guest_cpuid_is_amd_or_hygon" name="guest_cpuid_is_amd_or_hygon">
+<area shape="rect" id="node1" title=" " alt="" coords="5,49,160,90"/>
+<area shape="rect" id="node2" href="$kvm__emulate_8h.html#aaeb0a87b097a9164d79418139514f852" title=" " alt="" coords="213,5,377,32"/>
+<area shape="rect" id="node3" href="$kvm__emulate_8h.html#a1d708985e548ee4ce6eee808a31d279c" title=" " alt="" coords="208,56,383,83"/>
+<area shape="rect" id="node4" href="$cpuid_8h.html#aae0475609eefc48bb151ef5a631670c0" title=" " alt="" coords="213,107,378,133"/>
+<area shape="rect" id="node5" href="$cpuid_8c.html#a7220f0f9a6d0047aef7619e272fa9518" title=" " alt="" coords="431,107,568,133"/>
+</map>

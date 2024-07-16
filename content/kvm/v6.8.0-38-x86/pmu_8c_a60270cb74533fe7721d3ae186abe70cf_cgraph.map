@@ -1,0 +1,12 @@
+<map id="pmc_reprogram_counter" name="pmc_reprogram_counter">
+<area shape="rect" id="node1" title=" " alt="" coords="5,120,187,147"/>
+<area shape="rect" id="node2" href="$pmu_8c.html#a0dfdc8c282e60a0489c293fd55042a63" title=" " alt="" coords="247,19,393,45"/>
+<area shape="rect" id="node4" href="$cpuid_8h.html#aa35dee13971a1366be933e974552a02d" title=" " alt="" coords="243,95,397,121"/>
+<area shape="rect" id="node8" href="$pmu_8c.html#adf51e227c09a4555706e68dfef0bd9b4" title=" " alt="" coords="247,145,393,172"/>
+<area shape="rect" id="node10" href="$pmu_8c.html#a549329c4cc36f4a3eea06c25c0d68f6c" title=" " alt="" coords="235,197,405,238"/>
+<area shape="rect" id="node3" href="$pmu_8h.html#aab3e4e18d6f095fb645e7eede49e33fe" title=" " alt="" coords="481,5,591,32"/>
+<area shape="rect" id="node5" href="$kvm__emulate_8h.html#a61f034a07a99eee07bf2588db4d89494" title=" " alt="" coords="454,56,618,83"/>
+<area shape="rect" id="node6" href="$cpuid_8h.html#aae0475609eefc48bb151ef5a631670c0" title=" " alt="" coords="453,107,619,133"/>
+<area shape="rect" id="node7" href="$cpuid_8c.html#a7220f0f9a6d0047aef7619e272fa9518" title=" " alt="" coords="667,107,804,133"/>
+<area shape="rect" id="node9" href="$pmu_8c.html#ac96b6a4c5e4fd6e55dc63e08dc1afaa5" title=" " alt="" coords="455,157,617,184"/>
+</map>

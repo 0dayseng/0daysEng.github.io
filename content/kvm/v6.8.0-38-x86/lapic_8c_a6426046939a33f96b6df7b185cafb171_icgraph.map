@@ -1,0 +1,10 @@
+<map id="kvm_apic_calc_nr_lvt_entries" name="kvm_apic_calc_nr_lvt_entries">
+<area shape="rect" id="node1" title=" " alt="" coords="843,35,1005,76"/>
+<area shape="rect" id="node2" href="$lapic_8c.html#a200be826b3634c1b5a377464f35d540f" title=" " alt="" coords="645,5,795,47"/>
+<area shape="rect" id="node6" href="$lapic_8c.html#a1d54fd094860a96cad1af17c18f6904c" title=" " alt="" coords="651,71,789,98"/>
+<area shape="rect" id="node3" href="$x86_8c.html#a10dfde66dc94e352514570cc4a2beaa2" title=" " alt="" coords="434,5,589,47"/>
+<area shape="rect" id="node4" href="$x86_8c.html#ab4ac4d44dfa1ed8985130249d6a8385e" title=" " alt="" coords="198,13,357,39"/>
+<area shape="rect" id="node5" href="$kvm__main_8c.html#a2f2d3734c4cf61a1f4f94e9d47c37d55" title=" " alt="" coords="5,13,129,39"/>
+<area shape="rect" id="node7" href="$x86_8c.html#ae2ebf37d8daf1a8b43a9823bae4ab32b" title=" " alt="" coords="425,71,597,98"/>
+<area shape="rect" id="node8" href="$kvm__main_8c.html#ab8870469dadfadf9a204346c62016293" title=" " alt="" coords="177,71,377,98"/>
+</map>

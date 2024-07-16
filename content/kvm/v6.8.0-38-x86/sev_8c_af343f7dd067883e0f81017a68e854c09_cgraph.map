@@ -1,0 +1,8 @@
+<map id="sev_free_vcpu" name="sev_free_vcpu">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,121,83"/>
+<area shape="rect" id="node2" href="$svm_8h.html#a14877439e9d41030cb21612eecc8f3f9" title=" " alt="" coords="412,5,523,32"/>
+<area shape="rect" id="node4" href="$sev_8c.html#abf63e5ae3e1e3c9eb770e330ab3eef8c" title=" " alt="" coords="169,56,364,83"/>
+<area shape="rect" id="node6" href="$svm_8h.html#a83e420c88631faf9613ea3caa72c63b7" title=" " alt="" coords="231,107,302,133"/>
+<area shape="rect" id="node3" href="$svm_8h.html#ac27f6fe2ff4beeb5ad1b11681d0386fd" title=" " alt="" coords="571,31,677,57"/>
+<area shape="rect" id="node5" href="$sev_8c.html#a66cc6caa9f6331de794476e911d4ce53" title=" " alt="" coords="414,56,521,83"/>
+</map>

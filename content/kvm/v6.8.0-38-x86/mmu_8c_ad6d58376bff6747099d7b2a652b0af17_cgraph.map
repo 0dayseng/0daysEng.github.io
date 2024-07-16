@@ -1,0 +1,9 @@
+<map id="is_page_fault_stale" name="is_page_fault_stale">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,153,57"/>
+<area shape="rect" id="node2" href="$mmu_8c.html#a39242ba7b127ebf064de37a1224635cd" title=" " alt="" coords="201,5,320,32"/>
+<area shape="rect" id="node4" href="$spte_8h.html#ab169c1872e98b9731a05121e0439f244" title=" " alt="" coords="215,56,306,83"/>
+<area shape="rect" id="node3" href="$tdp__mmu_8h.html#a166bc9e57a26e8a37e94e2314a72d226" title=" " alt="" coords="397,5,539,32"/>
+<area shape="rect" id="node5" href="$mmu__internal_8h.html#a6491934fd3538f608b4b91245943b6fc" title=" " alt="" coords="368,56,568,83"/>
+<area shape="rect" id="node6" href="$spte_8h.html#af8791b1ec453ef3bce3c87ea28744692" title=" " alt="" coords="403,107,533,133"/>
+<area shape="rect" id="node7" href="$spte_8h.html#a6e93c3ba68ed8b0ab050918d92cf4c6b" title=" " alt="" coords="616,107,747,133"/>
+</map>

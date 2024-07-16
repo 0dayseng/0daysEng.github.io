@@ -1,0 +1,12 @@
+<map id="decode_register_operand" name="decode_register_operand">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,192,108"/>
+<area shape="rect" id="node2" href="$emulate_8c.html#a89a9a73c58e34db136d93e96d54e7ffd" title=" " alt="" coords="263,31,389,57"/>
+<area shape="rect" id="node6" href="$emulate_8c.html#a7149ad1da40f894522c845181f10a3b2" title=" " alt="" coords="240,81,412,108"/>
+<area shape="rect" id="node7" href="$fpu_8h.html#a73cdb612eb08bc0839f129b285a84d43" title=" " alt="" coords="254,132,398,159"/>
+<area shape="rect" id="node3" href="$kvm__emulate_8h.html#acf507dd4c3c036fe6afe7c2cf211fd8c" title=" " alt="" coords="496,31,575,57"/>
+<area shape="rect" id="node4" href="$kvm__emulate_8h.html#a9d631fd28ae4e5d15e41e15ea2f92b3a" title=" " alt="" coords="661,5,739,32"/>
+<area shape="rect" id="node5" href="$kvm__emulate_8h.html#a6765223c3d699954a57bfb199c37130d" title=" " alt="" coords="659,56,741,83"/>
+<area shape="rect" id="node8" href="$fpu_8h.html#a375990afb05a66b6d0065caddba483d2" title=" " alt="" coords="460,81,611,108"/>
+<area shape="rect" id="node9" href="$fpu_8h.html#a2514ccbd6a3b8f96ca0307530915fa45" title=" " alt="" coords="482,132,589,159"/>
+<area shape="rect" id="node10" href="$fpu_8h.html#ac70bd52036ada7a5e322012bf6ca672e" title=" " alt="" coords="482,183,589,209"/>
+</map>

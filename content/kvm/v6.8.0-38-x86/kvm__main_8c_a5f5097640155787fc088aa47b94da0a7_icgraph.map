@@ -1,0 +1,6 @@
+<map id="kvm_sched_out" name="kvm_sched_out">
+<area shape="rect" id="node1" title=" " alt="" coords="259,31,383,57"/>
+<area shape="rect" id="node2" href="$kvm__main_8c.html#a2372c616bc55bc4cd3446660cb7322fc" title=" " alt="" coords="132,31,211,57"/>
+<area shape="rect" id="node3" href="$svm_8c.html#aa667b0a0f202f83aa1533825aeecb402" title=" " alt="" coords="5,5,84,32"/>
+<area shape="rect" id="node4" href="$vmx_8c.html#aa8f62a8c3a5a5da29c69565d2645a371" title=" " alt="" coords="5,56,84,83"/>
+</map>

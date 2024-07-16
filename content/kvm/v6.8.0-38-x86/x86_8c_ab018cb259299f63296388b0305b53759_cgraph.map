@@ -1,0 +1,4 @@
+<map id="vcpu_load_eoi_exitmap" name="vcpu_load_eoi_exitmap">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,181,32"/>
+<area shape="rect" id="node2" href="$lapic_8h.html#a1d8660ecbda996b11b10b179013e52d4" title=" " alt="" coords="229,5,400,32"/>
+</map>

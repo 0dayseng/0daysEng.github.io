@@ -1,0 +1,15 @@
+<map id="svm_disable_lbrv" name="svm_disable_lbrv">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,141,108"/>
+<area shape="rect" id="node2" href="$kvm__cache__regs_8h.html#afbcfc413ceedb460734eb5fd7c5c4fbc" title=" " alt="" coords="209,5,329,32"/>
+<area shape="rect" id="node3" href="$svm_8c.html#ae7cebb5bd1d0e7eadb2b7df90cca0c74" title=" " alt="" coords="189,107,348,133"/>
+<area shape="rect" id="node8" href="$svm_8h.html#a83e420c88631faf9613ea3caa72c63b7" title=" " alt="" coords="707,81,777,108"/>
+<area shape="rect" id="node12" href="$svm_8c.html#a06d8a6a899d49f3235ec1294d1943c84" title=" " alt="" coords="209,191,328,217"/>
+<area shape="rect" id="node4" href="$svm_8c.html#a7baa0f9e5f7d38e8ed066a4b8a61c09a" title=" " alt="" coords="415,158,573,199"/>
+<area shape="rect" id="node11" href="$svm_8c.html#a1ffde811cc7743857dbb3175beda4aa2" title=" " alt="" coords="396,107,592,133"/>
+<area shape="rect" id="node5" href="$x86_8c.html#aea310c0e4f695bd1c6b5d96aa1dbd940" title=" " alt="" coords="671,300,813,327"/>
+<area shape="rect" id="node6" href="$svm__onhyperv_8h.html#aa8051536beeae65d3e4645edd68850ae" title=" " alt="" coords="640,133,844,174"/>
+<area shape="rect" id="node7" href="$svm_8c.html#a35438091c40e77c617ce2ec9d521cc1f" title=" " alt="" coords="669,199,815,225"/>
+<area shape="rect" id="node9" href="$svm_8c.html#a48f427ed9696201e388996df7ceccb9e" title=" " alt="" coords="667,249,817,276"/>
+<area shape="rect" id="node10" href="$svm_8c.html#a6a3d076f98c7c25a44d90f49f0fca2c3" title=" " alt="" coords="892,140,1065,167"/>
+<area shape="rect" id="node13" href="$svm_8h.html#ab83edec724698a20d66a086a1900aa27" title=" " alt="" coords="426,224,562,251"/>
+</map>

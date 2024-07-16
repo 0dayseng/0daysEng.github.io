@@ -1,0 +1,13 @@
+<map id="arch/x86/kvm/hyperv.h" name="arch/x86/kvm/hyperv.h">
+<area shape="rect" id="node1" title=" " alt="" coords="82,5,253,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,229,140,256"/>
+<area shape="rect" id="node3" href="$x86_8h.html" title=" " alt="" coords="285,80,343,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="111,155,243,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="267,155,361,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="385,155,501,181"/>
+<area shape="rect" id="node7" href="$kvm__cache__regs_8h.html" title=" " alt="" coords="525,155,668,181"/>
+<area shape="rect" id="node8" href="$kvm__emulate_8h.html" title=" " alt="" coords="692,155,816,181"/>
+<area shape="rect" id="node9" title=" " alt="" coords="630,229,761,256"/>
+<area shape="rect" id="node10" href="$fpu_8h.html" title=" " alt="" coords="785,229,840,256"/>
+<area shape="rect" id="node11" title=" " alt="" coords="757,304,868,331"/>
+</map>

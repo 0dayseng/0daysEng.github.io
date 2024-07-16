@@ -1,0 +1,10 @@
+<map id="vmx_load_eoi_exitmap" name="vmx_load_eoi_exitmap">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,180,108"/>
+<area shape="rect" id="node2" href="$lapic_8h.html#a3af346d02eebff16886d49d3810b5358" title=" " alt="" coords="228,31,407,57"/>
+<area shape="rect" id="node4" href="$vmx__ops_8h.html#adaa0eecfb8c7ab44b2f50999c3f65bd3" title=" " alt="" coords="261,107,374,133"/>
+<area shape="rect" id="node3" href="$lapic_8h.html#a1d8c9378fcbf62390a89dc3b7f0bdbd4" title=" " alt="" coords="476,5,595,32"/>
+<area shape="rect" id="node5" href="$vmx__ops_8h.html#abd38efcacf0b873c6e9ca1f940f39008" title=" " alt="" coords="478,56,593,83"/>
+<area shape="rect" id="node6" href="$vmx__onhyperv_8h.html#ab8d4fdb2c9a0ae33024dd8b9ecf14961" title=" " alt="" coords="475,107,596,133"/>
+<area shape="rect" id="node7" href="$vmx__onhyperv_8h.html#ab35d8d7479c3c62d461012dcabc04b11" title=" " alt="" coords="455,157,616,184"/>
+<area shape="rect" id="node8" href="$vmx__ops_8h.html#a482358473ceab579ad9c93b46e13fe25" title=" " alt="" coords="476,208,595,235"/>
+</map>

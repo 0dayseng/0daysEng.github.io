@@ -1,0 +1,19 @@
+<map id="decode_operand" name="decode_operand">
+<area shape="rect" id="node1" title=" " alt="" coords="5,221,135,248"/>
+<area shape="rect" id="node2" href="$emulate_8c.html#a0ffbbe77429f0da751f72773582fcde7" title=" " alt="" coords="445,44,561,71"/>
+<area shape="rect" id="node4" href="$emulate_8c.html#a5967228b57109b219369a48bc49d0d7f" title=" " alt="" coords="223,399,329,425"/>
+<area shape="rect" id="node5" href="$emulate_8c.html#a89a9a73c58e34db136d93e96d54e7ffd" title=" " alt="" coords="440,247,567,273"/>
+<area shape="rect" id="node6" href="$kvm__emulate_8h.html#acf507dd4c3c036fe6afe7c2cf211fd8c" title=" " alt="" coords="673,196,752,223"/>
+<area shape="rect" id="node7" href="$kvm__emulate_8h.html#a9d631fd28ae4e5d15e41e15ea2f92b3a" title=" " alt="" coords="838,145,917,172"/>
+<area shape="rect" id="node9" href="$emulate_8c.html#ad93e89b64634275947f0bada3d118473" title=" " alt="" coords="183,297,369,324"/>
+<area shape="rect" id="node10" href="$emulate_8c.html#a7149ad1da40f894522c845181f10a3b2" title=" " alt="" coords="417,348,589,375"/>
+<area shape="rect" id="node15" href="$emulate_8c.html#a6d9b80c0fdea346945255943eda47f0d" title=" " alt="" coords="207,44,345,71"/>
+<area shape="rect" id="node16" href="$emulate_8c.html#a48b3d964d84cabe2a69347ed304a9bf4" title=" " alt="" coords="233,449,319,476"/>
+<area shape="rect" id="node17" href="$emulate_8c.html#a01ece99654fcbb83c788192e8f2bdf92" title=" " alt="" coords="211,95,341,121"/>
+<area shape="rect" id="node3" href="$emulate_8c.html#ada20231ab4f3115e348e07192dc25ba6" title=" " alt="" coords="672,44,753,71"/>
+<area shape="rect" id="node8" href="$kvm__emulate_8h.html#a6765223c3d699954a57bfb199c37130d" title=" " alt="" coords="836,196,919,223"/>
+<area shape="rect" id="node11" href="$fpu_8h.html#a73cdb612eb08bc0839f129b285a84d43" title=" " alt="" coords="431,297,575,324"/>
+<area shape="rect" id="node12" href="$fpu_8h.html#a375990afb05a66b6d0065caddba483d2" title=" " alt="" coords="637,297,788,324"/>
+<area shape="rect" id="node13" href="$fpu_8h.html#a2514ccbd6a3b8f96ca0307530915fa45" title=" " alt="" coords="659,348,766,375"/>
+<area shape="rect" id="node14" href="$fpu_8h.html#ac70bd52036ada7a5e322012bf6ca672e" title=" " alt="" coords="659,247,766,273"/>
+</map>

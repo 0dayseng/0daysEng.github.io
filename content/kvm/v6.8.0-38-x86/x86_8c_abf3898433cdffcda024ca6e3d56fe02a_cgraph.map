@@ -1,0 +1,13 @@
+<map id="emulator_read_pmc" name="emulator_read_pmc">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,157,133"/>
+<area shape="rect" id="node2" href="$pmu_8c.html#a96f7387823ea0ac54f3b97b840115f7e" title=" " alt="" coords="205,107,340,133"/>
+<area shape="rect" id="node3" href="$pmu_8c.html#a4c88565f030230abc9f6868e160ac194" title=" " alt="" coords="388,5,583,32"/>
+<area shape="rect" id="node4" href="$kvm__cache__regs_8h.html#a16b29ca8796e3da212a8faf1b2dc7ff3" title=" " alt="" coords="412,56,559,83"/>
+<area shape="rect" id="node7" href="$kvm__cache__regs_8h.html#a2b779657b20f7afa44c0172b1478ac65" title=" " alt="" coords="412,107,559,133"/>
+<area shape="rect" id="node9" href="$pmu_8c.html#a84cfee467e7b4c178df796e28130b717" title=" " alt="" coords="388,157,583,184"/>
+<area shape="rect" id="node10" href="$pmu_8h.html#a9a3e4998b37284d3ccbfd9904c2ff026" title=" " alt="" coords="414,208,557,235"/>
+<area shape="rect" id="node5" href="$kvm__cache__regs_8h.html#a5fbb40e1f7661ccfd5accdaef3d8c378" title=" " alt="" coords="631,56,776,83"/>
+<area shape="rect" id="node6" href="$kvm__cache__regs_8h.html#a6b9ea8c019490183db2a81569aad2bf9" title=" " alt="" coords="824,81,1017,108"/>
+<area shape="rect" id="node8" href="$kvm__cache__regs_8h.html#a24ffc81fe5ed7998e29134351275b4dd" title=" " alt="" coords="631,107,776,133"/>
+<area shape="rect" id="node11" href="$pmu_8h.html#aab3e4e18d6f095fb645e7eede49e33fe" title=" " alt="" coords="648,208,759,235"/>
+</map>

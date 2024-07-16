@@ -1,0 +1,12 @@
+<map id="vmx_update_cr8_intercept" name="vmx_update_cr8_intercept">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,200,133"/>
+<area shape="rect" id="node2" href="$nested_8h.html#a65c62b59f6be374d9da24feaef363497" title=" " alt="" coords="261,5,362,32"/>
+<area shape="rect" id="node3" href="$vmx_8h.html#a6e0cb34c77519a9be4432b4dd4ec11b4" title=" " alt="" coords="468,31,539,57"/>
+<area shape="rect" id="node4" href="$kvm__cache__regs_8h.html#afbcfc413ceedb460734eb5fd7c5c4fbc" title=" " alt="" coords="251,107,371,133"/>
+<area shape="rect" id="node5" href="$nested_8h.html#ae8f95597e49047619366cbf8f1a63449" title=" " alt="" coords="248,157,375,184"/>
+<area shape="rect" id="node6" href="$vmx__ops_8h.html#a2a7e7c5e8ee913ae1811b078174df0c9" title=" " alt="" coords="255,208,368,235"/>
+<area shape="rect" id="node7" href="$vmx__ops_8h.html#abd38efcacf0b873c6e9ca1f940f39008" title=" " alt="" coords="446,132,561,159"/>
+<area shape="rect" id="node8" href="$vmx__onhyperv_8h.html#a76f5e23936d63b1aa1a525e7f4181cf0" title=" " alt="" coords="443,183,564,209"/>
+<area shape="rect" id="node9" href="$vmx__onhyperv_8h.html#ab35d8d7479c3c62d461012dcabc04b11" title=" " alt="" coords="423,233,584,260"/>
+<area shape="rect" id="node10" href="$vmx__ops_8h.html#af5ce3717bbcc96eeddead8b57ac3fa6a" title=" " alt="" coords="444,284,563,311"/>
+</map>

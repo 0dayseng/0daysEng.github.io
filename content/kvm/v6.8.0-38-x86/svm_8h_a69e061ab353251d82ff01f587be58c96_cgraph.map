@@ -1,0 +1,8 @@
+<map id="get_vgif_vmcb" name="get_vgif_vmcb">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,124,57"/>
+<area shape="rect" id="node2" href="$kvm__cache__regs_8h.html#afbcfc413ceedb460734eb5fd7c5c4fbc" title=" " alt="" coords="191,5,311,32"/>
+<area shape="rect" id="node3" href="$svm_8h.html#ad6d8c993934e650cf5366b9883c3628e" title=" " alt="" coords="172,56,329,83"/>
+<area shape="rect" id="node4" href="$cpuid_8h.html#acf67f5848a2ddd59dc852e37bc330390" title=" " alt="" coords="377,56,496,83"/>
+<area shape="rect" id="node5" href="$cpuid_8h.html#a786eea4c1fa59be0155455a72125e0ff" title=" " alt="" coords="783,49,956,90"/>
+<area shape="rect" id="node6" href="$cpuid_8h.html#a72da5444b01d72d935ebc411b99ba166" title=" " alt="" coords="544,81,735,108"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="kvm_mmu_write_protect_pt_masked" name="kvm_mmu_write_protect_pt_masked">
+<area shape="rect" id="node1" title=" " alt="" coords="847,5,1032,47"/>
+<area shape="rect" id="node2" href="$mmu_8c.html#a035ec39ab60e2a3d382c272b15fc83a6" title=" " alt="" coords="620,5,799,47"/>
+<area shape="rect" id="node3" href="$dirty__ring_8c.html#a68052369106191fbc506fdf4d64be449" title=" " alt="" coords="416,13,572,39"/>
+<area shape="rect" id="node4" href="$dirty__ring_8c.html#a33f93cefad4ed59214fb8dbf36de7dd1" title=" " alt="" coords="208,13,368,39"/>
+<area shape="rect" id="node5" href="$kvm__main_8c.html#a91e959c20554917ba05e7feea69acc7c" title=" " alt="" coords="5,5,160,47"/>
+</map>

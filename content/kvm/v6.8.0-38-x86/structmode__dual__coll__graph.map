@@ -1,0 +1,8 @@
+<map id="mode_dual" name="mode_dual">
+<area shape="rect" id="node1" title=" " alt="" coords="221,5,316,32"/>
+<area shape="rect" id="node2" href="$structopcode.html" title=" " alt="" coords="234,109,303,136"/>
+<area shape="rect" id="node3" href="$structgroup__dual.html" title=" " alt="" coords="12,243,106,269"/>
+<area shape="rect" id="node4" href="$structescape.html" title=" " alt="" coords="157,243,225,269"/>
+<area shape="rect" id="node5" href="$structgprefix.html" title=" " alt="" coords="294,243,360,269"/>
+<area shape="rect" id="node6" href="$structinstr__dual.html" title=" " alt="" coords="458,243,545,269"/>
+</map>

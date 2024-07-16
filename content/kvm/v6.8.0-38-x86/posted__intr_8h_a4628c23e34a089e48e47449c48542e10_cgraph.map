@@ -1,0 +1,10 @@
+<map id="vmx_vcpu_pi_load" name="vmx_vcpu_pi_load">
+<area shape="rect" id="node1" title=" " alt="" coords="5,157,148,184"/>
+<area shape="rect" id="node2" href="$lapic_8h.html#a1d8c9378fcbf62390a89dc3b7f0bdbd4" title=" " alt="" coords="216,5,335,32"/>
+<area shape="rect" id="node3" href="$posted__intr_8h.html#a995ed8f05a6c8d760a01879a790df21f" title=" " alt="" coords="213,56,338,83"/>
+<area shape="rect" id="node4" href="$posted__intr_8h.html#a960887fee0be3f97fb308b184c2cc26e" title=" " alt="" coords="233,107,317,133"/>
+<area shape="rect" id="node5" href="$posted__intr_8h.html#a4d61d37502f2351a84d9f4bc5383dfff" title=" " alt="" coords="196,157,355,184"/>
+<area shape="rect" id="node6" href="$posted__intr_8c.html#a7bd4bdbdd2666ca5201891a5d2e2b9a5" title=" " alt="" coords="206,208,345,235"/>
+<area shape="rect" id="node7" href="$vmx_8h.html#a6e0cb34c77519a9be4432b4dd4ec11b4" title=" " alt="" coords="403,284,473,311"/>
+<area shape="rect" id="node8" href="$posted__intr_8c.html#a29a130df5c30666c9b276e44ad8ce750" title=" " alt="" coords="211,309,340,336"/>
+</map>

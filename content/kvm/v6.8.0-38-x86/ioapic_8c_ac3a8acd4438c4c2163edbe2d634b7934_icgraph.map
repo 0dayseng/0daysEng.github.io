@@ -1,0 +1,4 @@
+<map id="ioapic_write_indirect" name="ioapic_write_indirect">
+<area shape="rect" id="node1" title=" " alt="" coords="200,5,357,32"/>
+<area shape="rect" id="node2" href="$ioapic_8c.html#a9e41d37256b6c8c3c80df1a752d66fbe" title=" " alt="" coords="5,5,152,32"/>
+</map>

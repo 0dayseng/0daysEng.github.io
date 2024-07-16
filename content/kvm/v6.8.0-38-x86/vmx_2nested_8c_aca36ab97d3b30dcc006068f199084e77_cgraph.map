@@ -1,0 +1,7 @@
+<map id="vmcs12_save_pending_event" name="vmcs12_save_pending_event">
+<area shape="rect" id="node1" title=" " alt="" coords="5,23,176,65"/>
+<area shape="rect" id="node2" href="$vmcs_8h.html#aa71d1426db4d5b922cc1980f2021f439" title=" " alt="" coords="249,5,370,32"/>
+<area shape="rect" id="node5" href="$x86_8h.html#a441b0296c9e66d1e4f4c554d73a3093e" title=" " alt="" coords="224,56,395,83"/>
+<area shape="rect" id="node3" href="$vmcs_8h.html#a75c6ba6d2d346616d719a67d6472a257" title=" " alt="" coords="443,5,561,32"/>
+<area shape="rect" id="node4" href="$vmcs_8h.html#ad51787cb1a8d3a514735c56f95592636" title=" " alt="" coords="609,5,723,32"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="arch/x86/kvm/vmx/hyperv.h" name="arch/x86/kvm/vmx/hyperv.h">
+<area shape="rect" id="node1" title=" " alt="" coords="514,5,718,32"/>
+<area shape="rect" id="node2" href="$nested_8h.html" title=" " alt="" coords="445,80,649,107"/>
+<area shape="rect" id="node3" href="$vmx_2hyperv_8c.html" title=" " alt="" coords="5,162,208,189"/>
+<area shape="rect" id="node6" href="$vmx_2nested_8c.html" title=" " alt="" coords="641,162,844,189"/>
+<area shape="rect" id="node7" href="$vmx_8c.html" title=" " alt="" coords="869,162,1057,189"/>
+<area shape="rect" id="node4" href="$pmu__intel_8c.html" title=" " alt="" coords="439,155,617,196"/>
+<area shape="rect" id="node5" href="$sgx_8c.html" title=" " alt="" coords="233,162,415,189"/>
+</map>

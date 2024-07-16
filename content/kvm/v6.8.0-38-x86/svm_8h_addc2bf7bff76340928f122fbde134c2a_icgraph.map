@@ -1,0 +1,10 @@
+<map id="svm_set_x2apic_msr_interception" name="svm_set_x2apic_msr_interception">
+<area shape="rect" id="node1" title=" " alt="" coords="788,27,947,69"/>
+<area shape="rect" id="node2" href="$avic_8c.html#a2af29a6a396bb757ac21f02f6aacfdfa" title=" " alt="" coords="580,9,732,36"/>
+<area shape="rect" id="node8" href="$avic_8c.html#ac41a57fe4f855076b5c5718def5bd6d3" title=" " alt="" coords="572,60,740,87"/>
+<area shape="rect" id="node3" href="$avic_8c.html#a40f16bbe281410ac02865ea25c26bf12" title=" " alt="" coords="389,5,509,32"/>
+<area shape="rect" id="node6" href="$avic_8c.html#a51356c24441683c197e1d4c2555da06d" title=" " alt="" coords="373,57,524,98"/>
+<area shape="rect" id="node4" href="$svm_8c.html#aa3d3185c3eece1cf1e99fd5da3ca3181" title=" " alt="" coords="210,5,297,32"/>
+<area shape="rect" id="node5" href="$svm_8c.html#a72a80d54451776cc2794da8564a424fa" title=" " alt="" coords="5,5,133,32"/>
+<area shape="rect" id="node7" href="$avic_8c.html#affcdeac6765016e970e33d6ecff3eebb" title=" " alt="" coords="181,57,325,98"/>
+</map>

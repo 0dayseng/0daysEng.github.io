@@ -1,0 +1,22 @@
+<map id="stimer_prepare_msg" name="stimer_prepare_msg">
+<area shape="rect" id="node1" title=" " alt="" coords="1212,128,1368,155"/>
+<area shape="rect" id="node2" href="$hyperv_8c.html#ad212ee2bcf02cad45e2911fdb7d31861" title=" " alt="" coords="1072,128,1164,155"/>
+<area shape="rect" id="node3" href="$hyperv_8c.html#a6b9b9a8864c87d56aa2c400fa1331b0b" title=" " alt="" coords="884,128,1024,155"/>
+<area shape="rect" id="node4" href="$hyperv_8c.html#a414d75c373184ccacce1b629cc6c1bbe" title=" " alt="" coords="649,7,824,33"/>
+<area shape="rect" id="node8" href="$hyperv_8c.html#a23d197f9ae27f820fa7e977aec518698" title=" " alt="" coords="637,180,836,207"/>
+<area shape="rect" id="node12" href="$hyperv_8c.html#ae6fab392ac98b0916de57de3a122c565" title=" " alt="" coords="658,59,815,101"/>
+<area shape="rect" id="node13" href="$hyperv_8c.html#ab6a097fa5ccc00cb31061629a4e3e2f7" title=" " alt="" coords="638,235,835,261"/>
+<area shape="rect" id="node18" href="$cpuid_8c.html#a0ff60eac33c1bf95a3889674e34251ad" title=" " alt="" coords="677,128,797,155"/>
+<area shape="rect" id="node5" href="$x86_8c.html#acfafdbc1dfaad0bcc468d4b40e286234" title=" " alt="" coords="384,5,589,32"/>
+<area shape="rect" id="node6" href="$x86_8c.html#ab4ac4d44dfa1ed8985130249d6a8385e" title=" " alt="" coords="177,64,336,91"/>
+<area shape="rect" id="node7" href="$kvm__main_8c.html#a2f2d3734c4cf61a1f4f94e9d47c37d55" title=" " alt="" coords="5,64,129,91"/>
+<area shape="rect" id="node9" href="$x86_8c.html#a0e93cb5e88dc8c07d9357181a3a7b2e9" title=" " alt="" coords="399,188,574,215"/>
+<area shape="rect" id="node10" href="$svm_8c.html#a091db4f6d8d0fc811fdd6d9b2a775889" title=" " alt="" coords="201,137,312,164"/>
+<area shape="rect" id="node11" href="$vmx_8c.html#ab6b2c94ee2868acf5be3ac9b3e02e441" title=" " alt="" coords="201,188,312,215"/>
+<area shape="rect" id="node14" href="$x86_8c.html#aec2b7dd73668f030b4e2f8d8815d7299" title=" " alt="" coords="399,264,574,291"/>
+<area shape="rect" id="node15" href="$svm_8c.html#acb46126747f78036462437a7bcdc2e47" title=" " alt="" coords="216,239,297,265"/>
+<area shape="rect" id="node16" href="$svm_8c.html#aac18b9094154a2c8b8e27c3b08c9e359" title=" " alt="" coords="202,289,311,316"/>
+<area shape="rect" id="node17" href="$vmx_8c.html#a0fb610ce041405729e4296dfc871c30e" title=" " alt="" coords="201,340,312,367"/>
+<area shape="rect" id="node19" href="$cpuid_8c.html#a5066ac0b188677d15925709568a91c9d" title=" " alt="" coords="411,57,562,98"/>
+<area shape="rect" id="node20" href="$cpuid_8c.html#ad4dde50a2939106abd2baf99683ac139" title=" " alt="" coords="411,122,562,163"/>
+</map>

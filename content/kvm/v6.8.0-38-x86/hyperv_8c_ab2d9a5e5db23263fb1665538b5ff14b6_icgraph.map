@@ -1,0 +1,9 @@
+<map id="kvm_hv_assist_page_enabled" name="kvm_hv_assist_page_enabled">
+<area shape="rect" id="node1" title=" " alt="" coords="1219,5,1377,47"/>
+<area shape="rect" id="node2" href="$hyperv_8c.html#aaa5103880c8974fff24c9fe923bebf12" title=" " alt="" coords="984,13,1171,39"/>
+<area shape="rect" id="node3" href="$vmx_2hyperv_8c.html#aed058b27cff6167127f714270be5d1e3" title=" " alt="" coords="788,13,936,39"/>
+<area shape="rect" id="node4" href="$vmx_2nested_8c.html#a75838e6f81ab4f3c9c57c9fe1c150c2f" title=" " alt="" coords="573,5,740,47"/>
+<area shape="rect" id="node5" href="$vmx_2nested_8c.html#ad3473bc074c4b59fe28597bd275c7668" title=" " alt="" coords="399,13,525,39"/>
+<area shape="rect" id="node6" href="$vmx_2nested_8c.html#a77ca924cd23ac875ea48b1f181f33000" title=" " alt="" coords="180,5,351,47"/>
+<area shape="rect" id="node7" href="$vmx_8c.html#a7cacd86bbd7f4ae2b8c9e5e8568fa5e4" title=" " alt="" coords="5,13,132,39"/>
+</map>

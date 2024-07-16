@@ -1,0 +1,15 @@
+<map id="nested_sync_vmcs12_to_shadow" name="nested_sync_vmcs12_to_shadow">
+<area shape="rect" id="node1" title=" " alt="" coords="5,251,167,293"/>
+<area shape="rect" id="node2" href="$vmx_2nested_8c.html#a79f91c211f10383b59afbc22986f82f4" title=" " alt="" coords="215,56,429,83"/>
+<area shape="rect" id="node4" href="$vmx_2nested_8c.html#a6913302cb499706580c7efc3f9e8be40" title=" " alt="" coords="228,183,416,209"/>
+<area shape="rect" id="node7" href="$vmx_8h.html#a6e0cb34c77519a9be4432b4dd4ec11b4" title=" " alt="" coords="723,259,793,285"/>
+<area shape="rect" id="node13" href="$vmx_2hyperv_8h.html#a806f1554b2846e31ad5a2e3bfbb272a0" title=" " alt="" coords="227,361,417,402"/>
+<area shape="rect" id="node3" href="$vmx_2hyperv_8h.html#ab8cd0308e0d8ff8bcc08af1e192790c4" title=" " alt="" coords="477,5,629,32"/>
+<area shape="rect" id="node5" href="$vmx__ops_8h.html#abd38efcacf0b873c6e9ca1f940f39008" title=" " alt="" coords="496,157,611,184"/>
+<area shape="rect" id="node6" href="$nested_8h.html#a65c62b59f6be374d9da24feaef363497" title=" " alt="" coords="503,208,604,235"/>
+<area shape="rect" id="node8" href="$vmcs12_8h.html#ac28c20c69d1b722359c36df6651d40ec" title=" " alt="" coords="483,259,623,285"/>
+<area shape="rect" id="node9" href="$vmx__ops_8h.html#adefc7dc8e1885fe973b3e8d58e23e0aa" title=" " alt="" coords="505,56,601,83"/>
+<area shape="rect" id="node10" href="$vmx__ops_8h.html#a33ef2cd0708406b39123ddd368eeb996" title=" " alt="" coords="507,107,599,133"/>
+<area shape="rect" id="node11" href="$vmx__onhyperv_8h.html#ae52cbc37c9ad5d2d3ce269912ae976da" title=" " alt="" coords="708,132,808,159"/>
+<area shape="rect" id="node12" href="$vmx__onhyperv_8h.html#ab35d8d7479c3c62d461012dcabc04b11" title=" " alt="" coords="677,81,839,108"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="read_interrupt_descriptor" name="read_interrupt_descriptor">
+<area shape="rect" id="node1" title=" " alt="" coords="869,31,1056,57"/>
+<area shape="rect" id="node2" href="$emulate_8c.html#a4072a51bbe640dbf8860185d709b1170" title=" " alt="" coords="633,31,821,57"/>
+<area shape="rect" id="node3" href="$emulate_8c.html#acd24acfc7335123b776af97f24d7a47c" title=" " alt="" coords="420,31,585,57"/>
+<area shape="rect" id="node4" href="$x86_8c.html#a2bbfe1f9bc7dbf9d4f69022d69128851" title=" " alt="" coords="237,31,372,57"/>
+<area shape="rect" id="node5" href="$vmx_8c.html#a0c4eb3bfc0efb0cc319b3d4b076b3c84" title=" " alt="" coords="22,5,173,32"/>
+<area shape="rect" id="node6" href="$svm_8c.html#a034d0058215cd4fddf9fbaa460d3faf6" title=" " alt="" coords="5,56,189,83"/>
+</map>

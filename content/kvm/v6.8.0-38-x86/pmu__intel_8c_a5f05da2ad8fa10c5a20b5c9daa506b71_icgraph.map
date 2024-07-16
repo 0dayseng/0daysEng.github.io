@@ -1,0 +1,5 @@
+<map id="vmx_enable_lbr_msrs_passthrough" name="vmx_enable_lbr_msrs_passthrough">
+<area shape="rect" id="node1" title=" " alt="" coords="420,5,585,47"/>
+<area shape="rect" id="node2" href="$pmu__intel_8c.html#aafa008ad34eb88ebd13aa2f76375cad2" title=" " alt="" coords="171,13,372,39"/>
+<area shape="rect" id="node3" href="$vmx_8c.html#a909291866931c22138fd3ba80f0a7651" title=" " alt="" coords="5,13,123,39"/>
+</map>

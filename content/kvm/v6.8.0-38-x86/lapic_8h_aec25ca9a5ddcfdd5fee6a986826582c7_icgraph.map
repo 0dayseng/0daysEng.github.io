@@ -1,0 +1,8 @@
+<map id="kvm_hv_vapic_msr_read" name="kvm_hv_vapic_msr_read">
+<area shape="rect" id="node1" title=" " alt="" coords="816,31,1000,57"/>
+<area shape="rect" id="node2" href="$hyperv_8c.html#acd3e0dad98bde91068115067f6ec3ae6" title=" " alt="" coords="633,31,768,57"/>
+<area shape="rect" id="node3" href="$hyperv_8c.html#a23d197f9ae27f820fa7e977aec518698" title=" " alt="" coords="387,31,585,57"/>
+<area shape="rect" id="node4" href="$x86_8c.html#a0e93cb5e88dc8c07d9357181a3a7b2e9" title=" " alt="" coords="164,31,339,57"/>
+<area shape="rect" id="node5" href="$svm_8c.html#a091db4f6d8d0fc811fdd6d9b2a775889" title=" " alt="" coords="5,5,116,32"/>
+<area shape="rect" id="node6" href="$vmx_8c.html#ab6b2c94ee2868acf5be3ac9b3e02e441" title=" " alt="" coords="5,56,116,83"/>
+</map>

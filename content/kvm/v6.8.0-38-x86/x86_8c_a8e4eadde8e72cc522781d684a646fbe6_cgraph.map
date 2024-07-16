@@ -1,0 +1,5 @@
+<map id="kvm_emulate_halt_noskip" name="kvm_emulate_halt_noskip">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,200,32"/>
+<area shape="rect" id="node2" href="$x86_8c.html#ad9a061ca4a3ded30c0c698224da4504d" title=" " alt="" coords="248,5,407,32"/>
+<area shape="rect" id="node3" href="$lapic_8h.html#a1d8c9378fcbf62390a89dc3b7f0bdbd4" title=" " alt="" coords="455,5,573,32"/>
+</map>

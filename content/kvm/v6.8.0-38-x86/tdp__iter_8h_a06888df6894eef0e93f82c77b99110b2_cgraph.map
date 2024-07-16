@@ -1,0 +1,13 @@
+<map id="tdp_mmu_clear_spte_bits" name="tdp_mmu_clear_spte_bits">
+<area shape="rect" id="node1" title=" " alt="" coords="5,35,195,61"/>
+<area shape="rect" id="node2" href="$tdp__iter_8h.html#acce3a5afd04a68fc666c32e91d8c1770" title=" " alt="" coords="243,5,452,32"/>
+<area shape="rect" id="node3" href="$tdp__iter_8h.html#ae00f2a54e0e899c2f169396a9c10d223" title=" " alt="" coords="250,57,445,98"/>
+<area shape="rect" id="node4" href="$spte_8h.html#a785ce7507ac8cabfb2a667ed0c57b1f5" title=" " alt="" coords="534,13,633,40"/>
+<area shape="rect" id="node6" href="$spte_8h.html#a7d73c1cb0114320b9dab8ba78033c686" title=" " alt="" coords="1112,89,1287,116"/>
+<area shape="rect" id="node7" href="$spte_8c.html#a11de60840b247621debae854aea928db" title=" " alt="" coords="500,165,667,192"/>
+<area shape="rect" id="node5" href="$spte_8h.html#ae9b1a94fccf74f0837e1a775bc57d729" title=" " alt="" coords="749,13,850,40"/>
+<area shape="rect" id="node8" href="$spte_8h.html#a30b8d20964e90337ab8eaeddca1ba192" title=" " alt="" coords="720,115,879,141"/>
+<area shape="rect" id="node9" href="$spte_8h.html#a976cddc84d935189584bdce94d4805fd" title=" " alt="" coords="932,115,1064,141"/>
+<area shape="rect" id="node10" href="$spte_8h.html#aeb796217990be75433fd1430d5958184" title=" " alt="" coords="715,216,884,243"/>
+<area shape="rect" id="node11" href="$spte_8h.html#a4d0035385de92ed42a75324a2fb96d49" title=" " alt="" coords="739,267,860,293"/>
+</map>

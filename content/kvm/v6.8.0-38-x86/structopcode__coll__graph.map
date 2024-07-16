@@ -1,0 +1,8 @@
+<map id="opcode" name="opcode">
+<area shape="rect" id="node1" title=" " alt="" coords="341,5,410,32"/>
+<area shape="rect" id="node2" href="$structmode__dual.html" title=" " alt="" coords="21,139,116,165"/>
+<area shape="rect" id="node3" href="$structgroup__dual.html" title=" " alt="" coords="163,139,257,165"/>
+<area shape="rect" id="node4" href="$structescape.html" title=" " alt="" coords="324,139,392,165"/>
+<area shape="rect" id="node5" href="$structgprefix.html" title=" " alt="" coords="461,139,527,165"/>
+<area shape="rect" id="node6" href="$structinstr__dual.html" title=" " alt="" coords="625,139,712,165"/>
+</map>

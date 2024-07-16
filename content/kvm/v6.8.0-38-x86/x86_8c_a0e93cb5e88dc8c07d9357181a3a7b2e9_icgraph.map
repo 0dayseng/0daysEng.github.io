@@ -1,0 +1,5 @@
+<map id="kvm_get_msr_common" name="kvm_get_msr_common">
+<area shape="rect" id="node1" title=" " alt="" coords="164,31,339,57"/>
+<area shape="rect" id="node2" href="$svm_8c.html#a091db4f6d8d0fc811fdd6d9b2a775889" title=" " alt="" coords="5,5,116,32"/>
+<area shape="rect" id="node3" href="$vmx_8c.html#ab6b2c94ee2868acf5be3ac9b3e02e441" title=" " alt="" coords="5,56,116,83"/>
+</map>

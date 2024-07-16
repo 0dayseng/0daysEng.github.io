@@ -1,0 +1,12 @@
+<map id="alloc_loaded_vmcs" name="alloc_loaded_vmcs">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,152,108"/>
+<area shape="rect" id="node2" href="$vmx_8h.html#a31f4e36482819bc92965589b265b9be6" title=" " alt="" coords="251,5,345,32"/>
+<area shape="rect" id="node5" href="$capabilities_8h.html#ab417100ad999a4402c4b0698ada5dc9b" title=" " alt="" coords="200,56,396,83"/>
+<area shape="rect" id="node6" href="$vmx_8c.html#af92910217dcc55da03421a552d174080" title=" " alt="" coords="227,107,369,133"/>
+<area shape="rect" id="node10" href="$vmx__ops_8h.html#adefc7dc8e1885fe973b3e8d58e23e0aa" title=" " alt="" coords="848,132,944,159"/>
+<area shape="rect" id="node3" href="$vmx_8h.html#aaed5367f4fedc1d1bc3d6b140bf0f2da" title=" " alt="" coords="455,5,580,32"/>
+<area shape="rect" id="node4" href="$vmx__onhyperv_8h.html#ab35d8d7479c3c62d461012dcabc04b11" title=" " alt="" coords="639,5,800,32"/>
+<area shape="rect" id="node7" href="$vmx_8c.html#a171771cf05868f64b6e6491889a842e1" title=" " alt="" coords="472,56,563,83"/>
+<area shape="rect" id="node8" href="$vmx_8c.html#acffc6d01ff543c9abee613b5fe1b1bd4" title=" " alt="" coords="444,107,591,133"/>
+<area shape="rect" id="node9" href="$vmx_8c.html#a70760e20007fba075a5170ffbdc80fa6" title=" " alt="" coords="639,107,800,133"/>
+</map>

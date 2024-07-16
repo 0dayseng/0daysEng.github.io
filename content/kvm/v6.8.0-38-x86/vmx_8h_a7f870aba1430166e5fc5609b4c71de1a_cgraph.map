@@ -1,0 +1,11 @@
+<map id="set_cr4_guest_host_mask" name="set_cr4_guest_host_mask">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,196,83"/>
+<area shape="rect" id="node2" href="$nested_8h.html#a65c62b59f6be374d9da24feaef363497" title=" " alt="" coords="253,5,355,32"/>
+<area shape="rect" id="node4" href="$kvm__cache__regs_8h.html#afbcfc413ceedb460734eb5fd7c5c4fbc" title=" " alt="" coords="244,56,364,83"/>
+<area shape="rect" id="node5" href="$vmx__ops_8h.html#a053ad90862efca58007aa2827f072fe8" title=" " alt="" coords="253,107,355,133"/>
+<area shape="rect" id="node3" href="$vmx_8h.html#a6e0cb34c77519a9be4432b4dd4ec11b4" title=" " alt="" coords="457,5,528,32"/>
+<area shape="rect" id="node6" href="$vmx__ops_8h.html#abd38efcacf0b873c6e9ca1f940f39008" title=" " alt="" coords="435,56,550,83"/>
+<area shape="rect" id="node7" href="$vmx__onhyperv_8h.html#ab8d4fdb2c9a0ae33024dd8b9ecf14961" title=" " alt="" coords="432,107,553,133"/>
+<area shape="rect" id="node8" href="$vmx__onhyperv_8h.html#ab35d8d7479c3c62d461012dcabc04b11" title=" " alt="" coords="412,157,573,184"/>
+<area shape="rect" id="node9" href="$vmx__ops_8h.html#ac411fdca9086093e5690910de4382641" title=" " alt="" coords="439,208,546,235"/>
+</map>

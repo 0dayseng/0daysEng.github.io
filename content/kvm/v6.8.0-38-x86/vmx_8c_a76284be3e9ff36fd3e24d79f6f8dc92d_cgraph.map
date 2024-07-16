@@ -1,0 +1,8 @@
+<map id="vmx_update_emulated_instruction" name="vmx_update_emulated_instruction">
+<area shape="rect" id="node1" title=" " alt="" coords="5,74,177,115"/>
+<area shape="rect" id="node2" href="$nested_8h.html#a65c62b59f6be374d9da24feaef363497" title=" " alt="" coords="253,5,354,32"/>
+<area shape="rect" id="node3" href="$vmx_8h.html#a6e0cb34c77519a9be4432b4dd4ec11b4" title=" " alt="" coords="457,31,528,57"/>
+<area shape="rect" id="node4" href="$kvm__cache__regs_8h.html#afbcfc413ceedb460734eb5fd7c5c4fbc" title=" " alt="" coords="243,107,363,133"/>
+<area shape="rect" id="node5" href="$nested_8h.html#ad5d552db463f26f0bf98a4d06514c4a9" title=" " alt="" coords="225,157,381,184"/>
+<area shape="rect" id="node6" href="$nested_8h.html#ae8f95597e49047619366cbf8f1a63449" title=" " alt="" coords="429,157,556,184"/>
+</map>

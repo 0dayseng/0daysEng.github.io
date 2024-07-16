@@ -1,0 +1,19 @@
+<map id="svm_vcpu_free" name="svm_vcpu_free">
+<area shape="rect" id="node1" title=" " alt="" coords="5,196,127,223"/>
+<area shape="rect" id="node2" href="$sev_8c.html#af343f7dd067883e0f81017a68e854c09" title=" " alt="" coords="209,81,325,108"/>
+<area shape="rect" id="node7" href="$svm_8h.html#a83e420c88631faf9613ea3caa72c63b7" title=" " alt="" coords="470,107,541,133"/>
+<area shape="rect" id="node8" href="$svm_8c.html#a31c1032c7d7d9373379ac998c0a05805" title=" " alt="" coords="175,309,360,336"/>
+<area shape="rect" id="node9" href="$svm_2nested_8c.html#a690337312a648d2948b22540da6f031e" title=" " alt="" coords="200,196,335,223"/>
+<area shape="rect" id="node12" href="$svm_2nested_8c.html#afea614d490148481c96faf7c1b5ecb11" title=" " alt="" coords="195,259,339,285"/>
+<area shape="rect" id="node3" href="$svm_8h.html#a14877439e9d41030cb21612eecc8f3f9" title=" " alt="" coords="651,5,761,32"/>
+<area shape="rect" id="node5" href="$sev_8c.html#abf63e5ae3e1e3c9eb770e330ab3eef8c" title=" " alt="" coords="408,56,603,83"/>
+<area shape="rect" id="node4" href="$svm_8h.html#ac27f6fe2ff4beeb5ad1b11681d0386fd" title=" " alt="" coords="809,31,916,57"/>
+<area shape="rect" id="node6" href="$sev_8c.html#a66cc6caa9f6331de794476e911d4ce53" title=" " alt="" coords="653,56,759,83"/>
+<area shape="rect" id="node10" href="$svm_8c.html#a051d09f3fa8790388364ac3f69ed3e53" title=" " alt="" coords="434,208,577,235"/>
+<area shape="rect" id="node11" href="$svm_8c.html#a67937d45023d92583b0bd363c73b6c2b" title=" " alt="" coords="418,157,593,184"/>
+<area shape="rect" id="node13" href="$kvm__cache__regs_8h.html#afbcfc413ceedb460734eb5fd7c5c4fbc" title=" " alt="" coords="445,259,565,285"/>
+<area shape="rect" id="node14" href="$x86_8c.html#a21212b8e1a82cdc8ac696137981d8d7a" title=" " alt="" coords="425,309,586,336"/>
+<area shape="rect" id="node15" href="$kvm__cache__regs_8h.html#aeca9aaff776c6158999d08d88e93e9a3" title=" " alt="" coords="433,360,578,387"/>
+<area shape="rect" id="node16" href="$svm_2nested_8c.html#a10ef7b4561f5f7773d13cbd00fa7db53" title=" " alt="" coords="412,411,599,453"/>
+<area shape="rect" id="node17" href="$svm_8h.html#a5980ebd310893869bc4c059f110a13cb" title=" " alt="" coords="426,477,585,504"/>
+</map>

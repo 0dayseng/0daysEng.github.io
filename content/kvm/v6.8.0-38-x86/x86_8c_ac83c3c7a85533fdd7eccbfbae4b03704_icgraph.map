@@ -1,0 +1,8 @@
+<map id="kvmclock_cpu_down_prep" name="kvmclock_cpu_down_prep">
+<area shape="rect" id="node1" title=" " alt="" coords="736,31,929,57"/>
+<area shape="rect" id="node2" href="$x86_8c.html#a0444c9593de92a4e9c2f3d66244b34fa" title=" " alt="" coords="567,31,688,57"/>
+<area shape="rect" id="node3" href="$x86_8c.html#a0ad8fc4784d6d316f3d9f5afe640af81" title=" " alt="" coords="343,31,519,57"/>
+<area shape="rect" id="node4" href="$x86_8c.html#ae295ff45fc91a432658e57dda4dfea68" title=" " alt="" coords="132,31,295,57"/>
+<area shape="rect" id="node5" href="$svm_8c.html#aa667b0a0f202f83aa1533825aeecb402" title=" " alt="" coords="5,5,84,32"/>
+<area shape="rect" id="node6" href="$vmx_8c.html#aa8f62a8c3a5a5da29c69565d2645a371" title=" " alt="" coords="5,56,84,83"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="avic_update_iommu_vcpu_affinity" name="avic_update_iommu_vcpu_affinity">
+<area shape="rect" id="node1" title=" " alt="" coords="389,110,581,151"/>
+<area shape="rect" id="node2" href="$avic_8c.html#a7decdbafc7d47b2241e68ce3c90a9779" title=" " alt="" coords="219,88,341,115"/>
+<area shape="rect" id="node6" href="$avic_8c.html#a461f968598a11484e76a07fb87221bf2" title=" " alt="" coords="223,143,337,169"/>
+<area shape="rect" id="node3" href="$avic_8c.html#affcdeac6765016e970e33d6ecff3eebb" title=" " alt="" coords="16,107,160,149"/>
+<area shape="rect" id="node4" href="$avic_8c.html#a7e341d7f17b2f611aca180217cfc6ad3" title=" " alt="" coords="5,5,171,32"/>
+<area shape="rect" id="node5" href="$svm_8c.html#ab9e5b464a654de732fe7b0ce81145897" title=" " alt="" coords="27,56,149,83"/>
+<area shape="rect" id="node7" href="$avic_8c.html#a056e12caaf24f044fce8545a863dbbce" title=" " alt="" coords="13,173,163,200"/>
+<area shape="rect" id="node8" href="$svm_8c.html#af102e65fa4a28844d0bd7bbb75bd4565" title=" " alt="" coords="30,224,146,251"/>
+</map>

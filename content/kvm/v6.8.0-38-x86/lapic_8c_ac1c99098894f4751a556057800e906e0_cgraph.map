@@ -1,0 +1,6 @@
+<map id="apic_has_interrupt_for_ppr" name="apic_has_interrupt_for_ppr">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,148,47"/>
+<area shape="rect" id="node2" href="$lapic_8c.html#aebc526fc8720e4db45143f8e05f85c79" title=" " alt="" coords="196,13,352,39"/>
+<area shape="rect" id="node3" href="$lapic_8c.html#a734e8a2b56a9a0b0d9117f20f2bb0fc1" title=" " alt="" coords="400,13,520,39"/>
+<area shape="rect" id="node4" href="$lapic_8c.html#a656567b4197d9a5af833ffd04dff7a52" title=" " alt="" coords="568,13,717,39"/>
+</map>

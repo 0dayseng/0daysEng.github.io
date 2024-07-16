@@ -1,0 +1,12 @@
+<map id="kvm_governed_feature_set" name="kvm_governed_feature_set">
+<area shape="rect" id="node1" title=" " alt="" coords="1005,71,1205,98"/>
+<area shape="rect" id="node2" href="$cpuid_8h.html#aacf5b21a9aa34f7acd0df7fa8093c4a0" title=" " alt="" coords="784,64,957,105"/>
+<area shape="rect" id="node3" href="$svm_8c.html#a204e4c169e1e8029eff521725a526a57" title=" " alt="" coords="583,5,735,47"/>
+<area shape="rect" id="node5" href="$cpuid_8c.html#ae8f7489a3e05a9bcd5dfdae82c33d618" title=" " alt="" coords="794,129,947,171"/>
+<area shape="rect" id="node4" href="$vmx_8c.html#a8ff77baa2f28fd717210bcac02a13434" title=" " alt="" coords="583,71,736,112"/>
+<area shape="rect" id="node6" href="$cpuid_8c.html#a0ff60eac33c1bf95a3889674e34251ad" title=" " alt="" coords="599,137,719,163"/>
+<area shape="rect" id="node7" href="$cpuid_8c.html#a5066ac0b188677d15925709568a91c9d" title=" " alt="" coords="384,96,535,137"/>
+<area shape="rect" id="node10" href="$cpuid_8c.html#ad4dde50a2939106abd2baf99683ac139" title=" " alt="" coords="384,161,535,203"/>
+<area shape="rect" id="node8" href="$x86_8c.html#ab4ac4d44dfa1ed8985130249d6a8385e" title=" " alt="" coords="177,137,336,163"/>
+<area shape="rect" id="node9" href="$kvm__main_8c.html#a2f2d3734c4cf61a1f4f94e9d47c37d55" title=" " alt="" coords="5,137,129,163"/>
+</map>

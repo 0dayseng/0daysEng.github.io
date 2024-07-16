@@ -1,0 +1,7 @@
+<map id="intel_pmu_create_guest_lbr_event" name="intel_pmu_create_guest_lbr_event">
+<area shape="rect" id="node1" title=" " alt="" coords="411,53,589,94"/>
+<area shape="rect" id="node2" href="$pmu__intel_8c.html#aa518f17a337585c3c6e12c054c2cec59" title=" " alt="" coords="200,23,363,65"/>
+<area shape="rect" id="node5" href="$vmx_8c.html#a0fb610ce041405729e4296dfc871c30e" title=" " alt="" coords="226,89,337,116"/>
+<area shape="rect" id="node3" href="$pmu__intel_8c.html#a7bb7e7c2288534cee8bdee7f3c05126e" title=" " alt="" coords="5,5,152,32"/>
+<area shape="rect" id="node4" href="$pmu__intel_8c.html#aa0eaa27ec4bacea0eb28d3055fb3d4b8" title=" " alt="" coords="5,56,152,83"/>
+</map>

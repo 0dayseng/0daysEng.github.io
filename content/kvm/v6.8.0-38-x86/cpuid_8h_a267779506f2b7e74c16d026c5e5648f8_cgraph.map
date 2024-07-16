@@ -1,0 +1,8 @@
+<map id="kvm_cpu_cap_check_and_set" name="kvm_cpu_cap_check_and_set">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,220,83"/>
+<area shape="rect" id="node2" href="$cpuid_8h.html#aee66583565e70e231c1319604da3a201" title=" " alt="" coords="268,56,407,83"/>
+<area shape="rect" id="node3" href="$reverse__cpuid_8h.html#aeac4cdaa1c8b53f46ea791f355b1d08c" title=" " alt="" coords="459,56,565,83"/>
+<area shape="rect" id="node5" href="$reverse__cpuid_8h.html#ae10c1644e90cb8443e5a32554acfd700" title=" " alt="" coords="617,93,776,120"/>
+<area shape="rect" id="node6" href="$reverse__cpuid_8h.html#a8f6dc89865c6af98e621e1ddcf401cae" title=" " alt="" coords="455,5,569,32"/>
+<area shape="rect" id="node4" href="$reverse__cpuid_8h.html#a76ac51b62ef170b755204cb8b958e585" title=" " alt="" coords="623,31,771,57"/>
+</map>

@@ -1,0 +1,10 @@
+var searchData=
+[
+  ['_5f_5faligned_9186',['__aligned',['../structpi__desc.html#aafe32c5899b0ea70a9783765a21d467f',1,'pi_desc']]],
+  ['_5f_5fattribute_5f_5f_9187',['__attribute__',['../xen_8c.html#a1bf9c69aa77adb5d6380d44f7d33daaf',1,'__attribute__():&#160;xen.c'],['../xen_8h.html#a84283ceeac3bdf6ae30c82c5ded6b7a9',1,'__attribute__():&#160;xen.h']]],
+  ['_5f_5finitdata_9188',['__initdata',['../vmx_8c.html#add20fe6bab0224bdb2d3da939ef3943f',1,'__initdata():&#160;vmx.c'],['../pmu__intel_8c.html#a65fb5cf7f5e341415efc299e6b519e83',1,'__initdata():&#160;pmu_intel.c'],['../svm_8c.html#ac7d9d348c903d8605668fa4a24248bef',1,'__initdata():&#160;svm.c'],['../svm_2pmu_8c.html#acbbc12d800d947220466d334e1d2d4d8',1,'__initdata():&#160;pmu.c']]],
+  ['_5f_5fread_5fmostly_9189',['__read_mostly',['../cpuid_8c.html#a721f8d5b210e9625587f13b92870ba38',1,'__read_mostly():&#160;cpuid.c'],['../cpuid_8h.html#a3f87d0caeb64feff3b9b177c32ba3ed1',1,'__read_mostly():&#160;cpuid.c'],['../lapic_8c.html#a2bce74e938478719805f3d3ee4fae532',1,'__read_mostly():&#160;lapic.c'],['../mmu_8c.html#a4da62268f53655423626b285645e56cb',1,'__read_mostly():&#160;mmu.c'],['../pmu_8c.html#a55b9c1e963dee865adba938ea54c64db',1,'__read_mostly():&#160;pmu.c'],['../svm_8c.html#a654225ed9cb5ee3717561aed704a8012',1,'__read_mostly():&#160;svm.c'],['../svm_8h.html#a036567d678fc3315196c7e4a5fa42cd3',1,'__read_mostly():&#160;cpuid.c'],['../x86_8c.html#a721f8d5b210e9625587f13b92870ba38',1,'__read_mostly():&#160;x86.c']]],
+  ['_5f_5fro_5fafter_5finit_9190',['__ro_after_init',['../sgx_8c.html#a7e6230d981e1ba05e2c1c3b7ee381263',1,'__ro_after_init():&#160;sgx.c'],['../vmx_8c.html#ab6223492e3b36a6075f580b1f43056d2',1,'__ro_after_init():&#160;vmx.c'],['../capabilities_8h.html#ab6223492e3b36a6075f580b1f43056d2',1,'__ro_after_init():&#160;capabilities.h']]],
+  ['_5feip_9191',['_eip',['../structx86__emulate__ctxt.html#a81496753913f053b25ba53832242d917',1,'x86_emulate_ctxt']]],
+  ['_5fregs_9192',['_regs',['../structx86__emulate__ctxt.html#ae8282dba8677704dbd4376617985af96',1,'x86_emulate_ctxt']]]
+];

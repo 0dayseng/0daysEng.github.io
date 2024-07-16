@@ -1,0 +1,10 @@
+<map id="nested_sync_control_from_vmcb02" name="nested_sync_control_from_vmcb02">
+<area shape="rect" id="node1" title=" " alt="" coords="5,49,160,90"/>
+<area shape="rect" id="node2" href="$svm_8h.html#ad6d8c993934e650cf5366b9883c3628e" title=" " alt="" coords="212,5,369,32"/>
+<area shape="rect" id="node6" href="$svm_8h.html#ab452fafde694bb5dfd7c6dfc5707ae12" title=" " alt="" coords="208,56,373,83"/>
+<area shape="rect" id="node7" href="$svm_8h.html#a397a88cd5af0b0bb8a9ef4a5e6bc849d" title=" " alt="" coords="224,107,357,133"/>
+<area shape="rect" id="node3" href="$cpuid_8h.html#acf67f5848a2ddd59dc852e37bc330390" title=" " alt="" coords="433,31,551,57"/>
+<area shape="rect" id="node4" href="$cpuid_8h.html#a786eea4c1fa59be0155455a72125e0ff" title=" " alt="" coords="849,23,1023,65"/>
+<area shape="rect" id="node5" href="$cpuid_8h.html#a72da5444b01d72d935ebc411b99ba166" title=" " alt="" coords="611,56,801,83"/>
+<area shape="rect" id="node8" href="$svm_8h.html#a6eb37bb9efc32f45f75055de8ba4fc79" title=" " alt="" coords="421,107,563,133"/>
+</map>

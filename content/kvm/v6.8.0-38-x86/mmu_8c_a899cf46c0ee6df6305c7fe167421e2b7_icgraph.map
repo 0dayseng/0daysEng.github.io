@@ -1,0 +1,16 @@
+<map id="handle_mmio_page_fault" name="handle_mmio_page_fault">
+<area shape="rect" id="node1" title=" " alt="" coords="1095,81,1281,108"/>
+<area shape="rect" id="node2" href="$mmu_8c.html#a3d0bd209d792a4316f3b40681fdc10f9" title=" " alt="" coords="879,81,1047,108"/>
+<area shape="rect" id="node3" href="$vmx_8c.html#a8acbb27feacd0dd2105ccd2957cab474" title=" " alt="" coords="659,5,823,32"/>
+<area shape="rect" id="node6" href="$vmx_8c.html#a55a56c6fe3cbee7ead4da26de4074000" title=" " alt="" coords="662,56,821,83"/>
+<area shape="rect" id="node7" href="$mmu_8c.html#a4d6f2ec540cbdb86e2594df2e4d453c2" title=" " alt="" coords="652,107,831,133"/>
+<area shape="rect" id="node10" href="$svm_8c.html#a723646ac5d3234ba8e1845249e6a0935" title=" " alt="" coords="677,157,805,184"/>
+<area shape="rect" id="node4" href="$vmx_8c.html#a23ea2316b60c27a2c00f924b983a46e9" title=" " alt="" coords="436,5,584,32"/>
+<area shape="rect" id="node5" href="$vmx_8c.html#a6ee5de3518ff2c2c20b1c1a0e17b2f1e" title=" " alt="" coords="222,5,357,32"/>
+<area shape="rect" id="node8" href="$vmx_8c.html#a7a38ddbd01bec99bf94ab4868ad4c6ea" title=" " alt="" coords="425,56,595,83"/>
+<area shape="rect" id="node9" href="$svm_8c.html#a589e870c8a06d1ba26f24da299e47b95" title=" " alt="" coords="450,107,570,133"/>
+<area shape="rect" id="node11" href="$svm_8c.html#a8afafecae406016532810194f187fe2c" title=" " alt="" coords="416,157,604,184"/>
+<area shape="rect" id="node12" href="$sev_8c.html#aac550422551b71c0afe8efe176e0b55d" title=" " alt="" coords="5,128,163,155"/>
+<area shape="rect" id="node13" href="$sev_8c.html#ae483e70b55c68f5a2405263543ce3737" title=" " alt="" coords="211,150,368,191"/>
+<area shape="rect" id="node14" href="$svm_8c.html#a3f8983432f4aae138a6f4d167c561132" title=" " alt="" coords="223,216,356,243"/>
+</map>

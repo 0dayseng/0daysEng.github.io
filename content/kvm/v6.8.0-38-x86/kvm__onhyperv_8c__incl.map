@@ -1,0 +1,16 @@
+<map id="arch/x86/kvm/kvm_onhyperv.c" name="arch/x86/kvm/kvm_onhyperv.c">
+<area shape="rect" id="node1" title=" " alt="" coords="53,5,276,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="6,304,141,331"/>
+<area shape="rect" id="node3" title=" " alt="" coords="35,80,166,107"/>
+<area shape="rect" id="node4" href="$hyperv_8h.html" title=" " alt="" coords="190,80,269,107"/>
+<area shape="rect" id="node14" href="$kvm__onhyperv_8h.html" title=" " alt="" coords="294,80,424,107"/>
+<area shape="rect" id="node5" href="$x86_8h.html" title=" " alt="" coords="311,155,370,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="137,229,269,256"/>
+<area shape="rect" id="node7" title=" " alt="" coords="293,229,388,256"/>
+<area shape="rect" id="node8" title=" " alt="" coords="412,229,528,256"/>
+<area shape="rect" id="node9" href="$kvm__cache__regs_8h.html" title=" " alt="" coords="552,229,694,256"/>
+<area shape="rect" id="node10" href="$kvm__emulate_8h.html" title=" " alt="" coords="718,229,842,256"/>
+<area shape="rect" id="node11" title=" " alt="" coords="656,304,787,331"/>
+<area shape="rect" id="node12" href="$fpu_8h.html" title=" " alt="" coords="812,304,866,331"/>
+<area shape="rect" id="node13" title=" " alt="" coords="784,379,894,405"/>
+</map>

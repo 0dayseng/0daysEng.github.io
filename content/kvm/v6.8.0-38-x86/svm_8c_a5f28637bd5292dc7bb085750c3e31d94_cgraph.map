@@ -1,0 +1,16 @@
+<map id="svm_load_mmu_pgd" name="svm_load_mmu_pgd">
+<area shape="rect" id="node1" title=" " alt="" coords="5,97,163,123"/>
+<area shape="rect" id="node2" href="$kvm__onhyperv_8c.html#a1e1056d6c56ab8e95a215e42a0290633" title=" " alt="" coords="221,19,360,46"/>
+<area shape="rect" id="node7" href="$mmu_8h.html#ad1aee9e6e5e9d85568a734930c8a084a" title=" " alt="" coords="211,71,371,98"/>
+<area shape="rect" id="node13" href="$svm_8h.html#a83e420c88631faf9613ea3caa72c63b7" title=" " alt="" coords="255,122,326,149"/>
+<area shape="rect" id="node14" href="$svm_8h.html#ab83edec724698a20d66a086a1900aa27" title=" " alt="" coords="223,173,359,199"/>
+<area shape="rect" id="node3" href="$kvm__onhyperv_8c.html#a2cb4387189fe3ba2db779c40333eed56" title=" " alt="" coords="419,17,580,43"/>
+<area shape="rect" id="node4" href="$kvm__onhyperv_8c.html#a8b8dd786b7872c03b29fda0f4995a6d5" title=" " alt="" coords="628,5,803,47"/>
+<area shape="rect" id="node5" href="$kvm__onhyperv_8c.html#a7312126e879429e4deebc844f605e203" title=" " alt="" coords="851,13,1041,39"/>
+<area shape="rect" id="node6" href="$kvm__onhyperv_8c.html#aa4b7fe2c8c56541efd19fc9d77739637" title=" " alt="" coords="1089,13,1287,39"/>
+<area shape="rect" id="node8" href="$mmu_8h.html#a573994365668ea7cc32c0858f96d8e64" title=" " alt="" coords="443,71,556,98"/>
+<area shape="rect" id="node12" href="$kvm__cache__regs_8h.html#aa80de2ba11d877ef825788b0c9768378" title=" " alt="" coords="658,122,773,149"/>
+<area shape="rect" id="node9" href="$kvm__cache__regs_8h.html#a2b779657b20f7afa44c0172b1478ac65" title=" " alt="" coords="642,71,789,98"/>
+<area shape="rect" id="node10" href="$kvm__cache__regs_8h.html#a24ffc81fe5ed7998e29134351275b4dd" title=" " alt="" coords="873,71,1019,98"/>
+<area shape="rect" id="node11" href="$kvm__cache__regs_8h.html#a6b9ea8c019490183db2a81569aad2bf9" title=" " alt="" coords="1091,97,1285,123"/>
+</map>

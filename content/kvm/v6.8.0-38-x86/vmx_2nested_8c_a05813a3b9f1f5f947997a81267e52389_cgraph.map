@@ -1,0 +1,19 @@
+<map id="nested_vmx_exit_handled_cr" name="nested_vmx_exit_handled_cr">
+<area shape="rect" id="node1" title=" " alt="" coords="5,111,217,137"/>
+<area shape="rect" id="node2" href="$x86_8h.html#a9f7e7cd8d352da04de3bf53cbb3b4e57" title=" " alt="" coords="267,56,411,83"/>
+<area shape="rect" id="node7" href="$nested_8h.html#ae8f95597e49047619366cbf8f1a63449" title=" " alt="" coords="275,111,402,137"/>
+<area shape="rect" id="node8" href="$vmx_8h.html#a400cebafa368592c80e344bb3f18eaa2" title=" " alt="" coords="265,169,412,196"/>
+<area shape="rect" id="node3" href="$x86_8h.html#ada9d5e605374059a5e34c42817ed5118" title=" " alt="" coords="485,5,609,32"/>
+<area shape="rect" id="node5" href="$kvm__cache__regs_8h.html#a5d9eb0563cffb1e3ed1cccebabcf2df6" title=" " alt="" coords="460,56,635,83"/>
+<area shape="rect" id="node4" href="$x86_8h.html#aad3ee550e50892e0e340061479bb284d" title=" " alt="" coords="723,5,835,32"/>
+<area shape="rect" id="node6" href="$kvm__cache__regs_8h.html#a6b9ea8c019490183db2a81569aad2bf9" title=" " alt="" coords="683,56,876,83"/>
+<area shape="rect" id="node9" href="$kvm__cache__regs_8h.html#a0e798337bfa740bfba93e6552b0f6465" title=" " alt="" coords="462,107,633,149"/>
+<area shape="rect" id="node10" href="$vmx_8h.html#a6e0cb34c77519a9be4432b4dd4ec11b4" title=" " alt="" coords="512,173,583,200"/>
+<area shape="rect" id="node11" href="$vmx__ops_8h.html#aefa9026aa63362d2c8205086f646e956" title=" " alt="" coords="499,224,596,251"/>
+<area shape="rect" id="node12" href="$vmx__ops_8h.html#a4e53c9e55e0e6a94f7304f0f672e1168" title=" " alt="" coords="724,148,835,175"/>
+<area shape="rect" id="node15" href="$vmx__onhyperv_8h.html#ab02646b06f78249d1315b2affdeb6572" title=" " alt="" coords="721,199,838,225"/>
+<area shape="rect" id="node16" href="$vmx__onhyperv_8h.html#ab35d8d7479c3c62d461012dcabc04b11" title=" " alt="" coords="699,249,860,276"/>
+<area shape="rect" id="node17" href="$vmx__ops_8h.html#ac411fdca9086093e5690910de4382641" title=" " alt="" coords="726,300,833,327"/>
+<area shape="rect" id="node13" href="$x86_8c.html#aa600a8b690e74e45d1ce6b590b74a60b" title=" " alt="" coords="924,123,1075,149"/>
+<area shape="rect" id="node14" href="$vmx__ops_8h.html#a5bd8b5279566f5cedece56ca03955271" title=" " alt="" coords="944,173,1055,200"/>
+</map>

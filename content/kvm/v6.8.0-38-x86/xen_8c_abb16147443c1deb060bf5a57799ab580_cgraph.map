@@ -1,0 +1,8 @@
+<map id="kvm_xen_init_vcpu" name="kvm_xen_init_vcpu">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,152,83"/>
+<area shape="rect" id="node2" href="$xen_8c.html#a9f374264fad08f9502cba60764e46d57" title=" " alt="" coords="200,31,347,57"/>
+<area shape="rect" id="node6" href="$pfncache_8c.html#a1b712bb7d64ce60682e93f606277ec21" title=" " alt="" coords="219,81,328,108"/>
+<area shape="rect" id="node3" href="$kvm__main_8c.html#ac82f28c95da4a0cc137c5a37f08d1f44" title=" " alt="" coords="395,31,517,57"/>
+<area shape="rect" id="node4" href="$x86_8c.html#a42500cdc8706ebf4fa3ec21645530097" title=" " alt="" coords="565,5,773,32"/>
+<area shape="rect" id="node5" href="$kvm__main_8c.html#ad9f0140eebcdef9a9ebae54431d2fba5" title=" " alt="" coords="593,56,746,83"/>
+</map>

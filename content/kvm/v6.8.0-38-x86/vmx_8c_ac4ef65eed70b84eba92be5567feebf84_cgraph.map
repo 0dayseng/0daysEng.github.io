@@ -1,0 +1,13 @@
+<map id="pt_update_intercept_for_msr" name="pt_update_intercept_for_msr">
+<area shape="rect" id="node1" title=" " alt="" coords="5,67,157,109"/>
+<area shape="rect" id="node2" href="$vmx_8h.html#a6e0cb34c77519a9be4432b4dd4ec11b4" title=" " alt="" coords="735,5,805,32"/>
+<area shape="rect" id="node3" href="$vmx_8h.html#a5f203a8d867ee0e3830ee06de5fbea20" title=" " alt="" coords="205,104,405,131"/>
+<area shape="rect" id="node4" href="$vmx_8h.html#a96f48e7f7fd7a33ba502bea65d7a94d8" title=" " alt="" coords="453,162,624,203"/>
+<area shape="rect" id="node11" href="$vmx_8h.html#a3db9d3d67497234d969c753d0b1093ab" title=" " alt="" coords="455,97,622,138"/>
+<area shape="rect" id="node5" href="$capabilities_8h.html#ab417100ad999a4402c4b0698ada5dc9b" title=" " alt="" coords="672,224,868,251"/>
+<area shape="rect" id="node6" href="$vmx_8c.html#a5742d1df3fb94e98dd1a0f0443b529a4" title=" " alt="" coords="675,107,865,133"/>
+<area shape="rect" id="node7" href="$vmx_8c.html#aa4973cf70be6e2559648a74eab4987a5" title=" " alt="" coords="916,99,1079,141"/>
+<area shape="rect" id="node8" href="$x86_8c.html#aea310c0e4f695bd1c6b5d96aa1dbd940" title=" " alt="" coords="699,325,841,352"/>
+<area shape="rect" id="node9" href="$vmx_8c.html#a4322412ccf65775174621cab858dd234" title=" " alt="" coords="689,158,851,199"/>
+<area shape="rect" id="node10" href="$vmx__onhyperv_8h.html#ab35d8d7479c3c62d461012dcabc04b11" title=" " alt="" coords="917,165,1078,192"/>
+</map>

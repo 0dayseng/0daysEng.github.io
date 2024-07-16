@@ -1,0 +1,11 @@
+<map id="sgx_enabled_in_guest_bios" name="sgx_enabled_in_guest_bios">
+<area shape="rect" id="node1" title=" " alt="" coords="825,56,1025,83"/>
+<area shape="rect" id="node2" href="$sgx_8c.html#a34e5ee57c3e7c3172f8ae6ed981d703d" title=" " alt="" coords="631,31,738,57"/>
+<area shape="rect" id="node3" href="$sgx_8c.html#a7f5682145e68a3283de02a0ac6a9e617" title=" " alt="" coords="592,81,777,108"/>
+<area shape="rect" id="node4" href="$vmx_8c.html#ad9c0f9053e0fe647a367166a4b6a0c6f" title=" " alt="" coords="416,5,501,32"/>
+<area shape="rect" id="node7" href="$vmx_2nested_8c.html#a4e4432d8f2321361c7b0b88e7237511c" title=" " alt="" coords="373,56,544,83"/>
+<area shape="rect" id="node8" href="$vmx_8c.html#a0fb610ce041405729e4296dfc871c30e" title=" " alt="" coords="403,107,514,133"/>
+<area shape="rect" id="node9" href="$vmx_8c.html#a8ff77baa2f28fd717210bcac02a13434" title=" " alt="" coords="382,158,535,199"/>
+<area shape="rect" id="node5" href="$vmx_8c.html#abd63cf398d1b18c9be4e9c4eae17c64c" title=" " alt="" coords="183,5,325,32"/>
+<area shape="rect" id="node6" href="$vmx_8c.html#a8d0fa5e317cbd0eb67ebdc9fa5ec70ce" title=" " alt="" coords="5,5,135,32"/>
+</map>

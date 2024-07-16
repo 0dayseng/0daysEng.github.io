@@ -1,0 +1,6 @@
+<map id="arch/x86/kvm/svm/svm_ops.h" name="arch/x86/kvm/svm/svm_ops.h">
+<area shape="rect" id="node1" title=" " alt="" coords="207,5,381,47"/>
+<area shape="rect" id="node2" href="$svm__onhyperv_8c.html" title=" " alt="" coords="5,95,180,136"/>
+<area shape="rect" id="node3" href="$sev_8c.html" title=" " alt="" coords="204,102,384,129"/>
+<area shape="rect" id="node4" href="$svm_8c.html" title=" " alt="" coords="409,102,595,129"/>
+</map>

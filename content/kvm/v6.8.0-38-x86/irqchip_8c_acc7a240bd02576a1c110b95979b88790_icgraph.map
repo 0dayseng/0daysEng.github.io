@@ -1,0 +1,8 @@
+<map id="kvm_irq_map_gsi" name="kvm_irq_map_gsi">
+<area shape="rect" id="node1" title=" " alt="" coords="741,31,879,57"/>
+<area shape="rect" id="node2" href="$irqchip_8c.html#ae74716a6aebb89cbf4203d125f4afcf1" title=" " alt="" coords="591,31,693,57"/>
+<area shape="rect" id="node3" href="$x86_8c.html#a92041c57b6353914b9dddb23510c5d12" title=" " alt="" coords="373,5,543,32"/>
+<area shape="rect" id="node4" href="$i8254_8c.html#acbae41d4a0d42e597f4bf44b3c1e9f99" title=" " alt="" coords="407,56,509,83"/>
+<area shape="rect" id="node5" href="$i8254_8c.html#a13a38debbd4e494ffd488ef8abb5406c" title=" " alt="" coords="203,56,325,83"/>
+<area shape="rect" id="node6" href="$x86_8c.html#a10224987f77e7370dd9f2b80352544ab" title=" " alt="" coords="5,56,155,83"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="gprefix" name="gprefix">
+<area shape="rect" id="node1" title=" " alt="" coords="263,5,330,32"/>
+<area shape="rect" id="node2" href="$structopcode.html" title=" " alt="" coords="262,139,331,165"/>
+<area shape="rect" id="node3" href="$structmode__dual.html" title=" " alt="" coords="5,243,100,269"/>
+<area shape="rect" id="node4" href="$structgroup__dual.html" title=" " alt="" coords="180,243,275,269"/>
+<area shape="rect" id="node5" href="$structescape.html" title=" " alt="" coords="336,243,404,269"/>
+<area shape="rect" id="node6" href="$structinstr__dual.html" title=" " alt="" coords="437,243,524,269"/>
+</map>

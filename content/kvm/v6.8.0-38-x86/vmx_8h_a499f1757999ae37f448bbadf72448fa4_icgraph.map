@@ -1,0 +1,17 @@
+<map id="vcpu_to_lbr_records" name="vcpu_to_lbr_records">
+<area shape="rect" id="node1" title=" " alt="" coords="948,129,1100,156"/>
+<area shape="rect" id="node2" href="$pmu__intel_8c.html#a8bff30f14b582aa13a6a9263d09ff44b" title=" " alt="" coords="485,13,629,54"/>
+<area shape="rect" id="node7" href="$vmx_8h.html#aaf2d6801dce444c2f2592a0942780f59" title=" " alt="" coords="712,129,900,156"/>
+<area shape="rect" id="node12" href="$pmu__intel_8c.html#a95acf04271d030c775698a08e8b498ff" title=" " alt="" coords="722,282,890,323"/>
+<area shape="rect" id="node3" href="$pmu__intel_8c.html#a732847faae93b3f95f904168b42add71" title=" " alt="" coords="231,5,371,32"/>
+<area shape="rect" id="node4" href="$pmu__intel_8c.html#aa518f17a337585c3c6e12c054c2cec59" title=" " alt="" coords="219,57,382,98"/>
+<area shape="rect" id="node5" href="$pmu__intel_8c.html#a7bb7e7c2288534cee8bdee7f3c05126e" title=" " alt="" coords="5,39,152,65"/>
+<area shape="rect" id="node6" href="$pmu__intel_8c.html#aa0eaa27ec4bacea0eb28d3055fb3d4b8" title=" " alt="" coords="5,89,152,116"/>
+<area shape="rect" id="node8" href="$pmu__intel_8c.html#aebec0fe217b3fa5a80715120eb39a341" title=" " alt="" coords="471,79,642,105"/>
+<area shape="rect" id="node9" href="$vmx_8c.html#a906eacca38431629c007c813de2ee658" title=" " alt="" coords="449,129,664,156"/>
+<area shape="rect" id="node10" href="$vmx_8c.html#a0fb610ce041405729e4296dfc871c30e" title=" " alt="" coords="245,144,356,171"/>
+<area shape="rect" id="node11" href="$vmx_8c.html#a909291866931c22138fd3ba80f0a7651" title=" " alt="" coords="20,260,137,287"/>
+<area shape="rect" id="node13" href="$pmu__intel_8c.html#af9cb9956f1ba92178a027529a50d711d" title=" " alt="" coords="473,282,641,323"/>
+<area shape="rect" id="node15" href="$pmu__intel_8c.html#a5f05da2ad8fa10c5a20b5c9daa506b71" title=" " alt="" coords="474,347,639,389"/>
+<area shape="rect" id="node14" href="$pmu__intel_8c.html#aafa008ad34eb88ebd13aa2f76375cad2" title=" " alt="" coords="200,289,401,316"/>
+</map>

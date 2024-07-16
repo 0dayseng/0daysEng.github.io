@@ -1,0 +1,5 @@
+<map id="cpu_has_vmx_virtualize_apic_accesses" name="cpu_has_vmx_virtualize_apic_accesses">
+<area shape="rect" id="node1" title=" " alt="" coords="417,5,596,47"/>
+<area shape="rect" id="node2" href="$capabilities_8h.html#aa9c901d286b8501362c2cc202e668a55" title=" " alt="" coords="180,13,369,39"/>
+<area shape="rect" id="node3" href="$vmx_8c.html#a7cacd86bbd7f4ae2b8c9e5e8568fa5e4" title=" " alt="" coords="5,13,132,39"/>
+</map>

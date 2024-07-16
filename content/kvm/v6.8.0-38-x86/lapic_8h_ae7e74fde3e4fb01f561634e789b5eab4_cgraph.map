@@ -1,0 +1,5 @@
+<map id="kvm_apic_present" name="kvm_apic_present">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,147,57"/>
+<area shape="rect" id="node2" href="$lapic_8h.html#a1d8660ecbda996b11b10b179013e52d4" title=" " alt="" coords="195,5,365,32"/>
+<area shape="rect" id="node3" href="$lapic_8h.html#a1d8c9378fcbf62390a89dc3b7f0bdbd4" title=" " alt="" coords="221,56,339,83"/>
+</map>

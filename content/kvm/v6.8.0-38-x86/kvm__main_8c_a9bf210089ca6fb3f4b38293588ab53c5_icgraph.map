@@ -1,0 +1,11 @@
+<map id="kvm_vcpu_yield_to" name="kvm_vcpu_yield_to">
+<area shape="rect" id="node1" title=" " alt="" coords="817,31,965,57"/>
+<area shape="rect" id="node2" href="$x86_8c.html#a88a69e575d3fd36dbc78779b1a8676a1" title=" " alt="" coords="239,5,373,32"/>
+<area shape="rect" id="node4" href="$kvm__main_8c.html#a7373edb7b1c787b14e657cd691e64d20" title=" " alt="" coords="623,81,769,108"/>
+<area shape="rect" id="node3" href="$x86_8c.html#abc413db5ba414fb0a89e7ffc1fb81e60" title=" " alt="" coords="5,81,184,108"/>
+<area shape="rect" id="node5" href="$xen_8c.html#ab8910a0f422594766001b1c5a5f59e6e" title=" " alt="" coords="448,31,555,57"/>
+<area shape="rect" id="node6" href="$vmx_8c.html#ab7bde6e336e1ded26fe55a186056b8a6" title=" " alt="" coords="445,81,557,108"/>
+<area shape="rect" id="node7" href="$hyperv_8c.html#ac96f1fa9ec6ac0ac26c24ca65cc1547e" title=" " alt="" coords="431,132,572,159"/>
+<area shape="rect" id="node9" href="$svm_8c.html#ad65ceb76375d4e01d2b1e11a9c227b7c" title=" " alt="" coords="428,183,575,209"/>
+<area shape="rect" id="node8" href="$xen_8c.html#aaf398a8803a79984b06fbf9e2a64193c" title=" " alt="" coords="232,132,380,159"/>
+</map>

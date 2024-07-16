@@ -1,0 +1,9 @@
+<map id="kvm_emulate_halt" name="kvm_emulate_halt">
+<area shape="rect" id="node1" title=" " alt="" coords="652,60,796,87"/>
+<area shape="rect" id="node2" href="$vmx_8c.html#a23ea2316b60c27a2c00f924b983a46e9" title=" " alt="" coords="436,20,584,47"/>
+<area shape="rect" id="node4" href="$svm_8c.html#a8afafecae406016532810194f187fe2c" title=" " alt="" coords="416,85,604,112"/>
+<area shape="rect" id="node3" href="$vmx_8c.html#a6ee5de3518ff2c2c20b1c1a0e17b2f1e" title=" " alt="" coords="222,5,357,32"/>
+<area shape="rect" id="node5" href="$sev_8c.html#aac550422551b71c0afe8efe176e0b55d" title=" " alt="" coords="5,85,163,112"/>
+<area shape="rect" id="node6" href="$sev_8c.html#ae483e70b55c68f5a2405263543ce3737" title=" " alt="" coords="211,107,368,149"/>
+<area shape="rect" id="node7" href="$svm_8c.html#a3f8983432f4aae138a6f4d167c561132" title=" " alt="" coords="223,173,356,200"/>
+</map>

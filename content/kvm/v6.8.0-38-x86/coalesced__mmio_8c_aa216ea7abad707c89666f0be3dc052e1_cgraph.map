@@ -1,0 +1,7 @@
+<map id="kvm_vm_ioctl_unregister_coalesced_mmio" name="kvm_vm_ioctl_unregister_coalesced_mmio">
+<area shape="rect" id="node1" title=" " alt="" coords="5,23,192,65"/>
+<area shape="rect" id="node2" href="$coalesced__mmio_8c.html#ad283e278282d8d1ff5ee53accf03d802" title=" " alt="" coords="245,5,439,32"/>
+<area shape="rect" id="node3" href="$kvm__main_8c.html#a103c02eb7ca545106f3130776c2a8897" title=" " alt="" coords="240,56,444,83"/>
+<area shape="rect" id="node4" href="$kvm__main_8c.html#a3089edf2c0e5790aab7e8ed723f34b5b" title=" " alt="" coords="492,31,648,57"/>
+<area shape="rect" id="node5" href="$kvm__main_8c.html#aa6d7dea09a0b657f29e92f424e5d0633" title=" " alt="" coords="696,56,883,83"/>
+</map>

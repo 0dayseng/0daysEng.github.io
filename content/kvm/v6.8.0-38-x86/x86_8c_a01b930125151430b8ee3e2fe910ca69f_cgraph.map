@@ -1,0 +1,11 @@
+<map id="kvm_vcpu_ioctl_x86_get_vcpu_events" name="kvm_vcpu_ioctl_x86_get_vcpu_events">
+<area shape="rect" id="node1" title=" " alt="" coords="5,166,160,207"/>
+<area shape="rect" id="node2" href="$smm_8h.html#aa0d6bb14bef67edc441fccd36d205a67" title=" " alt="" coords="270,5,343,32"/>
+<area shape="rect" id="node3" href="$x86_8c.html#a92e1a819da31f9776852acd897808e99" title=" " alt="" coords="219,57,394,98"/>
+<area shape="rect" id="node4" href="$x86_8h.html#a441b0296c9e66d1e4f4c554d73a3093e" title=" " alt="" coords="221,123,392,149"/>
+<area shape="rect" id="node5" href="$x86_8c.html#a85c42cc62383f29e1f9a75640bf00464" title=" " alt="" coords="208,173,405,200"/>
+<area shape="rect" id="node6" href="$lapic_8h.html#a90e371fd128f6bd87e2863ca2d3ed066" title=" " alt="" coords="221,224,393,251"/>
+<area shape="rect" id="node8" href="$x86_8c.html#aa981fe4e18313c25993596e7405afe29" title=" " alt="" coords="255,275,359,301"/>
+<area shape="rect" id="node9" href="$smm_8c.html#a638e02081e08ea00a30c71d82fccf9d7" title=" " alt="" coords="255,325,358,352"/>
+<area shape="rect" id="node7" href="$lapic_8h.html#a1d8c9378fcbf62390a89dc3b7f0bdbd4" title=" " alt="" coords="453,224,572,251"/>
+</map>

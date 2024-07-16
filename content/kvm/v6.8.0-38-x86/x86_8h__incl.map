@@ -1,0 +1,12 @@
+<map id="arch/x86/kvm/x86.h" name="arch/x86/kvm/x86.h">
+<area shape="rect" id="node1" title=" " alt="" coords="221,5,372,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="187,155,321,181"/>
+<area shape="rect" id="node3" title=" " alt="" coords="29,80,161,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="185,80,280,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="304,80,420,107"/>
+<area shape="rect" id="node6" href="$kvm__cache__regs_8h.html" title=" " alt="" coords="444,80,587,107"/>
+<area shape="rect" id="node7" href="$kvm__emulate_8h.html" title=" " alt="" coords="611,80,735,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="549,155,679,181"/>
+<area shape="rect" id="node9" href="$fpu_8h.html" title=" " alt="" coords="704,155,759,181"/>
+<area shape="rect" id="node10" title=" " alt="" coords="676,229,787,256"/>
+</map>

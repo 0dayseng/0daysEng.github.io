@@ -1,0 +1,7 @@
+<map id="nested_vmx_check_apic_access_controls" name="nested_vmx_check_apic_access_controls">
+<area shape="rect" id="node1" title=" " alt="" coords="5,23,187,65"/>
+<area shape="rect" id="node2" href="$nested_8h.html#aa997cf53b86844ddc4f230369935239e" title=" " alt="" coords="243,5,377,32"/>
+<area shape="rect" id="node3" href="$cpuid_8h.html#a324c2cf2152bc998a4e85165ee805f83" title=" " alt="" coords="235,56,385,83"/>
+<area shape="rect" id="node4" href="$cpuid_8h.html#a5468d9b5cbcb2f7a464c1fdfae1801a5" title=" " alt="" coords="433,56,665,83"/>
+<area shape="rect" id="node5" href="$cpuid_8h.html#a79ede0627c3b2d96bb1e5c0ff8e98cd0" title=" " alt="" coords="713,56,891,83"/>
+</map>

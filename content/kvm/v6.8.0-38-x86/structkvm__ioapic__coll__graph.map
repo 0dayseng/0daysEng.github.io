@@ -1,0 +1,6 @@
+<map id="kvm_ioapic" name="kvm_ioapic">
+<area shape="rect" id="node1" title=" " alt="" coords="72,199,169,225"/>
+<area shape="rect" id="node2" href="$structrtc__status.html" title=" " alt="" coords="5,102,92,129"/>
+<area shape="rect" id="node3" href="$structdest__map.html" title=" " alt="" coords="5,5,92,32"/>
+<area shape="rect" id="node4" href="$unionkvm__ioapic__redirect__entry.html" title=" " alt="" coords="117,95,271,136"/>
+</map>

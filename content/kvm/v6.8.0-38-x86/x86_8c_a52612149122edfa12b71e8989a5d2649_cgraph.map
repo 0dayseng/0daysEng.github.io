@@ -1,0 +1,5 @@
+<map id="vcpu_is_mmio_gpa" name="vcpu_is_mmio_gpa">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,152,32"/>
+<area shape="rect" id="node2" href="$x86_8h.html#adec8392408e5b0e363872e91e83a90af" title=" " alt="" coords="200,5,377,32"/>
+<area shape="rect" id="node3" href="$x86_8h.html#a27679e0f68166573b056ce81832b1fd8" title=" " alt="" coords="425,5,603,32"/>
+</map>

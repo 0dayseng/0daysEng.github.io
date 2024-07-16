@@ -1,0 +1,5 @@
+<map id="intel_pmu_create_guest_lbr_event" name="intel_pmu_create_guest_lbr_event">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,184,47"/>
+<area shape="rect" id="node2" href="$vmx_8h.html#aa3f9a4735e6ff00497c0086664b433bd" title=" " alt="" coords="232,13,367,39"/>
+<area shape="rect" id="node3" href="$vmx_8h.html#a6e0cb34c77519a9be4432b4dd4ec11b4" title=" " alt="" coords="415,13,485,39"/>
+</map>

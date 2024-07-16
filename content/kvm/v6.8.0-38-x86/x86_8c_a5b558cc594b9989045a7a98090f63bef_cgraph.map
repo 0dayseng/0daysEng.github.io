@@ -1,0 +1,7 @@
+<map id="kvm_vcpu_ioctl_interrupt" name="kvm_vcpu_ioctl_interrupt">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,192,83"/>
+<area shape="rect" id="node2" href="$irq_8h.html#a96951e3a1bfa402d8bee67713e267b39" title=" " alt="" coords="255,5,387,32"/>
+<area shape="rect" id="node3" href="$x86_8h.html#aaa166361b58ce8e326699e6cfe87e39a" title=" " alt="" coords="240,56,401,83"/>
+<area shape="rect" id="node4" href="$irq_8h.html#a96a02a8d4f0e2f99cae8f39d7291e625" title=" " alt="" coords="267,107,374,133"/>
+<area shape="rect" id="node5" href="$irq_8h.html#aeedc8b3b9e709414b2db2436224b75e8" title=" " alt="" coords="449,107,563,133"/>
+</map>

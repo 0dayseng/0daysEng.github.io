@@ -1,0 +1,16 @@
+<map id="vmx_recover_nmi_blocking" name="vmx_recover_nmi_blocking">
+<area shape="rect" id="node1" title=" " alt="" coords="5,157,207,184"/>
+<area shape="rect" id="node2" href="$vmx__ops_8h.html#a8e451d9fa742dfde330958372b978485" title=" " alt="" coords="473,107,583,133"/>
+<area shape="rect" id="node9" href="$vmx__ops_8h.html#ac276578ab10dd519c10d8da65a230cb5" title=" " alt="" coords="471,157,585,184"/>
+<area shape="rect" id="node12" href="$vmx_8h.html#af7e940dce21b0a53e1eadac452b8ddf1" title=" " alt="" coords="255,212,395,239"/>
+<area shape="rect" id="node3" href="$vmx__ops_8h.html#a4e53c9e55e0e6a94f7304f0f672e1168" title=" " alt="" coords="687,56,797,83"/>
+<area shape="rect" id="node6" href="$vmx__onhyperv_8h.html#ad90d48badc854d1cdc59509cece943a5" title=" " alt="" coords="683,107,801,133"/>
+<area shape="rect" id="node7" href="$vmx__onhyperv_8h.html#ab35d8d7479c3c62d461012dcabc04b11" title=" " alt="" coords="661,157,823,184"/>
+<area shape="rect" id="node8" href="$vmx__ops_8h.html#af5ce3717bbcc96eeddead8b57ac3fa6a" title=" " alt="" coords="683,5,801,32"/>
+<area shape="rect" id="node4" href="$x86_8c.html#aa600a8b690e74e45d1ce6b590b74a60b" title=" " alt="" coords="871,31,1021,57"/>
+<area shape="rect" id="node5" href="$vmx__ops_8h.html#a5bd8b5279566f5cedece56ca03955271" title=" " alt="" coords="891,81,1001,108"/>
+<area shape="rect" id="node10" href="$vmx__ops_8h.html#abd38efcacf0b873c6e9ca1f940f39008" title=" " alt="" coords="685,208,799,235"/>
+<area shape="rect" id="node11" href="$vmx__onhyperv_8h.html#a76f5e23936d63b1aa1a525e7f4181cf0" title=" " alt="" coords="681,259,803,285"/>
+<area shape="rect" id="node13" href="$kvm__cache__regs_8h.html#a0e798337bfa740bfba93e6552b0f6465" title=" " alt="" coords="443,209,613,250"/>
+<area shape="rect" id="node14" href="$vmx_8h.html#a6e0cb34c77519a9be4432b4dd4ec11b4" title=" " alt="" coords="493,275,563,301"/>
+</map>

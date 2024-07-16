@@ -1,0 +1,6 @@
+<map id="kvm_x86_vendor_exit" name="kvm_x86_vendor_exit">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,172,57"/>
+<area shape="rect" id="node2" href="$lapic_8c.html#af2d9c133a24e68f345a3fe133bf8bfaf" title=" " alt="" coords="275,5,397,32"/>
+<area shape="rect" id="node3" href="$mmu_8c.html#a300e442ad7216d17c3ad006fab006622" title=" " alt="" coords="220,56,452,83"/>
+<area shape="rect" id="node4" href="$mmu_8c.html#a7972fb42d26603fda02b76d2ab6e6d8b" title=" " alt="" coords="500,56,664,83"/>
+</map>

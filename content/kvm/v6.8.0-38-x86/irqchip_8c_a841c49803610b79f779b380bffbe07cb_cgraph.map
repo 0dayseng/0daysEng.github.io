@@ -1,0 +1,4 @@
+<map id="kvm_free_irq_routing" name="kvm_free_irq_routing">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,167,32"/>
+<area shape="rect" id="node2" href="$irqchip_8c.html#a5ae37186e6e6d1594767f83df8bab64a" title=" " alt="" coords="215,5,380,32"/>
+</map>

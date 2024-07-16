@@ -1,0 +1,12 @@
+<map id="kvm_pmu_rdpmc" name="kvm_pmu_rdpmc">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,140,133"/>
+<area shape="rect" id="node2" href="$pmu_8c.html#a4c88565f030230abc9f6868e160ac194" title=" " alt="" coords="188,5,383,32"/>
+<area shape="rect" id="node3" href="$kvm__cache__regs_8h.html#a16b29ca8796e3da212a8faf1b2dc7ff3" title=" " alt="" coords="212,56,359,83"/>
+<area shape="rect" id="node6" href="$kvm__cache__regs_8h.html#a2b779657b20f7afa44c0172b1478ac65" title=" " alt="" coords="212,107,359,133"/>
+<area shape="rect" id="node8" href="$pmu_8c.html#a84cfee467e7b4c178df796e28130b717" title=" " alt="" coords="188,157,383,184"/>
+<area shape="rect" id="node9" href="$pmu_8h.html#a9a3e4998b37284d3ccbfd9904c2ff026" title=" " alt="" coords="214,208,357,235"/>
+<area shape="rect" id="node4" href="$kvm__cache__regs_8h.html#a5fbb40e1f7661ccfd5accdaef3d8c378" title=" " alt="" coords="431,56,576,83"/>
+<area shape="rect" id="node5" href="$kvm__cache__regs_8h.html#a6b9ea8c019490183db2a81569aad2bf9" title=" " alt="" coords="624,81,817,108"/>
+<area shape="rect" id="node7" href="$kvm__cache__regs_8h.html#a24ffc81fe5ed7998e29134351275b4dd" title=" " alt="" coords="431,107,576,133"/>
+<area shape="rect" id="node10" href="$pmu_8h.html#aab3e4e18d6f095fb645e7eede49e33fe" title=" " alt="" coords="448,208,559,235"/>
+</map>

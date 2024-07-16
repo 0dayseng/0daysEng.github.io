@@ -1,0 +1,11 @@
+<map id="kvm_xen_hypercall_enabled" name="kvm_xen_hypercall_enabled">
+<area shape="rect" id="node1" title=" " alt="" coords="888,56,1095,83"/>
+<area shape="rect" id="node2" href="$x86_8c.html#abc413db5ba414fb0a89e7ffc1fb81e60" title=" " alt="" coords="661,5,840,32"/>
+<area shape="rect" id="node3" href="$hyperv_8c.html#ab932fdee37432b09f988174935dfa876" title=" " alt="" coords="671,56,830,83"/>
+<area shape="rect" id="node9" href="$xen_8c.html#a8ee930b1f9fc4736a86b12bf73d43f74" title=" " alt="" coords="387,107,613,133"/>
+<area shape="rect" id="node4" href="$hyperv_8c.html#ab6a097fa5ccc00cb31061629a4e3e2f7" title=" " alt="" coords="401,56,599,83"/>
+<area shape="rect" id="node5" href="$x86_8c.html#aec2b7dd73668f030b4e2f8d8815d7299" title=" " alt="" coords="164,81,339,108"/>
+<area shape="rect" id="node6" href="$svm_8c.html#acb46126747f78036462437a7bcdc2e47" title=" " alt="" coords="20,31,101,57"/>
+<area shape="rect" id="node7" href="$svm_8c.html#aac18b9094154a2c8b8e27c3b08c9e359" title=" " alt="" coords="6,81,115,108"/>
+<area shape="rect" id="node8" href="$vmx_8c.html#a0fb610ce041405729e4296dfc871c30e" title=" " alt="" coords="5,132,116,159"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="kvm_faultin_pfn_private" name="kvm_faultin_pfn_private">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,187,108"/>
+<area shape="rect" id="node2" href="$guest__memfd_8c.html#a51a6ac4b7db481b543ba504e726955c0" title=" " alt="" coords="262,31,418,57"/>
+<area shape="rect" id="node5" href="$mmu_8c.html#a60e5a2ee77ff1bc1f48f72973f0bd710" title=" " alt="" coords="244,81,436,108"/>
+<area shape="rect" id="node6" href="$mmu_8c.html#a1433bae6a08d67dc5bdffbec3b6ebd57" title=" " alt="" coords="235,133,445,174"/>
+<area shape="rect" id="node3" href="$guest__memfd_8c.html#a2eab57d9fb8529d3751b5c8179d881c9" title=" " alt="" coords="498,5,653,32"/>
+<area shape="rect" id="node4" href="$guest__memfd_8c.html#a7e10aba8c2081d3c9d7bbc433988429a" title=" " alt="" coords="493,56,657,83"/>
+</map>

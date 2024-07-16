@@ -1,0 +1,8 @@
+<map id="kvm_get_dirty_log" name="kvm_get_dirty_log">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,148,83"/>
+<area shape="rect" id="node2" href="$x86_8c.html#a4a207612c3a04c2af14e8a2064d136fb" title=" " alt="" coords="196,31,383,57"/>
+<area shape="rect" id="node6" href="$dirty__ring_8c.html#a38d9bd671fa9181708075184e77eca3a" title=" " alt="" coords="204,81,375,108"/>
+<area shape="rect" id="node3" href="$kvm__main_8c.html#ac82f28c95da4a0cc137c5a37f08d1f44" title=" " alt="" coords="431,31,553,57"/>
+<area shape="rect" id="node4" href="$x86_8c.html#a42500cdc8706ebf4fa3ec21645530097" title=" " alt="" coords="601,5,809,32"/>
+<area shape="rect" id="node5" href="$kvm__main_8c.html#ad9f0140eebcdef9a9ebae54431d2fba5" title=" " alt="" coords="629,56,782,83"/>
+</map>

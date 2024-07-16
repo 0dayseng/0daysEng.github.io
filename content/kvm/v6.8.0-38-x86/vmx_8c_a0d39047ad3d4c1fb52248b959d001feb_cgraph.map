@@ -1,0 +1,8 @@
+<map id="vmx_deliver_nested_posted_interrupt" name="vmx_deliver_nested_posted_interrupt">
+<area shape="rect" id="node1" title=" " alt="" coords="5,57,160,98"/>
+<area shape="rect" id="node2" href="$kvm__cache__regs_8h.html#afbcfc413ceedb460734eb5fd7c5c4fbc" title=" " alt="" coords="243,5,363,32"/>
+<area shape="rect" id="node3" href="$vmx_8c.html#ab7adcd17aa4fc7dd52d8138fa2c9f06d" title=" " alt="" coords="208,57,399,98"/>
+<area shape="rect" id="node6" href="$vmx_8h.html#a6e0cb34c77519a9be4432b4dd4ec11b4" title=" " alt="" coords="268,123,339,149"/>
+<area shape="rect" id="node4" href="$kvm__main_8c.html#ac5a3afd8e2d8d1139dc7711c4b9e07e3" title=" " alt="" coords="447,39,620,65"/>
+<area shape="rect" id="node5" href="$kvm__main_8c.html#ad9f0140eebcdef9a9ebae54431d2fba5" title=" " alt="" coords="457,89,610,116"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="vcpu_svm" name="vcpu_svm">
+<area shape="rect" id="node1" title=" " alt="" coords="421,187,509,213"/>
+<area shape="rect" id="node2" href="$structsvm__nested__state.html" title=" " alt="" coords="254,96,395,123"/>
+<area shape="rect" id="node3" href="$structvmcb__save__area__cached.html" title=" " alt="" coords="5,5,191,32"/>
+<area shape="rect" id="node4" href="$structkvm__vmcb__info.html" title=" " alt="" coords="413,5,540,32"/>
+<area shape="rect" id="node5" href="$structvmcb__ctrl__area__cached.html" title=" " alt="" coords="215,5,389,32"/>
+<area shape="rect" id="node6" href="$structvcpu__sev__es__state.html" title=" " alt="" coords="583,96,728,123"/>
+</map>

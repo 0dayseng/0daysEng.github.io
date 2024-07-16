@@ -1,0 +1,7 @@
+<map id="nested_vmcb_needs_vls_intercept" name="nested_vmcb_needs_vls_intercept">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,187,72"/>
+<area shape="rect" id="node2" href="$cpuid_8h.html#acf67f5848a2ddd59dc852e37bc330390" title=" " alt="" coords="252,13,371,39"/>
+<area shape="rect" id="node5" href="$svm_8h.html#a96264b6618fa3987f55ba2054a1f12bc" title=" " alt="" coords="235,63,388,90"/>
+<area shape="rect" id="node3" href="$cpuid_8h.html#a786eea4c1fa59be0155455a72125e0ff" title=" " alt="" coords="675,5,848,47"/>
+<area shape="rect" id="node4" href="$cpuid_8h.html#a72da5444b01d72d935ebc411b99ba166" title=" " alt="" coords="436,38,627,65"/>
+</map>
