@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['undef_5faccess_4674',['undef_access',['../sys__regs_8c.html#a867e1f03f1cb111be61689387070fa96',1,'sys_regs.c']]],
+  ['unhandled_5fcp_5faccess_4675',['unhandled_cp_access',['../sys__regs_8c.html#a253f9d1013e490024387b0d3ff8aa742',1,'sys_regs.c']]],
+  ['unlock_5fall_5fvcpus_4676',['unlock_all_vcpus',['../arm_8c.html#a29e56a77bf87bcd1b20ed8a14d9b2778',1,'arm.c']]],
+  ['unlock_5fvcpus_4677',['unlock_vcpus',['../arm_8c.html#ac85c173d1f7208735e68f95eec2aac14',1,'arm.c']]],
+  ['unmap_5fall_5fvpes_4678',['unmap_all_vpes',['../vgic-v3_8c.html#aedeeaec282ec4507c45c8580a6cd3ff8',1,'vgic-v3.c']]],
+  ['unmap_5fdonated_5fmemory_4679',['unmap_donated_memory',['../hyp_2nvhe_2pkvm_8c.html#a5f7ab23a4eb39c09d0a5b9f461a6cb9b',1,'pkvm.c']]],
+  ['unmap_5fdonated_5fmemory_5fnoclear_4680',['unmap_donated_memory_noclear',['../hyp_2nvhe_2pkvm_8c.html#ae0206a7c88d213b1ff24538337468249',1,'pkvm.c']]],
+  ['unmap_5fstage2_5frange_4681',['unmap_stage2_range',['../mmu_8c.html#a43756116ea784c75fc9a88b4878667c6',1,'mmu.c']]],
+  ['unmask_5fvtimer_5firq_5fuser_4682',['unmask_vtimer_irq_user',['../arch__timer_8c.html#a7af96c32754607120bf365569aac71c0',1,'arch_timer.c']]],
+  ['unpin_5fhost_5fvcpu_4683',['unpin_host_vcpu',['../hyp_2nvhe_2pkvm_8c.html#a9503b9e29dd4b2337feef252f5a57103',1,'pkvm.c']]],
+  ['unpin_5fhost_5fvcpus_4684',['unpin_host_vcpus',['../hyp_2nvhe_2pkvm_8c.html#a9fb5ca8500d8ba2e1c140f3dd549d832',1,'pkvm.c']]],
+  ['unshare_5fpfn_5fhyp_4685',['unshare_pfn_hyp',['../mmu_8c.html#ab784fb7eb70984bb7728e616c60ec1e2',1,'mmu.c']]],
+  ['unwind_4686',['unwind',['../stacktrace_8c.html#a44789bd2a4a13f4be2b8681d476608c3',1,'stacktrace.c']]],
+  ['unwind_5fnext_4687',['unwind_next',['../stacktrace_8c.html#a752432263bba248ca12e86119ea37417',1,'stacktrace.c']]],
+  ['update_5f64bit_5freg_4688',['update_64bit_reg',['../vgic-mmio-v3_8c.html#a09293b634a89bdae55514fd75d104c54',1,'update_64bit_reg(u64 reg, unsigned int offset, unsigned int len, unsigned long val):&#160;vgic-mmio-v3.c'],['../vgic-mmio_8h.html#a09293b634a89bdae55514fd75d104c54',1,'update_64bit_reg(u64 reg, unsigned int offset, unsigned int len, unsigned long val):&#160;vgic-mmio-v3.c']]],
+  ['update_5faffinity_4689',['update_affinity',['../vgic-its_8c.html#a0860df9e14ef4c943720af46d050f1e3',1,'vgic-its.c']]],
+  ['update_5faffinity_5fcollection_4690',['update_affinity_collection',['../vgic-its_8c.html#ad31b4cf4dcfe7c30b5e5dc391ae80e65',1,'vgic-its.c']]],
+  ['update_5faffinity_5fite_4691',['update_affinity_ite',['../vgic-its_8c.html#a88401a86eb1cf5259cb705d726feac6e',1,'vgic-its.c']]],
+  ['update_5fhalt_5fpoll_5fstats_4692',['update_halt_poll_stats',['../kvm__main_8c.html#aaa76576c021037e516218db81c147ca0',1,'kvm_main.c']]],
+  ['update_5flpi_5fconfig_4693',['update_lpi_config',['../vgic-its_8c.html#a423c5139315e14ce4ec9f66ae4abb88c',1,'vgic-its.c']]],
+  ['update_5fnvhe_5finit_5fparams_4694',['update_nvhe_init_params',['../setup_8c.html#afb62b1c2320b044bcb13a34ff2eaf90f',1,'setup.c']]],
+  ['user_5fmem_5fabort_4695',['user_mem_abort',['../mmu_8c.html#a3fa1785b4cbf3b2668c883a3c79fdeeb',1,'mmu.c']]],
+  ['userspace_5firqchip_4696',['userspace_irqchip',['../arch__timer_8c.html#a4f7db088b5aab3a8a6013b7f6fd12fa0',1,'arch_timer.c']]]
+];

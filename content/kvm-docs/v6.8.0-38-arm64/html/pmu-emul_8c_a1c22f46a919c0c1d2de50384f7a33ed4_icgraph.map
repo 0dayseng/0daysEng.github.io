@@ -1,0 +1,6 @@
+<map id="kvm_pmu_evtyper_mask" name="kvm_pmu_evtyper_mask">
+<area shape="rect" id="node1" title=" " alt="" coords="431,42,617,69"/>
+<area shape="rect" id="node2" href="$pmu-emul_8c.html#a22f1aab98d3f43c3b6d5a33d1886d474" title=" " alt="" coords="212,5,383,47"/>
+<area shape="rect" id="node4" href="$sys__regs_8c.html#a10fff169484fa7d65cb4adc93300aeca" title=" " alt="" coords="231,71,364,98"/>
+<area shape="rect" id="node3" href="$sys__regs_8c.html#ae0260b12f95bb7f271037d3e4b18b22b" title=" " alt="" coords="5,13,164,39"/>
+</map>

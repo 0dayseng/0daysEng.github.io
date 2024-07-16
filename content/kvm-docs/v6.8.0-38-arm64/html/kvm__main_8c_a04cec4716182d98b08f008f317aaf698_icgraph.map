@@ -1,0 +1,11 @@
+<map id="kvm_register_device_ops" name="kvm_register_device_ops">
+<area shape="rect" id="node1" title=" " alt="" coords="937,81,1125,108"/>
+<area shape="rect" id="node2" href="$vgic-kvm-device_8c.html#aa01e5dcf80e608f64f5428d054d17a84" title=" " alt="" coords="697,56,889,83"/>
+<area shape="rect" id="node8" href="$vfio_8c.html#aadfb91e55569080466bdad79bcec7205" title=" " alt="" coords="723,107,863,133"/>
+<area shape="rect" id="node3" href="$vgic-v2_8c.html#aa3e64817232a1ce5658b7f3147f7f554" title=" " alt="" coords="533,5,649,32"/>
+<area shape="rect" id="node7" href="$vgic-v3_8c.html#ac418c84cff9542559c426a575c403136" title=" " alt="" coords="533,56,649,83"/>
+<area shape="rect" id="node4" href="$vgic-init_8c.html#aba3547aa220ca50b1eabca1a39c92943" title=" " alt="" coords="341,56,485,83"/>
+<area shape="rect" id="node5" href="$arm_8c.html#a040f9b021372ae855b2cc25a0c07da7a" title=" " alt="" coords="165,56,293,83"/>
+<area shape="rect" id="node6" href="$arm_8c.html#a625df4221f73b13d9f23aa818f60e547" title=" " alt="" coords="5,81,117,108"/>
+<area shape="rect" id="node9" href="$kvm__main_8c.html#a2372c616bc55bc4cd3446660cb7322fc" title=" " alt="" coords="374,107,453,133"/>
+</map>

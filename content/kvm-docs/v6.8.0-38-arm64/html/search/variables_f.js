@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['parent_5251',['parent',['../structkvm__vm__worker__thread__context.html#a59822767cac64a565fd34c43241636d4',1,'kvm_vm_worker_thread_context']]],
+  ['path_5252',['path',['../gen-hyprel_8c.html#a3b02c6de5c049804444a246f7fdf46b4',1,'gen-hyprel.c']]],
+  ['pc_5253',['pc',['../structpsci__boot__args.html#a4909a33032449d641343d5b92202a448',1,'psci_boot_args']]],
+  ['pfn_5254',['pfn',['../structhyp__shared__pfn.html#a3694c21870a6cdf6efd3c7e07d6626ab',1,'hyp_shared_pfn']]],
+  ['pgt_5255',['pgt',['../structhost__mmu.html#a43615cd7a093b7e266f2b87b6be55345',1,'host_mmu::pgt()'],['../structpkvm__hyp__vm.html#a74498b8ae536bb1ab92abf0fcb5e1a14',1,'pkvm_hyp_vm::pgt()']]],
+  ['phys_5256',['phys',['../structhyp__map__data.html#ad04fe8c9698e54e25b656707069bbf31',1,'hyp_map_data::phys()'],['../structstage2__map__data.html#aad1bd404766eec259cb7b15bcaa4f90b',1,'stage2_map_data::phys()']]],
+  ['pkvm_5fpgd_5flock_5257',['pkvm_pgd_lock',['../mm_8c.html#a4af0632ed35da546b03a75de7886984e',1,'pkvm_pgd_lock():&#160;mm.c'],['../mm_8h.html#a4af0632ed35da546b03a75de7886984e',1,'pkvm_pgd_lock():&#160;mm.c']]],
+  ['pkvm_5fpgtable_5258',['pkvm_pgtable',['../mm_8h.html#a7b9a521b68ca7bc0910bba447395a50e',1,'pkvm_pgtable():&#160;mm.c'],['../mm_8c.html#a7b9a521b68ca7bc0910bba447395a50e',1,'pkvm_pgtable():&#160;mm.c']]],
+  ['pkvm_5fpgtable_5fmm_5fops_5259',['pkvm_pgtable_mm_ops',['../setup_8c.html#adfd7ac18936b66957dc1bff827214803',1,'setup.c']]],
+  ['pmr_5260',['pmr',['../structvgic__vmcr.html#acd28958ebe1412c151df5d74a3dd4670',1,'vgic_vmcr']]],
+  ['pol_5261',['pol',['../uniontrap__config.html#a59ba476dc7fe5d51c40a72745d44ccd8',1,'trap_config']]],
+  ['pool_5262',['pool',['../structpkvm__hyp__vm.html#a5369a426999065d479687944446be768',1,'pkvm_hyp_vm']]],
+  ['pte_5263',['pte',['../structleaf__walk__data.html#a6d346db787f5c73083641043b9c172a6',1,'leaf_walk_data::pte()'],['../structstage2__attr__data.html#a590ba241f6f535d6c5e54fe42e2c24b9',1,'stage2_attr_data::pte()']]],
+  ['ptep_5264',['ptep',['../structhyp__fixmap__slot.html#a2074f2fe7b47252b9fceddfdfb7622ef',1,'hyp_fixmap_slot']]],
+  ['pvm_5fexit_5fhandlers_5265',['pvm_exit_handlers',['../nvhe_2switch_8c.html#a456be56e42aa4d0c1addc48901915170',1,'switch.c']]],
+  ['pvm_5fsys_5freg_5fdescs_5266',['pvm_sys_reg_descs',['../hyp_2nvhe_2sys__regs_8c.html#a7f80d28a3b8fbb1a233e958e3695800e',1,'sys_regs.c']]]
+];

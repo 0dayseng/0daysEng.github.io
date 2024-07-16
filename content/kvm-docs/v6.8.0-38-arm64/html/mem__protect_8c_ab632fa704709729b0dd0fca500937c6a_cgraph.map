@@ -1,0 +1,13 @@
+<map id="guest_s2_zalloc_pages_exact" name="guest_s2_zalloc_pages_exact">
+<area shape="rect" id="node1" title=" " alt="" coords="5,50,176,91"/>
+<area shape="rect" id="node2" href="$gfp_8h.html#a7a740bb58e275f0307a86b02008f751a" title=" " alt="" coords="224,95,355,121"/>
+<area shape="rect" id="node11" href="$gfp_8h.html#a8afe7199dbfd5418305d6dab8723e43c" title=" " alt="" coords="229,19,349,45"/>
+<area shape="rect" id="node3" href="$page__alloc_8c.html#a8ac88fa38a81f4de49d9e80665b1ffc0" title=" " alt="" coords="421,56,573,83"/>
+<area shape="rect" id="node7" href="$memory_8h.html#af9e2f139c35baaaccb3e11cfe21cf182" title=" " alt="" coords="403,5,592,32"/>
+<area shape="rect" id="node8" href="$spinlock_8h.html#ae942ff0e878cb0f4d55ddc4cc6275ec9" title=" " alt="" coords="440,107,555,133"/>
+<area shape="rect" id="node9" href="$spinlock_8h.html#a2c6e9db70599188dbe031e2ce8ec6b08" title=" " alt="" coords="432,157,563,184"/>
+<area shape="rect" id="node10" href="$page__alloc_8c.html#ab41323251ac55b72defe671d568dcce7" title=" " alt="" coords="441,208,554,235"/>
+<area shape="rect" id="node4" href="$page__alloc_8c.html#ae518629a69c1b296e4ade7f9bd7041b8" title=" " alt="" coords="644,5,812,32"/>
+<area shape="rect" id="node5" href="$page__alloc_8c.html#a02f9a2f04d282f7c4026c60bc2c8d81c" title=" " alt="" coords="662,56,794,83"/>
+<area shape="rect" id="node6" href="$page__alloc_8c.html#ab55ed9a753f81792da659a3b165fefee" title=" " alt="" coords="640,107,816,133"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="sysreg_save_guest_state_vhe" name="sysreg_save_guest_state_vhe">
+<area shape="rect" id="node1" title=" " alt="" coords="5,46,223,73"/>
+<area shape="rect" id="node2" href="$sysreg-sr_8h.html#ac730b260203b2c1c20f6946c74cef34a" title=" " alt="" coords="275,5,457,47"/>
+<area shape="rect" id="node3" href="$sysreg-sr_8h.html#a70a9a7752e05bc57685670ef4e936743" title=" " alt="" coords="271,71,461,112"/>
+</map>

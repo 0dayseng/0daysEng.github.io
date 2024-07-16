@@ -1,0 +1,7 @@
+<map id="kvm_get_running_vcpus" name="kvm_get_running_vcpus">
+<area shape="rect" id="node1" title=" " alt="" coords="541,31,721,57"/>
+<area shape="rect" id="node2" href="$arch__timer_8c.html#a27c9feb35e6d7126c054c3325fea59b0" title=" " alt="" coords="341,5,493,32"/>
+<area shape="rect" id="node5" href="$vgic-init_8c.html#aba3547aa220ca50b1eabca1a39c92943" title=" " alt="" coords="345,56,489,83"/>
+<area shape="rect" id="node3" href="$arm_8c.html#a040f9b021372ae855b2cc25a0c07da7a" title=" " alt="" coords="165,31,293,57"/>
+<area shape="rect" id="node4" href="$arm_8c.html#a625df4221f73b13d9f23aa818f60e547" title=" " alt="" coords="5,31,117,57"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="vgic_access_active_prepare" name="vgic_access_active_prepare">
+<area shape="rect" id="node1" title=" " alt="" coords="241,49,388,90"/>
+<area shape="rect" id="node2" href="$vgic-mmio_8c.html#a60807ef9e312b6dd6d335fc95bb9e278" title=" " alt="" coords="11,5,188,32"/>
+<area shape="rect" id="node3" href="$vgic-mmio_8c.html#aa63931731ae20241ae0791e6c37941bd" title=" " alt="" coords="5,56,193,83"/>
+<area shape="rect" id="node4" href="$vgic-mmio_8c.html#af0464f992e9cc43ef209cfe598d4eb00" title=" " alt="" coords="5,107,193,133"/>
+</map>

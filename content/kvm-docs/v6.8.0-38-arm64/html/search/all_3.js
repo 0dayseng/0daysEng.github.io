@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['bad_5fredir_5ftrap_320',['bad_redir_trap',['../sys__regs_8c.html#a34a8b7a8573c9ab0d01282e74ae7396d',1,'sys_regs.c']]],
+  ['bad_5ftrap_321',['bad_trap',['../sys__regs_8c.html#aaaf440dbcda866a4a7fa0d8b73f448ee',1,'sys_regs.c']]],
+  ['bad_5fvncr_5ftrap_322',['bad_vncr_trap',['../sys__regs_8c.html#a05a7fba8df9787d651813990bf08d8a3',1,'sys_regs.c']]],
+  ['base_323',['base',['../early__alloc_8c.html#a74f95eab64fb23344e30879684489f6f',1,'early_alloc.c']]],
+  ['baser_5findex_324',['BASER_INDEX',['../vgic-its_8c.html#a1052614a5dfb188c7f4d032f639db7cc',1,'vgic-its.c']]],
+  ['begin_325',['begin',['../gen-hyprel_8c.html#aa9f974458dc400bd897fe724a13dcd47',1,'gen-hyprel.c']]],
+  ['behave_5fforward_5fany_326',['BEHAVE_FORWARD_ANY',['../emulate-nested_8c.html#a16fb7fce52b64b52cda45cc42cbf08e2a441c64b4ba73dd4431fac64a40934286',1,'emulate-nested.c']]],
+  ['behave_5fforward_5fread_327',['BEHAVE_FORWARD_READ',['../emulate-nested_8c.html#a16fb7fce52b64b52cda45cc42cbf08e2a97e22dc5041b129e294288a6a1d8fb76',1,'emulate-nested.c']]],
+  ['behave_5fforward_5fwrite_328',['BEHAVE_FORWARD_WRITE',['../emulate-nested_8c.html#a16fb7fce52b64b52cda45cc42cbf08e2a48bba5bd8f67e6b042f980c66b5208d2',1,'emulate-nested.c']]],
+  ['behave_5fhandle_5flocally_329',['BEHAVE_HANDLE_LOCALLY',['../emulate-nested_8c.html#a16fb7fce52b64b52cda45cc42cbf08e2a00f11e5938a7bd0cb9ad1afd35871a05',1,'emulate-nested.c']]],
+  ['behaviour_330',['behaviour',['../structtrap__bits.html#a1f918447ed9f1851841210f408325264',1,'trap_bits']]],
+  ['binary_5fstats_2ec_331',['binary_stats.c',['../binary__stats_8c.html',1,'']]],
+  ['bindings_332',['bindings',['../structkvm__gmem.html#a7c1eaee6363021f06650d7f38786c54e',1,'kvm_gmem']]],
+  ['bit_333',['bit',['../uniontrap__config.html#a36ac0f0fa861bcb618412e535004b0e6',1,'trap_config']]],
+  ['bits_5fper_5firq_334',['bits_per_irq',['../structvgic__register__region.html#abd1b9afa22a489f0a67f1442b4efdafd',1,'vgic_register_region']]],
+  ['bpr_335',['bpr',['../structvgic__vmcr.html#a9edfe924545846e3207880eb579f9131',1,'vgic_vmcr']]],
+  ['broken_5fseis_336',['broken_seis',['../vgic-v3_8c.html#aa95bb579de42f69cbbb7a524b52a6ac0',1,'vgic-v3.c']]],
+  ['buf_337',['buf',['../structkvm__ffa__descriptor__buffer.html#a4f17575865a85ece6ff36bcf67ab67b1',1,'kvm_ffa_descriptor_buffer']]],
+  ['bus_5fidx_338',['bus_idx',['../struct__ioeventfd.html#a8a4645d7027dcaec205e58411d92ebe9',1,'_ioeventfd']]]
+];

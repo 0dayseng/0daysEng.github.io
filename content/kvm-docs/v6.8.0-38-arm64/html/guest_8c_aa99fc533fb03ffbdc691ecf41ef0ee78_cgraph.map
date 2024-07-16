@@ -1,0 +1,7 @@
+<map id="kvm_arm_vcpu_arch_get_attr" name="kvm_arm_vcpu_arch_get_attr">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,220,83"/>
+<area shape="rect" id="node2" href="$pmu-emul_8c.html#ae0be872f4075e40d5012567baff4c497" title=" " alt="" coords="268,5,469,32"/>
+<area shape="rect" id="node3" href="$pvtime_8c.html#a78fc16afc0c289796f30869de7908606" title=" " alt="" coords="271,56,466,83"/>
+<area shape="rect" id="node5" href="$arch__timer_8c.html#a653a586574104ddc469f6d4048ac214b" title=" " alt="" coords="277,107,461,133"/>
+<area shape="rect" id="node4" href="$pvtime_8c.html#a1f2cc22ceb74b031293b406ee9811380" title=" " alt="" coords="517,56,727,83"/>
+</map>

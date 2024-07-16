@@ -1,0 +1,16 @@
+<map id="arch/arm64/kvm/hyp/hyp&#45;constants.c" name="arch/arm64/kvm/hyp/hyp&#45;constants.c">
+<area shape="rect" id="node1" title=" " alt="" coords="164,5,321,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="94,95,205,121"/>
+<area shape="rect" id="node3" href="$memory_8h.html" title=" " alt="" coords="181,244,304,271"/>
+<area shape="rect" id="node7" href="$pkvm_8h.html" title=" " alt="" coords="365,95,472,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,319,141,345"/>
+<area shape="rect" id="node5" title=" " alt="" coords="165,319,264,345"/>
+<area shape="rect" id="node6" title=" " alt="" coords="288,319,395,345"/>
+<area shape="rect" id="node8" title=" " alt="" coords="280,169,419,196"/>
+<area shape="rect" id="node9" href="$gfp_8h.html" title=" " alt="" coords="443,169,533,196"/>
+<area shape="rect" id="node11" href="$spinlock_8h.html" title=" " alt="" coords="545,244,669,271"/>
+<area shape="rect" id="node10" title=" " alt="" coords="429,244,520,271"/>
+<area shape="rect" id="node12" title=" " alt="" coords="419,319,557,345"/>
+<area shape="rect" id="node13" title=" " alt="" coords="581,319,667,345"/>
+<area shape="rect" id="node14" title=" " alt="" coords="691,319,805,345"/>
+</map>

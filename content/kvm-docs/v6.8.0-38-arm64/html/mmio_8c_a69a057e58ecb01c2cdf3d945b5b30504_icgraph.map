@@ -1,0 +1,7 @@
+<map id="kvm_mmio_write_buf" name="kvm_mmio_write_buf">
+<area shape="rect" id="node1" title=" " alt="" coords="503,31,667,57"/>
+<area shape="rect" id="node2" href="$mmio_8c.html#adc096fcd3188033af748b5c7fc8fcf4d" title=" " alt="" coords="289,5,405,32"/>
+<area shape="rect" id="node4" href="$vgic-mmio_8c.html#aa55fcd97077745e41b48036d59b1c5ce" title=" " alt="" coords="240,56,455,83"/>
+<area shape="rect" id="node3" href="$mmu_8c.html#a2c7559bf16232daf5d3187255f1cb70e" title=" " alt="" coords="5,5,192,32"/>
+<area shape="rect" id="node5" href="$vgic-mmio_8c.html#a9128386eb23453575b0440e422fbb3b9" title=" " alt="" coords="19,56,178,83"/>
+</map>

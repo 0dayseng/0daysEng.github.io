@@ -1,0 +1,12 @@
+<map id="arch/arm64/kvm/hyp/include/hyp/adjust_pc.h" name="arch/arm64/kvm/hyp/include/hyp/adjust_pc.h">
+<area shape="rect" id="node1" title=" " alt="" coords="541,5,720,47"/>
+<area shape="rect" id="node2" href="$exception_8c.html" title=" " alt="" coords="5,95,163,136"/>
+<area shape="rect" id="node3" href="$switch_8h.html" title=" " alt="" coords="187,95,346,136"/>
+<area shape="rect" id="node6" href="$hyp-main_8c.html" title=" " alt="" coords="371,95,528,136"/>
+<area shape="rect" id="node7" href="$hyp_2nvhe_2sys__regs_8c.html" title=" " alt="" coords="552,95,709,136"/>
+<area shape="rect" id="node8" href="$vgic-v2-cpuif-proxy_8c.html" title=" " alt="" coords="733,95,893,136"/>
+<area shape="rect" id="node9" href="$emulate-nested_8c.html" title=" " alt="" coords="917,95,1104,136"/>
+<area shape="rect" id="node10" href="$vgic-v3-sr_8c.html" title=" " alt="" coords="1128,95,1285,136"/>
+<area shape="rect" id="node4" href="$nvhe_2switch_8c.html" title=" " alt="" coords="97,184,255,225"/>
+<area shape="rect" id="node5" href="$vhe_2switch_8c.html" title=" " alt="" coords="279,184,436,225"/>
+</map>

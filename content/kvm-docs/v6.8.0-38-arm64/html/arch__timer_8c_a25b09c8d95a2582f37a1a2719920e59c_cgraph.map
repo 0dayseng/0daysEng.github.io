@@ -1,0 +1,11 @@
+<map id="kvm_arch_timer_get_input_level" name="kvm_arch_timer_get_input_level">
+<area shape="rect" id="node1" title=" " alt="" coords="5,74,161,115"/>
+<area shape="rect" id="node2" href="$kvm__main_8c.html#ac5a3afd8e2d8d1139dc7711c4b9e07e3" title=" " alt="" coords="209,31,383,57"/>
+<area shape="rect" id="node3" href="$arch__timer_8c.html#a64a4d2f3d2a9b83524edda4b27246092" title=" " alt="" coords="211,81,381,108"/>
+<area shape="rect" id="node9" href="$arch__timer_8c.html#ad2a704b646b65309708c3a7f6ab70913" title=" " alt="" coords="254,132,338,159"/>
+<area shape="rect" id="node4" href="$arch__timer_8c.html#ac9f7917175f1d6031a77dcbc82f9ee98" title=" " alt="" coords="435,5,601,32"/>
+<area shape="rect" id="node5" href="$arch__timer_8c.html#ae722c5e3eba2098c012b2cdc4d74bf9f" title=" " alt="" coords="431,56,605,83"/>
+<area shape="rect" id="node7" href="$arch__timer_8c.html#a848ba80b4ffee7a071e37abb241262cd" title=" " alt="" coords="459,107,577,133"/>
+<area shape="rect" id="node8" href="$arch__timer_8c.html#a7f5f777b74b5c9ec6e13d4f7576d7f43" title=" " alt="" coords="453,157,583,184"/>
+<area shape="rect" id="node6" href="$arch__timer_8c.html#ad7dab91af9f69654aa27010f96125c13" title=" " alt="" coords="653,56,761,83"/>
+</map>

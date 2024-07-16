@@ -1,0 +1,8 @@
+<map id="kvm_cpu_has_pending_timer" name="kvm_cpu_has_pending_timer">
+<area shape="rect" id="node1" title=" " alt="" coords="5,23,176,65"/>
+<area shape="rect" id="node2" href="$arch__timer_8c.html#ad210f5f7b0361777290f8b36f023a518" title=" " alt="" coords="224,5,385,32"/>
+<area shape="rect" id="node3" href="$arch__timer_8c.html#a9d0120f96e99b20be8023dad5c6a7f0b" title=" " alt="" coords="249,56,360,83"/>
+<area shape="rect" id="node4" href="$arch__timer_8c.html#a6c290bf8212ea1388cdb4a839eae7228" title=" " alt="" coords="433,49,604,90"/>
+<area shape="rect" id="node5" href="$arch__timer_8c.html#ac9f7917175f1d6031a77dcbc82f9ee98" title=" " alt="" coords="652,31,819,57"/>
+<area shape="rect" id="node6" href="$arch__timer_8c.html#a7f5f777b74b5c9ec6e13d4f7576d7f43" title=" " alt="" coords="671,81,800,108"/>
+</map>

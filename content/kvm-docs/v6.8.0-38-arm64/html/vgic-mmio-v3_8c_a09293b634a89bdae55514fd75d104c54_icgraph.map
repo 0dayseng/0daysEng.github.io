@@ -1,0 +1,8 @@
+<map id="update_64bit_reg" name="update_64bit_reg">
+<area shape="rect" id="node1" title=" " alt="" coords="257,143,392,170"/>
+<area shape="rect" id="node2" href="$vgic-its_8c.html#a4d58bbcf55fd798c0d719ba5f124d273" title=" " alt="" coords="29,5,186,47"/>
+<area shape="rect" id="node3" href="$vgic-its_8c.html#a0c158eb71b821ecfc381e489ef795013" title=" " alt="" coords="29,71,186,112"/>
+<area shape="rect" id="node4" href="$vgic-its_8c.html#a9ca22518cb44ebb3e3fadd8563431a41" title=" " alt="" coords="29,136,186,177"/>
+<area shape="rect" id="node5" href="$vgic-mmio-v3_8c.html#a73464061dcd480eca919531655f1fe7d" title=" " alt="" coords="5,202,209,229"/>
+<area shape="rect" id="node6" href="$vgic-mmio-v3_8c.html#a16fe30f43e40da912459753baebddf3d" title=" " alt="" coords="7,253,208,279"/>
+</map>

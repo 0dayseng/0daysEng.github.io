@@ -1,0 +1,20 @@
+<map id="kvm_handle_pvm_restricted" name="kvm_handle_pvm_restricted">
+<area shape="rect" id="node1" title=" " alt="" coords="5,214,212,241"/>
+<area shape="rect" id="node2" href="$hyp_2nvhe_2sys__regs_8c.html#a846082def00d9a7db3f28b1b7fb2a07a" title=" " alt="" coords="260,214,379,241"/>
+<area shape="rect" id="node3" href="$exception_8c.html#a69b40cbdae816f5cb612962c0f5da592" title=" " alt="" coords="427,214,561,241"/>
+<area shape="rect" id="node4" href="$exception_8c.html#a5951865f1186392f5e4f0bc260c3b840" title=" " alt="" coords="609,189,775,215"/>
+<area shape="rect" id="node16" href="$adjust__pc_8h.html#a3a6ebd94aaf8bbd3c8461a2ca19a0d0d" title=" " alt="" coords="631,239,753,266"/>
+<area shape="rect" id="node5" href="$exception_8c.html#a915e81f46f11cc1767049dbbf071923f" title=" " alt="" coords="823,87,965,114"/>
+<area shape="rect" id="node12" href="$exception_8c.html#a0bd428ba7b098cc3417dca2f3f3bc9bf" title=" " alt="" coords="1028,189,1171,215"/>
+<area shape="rect" id="node6" href="$exception_8c.html#aea63a7b5581ad205c5a3a5d3531b7fed" title=" " alt="" coords="1235,138,1395,165"/>
+<area shape="rect" id="node9" href="$exception_8c.html#a1cfd551aa65a969630cfd13e6649c35b" title=" " alt="" coords="1015,37,1184,63"/>
+<area shape="rect" id="node10" href="$exception_8c.html#aa4dbecd3b85348049487835e4d17ca66" title=" " alt="" coords="1013,87,1185,114"/>
+<area shape="rect" id="node11" href="$exception_8c.html#af5715c62a030571c39074f9da1d5d5c3" title=" " alt="" coords="1027,138,1171,165"/>
+<area shape="rect" id="node7" href="$sys__regs_8c.html#a79848758fc91bd6081326514833ffafa" title=" " alt="" coords="1447,138,1594,165"/>
+<area shape="rect" id="node8" href="$sys__regs_8c.html#a8f5bcf4d21c4d9b1881dd3fec5bd6178" title=" " alt="" coords="1644,163,1825,190"/>
+<area shape="rect" id="node13" href="$exception_8c.html#aa371d4a38496eb6418245edd33508e91" title=" " alt="" coords="1245,189,1386,215"/>
+<area shape="rect" id="node15" href="$exception_8c.html#adfc457815ba5f6b82bcf4dd88d34749e" title=" " alt="" coords="1233,239,1397,266"/>
+<area shape="rect" id="node14" href="$sys__regs_8c.html#adf66277e472bdae2cc839d450085bc4b" title=" " alt="" coords="1445,189,1596,215"/>
+<area shape="rect" id="node17" href="$aarch32_8c.html#a1b8e30a6e24795d6b69e6ff5f0e50563" title=" " alt="" coords="825,239,963,266"/>
+<area shape="rect" id="node18" href="$aarch32_8c.html#a6ae543a454d66a57a2ef3c00112a6a6d" title=" " alt="" coords="1026,239,1173,266"/>
+</map>

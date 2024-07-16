@@ -1,0 +1,9 @@
+<map id="kvm_vgic_register_its_device" name="kvm_vgic_register_its_device">
+<area shape="rect" id="node1" title=" " alt="" coords="937,23,1103,65"/>
+<area shape="rect" id="node2" href="$vgic-kvm-device_8c.html#aa01e5dcf80e608f64f5428d054d17a84" title=" " alt="" coords="697,31,889,57"/>
+<area shape="rect" id="node3" href="$vgic-v2_8c.html#aa3e64817232a1ce5658b7f3147f7f554" title=" " alt="" coords="533,5,649,32"/>
+<area shape="rect" id="node7" href="$vgic-v3_8c.html#ac418c84cff9542559c426a575c403136" title=" " alt="" coords="533,56,649,83"/>
+<area shape="rect" id="node4" href="$vgic-init_8c.html#aba3547aa220ca50b1eabca1a39c92943" title=" " alt="" coords="341,31,485,57"/>
+<area shape="rect" id="node5" href="$arm_8c.html#a040f9b021372ae855b2cc25a0c07da7a" title=" " alt="" coords="165,31,293,57"/>
+<area shape="rect" id="node6" href="$arm_8c.html#a625df4221f73b13d9f23aa818f60e547" title=" " alt="" coords="5,31,117,57"/>
+</map>

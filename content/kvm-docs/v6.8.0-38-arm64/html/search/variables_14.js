@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['va_5fmask_5304',['va_mask',['../va__layout_8c.html#aec97d10ca0fa4b4b27f6094266da6edb',1,'va_layout.c']]],
+  ['val_5305',['val',['../structsys__reg__desc.html#ad076e217b99201ed85abb7bc956c924c',1,'sys_reg_desc::val()'],['../uniontrap__config.html#aa1caa2941b24632af5e5f50cc6ca852b',1,'trap_config::val()']]],
+  ['value_5306',['value',['../structtrap__bits.html#acf71a427b48c479d0b175aed19c114f1',1,'trap_bits']]],
+  ['vcpu_5307',['vcpu',['../structpkvm__hyp__vcpu.html#a4c0a73fea5ae1993444129cf102451a6',1,'pkvm_hyp_vcpu::vcpu()'],['../structvgic__reg__attr.html#a0f43e17045dc6b13404b4759e0fccad1',1,'vgic_reg_attr::vcpu()']]],
+  ['vcpu_5fid_5308',['vcpu_id',['../structvgic__state__iter.html#ab0840534770af4133edb9c1194f987a1',1,'vgic_state_iter']]],
+  ['vcpus_5309',['vcpus',['../structpkvm__hyp__vm.html#af611e6bd4d351599211f2ea0d2799750',1,'pkvm_hyp_vm']]],
+  ['vgic_5fdebug_5fsops_5310',['vgic_debug_sops',['../vgic-debug_8c.html#a4e07c012e57b9ded5c730d58b897fe70',1,'vgic-debug.c']]],
+  ['vgic_5fpresent_5311',['vgic_present',['../arm_8c.html#a2d2a7562121a24ad4564ff5c4155bdd8',1,'arm.c']]],
+  ['vgic_5fv2_5fcpu_5fregisters_5312',['vgic_v2_cpu_registers',['../vgic-mmio-v2_8c.html#ac4241542a1457fef0aca460136f5c7ba',1,'vgic-mmio-v2.c']]],
+  ['vgic_5fv2_5fdist_5fregisters_5313',['vgic_v2_dist_registers',['../vgic-mmio-v2_8c.html#aee710f1eefb272d4376680d9f2ecccad',1,'vgic-mmio-v2.c']]],
+  ['vgic_5fv3_5fdist_5fregisters_5314',['vgic_v3_dist_registers',['../vgic-mmio-v3_8c.html#a04f164757c56887adde5a7ba053db28f',1,'vgic-mmio-v3.c']]],
+  ['vgic_5fv3_5frd_5fregisters_5315',['vgic_v3_rd_registers',['../vgic-mmio-v3_8c.html#a3f49ef93d8249e0e2c38174a69c7d285',1,'vgic-mmio-v3.c']]],
+  ['visibility_5316',['visibility',['../structsys__reg__desc.html#ab11886b8d43b0ff24d783b8fbf5489d4',1,'sys_reg_desc']]],
+  ['vm_5ftable_5317',['vm_table',['../hyp_2nvhe_2pkvm_8c.html#a17425ab40cd41e111f5331be6e644d83',1,'pkvm.c']]],
+  ['vm_5ftable_5fbase_5318',['vm_table_base',['../setup_8c.html#aec5cfc568b5c34b2ee8dd23207e78b37',1,'setup.c']]],
+  ['vmemmap_5fbase_5319',['vmemmap_base',['../setup_8c.html#af67617d36b4054ea302dea413b0d5d0f',1,'setup.c']]],
+  ['vmid_5fgeneration_5320',['vmid_generation',['../vmid_8c.html#a7d22359966e08abcb4ebb4e24f6d0aec',1,'vmid.c']]],
+  ['vmid_5fmap_5321',['vmid_map',['../vmid_8c.html#a6b53d061c889323d8841ff3fbc041853',1,'vmid.c']]]
+];

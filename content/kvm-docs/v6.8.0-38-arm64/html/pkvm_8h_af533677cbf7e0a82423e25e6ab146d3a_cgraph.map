@@ -1,0 +1,7 @@
+<map id="pkvm_put_hyp_vcpu" name="pkvm_put_hyp_vcpu">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,161,108"/>
+<area shape="rect" id="node2" href="$memory_8h.html#a3cc326fe973add2b2ea91f6b04dd8fde" title=" " alt="" coords="243,5,383,32"/>
+<area shape="rect" id="node3" href="$spinlock_8h.html#ae942ff0e878cb0f4d55ddc4cc6275ec9" title=" " alt="" coords="255,56,370,83"/>
+<area shape="rect" id="node4" href="$spinlock_8h.html#a2c6e9db70599188dbe031e2ce8ec6b08" title=" " alt="" coords="247,107,378,133"/>
+<area shape="rect" id="node5" href="$pkvm_8h.html#af309540fc98994ba55e970bf4ec14b65" title=" " alt="" coords="209,157,416,184"/>
+</map>

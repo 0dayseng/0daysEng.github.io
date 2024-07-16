@@ -1,0 +1,5 @@
+<map id="vgic_set_rdist_busy" name="vgic_set_rdist_busy">
+<area shape="rect" id="node1" title=" " alt="" coords="231,31,381,57"/>
+<area shape="rect" id="node2" href="$vgic-mmio-v3_8c.html#a14d4cb37d23ef8aaa7174fcc8ed53b47" title=" " alt="" coords="5,5,183,32"/>
+<area shape="rect" id="node3" href="$vgic-mmio-v3_8c.html#aa268002fc305866e42157249254372cb" title=" " alt="" coords="5,56,183,83"/>
+</map>

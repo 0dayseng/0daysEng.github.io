@@ -1,0 +1,6 @@
+<map id="kvm_hyp_handle_memory_fault" name="kvm_hyp_handle_memory_fault">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,200,47"/>
+<area shape="rect" id="node2" href="$switch_8h.html#a7d1fc5384e0112ca931e813f5267cf02" title=" " alt="" coords="248,13,411,39"/>
+<area shape="rect" id="node3" href="$fault_8h.html#a1155168525d4be29f1f7cead6e3022f7" title=" " alt="" coords="459,13,585,39"/>
+<area shape="rect" id="node4" href="$fault_8h.html#ae9946f6fae7885afcf446266a2699328" title=" " alt="" coords="633,5,772,47"/>
+</map>

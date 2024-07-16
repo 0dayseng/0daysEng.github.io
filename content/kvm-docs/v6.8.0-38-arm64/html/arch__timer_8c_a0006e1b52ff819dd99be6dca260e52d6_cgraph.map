@@ -1,0 +1,18 @@
+<map id="kvm_timer_vcpu_put" name="kvm_timer_vcpu_put">
+<area shape="rect" id="node1" title=" " alt="" coords="5,132,164,159"/>
+<area shape="rect" id="node2" href="$arch__timer_8c.html#ad7e756ea5077e85e2a10bfe35543ce21" title=" " alt="" coords="444,5,565,32"/>
+<area shape="rect" id="node3" href="$arch__timer_8c.html#a0abce4d3df0f10be896c5ff0cb489041" title=" " alt="" coords="212,107,367,133"/>
+<area shape="rect" id="node9" href="$arch__timer_8c.html#ad19b9cbace853dd534bf572a35f83710" title=" " alt="" coords="221,157,358,184"/>
+<area shape="rect" id="node10" href="$arch__timer_8c.html#a08b7dad9cb511eeaec5ab08e2a2ae1af" title=" " alt="" coords="222,335,357,361"/>
+<area shape="rect" id="node4" href="$arch__timer_8c.html#adbe9b97af2fe25eb9d48e231bba23fcf" title=" " alt="" coords="415,56,595,83"/>
+<area shape="rect" id="node5" href="$arch__timer_8c.html#ae722c5e3eba2098c012b2cdc4d74bf9f" title=" " alt="" coords="417,107,592,133"/>
+<area shape="rect" id="node7" href="$arch__timer_8c.html#a00de950346bea7137e0f06522d67ab2b" title=" " alt="" coords="442,157,567,184"/>
+<area shape="rect" id="node8" href="$arch__timer_8c.html#ad210f5f7b0361777290f8b36f023a518" title=" " alt="" coords="424,208,585,235"/>
+<area shape="rect" id="node6" href="$arch__timer_8c.html#ad7dab91af9f69654aa27010f96125c13" title=" " alt="" coords="682,107,790,133"/>
+<area shape="rect" id="node11" href="$arch__timer_8c.html#a6fcfce8307e73b5ae888edca334508aa" title=" " alt="" coords="457,259,552,285"/>
+<area shape="rect" id="node12" href="$arch__timer_8c.html#a207ce56a4fe08e050e49e49334548e15" title=" " alt="" coords="457,309,552,336"/>
+<area shape="rect" id="node14" href="$arch__timer_8c.html#a7f5f777b74b5c9ec6e13d4f7576d7f43" title=" " alt="" coords="440,360,569,387"/>
+<area shape="rect" id="node15" href="$arch__timer_8c.html#a2e57f3714ec062699e29ae4e13d80dac" title=" " alt="" coords="451,411,558,437"/>
+<area shape="rect" id="node16" href="$arch__timer_8c.html#ab50c2af796cc5134fa3942c857dd4fb7" title=" " alt="" coords="445,461,564,488"/>
+<area shape="rect" id="node13" href="$nvhe_2timer-sr_8c.html#a73539c3eaa37749e44c40351913b9efb" title=" " alt="" coords="643,309,829,336"/>
+</map>

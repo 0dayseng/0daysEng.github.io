@@ -1,0 +1,5 @@
+<map id="vgic_mmio_read_its_typer" name="vgic_mmio_read_its_typer">
+<area shape="rect" id="node1" title=" " alt="" coords="5,23,159,65"/>
+<area shape="rect" id="node2" href="$vgic-mmio-v3_8c.html#a71e0688586779b44a15801194e77b4fc" title=" " alt="" coords="215,5,325,32"/>
+<area shape="rect" id="node3" href="$vgic-its_8c.html#a0afa4ce95db727a6aa1a56042d116e60" title=" " alt="" coords="207,56,333,83"/>
+</map>

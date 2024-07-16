@@ -1,0 +1,10 @@
+<map id="vgic_mmio_write_irouter" name="vgic_mmio_write_irouter">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,189,83"/>
+<area shape="rect" id="node2" href="$arm_8c.html#a0be215e1642483c65818bd994b13a421" title=" " alt="" coords="237,5,392,32"/>
+<area shape="rect" id="node3" href="$vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516" title=" " alt="" coords="264,56,365,83"/>
+<area shape="rect" id="node6" href="$vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5" title=" " alt="" coords="264,107,365,133"/>
+<area shape="rect" id="node4" href="$vgic_8c.html#afeaf79de85450ed5fb52dbd7bd8c6617" title=" " alt="" coords="471,56,571,83"/>
+<area shape="rect" id="node5" href="$vgic_8h.html#a43d39599f0fd2d973c5af8d6045e0f91" title=" " alt="" coords="651,56,785,83"/>
+<area shape="rect" id="node7" href="$vgic_8c.html#affa1a20a5bd9d67dc546c1ccaace3406" title=" " alt="" coords="440,107,603,133"/>
+<area shape="rect" id="node8" href="$vgic_8c.html#a7d513558f0ea4ecbc012c98b3522f797" title=" " alt="" coords="654,107,782,133"/>
+</map>

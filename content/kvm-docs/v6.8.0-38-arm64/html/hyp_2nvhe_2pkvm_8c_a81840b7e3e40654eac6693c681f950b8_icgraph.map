@@ -1,0 +1,7 @@
+<map id="pvm_init_traps_aa64pfr0" name="pvm_init_traps_aa64pfr0">
+<area shape="rect" id="node1" title=" " alt="" coords="631,46,815,73"/>
+<area shape="rect" id="node2" href="$trap__handler_8h.html#a6c91d65c0fb66dd5f7fbfb8a85e8c5a2" title=" " alt="" coords="404,46,583,73"/>
+<area shape="rect" id="node3" href="$hyp-main_8c.html#a0d2e48d97b2c17f9bfb2baf739424e84" title=" " alt="" coords="185,5,348,47"/>
+<area shape="rect" id="node4" href="$arm_8c.html#a163f3db5fe1d973be2855f4a479a5c8c" title=" " alt="" coords="177,71,356,112"/>
+<area shape="rect" id="node5" href="$kvm__main_8c.html#a2f2d3734c4cf61a1f4f94e9d47c37d55" title=" " alt="" coords="5,78,129,105"/>
+</map>

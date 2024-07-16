@@ -1,0 +1,10 @@
+<map id="vgic_mmio_write_propbase" name="vgic_mmio_write_propbase">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,207,83"/>
+<area shape="rect" id="node2" href="$vgic-mmio-v3_8c.html#a09293b634a89bdae55514fd75d104c54" title=" " alt="" coords="277,5,411,32"/>
+<area shape="rect" id="node3" href="$vgic-mmio-v3_8c.html#aa37f9ed0ed7921675bc4167d4a9d9261" title=" " alt="" coords="275,56,413,83"/>
+<area shape="rect" id="node4" href="$vgic-mmio-v3_8c.html#acb01f2a924d79b1fc561becc46d3385c" title=" " alt="" coords="255,107,433,133"/>
+<area shape="rect" id="node5" href="$vgic-mmio-v3_8c.html#aff0821b4fa6759353d9b26d84f687f36" title=" " alt="" coords="505,15,648,41"/>
+<area shape="rect" id="node6" href="$vgic-mmio-v3_8c.html#a530f076afb58dfe66a3b4f637921e3e7" title=" " alt="" coords="503,66,650,107"/>
+<area shape="rect" id="node7" href="$vgic-mmio-v3_8c.html#a77ee55f4249b721d27afd1b7cad3ef52" title=" " alt="" coords="503,131,651,173"/>
+<area shape="rect" id="node8" href="$vgic-mmio-v3_8c.html#a4edffc6494d7b269d406f2d4d1823988" title=" " alt="" coords="481,197,672,224"/>
+</map>

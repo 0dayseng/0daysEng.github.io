@@ -1,0 +1,9 @@
+<map id="psci_cpu_on" name="psci_cpu_on">
+<area shape="rect" id="node1" title=" " alt="" coords="923,31,1024,57"/>
+<area shape="rect" id="node2" href="$psci-relay_8c.html#ac9558fdd569937720b239af3c769b695" title=" " alt="" coords="557,5,692,32"/>
+<area shape="rect" id="node6" href="$psci-relay_8c.html#ac1da8bd14af1bb0d0d8d4dcf6b5cc1c4" title=" " alt="" coords="740,56,875,83"/>
+<area shape="rect" id="node3" href="$psci-relay_8c.html#a0f1c493bdc589caf3fa3ab598b60f88f" title=" " alt="" coords="335,56,509,83"/>
+<area shape="rect" id="node4" href="$hyp-main_8c.html#a3081d085578814fee1daf23c002c9a17" title=" " alt="" coords="152,56,287,83"/>
+<area shape="rect" id="node5" href="$hyp-main_8c.html#a8236bf488388191f2be744de37995d6c" title=" " alt="" coords="5,56,104,83"/>
+<area shape="rect" id="node7" href="$psci-relay_8c.html#a9e6829fa69da3fbb2e6a826e56a8020a" title=" " alt="" coords="557,107,692,133"/>
+</map>

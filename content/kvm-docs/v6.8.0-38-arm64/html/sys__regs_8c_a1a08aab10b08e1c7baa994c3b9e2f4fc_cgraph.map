@@ -1,0 +1,12 @@
+<map id="read_from_write_only" name="read_from_write_only">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,169,83"/>
+<area shape="rect" id="node2" href="$sys__regs_8c.html#aaaf440dbcda866a4a7fa0d8b73f448ee" title=" " alt="" coords="217,56,296,83"/>
+<area shape="rect" id="node3" href="$inject__fault_8c.html#aece14f61701021b17e9cf5521f7946fb" title=" " alt="" coords="344,31,509,57"/>
+<area shape="rect" id="node10" href="$sys__regs_8h.html#aa0564552f7b8421fe79d8da12b5296f6" title=" " alt="" coords="354,81,499,108"/>
+<area shape="rect" id="node4" href="$inject__fault_8c.html#ae6fc8db83ad0518fddd2e485687e0f7d" title=" " alt="" coords="557,5,676,32"/>
+<area shape="rect" id="node5" href="$inject__fault_8c.html#a846082def00d9a7db3f28b1b7fb2a07a" title=" " alt="" coords="557,56,676,83"/>
+<area shape="rect" id="node6" href="$inject__fault_8c.html#a326fe690ce371beb7496d3ed3cbe1a6e" title=" " alt="" coords="741,5,869,32"/>
+<area shape="rect" id="node7" href="$inject__fault_8c.html#a887586bbc6bac834ae37cbf84711288c" title=" " alt="" coords="724,56,887,83"/>
+<area shape="rect" id="node8" href="$sys__regs_8c.html#adf66277e472bdae2cc839d450085bc4b" title=" " alt="" coords="730,107,881,133"/>
+<area shape="rect" id="node9" href="$sys__regs_8c.html#a8f5bcf4d21c4d9b1881dd3fec5bd6178" title=" " alt="" coords="935,107,1116,133"/>
+</map>

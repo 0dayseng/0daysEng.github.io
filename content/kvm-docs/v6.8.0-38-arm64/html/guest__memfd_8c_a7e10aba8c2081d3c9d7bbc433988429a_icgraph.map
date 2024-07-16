@@ -1,0 +1,6 @@
+<map id="kvm_gmem_get_folio" name="kvm_gmem_get_folio">
+<area shape="rect" id="node1" title=" " alt="" coords="424,31,588,57"/>
+<area shape="rect" id="node2" href="$guest__memfd_8c.html#a8fd05c71126e578386e7b72c42e948d2" title=" " alt="" coords="217,5,376,32"/>
+<area shape="rect" id="node4" href="$guest__memfd_8c.html#a51a6ac4b7db481b543ba504e726955c0" title=" " alt="" coords="219,56,375,83"/>
+<area shape="rect" id="node3" href="$guest__memfd_8c.html#a5f64708439468ee74348c33777199e0d" title=" " alt="" coords="5,5,169,32"/>
+</map>

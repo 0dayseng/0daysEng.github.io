@@ -1,0 +1,15 @@
+<map id="kvm_vgic_put" name="kvm_vgic_put">
+<area shape="rect" id="node1" title=" " alt="" coords="5,97,119,124"/>
+<area shape="rect" id="node2" href="$vgic-v2_8c.html#a7c82d0c75692973442f9002861867d9c" title=" " alt="" coords="167,39,267,65"/>
+<area shape="rect" id="node4" href="$vgic-v3_8c.html#a6a9931a18504090acd3d559ba25374ff" title=" " alt="" coords="167,123,267,149"/>
+<area shape="rect" id="node3" href="$vgic-v2_8c.html#aa92110fc4f1e453fde0e8e720845854f" title=" " alt="" coords="321,5,471,32"/>
+<area shape="rect" id="node5" href="$vgic-v3-sr_8c.html#ab70e80f7429729196f62308bdcdb9825" title=" " alt="" coords="315,57,477,98"/>
+<area shape="rect" id="node6" href="$vgic-v3-sr_8c.html#a6809b3241d8a98933f3df9eec4948e8b" title=" " alt="" coords="317,123,475,149"/>
+<area shape="rect" id="node9" href="$vgic-v3_8c.html#aa3f97179d90d3ed6a8920d1c57496380" title=" " alt="" coords="321,173,471,200"/>
+<area shape="rect" id="node11" href="$vgic-v4_8c.html#aeafcb3e6b67ea32ed8e59d009252e565" title=" " alt="" coords="346,224,446,251"/>
+<area shape="rect" id="node7" href="$vgic-v3-sr_8c.html#a2a8d56dbda4d0bbd01772b003db6e8cf" title=" " alt="" coords="539,72,706,99"/>
+<area shape="rect" id="node8" href="$vgic-v3-sr_8c.html#a0ef2cefc965498ba77c24811c45723be" title=" " alt="" coords="539,123,706,149"/>
+<area shape="rect" id="node10" href="$vgic-v3-sr_8c.html#a4c7049da2b551848d3e39293c881f329" title=" " alt="" coords="541,173,704,200"/>
+<area shape="rect" id="node12" href="$vgic-mmio-v3_8c.html#a839b15883ba8f9de35a03ffce32fdf7f" title=" " alt="" coords="525,224,720,251"/>
+<area shape="rect" id="node13" href="$vgic-mmio-v3_8c.html#a47708b59ddd94e03880996def466067e" title=" " alt="" coords="768,224,871,251"/>
+</map>

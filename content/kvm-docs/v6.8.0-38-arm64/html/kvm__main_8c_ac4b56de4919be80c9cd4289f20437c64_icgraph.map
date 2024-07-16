@@ -1,0 +1,16 @@
+<map id="kvm_vcpu_gfn_to_memslot" name="kvm_vcpu_gfn_to_memslot">
+<area shape="rect" id="node1" title=" " alt="" coords="484,224,687,251"/>
+<area shape="rect" id="node2" href="$kvm__main_8c.html#a5ae134bb830c25b746bfe56ec97f2f83" title=" " alt="" coords="247,5,415,32"/>
+<area shape="rect" id="node3" href="$kvm__main_8c.html#a0718434da7300e7c1ff82fd082225bf7" title=" " alt="" coords="230,56,431,83"/>
+<area shape="rect" id="node5" href="$kvm__main_8c.html#aa3c3356fd8fdb6e2b225657af6cbe749" title=" " alt="" coords="248,107,413,133"/>
+<area shape="rect" id="node6" href="$kvm__main_8c.html#aeeef461001f8cdb6c0e77ee7b0bb59c9" title=" " alt="" coords="248,158,413,199"/>
+<area shape="rect" id="node7" href="$kvm__main_8c.html#ac6f5a79d7adfff7a4b5256a2a154e926" title=" " alt="" coords="238,224,423,251"/>
+<area shape="rect" id="node8" href="$kvm__main_8c.html#ab3f118170e5a0cf30913bc0cd0a79cfd" title=" " alt="" coords="246,275,415,317"/>
+<area shape="rect" id="node10" href="$kvm__main_8c.html#a840d38762a9b0e1a7cb3034781c3b470" title=" " alt="" coords="247,341,415,382"/>
+<area shape="rect" id="node11" href="$kvm__main_8c.html#adfef9b2c2d6359fd443d98f51be19605" title=" " alt="" coords="227,407,434,433"/>
+<area shape="rect" id="node13" href="$kvm__main_8c.html#a11bfd7eb429f6121f6999a8a404eac33" title=" " alt="" coords="225,457,436,484"/>
+<area shape="rect" id="node4" href="$kvm__main_8c.html#a245ab83d64b860f66caabdf3a9b3986c" title=" " alt="" coords="12,56,171,83"/>
+<area shape="rect" id="node9" href="$kvm__main_8c.html#af9a24e7d30a38de04326c683ebc6a155" title=" " alt="" coords="21,283,162,309"/>
+<area shape="rect" id="node12" href="$kvm__main_8c.html#ae63a6f386d39aff5ffc5645780018b7a" title=" " alt="" coords="7,407,175,433"/>
+<area shape="rect" id="node14" href="$kvm__main_8c.html#aff9f069d82daf13f02f262eaf6a23ca5" title=" " alt="" coords="5,457,177,484"/>
+</map>

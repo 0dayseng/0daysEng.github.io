@@ -1,0 +1,15 @@
+<map id="vgic_v3_cpu_sysregs_uaccess" name="vgic_v3_cpu_sysregs_uaccess">
+<area shape="rect" id="node1" title=" " alt="" coords="5,49,164,90"/>
+<area shape="rect" id="node2" href="$vgic-sys-reg-v3_8c.html#a0bc09e2deb4b346bbe5a850747711fbc" title=" " alt="" coords="255,5,339,32"/>
+<area shape="rect" id="node3" href="$sys__regs_8c.html#a228e61f9390e36b563ab837dfcf03ae2" title=" " alt="" coords="212,56,383,83"/>
+<area shape="rect" id="node12" href="$sys__regs_8c.html#ab29b04a8d34d81f0cce231f94feba038" title=" " alt="" coords="212,107,383,133"/>
+<area shape="rect" id="node4" href="$sys__regs_8c.html#af212e5241f19483aede7d85e43a93b42" title=" " alt="" coords="432,56,580,83"/>
+<area shape="rect" id="node11" href="$sys__regs_8h.html#acb0346a28ca0b3fd59d3c815d4d683a1" title=" " alt="" coords="431,107,581,133"/>
+<area shape="rect" id="node5" href="$sys__regs_8c.html#ac41b37ff19cd3eda5658080a3eb8c558" title=" " alt="" coords="667,56,780,83"/>
+<area shape="rect" id="node9" href="$sys__regs_8h.html#a1288fc38e8c8e5e2bbf3cfeb9291cef9" title=" " alt="" coords="665,107,781,133"/>
+<area shape="rect" id="node6" href="$sys__regs_8h.html#a5478d1284365aa547695b6889e4a05ef" title=" " alt="" coords="895,19,970,45"/>
+<area shape="rect" id="node8" href="$sys__regs_8c.html#a000b8bb9ea7247fee0c7acc84817d960" title=" " alt="" coords="865,69,1000,96"/>
+<area shape="rect" id="node7" href="$sys__regs_8h.html#aba3abb7cabe45542d03289fe25af9526" title=" " alt="" coords="1048,19,1168,45"/>
+<area shape="rect" id="node10" href="$sys__regs_8h.html#ad57e201c718d43223fb293d770c1ef3b" title=" " alt="" coords="869,132,997,159"/>
+<area shape="rect" id="node13" href="$sys__regs_8h.html#a95e3e5f281cf82d91e6a522ee3acb4cc" title=" " alt="" coords="629,157,817,184"/>
+</map>

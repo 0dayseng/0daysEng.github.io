@@ -1,0 +1,16 @@
+<map id="kvm_vcpu_check_block" name="kvm_vcpu_check_block">
+<area shape="rect" id="node1" title=" " alt="" coords="5,84,181,111"/>
+<area shape="rect" id="node2" href="$arm_8c.html#ac412fb0d81a53e66d8ac4146e4202f92" title=" " alt="" coords="229,55,417,81"/>
+<area shape="rect" id="node9" href="$arch__timer_8c.html#a78e23e83bece8c269268f3a263fbb114" title=" " alt="" coords="238,106,409,147"/>
+<area shape="rect" id="node3" href="$arm_8c.html#a371c5c68ee659e4815a4af50d0161c8a" title=" " alt="" coords="478,5,659,32"/>
+<area shape="rect" id="node4" href="$vgic_8c.html#a3059bfcee1ad30f581150d06c07d68e8" title=" " alt="" coords="465,56,672,83"/>
+<area shape="rect" id="node5" href="$vgic_8h.html#a1109d873011f89a4acb4fd461f9f0a45" title=" " alt="" coords="747,31,863,57"/>
+<area shape="rect" id="node6" href="$vgic-mmio_8c.html#ad275c2ef6d5f7f0d79f101a7dd6dda3a" title=" " alt="" coords="747,81,864,108"/>
+<area shape="rect" id="node7" href="$vgic-v2_8c.html#aa825011d5b7d02e6b8f6c21746a5af39" title=" " alt="" coords="952,37,1092,64"/>
+<area shape="rect" id="node8" href="$vgic-v3_8c.html#a20f69ea757569fa58158ed4f097c1987" title=" " alt="" coords="952,88,1092,115"/>
+<area shape="rect" id="node10" href="$arch__timer_8c.html#ad210f5f7b0361777290f8b36f023a518" title=" " alt="" coords="488,111,649,137"/>
+<area shape="rect" id="node11" href="$arch__timer_8c.html#a9d0120f96e99b20be8023dad5c6a7f0b" title=" " alt="" coords="513,161,624,188"/>
+<area shape="rect" id="node12" href="$arch__timer_8c.html#a6c290bf8212ea1388cdb4a839eae7228" title=" " alt="" coords="720,154,891,195"/>
+<area shape="rect" id="node13" href="$arch__timer_8c.html#ac9f7917175f1d6031a77dcbc82f9ee98" title=" " alt="" coords="939,153,1105,180"/>
+<area shape="rect" id="node14" href="$arch__timer_8c.html#a7f5f777b74b5c9ec6e13d4f7576d7f43" title=" " alt="" coords="957,204,1087,231"/>
+</map>

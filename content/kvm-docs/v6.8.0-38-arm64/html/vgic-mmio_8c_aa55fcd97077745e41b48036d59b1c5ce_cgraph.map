@@ -1,0 +1,4 @@
+<map id="vgic_data_host_to_mmio_bus" name="vgic_data_host_to_mmio_bus">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,220,32"/>
+<area shape="rect" id="node2" href="$mmio_8c.html#a69a057e58ecb01c2cdf3d945b5b30504" title=" " alt="" coords="268,5,432,32"/>
+</map>

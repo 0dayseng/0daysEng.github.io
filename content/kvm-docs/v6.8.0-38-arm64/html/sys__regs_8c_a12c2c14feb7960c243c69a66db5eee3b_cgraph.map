@@ -1,0 +1,6 @@
+<map id="kvm_vm_ioctl_get_reg_writable_masks" name="kvm_vm_ioctl_get_reg_writable_masks">
+<area shape="rect" id="node1" title=" " alt="" coords="5,49,176,90"/>
+<area shape="rect" id="node2" href="$sys__regs_8c.html#ad9124f4805ad45a5494565613229f6d8" title=" " alt="" coords="232,5,351,32"/>
+<area shape="rect" id="node3" href="$sys__regs_8c.html#a9eb66b32599b474c03e9a8a8e52edb23" title=" " alt="" coords="224,56,359,83"/>
+<area shape="rect" id="node4" href="$sys__regs_8c.html#a928c5005370eb285da77e648be052b3d" title=" " alt="" coords="251,107,331,133"/>
+</map>

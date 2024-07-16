@@ -1,0 +1,7 @@
+<map id="kvm_arch_hardware_disable" name="kvm_arch_hardware_disable">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,213,83"/>
+<area shape="rect" id="node2" href="$arm_8c.html#a2e3cb78fdb1e626823a87994451ed8a8" title=" " alt="" coords="284,5,404,32"/>
+<area shape="rect" id="node4" href="$arch__timer_8c.html#a993c30c61801fad7f3e557bcacbc8638" title=" " alt="" coords="261,56,427,83"/>
+<area shape="rect" id="node5" href="$vgic-init_8c.html#a17cbfdbbcbf19c731724a5e5cb9583d8" title=" " alt="" coords="265,107,423,133"/>
+<area shape="rect" id="node3" href="$arm_8c.html#af3d0a86c67ea0c2fc600e6a4c4a40a9d" title=" " alt="" coords="475,5,591,32"/>
+</map>

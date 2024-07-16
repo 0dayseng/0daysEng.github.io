@@ -1,0 +1,13 @@
+<map id="arch/arm64/kvm/vgic/vgic&#45;mmio&#45;v2.c" name="arch/arm64/kvm/vgic/vgic&#45;mmio&#45;v2.c">
+<area shape="rect" id="node1" title=" " alt="" coords="524,5,684,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,173,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="197,95,296,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="321,95,455,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="479,95,595,121"/>
+<area shape="rect" id="node6" title=" " alt="" coords="619,95,722,121"/>
+<area shape="rect" id="node7" title=" " alt="" coords="746,95,873,121"/>
+<area shape="rect" id="node8" href="$vgic_8h.html" title=" " alt="" coords="897,95,959,121"/>
+<area shape="rect" id="node11" href="$vgic-mmio_8h.html" title=" " alt="" coords="983,95,1087,121"/>
+<area shape="rect" id="node9" title=" " alt="" coords="765,169,921,211"/>
+<area shape="rect" id="node10" title=" " alt="" coords="945,177,1081,203"/>
+</map>

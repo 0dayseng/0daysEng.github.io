@@ -1,0 +1,10 @@
+<map id="kvm_mmio_read_buf" name="kvm_mmio_read_buf">
+<area shape="rect" id="node1" title=" " alt="" coords="716,81,876,108"/>
+<area shape="rect" id="node2" href="$mmio_8c.html#a9f31b035a6b37c1f9183f31d083fa989" title=" " alt="" coords="475,52,668,79"/>
+<area shape="rect" id="node7" href="$vgic-mmio_8c.html#a9e6543f547732e647a50fab0cb55ba5b" title=" " alt="" coords="491,103,651,145"/>
+<area shape="rect" id="node3" href="$mmio_8c.html#adc096fcd3188033af748b5c7fc8fcf4d" title=" " alt="" coords="275,5,391,32"/>
+<area shape="rect" id="node5" href="$arm_8c.html#adbabb8b4e50c9c51eec6373fcbc833aa" title=" " alt="" coords="240,56,427,83"/>
+<area shape="rect" id="node4" href="$mmu_8c.html#a2c7559bf16232daf5d3187255f1cb70e" title=" " alt="" coords="5,5,192,32"/>
+<area shape="rect" id="node6" href="$kvm__main_8c.html#a2f2d3734c4cf61a1f4f94e9d47c37d55" title=" " alt="" coords="37,56,161,83"/>
+<area shape="rect" id="node8" href="$vgic-mmio_8c.html#aad237383d386ad4e61622daa6efed581" title=" " alt="" coords="252,111,415,137"/>
+</map>

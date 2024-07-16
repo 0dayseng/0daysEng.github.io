@@ -1,0 +1,6 @@
+<map id="restore_guest_debug_regs" name="restore_guest_debug_regs">
+<area shape="rect" id="node1" title=" " alt="" coords="631,5,824,32"/>
+<area shape="rect" id="node2" href="$debug_8c.html#a55c5a83ff9f95fb9e6ae8fa50fa07d9a" title=" " alt="" coords="412,5,583,32"/>
+<area shape="rect" id="node3" href="$arm_8c.html#adbabb8b4e50c9c51eec6373fcbc833aa" title=" " alt="" coords="177,5,364,32"/>
+<area shape="rect" id="node4" href="$kvm__main_8c.html#a2f2d3734c4cf61a1f4f94e9d47c37d55" title=" " alt="" coords="5,5,129,32"/>
+</map>

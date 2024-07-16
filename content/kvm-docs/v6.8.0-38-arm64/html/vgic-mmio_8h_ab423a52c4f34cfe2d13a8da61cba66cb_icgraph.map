@@ -1,0 +1,7 @@
+<map id="vgic_v3_init_dist_iodev" name="vgic_v3_init_dist_iodev">
+<area shape="rect" id="node1" title=" " alt="" coords="828,13,1003,39"/>
+<area shape="rect" id="node2" href="$vgic-mmio_8c.html#a8911c23be28d228d12a6b010b8133524" title=" " alt="" coords="643,5,780,47"/>
+<area shape="rect" id="node3" href="$vgic-init_8c.html#a8411f235847aa56055a7a2fefce226c6" title=" " alt="" coords="404,13,595,39"/>
+<area shape="rect" id="node4" href="$arm_8c.html#a163f3db5fe1d973be2855f4a479a5c8c" title=" " alt="" coords="177,5,356,47"/>
+<area shape="rect" id="node5" href="$kvm__main_8c.html#a2f2d3734c4cf61a1f4f94e9d47c37d55" title=" " alt="" coords="5,13,129,39"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="cpu_hyp_init_features" name="cpu_hyp_init_features">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,171,108"/>
+<area shape="rect" id="node2" href="$arm_8c.html#a166f529e7844d95c28d7f93a4720c3b1" title=" " alt="" coords="249,5,399,32"/>
+<area shape="rect" id="node3" href="$debug_8c.html#abd80e27913cd78849bff5e8f4f84c4f3" title=" " alt="" coords="245,56,403,83"/>
+<area shape="rect" id="node5" href="$arch__timer_8c.html#aa42ee7f3aa49455d33441110cea315fa" title=" " alt="" coords="248,107,400,133"/>
+<area shape="rect" id="node6" href="$vgic-init_8c.html#aefd1e0e9cd080919b043406251dfa0b8" title=" " alt="" coords="219,157,429,184"/>
+<area shape="rect" id="node4" href="$nvhe_2debug-sr_8c.html#acb2d26524ab8b705c96fc1f04eb6245e" title=" " alt="" coords="477,56,637,83"/>
+<area shape="rect" id="node7" href="$vgic-v3-sr_8c.html#a412786aabffbbfab73264334c0a45f1d" title=" " alt="" coords="489,132,626,159"/>
+<area shape="rect" id="node9" href="$vgic-v2_8c.html#a1e2191b7a20d4cf12614106efac5ced2" title=" " alt="" coords="496,183,619,209"/>
+<area shape="rect" id="node8" href="$vgic-v3-sr_8c.html#a161e7bd7fc63e0a7fdb5fab98711d711" title=" " alt="" coords="689,132,810,159"/>
+<area shape="rect" id="node10" href="$vgic-v2_8c.html#ad8c03dce2e41ca3c35de3897603bb9e0" title=" " alt="" coords="685,183,813,209"/>
+</map>

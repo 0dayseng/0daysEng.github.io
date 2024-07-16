@@ -1,0 +1,7 @@
+<map id="kvm_smccc_get_action" name="kvm_smccc_get_action">
+<area shape="rect" id="node1" title=" " alt="" coords="5,64,180,91"/>
+<area shape="rect" id="node2" href="$hypercalls_8c.html#ac9f33ca9d642c7231be25e02e9da450a" title=" " alt="" coords="228,5,439,32"/>
+<area shape="rect" id="node3" href="$hypercalls_8c.html#af93c35a0fd5825a99b62189ae5024a45" title=" " alt="" coords="251,57,415,98"/>
+<area shape="rect" id="node5" href="$hypercalls_8c.html#aa8aa7ec82883c6c825b0373750c779a2" title=" " alt="" coords="235,123,432,149"/>
+<area shape="rect" id="node4" href="$hypercalls_8c.html#a85e917257bf25c8f6d66f031cd79cbca" title=" " alt="" coords="487,64,697,91"/>
+</map>

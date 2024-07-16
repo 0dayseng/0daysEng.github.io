@@ -1,0 +1,9 @@
+<map id="kvm_psci_system_reset" name="kvm_psci_system_reset">
+<area shape="rect" id="node1" title=" " alt="" coords="933,31,1112,57"/>
+<area shape="rect" id="node2" href="$psci_8c.html#ac7522f6e0d1805f44a3e932397de4582" title=" " alt="" coords="741,31,885,57"/>
+<area shape="rect" id="node3" href="$psci_8c.html#a8f59d47a1b54f561b8c42f509798142e" title=" " alt="" coords="549,5,693,32"/>
+<area shape="rect" id="node4" href="$psci_8c.html#a3daa8000eb9717dde07d817c306b052b" title=" " alt="" coords="387,31,501,57"/>
+<area shape="rect" id="node5" href="$hypercalls_8c.html#a62d0b161cae45d4a2f865203301f7ac4" title=" " alt="" coords="153,31,339,57"/>
+<area shape="rect" id="node6" href="$handle__exit_8c.html#a5c24d46393da9651d3133e2377fd7a69" title=" " alt="" coords="7,5,103,32"/>
+<area shape="rect" id="node7" href="$handle__exit_8c.html#ad2545fb9f7329ef0604715b9af4a1746" title=" " alt="" coords="5,56,105,83"/>
+</map>

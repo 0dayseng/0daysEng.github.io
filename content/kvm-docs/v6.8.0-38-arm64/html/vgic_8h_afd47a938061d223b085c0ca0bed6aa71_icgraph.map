@@ -1,0 +1,7 @@
+<map id="vgic_kick_vcpus" name="vgic_kick_vcpus">
+<area shape="rect" id="node1" title=" " alt="" coords="489,46,617,73"/>
+<area shape="rect" id="node2" href="$vgic-mmio-v2_8c.html#a2acb707aa37dccb7a4d021632629f994" title=" " alt="" coords="247,17,441,43"/>
+<area shape="rect" id="node4" href="$vgic-mmio-v3_8c.html#a496b87a9bc8e2c1a5aa2d9ba2e13cc10" title=" " alt="" coords="247,71,441,98"/>
+<area shape="rect" id="node3" href="$vgic-mmio-v2_8c.html#a86125023f5d85776a3857a2b82dfd2ca" title=" " alt="" coords="5,5,199,47"/>
+<area shape="rect" id="node5" href="$vgic-mmio-v3_8c.html#a566ddfae78ebf930568f0dcc4a1bea21" title=" " alt="" coords="5,71,199,112"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="hyp_alloc_pages" name="hyp_alloc_pages">
+<area shape="rect" id="node1" title=" " alt="" coords="5,157,136,184"/>
+<area shape="rect" id="node2" href="$page__alloc_8c.html#a8ac88fa38a81f4de49d9e80665b1ffc0" title=" " alt="" coords="203,56,355,83"/>
+<area shape="rect" id="node6" href="$memory_8h.html#af9e2f139c35baaaccb3e11cfe21cf182" title=" " alt="" coords="184,107,373,133"/>
+<area shape="rect" id="node7" href="$spinlock_8h.html#ae942ff0e878cb0f4d55ddc4cc6275ec9" title=" " alt="" coords="221,157,336,184"/>
+<area shape="rect" id="node8" href="$spinlock_8h.html#a2c6e9db70599188dbe031e2ce8ec6b08" title=" " alt="" coords="213,208,344,235"/>
+<area shape="rect" id="node9" href="$page__alloc_8c.html#ab41323251ac55b72defe671d568dcce7" title=" " alt="" coords="222,259,335,285"/>
+<area shape="rect" id="node3" href="$page__alloc_8c.html#ae518629a69c1b296e4ade7f9bd7041b8" title=" " alt="" coords="425,5,593,32"/>
+<area shape="rect" id="node4" href="$page__alloc_8c.html#a02f9a2f04d282f7c4026c60bc2c8d81c" title=" " alt="" coords="443,56,575,83"/>
+<area shape="rect" id="node5" href="$page__alloc_8c.html#ab55ed9a753f81792da659a3b165fefee" title=" " alt="" coords="421,107,597,133"/>
+</map>

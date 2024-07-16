@@ -1,0 +1,13 @@
+<map id="kvm_hyp_handle_dabt_low" name="kvm_hyp_handle_dabt_low">
+<area shape="rect" id="node1" title=" " alt="" coords="5,85,204,112"/>
+<area shape="rect" id="node2" href="$vgic-v2-cpuif-proxy_8c.html#a99cbdec7e0ae870b9d196aea575f375a" title=" " alt="" coords="257,45,441,86"/>
+<area shape="rect" id="node8" href="$switch_8h.html#a2000b5bd35b63c2b3c8be7a12c8bb175" title=" " alt="" coords="252,110,447,151"/>
+<area shape="rect" id="node3" href="$vgic-v2-cpuif-proxy_8c.html#af46b69e52ca84d72c9ff836e1dba7e4f" title=" " alt="" coords="541,5,611,32"/>
+<area shape="rect" id="node4" href="$adjust__pc_8h.html#a3d96a8814b5d5c282e1cc6f191e35061" title=" " alt="" coords="509,56,643,83"/>
+<area shape="rect" id="node5" href="$adjust__pc_8h.html#a3a6ebd94aaf8bbd3c8461a2ca19a0d0d" title=" " alt="" coords="708,56,829,83"/>
+<area shape="rect" id="node6" href="$aarch32_8c.html#a1b8e30a6e24795d6b69e6ff5f0e50563" title=" " alt="" coords="881,56,1018,83"/>
+<area shape="rect" id="node7" href="$aarch32_8c.html#a6ae543a454d66a57a2ef3c00112a6a6d" title=" " alt="" coords="1067,56,1213,83"/>
+<area shape="rect" id="node9" href="$switch_8h.html#a7d1fc5384e0112ca931e813f5267cf02" title=" " alt="" coords="495,117,657,144"/>
+<area shape="rect" id="node10" href="$fault_8h.html#a1155168525d4be29f1f7cead6e3022f7" title=" " alt="" coords="705,117,832,144"/>
+<area shape="rect" id="node11" href="$fault_8h.html#ae9946f6fae7885afcf446266a2699328" title=" " alt="" coords="880,110,1019,151"/>
+</map>

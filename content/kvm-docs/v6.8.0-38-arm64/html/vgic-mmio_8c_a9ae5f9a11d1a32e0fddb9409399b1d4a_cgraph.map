@@ -1,0 +1,7 @@
+<map id="vgic_uaccess_write" name="vgic_uaccess_write">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,153,57"/>
+<area shape="rect" id="node2" href="$vgic-mmio_8c.html#af645443cfc0bc59f41881570759adcb5" title=" " alt="" coords="201,31,372,57"/>
+<area shape="rect" id="node3" href="$vgic-mmio_8c.html#a296fe3adbc190bcdb6fde5c708193b03" title=" " alt="" coords="453,5,561,32"/>
+<area shape="rect" id="node4" href="$vgic-mmio_8c.html#a340c255c8c139816f1ce975f0bd15c64" title=" " alt="" coords="420,56,593,83"/>
+<area shape="rect" id="node5" href="$vgic-mmio_8c.html#abed6aa21152b65b854d1f9513c4ce647" title=" " alt="" coords="641,56,752,83"/>
+</map>

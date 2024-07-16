@@ -1,0 +1,8 @@
+<map id="kvm_cpu_dirty_log_size" name="kvm_cpu_dirty_log_size">
+<area shape="rect" id="node1" title=" " alt="" coords="663,35,841,61"/>
+<area shape="rect" id="node2" href="$dirty__ring_8c.html#a4dcfe0233e1bdb660fe9531dbb940e46" title=" " alt="" coords="467,27,615,69"/>
+<area shape="rect" id="node3" href="$dirty__ring_8c.html#ad40e3306505e958f53ede15661614d55" title=" " alt="" coords="257,5,415,32"/>
+<area shape="rect" id="node5" href="$kvm__main_8c.html#a407aa56167924ddd1a096c1c44583020" title=" " alt="" coords="253,57,419,98"/>
+<area shape="rect" id="node4" href="$kvm__main_8c.html#ab8870469dadfadf9a204346c62016293" title=" " alt="" coords="5,5,205,32"/>
+<area shape="rect" id="node6" href="$kvm__main_8c.html#aaeec02d207c8ce5ca12b1ef2ac36fae0" title=" " alt="" coords="23,57,188,98"/>
+</map>

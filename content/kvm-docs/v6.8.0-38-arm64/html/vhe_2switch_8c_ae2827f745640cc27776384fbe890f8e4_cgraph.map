@@ -1,0 +1,13 @@
+<map id="kvm_vcpu_load_vhe" name="kvm_vcpu_load_vhe">
+<area shape="rect" id="node1" title=" " alt="" coords="5,97,160,124"/>
+<area shape="rect" id="node2" href="$vhe_2switch_8c.html#a4195df34813c51f5d20656ca62d92086" title=" " alt="" coords="208,27,371,69"/>
+<area shape="rect" id="node6" href="$vhe_2sysreg-sr_8c.html#ab64a6924327aef108d280fb973db4fea" title=" " alt="" coords="214,122,365,163"/>
+<area shape="rect" id="node3" href="$switch_8h.html#a6e3222c8c1f9c10f3715f413c6cab163" title=" " alt="" coords="419,5,612,32"/>
+<area shape="rect" id="node4" href="$switch_8h.html#ac0bdf1ea3b8ac74612bae67e9c67e98a" title=" " alt="" coords="660,5,835,32"/>
+<area shape="rect" id="node5" href="$switch_8h.html#a4a6fdb32e965c228965f69fd51d57e04" title=" " alt="" coords="883,5,993,32"/>
+<area shape="rect" id="node7" href="$sysreg-sr_8h.html#a86c1110236e6dd26d18745e027d8eb07" title=" " alt="" coords="441,57,589,98"/>
+<area shape="rect" id="node8" href="$sysreg-sr_8h.html#a8306ba414fccbd1858488fbef3077850" title=" " alt="" coords="436,122,595,163"/>
+<area shape="rect" id="node10" href="$sysreg-sr_8h.html#ad74b28a4d40908c74509b46536769507" title=" " alt="" coords="432,187,599,229"/>
+<area shape="rect" id="node11" href="$sysreg-sr_8h.html#aecf2f0bd080c9c61163de944c7ef75d6" title=" " alt="" coords="439,253,591,294"/>
+<area shape="rect" id="node9" href="$sysreg-sr_8h.html#af7ebccfbf2739befae3e99a282871ecf" title=" " alt="" coords="692,129,803,156"/>
+</map>

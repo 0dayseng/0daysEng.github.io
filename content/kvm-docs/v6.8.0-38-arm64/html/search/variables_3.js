@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['cbpr_5048',['cbpr',['../structvgic__vmcr.html#ac4680bf42c8b5256ceb00d9aaa94b26f',1,'vgic_vmcr']]],
+  ['cc_5fmap_5049',['cc_map',['../aarch32_8c.html#aceaffcb1703c27d92203f7edccb0768b',1,'aarch32.c']]],
+  ['ccc_5050',['ccc',['../emulate-nested_8c.html#a32c989508fa023dbd912264c0e829b72',1,'emulate-nested.c']]],
+  ['cgt_5051',['cgt',['../uniontrap__config.html#a93306a51f4c36f80e5c9641961d09837',1,'trap_config']]],
+  ['childp_5052',['childp',['../structstage2__map__data.html#ada697ad25434b33207e87cfda9956c9c',1,'stage2_map_data']]],
+  ['coalesced_5fmmio_5fops_5053',['coalesced_mmio_ops',['../coalesced__mmio_8c.html#ae6b00dc4dccc8fc620406ec3136f17c9',1,'coalesced_mmio.c']]],
+  ['coarse_5fcontrol_5fcombo_5054',['coarse_control_combo',['../emulate-nested_8c.html#a61445e2fc9ebb4a997a03427df4476c2',1,'emulate-nested.c']]],
+  ['coarse_5ftrap_5fbits_5055',['coarse_trap_bits',['../emulate-nested_8c.html#a576ef8c5673cefeffaaebf4747c21d9d',1,'emulate-nested.c']]],
+  ['coll_5flist_5056',['coll_list',['../structits__collection.html#ace97bbd349d92264017b8bf11d2f0e54',1,'its_collection']]],
+  ['collection_5057',['collection',['../structits__ite.html#af0d83c26332bff371130f9092ebc3bb3',1,'its_ite']]],
+  ['collection_5fid_5058',['collection_id',['../structits__collection.html#af3dcb9da935ec1f93b9d92e4b0a2d2ef',1,'its_collection']]],
+  ['commit_5059',['commit',['../structvgic__its__abi.html#a16358b49219e13050cbb90935af6cded',1,'vgic_its_abi']]],
+  ['common_5ftrap_5060',['common_trap',['../vgic-v3_8c.html#ac2e2971fb50344cb3d4589f366f91c2a',1,'vgic-v3.c']]],
+  ['completer_5061',['completer',['../structpkvm__mem__transition.html#a98d4906147ba33e94213443a5ebff333',1,'pkvm_mem_transition']]],
+  ['completer_5faddr_5062',['completer_addr',['../structpkvm__mem__transition.html#a821618f6cb95a9dd3e8c34652f1c5684',1,'pkvm_mem_transition']]],
+  ['completer_5fprot_5063',['completer_prot',['../structpkvm__mem__share.html#aed60b6f89387ae1ba1c85472db30a6be',1,'pkvm_mem_share']]],
+  ['count_5064',['count',['../structhyp__shared__pfn.html#a15a490e1c3b9afc73efb02af4398c82d',1,'hyp_shared_pfn']]],
+  ['cp14_5f64_5fregs_5065',['cp14_64_regs',['../sys__regs_8c.html#ae78146f4d87ed9843080338a0bfe9da0',1,'sys_regs.c']]],
+  ['cp14_5fregs_5066',['cp14_regs',['../sys__regs_8c.html#ae3b1e78017871071cfa256948fb508bd',1,'sys_regs.c']]],
+  ['cp15_5f64_5fregs_5067',['cp15_64_regs',['../sys__regs_8c.html#a726794e0578b31ccf17210246ea3cf4d',1,'sys_regs.c']]],
+  ['cp15_5fregs_5068',['cp15_regs',['../sys__regs_8c.html#ac86c576278c4980aa5803a3fdabbf40f',1,'sys_regs.c']]],
+  ['crm_5069',['CRm',['../structsys__reg__desc.html#a470f57057f534f266f63561efa10ca8d',1,'sys_reg_desc::CRm()'],['../structsys__reg__params.html#abaf66e6a3ec1df340ccf61f124cfc468',1,'sys_reg_params::CRm()']]],
+  ['crn_5070',['CRn',['../structsys__reg__params.html#a0942605427c644a8c5f41c583b438164',1,'sys_reg_params::CRn()'],['../structsys__reg__desc.html#a2788b87d4da525a57ff87f86ed40fb56',1,'sys_reg_desc::CRn()']]],
+  ['cte_5fesz_5071',['cte_esz',['../structvgic__its__abi.html#aeac5eb0715550cd08525c0ca9bcb8baa',1,'vgic_its_abi']]],
+  ['cur_5072',['cur',['../early__alloc_8c.html#a7eb8057942ed1846c6c3584dd9fa7bb5',1,'early_alloc.c']]]
+];

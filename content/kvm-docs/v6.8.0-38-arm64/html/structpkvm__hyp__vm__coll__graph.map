@@ -1,0 +1,6 @@
+<map id="pkvm_hyp_vm" name="pkvm_hyp_vm">
+<area shape="rect" id="node1" title=" " alt="" coords="122,184,241,211"/>
+<area shape="rect" id="node2" href="$structpkvm__hyp__vcpu.html" title=" " alt="" coords="5,95,133,121"/>
+<area shape="rect" id="node3" href="$structhyp__pool.html" title=" " alt="" coords="238,95,319,121"/>
+<area shape="rect" id="node4" href="$unionhyp__spinlock.html" title=" " alt="" coords="149,5,256,32"/>
+</map>

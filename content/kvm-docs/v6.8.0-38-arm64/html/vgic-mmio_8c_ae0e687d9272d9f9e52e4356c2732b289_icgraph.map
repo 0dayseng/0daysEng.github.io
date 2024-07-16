@@ -1,0 +1,9 @@
+<map id="vgic_mmio_change_active" name="vgic_mmio_change_active">
+<area shape="rect" id="node1" title=" " alt="" coords="497,101,692,127"/>
+<area shape="rect" id="node2" href="$vgic-mmio_8c.html#a4552ff194be4788b6c2d944a201903fc" title=" " alt="" coords="247,71,449,98"/>
+<area shape="rect" id="node5" href="$vgic-mmio_8c.html#a512b4b38220c4a8e593935c74ce036c5" title=" " alt="" coords="247,130,449,157"/>
+<area shape="rect" id="node3" href="$vgic-mmio_8c.html#a0421c2d1f16b18d43ca3e7c04b8498c9" title=" " alt="" coords="5,5,199,47"/>
+<area shape="rect" id="node4" href="$vgic-mmio_8c.html#aa63931731ae20241ae0791e6c37941bd" title=" " alt="" coords="8,71,196,98"/>
+<area shape="rect" id="node6" href="$vgic-mmio_8c.html#a1870c72389c4c955f3f5f316f357f8a5" title=" " alt="" coords="5,123,199,164"/>
+<area shape="rect" id="node7" href="$vgic-mmio_8c.html#af0464f992e9cc43ef209cfe598d4eb00" title=" " alt="" coords="8,189,196,215"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="kvm_arm_timer_read" name="kvm_arm_timer_read">
+<area shape="rect" id="node1" title=" " alt="" coords="5,105,168,132"/>
+<area shape="rect" id="node2" href="$arch__timer_8c.html#ac9f7917175f1d6031a77dcbc82f9ee98" title=" " alt="" coords="844,32,1011,58"/>
+<area shape="rect" id="node3" href="$arch__timer_8c.html#a2fb3bc59ad8d869dc692674f2db4bfe9" title=" " alt="" coords="216,80,332,106"/>
+<area shape="rect" id="node6" href="$arch__timer_8c.html#a7f5f777b74b5c9ec6e13d4f7576d7f43" title=" " alt="" coords="863,112,992,138"/>
+<area shape="rect" id="node7" href="$arch__timer_8c.html#a848ba80b4ffee7a071e37abb241262cd" title=" " alt="" coords="651,130,770,157"/>
+<area shape="rect" id="node4" href="$arch__timer_8c.html#aeed64583773b01dafc949df326d17db3" title=" " alt="" coords="380,80,577,106"/>
+<area shape="rect" id="node8" href="$arch__timer_8c.html#ad7dab91af9f69654aa27010f96125c13" title=" " alt="" coords="425,29,533,56"/>
+<area shape="rect" id="node5" href="$arch__timer_8c.html#a6c290bf8212ea1388cdb4a839eae7228" title=" " alt="" coords="625,64,796,106"/>
+</map>

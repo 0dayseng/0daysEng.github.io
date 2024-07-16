@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['handle_5ffunc_5491',['HANDLE_FUNC',['../hyp-main_8c.html#a4dca81954ad7e6311ad22761f3a21d20',1,'hyp-main.c']]],
+  ['handle_5foffset_5492',['HANDLE_OFFSET',['../hyp_2nvhe_2pkvm_8c.html#a9f888e8ea8c4543274825aab6b2240c6',1,'pkvm.c']]],
+  ['host_5fffa_5fid_5493',['HOST_FFA_ID',['../ffa_8c.html#a4e3a7693ac4c21013e68fd47a56d70f9',1,'ffa.c']]],
+  ['host_5fhandled_5494',['HOST_HANDLED',['../hyp_2nvhe_2sys__regs_8c.html#afc2543d5bf4e228e8306418dd52d7859',1,'sys_regs.c']]],
+  ['host_5fstage2_5ftry_5495',['host_stage2_try',['../mem__protect_8c.html#a84d382930958749709aa7b2d077cc8fb',1,'mem_protect.c']]],
+  ['hyp_5fno_5forder_5496',['HYP_NO_ORDER',['../gfp_8h.html#a6f7977d96b3a413bf4c480af9cfba52d',1,'gfp.h']]],
+  ['hyp_5fpage_5fto_5fpfn_5497',['hyp_page_to_pfn',['../memory_8h.html#aee0ec2fa2d12af095973c3813dbe59af',1,'memory.h']]],
+  ['hyp_5fpage_5fto_5fphys_5498',['hyp_page_to_phys',['../memory_8h.html#ac8a51ed2f87a02c3ea5962d084bc9416',1,'memory.h']]],
+  ['hyp_5fpage_5fto_5fpool_5499',['hyp_page_to_pool',['../memory_8h.html#a7a04b3fa39334ec57b8f70c9b29e7693',1,'memory.h']]],
+  ['hyp_5fpage_5fto_5fvirt_5500',['hyp_page_to_virt',['../memory_8h.html#aee3b1fb5ce375c6e8d6602a30e2847b6',1,'memory.h']]],
+  ['hyp_5fpercpu_5fsize_5501',['hyp_percpu_size',['../setup_8c.html#a38059e76cd84ec015fee14728c4ecc66',1,'setup.c']]],
+  ['hyp_5fpfn_5fto_5fphys_5502',['hyp_pfn_to_phys',['../memory_8h.html#af83561a33ac1a2e81a2f8c7d61b8877c',1,'memory.h']]],
+  ['hyp_5fphys_5fto_5fpage_5503',['hyp_phys_to_page',['../memory_8h.html#a3621c1c472930ddf6a0ddf339ab08bd4',1,'memory.h']]],
+  ['hyp_5fphys_5fto_5fpfn_5504',['hyp_phys_to_pfn',['../memory_8h.html#a43dd1a2c1ec4d6a2a29370158a06f260',1,'memory.h']]],
+  ['hyp_5freloc_5fsection_5505',['HYP_RELOC_SECTION',['../gen-hyprel_8c.html#a3970b2a36347bc3db43f060f4fe000f0',1,'gen-hyprel.c']]],
+  ['hyp_5fsection_5fprefix_5506',['HYP_SECTION_PREFIX',['../gen-hyprel_8c.html#a58079724d207cd9d2ce19a195b5ad1d2',1,'gen-hyprel.c']]],
+  ['hyp_5fsection_5fsymbol_5fprefix_5507',['HYP_SECTION_SYMBOL_PREFIX',['../gen-hyprel_8c.html#a230d52d47267637aa9da2b4e95a7cfab',1,'gen-hyprel.c']]],
+  ['hyp_5fspin_5flock_5finit_5508',['hyp_spin_lock_init',['../spinlock_8h.html#a749fd61a9e38132c5b89fb8ab5818e6e',1,'spinlock.h']]],
+  ['hyp_5fvirt_5fto_5fpage_5509',['hyp_virt_to_page',['../memory_8h.html#a1ce5e4fc197c0773bbd80fb4b5270369',1,'memory.h']]],
+  ['hyp_5fvirt_5fto_5fpfn_5510',['hyp_virt_to_pfn',['../memory_8h.html#ae6f771ec6d256fcb464e36c64e3c78fb',1,'memory.h']]],
+  ['hyp_5fvmemmap_5511',['hyp_vmemmap',['../memory_8h.html#a4504e97f5382b1f4ca9781e1a38965a0',1,'memory.h']]]
+];

@@ -1,0 +1,12 @@
+<map id="kvm_psci_0_1_call" name="kvm_psci_0_1_call">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,149,108"/>
+<area shape="rect" id="node2" href="$arm_8c.html#a8a5659b8fc302d5b435957306e3541b4" title=" " alt="" coords="197,31,391,57"/>
+<area shape="rect" id="node7" href="$psci_8c.html#a092eeee0e7b54c50ebc3d0cf66ea8ef5" title=" " alt="" coords="221,107,367,133"/>
+<area shape="rect" id="node3" href="$arm_8c.html#afc3949baef2cd8a5749b2d0095959de1" title=" " alt="" coords="439,5,645,32"/>
+<area shape="rect" id="node4" href="$kvm__main_8c.html#ac82f28c95da4a0cc137c5a37f08d1f44" title=" " alt="" coords="693,5,816,32"/>
+<area shape="rect" id="node5" href="$arm_8c.html#a42500cdc8706ebf4fa3ec21645530097" title=" " alt="" coords="864,5,1072,32"/>
+<area shape="rect" id="node6" href="$kvm__main_8c.html#ad9f0140eebcdef9a9ebae54431d2fba5" title=" " alt="" coords="891,56,1045,83"/>
+<area shape="rect" id="node8" href="$arm_8c.html#a371c5c68ee659e4815a4af50d0161c8a" title=" " alt="" coords="451,107,633,133"/>
+<area shape="rect" id="node9" href="$arm_8c.html#a0be215e1642483c65818bd994b13a421" title=" " alt="" coords="465,157,619,184"/>
+<area shape="rect" id="node10" href="$psci_8c.html#ac9f7ca89512ea60ace6ea961a60354a4" title=" " alt="" coords="454,208,630,235"/>
+</map>

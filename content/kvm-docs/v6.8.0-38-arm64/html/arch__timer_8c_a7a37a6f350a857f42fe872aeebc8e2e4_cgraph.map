@@ -1,0 +1,8 @@
+<map id="timer_irqs_are_valid" name="timer_irqs_are_valid">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,160,57"/>
+<area shape="rect" id="node2" href="$vgic_8c.html#a99527df04c2db316d7f8c1733c18d99e" title=" " alt="" coords="208,5,367,32"/>
+<area shape="rect" id="node6" href="$arch__timer_8c.html#ad2a704b646b65309708c3a7f6ab70913" title=" " alt="" coords="245,56,329,83"/>
+<area shape="rect" id="node3" href="$vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516" title=" " alt="" coords="415,5,516,32"/>
+<area shape="rect" id="node4" href="$vgic_8c.html#afeaf79de85450ed5fb52dbd7bd8c6617" title=" " alt="" coords="564,5,664,32"/>
+<area shape="rect" id="node5" href="$vgic_8h.html#a43d39599f0fd2d973c5af8d6045e0f91" title=" " alt="" coords="712,5,847,32"/>
+</map>

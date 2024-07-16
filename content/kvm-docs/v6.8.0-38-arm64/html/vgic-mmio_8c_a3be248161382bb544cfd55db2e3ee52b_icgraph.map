@@ -1,0 +1,6 @@
+<map id="vgic_update_vsgi" name="vgic_update_vsgi">
+<area shape="rect" id="node1" title=" " alt="" coords="483,38,617,65"/>
+<area shape="rect" id="node2" href="$vgic-mmio_8c.html#a59b486242da411e911332ba64728824d" title=" " alt="" coords="251,13,430,39"/>
+<area shape="rect" id="node4" href="$vgic-mmio_8c.html#a654979b0910066eac66257c945040ac1" title=" " alt="" coords="247,63,435,90"/>
+<area shape="rect" id="node3" href="$vgic-mmio-v2_8c.html#ab0b1532d2260a6b8261802c849495a37" title=" " alt="" coords="5,5,199,47"/>
+</map>

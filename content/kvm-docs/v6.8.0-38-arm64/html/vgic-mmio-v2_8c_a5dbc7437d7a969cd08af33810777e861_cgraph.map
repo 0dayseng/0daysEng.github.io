@@ -1,0 +1,9 @@
+<map id="vgic_mmio_write_sgipendc" name="vgic_mmio_write_sgipendc">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,204,57"/>
+<area shape="rect" id="node2" href="$vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516" title=" " alt="" coords="252,5,353,32"/>
+<area shape="rect" id="node5" href="$vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5" title=" " alt="" coords="252,56,353,83"/>
+<area shape="rect" id="node3" href="$vgic_8c.html#afeaf79de85450ed5fb52dbd7bd8c6617" title=" " alt="" coords="433,5,533,32"/>
+<area shape="rect" id="node4" href="$vgic_8h.html#a43d39599f0fd2d973c5af8d6045e0f91" title=" " alt="" coords="612,5,747,32"/>
+<area shape="rect" id="node6" href="$vgic_8c.html#affa1a20a5bd9d67dc546c1ccaace3406" title=" " alt="" coords="401,56,564,83"/>
+<area shape="rect" id="node7" href="$vgic_8c.html#a7d513558f0ea4ecbc012c98b3522f797" title=" " alt="" coords="615,56,743,83"/>
+</map>

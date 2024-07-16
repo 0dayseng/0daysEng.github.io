@@ -1,0 +1,9 @@
+<map id="vgic_queue_irq_unlock" name="vgic_queue_irq_unlock">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,176,108"/>
+<area shape="rect" id="node2" href="$kvm__main_8c.html#ac82f28c95da4a0cc137c5a37f08d1f44" title=" " alt="" coords="234,31,357,57"/>
+<area shape="rect" id="node5" href="$vgic_8h.html#a43d39599f0fd2d973c5af8d6045e0f91" title=" " alt="" coords="228,81,363,108"/>
+<area shape="rect" id="node6" href="$vgic_8c.html#a10a21280f37c620b743df86980f6d247" title=" " alt="" coords="224,132,367,159"/>
+<area shape="rect" id="node3" href="$arm_8c.html#a42500cdc8706ebf4fa3ec21645530097" title=" " alt="" coords="415,5,623,32"/>
+<area shape="rect" id="node4" href="$kvm__main_8c.html#ad9f0140eebcdef9a9ebae54431d2fba5" title=" " alt="" coords="442,56,595,83"/>
+<area shape="rect" id="node7" href="$vgic_8h.html#a1109d873011f89a4acb4fd461f9f0a45" title=" " alt="" coords="461,132,577,159"/>
+</map>

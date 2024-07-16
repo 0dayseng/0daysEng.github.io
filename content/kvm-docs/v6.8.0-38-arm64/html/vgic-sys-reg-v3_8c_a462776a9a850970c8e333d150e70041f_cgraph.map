@@ -1,0 +1,9 @@
+<map id="set_gic_grpen0" name="set_gic_grpen0">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,125,108"/>
+<area shape="rect" id="node2" href="$vgic-mmio_8c.html#ad275c2ef6d5f7f0d79f101a7dd6dda3a" title=" " alt="" coords="173,56,291,83"/>
+<area shape="rect" id="node5" href="$vgic-mmio_8c.html#a33fd399bf664fddf31b1eec1e14c63e0" title=" " alt="" coords="174,107,290,133"/>
+<area shape="rect" id="node3" href="$vgic-v2_8c.html#aa825011d5b7d02e6b8f6c21746a5af39" title=" " alt="" coords="339,5,479,32"/>
+<area shape="rect" id="node4" href="$vgic-v3_8c.html#a20f69ea757569fa58158ed4f097c1987" title=" " alt="" coords="339,56,479,83"/>
+<area shape="rect" id="node6" href="$vgic-v2_8c.html#a75b8509d11cad79d5c549793d0d38089" title=" " alt="" coords="339,107,478,133"/>
+<area shape="rect" id="node7" href="$vgic-v3_8c.html#ac04464708c08b34a1e53ff2c30f54a98" title=" " alt="" coords="339,157,478,184"/>
+</map>

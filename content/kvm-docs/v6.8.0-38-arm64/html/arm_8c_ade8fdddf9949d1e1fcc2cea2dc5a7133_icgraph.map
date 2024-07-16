@@ -1,0 +1,9 @@
+<map id="kvm_get_mode" name="kvm_get_mode">
+<area shape="rect" id="node1" title=" " alt="" coords="752,59,875,86"/>
+<area shape="rect" id="node2" href="$arm_8c.html#a625df4221f73b13d9f23aa818f60e547" title=" " alt="" coords="5,85,117,111"/>
+<area shape="rect" id="node3" href="$pkvm_8c.html#a2596eb2ca4793a98586d311f7ffe615f" title=" " alt="" coords="565,34,704,61"/>
+<area shape="rect" id="node4" href="$sys__regs_8c.html#aee14269677924cb86250974700c3501b" title=" " alt="" coords="341,85,517,111"/>
+<area shape="rect" id="node5" href="$vgic-v3_8c.html#ac418c84cff9542559c426a575c403136" title=" " alt="" coords="577,135,693,162"/>
+<area shape="rect" id="node6" href="$vgic-init_8c.html#aba3547aa220ca50b1eabca1a39c92943" title=" " alt="" coords="357,135,501,162"/>
+<area shape="rect" id="node7" href="$arm_8c.html#a040f9b021372ae855b2cc25a0c07da7a" title=" " alt="" coords="165,135,293,162"/>
+</map>

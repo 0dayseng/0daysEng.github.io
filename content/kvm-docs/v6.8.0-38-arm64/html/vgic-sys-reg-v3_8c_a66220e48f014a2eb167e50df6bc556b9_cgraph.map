@@ -1,0 +1,6 @@
+<map id="get_gic_bpr0" name="get_gic_bpr0">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,111,57"/>
+<area shape="rect" id="node2" href="$vgic-mmio_8c.html#ad275c2ef6d5f7f0d79f101a7dd6dda3a" title=" " alt="" coords="159,31,276,57"/>
+<area shape="rect" id="node3" href="$vgic-v2_8c.html#aa825011d5b7d02e6b8f6c21746a5af39" title=" " alt="" coords="324,5,464,32"/>
+<area shape="rect" id="node4" href="$vgic-v3_8c.html#a20f69ea757569fa58158ed4f097c1987" title=" " alt="" coords="324,56,464,83"/>
+</map>

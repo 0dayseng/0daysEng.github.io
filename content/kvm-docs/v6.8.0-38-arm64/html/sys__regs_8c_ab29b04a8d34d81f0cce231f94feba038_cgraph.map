@@ -1,0 +1,12 @@
+<map id="kvm_sys_reg_set_user" name="kvm_sys_reg_set_user">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,176,108"/>
+<area shape="rect" id="node2" href="$sys__regs_8c.html#af212e5241f19483aede7d85e43a93b42" title=" " alt="" coords="225,31,373,57"/>
+<area shape="rect" id="node9" href="$sys__regs_8h.html#acb0346a28ca0b3fd59d3c815d4d683a1" title=" " alt="" coords="224,81,375,108"/>
+<area shape="rect" id="node10" href="$sys__regs_8h.html#a95e3e5f281cf82d91e6a522ee3acb4cc" title=" " alt="" coords="423,132,611,159"/>
+<area shape="rect" id="node3" href="$sys__regs_8c.html#ac41b37ff19cd3eda5658080a3eb8c558" title=" " alt="" coords="460,31,573,57"/>
+<area shape="rect" id="node7" href="$sys__regs_8h.html#a1288fc38e8c8e5e2bbf3cfeb9291cef9" title=" " alt="" coords="459,81,575,108"/>
+<area shape="rect" id="node4" href="$sys__regs_8h.html#a5478d1284365aa547695b6889e4a05ef" title=" " alt="" coords="689,5,763,32"/>
+<area shape="rect" id="node6" href="$sys__regs_8c.html#a000b8bb9ea7247fee0c7acc84817d960" title=" " alt="" coords="659,56,793,83"/>
+<area shape="rect" id="node5" href="$sys__regs_8h.html#aba3abb7cabe45542d03289fe25af9526" title=" " alt="" coords="841,5,961,32"/>
+<area shape="rect" id="node8" href="$sys__regs_8h.html#ad57e201c718d43223fb293d770c1ef3b" title=" " alt="" coords="662,107,790,133"/>
+</map>

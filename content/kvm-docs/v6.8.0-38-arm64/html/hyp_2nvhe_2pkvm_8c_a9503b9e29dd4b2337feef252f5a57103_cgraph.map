@@ -1,0 +1,11 @@
+<map id="unpin_host_vcpu" name="unpin_host_vcpu">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,136,133"/>
+<area shape="rect" id="node2" href="$mem__protect_8h.html#a16fa0918fd8f50705e15341038d58fd8" title=" " alt="" coords="184,107,365,133"/>
+<area shape="rect" id="node3" href="$mem__protect_8c.html#aa70b12df63f9379efa7fe11ade510b7c" title=" " alt="" coords="421,5,585,32"/>
+<area shape="rect" id="node5" href="$mem__protect_8c.html#a21f32ced99ed31332ac532029100e42d" title=" " alt="" coords="413,107,593,133"/>
+<area shape="rect" id="node7" href="$mem__protect_8c.html#abbc50e372d72deb41a021219c35e3589" title=" " alt="" coords="423,56,583,83"/>
+<area shape="rect" id="node8" href="$memory_8h.html#a3cc326fe973add2b2ea91f6b04dd8fde" title=" " alt="" coords="433,157,573,184"/>
+<area shape="rect" id="node9" href="$mem__protect_8c.html#a024de911d90c8e8d57cc96c87fecb4d3" title=" " alt="" coords="415,208,591,235"/>
+<area shape="rect" id="node4" href="$spinlock_8h.html#ae942ff0e878cb0f4d55ddc4cc6275ec9" title=" " alt="" coords="649,31,764,57"/>
+<area shape="rect" id="node6" href="$spinlock_8h.html#a2c6e9db70599188dbe031e2ce8ec6b08" title=" " alt="" coords="641,132,772,159"/>
+</map>

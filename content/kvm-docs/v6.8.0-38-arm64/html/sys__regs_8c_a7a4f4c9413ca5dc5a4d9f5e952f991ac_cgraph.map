@@ -1,0 +1,15 @@
+<map id="emulate_cp" name="emulate_cp">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,104,57"/>
+<area shape="rect" id="node2" href="$sys__regs_8h.html#a5478d1284365aa547695b6889e4a05ef" title=" " alt="" coords="177,5,252,32"/>
+<area shape="rect" id="node4" href="$sys__regs_8c.html#a8cb2008e7051ba9d33b9ca79bca84766" title=" " alt="" coords="152,56,277,83"/>
+<area shape="rect" id="node3" href="$sys__regs_8h.html#aba3abb7cabe45542d03289fe25af9526" title=" " alt="" coords="348,5,468,32"/>
+<area shape="rect" id="node5" href="$inject__fault_8c.html#aece14f61701021b17e9cf5521f7946fb" title=" " alt="" coords="325,56,491,83"/>
+<area shape="rect" id="node12" href="$sys__regs_8h.html#a1288fc38e8c8e5e2bbf3cfeb9291cef9" title=" " alt="" coords="350,107,466,133"/>
+<area shape="rect" id="node6" href="$inject__fault_8c.html#ae6fc8db83ad0518fddd2e485687e0f7d" title=" " alt="" coords="543,5,662,32"/>
+<area shape="rect" id="node7" href="$inject__fault_8c.html#a846082def00d9a7db3f28b1b7fb2a07a" title=" " alt="" coords="543,56,662,83"/>
+<area shape="rect" id="node8" href="$inject__fault_8c.html#a326fe690ce371beb7496d3ed3cbe1a6e" title=" " alt="" coords="732,5,860,32"/>
+<area shape="rect" id="node9" href="$inject__fault_8c.html#a887586bbc6bac834ae37cbf84711288c" title=" " alt="" coords="715,56,877,83"/>
+<area shape="rect" id="node10" href="$sys__regs_8c.html#adf66277e472bdae2cc839d450085bc4b" title=" " alt="" coords="721,107,871,133"/>
+<area shape="rect" id="node11" href="$sys__regs_8c.html#a8f5bcf4d21c4d9b1881dd3fec5bd6178" title=" " alt="" coords="925,107,1107,133"/>
+<area shape="rect" id="node13" href="$sys__regs_8h.html#ad57e201c718d43223fb293d770c1ef3b" title=" " alt="" coords="539,107,667,133"/>
+</map>

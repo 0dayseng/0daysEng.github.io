@@ -1,0 +1,9 @@
+<map id="vgic_v3_max_apr_idx" name="vgic_v3_max_apr_idx">
+<area shape="rect" id="node1" title=" " alt="" coords="216,132,379,159"/>
+<area shape="rect" id="node2" href="$vgic-sys-reg-v3_8c.html#a253cf92005dcf83aab0d49de0ab9007c" title=" " alt="" coords="34,5,139,32"/>
+<area shape="rect" id="node3" href="$vgic-sys-reg-v3_8c.html#a6f6b5f8ddbc0ba45a4902bc237592721" title=" " alt="" coords="34,56,139,83"/>
+<area shape="rect" id="node4" href="$vgic-sys-reg-v3_8c.html#afdbf64fc0855cbca157d62ac67ef8064" title=" " alt="" coords="35,107,139,133"/>
+<area shape="rect" id="node5" href="$vgic-sys-reg-v3_8c.html#ad862ac32fd6d5e675d36b953fe7e2831" title=" " alt="" coords="35,157,139,184"/>
+<area shape="rect" id="node6" href="$vgic-mmio-v2_8c.html#ae5832db6b6c9428fd39a2a501c829639" title=" " alt="" coords="7,208,166,235"/>
+<area shape="rect" id="node7" href="$vgic-mmio-v2_8c.html#a6b5e2096a2a1152b34723a63b9ed8e7a" title=" " alt="" coords="5,259,168,285"/>
+</map>

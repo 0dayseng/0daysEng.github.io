@@ -1,0 +1,7 @@
+<map id="kvm_psci_vcpu_on" name="kvm_psci_vcpu_on">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,151,108"/>
+<area shape="rect" id="node2" href="$arm_8c.html#a371c5c68ee659e4815a4af50d0161c8a" title=" " alt="" coords="199,5,380,32"/>
+<area shape="rect" id="node3" href="$arm_8c.html#a0be215e1642483c65818bd994b13a421" title=" " alt="" coords="212,56,367,83"/>
+<area shape="rect" id="node4" href="$psci_8c.html#ac9f7ca89512ea60ace6ea961a60354a4" title=" " alt="" coords="201,107,377,133"/>
+<area shape="rect" id="node5" href="$kvm__main_8c.html#ad9f0140eebcdef9a9ebae54431d2fba5" title=" " alt="" coords="213,157,366,184"/>
+</map>

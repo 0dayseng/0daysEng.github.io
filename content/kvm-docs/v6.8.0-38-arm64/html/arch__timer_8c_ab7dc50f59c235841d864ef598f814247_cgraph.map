@@ -1,0 +1,17 @@
+<map id="kvm_timer_vcpu_init" name="kvm_timer_vcpu_init">
+<area shape="rect" id="node1" title=" " alt="" coords="5,284,164,311"/>
+<area shape="rect" id="node2" href="$arch__timer_8c.html#aa5109f58e0ef877d3f053d0593359c1e" title=" " alt="" coords="212,132,376,159"/>
+<area shape="rect" id="node5" href="$arch__timer_8c.html#ac9f7917175f1d6031a77dcbc82f9ee98" title=" " alt="" coords="888,183,1055,209"/>
+<area shape="rect" id="node13" href="$arch__timer_8c.html#a277ad23da04b884fe1d588984e372943" title=" " alt="" coords="223,309,365,336"/>
+<area shape="rect" id="node15" href="$arch__timer_8c.html#aafe1b11938ff5abb30a790c16eb77c77" title=" " alt="" coords="230,360,358,387"/>
+<area shape="rect" id="node3" href="$arch__timer_8c.html#aeed64583773b01dafc949df326d17db3" title=" " alt="" coords="424,107,621,133"/>
+<area shape="rect" id="node8" href="$arch__timer_8c.html#ae722c5e3eba2098c012b2cdc4d74bf9f" title=" " alt="" coords="435,157,610,184"/>
+<area shape="rect" id="node10" href="$arch__timer_8c.html#ad2a704b646b65309708c3a7f6ab70913" title=" " alt="" coords="481,208,565,235"/>
+<area shape="rect" id="node11" href="$arch__timer_8c.html#ad210f5f7b0361777290f8b36f023a518" title=" " alt="" coords="442,5,603,32"/>
+<area shape="rect" id="node12" href="$arch__timer_8c.html#a9d0120f96e99b20be8023dad5c6a7f0b" title=" " alt="" coords="467,56,578,83"/>
+<area shape="rect" id="node4" href="$arch__timer_8c.html#a6c290bf8212ea1388cdb4a839eae7228" title=" " alt="" coords="669,49,840,90"/>
+<area shape="rect" id="node7" href="$arch__timer_8c.html#a848ba80b4ffee7a071e37abb241262cd" title=" " alt="" coords="695,115,814,141"/>
+<area shape="rect" id="node6" href="$arch__timer_8c.html#a7f5f777b74b5c9ec6e13d4f7576d7f43" title=" " alt="" coords="907,56,1036,83"/>
+<area shape="rect" id="node9" href="$arch__timer_8c.html#ad7dab91af9f69654aa27010f96125c13" title=" " alt="" coords="701,165,809,192"/>
+<area shape="rect" id="node14" href="$arch__timer_8c.html#abc4d9a1d61348137665ab9a6b18cfa5b" title=" " alt="" coords="445,309,600,336"/>
+</map>

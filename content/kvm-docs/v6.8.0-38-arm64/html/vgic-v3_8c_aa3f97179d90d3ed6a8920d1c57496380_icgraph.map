@@ -1,0 +1,36 @@
+<map id="vgic_v3_vmcr_sync" name="vgic_v3_vmcr_sync">
+<area shape="rect" id="node1" title=" " alt="" coords="1893,144,2043,171"/>
+<area shape="rect" id="node2" href="$vgic_8c.html#a751661541b39c02532a54736db22a929" title=" " alt="" coords="1683,119,1845,145"/>
+<area shape="rect" id="node16" href="$vgic-v3_8c.html#a6a9931a18504090acd3d559ba25374ff" title=" " alt="" coords="1714,169,1814,196"/>
+<area shape="rect" id="node3" href="$arm_8c.html#a68df8c6f1b7134e9f23857f092d50056" title=" " alt="" coords="1520,81,1635,108"/>
+<area shape="rect" id="node4" href="$handle__exit_8c.html#a0b391fc62c2250ecc0bfcdbe1b0a6788" title=" " alt="" coords="1314,5,1447,32"/>
+<area shape="rect" id="node5" href="$psci_8c.html#abe7d85200e79143f87dab785a204fb3a" title=" " alt="" coords="1289,56,1472,83"/>
+<area shape="rect" id="node12" href="$arm_8c.html#ad33fe3df0e24d8ff8cb0a7f4657ec3fa" title=" " alt="" coords="1305,107,1456,133"/>
+<area shape="rect" id="node6" href="$psci_8c.html#ac7522f6e0d1805f44a3e932397de4582" title=" " alt="" coords="1097,56,1241,83"/>
+<area shape="rect" id="node7" href="$psci_8c.html#a8f59d47a1b54f561b8c42f509798142e" title=" " alt="" coords="878,5,1022,32"/>
+<area shape="rect" id="node8" href="$psci_8c.html#a3daa8000eb9717dde07d817c306b052b" title=" " alt="" coords="653,5,768,32"/>
+<area shape="rect" id="node9" href="$hypercalls_8c.html#a62d0b161cae45d4a2f865203301f7ac4" title=" " alt="" coords="384,56,569,83"/>
+<area shape="rect" id="node10" href="$handle__exit_8c.html#a5c24d46393da9651d3133e2377fd7a69" title=" " alt="" coords="209,157,305,184"/>
+<area shape="rect" id="node11" href="$handle__exit_8c.html#ad2545fb9f7329ef0604715b9af4a1746" title=" " alt="" coords="207,56,307,83"/>
+<area shape="rect" id="node13" href="$arm_8c.html#a05fa4e97677ca3190089071bfce82825" title=" " alt="" coords="869,208,1031,235"/>
+<area shape="rect" id="node14" href="$arm_8c.html#adbabb8b4e50c9c51eec6373fcbc833aa" title=" " alt="" coords="617,259,804,285"/>
+<area shape="rect" id="node15" href="$kvm__main_8c.html#a2f2d3734c4cf61a1f4f94e9d47c37d55" title=" " alt="" coords="5,335,129,361"/>
+<area shape="rect" id="node17" href="$vgic_8c.html#a96f93a2405989082e3693577b6b2eb5d" title=" " alt="" coords="1521,169,1634,196"/>
+<area shape="rect" id="node18" href="$arm_8c.html#a9235365ce64f215b1e024f26d96537cc" title=" " alt="" coords="1305,233,1457,260"/>
+<area shape="rect" id="node19" href="$emulate-nested_8c.html#a1920c02a997dd9975bec0ee02f6ae2c4" title=" " alt="" coords="852,107,1048,133"/>
+<area shape="rect" id="node21" href="$emulate-nested_8c.html#a1c3e31bd85e9c0590a018ada20a5e4bf" title=" " alt="" coords="1096,208,1241,235"/>
+<area shape="rect" id="node26" href="$reset_8c.html#a124698ccde953ff74d270ddd091fc3a9" title=" " alt="" coords="1104,360,1233,387"/>
+<area shape="rect" id="node31" href="$kvm__main_8c.html#a5f5097640155787fc088aa47b94da0a7" title=" " alt="" coords="1107,309,1231,336"/>
+<area shape="rect" id="node34" href="$kvm__main_8c.html#a16e0f63dd5f0d556ed1c9c9999256f85" title=" " alt="" coords="1128,259,1209,285"/>
+<area shape="rect" id="node20" href="$handle__exit_8c.html#ae96aab7918301d55b908034db5855e3d" title=" " alt="" coords="643,56,778,83"/>
+<area shape="rect" id="node22" href="$emulate-nested_8c.html#af5e2eb745d8ac6415fe941ebe754171d" title=" " alt="" coords="859,157,1041,184"/>
+<area shape="rect" id="node23" href="$emulate-nested_8c.html#a5759b383dbf067b5e90235d5fd032ab5" title=" " alt="" coords="624,157,797,184"/>
+<area shape="rect" id="node25" href="$handle__exit_8c.html#aeaf983f5c40202edc8b07a76603330cd" title=" " alt="" coords="663,107,758,133"/>
+<area shape="rect" id="node24" href="$sys__regs_8c.html#a315e661b6f1cb224596267000909a1ac" title=" " alt="" coords="397,157,556,184"/>
+<area shape="rect" id="node27" href="$arm_8c.html#ae1c5fe27678796057c4ea914a9a6897b" title=" " alt="" coords="862,411,1038,437"/>
+<area shape="rect" id="node28" href="$arm_8c.html#a91790a6a024c83b103717f37a8f0f504" title=" " alt="" coords="629,419,792,445"/>
+<area shape="rect" id="node30" href="$arm_8c.html#ab4ac4d44dfa1ed8985130249d6a8385e" title=" " alt="" coords="177,360,336,387"/>
+<area shape="rect" id="node29" href="$arm_8c.html#ad66c8d00e8adc8315c45170fa270304b" title=" " alt="" coords="397,411,556,453"/>
+<area shape="rect" id="node32" href="$kvm__main_8c.html#a2372c616bc55bc4cd3446660cb7322fc" title=" " alt="" coords="911,309,989,336"/>
+<area shape="rect" id="node33" href="$arm_8c.html#a625df4221f73b13d9f23aa818f60e547" title=" " alt="" coords="655,309,767,336"/>
+</map>

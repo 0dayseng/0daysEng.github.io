@@ -1,0 +1,7 @@
+<map id="kvm_free_memslot" name="kvm_free_memslot">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,155,83"/>
+<area shape="rect" id="node2" href="$mmu_8c.html#a5a34304a4f0ec19e4bce34e0513fc3a4" title=" " alt="" coords="209,5,393,32"/>
+<area shape="rect" id="node3" href="$kvm__main_8c.html#aab592fb3a4d6204c86d8f99caa0986ba" title=" " alt="" coords="203,56,400,83"/>
+<area shape="rect" id="node4" href="$guest__memfd_8c.html#a905ecfa162a290dceb1c7d5678e2a70f" title=" " alt="" coords="226,107,377,133"/>
+<area shape="rect" id="node5" href="$guest__memfd_8c.html#a2eab57d9fb8529d3751b5c8179d881c9" title=" " alt="" coords="448,107,603,133"/>
+</map>

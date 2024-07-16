@@ -1,0 +1,12 @@
+<map id="kvm_vgic_vcpu_init" name="kvm_vgic_vcpu_init">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,156,133"/>
+<area shape="rect" id="node2" href="$vgic-mmio-v3_8c.html#a7c5d9bcbf29cb46bac8622d8bcc145b2" title=" " alt="" coords="204,99,355,141"/>
+<area shape="rect" id="node3" href="$kvm__main_8c.html#a0afe5ce3e9ff1105328b06ec985e3374" title=" " alt="" coords="403,31,591,57"/>
+<area shape="rect" id="node5" href="$vgic-v3_8c.html#a98c28ff2dc6b6965cef76e1be35233b1" title=" " alt="" coords="419,107,574,133"/>
+<area shape="rect" id="node9" href="$vgic-v3_8c.html#a481ec0006dfd5a7ea125b9913de7ba47" title=" " alt="" coords="411,183,583,209"/>
+<area shape="rect" id="node4" href="$kvm__main_8c.html#a75ccec7a81fef145fb3c3a3b5479a86f" title=" " alt="" coords="667,5,802,32"/>
+<area shape="rect" id="node6" href="$vgic-kvm-device_8c.html#af0cfcc44a93abc13df9a7e364c21cf32" title=" " alt="" coords="659,56,810,83"/>
+<area shape="rect" id="node7" href="$vgic_8h.html#a01a6c3c40680e43017d7ba8ec7aadbac" title=" " alt="" coords="879,132,1052,159"/>
+<area shape="rect" id="node8" href="$vgic-v3_8c.html#a8bd03445507515b9722165814955f6fa" title=" " alt="" coords="653,157,817,184"/>
+<area shape="rect" id="node10" href="$vgic_8h.html#ab5518fe56ac149d185ee8dc4f1cbedcb" title=" " alt="" coords="639,208,831,235"/>
+</map>

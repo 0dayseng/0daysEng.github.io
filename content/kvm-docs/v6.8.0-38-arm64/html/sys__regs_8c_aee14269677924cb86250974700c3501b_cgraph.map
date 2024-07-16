@@ -1,0 +1,9 @@
+<map id="kvm_sys_reg_table_init" name="kvm_sys_reg_table_init">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,181,108"/>
+<area shape="rect" id="node2" href="$sys__regs_8c.html#a04a47f17241cf05c3ffed72f45d6702c" title=" " alt="" coords="245,5,395,32"/>
+<area shape="rect" id="node4" href="$sys__regs_8h.html#a5478d1284365aa547695b6889e4a05ef" title=" " alt="" coords="283,56,357,83"/>
+<area shape="rect" id="node6" href="$arm_8c.html#ade8fdddf9949d1e1fcc2cea2dc5a7133" title=" " alt="" coords="259,107,381,133"/>
+<area shape="rect" id="node7" href="$emulate-nested_8c.html#ab98dcc09a2d10b534d543e45a00359c3" title=" " alt="" coords="229,157,411,184"/>
+<area shape="rect" id="node3" href="$sys__regs_8h.html#ad36915b59f8e473861dcc95b0fb7655d" title=" " alt="" coords="465,5,572,32"/>
+<area shape="rect" id="node5" href="$sys__regs_8h.html#aba3abb7cabe45542d03289fe25af9526" title=" " alt="" coords="459,56,579,83"/>
+</map>

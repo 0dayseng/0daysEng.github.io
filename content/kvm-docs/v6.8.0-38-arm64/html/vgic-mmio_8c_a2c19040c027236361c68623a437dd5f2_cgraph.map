@@ -1,0 +1,14 @@
+<map id="vgic_mmio_write_cpending" name="vgic_mmio_write_cpending">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,205,108"/>
+<area shape="rect" id="node2" href="$vgic-mmio_8c.html#ac9d250a7a5f4eae6374bd57711e4aa5a" title=" " alt="" coords="253,81,380,108"/>
+<area shape="rect" id="node3" href="$vgic-mmio_8c.html#a05277401c0e011a1014afc6e906952f7" title=" " alt="" coords="453,5,569,32"/>
+<area shape="rect" id="node4" href="$vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516" title=" " alt="" coords="460,56,561,83"/>
+<area shape="rect" id="node7" href="$vgic-mmio_8c.html#a6f26f277f544d4f19bff333b18a0b727" title=" " alt="" coords="428,107,593,133"/>
+<area shape="rect" id="node10" href="$vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5" title=" " alt="" coords="460,169,561,196"/>
+<area shape="rect" id="node5" href="$vgic_8c.html#afeaf79de85450ed5fb52dbd7bd8c6617" title=" " alt="" coords="690,43,790,69"/>
+<area shape="rect" id="node6" href="$vgic_8h.html#a43d39599f0fd2d973c5af8d6045e0f91" title=" " alt="" coords="887,43,1021,69"/>
+<area shape="rect" id="node8" href="$vgic_8c.html#a6daedd3eec82ca8b68db82b750a24f67" title=" " alt="" coords="647,93,833,120"/>
+<area shape="rect" id="node9" href="$vgic_8c.html#a1a63066504dcc87c4250f625d4337ac1" title=" " alt="" coords="641,144,839,171"/>
+<area shape="rect" id="node11" href="$vgic_8c.html#affa1a20a5bd9d67dc546c1ccaace3406" title=" " alt="" coords="659,195,821,221"/>
+<area shape="rect" id="node12" href="$vgic_8c.html#a7d513558f0ea4ecbc012c98b3522f797" title=" " alt="" coords="890,195,1018,221"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="vgic_v3_set_vmcr" name="vgic_v3_set_vmcr">
+<area shape="rect" id="node1" title=" " alt="" coords="399,157,537,184"/>
+<area shape="rect" id="node2" href="$vgic-mmio_8c.html#a33fd399bf664fddf31b1eec1e14c63e0" title=" " alt="" coords="235,157,351,184"/>
+<area shape="rect" id="node3" href="$vgic-sys-reg-v3_8c.html#a9a6ff5961084331631a38b15ad56ee3a" title=" " alt="" coords="44,5,148,32"/>
+<area shape="rect" id="node4" href="$vgic-sys-reg-v3_8c.html#a98e7ca9700748f32119b3df93fb9702a" title=" " alt="" coords="44,56,148,83"/>
+<area shape="rect" id="node5" href="$vgic-sys-reg-v3_8c.html#a5df87a6d208537d7e190b738b53a7244" title=" " alt="" coords="48,107,144,133"/>
+<area shape="rect" id="node6" href="$vgic-sys-reg-v3_8c.html#a462776a9a850970c8e333d150e70041f" title=" " alt="" coords="36,157,156,184"/>
+<area shape="rect" id="node7" href="$vgic-sys-reg-v3_8c.html#aa54404fe059ee8c201ece8989b41557a" title=" " alt="" coords="36,208,156,235"/>
+<area shape="rect" id="node8" href="$vgic-sys-reg-v3_8c.html#ab7ad03ed75b3e3b3388d5aa051fb3b0c" title=" " alt="" coords="45,259,147,285"/>
+<area shape="rect" id="node9" href="$vgic-mmio-v2_8c.html#a2f747e0249d94969dc9bb31ca7e39fa2" title=" " alt="" coords="5,309,187,336"/>
+</map>

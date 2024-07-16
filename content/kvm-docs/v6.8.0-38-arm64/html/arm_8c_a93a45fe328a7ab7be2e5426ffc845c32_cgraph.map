@@ -1,0 +1,8 @@
+<map id="kvm_arch_vcpu_ioctl_set_mpstate" name="kvm_arch_vcpu_ioctl_set_mpstate">
+<area shape="rect" id="node1" title=" " alt="" coords="5,23,164,65"/>
+<area shape="rect" id="node2" href="$arm_8c.html#afc3949baef2cd8a5749b2d0095959de1" title=" " alt="" coords="212,5,419,32"/>
+<area shape="rect" id="node6" href="$arm_8c.html#a498dc0b76b09f0d2f15381e2e3f016cd" title=" " alt="" coords="224,56,407,83"/>
+<area shape="rect" id="node3" href="$kvm__main_8c.html#ac82f28c95da4a0cc137c5a37f08d1f44" title=" " alt="" coords="467,31,589,57"/>
+<area shape="rect" id="node4" href="$arm_8c.html#a42500cdc8706ebf4fa3ec21645530097" title=" " alt="" coords="637,5,845,32"/>
+<area shape="rect" id="node5" href="$kvm__main_8c.html#ad9f0140eebcdef9a9ebae54431d2fba5" title=" " alt="" coords="665,56,818,83"/>
+</map>

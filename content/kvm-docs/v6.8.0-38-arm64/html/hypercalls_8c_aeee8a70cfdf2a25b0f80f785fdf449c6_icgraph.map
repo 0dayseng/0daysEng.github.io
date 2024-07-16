@@ -1,0 +1,6 @@
+<map id="kvm_prepare_hypercall_exit" name="kvm_prepare_hypercall_exit">
+<area shape="rect" id="node1" title=" " alt="" coords="387,31,593,57"/>
+<area shape="rect" id="node2" href="$hypercalls_8c.html#a62d0b161cae45d4a2f865203301f7ac4" title=" " alt="" coords="153,31,339,57"/>
+<area shape="rect" id="node3" href="$handle__exit_8c.html#a5c24d46393da9651d3133e2377fd7a69" title=" " alt="" coords="7,5,103,32"/>
+<area shape="rect" id="node4" href="$handle__exit_8c.html#ad2545fb9f7329ef0604715b9af4a1746" title=" " alt="" coords="5,56,105,83"/>
+</map>

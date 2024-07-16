@@ -1,0 +1,7 @@
+<map id="kvm_hyp_reserve" name="kvm_hyp_reserve">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,144,57"/>
+<area shape="rect" id="node2" href="$arm_8c.html#ade8fdddf9949d1e1fcc2cea2dc5a7133" title=" " alt="" coords="232,5,355,32"/>
+<area shape="rect" id="node3" href="$pkvm_8c.html#aaa66e101cb9571b2a50b83cb3bc173d5" title=" " alt="" coords="192,56,395,83"/>
+<area shape="rect" id="node4" href="$pkvm_8c.html#a702d5384d853263899dc182035154875" title=" " alt="" coords="443,56,621,83"/>
+<area shape="rect" id="node5" href="$pkvm_8c.html#a5204c5b48a08d6ab6a2805782377d807" title=" " alt="" coords="669,56,827,83"/>
+</map>

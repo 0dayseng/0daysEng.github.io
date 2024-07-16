@@ -1,0 +1,9 @@
+<map id="kvm_arm_num_sys_reg_descs" name="kvm_arm_num_sys_reg_descs">
+<area shape="rect" id="node1" title=" " alt="" coords="5,23,183,65"/>
+<area shape="rect" id="node2" href="$sys__regs_8c.html#a8996a1294bc3193aae24af847d760fd9" title=" " alt="" coords="231,5,369,32"/>
+<area shape="rect" id="node3" href="$sys__regs_8c.html#abd3b49a9b9e349d26d03f5dc6a42efbc" title=" " alt="" coords="241,56,359,83"/>
+<area shape="rect" id="node4" href="$sys__regs_8c.html#a68f111e8a8404c26f46d5191d2a7f3e1" title=" " alt="" coords="417,56,559,83"/>
+<area shape="rect" id="node5" href="$sys__regs_8c.html#a0f1032ed43c78a6dff76e1116bfd0476" title=" " alt="" coords="614,31,750,57"/>
+<area shape="rect" id="node7" href="$sys__regs_8h.html#acb0346a28ca0b3fd59d3c815d4d683a1" title=" " alt="" coords="607,81,757,108"/>
+<area shape="rect" id="node6" href="$sys__regs_8c.html#a7d2b75df72a03ffbc60733bf5e01d0fd" title=" " alt="" coords="805,31,940,57"/>
+</map>

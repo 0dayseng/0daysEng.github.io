@@ -1,0 +1,8 @@
+<map id="kvm_arm_clear_debug" name="kvm_arm_clear_debug">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,176,57"/>
+<area shape="rect" id="node2" href="$debug_8c.html#a160fda6c876743727468b5dfee21f0e3" title=" " alt="" coords="224,5,420,32"/>
+<area shape="rect" id="node3" href="$debug_8c.html#a33e80ad65049d17deebb0d5fbe7cc7da" title=" " alt="" coords="225,56,419,83"/>
+<area shape="rect" id="node4" href="$sys__regs_8c.html#a79848758fc91bd6081326514833ffafa" title=" " alt="" coords="470,31,617,57"/>
+<area shape="rect" id="node6" href="$sys__regs_8c.html#adf66277e472bdae2cc839d450085bc4b" title=" " alt="" coords="468,81,619,108"/>
+<area shape="rect" id="node5" href="$sys__regs_8c.html#a8f5bcf4d21c4d9b1881dd3fec5bd6178" title=" " alt="" coords="667,56,848,83"/>
+</map>

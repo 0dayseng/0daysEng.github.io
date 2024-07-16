@@ -1,0 +1,7 @@
+<map id="num_demux_regs" name="num_demux_regs">
+<area shape="rect" id="node1" title=" " alt="" coords="812,13,951,39"/>
+<area shape="rect" id="node2" href="$sys__regs_8c.html#a3a12ba3777384275bc5ff0abd169e22c" title=" " alt="" coords="587,5,764,47"/>
+<area shape="rect" id="node3" href="$guest_8c.html#a5ea136c294fe50fdaa31e9bc93763f7f" title=" " alt="" coords="384,13,539,39"/>
+<area shape="rect" id="node4" href="$arm_8c.html#ab4ac4d44dfa1ed8985130249d6a8385e" title=" " alt="" coords="177,13,336,39"/>
+<area shape="rect" id="node5" href="$kvm__main_8c.html#a2f2d3734c4cf61a1f4f94e9d47c37d55" title=" " alt="" coords="5,13,129,39"/>
+</map>

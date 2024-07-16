@@ -1,0 +1,6 @@
+<map id="kvm_psci_vcpu_affinity_info" name="kvm_psci_vcpu_affinity_info">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,212,83"/>
+<area shape="rect" id="node2" href="$arm_8c.html#a371c5c68ee659e4815a4af50d0161c8a" title=" " alt="" coords="260,5,441,32"/>
+<area shape="rect" id="node3" href="$psci_8c.html#ac9f7ca89512ea60ace6ea961a60354a4" title=" " alt="" coords="263,56,439,83"/>
+<area shape="rect" id="node4" href="$psci_8c.html#aa30b461609a71770efab6a5045274e5e" title=" " alt="" coords="279,107,423,133"/>
+</map>

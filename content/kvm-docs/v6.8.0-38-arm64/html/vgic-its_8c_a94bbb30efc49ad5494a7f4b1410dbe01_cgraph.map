@@ -1,0 +1,8 @@
+<map id="vgic_msi_to_its" name="vgic_msi_to_its">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,128,57"/>
+<area shape="rect" id="node2" href="$kvm__main_8c.html#acb4d46ae6cc918253046320805f63a95" title=" " alt="" coords="176,5,335,32"/>
+<area shape="rect" id="node6" href="$vgic-mmio-v3_8c.html#a47708b59ddd94e03880996def466067e" title=" " alt="" coords="204,56,307,83"/>
+<area shape="rect" id="node3" href="$kvm__main_8c.html#a94bf2e0af8d9af8807a6a92ffb01cc1c" title=" " alt="" coords="383,5,573,32"/>
+<area shape="rect" id="node4" href="$kvm__main_8c.html#a75ccec7a81fef145fb3c3a3b5479a86f" title=" " alt="" coords="836,5,971,32"/>
+<area shape="rect" id="node5" href="$kvm__main_8c.html#aa52366417ec3708a05183231a3227d9d" title=" " alt="" coords="621,31,788,57"/>
+</map>

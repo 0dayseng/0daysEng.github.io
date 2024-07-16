@@ -1,0 +1,10 @@
+<map id="vgic_v4_disable_vsgis" name="vgic_v4_disable_vsgis">
+<area shape="rect" id="node1" title=" " alt="" coords="1116,42,1283,69"/>
+<area shape="rect" id="node2" href="$vgic-v4_8c.html#a822de9f2b97fbc48164c88a7c0ac68f1" title=" " alt="" coords="888,42,1068,69"/>
+<area shape="rect" id="node3" href="$vgic-mmio-v3_8c.html#a496b87a9bc8e2c1a5aa2d9ba2e13cc10" title=" " alt="" coords="645,15,840,42"/>
+<area shape="rect" id="node5" href="$vgic-v3_8c.html#a8c2e4753883533516b45a2bbf9dad1ce" title=" " alt="" coords="653,67,832,94"/>
+<area shape="rect" id="node4" href="$vgic-mmio-v3_8c.html#a566ddfae78ebf930568f0dcc4a1bea21" title=" " alt="" coords="404,5,597,47"/>
+<area shape="rect" id="node6" href="$vgic-init_8c.html#a8411f235847aa56055a7a2fefce226c6" title=" " alt="" coords="405,71,596,98"/>
+<area shape="rect" id="node7" href="$arm_8c.html#a163f3db5fe1d973be2855f4a479a5c8c" title=" " alt="" coords="177,64,356,105"/>
+<area shape="rect" id="node8" href="$kvm__main_8c.html#a2f2d3734c4cf61a1f4f94e9d47c37d55" title=" " alt="" coords="5,71,129,98"/>
+</map>

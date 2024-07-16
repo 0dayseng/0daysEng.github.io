@@ -1,0 +1,13 @@
+<map id="__sysreg_save_common_state" name="__sysreg_save_common_state">
+<area shape="rect" id="node1" title=" " alt="" coords="1131,87,1312,129"/>
+<area shape="rect" id="node2" href="$nvhe_2sysreg-sr_8c.html#a632e9c3b0d2d5e6c9b8f4b6716c6e577" title=" " alt="" coords="876,44,1072,71"/>
+<area shape="rect" id="node8" href="$vhe_2sysreg-sr_8c.html#a4114185bf1eaf07bf2744863b2da2018" title=" " alt="" coords="865,95,1083,121"/>
+<area shape="rect" id="node11" href="$vhe_2sysreg-sr_8c.html#aa8a336dccc49f5d1c1cfecbdb562afcc" title=" " alt="" coords="869,145,1079,172"/>
+<area shape="rect" id="node3" href="$nvhe_2switch_8c.html#af2f5ac35e771dfefeec346aaa6a850fa" title=" " alt="" coords="671,44,801,71"/>
+<area shape="rect" id="node4" href="$hyp-main_8c.html#a4ee0e6f5a31d21183ee7fea340479a2a" title=" " alt="" coords="418,5,601,32"/>
+<area shape="rect" id="node5" href="$arm_8c.html#a4493733d569c32f65f6a791f995628c9" title=" " alt="" coords="412,56,607,83"/>
+<area shape="rect" id="node6" href="$arm_8c.html#adbabb8b4e50c9c51eec6373fcbc833aa" title=" " alt="" coords="177,56,364,83"/>
+<area shape="rect" id="node7" href="$kvm__main_8c.html#a2f2d3734c4cf61a1f4f94e9d47c37d55" title=" " alt="" coords="5,56,129,83"/>
+<area shape="rect" id="node9" href="$vhe_2switch_8c.html#a1e6833f85cd789386b1d4bd05759903d" title=" " alt="" coords="655,120,817,147"/>
+<area shape="rect" id="node10" href="$vhe_2switch_8c.html#af2f5ac35e771dfefeec346aaa6a850fa" title=" " alt="" coords="444,120,575,147"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="access_pminten" name="access_pminten">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,132,83"/>
+<area shape="rect" id="node2" href="$sys__regs_8c.html#a6825971b50ae688a266906875f787c12" title=" " alt="" coords="188,31,397,57"/>
+<area shape="rect" id="node10" href="$pmu-emul_8c.html#a48da2aca99c9f2f7728c108ebfe1aab6" title=" " alt="" coords="180,81,405,108"/>
+<area shape="rect" id="node3" href="$inject__fault_8c.html#aece14f61701021b17e9cf5521f7946fb" title=" " alt="" coords="453,31,619,57"/>
+<area shape="rect" id="node4" href="$inject__fault_8c.html#ae6fc8db83ad0518fddd2e485687e0f7d" title=" " alt="" coords="667,5,785,32"/>
+<area shape="rect" id="node5" href="$inject__fault_8c.html#a846082def00d9a7db3f28b1b7fb2a07a" title=" " alt="" coords="667,56,785,83"/>
+<area shape="rect" id="node6" href="$inject__fault_8c.html#a326fe690ce371beb7496d3ed3cbe1a6e" title=" " alt="" coords="851,5,979,32"/>
+<area shape="rect" id="node7" href="$inject__fault_8c.html#a887586bbc6bac834ae37cbf84711288c" title=" " alt="" coords="833,56,996,83"/>
+<area shape="rect" id="node8" href="$sys__regs_8c.html#adf66277e472bdae2cc839d450085bc4b" title=" " alt="" coords="839,107,990,133"/>
+<area shape="rect" id="node9" href="$sys__regs_8c.html#a8f5bcf4d21c4d9b1881dd3fec5bd6178" title=" " alt="" coords="1044,107,1225,133"/>
+<area shape="rect" id="node11" href="$pmu-emul_8c.html#adf428205295b3bc4fec2e00fb2c50fa6" title=" " alt="" coords="453,81,619,108"/>
+</map>
