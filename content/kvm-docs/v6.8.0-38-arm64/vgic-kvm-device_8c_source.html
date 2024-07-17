@@ -77,7 +77,7 @@ $(function() {
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Author: Marc Zyngier &lt;marc.zyngier@arm.com&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;linux/kvm_host.h&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;kvm/arm_vgic.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="arm__vgic_8h.html">kvm/arm_vgic.h</a>&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;linux/uaccess.h&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;asm/kvm_mmu.h&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;asm/cputype.h&gt;</span></div>
@@ -115,7 +115,7 @@ $(function() {
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="vgic-kvm-device_8c.html#a7808d55ba83902bd478febfc33334d5d">   45</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="vgic-kvm-device_8c.html#a7808d55ba83902bd478febfc33334d5d">kvm_set_legacy_vgic_v2_addr</a>(<span class="keyword">struct</span> kvm *kvm, <span class="keyword">struct</span> kvm_arm_device_addr *dev_addr)</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">struct </span>vgic_dist *vgic = &amp;kvm-&gt;arch.vgic;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">struct </span><a class="code" href="structvgic__dist.html">vgic_dist</a> *vgic = &amp;kvm-&gt;arch.vgic;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">int</span> r;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    mutex_lock(&amp;kvm-&gt;arch.config_lock);</div>
@@ -123,18 +123,18 @@ $(function() {
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">case</span> KVM_VGIC_V2_ADDR_TYPE_DIST:</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        r = <a class="code" href="vgic-kvm-device_8c.html#aabe1882d024943ea3d42bd37678f437f">vgic_check_type</a>(kvm, KVM_DEV_TYPE_ARM_VGIC_V2);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">if</span> (!r)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            r = <a class="code" href="vgic-kvm-device_8c.html#af0cfcc44a93abc13df9a7e364c21cf32">vgic_check_iorange</a>(kvm, vgic-&gt;vgic_dist_base, dev_addr-&gt;addr,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            r = <a class="code" href="vgic-kvm-device_8c.html#af0cfcc44a93abc13df9a7e364c21cf32">vgic_check_iorange</a>(kvm, vgic-&gt;<a class="code" href="structvgic__dist.html#a64889fb78fa1c835d635165bdc9dbe6e">vgic_dist_base</a>, dev_addr-&gt;addr,</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                           SZ_4K, KVM_VGIC_V2_DIST_SIZE);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">if</span> (!r)</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            vgic-&gt;vgic_dist_base = dev_addr-&gt;addr;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            vgic-&gt;<a class="code" href="structvgic__dist.html#a64889fb78fa1c835d635165bdc9dbe6e">vgic_dist_base</a> = dev_addr-&gt;addr;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">case</span> KVM_VGIC_V2_ADDR_TYPE_CPU:</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        r = <a class="code" href="vgic-kvm-device_8c.html#aabe1882d024943ea3d42bd37678f437f">vgic_check_type</a>(kvm, KVM_DEV_TYPE_ARM_VGIC_V2);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">if</span> (!r)</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            r = <a class="code" href="vgic-kvm-device_8c.html#af0cfcc44a93abc13df9a7e364c21cf32">vgic_check_iorange</a>(kvm, vgic-&gt;vgic_cpu_base, dev_addr-&gt;addr,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            r = <a class="code" href="vgic-kvm-device_8c.html#af0cfcc44a93abc13df9a7e364c21cf32">vgic_check_iorange</a>(kvm, vgic-&gt;<a class="code" href="structvgic__dist.html#adfde4e406677fb7d0457aa686d4dfe86">vgic_cpu_base</a>, dev_addr-&gt;addr,</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                           SZ_4K, KVM_VGIC_V2_CPU_SIZE);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">if</span> (!r)</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            vgic-&gt;vgic_cpu_base = dev_addr-&gt;addr;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            vgic-&gt;<a class="code" href="structvgic__dist.html#adfde4e406677fb7d0457aa686d4dfe86">vgic_cpu_base</a> = dev_addr-&gt;addr;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">default</span>:</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        r = -ENODEV;</div>
@@ -163,7 +163,7 @@ $(function() {
 <div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="vgic-kvm-device_8c.html#ada63b20fef4ef1cc52730143652f9cb9">   92</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="vgic-kvm-device_8c.html#ada63b20fef4ef1cc52730143652f9cb9">kvm_vgic_addr</a>(<span class="keyword">struct</span> kvm *kvm, <span class="keyword">struct</span> kvm_device_attr *attr, <span class="keywordtype">bool</span> write)</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    u64 __user *uaddr = (u64 __user *)attr-&gt;addr;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">struct</span> vgic_dist *vgic = &amp;kvm-&gt;arch.vgic;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">struct</span> <a class="code" href="structvgic__dist.html">vgic_dist</a> *vgic = &amp;kvm-&gt;arch.vgic;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    phys_addr_t *addr_ptr, alignment, <a class="code" href="gen-hyprel_8c.html#a854352f53b148adc24983a58a1866d66">size</a>;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    u64 undef_value = <a class="code" href="vgic_8h.html#ac91699b3ab8faf4d5222d998fb64b033">VGIC_ADDR_UNDEF</a>;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    u64 addr;</div>
@@ -199,7 +199,7 @@ $(function() {
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <a class="code" href="gen-hyprel_8c.html#a854352f53b148adc24983a58a1866d66">size</a> = KVM_VGIC_V3_DIST_SIZE;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordflow">case</span> KVM_VGIC_V3_ADDR_TYPE_REDIST: {</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keyword">struct </span>vgic_redist_region *rdreg;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keyword">struct </span><a class="code" href="structvgic__redist__region.html">vgic_redist_region</a> *rdreg;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        r = <a class="code" href="vgic-kvm-device_8c.html#aabe1882d024943ea3d42bd37678f437f">vgic_check_type</a>(kvm, KVM_DEV_TYPE_ARM_VGIC_V3);</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordflow">if</span> (r)</div>
@@ -209,46 +209,46 @@ $(function() {
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            <span class="keywordflow">goto</span> out;</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        }</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        rdreg = list_first_entry_or_null(&amp;vgic-&gt;rd_regions,</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                         <span class="keyword">struct</span> vgic_redist_region, list);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                         <span class="keyword">struct</span> <a class="code" href="structvgic__redist__region.html">vgic_redist_region</a>, <a class="code" href="structvgic__redist__region.html#ad6c95ce4c280f7691f57fc059a5dc187">list</a>);</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordflow">if</span> (!rdreg)</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            addr_ptr = &amp;undef_value;</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            addr_ptr = &amp;rdreg-&gt;base;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            addr_ptr = &amp;rdreg-&gt;<a class="code" href="structvgic__redist__region.html#a93b2def7658d5686e54eb8352104c2ee">base</a>;</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    }</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordflow">case</span> KVM_VGIC_V3_ADDR_TYPE_REDIST_REGION:</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    {</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keyword">struct </span>vgic_redist_region *rdreg;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        u8 index;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keyword">struct </span><a class="code" href="structvgic__redist__region.html">vgic_redist_region</a> *rdreg;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        u8 <a class="code" href="structvgic__redist__region.html#acfc4000de33efd7b5e580c782215492d">index</a>;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        r = <a class="code" href="vgic-kvm-device_8c.html#aabe1882d024943ea3d42bd37678f437f">vgic_check_type</a>(kvm, KVM_DEV_TYPE_ARM_VGIC_V3);</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordflow">if</span> (r)</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        index = addr &amp; <a class="code" href="vgic_8h.html#a780883d6e28680682a1dcd73b716eb78">KVM_VGIC_V3_RDIST_INDEX_MASK</a>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <a class="code" href="structvgic__redist__region.html#acfc4000de33efd7b5e580c782215492d">index</a> = addr &amp; <a class="code" href="vgic_8h.html#a780883d6e28680682a1dcd73b716eb78">KVM_VGIC_V3_RDIST_INDEX_MASK</a>;</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">if</span> (write) {</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            gpa_t <a class="code" href="early__alloc_8c.html#a74f95eab64fb23344e30879684489f6f">base</a> = addr &amp; <a class="code" href="vgic_8h.html#a4b3d85861547e0e8a06a9d459b8bc1f5">KVM_VGIC_V3_RDIST_BASE_MASK</a>;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            u32 count = FIELD_GET(<a class="code" href="vgic_8h.html#a39abc101c3e1c37577cc5140b5a6a0c5">KVM_VGIC_V3_RDIST_COUNT_MASK</a>, addr);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            u32 <a class="code" href="structvgic__redist__region.html#a4229606bfed800b26eedde32f3134734">count</a> = FIELD_GET(<a class="code" href="vgic_8h.html#a39abc101c3e1c37577cc5140b5a6a0c5">KVM_VGIC_V3_RDIST_COUNT_MASK</a>, addr);</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            u8 flags = FIELD_GET(<a class="code" href="vgic_8h.html#ae06d384979afe3ae035989ac1973f56a">KVM_VGIC_V3_RDIST_FLAGS_MASK</a>, addr);</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <span class="keywordflow">if</span> (!count || flags)</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="structvgic__redist__region.html#a4229606bfed800b26eedde32f3134734">count</a> || flags)</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                r = -EINVAL;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                r = <a class="code" href="vgic-mmio-v3_8c.html#a4a15ce4d47dcc08ccabdac23699bd8e0">vgic_v3_set_redist_base</a>(kvm, index,</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                                <a class="code" href="early__alloc_8c.html#a74f95eab64fb23344e30879684489f6f">base</a>, count);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                r = <a class="code" href="vgic-mmio-v3_8c.html#a4a15ce4d47dcc08ccabdac23699bd8e0">vgic_v3_set_redist_base</a>(kvm, <a class="code" href="structvgic__redist__region.html#acfc4000de33efd7b5e580c782215492d">index</a>,</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                                <a class="code" href="early__alloc_8c.html#a74f95eab64fb23344e30879684489f6f">base</a>, <a class="code" href="structvgic__redist__region.html#a4229606bfed800b26eedde32f3134734">count</a>);</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keywordflow">goto</span> out;</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        }</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        rdreg = <a class="code" href="vgic-v3_8c.html#a35e1a5cb345dbcb7d61a55467b083702">vgic_v3_rdist_region_from_index</a>(kvm, index);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        rdreg = <a class="code" href="vgic-v3_8c.html#a35e1a5cb345dbcb7d61a55467b083702">vgic_v3_rdist_region_from_index</a>(kvm, <a class="code" href="structvgic__redist__region.html#acfc4000de33efd7b5e580c782215492d">index</a>);</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordflow">if</span> (!rdreg) {</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            r = -ENOENT;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <span class="keywordflow">goto</span> out;</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        }</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        addr = index;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        addr |= rdreg-&gt;base;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        addr |= (u64)rdreg-&gt;count &lt;&lt; <a class="code" href="vgic_8h.html#a5e7ccc903e0370ac380bc78fbfae3d2b">KVM_VGIC_V3_RDIST_COUNT_SHIFT</a>;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        addr = <a class="code" href="structvgic__redist__region.html#acfc4000de33efd7b5e580c782215492d">index</a>;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        addr |= rdreg-&gt;<a class="code" href="structvgic__redist__region.html#a93b2def7658d5686e54eb8352104c2ee">base</a>;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        addr |= (u64)rdreg-&gt;<a class="code" href="structvgic__redist__region.html#a4229606bfed800b26eedde32f3134734">count</a> &lt;&lt; <a class="code" href="vgic_8h.html#a5e7ccc903e0370ac380bc78fbfae3d2b">KVM_VGIC_V3_RDIST_COUNT_SHIFT</a>;</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordflow">goto</span> out;</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    }</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keywordflow">default</span>:</div>
@@ -300,18 +300,18 @@ $(function() {
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment">         * - at most 1024 interrupts</span></div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="comment">         * - a multiple of 32 interrupts</span></div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="keywordflow">if</span> (val &lt; (VGIC_NR_PRIVATE_IRQS + 32) ||</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            val &gt; VGIC_MAX_RESERVED ||</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="keywordflow">if</span> (val &lt; (<a class="code" href="arm__vgic_8h.html#ae9d406cdd3eafd831ee41ecf0e48011e">VGIC_NR_PRIVATE_IRQS</a> + 32) ||</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            val &gt; <a class="code" href="arm__vgic_8h.html#ad7342134b684299f69395eee1e4fbc05">VGIC_MAX_RESERVED</a> ||</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            (val &amp; 31))</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            <span class="keywordflow">return</span> -EINVAL;</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        mutex_lock(&amp;dev-&gt;kvm-&gt;arch.config_lock);</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="keywordflow">if</span> (vgic_ready(dev-&gt;kvm) || dev-&gt;kvm-&gt;arch.vgic.nr_spis)</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="arm__vgic_8h.html#a8a1cb81c34b893dec2bef262c6fafb15">vgic_ready</a>(dev-&gt;kvm) || dev-&gt;kvm-&gt;arch.vgic.nr_spis)</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            ret = -EBUSY;</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            dev-&gt;kvm-&gt;arch.vgic.nr_spis =</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                val - VGIC_NR_PRIVATE_IRQS;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                val - <a class="code" href="arm__vgic_8h.html#ae9d406cdd3eafd831ee41ecf0e48011e">VGIC_NR_PRIVATE_IRQS</a>;</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        mutex_unlock(&amp;dev-&gt;kvm-&gt;arch.config_lock);</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
@@ -366,7 +366,7 @@ $(function() {
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        u32 __user *uaddr = (u32 __user *)(<span class="keywordtype">long</span>)attr-&gt;addr;</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        r = put_user(dev-&gt;kvm-&gt;arch.vgic.nr_spis +</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                 VGIC_NR_PRIVATE_IRQS, uaddr);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                 <a class="code" href="arm__vgic_8h.html#ae9d406cdd3eafd831ee41ecf0e48011e">VGIC_NR_PRIVATE_IRQS</a>, uaddr);</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    }</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    }</div>
@@ -618,7 +618,7 @@ $(function() {
 <div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160; </div>
 <div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    mutex_lock(&amp;dev-&gt;kvm-&gt;arch.config_lock);</div>
 <div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160; </div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;    <span class="keywordflow">if</span> (unlikely(!vgic_initialized(dev-&gt;kvm))) {</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;    <span class="keywordflow">if</span> (unlikely(!<a class="code" href="arm__vgic_8h.html#a92f7a5b2fbbd6b57aaed08e61ba34d43">vgic_initialized</a>(dev-&gt;kvm))) {</div>
 <div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;        ret = -EBUSY;</div>
 <div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;        <span class="keywordflow">goto</span> out;</div>
 <div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;    }</div>
@@ -741,9 +741,22 @@ $(function() {
 <div class="ttc" id="aarm_8c_html_a02feef111fec875eb6382835eb2fb620"><div class="ttname"><a href="arm_8c.html#a02feef111fec875eb6382835eb2fb620">lock_all_vcpus</a></div><div class="ttdeci">bool lock_all_vcpus(struct kvm *kvm)</div><div class="ttdef"><b>Definition:</b> <a href="arm_8c_source.html#l01773">arm.c:1773</a></div></div>
 <div class="ttc" id="aarm_8c_html_a0be215e1642483c65818bd994b13a421"><div class="ttname"><a href="arm_8c.html#a0be215e1642483c65818bd994b13a421">kvm_mpidr_to_vcpu</a></div><div class="ttdeci">struct kvm_vcpu * kvm_mpidr_to_vcpu(struct kvm *kvm, unsigned long mpidr)</div><div class="ttdef"><b>Definition:</b> <a href="arm_8c_source.html#l02460">arm.c:2460</a></div></div>
 <div class="ttc" id="aarm_8c_html_a29e56a77bf87bcd1b20ed8a14d9b2778"><div class="ttname"><a href="arm_8c.html#a29e56a77bf87bcd1b20ed8a14d9b2778">unlock_all_vcpus</a></div><div class="ttdeci">void unlock_all_vcpus(struct kvm *kvm)</div><div class="ttdef"><b>Definition:</b> <a href="arm_8c_source.html#l01765">arm.c:1765</a></div></div>
+<div class="ttc" id="aarm__vgic_8h_html"><div class="ttname"><a href="arm__vgic_8h.html">arm_vgic.h</a></div></div>
+<div class="ttc" id="aarm__vgic_8h_html_a8a1cb81c34b893dec2bef262c6fafb15"><div class="ttname"><a href="arm__vgic_8h.html#a8a1cb81c34b893dec2bef262c6fafb15">vgic_ready</a></div><div class="ttdeci">#define vgic_ready(k)</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00394">arm_vgic.h:394</a></div></div>
+<div class="ttc" id="aarm__vgic_8h_html_a92f7a5b2fbbd6b57aaed08e61ba34d43"><div class="ttname"><a href="arm__vgic_8h.html#a92f7a5b2fbbd6b57aaed08e61ba34d43">vgic_initialized</a></div><div class="ttdeci">#define vgic_initialized(k)</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00393">arm_vgic.h:393</a></div></div>
+<div class="ttc" id="aarm__vgic_8h_html_ad7342134b684299f69395eee1e4fbc05"><div class="ttname"><a href="arm__vgic_8h.html#ad7342134b684299f69395eee1e4fbc05">VGIC_MAX_RESERVED</a></div><div class="ttdeci">#define VGIC_MAX_RESERVED</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00030">arm_vgic.h:30</a></div></div>
+<div class="ttc" id="aarm__vgic_8h_html_ae9d406cdd3eafd831ee41ecf0e48011e"><div class="ttname"><a href="arm__vgic_8h.html#ae9d406cdd3eafd831ee41ecf0e48011e">VGIC_NR_PRIVATE_IRQS</a></div><div class="ttdeci">#define VGIC_NR_PRIVATE_IRQS</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00027">arm_vgic.h:27</a></div></div>
 <div class="ttc" id="aearly__alloc_8c_html_a74f95eab64fb23344e30879684489f6f"><div class="ttname"><a href="early__alloc_8c.html#a74f95eab64fb23344e30879684489f6f">base</a></div><div class="ttdeci">static unsigned long base</div><div class="ttdef"><b>Definition:</b> <a href="early__alloc_8c_source.html#l00015">early_alloc.c:15</a></div></div>
 <div class="ttc" id="agen-hyprel_8c_html_a854352f53b148adc24983a58a1866d66"><div class="ttname"><a href="gen-hyprel_8c.html#a854352f53b148adc24983a58a1866d66">size</a></div><div class="ttdeci">size_t size</div><div class="ttdef"><b>Definition:</b> <a href="gen-hyprel_8c_source.html#l00133">gen-hyprel.c:133</a></div></div>
 <div class="ttc" id="akvm__main_8c_html_a04cec4716182d98b08f008f317aaf698"><div class="ttname"><a href="kvm__main_8c.html#a04cec4716182d98b08f008f317aaf698">kvm_register_device_ops</a></div><div class="ttdeci">int kvm_register_device_ops(const struct kvm_device_ops *ops, u32 type)</div><div class="ttdef"><b>Definition:</b> <a href="kvm__main_8c_source.html#l04742">kvm_main.c:4742</a></div></div>
+<div class="ttc" id="astructvgic__dist_html"><div class="ttname"><a href="structvgic__dist.html">vgic_dist</a></div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00224">arm_vgic.h:224</a></div></div>
+<div class="ttc" id="astructvgic__dist_html_a64889fb78fa1c835d635165bdc9dbe6e"><div class="ttname"><a href="structvgic__dist.html#a64889fb78fa1c835d635165bdc9dbe6e">vgic_dist::vgic_dist_base</a></div><div class="ttdeci">gpa_t vgic_dist_base</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00247">arm_vgic.h:247</a></div></div>
+<div class="ttc" id="astructvgic__dist_html_adfde4e406677fb7d0457aa686d4dfe86"><div class="ttname"><a href="structvgic__dist.html#adfde4e406677fb7d0457aa686d4dfe86">vgic_dist::vgic_cpu_base</a></div><div class="ttdeci">gpa_t vgic_cpu_base</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00250">arm_vgic.h:250</a></div></div>
+<div class="ttc" id="astructvgic__redist__region_html"><div class="ttname"><a href="structvgic__redist__region.html">vgic_redist_region</a></div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00216">arm_vgic.h:216</a></div></div>
+<div class="ttc" id="astructvgic__redist__region_html_a4229606bfed800b26eedde32f3134734"><div class="ttname"><a href="structvgic__redist__region.html#a4229606bfed800b26eedde32f3134734">vgic_redist_region::count</a></div><div class="ttdeci">u32 count</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00219">arm_vgic.h:219</a></div></div>
+<div class="ttc" id="astructvgic__redist__region_html_a93b2def7658d5686e54eb8352104c2ee"><div class="ttname"><a href="structvgic__redist__region.html#a93b2def7658d5686e54eb8352104c2ee">vgic_redist_region::base</a></div><div class="ttdeci">gpa_t base</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00218">arm_vgic.h:218</a></div></div>
+<div class="ttc" id="astructvgic__redist__region_html_acfc4000de33efd7b5e580c782215492d"><div class="ttname"><a href="structvgic__redist__region.html#acfc4000de33efd7b5e580c782215492d">vgic_redist_region::index</a></div><div class="ttdeci">u32 index</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00217">arm_vgic.h:217</a></div></div>
+<div class="ttc" id="astructvgic__redist__region_html_ad6c95ce4c280f7691f57fc059a5dc187"><div class="ttname"><a href="structvgic__redist__region.html#ad6c95ce4c280f7691f57fc059a5dc187">vgic_redist_region::list</a></div><div class="ttdeci">struct list_head list</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00220">arm_vgic.h:221</a></div></div>
 <div class="ttc" id="astructvgic__reg__attr_html"><div class="ttname"><a href="structvgic__reg__attr.html">vgic_reg_attr</a></div><div class="ttdef"><b>Definition:</b> <a href="vgic_8h_source.html#l00169">vgic.h:169</a></div></div>
 <div class="ttc" id="astructvgic__reg__attr_html_a0f43e17045dc6b13404b4759e0fccad1"><div class="ttname"><a href="structvgic__reg__attr.html#a0f43e17045dc6b13404b4759e0fccad1">vgic_reg_attr::vcpu</a></div><div class="ttdeci">struct kvm_vcpu * vcpu</div><div class="ttdef"><b>Definition:</b> <a href="vgic_8h_source.html#l00170">vgic.h:170</a></div></div>
 <div class="ttc" id="astructvgic__reg__attr_html_a19ed06c96175609f3d98858c1eceec59"><div class="ttname"><a href="structvgic__reg__attr.html#a19ed06c96175609f3d98858c1eceec59">vgic_reg_attr::addr</a></div><div class="ttdeci">gpa_t addr</div><div class="ttdef"><b>Definition:</b> <a href="vgic_8h_source.html#l00171">vgic.h:171</a></div></div>

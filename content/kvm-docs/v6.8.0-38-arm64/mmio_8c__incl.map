@@ -5,10 +5,12 @@
 <area shape="rect" id="node4" title=" " alt="" coords="333,80,481,107"/>
 <area shape="rect" id="node5" href="$trace_8h.html" title=" " alt="" coords="242,80,309,107"/>
 <area shape="rect" id="node6" href="$trace__arm_8h.html" title=" " alt="" coords="233,155,333,181"/>
-<area shape="rect" id="node10" href="$trace__handle__exit_8h.html" title=" " alt="" coords="456,155,607,181"/>
-<area shape="rect" id="node7" title=" " alt="" coords="185,229,355,256"/>
-<area shape="rect" id="node8" title=" " alt="" coords="379,229,515,256"/>
-<area shape="rect" id="node9" title=" " alt="" coords="540,229,691,256"/>
-<area shape="rect" id="node11" href="$sys__regs_8h.html" title=" " alt="" coords="715,229,806,256"/>
-<area shape="rect" id="node12" title=" " alt="" coords="700,304,821,331"/>
+<area shape="rect" id="node12" href="$trace__handle__exit_8h.html" title=" " alt="" coords="456,155,607,181"/>
+<area shape="rect" id="node7" href="$arm__arch__timer_8h.html" title=" " alt="" coords="185,229,355,256"/>
+<area shape="rect" id="node10" title=" " alt="" coords="379,229,515,256"/>
+<area shape="rect" id="node11" title=" " alt="" coords="540,229,691,256"/>
+<area shape="rect" id="node8" title=" " alt="" coords="274,304,421,331"/>
+<area shape="rect" id="node9" title=" " alt="" coords="133,304,250,331"/>
+<area shape="rect" id="node13" href="$sys__regs_8h.html" title=" " alt="" coords="715,229,806,256"/>
+<area shape="rect" id="node14" title=" " alt="" coords="700,304,821,331"/>
 </map>

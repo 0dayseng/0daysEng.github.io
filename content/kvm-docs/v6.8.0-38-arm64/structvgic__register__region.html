@@ -86,7 +86,7 @@ Public Attributes</h2></td></tr>
 &#160;&#160;&#160;&#160;&#160;&#160;addr, unsigned int <a class="el" href="structvgic__register__region.html#a0e994a6218be0ba787c29cfa4477be1d">len</a>)</td></tr>
 <tr class="separator:a6fa85ff572543c99f528f09a32673550"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7baa51d5a9ca801f5776758e3511f44"><td class="memItemLeft" >&#160;&#160;&#160;unsigned long(*&#160;&#160;&#160;<a class="el" href="structvgic__register__region.html#a944e8de9ed17ddee82c0945d970c7e7e">its_read</a> )(struct kvm *kvm, struct <br class="typebreak" />
-&#160;&#160;&#160;&#160;&#160;&#160;vgic_its *its, gpa_t addr, <br class="typebreak" />
+&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structvgic__its.html">vgic_its</a> *its, gpa_t addr, <br class="typebreak" />
 &#160;&#160;&#160;&#160;&#160;&#160;unsigned int <a class="el" href="structvgic__register__region.html#a0e994a6218be0ba787c29cfa4477be1d">len</a>)</td></tr>
 <tr class="separator:aa7baa51d5a9ca801f5776758e3511f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98ff04366474f04f0b50bf8cd35b2ac2"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
@@ -97,7 +97,7 @@ Public Attributes</h2></td></tr>
 &#160;&#160;&#160;&#160;&#160;&#160;unsigned long val)</td></tr>
 <tr class="separator:a12750b500b1290f4e92744ba50f3d828"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8032ee2dfe9ccf5f4cf16dffa2b9d8f"><td class="memItemLeft" >&#160;&#160;&#160;void(*&#160;&#160;&#160;<a class="el" href="structvgic__register__region.html#aa82a6f8dbf511b4fc351993232f4e21d">its_write</a> )(struct kvm *kvm, struct <br class="typebreak" />
-&#160;&#160;&#160;&#160;&#160;&#160;vgic_its *its, gpa_t addr, <br class="typebreak" />
+&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structvgic__its.html">vgic_its</a> *its, gpa_t addr, <br class="typebreak" />
 &#160;&#160;&#160;&#160;&#160;&#160;unsigned int <a class="el" href="structvgic__register__region.html#a0e994a6218be0ba787c29cfa4477be1d">len</a>, unsigned <br class="typebreak" />
 &#160;&#160;&#160;&#160;&#160;&#160;long val)</td></tr>
 <tr class="separator:ad8032ee2dfe9ccf5f4cf16dffa2b9d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -111,7 +111,7 @@ Public Attributes</h2></td></tr>
 &#160;&#160;&#160;&#160;&#160;&#160;unsigned long val)</td></tr>
 <tr class="separator:a904ce59c15c383ad8d867be1e4dbe1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18256785c3d100af66f1ffc198580fac"><td class="memItemLeft" >&#160;&#160;&#160;int(*&#160;&#160;&#160;<a class="el" href="structvgic__register__region.html#ab4f05127f25cc99ce675208374198f91">uaccess_its_write</a> )(struct kvm *kvm, struct <br class="typebreak" />
-&#160;&#160;&#160;&#160;&#160;&#160;vgic_its *its, gpa_t addr, <br class="typebreak" />
+&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structvgic__its.html">vgic_its</a> *its, gpa_t addr, <br class="typebreak" />
 &#160;&#160;&#160;&#160;&#160;&#160;unsigned int <a class="el" href="structvgic__register__region.html#a0e994a6218be0ba787c29cfa4477be1d">len</a>, unsigned <br class="typebreak" />
 &#160;&#160;&#160;&#160;&#160;&#160;long val)</td></tr>
 <tr class="separator:a18256785c3d100af66f1ffc198580fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,7 +203,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned long(* vgic_register_region::its_read) (struct kvm *kvm, struct vgic_its *its, gpa_t addr, unsigned int <a class="el" href="structvgic__register__region.html#a0e994a6218be0ba787c29cfa4477be1d">len</a>)</td>
+          <td class="memname">unsigned long(* vgic_register_region::its_read) (struct kvm *kvm, struct <a class="el" href="structvgic__its.html">vgic_its</a> *its, gpa_t addr, unsigned int <a class="el" href="structvgic__register__region.html#a0e994a6218be0ba787c29cfa4477be1d">len</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -219,7 +219,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* vgic_register_region::its_write) (struct kvm *kvm, struct vgic_its *its, gpa_t addr, unsigned int <a class="el" href="structvgic__register__region.html#a0e994a6218be0ba787c29cfa4477be1d">len</a>, unsigned long val)</td>
+          <td class="memname">void(* vgic_register_region::its_write) (struct kvm *kvm, struct <a class="el" href="structvgic__its.html">vgic_its</a> *its, gpa_t addr, unsigned int <a class="el" href="structvgic__register__region.html#a0e994a6218be0ba787c29cfa4477be1d">len</a>, unsigned long val)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -283,7 +283,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int(* vgic_register_region::uaccess_its_write) (struct kvm *kvm, struct vgic_its *its, gpa_t addr, unsigned int <a class="el" href="structvgic__register__region.html#a0e994a6218be0ba787c29cfa4477be1d">len</a>, unsigned long val)</td>
+          <td class="memname">int(* vgic_register_region::uaccess_its_write) (struct kvm *kvm, struct <a class="el" href="structvgic__its.html">vgic_its</a> *its, gpa_t addr, unsigned int <a class="el" href="structvgic__register__region.html#a0e994a6218be0ba787c29cfa4477be1d">len</a>, unsigned long val)</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -79,23 +79,24 @@ $(function() {
 <code>#include &lt;linux/wait.h&gt;</code><br />
 <code>#include &lt;asm/cputype.h&gt;</code><br />
 <code>#include &lt;asm/kvm_emulate.h&gt;</code><br />
-<code>#include &lt;kvm/arm_psci.h&gt;</code><br />
-<code>#include &lt;kvm/arm_hypercalls.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="arm__psci_8h_source.html">kvm/arm_psci.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="arm__hypercalls_8h_source.html">kvm/arm_hypercalls.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for psci.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="psci_8c__incl.png" border="0" usemap="#aarch_2arm64_2kvm_2psci_8c" alt=""/></div>
 <map name="aarch_2arm64_2kvm_2psci_8c" id="aarch_2arm64_2kvm_2psci_8c">
-<area shape="rect" title=" " alt="" coords="593,5,763,32"/>
+<area shape="rect" title=" " alt="" coords="483,5,654,32"/>
 <area shape="rect" title=" " alt="" coords="5,80,148,107"/>
 <area shape="rect" title=" " alt="" coords="173,80,298,107"/>
-<area shape="rect" title=" " alt="" coords="323,80,457,107"/>
-<area shape="rect" title=" " alt="" coords="482,80,605,107"/>
-<area shape="rect" title=" " alt="" coords="629,80,727,107"/>
-<area shape="rect" title=" " alt="" coords="752,80,871,107"/>
-<area shape="rect" title=" " alt="" coords="895,80,1051,107"/>
-<area shape="rect" title=" " alt="" coords="1075,80,1201,107"/>
-<area shape="rect" title=" " alt="" coords="1225,80,1392,107"/>
+<area shape="rect" title=" " alt="" coords="447,155,581,181"/>
+<area shape="rect" title=" " alt="" coords="373,80,495,107"/>
+<area shape="rect" title=" " alt="" coords="519,80,618,107"/>
+<area shape="rect" title=" " alt="" coords="643,80,761,107"/>
+<area shape="rect" title=" " alt="" coords="965,155,1121,181"/>
+<area shape="rect" href="arm__psci_8h.html" title=" " alt="" coords="785,80,912,107"/>
+<area shape="rect" href="arm__hypercalls_8h.html" title=" " alt="" coords="988,80,1155,107"/>
+<area shape="rect" title=" " alt="" coords="785,155,913,181"/>
 </map>
 </div>
 </div>
@@ -292,7 +293,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="psci_8c_source.html#l00403">403</a> of file <a class="el" href="psci_8c_source.html">psci.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;{</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    u32 psci_fn = smccc_get_function(vcpu);</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    u32 psci_fn = <a class="code" href="arm__hypercalls_8h.html#a8baef8e49dbce7b140c519845a20611f">smccc_get_function</a>(vcpu);</div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> val;</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160; </div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <span class="keywordflow">switch</span> (psci_fn) {</div>
@@ -308,19 +309,23 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    }</div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160; </div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    smccc_set_retval(vcpu, val, 0, 0, 0);</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    <a class="code" href="arm__hypercalls_8h.html#ae543f09c1c7681cec4e5d2dfa0e728a1">smccc_set_retval</a>(vcpu, val, 0, 0, 0);</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;}</div>
 <div class="ttc" id="aarm_8c_html_a8a5659b8fc302d5b435957306e3541b4"><div class="ttname"><a href="arm_8c.html#a8a5659b8fc302d5b435957306e3541b4">kvm_arm_vcpu_power_off</a></div><div class="ttdeci">void kvm_arm_vcpu_power_off(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="arm_8c_source.html#l00494">arm.c:494</a></div></div>
+<div class="ttc" id="aarm__hypercalls_8h_html_a8baef8e49dbce7b140c519845a20611f"><div class="ttname"><a href="arm__hypercalls_8h.html#a8baef8e49dbce7b140c519845a20611f">smccc_get_function</a></div><div class="ttdeci">static u32 smccc_get_function(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="arm__hypercalls_8h_source.html#l00011">arm_hypercalls.h:11</a></div></div>
+<div class="ttc" id="aarm__hypercalls_8h_html_ae543f09c1c7681cec4e5d2dfa0e728a1"><div class="ttname"><a href="arm__hypercalls_8h.html#ae543f09c1c7681cec4e5d2dfa0e728a1">smccc_set_retval</a></div><div class="ttdeci">static void smccc_set_retval(struct kvm_vcpu *vcpu, unsigned long a0, unsigned long a1, unsigned long a2, unsigned long a3)</div><div class="ttdef"><b>Definition:</b> <a href="arm__hypercalls_8h_source.html#l00031">arm_hypercalls.h:31</a></div></div>
 <div class="ttc" id="apsci_8c_html_a092eeee0e7b54c50ebc3d0cf66ea8ef5"><div class="ttname"><a href="psci_8c.html#a092eeee0e7b54c50ebc3d0cf66ea8ef5">kvm_psci_vcpu_on</a></div><div class="ttdeci">static unsigned long kvm_psci_vcpu_on(struct kvm_vcpu *source_vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="psci_8c_source.html#l00060">psci.c:60</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="psci_8c_af18cf22560595f1da5e34ea244b0b51b_cgraph.png" border="0" usemap="#apsci_8c_af18cf22560595f1da5e34ea244b0b51b_cgraph" alt=""/></div>
 <map name="apsci_8c_af18cf22560595f1da5e34ea244b0b51b_cgraph" id="apsci_8c_af18cf22560595f1da5e34ea244b0b51b_cgraph">
-<area shape="rect" title=" " alt="" coords="5,81,149,108"/>
-<area shape="rect" href="arm_8c.html#a8a5659b8fc302d5b435957306e3541b4" title=" " alt="" coords="197,31,391,57"/>
-<area shape="rect" href="psci_8c.html#a092eeee0e7b54c50ebc3d0cf66ea8ef5" title=" " alt="" coords="221,107,367,133"/>
+<area shape="rect" title=" " alt="" coords="5,233,149,260"/>
+<area shape="rect" href="arm_8c.html#a8a5659b8fc302d5b435957306e3541b4" title=" " alt="" coords="197,81,391,108"/>
+<area shape="rect" href="psci_8c.html#a092eeee0e7b54c50ebc3d0cf66ea8ef5" title=" " alt="" coords="221,208,367,235"/>
+<area shape="rect" href="arm__hypercalls_8h.html#a8baef8e49dbce7b140c519845a20611f" title=" " alt="" coords="219,259,369,285"/>
+<area shape="rect" href="arm__hypercalls_8h.html#ae543f09c1c7681cec4e5d2dfa0e728a1" title=" " alt="" coords="227,309,361,336"/>
 <area shape="rect" href="arm_8c.html#afc3949baef2cd8a5749b2d0095959de1" title=" " alt="" coords="439,5,645,32"/>
 <area shape="rect" href="kvm__main_8c.html#ac82f28c95da4a0cc137c5a37f08d1f44" title=" " alt="" coords="693,5,816,32"/>
 <area shape="rect" href="arm_8c.html#a42500cdc8706ebf4fa3ec21645530097" title=" " alt="" coords="864,5,1072,32"/>
@@ -328,6 +333,10 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="arm_8c.html#a371c5c68ee659e4815a4af50d0161c8a" title=" " alt="" coords="451,107,633,133"/>
 <area shape="rect" href="arm_8c.html#a0be215e1642483c65818bd994b13a421" title=" " alt="" coords="465,157,619,184"/>
 <area shape="rect" href="psci_8c.html#ac9f7ca89512ea60ace6ea961a60354a4" title=" " alt="" coords="454,208,630,235"/>
+<area shape="rect" href="arm__psci_8h.html#ae8e32b0627b1dc8c12a32d279c1a3bf4" title=" " alt="" coords="473,259,611,285"/>
+<area shape="rect" href="arm__hypercalls_8h.html#aab3de177147e0efb70c732a1ad3706dd" title=" " alt="" coords="479,309,605,336"/>
+<area shape="rect" href="arm__hypercalls_8h.html#a0d87528a8f6002c42509bd1280a00eaa" title=" " alt="" coords="479,360,605,387"/>
+<area shape="rect" href="arm__hypercalls_8h.html#a365000fe74829ee0bdc59b28c8b8802f" title=" " alt="" coords="479,411,605,437"/>
 </map>
 </div>
 <div class="dynheader">
@@ -371,7 +380,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="psci_8c_source.html#l00240">240</a> of file <a class="el" href="psci_8c_source.html">psci.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;{</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    u32 psci_fn = smccc_get_function(vcpu);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    u32 psci_fn = <a class="code" href="arm__hypercalls_8h.html#a8baef8e49dbce7b140c519845a20611f">smccc_get_function</a>(vcpu);</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> val;</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keywordtype">int</span> ret = 1;</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
@@ -381,7 +390,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="comment">         * Bits[31:16] = Major Version = 0</span></div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="comment">         * Bits[15:0] = Minor Version = 2</span></div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        val = KVM_ARM_PSCI_0_2;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        val = <a class="code" href="arm__psci_8h.html#a8c679e377984302727b11e061bfa3b3d">KVM_ARM_PSCI_0_2</a>;</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keywordflow">case</span> PSCI_0_2_FN_CPU_SUSPEND:</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keywordflow">case</span> PSCI_0_2_FN64_CPU_SUSPEND:</div>
@@ -440,9 +449,10 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    }</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    smccc_set_retval(vcpu, val, 0, 0, 0);</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <a class="code" href="arm__hypercalls_8h.html#ae543f09c1c7681cec4e5d2dfa0e728a1">smccc_set_retval</a>(vcpu, val, 0, 0, 0);</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keywordflow">return</span> ret;</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;}</div>
+<div class="ttc" id="aarm__psci_8h_html_a8c679e377984302727b11e061bfa3b3d"><div class="ttname"><a href="arm__psci_8h.html#a8c679e377984302727b11e061bfa3b3d">KVM_ARM_PSCI_0_2</a></div><div class="ttdeci">#define KVM_ARM_PSCI_0_2</div><div class="ttdef"><b>Definition:</b> <a href="arm__psci_8h_source.html#l00014">arm_psci.h:14</a></div></div>
 <div class="ttc" id="apsci_8c_html_a6fe2f9e365c9a9948351f718015ce651"><div class="ttname"><a href="psci_8c.html#a6fe2f9e365c9a9948351f718015ce651">kvm_psci_narrow_to_32bit</a></div><div class="ttdeci">static void kvm_psci_narrow_to_32bit(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="psci_8c_source.html#l00217">psci.c:217</a></div></div>
 <div class="ttc" id="apsci_8c_html_a9119f27fea8a008787ddbc93e8b1bded"><div class="ttname"><a href="psci_8c.html#a9119f27fea8a008787ddbc93e8b1bded">kvm_psci_system_off</a></div><div class="ttdeci">static void kvm_psci_system_off(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="psci_8c_source.html#l00192">psci.c:192</a></div></div>
 <div class="ttc" id="apsci_8c_html_abe7d85200e79143f87dab785a204fb3a"><div class="ttname"><a href="psci_8c.html#abe7d85200e79143f87dab785a204fb3a">kvm_psci_vcpu_suspend</a></div><div class="ttdeci">static unsigned long kvm_psci_vcpu_suspend(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="psci_8c_source.html#l00034">psci.c:34</a></div></div>
@@ -453,56 +463,56 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="psci_8c_ac7522f6e0d1805f44a3e932397de4582_cgraph.png" border="0" usemap="#apsci_8c_ac7522f6e0d1805f44a3e932397de4582_cgraph" alt=""/></div>
 <map name="apsci_8c_ac7522f6e0d1805f44a3e932397de4582_cgraph" id="apsci_8c_ac7522f6e0d1805f44a3e932397de4582_cgraph">
-<area shape="rect" title=" " alt="" coords="5,259,149,285"/>
-<area shape="rect" href="arm_8c.html#a8a5659b8fc302d5b435957306e3541b4" title=" " alt="" coords="197,92,391,119"/>
-<area shape="rect" href="psci_8c.html#a6fe2f9e365c9a9948351f718015ce651" title=" " alt="" coords="216,411,372,453"/>
-<area shape="rect" href="psci_8c.html#a9119f27fea8a008787ddbc93e8b1bded" title=" " alt="" coords="213,208,375,235"/>
-<area shape="rect" href="psci_8c.html#ad8f7f33f1397e347a67599f67ac2f39c" title=" " alt="" coords="205,157,383,184"/>
-<area shape="rect" href="psci_8c.html#afd3d020adc6118dbd290a2770d897439" title=" " alt="" coords="1211,335,1417,361"/>
-<area shape="rect" href="psci_8c.html#a092eeee0e7b54c50ebc3d0cf66ea8ef5" title=" " alt="" coords="1241,259,1387,285"/>
-<area shape="rect" href="psci_8c.html#abe7d85200e79143f87dab785a204fb3a" title=" " alt="" coords="203,360,385,387"/>
-<area shape="rect" href="arm_8c.html#afc3949baef2cd8a5749b2d0095959de1" title=" " alt="" coords="439,77,645,104"/>
+<area shape="rect" title=" " alt="" coords="5,385,149,412"/>
+<area shape="rect" href="arm_8c.html#a8a5659b8fc302d5b435957306e3541b4" title=" " alt="" coords="197,143,391,169"/>
+<area shape="rect" href="psci_8c.html#a6fe2f9e365c9a9948351f718015ce651" title=" " alt="" coords="216,487,372,529"/>
+<area shape="rect" href="psci_8c.html#a9119f27fea8a008787ddbc93e8b1bded" title=" " alt="" coords="213,284,375,311"/>
+<area shape="rect" href="psci_8c.html#ad8f7f33f1397e347a67599f67ac2f39c" title=" " alt="" coords="205,233,383,260"/>
+<area shape="rect" href="psci_8c.html#afd3d020adc6118dbd290a2770d897439" title=" " alt="" coords="1211,487,1417,513"/>
+<area shape="rect" href="psci_8c.html#a092eeee0e7b54c50ebc3d0cf66ea8ef5" title=" " alt="" coords="1241,335,1387,361"/>
+<area shape="rect" href="psci_8c.html#abe7d85200e79143f87dab785a204fb3a" title=" " alt="" coords="203,436,385,463"/>
+<area shape="rect" href="arm__hypercalls_8h.html#a8baef8e49dbce7b140c519845a20611f" title=" " alt="" coords="219,553,369,580"/>
+<area shape="rect" href="arm__hypercalls_8h.html#ae543f09c1c7681cec4e5d2dfa0e728a1" title=" " alt="" coords="227,604,361,631"/>
+<area shape="rect" href="arm_8c.html#afc3949baef2cd8a5749b2d0095959de1" title=" " alt="" coords="439,103,645,129"/>
 <area shape="rect" href="kvm__main_8c.html#ac82f28c95da4a0cc137c5a37f08d1f44" title=" " alt="" coords="737,56,860,83"/>
 <area shape="rect" href="arm_8c.html#a42500cdc8706ebf4fa3ec21645530097" title=" " alt="" coords="953,5,1161,32"/>
 <area shape="rect" href="kvm__main_8c.html#ad9f0140eebcdef9a9ebae54431d2fba5" title=" " alt="" coords="1483,56,1636,83"/>
-<area shape="rect" href="psci_8c.html#a44cba757038eb3abdf93db5dc6c7ae3e" title=" " alt="" coords="461,150,623,191"/>
-<area shape="rect" href="kvm__main_8c.html#abaa3f5ff00150487b52dd21c1617bab6" title=" " alt="" coords="693,157,904,184"/>
+<area shape="rect" href="psci_8c.html#a44cba757038eb3abdf93db5dc6c7ae3e" title=" " alt="" coords="461,226,623,267"/>
+<area shape="rect" href="kvm__main_8c.html#abaa3f5ff00150487b52dd21c1617bab6" title=" " alt="" coords="693,208,904,235"/>
 <area shape="rect" href="kvm__main_8c.html#ac46e1a0e43c0784194a451a7e7394c02" title=" " alt="" coords="952,150,1163,191"/>
 <area shape="rect" href="kvm__main_8c.html#a56fa7dccf37545a9046522ded0354c7e" title=" " alt="" coords="1231,157,1397,184"/>
 <area shape="rect" href="kvm__main_8c.html#a90667c5619416298aea980ad51ec8525" title=" " alt="" coords="1220,107,1408,133"/>
 <area shape="rect" href="kvm__main_8c.html#a7682302871243c20a5dd16214655db15" title=" " alt="" coords="1520,157,1599,184"/>
 <area shape="rect" href="kvm__main_8c.html#a9316cc70360fb39d920d5c76a2e41f35" title=" " alt="" coords="1471,107,1647,133"/>
-<area shape="rect" href="arm_8c.html#a371c5c68ee659e4815a4af50d0161c8a" title=" " alt="" coords="1714,360,1895,387"/>
-<area shape="rect" href="psci_8c.html#ac9f7ca89512ea60ace6ea961a60354a4" title=" " alt="" coords="1471,309,1647,336"/>
-<area shape="rect" href="psci_8c.html#aa30b461609a71770efab6a5045274e5e" title=" " alt="" coords="1487,411,1631,437"/>
-<area shape="rect" href="arm_8c.html#a0be215e1642483c65818bd994b13a421" title=" " alt="" coords="1482,259,1637,285"/>
-<area shape="rect" href="arm_8c.html#a68df8c6f1b7134e9f23857f092d50056" title=" " alt="" coords="485,765,599,792"/>
-<area shape="rect" href="kvm__main_8c.html#a7256a8615584a9ae83a46c071f6aa0e9" title=" " alt="" coords="738,613,859,640"/>
-<area shape="rect" href="vgic_8c.html#a751661541b39c02532a54736db22a929" title=" " alt="" coords="717,765,880,792"/>
-<area shape="rect" href="vgic-v4_8c.html#ac2966fbf90610bb8a0525cbd903f7477" title=" " alt="" coords="745,816,852,843"/>
-<area shape="rect" href="vgic-v4_8c.html#aeafcb3e6b67ea32ed8e59d009252e565" title=" " alt="" coords="749,867,849,893"/>
-<area shape="rect" href="kvm__main_8c.html#a1045a615093ccd8e87dcd6f6a0e03e9e" title=" " alt="" coords="988,563,1127,589"/>
-<area shape="rect" href="kvm__main_8c.html#a8e18df0287ddedfd516454aeeb669807" title=" " alt="" coords="992,512,1123,539"/>
-<area shape="rect" href="kvm__main_8c.html#a3de4d6991bdd1a714e8afa6a55136cdd" title=" " alt="" coords="1226,461,1402,488"/>
-<area shape="rect" href="kvm__main_8c.html#afc3c9c56d305921c317259e18c9c8a59" title=" " alt="" coords="952,613,1163,640"/>
-<area shape="rect" href="kvm__main_8c.html#a22600b8a76a84f58d97f1a465293e63c" title=" " alt="" coords="984,664,1131,691"/>
-<area shape="rect" href="kvm__main_8c.html#aaa76576c021037e516218db81c147ca0" title=" " alt="" coords="973,715,1142,741"/>
-<area shape="rect" href="arm_8c.html#aa48cc7e76c49933c4fb44eda2ecec1ab" title=" " alt="" coords="1221,512,1407,539"/>
-<area shape="rect" href="arm_8c.html#a6416d8550a44ef31c85f11d80d6efcc2" title=" " alt="" coords="1213,563,1415,589"/>
-<area shape="rect" href="arm_8c.html#ac412fb0d81a53e66d8ac4146e4202f92" title=" " alt="" coords="1465,461,1653,488"/>
-<area shape="rect" href="arch__timer_8c.html#a78e23e83bece8c269268f3a263fbb114" title=" " alt="" coords="1474,513,1645,554"/>
-<area shape="rect" href="vgic_8c.html#a3059bfcee1ad30f581150d06c07d68e8" title=" " alt="" coords="1701,461,1908,488"/>
-<area shape="rect" href="vgic_8h.html#a1109d873011f89a4acb4fd461f9f0a45" title=" " alt="" coords="1983,485,2099,512"/>
-<area shape="rect" href="vgic-mmio_8c.html#ad275c2ef6d5f7f0d79f101a7dd6dda3a" title=" " alt="" coords="1983,435,2100,461"/>
-<area shape="rect" href="vgic-v2_8c.html#aa825011d5b7d02e6b8f6c21746a5af39" title=" " alt="" coords="2175,435,2315,461"/>
-<area shape="rect" href="arch__timer_8c.html#ad210f5f7b0361777290f8b36f023a518" title=" " alt="" coords="1724,516,1885,543"/>
-<area shape="rect" href="arch__timer_8c.html#a9d0120f96e99b20be8023dad5c6a7f0b" title=" " alt="" coords="1749,567,1860,593"/>
-<area shape="rect" href="arch__timer_8c.html#a6c290bf8212ea1388cdb4a839eae7228" title=" " alt="" coords="1956,559,2127,601"/>
-<area shape="rect" href="vgic-v2_8c.html#aa92110fc4f1e453fde0e8e720845854f" title=" " alt="" coords="983,765,1132,792"/>
-<area shape="rect" href="vgic-v3_8c.html#aa3f97179d90d3ed6a8920d1c57496380" title=" " alt="" coords="983,816,1132,843"/>
-<area shape="rect" href="vgic-v3-sr_8c.html#a4c7049da2b551848d3e39293c881f329" title=" " alt="" coords="1233,816,1395,843"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#a839b15883ba8f9de35a03ffce32fdf7f" title=" " alt="" coords="960,867,1155,893"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#a47708b59ddd94e03880996def466067e" title=" " alt="" coords="1263,867,1365,893"/>
+<area shape="rect" href="arm_8c.html#a371c5c68ee659e4815a4af50d0161c8a" title=" " alt="" coords="1714,563,1895,589"/>
+<area shape="rect" href="psci_8c.html#ac9f7ca89512ea60ace6ea961a60354a4" title=" " alt="" coords="1471,411,1647,437"/>
+<area shape="rect" href="psci_8c.html#aa30b461609a71770efab6a5045274e5e" title=" " alt="" coords="1487,613,1631,640"/>
+<area shape="rect" href="arm__hypercalls_8h.html#aab3de177147e0efb70c732a1ad3706dd" title=" " alt="" coords="1496,461,1623,488"/>
+<area shape="rect" href="arm__hypercalls_8h.html#a0d87528a8f6002c42509bd1280a00eaa" title=" " alt="" coords="1496,512,1623,539"/>
+<area shape="rect" href="arm_8c.html#a0be215e1642483c65818bd994b13a421" title=" " alt="" coords="1482,360,1637,387"/>
+<area shape="rect" href="arm__psci_8h.html#ae8e32b0627b1dc8c12a32d279c1a3bf4" title=" " alt="" coords="1490,208,1629,235"/>
+<area shape="rect" href="arm__hypercalls_8h.html#a365000fe74829ee0bdc59b28c8b8802f" title=" " alt="" coords="1496,259,1623,285"/>
+<area shape="rect" href="arm_8c.html#a68df8c6f1b7134e9f23857f092d50056" title=" " alt="" coords="485,968,599,995"/>
+<area shape="rect" href="kvm__main_8c.html#a7256a8615584a9ae83a46c071f6aa0e9" title=" " alt="" coords="738,816,859,843"/>
+<area shape="rect" href="vgic_8c.html#a751661541b39c02532a54736db22a929" title=" " alt="" coords="717,968,880,995"/>
+<area shape="rect" href="vgic-v4_8c.html#ac2966fbf90610bb8a0525cbd903f7477" title=" " alt="" coords="745,1019,852,1045"/>
+<area shape="rect" href="vgic-v4_8c.html#aeafcb3e6b67ea32ed8e59d009252e565" title=" " alt="" coords="749,1069,849,1096"/>
+<area shape="rect" href="kvm__main_8c.html#a1045a615093ccd8e87dcd6f6a0e03e9e" title=" " alt="" coords="988,765,1127,792"/>
+<area shape="rect" href="kvm__main_8c.html#a8e18df0287ddedfd516454aeeb669807" title=" " alt="" coords="992,715,1123,741"/>
+<area shape="rect" href="kvm__main_8c.html#a3de4d6991bdd1a714e8afa6a55136cdd" title=" " alt="" coords="1226,664,1402,691"/>
+<area shape="rect" href="kvm__main_8c.html#afc3c9c56d305921c317259e18c9c8a59" title=" " alt="" coords="952,816,1163,843"/>
+<area shape="rect" href="kvm__main_8c.html#a22600b8a76a84f58d97f1a465293e63c" title=" " alt="" coords="984,867,1131,893"/>
+<area shape="rect" href="kvm__main_8c.html#aaa76576c021037e516218db81c147ca0" title=" " alt="" coords="973,917,1142,944"/>
+<area shape="rect" href="arm_8c.html#aa48cc7e76c49933c4fb44eda2ecec1ab" title=" " alt="" coords="1221,715,1407,741"/>
+<area shape="rect" href="arm_8c.html#a6416d8550a44ef31c85f11d80d6efcc2" title=" " alt="" coords="1213,765,1415,792"/>
+<area shape="rect" href="arm_8c.html#ac412fb0d81a53e66d8ac4146e4202f92" title=" " alt="" coords="1465,664,1653,691"/>
+<area shape="rect" href="arch__timer_8c.html#a78e23e83bece8c269268f3a263fbb114" title=" " alt="" coords="1474,715,1645,757"/>
+<area shape="rect" href="vgic_8c.html#a3059bfcee1ad30f581150d06c07d68e8" title=" " alt="" coords="1701,664,1908,691"/>
+<area shape="rect" href="vgic-v2_8c.html#aa92110fc4f1e453fde0e8e720845854f" title=" " alt="" coords="983,968,1132,995"/>
+<area shape="rect" href="vgic-v3_8c.html#aa3f97179d90d3ed6a8920d1c57496380" title=" " alt="" coords="983,1019,1132,1045"/>
+<area shape="rect" href="vgic-v3-sr_8c.html#a4c7049da2b551848d3e39293c881f329" title=" " alt="" coords="1233,1019,1395,1045"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#a839b15883ba8f9de35a03ffce32fdf7f" title=" " alt="" coords="960,1069,1155,1096"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#a47708b59ddd94e03880996def466067e" title=" " alt="" coords="1263,1069,1365,1096"/>
 </map>
 </div>
 <div class="dynheader">
@@ -558,17 +568,17 @@ Here is the caller graph for this function:</div>
 <p class="definition">Definition at line <a class="el" href="psci_8c_source.html#l00315">315</a> of file <a class="el" href="psci_8c_source.html">psci.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;{</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> val = PSCI_RET_NOT_SUPPORTED;</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    u32 psci_fn = smccc_get_function(vcpu);</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    u32 psci_fn = <a class="code" href="arm__hypercalls_8h.html#a8baef8e49dbce7b140c519845a20611f">smccc_get_function</a>(vcpu);</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="keyword">struct </span>kvm *kvm = vcpu-&gt;kvm;</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    u32 arg;</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    <span class="keywordtype">int</span> ret = 1;</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160; </div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keywordflow">switch</span>(psci_fn) {</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keywordflow">case</span> PSCI_0_2_FN_PSCI_VERSION:</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        val = minor == 0 ? KVM_ARM_PSCI_1_0 : KVM_ARM_PSCI_1_1;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        val = minor == 0 ? <a class="code" href="arm__psci_8h.html#a1fc8f29306f5ad323abfdc03af032781">KVM_ARM_PSCI_1_0</a> : <a class="code" href="arm__psci_8h.html#ac2a221c8ded02a80b52cc4fe95c5d78e">KVM_ARM_PSCI_1_1</a>;</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keywordflow">case</span> PSCI_1_0_FN_PSCI_FEATURES:</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        arg = smccc_get_arg1(vcpu);</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        arg = <a class="code" href="arm__hypercalls_8h.html#aab3de177147e0efb70c732a1ad3706dd">smccc_get_arg1</a>(vcpu);</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        val = <a class="code" href="psci_8c.html#a3b9f15ff62c952f20de3ed44aaf4edbc">kvm_psci_check_allowed_function</a>(vcpu, arg);</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <span class="keywordflow">if</span> (val)</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            <span class="keywordflow">break</span>;</div>
@@ -622,7 +632,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        fallthrough;</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <span class="keywordflow">case</span> PSCI_1_1_FN64_SYSTEM_RESET2:</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        <span class="keywordflow">if</span> (minor &gt;= 1) {</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            arg = smccc_get_arg1(vcpu);</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            arg = <a class="code" href="arm__hypercalls_8h.html#aab3de177147e0efb70c732a1ad3706dd">smccc_get_arg1</a>(vcpu);</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160; </div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;            <span class="keywordflow">if</span> (arg &lt;= PSCI_1_1_RESET_TYPE_SYSTEM_WARM_RESET ||</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;                arg &gt;= PSCI_1_1_RESET_TYPE_VENDOR_START) {</div>
@@ -639,9 +649,12 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="psci_8c.html#ac7522f6e0d1805f44a3e932397de4582">kvm_psci_0_2_call</a>(vcpu);</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    }</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160; </div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    smccc_set_retval(vcpu, val, 0, 0, 0);</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <a class="code" href="arm__hypercalls_8h.html#ae543f09c1c7681cec4e5d2dfa0e728a1">smccc_set_retval</a>(vcpu, val, 0, 0, 0);</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    <span class="keywordflow">return</span> ret;</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;}</div>
+<div class="ttc" id="aarm__hypercalls_8h_html_aab3de177147e0efb70c732a1ad3706dd"><div class="ttname"><a href="arm__hypercalls_8h.html#aab3de177147e0efb70c732a1ad3706dd">smccc_get_arg1</a></div><div class="ttdeci">static unsigned long smccc_get_arg1(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="arm__hypercalls_8h_source.html#l00016">arm_hypercalls.h:16</a></div></div>
+<div class="ttc" id="aarm__psci_8h_html_a1fc8f29306f5ad323abfdc03af032781"><div class="ttname"><a href="arm__psci_8h.html#a1fc8f29306f5ad323abfdc03af032781">KVM_ARM_PSCI_1_0</a></div><div class="ttdeci">#define KVM_ARM_PSCI_1_0</div><div class="ttdef"><b>Definition:</b> <a href="arm__psci_8h_source.html#l00015">arm_psci.h:15</a></div></div>
+<div class="ttc" id="aarm__psci_8h_html_ac2a221c8ded02a80b52cc4fe95c5d78e"><div class="ttname"><a href="arm__psci_8h.html#ac2a221c8ded02a80b52cc4fe95c5d78e">KVM_ARM_PSCI_1_1</a></div><div class="ttdeci">#define KVM_ARM_PSCI_1_1</div><div class="ttdef"><b>Definition:</b> <a href="arm__psci_8h_source.html#l00016">arm_psci.h:16</a></div></div>
 <div class="ttc" id="apsci_8c_html_a203f6ca47f969e84b5ce50a61f08e9ae"><div class="ttname"><a href="psci_8c.html#a203f6ca47f969e84b5ce50a61f08e9ae">kvm_psci_system_suspend</a></div><div class="ttdeci">static void kvm_psci_system_suspend(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="psci_8c_source.html#l00208">psci.c:208</a></div></div>
 <div class="ttc" id="apsci_8c_html_a340319ef6e70b6396954990199f5dfd2"><div class="ttname"><a href="psci_8c.html#a340319ef6e70b6396954990199f5dfd2">kvm_psci_system_reset2</a></div><div class="ttdeci">static void kvm_psci_system_reset2(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="psci_8c_source.html#l00202">psci.c:202</a></div></div>
 <div class="ttc" id="apsci_8c_html_a3b9f15ff62c952f20de3ed44aaf4edbc"><div class="ttname"><a href="psci_8c.html#a3b9f15ff62c952f20de3ed44aaf4edbc">kvm_psci_check_allowed_function</a></div><div class="ttdeci">static unsigned long kvm_psci_check_allowed_function(struct kvm_vcpu *vcpu, u32 fn)</div><div class="ttdef"><b>Definition:</b> <a href="psci_8c_source.html#l00229">psci.c:229</a></div></div>
@@ -651,56 +664,56 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="psci_8c_a8f59d47a1b54f561b8c42f509798142e_cgraph.png" border="0" usemap="#apsci_8c_a8f59d47a1b54f561b8c42f509798142e_cgraph" alt=""/></div>
 <map name="apsci_8c_a8f59d47a1b54f561b8c42f509798142e_cgraph" id="apsci_8c_a8f59d47a1b54f561b8c42f509798142e_cgraph">
-<area shape="rect" title=" " alt="" coords="5,773,149,800"/>
-<area shape="rect" href="psci_8c.html#ac7522f6e0d1805f44a3e932397de4582" title=" " alt="" coords="225,588,369,615"/>
-<area shape="rect" href="psci_8c.html#a6fe2f9e365c9a9948351f718015ce651" title=" " alt="" coords="464,715,620,757"/>
-<area shape="rect" href="psci_8c.html#a3b9f15ff62c952f20de3ed44aaf4edbc" title=" " alt="" coords="204,825,391,866"/>
-<area shape="rect" href="psci_8c.html#a340319ef6e70b6396954990199f5dfd2" title=" " alt="" coords="204,773,391,800"/>
-<area shape="rect" href="psci_8c.html#a203f6ca47f969e84b5ce50a61f08e9ae" title=" " alt="" coords="197,891,397,917"/>
-<area shape="rect" href="arm_8c.html#a8a5659b8fc302d5b435957306e3541b4" title=" " alt="" coords="445,563,639,589"/>
-<area shape="rect" href="psci_8c.html#a9119f27fea8a008787ddbc93e8b1bded" title=" " alt="" coords="461,613,623,640"/>
-<area shape="rect" href="psci_8c.html#ad8f7f33f1397e347a67599f67ac2f39c" title=" " alt="" coords="453,664,631,691"/>
-<area shape="rect" href="psci_8c.html#afd3d020adc6118dbd290a2770d897439" title=" " alt="" coords="1459,440,1665,467"/>
-<area shape="rect" href="psci_8c.html#a092eeee0e7b54c50ebc3d0cf66ea8ef5" title=" " alt="" coords="1489,512,1635,539"/>
-<area shape="rect" href="psci_8c.html#abe7d85200e79143f87dab785a204fb3a" title=" " alt="" coords="451,385,633,412"/>
-<area shape="rect" href="arm_8c.html#afc3949baef2cd8a5749b2d0095959de1" title=" " alt="" coords="687,563,893,589"/>
-<area shape="rect" href="kvm__main_8c.html#ac82f28c95da4a0cc137c5a37f08d1f44" title=" " alt="" coords="985,563,1108,589"/>
-<area shape="rect" href="arm_8c.html#a42500cdc8706ebf4fa3ec21645530097" title=" " alt="" coords="1201,613,1409,640"/>
-<area shape="rect" href="kvm__main_8c.html#ad9f0140eebcdef9a9ebae54431d2fba5" title=" " alt="" coords="1731,592,1884,619"/>
-<area shape="rect" href="psci_8c.html#a44cba757038eb3abdf93db5dc6c7ae3e" title=" " alt="" coords="709,659,871,701"/>
-<area shape="rect" href="kvm__main_8c.html#abaa3f5ff00150487b52dd21c1617bab6" title=" " alt="" coords="941,671,1152,697"/>
-<area shape="rect" href="kvm__main_8c.html#ac46e1a0e43c0784194a451a7e7394c02" title=" " alt="" coords="1200,665,1411,706"/>
-<area shape="rect" href="kvm__main_8c.html#a56fa7dccf37545a9046522ded0354c7e" title=" " alt="" coords="1479,693,1645,720"/>
-<area shape="rect" href="kvm__main_8c.html#a90667c5619416298aea980ad51ec8525" title=" " alt="" coords="1468,643,1656,669"/>
-<area shape="rect" href="kvm__main_8c.html#a7682302871243c20a5dd16214655db15" title=" " alt="" coords="1768,693,1847,720"/>
-<area shape="rect" href="kvm__main_8c.html#a9316cc70360fb39d920d5c76a2e41f35" title=" " alt="" coords="1719,643,1895,669"/>
-<area shape="rect" href="arm_8c.html#a371c5c68ee659e4815a4af50d0161c8a" title=" " alt="" coords="1962,339,2143,365"/>
-<area shape="rect" href="psci_8c.html#ac9f7ca89512ea60ace6ea961a60354a4" title=" " alt="" coords="1719,440,1895,467"/>
-<area shape="rect" href="psci_8c.html#aa30b461609a71770efab6a5045274e5e" title=" " alt="" coords="1735,389,1879,416"/>
-<area shape="rect" href="arm_8c.html#a0be215e1642483c65818bd994b13a421" title=" " alt="" coords="1730,541,1885,568"/>
-<area shape="rect" href="arm_8c.html#a68df8c6f1b7134e9f23857f092d50056" title=" " alt="" coords="733,360,847,387"/>
-<area shape="rect" href="kvm__main_8c.html#a7256a8615584a9ae83a46c071f6aa0e9" title=" " alt="" coords="986,157,1107,184"/>
-<area shape="rect" href="vgic_8c.html#a751661541b39c02532a54736db22a929" title=" " alt="" coords="965,309,1128,336"/>
-<area shape="rect" href="vgic-v4_8c.html#ac2966fbf90610bb8a0525cbd903f7477" title=" " alt="" coords="993,360,1100,387"/>
-<area shape="rect" href="vgic-v4_8c.html#aeafcb3e6b67ea32ed8e59d009252e565" title=" " alt="" coords="997,411,1097,437"/>
-<area shape="rect" href="kvm__main_8c.html#a1045a615093ccd8e87dcd6f6a0e03e9e" title=" " alt="" coords="1236,259,1375,285"/>
-<area shape="rect" href="kvm__main_8c.html#a8e18df0287ddedfd516454aeeb669807" title=" " alt="" coords="1240,208,1371,235"/>
-<area shape="rect" href="kvm__main_8c.html#a3de4d6991bdd1a714e8afa6a55136cdd" title=" " alt="" coords="1474,157,1650,184"/>
-<area shape="rect" href="kvm__main_8c.html#afc3c9c56d305921c317259e18c9c8a59" title=" " alt="" coords="1200,5,1411,32"/>
-<area shape="rect" href="kvm__main_8c.html#a22600b8a76a84f58d97f1a465293e63c" title=" " alt="" coords="1232,107,1379,133"/>
-<area shape="rect" href="kvm__main_8c.html#aaa76576c021037e516218db81c147ca0" title=" " alt="" coords="1221,157,1390,184"/>
-<area shape="rect" href="arm_8c.html#aa48cc7e76c49933c4fb44eda2ecec1ab" title=" " alt="" coords="1469,259,1655,285"/>
-<area shape="rect" href="arm_8c.html#a6416d8550a44ef31c85f11d80d6efcc2" title=" " alt="" coords="1461,208,1663,235"/>
-<area shape="rect" href="arm_8c.html#ac412fb0d81a53e66d8ac4146e4202f92" title=" " alt="" coords="1713,273,1901,300"/>
-<area shape="rect" href="arch__timer_8c.html#a78e23e83bece8c269268f3a263fbb114" title=" " alt="" coords="1722,150,1893,191"/>
-<area shape="rect" href="vgic_8c.html#a3059bfcee1ad30f581150d06c07d68e8" title=" " alt="" coords="1949,273,2156,300"/>
-<area shape="rect" href="arch__timer_8c.html#ad210f5f7b0361777290f8b36f023a518" title=" " alt="" coords="1972,132,2133,159"/>
-<area shape="rect" href="arch__timer_8c.html#a9d0120f96e99b20be8023dad5c6a7f0b" title=" " alt="" coords="1997,183,2108,209"/>
-<area shape="rect" href="vgic-v2_8c.html#aa92110fc4f1e453fde0e8e720845854f" title=" " alt="" coords="1231,360,1380,387"/>
-<area shape="rect" href="vgic-v3_8c.html#aa3f97179d90d3ed6a8920d1c57496380" title=" " alt="" coords="1231,309,1380,336"/>
-<area shape="rect" href="vgic-v3-sr_8c.html#a4c7049da2b551848d3e39293c881f329" title=" " alt="" coords="1481,309,1643,336"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#a839b15883ba8f9de35a03ffce32fdf7f" title=" " alt="" coords="1208,411,1403,437"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#a47708b59ddd94e03880996def466067e" title=" " alt="" coords="1511,389,1613,416"/>
+<area shape="rect" title=" " alt="" coords="5,791,149,817"/>
+<area shape="rect" href="psci_8c.html#ac7522f6e0d1805f44a3e932397de4582" title=" " alt="" coords="225,697,369,724"/>
+<area shape="rect" href="psci_8c.html#a6fe2f9e365c9a9948351f718015ce651" title=" " alt="" coords="471,774,627,815"/>
+<area shape="rect" href="arm__hypercalls_8h.html#aab3de177147e0efb70c732a1ad3706dd" title=" " alt="" coords="740,477,867,504"/>
+<area shape="rect" href="arm__hypercalls_8h.html#a8baef8e49dbce7b140c519845a20611f" title=" " alt="" coords="473,840,624,867"/>
+<area shape="rect" href="arm__hypercalls_8h.html#ae543f09c1c7681cec4e5d2dfa0e728a1" title=" " alt="" coords="481,891,616,917"/>
+<area shape="rect" href="psci_8c.html#a3b9f15ff62c952f20de3ed44aaf4edbc" title=" " alt="" coords="204,918,391,959"/>
+<area shape="rect" href="psci_8c.html#a340319ef6e70b6396954990199f5dfd2" title=" " alt="" coords="204,444,391,471"/>
+<area shape="rect" href="psci_8c.html#a203f6ca47f969e84b5ce50a61f08e9ae" title=" " alt="" coords="197,984,397,1011"/>
+<area shape="rect" href="arm_8c.html#a8a5659b8fc302d5b435957306e3541b4" title=" " alt="" coords="452,723,645,749"/>
+<area shape="rect" href="psci_8c.html#a9119f27fea8a008787ddbc93e8b1bded" title=" " alt="" coords="467,469,630,496"/>
+<area shape="rect" href="psci_8c.html#ad8f7f33f1397e347a67599f67ac2f39c" title=" " alt="" coords="459,571,638,597"/>
+<area shape="rect" href="psci_8c.html#afd3d020adc6118dbd290a2770d897439" title=" " alt="" coords="445,621,652,648"/>
+<area shape="rect" href="psci_8c.html#a092eeee0e7b54c50ebc3d0cf66ea8ef5" title=" " alt="" coords="476,672,621,699"/>
+<area shape="rect" href="psci_8c.html#abe7d85200e79143f87dab785a204fb3a" title=" " alt="" coords="457,237,640,264"/>
+<area shape="rect" href="arm_8c.html#afc3949baef2cd8a5749b2d0095959de1" title=" " alt="" coords="700,984,907,1011"/>
+<area shape="rect" href="kvm__main_8c.html#ac82f28c95da4a0cc137c5a37f08d1f44" title=" " alt="" coords="999,971,1121,997"/>
+<area shape="rect" href="arm_8c.html#a42500cdc8706ebf4fa3ec21645530097" title=" " alt="" coords="1215,971,1423,997"/>
+<area shape="rect" href="kvm__main_8c.html#ad9f0140eebcdef9a9ebae54431d2fba5" title=" " alt="" coords="1740,832,1893,859"/>
+<area shape="rect" href="psci_8c.html#a44cba757038eb3abdf93db5dc6c7ae3e" title=" " alt="" coords="722,411,885,453"/>
+<area shape="rect" href="kvm__main_8c.html#abaa3f5ff00150487b52dd21c1617bab6" title=" " alt="" coords="955,444,1165,471"/>
+<area shape="rect" href="kvm__main_8c.html#ac46e1a0e43c0784194a451a7e7394c02" title=" " alt="" coords="1213,462,1424,503"/>
+<area shape="rect" href="kvm__main_8c.html#a56fa7dccf37545a9046522ded0354c7e" title=" " alt="" coords="1490,469,1657,496"/>
+<area shape="rect" href="kvm__main_8c.html#a90667c5619416298aea980ad51ec8525" title=" " alt="" coords="1479,629,1667,656"/>
+<area shape="rect" href="arm_8c.html#a371c5c68ee659e4815a4af50d0161c8a" title=" " alt="" coords="1959,528,2140,555"/>
+<area shape="rect" href="psci_8c.html#ac9f7ca89512ea60ace6ea961a60354a4" title=" " alt="" coords="715,629,891,656"/>
+<area shape="rect" href="psci_8c.html#aa30b461609a71770efab6a5045274e5e" title=" " alt="" coords="731,579,875,605"/>
+<area shape="rect" href="arm__hypercalls_8h.html#a0d87528a8f6002c42509bd1280a00eaa" title=" " alt="" coords="740,680,867,707"/>
+<area shape="rect" href="arm_8c.html#a0be215e1642483c65818bd994b13a421" title=" " alt="" coords="726,883,881,909"/>
+<area shape="rect" href="arm__psci_8h.html#ae8e32b0627b1dc8c12a32d279c1a3bf4" title=" " alt="" coords="734,933,873,960"/>
+<area shape="rect" href="arm__hypercalls_8h.html#a365000fe74829ee0bdc59b28c8b8802f" title=" " alt="" coords="740,781,867,808"/>
+<area shape="rect" href="arm_8c.html#a68df8c6f1b7134e9f23857f092d50056" title=" " alt="" coords="746,107,861,133"/>
+<area shape="rect" href="kvm__main_8c.html#a7256a8615584a9ae83a46c071f6aa0e9" title=" " alt="" coords="999,259,1121,285"/>
+<area shape="rect" href="vgic_8c.html#a751661541b39c02532a54736db22a929" title=" " alt="" coords="979,107,1141,133"/>
+<area shape="rect" href="vgic-v4_8c.html#ac2966fbf90610bb8a0525cbd903f7477" title=" " alt="" coords="1007,5,1113,32"/>
+<area shape="rect" href="vgic-v4_8c.html#aeafcb3e6b67ea32ed8e59d009252e565" title=" " alt="" coords="1010,56,1110,83"/>
+<area shape="rect" href="kvm__main_8c.html#a1045a615093ccd8e87dcd6f6a0e03e9e" title=" " alt="" coords="1249,259,1388,285"/>
+<area shape="rect" href="kvm__main_8c.html#a8e18df0287ddedfd516454aeeb669807" title=" " alt="" coords="1253,309,1384,336"/>
+<area shape="rect" href="kvm__main_8c.html#a3de4d6991bdd1a714e8afa6a55136cdd" title=" " alt="" coords="1485,259,1661,285"/>
+<area shape="rect" href="kvm__main_8c.html#afc3c9c56d305921c317259e18c9c8a59" title=" " alt="" coords="1213,360,1424,387"/>
+<area shape="rect" href="kvm__main_8c.html#a22600b8a76a84f58d97f1a465293e63c" title=" " alt="" coords="1245,411,1392,437"/>
+<area shape="rect" href="kvm__main_8c.html#aaa76576c021037e516218db81c147ca0" title=" " alt="" coords="1234,208,1403,235"/>
+<area shape="rect" href="arm_8c.html#aa48cc7e76c49933c4fb44eda2ecec1ab" title=" " alt="" coords="1480,309,1667,336"/>
+<area shape="rect" href="arm_8c.html#a6416d8550a44ef31c85f11d80d6efcc2" title=" " alt="" coords="1472,360,1675,387"/>
+<area shape="rect" href="arm_8c.html#ac412fb0d81a53e66d8ac4146e4202f92" title=" " alt="" coords="1723,259,1911,285"/>
+<area shape="rect" href="arch__timer_8c.html#a78e23e83bece8c269268f3a263fbb114" title=" " alt="" coords="1731,310,1902,351"/>
+<area shape="rect" href="vgic-v2_8c.html#aa92110fc4f1e453fde0e8e720845854f" title=" " alt="" coords="1244,107,1393,133"/>
+<area shape="rect" href="vgic-v3_8c.html#aa3f97179d90d3ed6a8920d1c57496380" title=" " alt="" coords="1244,56,1393,83"/>
+<area shape="rect" href="vgic-v3-sr_8c.html#a4c7049da2b551848d3e39293c881f329" title=" " alt="" coords="1492,56,1655,83"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#a839b15883ba8f9de35a03ffce32fdf7f" title=" " alt="" coords="1221,5,1416,32"/>
 </map>
 </div>
 <div class="dynheader">
@@ -740,31 +753,33 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="psci_8c_source.html#l00439">439</a> of file <a class="el" href="psci_8c_source.html">psci.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;{</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    u32 psci_fn = smccc_get_function(vcpu);</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    <span class="keywordtype">int</span> version = kvm_psci_version(vcpu);</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    u32 psci_fn = <a class="code" href="arm__hypercalls_8h.html#a8baef8e49dbce7b140c519845a20611f">smccc_get_function</a>(vcpu);</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    <span class="keywordtype">int</span> version = <a class="code" href="arm__psci_8h.html#ae8e32b0627b1dc8c12a32d279c1a3bf4">kvm_psci_version</a>(vcpu);</div>
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> val;</div>
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160; </div>
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    val = <a class="code" href="psci_8c.html#a3b9f15ff62c952f20de3ed44aaf4edbc">kvm_psci_check_allowed_function</a>(vcpu, psci_fn);</div>
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    <span class="keywordflow">if</span> (val) {</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        smccc_set_retval(vcpu, val, 0, 0, 0);</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        <a class="code" href="arm__hypercalls_8h.html#ae543f09c1c7681cec4e5d2dfa0e728a1">smccc_set_retval</a>(vcpu, val, 0, 0, 0);</div>
 <div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    }</div>
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160; </div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    <span class="keywordflow">switch</span> (version) {</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    <span class="keywordflow">case</span> KVM_ARM_PSCI_1_1:</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="arm__psci_8h.html#ac2a221c8ded02a80b52cc4fe95c5d78e">KVM_ARM_PSCI_1_1</a>:</div>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="psci_8c.html#a8f59d47a1b54f561b8c42f509798142e">kvm_psci_1_x_call</a>(vcpu, 1);</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    <span class="keywordflow">case</span> KVM_ARM_PSCI_1_0:</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="arm__psci_8h.html#a1fc8f29306f5ad323abfdc03af032781">KVM_ARM_PSCI_1_0</a>:</div>
 <div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="psci_8c.html#a8f59d47a1b54f561b8c42f509798142e">kvm_psci_1_x_call</a>(vcpu, 0);</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    <span class="keywordflow">case</span> KVM_ARM_PSCI_0_2:</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="arm__psci_8h.html#a8c679e377984302727b11e061bfa3b3d">KVM_ARM_PSCI_0_2</a>:</div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="psci_8c.html#ac7522f6e0d1805f44a3e932397de4582">kvm_psci_0_2_call</a>(vcpu);</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    <span class="keywordflow">case</span> KVM_ARM_PSCI_0_1:</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="arm__psci_8h.html#a2d87e886542b00335485657fc1c28401">KVM_ARM_PSCI_0_1</a>:</div>
 <div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="psci_8c.html#af18cf22560595f1da5e34ea244b0b51b">kvm_psci_0_1_call</a>(vcpu);</div>
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    <span class="keywordflow">default</span>:</div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;        WARN_ONCE(1, <span class="stringliteral">&quot;Unknown PSCI version %d&quot;</span>, version);</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;        smccc_set_retval(vcpu, SMCCC_RET_NOT_SUPPORTED, 0, 0, 0);</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;        <a class="code" href="arm__hypercalls_8h.html#ae543f09c1c7681cec4e5d2dfa0e728a1">smccc_set_retval</a>(vcpu, SMCCC_RET_NOT_SUPPORTED, 0, 0, 0);</div>
 <div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;        <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    }</div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;}</div>
+<div class="ttc" id="aarm__psci_8h_html_a2d87e886542b00335485657fc1c28401"><div class="ttname"><a href="arm__psci_8h.html#a2d87e886542b00335485657fc1c28401">KVM_ARM_PSCI_0_1</a></div><div class="ttdeci">#define KVM_ARM_PSCI_0_1</div><div class="ttdef"><b>Definition:</b> <a href="arm__psci_8h_source.html#l00013">arm_psci.h:13</a></div></div>
+<div class="ttc" id="aarm__psci_8h_html_ae8e32b0627b1dc8c12a32d279c1a3bf4"><div class="ttname"><a href="arm__psci_8h.html#ae8e32b0627b1dc8c12a32d279c1a3bf4">kvm_psci_version</a></div><div class="ttdeci">static int kvm_psci_version(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="arm__psci_8h_source.html#l00020">arm_psci.h:20</a></div></div>
 <div class="ttc" id="apsci_8c_html_a8f59d47a1b54f561b8c42f509798142e"><div class="ttname"><a href="psci_8c.html#a8f59d47a1b54f561b8c42f509798142e">kvm_psci_1_x_call</a></div><div class="ttdeci">static int kvm_psci_1_x_call(struct kvm_vcpu *vcpu, u32 minor)</div><div class="ttdef"><b>Definition:</b> <a href="psci_8c_source.html#l00315">psci.c:315</a></div></div>
 <div class="ttc" id="apsci_8c_html_af18cf22560595f1da5e34ea244b0b51b"><div class="ttname"><a href="psci_8c.html#af18cf22560595f1da5e34ea244b0b51b">kvm_psci_0_1_call</a></div><div class="ttdeci">static int kvm_psci_0_1_call(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="psci_8c_source.html#l00403">psci.c:403</a></div></div>
 </div><!-- fragment --><div class="dynheader">
@@ -772,56 +787,56 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="psci_8c_a3daa8000eb9717dde07d817c306b052b_cgraph.png" border="0" usemap="#apsci_8c_a3daa8000eb9717dde07d817c306b052b_cgraph" alt=""/></div>
 <map name="apsci_8c_a3daa8000eb9717dde07d817c306b052b_cgraph" id="apsci_8c_a3daa8000eb9717dde07d817c306b052b_cgraph">
-<area shape="rect" title=" " alt="" coords="5,436,120,463"/>
-<area shape="rect" href="psci_8c.html#af18cf22560595f1da5e34ea244b0b51b" title=" " alt="" coords="388,220,532,247"/>
-<area shape="rect" href="psci_8c.html#ac7522f6e0d1805f44a3e932397de4582" title=" " alt="" coords="388,372,532,399"/>
-<area shape="rect" href="psci_8c.html#a8f59d47a1b54f561b8c42f509798142e" title=" " alt="" coords="168,461,312,488"/>
-<area shape="rect" href="psci_8c.html#a3b9f15ff62c952f20de3ed44aaf4edbc" title=" " alt="" coords="367,575,553,617"/>
-<area shape="rect" href="arm_8c.html#a8a5659b8fc302d5b435957306e3541b4" title=" " alt="" coords="615,169,808,196"/>
-<area shape="rect" href="psci_8c.html#a092eeee0e7b54c50ebc3d0cf66ea8ef5" title=" " alt="" coords="639,220,784,247"/>
+<area shape="rect" title=" " alt="" coords="5,284,120,311"/>
+<area shape="rect" href="psci_8c.html#af18cf22560595f1da5e34ea244b0b51b" title=" " alt="" coords="388,284,532,311"/>
+<area shape="rect" href="arm__psci_8h.html#ae8e32b0627b1dc8c12a32d279c1a3bf4" title=" " alt="" coords="897,5,1035,32"/>
+<area shape="rect" href="arm__hypercalls_8h.html#a8baef8e49dbce7b140c519845a20611f" title=" " alt="" coords="636,183,787,209"/>
+<area shape="rect" href="arm__hypercalls_8h.html#ae543f09c1c7681cec4e5d2dfa0e728a1" title=" " alt="" coords="644,132,779,159"/>
+<area shape="rect" href="psci_8c.html#ac7522f6e0d1805f44a3e932397de4582" title=" " alt="" coords="388,335,532,361"/>
+<area shape="rect" href="psci_8c.html#a8f59d47a1b54f561b8c42f509798142e" title=" " alt="" coords="168,412,312,439"/>
+<area shape="rect" href="psci_8c.html#a3b9f15ff62c952f20de3ed44aaf4edbc" title=" " alt="" coords="367,706,553,747"/>
+<area shape="rect" href="arm_8c.html#a8a5659b8fc302d5b435957306e3541b4" title=" " alt="" coords="615,233,808,260"/>
+<area shape="rect" href="psci_8c.html#a092eeee0e7b54c50ebc3d0cf66ea8ef5" title=" " alt="" coords="639,284,784,311"/>
 <area shape="rect" href="arm_8c.html#afc3949baef2cd8a5749b2d0095959de1" title=" " alt="" coords="863,56,1069,83"/>
-<area shape="rect" href="kvm__main_8c.html#ac82f28c95da4a0cc137c5a37f08d1f44" title=" " alt="" coords="1161,56,1284,83"/>
-<area shape="rect" href="arm_8c.html#a42500cdc8706ebf4fa3ec21645530097" title=" " alt="" coords="1377,5,1585,32"/>
-<area shape="rect" href="kvm__main_8c.html#ad9f0140eebcdef9a9ebae54431d2fba5" title=" " alt="" coords="1903,107,2056,133"/>
-<area shape="rect" href="arm_8c.html#a371c5c68ee659e4815a4af50d0161c8a" title=" " alt="" coords="2134,309,2315,336"/>
-<area shape="rect" href="arm_8c.html#a0be215e1642483c65818bd994b13a421" title=" " alt="" coords="889,157,1043,184"/>
-<area shape="rect" href="psci_8c.html#ac9f7ca89512ea60ace6ea961a60354a4" title=" " alt="" coords="878,259,1054,285"/>
-<area shape="rect" href="psci_8c.html#a6fe2f9e365c9a9948351f718015ce651" title=" " alt="" coords="633,499,789,541"/>
-<area shape="rect" href="psci_8c.html#a9119f27fea8a008787ddbc93e8b1bded" title=" " alt="" coords="630,347,793,373"/>
-<area shape="rect" href="psci_8c.html#ad8f7f33f1397e347a67599f67ac2f39c" title=" " alt="" coords="622,397,801,424"/>
-<area shape="rect" href="psci_8c.html#afd3d020adc6118dbd290a2770d897439" title=" " alt="" coords="608,296,815,323"/>
-<area shape="rect" href="psci_8c.html#abe7d85200e79143f87dab785a204fb3a" title=" " alt="" coords="620,448,803,475"/>
-<area shape="rect" href="psci_8c.html#a44cba757038eb3abdf93db5dc6c7ae3e" title=" " alt="" coords="885,411,1047,453"/>
-<area shape="rect" href="kvm__main_8c.html#abaa3f5ff00150487b52dd21c1617bab6" title=" " alt="" coords="1117,393,1328,420"/>
-<area shape="rect" href="kvm__main_8c.html#ac46e1a0e43c0784194a451a7e7394c02" title=" " alt="" coords="1376,361,1587,402"/>
-<area shape="rect" href="kvm__main_8c.html#a56fa7dccf37545a9046522ded0354c7e" title=" " alt="" coords="1653,411,1819,437"/>
-<area shape="rect" href="kvm__main_8c.html#a90667c5619416298aea980ad51ec8525" title=" " alt="" coords="1642,360,1830,387"/>
-<area shape="rect" href="kvm__main_8c.html#a7682302871243c20a5dd16214655db15" title=" " alt="" coords="1940,411,2019,437"/>
-<area shape="rect" href="kvm__main_8c.html#a9316cc70360fb39d920d5c76a2e41f35" title=" " alt="" coords="1891,360,2067,387"/>
-<area shape="rect" href="psci_8c.html#aa30b461609a71770efab6a5045274e5e" title=" " alt="" coords="894,360,1038,387"/>
-<area shape="rect" href="arm_8c.html#a68df8c6f1b7134e9f23857f092d50056" title=" " alt="" coords="909,512,1023,539"/>
-<area shape="rect" href="kvm__main_8c.html#a7256a8615584a9ae83a46c071f6aa0e9" title=" " alt="" coords="1162,680,1283,707"/>
-<area shape="rect" href="vgic_8c.html#a751661541b39c02532a54736db22a929" title=" " alt="" coords="1141,461,1304,488"/>
-<area shape="rect" href="vgic-v4_8c.html#ac2966fbf90610bb8a0525cbd903f7477" title=" " alt="" coords="1169,512,1276,539"/>
-<area shape="rect" href="vgic-v4_8c.html#aeafcb3e6b67ea32ed8e59d009252e565" title=" " alt="" coords="1173,563,1273,589"/>
-<area shape="rect" href="kvm__main_8c.html#a1045a615093ccd8e87dcd6f6a0e03e9e" title=" " alt="" coords="1412,629,1551,656"/>
-<area shape="rect" href="kvm__main_8c.html#a8e18df0287ddedfd516454aeeb669807" title=" " alt="" coords="1416,579,1547,605"/>
-<area shape="rect" href="kvm__main_8c.html#a3de4d6991bdd1a714e8afa6a55136cdd" title=" " alt="" coords="1648,680,1824,707"/>
-<area shape="rect" href="kvm__main_8c.html#afc3c9c56d305921c317259e18c9c8a59" title=" " alt="" coords="1376,731,1587,757"/>
-<area shape="rect" href="kvm__main_8c.html#a22600b8a76a84f58d97f1a465293e63c" title=" " alt="" coords="1408,781,1555,808"/>
-<area shape="rect" href="kvm__main_8c.html#aaa76576c021037e516218db81c147ca0" title=" " alt="" coords="1397,832,1566,859"/>
-<area shape="rect" href="arm_8c.html#aa48cc7e76c49933c4fb44eda2ecec1ab" title=" " alt="" coords="1643,579,1829,605"/>
-<area shape="rect" href="arm_8c.html#a6416d8550a44ef31c85f11d80d6efcc2" title=" " alt="" coords="1635,629,1837,656"/>
-<area shape="rect" href="arm_8c.html#ac412fb0d81a53e66d8ac4146e4202f92" title=" " alt="" coords="1885,680,2073,707"/>
-<area shape="rect" href="arch__timer_8c.html#a78e23e83bece8c269268f3a263fbb114" title=" " alt="" coords="1894,614,2065,655"/>
-<area shape="rect" href="vgic_8c.html#a3059bfcee1ad30f581150d06c07d68e8" title=" " alt="" coords="2121,680,2328,707"/>
-<area shape="rect" href="vgic-v2_8c.html#aa92110fc4f1e453fde0e8e720845854f" title=" " alt="" coords="1407,427,1556,453"/>
-<area shape="rect" href="vgic-v3_8c.html#aa3f97179d90d3ed6a8920d1c57496380" title=" " alt="" coords="1407,477,1556,504"/>
-<area shape="rect" href="vgic-v3-sr_8c.html#a4c7049da2b551848d3e39293c881f329" title=" " alt="" coords="1655,477,1817,504"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#a839b15883ba8f9de35a03ffce32fdf7f" title=" " alt="" coords="1384,528,1579,555"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#a47708b59ddd94e03880996def466067e" title=" " alt="" coords="1685,528,1787,555"/>
-<area shape="rect" href="psci_8c.html#a340319ef6e70b6396954990199f5dfd2" title=" " alt="" coords="367,473,553,500"/>
-<area shape="rect" href="psci_8c.html#a203f6ca47f969e84b5ce50a61f08e9ae" title=" " alt="" coords="360,524,560,551"/>
+<area shape="rect" href="kvm__main_8c.html#ac82f28c95da4a0cc137c5a37f08d1f44" title=" " alt="" coords="1161,81,1284,108"/>
+<area shape="rect" href="arm_8c.html#a42500cdc8706ebf4fa3ec21645530097" title=" " alt="" coords="1377,132,1585,159"/>
+<area shape="rect" href="kvm__main_8c.html#ad9f0140eebcdef9a9ebae54431d2fba5" title=" " alt="" coords="1903,208,2056,235"/>
+<area shape="rect" href="arm_8c.html#a371c5c68ee659e4815a4af50d0161c8a" title=" " alt="" coords="2121,461,2303,488"/>
+<area shape="rect" href="arm_8c.html#a0be215e1642483c65818bd994b13a421" title=" " alt="" coords="889,107,1043,133"/>
+<area shape="rect" href="psci_8c.html#ac9f7ca89512ea60ace6ea961a60354a4" title=" " alt="" coords="878,360,1054,387"/>
+<area shape="rect" href="arm__hypercalls_8h.html#aab3de177147e0efb70c732a1ad3706dd" title=" " alt="" coords="903,512,1029,539"/>
+<area shape="rect" href="arm__hypercalls_8h.html#a0d87528a8f6002c42509bd1280a00eaa" title=" " alt="" coords="903,309,1029,336"/>
+<area shape="rect" href="arm__hypercalls_8h.html#a365000fe74829ee0bdc59b28c8b8802f" title=" " alt="" coords="903,157,1029,184"/>
+<area shape="rect" href="psci_8c.html#a6fe2f9e365c9a9948351f718015ce651" title=" " alt="" coords="633,538,789,579"/>
+<area shape="rect" href="psci_8c.html#a9119f27fea8a008787ddbc93e8b1bded" title=" " alt="" coords="630,385,793,412"/>
+<area shape="rect" href="psci_8c.html#ad8f7f33f1397e347a67599f67ac2f39c" title=" " alt="" coords="622,436,801,463"/>
+<area shape="rect" href="psci_8c.html#afd3d020adc6118dbd290a2770d897439" title=" " alt="" coords="608,335,815,361"/>
+<area shape="rect" href="psci_8c.html#abe7d85200e79143f87dab785a204fb3a" title=" " alt="" coords="620,487,803,513"/>
+<area shape="rect" href="psci_8c.html#a44cba757038eb3abdf93db5dc6c7ae3e" title=" " alt="" coords="885,563,1047,605"/>
+<area shape="rect" href="kvm__main_8c.html#abaa3f5ff00150487b52dd21c1617bab6" title=" " alt="" coords="1117,397,1328,424"/>
+<area shape="rect" href="kvm__main_8c.html#ac46e1a0e43c0784194a451a7e7394c02" title=" " alt="" coords="1376,365,1587,406"/>
+<area shape="rect" href="kvm__main_8c.html#a56fa7dccf37545a9046522ded0354c7e" title=" " alt="" coords="1653,372,1819,399"/>
+<area shape="rect" href="kvm__main_8c.html#a90667c5619416298aea980ad51ec8525" title=" " alt="" coords="1642,259,1830,285"/>
+<area shape="rect" href="psci_8c.html#aa30b461609a71770efab6a5045274e5e" title=" " alt="" coords="894,411,1038,437"/>
+<area shape="rect" href="arm_8c.html#a68df8c6f1b7134e9f23857f092d50056" title=" " alt="" coords="909,765,1023,792"/>
+<area shape="rect" href="kvm__main_8c.html#a7256a8615584a9ae83a46c071f6aa0e9" title=" " alt="" coords="1162,664,1283,691"/>
+<area shape="rect" href="vgic_8c.html#a751661541b39c02532a54736db22a929" title=" " alt="" coords="1141,867,1304,893"/>
+<area shape="rect" href="vgic-v4_8c.html#ac2966fbf90610bb8a0525cbd903f7477" title=" " alt="" coords="1169,765,1276,792"/>
+<area shape="rect" href="vgic-v4_8c.html#aeafcb3e6b67ea32ed8e59d009252e565" title=" " alt="" coords="1173,816,1273,843"/>
+<area shape="rect" href="kvm__main_8c.html#a1045a615093ccd8e87dcd6f6a0e03e9e" title=" " alt="" coords="1412,715,1551,741"/>
+<area shape="rect" href="kvm__main_8c.html#a8e18df0287ddedfd516454aeeb669807" title=" " alt="" coords="1416,765,1547,792"/>
+<area shape="rect" href="kvm__main_8c.html#a3de4d6991bdd1a714e8afa6a55136cdd" title=" " alt="" coords="1648,512,1824,539"/>
+<area shape="rect" href="kvm__main_8c.html#afc3c9c56d305921c317259e18c9c8a59" title=" " alt="" coords="1376,563,1587,589"/>
+<area shape="rect" href="kvm__main_8c.html#a22600b8a76a84f58d97f1a465293e63c" title=" " alt="" coords="1408,613,1555,640"/>
+<area shape="rect" href="kvm__main_8c.html#aaa76576c021037e516218db81c147ca0" title=" " alt="" coords="1397,664,1566,691"/>
+<area shape="rect" href="arm_8c.html#aa48cc7e76c49933c4fb44eda2ecec1ab" title=" " alt="" coords="1643,791,1829,817"/>
+<area shape="rect" href="arm_8c.html#a6416d8550a44ef31c85f11d80d6efcc2" title=" " alt="" coords="1635,740,1837,767"/>
+<area shape="rect" href="arm_8c.html#ac412fb0d81a53e66d8ac4146e4202f92" title=" " alt="" coords="1885,512,2073,539"/>
+<area shape="rect" href="vgic-v2_8c.html#aa92110fc4f1e453fde0e8e720845854f" title=" " alt="" coords="1407,867,1556,893"/>
+<area shape="rect" href="vgic-v3_8c.html#aa3f97179d90d3ed6a8920d1c57496380" title=" " alt="" coords="1407,917,1556,944"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#a839b15883ba8f9de35a03ffce32fdf7f" title=" " alt="" coords="1384,816,1579,843"/>
+<area shape="rect" href="psci_8c.html#a340319ef6e70b6396954990199f5dfd2" title=" " alt="" coords="367,655,553,681"/>
+<area shape="rect" href="psci_8c.html#a203f6ca47f969e84b5ce50a61f08e9ae" title=" " alt="" coords="360,412,560,439"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1274,8 +1289,8 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keyword">struct </span>kvm *kvm = vcpu-&gt;kvm;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keyword">struct </span>kvm_vcpu *tmp;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    target_affinity = smccc_get_arg1(vcpu);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    lowest_affinity_level = smccc_get_arg2(vcpu);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    target_affinity = <a class="code" href="arm__hypercalls_8h.html#aab3de177147e0efb70c732a1ad3706dd">smccc_get_arg1</a>(vcpu);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    lowest_affinity_level = <a class="code" href="arm__hypercalls_8h.html#a0d87528a8f6002c42509bd1280a00eaa">smccc_get_arg2</a>(vcpu);</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="psci_8c.html#ac9f7ca89512ea60ace6ea961a60354a4">kvm_psci_valid_affinity</a>(vcpu, target_affinity))</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordflow">return</span> PSCI_RET_INVALID_PARAMS;</div>
@@ -1307,6 +1322,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">return</span> PSCI_0_2_AFFINITY_LEVEL_OFF;</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}</div>
 <div class="ttc" id="aarm_8c_html_a371c5c68ee659e4815a4af50d0161c8a"><div class="ttname"><a href="arm_8c.html#a371c5c68ee659e4815a4af50d0161c8a">kvm_arm_vcpu_stopped</a></div><div class="ttdeci">bool kvm_arm_vcpu_stopped(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="arm_8c_source.html#l00501">arm.c:501</a></div></div>
+<div class="ttc" id="aarm__hypercalls_8h_html_a0d87528a8f6002c42509bd1280a00eaa"><div class="ttname"><a href="arm__hypercalls_8h.html#a0d87528a8f6002c42509bd1280a00eaa">smccc_get_arg2</a></div><div class="ttdeci">static unsigned long smccc_get_arg2(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="arm__hypercalls_8h_source.html#l00021">arm_hypercalls.h:21</a></div></div>
 <div class="ttc" id="apsci_8c_html_aa30b461609a71770efab6a5045274e5e"><div class="ttname"><a href="psci_8c.html#aa30b461609a71770efab6a5045274e5e">psci_affinity_mask</a></div><div class="ttdeci">static unsigned long psci_affinity_mask(unsigned long affinity_level)</div><div class="ttdef"><b>Definition:</b> <a href="psci_8c_source.html#l00026">psci.c:26</a></div></div>
 <div class="ttc" id="apsci_8c_html_ac9f7ca89512ea60ace6ea961a60354a4"><div class="ttname"><a href="psci_8c.html#ac9f7ca89512ea60ace6ea961a60354a4">kvm_psci_valid_affinity</a></div><div class="ttdeci">static bool kvm_psci_valid_affinity(struct kvm_vcpu *vcpu, unsigned long affinity)</div><div class="ttdef"><b>Definition:</b> <a href="psci_8c_source.html#l00054">psci.c:54</a></div></div>
 </div><!-- fragment --><div class="dynheader">
@@ -1314,10 +1330,12 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="psci_8c_afd3d020adc6118dbd290a2770d897439_cgraph.png" border="0" usemap="#apsci_8c_afd3d020adc6118dbd290a2770d897439_cgraph" alt=""/></div>
 <map name="apsci_8c_afd3d020adc6118dbd290a2770d897439_cgraph" id="apsci_8c_afd3d020adc6118dbd290a2770d897439_cgraph">
-<area shape="rect" title=" " alt="" coords="5,56,212,83"/>
+<area shape="rect" title=" " alt="" coords="5,107,212,133"/>
 <area shape="rect" href="arm_8c.html#a371c5c68ee659e4815a4af50d0161c8a" title=" " alt="" coords="260,5,441,32"/>
 <area shape="rect" href="psci_8c.html#ac9f7ca89512ea60ace6ea961a60354a4" title=" " alt="" coords="263,56,439,83"/>
 <area shape="rect" href="psci_8c.html#aa30b461609a71770efab6a5045274e5e" title=" " alt="" coords="279,107,423,133"/>
+<area shape="rect" href="arm__hypercalls_8h.html#aab3de177147e0efb70c732a1ad3706dd" title=" " alt="" coords="287,157,414,184"/>
+<area shape="rect" href="arm__hypercalls_8h.html#a0d87528a8f6002c42509bd1280a00eaa" title=" " alt="" coords="287,208,414,235"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1369,7 +1387,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">int</span> ret = PSCI_RET_SUCCESS;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> cpu_id;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    cpu_id = smccc_get_arg1(source_vcpu);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    cpu_id = <a class="code" href="arm__hypercalls_8h.html#aab3de177147e0efb70c732a1ad3706dd">smccc_get_arg1</a>(source_vcpu);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="psci_8c.html#ac9f7ca89512ea60ace6ea961a60354a4">kvm_psci_valid_affinity</a>(source_vcpu, cpu_id))</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">return</span> PSCI_RET_INVALID_PARAMS;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
@@ -1384,7 +1402,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    spin_lock(&amp;vcpu-&gt;arch.mp_state_lock);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="arm_8c.html#a371c5c68ee659e4815a4af50d0161c8a">kvm_arm_vcpu_stopped</a>(vcpu)) {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">if</span> (kvm_psci_version(source_vcpu) != KVM_ARM_PSCI_0_1)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="arm__psci_8h.html#ae8e32b0627b1dc8c12a32d279c1a3bf4">kvm_psci_version</a>(source_vcpu) != <a class="code" href="arm__psci_8h.html#a2d87e886542b00335485657fc1c28401">KVM_ARM_PSCI_0_1</a>)</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            ret = PSCI_RET_ALREADY_ON;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            ret = PSCI_RET_INVALID_PARAMS;</div>
@@ -1394,7 +1412,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    reset_state = &amp;vcpu-&gt;arch.reset_state;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    reset_state-&gt;pc = smccc_get_arg2(source_vcpu);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    reset_state-&gt;pc = <a class="code" href="arm__hypercalls_8h.html#a0d87528a8f6002c42509bd1280a00eaa">smccc_get_arg2</a>(source_vcpu);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">/* Propagate caller endianness */</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    reset_state-&gt;be = kvm_vcpu_is_be(source_vcpu);</div>
@@ -1403,7 +1421,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">     * NOTE: We always update r0 (or x0) because for PSCI v0.1</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">     * the general purpose registers are undefined upon CPU_ON.</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    reset_state-&gt;r0 = smccc_get_arg3(source_vcpu);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    reset_state-&gt;r0 = <a class="code" href="arm__hypercalls_8h.html#a365000fe74829ee0bdc59b28c8b8802f">smccc_get_arg3</a>(source_vcpu);</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    reset_state-&gt;reset = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    kvm_make_request(KVM_REQ_VCPU_RESET, vcpu);</div>
@@ -1422,17 +1440,22 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">return</span> ret;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
 <div class="ttc" id="aarm_8c_html_a0be215e1642483c65818bd994b13a421"><div class="ttname"><a href="arm_8c.html#a0be215e1642483c65818bd994b13a421">kvm_mpidr_to_vcpu</a></div><div class="ttdeci">struct kvm_vcpu * kvm_mpidr_to_vcpu(struct kvm *kvm, unsigned long mpidr)</div><div class="ttdef"><b>Definition:</b> <a href="arm_8c_source.html#l02460">arm.c:2460</a></div></div>
+<div class="ttc" id="aarm__hypercalls_8h_html_a365000fe74829ee0bdc59b28c8b8802f"><div class="ttname"><a href="arm__hypercalls_8h.html#a365000fe74829ee0bdc59b28c8b8802f">smccc_get_arg3</a></div><div class="ttdeci">static unsigned long smccc_get_arg3(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="arm__hypercalls_8h_source.html#l00026">arm_hypercalls.h:26</a></div></div>
 <div class="ttc" id="akvm__main_8c_html_ad9f0140eebcdef9a9ebae54431d2fba5"><div class="ttname"><a href="kvm__main_8c.html#ad9f0140eebcdef9a9ebae54431d2fba5">kvm_vcpu_wake_up</a></div><div class="ttdeci">bool kvm_vcpu_wake_up(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="kvm__main_8c_source.html#l03915">kvm_main.c:3915</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="psci_8c_a092eeee0e7b54c50ebc3d0cf66ea8ef5_cgraph.png" border="0" usemap="#apsci_8c_a092eeee0e7b54c50ebc3d0cf66ea8ef5_cgraph" alt=""/></div>
 <map name="apsci_8c_a092eeee0e7b54c50ebc3d0cf66ea8ef5_cgraph" id="apsci_8c_a092eeee0e7b54c50ebc3d0cf66ea8ef5_cgraph">
-<area shape="rect" title=" " alt="" coords="5,81,151,108"/>
+<area shape="rect" title=" " alt="" coords="5,183,151,209"/>
 <area shape="rect" href="arm_8c.html#a371c5c68ee659e4815a4af50d0161c8a" title=" " alt="" coords="199,5,380,32"/>
 <area shape="rect" href="arm_8c.html#a0be215e1642483c65818bd994b13a421" title=" " alt="" coords="212,56,367,83"/>
 <area shape="rect" href="psci_8c.html#ac9f7ca89512ea60ace6ea961a60354a4" title=" " alt="" coords="201,107,377,133"/>
-<area shape="rect" href="kvm__main_8c.html#ad9f0140eebcdef9a9ebae54431d2fba5" title=" " alt="" coords="213,157,366,184"/>
+<area shape="rect" href="arm__psci_8h.html#ae8e32b0627b1dc8c12a32d279c1a3bf4" title=" " alt="" coords="220,157,359,184"/>
+<area shape="rect" href="kvm__main_8c.html#ad9f0140eebcdef9a9ebae54431d2fba5" title=" " alt="" coords="213,208,366,235"/>
+<area shape="rect" href="arm__hypercalls_8h.html#aab3de177147e0efb70c732a1ad3706dd" title=" " alt="" coords="226,259,353,285"/>
+<area shape="rect" href="arm__hypercalls_8h.html#a0d87528a8f6002c42509bd1280a00eaa" title=" " alt="" coords="226,309,353,336"/>
+<area shape="rect" href="arm__hypercalls_8h.html#a365000fe74829ee0bdc59b28c8b8802f" title=" " alt="" coords="226,360,353,387"/>
 </map>
 </div>
 <div class="dynheader">

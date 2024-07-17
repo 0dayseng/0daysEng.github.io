@@ -248,20 +248,22 @@ Functions</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">struct </span>kvm_pmu_events *pmu = <a class="code" href="pmu_8c.html#abf97c7a6b0768cbe660dea1a404bc79b">kvm_get_pmu_events</a>();</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span> (!kvm_arm_support_pmu_v3())</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="arm__pmu_8h.html#a7a4fb2cf1fb48c203893224b94564f63">kvm_arm_support_pmu_v3</a>())</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    pmu-&gt;events_host &amp;= ~clr;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    pmu-&gt;events_guest &amp;= ~clr;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
+<div class="ttc" id="aarm__pmu_8h_html_a7a4fb2cf1fb48c203893224b94564f63"><div class="ttname"><a href="arm__pmu_8h.html#a7a4fb2cf1fb48c203893224b94564f63">kvm_arm_support_pmu_v3</a></div><div class="ttdeci">static bool kvm_arm_support_pmu_v3(void)</div><div class="ttdef"><b>Definition:</b> <a href="arm__pmu_8h_source.html#l00113">arm_pmu.h:113</a></div></div>
 <div class="ttc" id="apmu_8c_html_abf97c7a6b0768cbe660dea1a404bc79b"><div class="ttname"><a href="pmu_8c.html#abf97c7a6b0768cbe660dea1a404bc79b">kvm_get_pmu_events</a></div><div class="ttdeci">struct kvm_pmu_events * kvm_get_pmu_events(void)</div><div class="ttdef"><b>Definition:</b> <a href="pmu_8c_source.html#l00029">pmu.c:29</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="pmu_8c_a9f9cddf56cc82b8ccde97024a48b407c_cgraph.png" border="0" usemap="#apmu_8c_a9f9cddf56cc82b8ccde97024a48b407c_cgraph" alt=""/></div>
 <map name="apmu_8c_a9f9cddf56cc82b8ccde97024a48b407c_cgraph" id="apmu_8c_a9f9cddf56cc82b8ccde97024a48b407c_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,167,32"/>
-<area shape="rect" href="pmu_8c.html#abf97c7a6b0768cbe660dea1a404bc79b" title=" " alt="" coords="215,5,381,32"/>
+<area shape="rect" title=" " alt="" coords="5,31,167,57"/>
+<area shape="rect" href="arm__pmu_8h.html#a7a4fb2cf1fb48c203893224b94564f63" title=" " alt="" coords="215,5,413,32"/>
+<area shape="rect" href="pmu_8c.html#abf97c7a6b0768cbe660dea1a404bc79b" title=" " alt="" coords="231,56,397,83"/>
 </map>
 </div>
 
@@ -411,7 +413,7 @@ Here is the caller graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">struct </span>kvm_pmu_events *pmu = <a class="code" href="pmu_8c.html#abf97c7a6b0768cbe660dea1a404bc79b">kvm_get_pmu_events</a>();</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">if</span> (!kvm_arm_support_pmu_v3() || !<a class="code" href="pmu_8c.html#a0581da32a68cfc3bcc6dd0decf8a094e">kvm_pmu_switch_needed</a>(attr))</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="arm__pmu_8h.html#a7a4fb2cf1fb48c203893224b94564f63">kvm_arm_support_pmu_v3</a>() || !<a class="code" href="pmu_8c.html#a0581da32a68cfc3bcc6dd0decf8a094e">kvm_pmu_switch_needed</a>(attr))</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">if</span> (!attr-&gt;exclude_host)</div>
@@ -425,9 +427,10 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="pmu_8c_a537fcc73ffdff6bded1a0db1ce528396_cgraph.png" border="0" usemap="#apmu_8c_a537fcc73ffdff6bded1a0db1ce528396_cgraph" alt=""/></div>
 <map name="apmu_8c_a537fcc73ffdff6bded1a0db1ce528396_cgraph" id="apmu_8c_a537fcc73ffdff6bded1a0db1ce528396_cgraph">
-<area shape="rect" title=" " alt="" coords="5,31,171,57"/>
-<area shape="rect" href="pmu_8c.html#abf97c7a6b0768cbe660dea1a404bc79b" title=" " alt="" coords="231,5,397,32"/>
-<area shape="rect" href="pmu_8c.html#a0581da32a68cfc3bcc6dd0decf8a094e" title=" " alt="" coords="219,56,409,83"/>
+<area shape="rect" title=" " alt="" coords="5,56,171,83"/>
+<area shape="rect" href="arm__pmu_8h.html#a7a4fb2cf1fb48c203893224b94564f63" title=" " alt="" coords="219,5,417,32"/>
+<area shape="rect" href="pmu_8c.html#abf97c7a6b0768cbe660dea1a404bc79b" title=" " alt="" coords="235,56,401,83"/>
+<area shape="rect" href="pmu_8c.html#a0581da32a68cfc3bcc6dd0decf8a094e" title=" " alt="" coords="223,107,413,133"/>
 </map>
 </div>
 
@@ -454,7 +457,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keyword">struct </span>kvm_cpu_context *hctxt;</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keyword">struct </span>kvm_vcpu *vcpu;</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordflow">if</span> (!kvm_arm_support_pmu_v3() || !has_vhe())</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="arm__pmu_8h.html#a7a4fb2cf1fb48c203893224b94564f63">kvm_arm_support_pmu_v3</a>() || !has_vhe())</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    vcpu = <a class="code" href="kvm__main_8c.html#ac5a3afd8e2d8d1139dc7711c4b9e07e3">kvm_get_running_vcpu</a>();</div>
@@ -471,8 +474,9 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="pmu_8c_a95b4c312d2fec61f6ef1f317b8166713_cgraph.png" border="0" usemap="#apmu_8c_a95b4c312d2fec61f6ef1f317b8166713_cgraph" alt=""/></div>
 <map name="apmu_8c_a95b4c312d2fec61f6ef1f317b8166713_cgraph" id="apmu_8c_a95b4c312d2fec61f6ef1f317b8166713_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,160,32"/>
-<area shape="rect" href="kvm__main_8c.html#ac5a3afd8e2d8d1139dc7711c4b9e07e3" title=" " alt="" coords="208,5,381,32"/>
+<area shape="rect" title=" " alt="" coords="5,31,160,57"/>
+<area shape="rect" href="arm__pmu_8h.html#a7a4fb2cf1fb48c203893224b94564f63" title=" " alt="" coords="208,5,407,32"/>
+<area shape="rect" href="kvm__main_8c.html#ac5a3afd8e2d8d1139dc7711c4b9e07e3" title=" " alt="" coords="221,56,394,83"/>
 </map>
 </div>
 
@@ -682,7 +686,7 @@ Here is the caller graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;{</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">switch</span> (idx) {</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <a class="code" href="pmu_8c.html#a25a74f6dc0805bd8735c3eac393596aa">PMEVTYPER_CASES</a>(READ);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">case</span> ARMV8_PMU_CYCLE_IDX:</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="arm__pmu_8h.html#ac92e9580b7d1a79637fdfd64e9959794">ARMV8_PMU_CYCLE_IDX</a>:</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">return</span> read_sysreg(pmccfiltr_el0);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">default</span>:</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        WARN_ON(1);</div>
@@ -690,6 +694,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
+<div class="ttc" id="aarm__pmu_8h_html_ac92e9580b7d1a79637fdfd64e9959794"><div class="ttname"><a href="arm__pmu_8h.html#ac92e9580b7d1a79637fdfd64e9959794">ARMV8_PMU_CYCLE_IDX</a></div><div class="ttdeci">#define ARMV8_PMU_CYCLE_IDX</div><div class="ttdef"><b>Definition:</b> <a href="arm__pmu_8h_source.html#l00013">arm_pmu.h:13</a></div></div>
 <div class="ttc" id="apmu_8c_html_a25a74f6dc0805bd8735c3eac393596aa"><div class="ttname"><a href="pmu_8c.html#a25a74f6dc0805bd8735c3eac393596aa">PMEVTYPER_CASES</a></div><div class="ttdeci">#define PMEVTYPER_CASES(readwrite)</div><div class="ttdef"><b>Definition:</b> <a href="pmu_8c_source.html#l00074">pmu.c:74</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -756,7 +761,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keyword">struct </span>kvm_pmu_events *pmu;</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    u32 events_guest, events_host;</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keywordflow">if</span> (!kvm_arm_support_pmu_v3() || !has_vhe())</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="arm__pmu_8h.html#a7a4fb2cf1fb48c203893224b94564f63">kvm_arm_support_pmu_v3</a>() || !has_vhe())</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    preempt_disable();</div>
@@ -775,12 +780,13 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="pmu_8c_a928d4df1b401e9b41f92dd2aa2744529_cgraph.png" border="0" usemap="#apmu_8c_a928d4df1b401e9b41f92dd2aa2744529_cgraph" alt=""/></div>
 <map name="apmu_8c_a928d4df1b401e9b41f92dd2aa2744529_cgraph" id="apmu_8c_a928d4df1b401e9b41f92dd2aa2744529_cgraph">
-<area shape="rect" title=" " alt="" coords="5,49,184,90"/>
-<area shape="rect" href="pmu_8c.html#abf97c7a6b0768cbe660dea1a404bc79b" title=" " alt="" coords="252,5,419,32"/>
+<area shape="rect" title=" " alt="" coords="5,74,184,115"/>
+<area shape="rect" href="arm__pmu_8h.html#a7a4fb2cf1fb48c203893224b94564f63" title=" " alt="" coords="236,5,435,32"/>
+<area shape="rect" href="pmu_8c.html#abf97c7a6b0768cbe660dea1a404bc79b" title=" " alt="" coords="252,56,419,83"/>
 <area shape="rect" href="pmu_8c.html#ad4ce451e7a40f149ed26e7ce8d9700d4" title=" " alt="" coords="232,107,439,133"/>
-<area shape="rect" href="pmu_8c.html#a98e21a6fa41b3490e6b1356884b18d5f" title=" " alt="" coords="234,56,437,83"/>
-<area shape="rect" href="pmu_8c.html#a4fbb4321f3ca694d651e668bb064aa48" title=" " alt="" coords="487,41,700,82"/>
-<area shape="rect" href="pmu_8c.html#a78259b4926a270689ce9846f2d661c5d" title=" " alt="" coords="511,106,676,147"/>
+<area shape="rect" href="pmu_8c.html#a98e21a6fa41b3490e6b1356884b18d5f" title=" " alt="" coords="234,157,437,184"/>
+<area shape="rect" href="pmu_8c.html#a4fbb4321f3ca694d651e668bb064aa48" title=" " alt="" coords="487,91,700,133"/>
+<area shape="rect" href="pmu_8c.html#a78259b4926a270689ce9846f2d661c5d" title=" " alt="" coords="511,157,676,198"/>
 </map>
 </div>
 <div class="dynheader">
@@ -841,7 +847,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keyword">struct </span>kvm_pmu_events *pmu;</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    u32 events_guest, events_host;</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordflow">if</span> (!kvm_arm_support_pmu_v3() || !has_vhe())</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="arm__pmu_8h.html#a7a4fb2cf1fb48c203893224b94564f63">kvm_arm_support_pmu_v3</a>() || !has_vhe())</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    pmu = <a class="code" href="pmu_8c.html#abf97c7a6b0768cbe660dea1a404bc79b">kvm_get_pmu_events</a>();</div>
@@ -856,12 +862,13 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="pmu_8c_a4e027f0c751f9cc01fa6d3c3f082216b_cgraph.png" border="0" usemap="#apmu_8c_a4e027f0c751f9cc01fa6d3c3f082216b_cgraph" alt=""/></div>
 <map name="apmu_8c_a4e027f0c751f9cc01fa6d3c3f082216b_cgraph" id="apmu_8c_a4e027f0c751f9cc01fa6d3c3f082216b_cgraph">
-<area shape="rect" title=" " alt="" coords="5,56,219,83"/>
-<area shape="rect" href="pmu_8c.html#abf97c7a6b0768cbe660dea1a404bc79b" title=" " alt="" coords="287,5,453,32"/>
+<area shape="rect" title=" " alt="" coords="5,81,219,108"/>
+<area shape="rect" href="arm__pmu_8h.html#a7a4fb2cf1fb48c203893224b94564f63" title=" " alt="" coords="271,5,469,32"/>
+<area shape="rect" href="pmu_8c.html#abf97c7a6b0768cbe660dea1a404bc79b" title=" " alt="" coords="287,56,453,83"/>
 <area shape="rect" href="pmu_8c.html#ad4ce451e7a40f149ed26e7ce8d9700d4" title=" " alt="" coords="267,107,473,133"/>
-<area shape="rect" href="pmu_8c.html#a98e21a6fa41b3490e6b1356884b18d5f" title=" " alt="" coords="269,56,471,83"/>
-<area shape="rect" href="pmu_8c.html#a4fbb4321f3ca694d651e668bb064aa48" title=" " alt="" coords="521,41,735,82"/>
-<area shape="rect" href="pmu_8c.html#a78259b4926a270689ce9846f2d661c5d" title=" " alt="" coords="545,106,711,147"/>
+<area shape="rect" href="pmu_8c.html#a98e21a6fa41b3490e6b1356884b18d5f" title=" " alt="" coords="269,157,471,184"/>
+<area shape="rect" href="pmu_8c.html#a4fbb4321f3ca694d651e668bb064aa48" title=" " alt="" coords="521,91,735,133"/>
+<area shape="rect" href="pmu_8c.html#a78259b4926a270689ce9846f2d661c5d" title=" " alt="" coords="545,157,711,198"/>
 </map>
 </div>
 <div class="dynheader">
@@ -975,7 +982,7 @@ Here is the call graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;{</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordflow">switch</span> (idx) {</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <a class="code" href="pmu_8c.html#a25a74f6dc0805bd8735c3eac393596aa">PMEVTYPER_CASES</a>(WRITE);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">case</span> ARMV8_PMU_CYCLE_IDX:</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="arm__pmu_8h.html#ac92e9580b7d1a79637fdfd64e9959794">ARMV8_PMU_CYCLE_IDX</a>:</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        write_sysreg(val, pmccfiltr_el0);</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">default</span>:</div>

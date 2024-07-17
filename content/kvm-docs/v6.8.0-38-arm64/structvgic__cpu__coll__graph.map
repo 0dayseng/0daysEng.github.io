@@ -1,0 +1,13 @@
+<map id="vgic_cpu" name="vgic_cpu">
+<area shape="rect" id="node1" title=" " alt="" coords="468,273,547,300"/>
+<area shape="rect" id="node2" href="$structvgic__v2__cpu__if.html" title=" " alt="" coords="603,184,721,211"/>
+<area shape="rect" id="node3" href="$structvgic__irq.html" title=" " alt="" coords="745,184,819,211"/>
+<area shape="rect" id="node4" href="$structirq__ops.html" title=" " alt="" coords="747,95,817,121"/>
+<area shape="rect" id="node5" href="$structvgic__io__device.html" title=" " alt="" coords="141,184,260,211"/>
+<area shape="rect" id="node6" href="$structvgic__its.html" title=" " alt="" coords="139,273,211,300"/>
+<area shape="rect" id="node7" href="$structkvm__io__device.html" title=" " alt="" coords="21,95,141,121"/>
+<area shape="rect" id="node8" href="$structkvm__io__device__ops.html" title=" " alt="" coords="5,5,156,32"/>
+<area shape="rect" id="node9" href="$structvgic__register__region.html" title=" " alt="" coords="165,95,319,121"/>
+<area shape="rect" id="node10" href="$structvgic__v3__cpu__if.html" title=" " alt="" coords="295,184,413,211"/>
+<area shape="rect" id="node11" href="$structvgic__redist__region.html" title=" " alt="" coords="437,184,578,211"/>
+</map>

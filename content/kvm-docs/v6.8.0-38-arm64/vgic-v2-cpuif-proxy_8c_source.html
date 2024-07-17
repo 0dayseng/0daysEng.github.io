@@ -108,7 +108,7 @@ $(function() {
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="vgic-v2-cpuif-proxy_8c.html#a99cbdec7e0ae870b9d196aea575f375a">   37</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="vgic-v2-cpuif-proxy_8c.html#a99cbdec7e0ae870b9d196aea575f375a">__vgic_v2_perform_cpuif_access</a>(<span class="keyword">struct</span> kvm_vcpu *vcpu)</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">struct </span>kvm *kvm = kern_hyp_va(vcpu-&gt;kvm);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">struct </span>vgic_dist *vgic = &amp;kvm-&gt;arch.vgic;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">struct </span><a class="code" href="structvgic__dist.html">vgic_dist</a> *vgic = &amp;kvm-&gt;arch.vgic;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    phys_addr_t fault_ipa;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> __iomem *addr;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">int</span> rd;</div>
@@ -118,8 +118,8 @@ $(function() {
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    fault_ipa |= kvm_vcpu_get_hfar(vcpu) &amp; GENMASK(11, 0);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">/* If not for GICV, move on */</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">if</span> (fault_ipa &lt;  vgic-&gt;vgic_cpu_base ||</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        fault_ipa &gt;= (vgic-&gt;vgic_cpu_base + KVM_VGIC_V2_CPU_SIZE))</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">if</span> (fault_ipa &lt;  vgic-&gt;<a class="code" href="structvgic__dist.html#adfde4e406677fb7d0457aa686d4dfe86">vgic_cpu_base</a> ||</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        fault_ipa &gt;= (vgic-&gt;<a class="code" href="structvgic__dist.html#adfde4e406677fb7d0457aa686d4dfe86">vgic_cpu_base</a> + KVM_VGIC_V2_CPU_SIZE))</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">/* Reject anything but a 32bit access */</span></div>
@@ -135,8 +135,8 @@ $(function() {
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    rd = kvm_vcpu_dabt_get_rd(vcpu);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    addr  = kvm_vgic_global_state.vcpu_hyp_va;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    addr += fault_ipa - vgic-&gt;vgic_cpu_base;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    addr  = <a class="code" href="arm__vgic_8h.html#a53b0ff890074ba3dc4b1bed11a236394">kvm_vgic_global_state</a>.<a class="code" href="structvgic__global.html#a39021361d3851b4ec26169c70d283722">vcpu_hyp_va</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    addr += fault_ipa - vgic-&gt;<a class="code" href="structvgic__dist.html#adfde4e406677fb7d0457aa686d4dfe86">vgic_cpu_base</a>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">if</span> (kvm_vcpu_dabt_iswrite(vcpu)) {</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        u32 data = vcpu_get_reg(vcpu, rd);</div>
@@ -160,6 +160,10 @@ $(function() {
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
 <div class="ttc" id="aadjust__pc_8h_html"><div class="ttname"><a href="adjust__pc_8h.html">adjust_pc.h</a></div></div>
 <div class="ttc" id="aadjust__pc_8h_html_a3d96a8814b5d5c282e1cc6f191e35061"><div class="ttname"><a href="adjust__pc_8h.html#a3d96a8814b5d5c282e1cc6f191e35061">__kvm_skip_instr</a></div><div class="ttdeci">static void __kvm_skip_instr(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="adjust__pc_8h_source.html#l00033">adjust_pc.h:33</a></div></div>
+<div class="ttc" id="aarm__vgic_8h_html_a53b0ff890074ba3dc4b1bed11a236394"><div class="ttname"><a href="arm__vgic_8h.html#a53b0ff890074ba3dc4b1bed11a236394">kvm_vgic_global_state</a></div><div class="ttdeci">struct vgic_global kvm_vgic_global_state</div></div>
+<div class="ttc" id="astructvgic__dist_html"><div class="ttname"><a href="structvgic__dist.html">vgic_dist</a></div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00224">arm_vgic.h:224</a></div></div>
+<div class="ttc" id="astructvgic__dist_html_adfde4e406677fb7d0457aa686d4dfe86"><div class="ttname"><a href="structvgic__dist.html#adfde4e406677fb7d0457aa686d4dfe86">vgic_dist::vgic_cpu_base</a></div><div class="ttdeci">gpa_t vgic_cpu_base</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00250">arm_vgic.h:250</a></div></div>
+<div class="ttc" id="astructvgic__global_html_a39021361d3851b4ec26169c70d283722"><div class="ttname"><a href="structvgic__global.html#a39021361d3851b4ec26169c70d283722">vgic_global::vcpu_hyp_va</a></div><div class="ttdeci">void __iomem * vcpu_hyp_va</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00054">arm_vgic.h:54</a></div></div>
 <div class="ttc" id="avgic-v2-cpuif-proxy_8c_html_a99cbdec7e0ae870b9d196aea575f375a"><div class="ttname"><a href="vgic-v2-cpuif-proxy_8c.html#a99cbdec7e0ae870b9d196aea575f375a">__vgic_v2_perform_cpuif_access</a></div><div class="ttdeci">int __vgic_v2_perform_cpuif_access(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="vgic-v2-cpuif-proxy_8c_source.html#l00037">vgic-v2-cpuif-proxy.c:37</a></div></div>
 <div class="ttc" id="avgic-v2-cpuif-proxy_8c_html_af46b69e52ca84d72c9ff836e1dba7e4f"><div class="ttname"><a href="vgic-v2-cpuif-proxy_8c.html#af46b69e52ca84d72c9ff836e1dba7e4f">__is_be</a></div><div class="ttdeci">static bool __is_be(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="vgic-v2-cpuif-proxy_8c_source.html#l00018">vgic-v2-cpuif-proxy.c:18</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

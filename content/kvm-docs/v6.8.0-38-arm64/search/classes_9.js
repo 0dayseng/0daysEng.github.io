@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['tlb_5finv_5fcontext_2924',['tlb_inv_context',['../structtlb__inv__context.html',1,'']]],
-  ['trap_5fbits_2925',['trap_bits',['../structtrap__bits.html',1,'']]],
-  ['trap_5fconfig_2926',['trap_config',['../uniontrap__config.html',1,'']]]
+  ['stage2_5fage_5fdata_3147',['stage2_age_data',['../structstage2__age__data.html',1,'']]],
+  ['stage2_5fattr_5fdata_3148',['stage2_attr_data',['../structstage2__attr__data.html',1,'']]],
+  ['stage2_5fmap_5fdata_3149',['stage2_map_data',['../structstage2__map__data.html',1,'']]],
+  ['sve_5fstate_5freg_5fregion_3150',['sve_state_reg_region',['../structsve__state__reg__region.html',1,'']]],
+  ['sys_5freg_5fdesc_3151',['sys_reg_desc',['../structsys__reg__desc.html',1,'']]],
+  ['sys_5freg_5fparams_3152',['sys_reg_params',['../structsys__reg__params.html',1,'']]]
 ];

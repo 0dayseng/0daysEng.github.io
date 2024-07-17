@@ -1,11 +1,12 @@
 <map id="vgic_register_redist_iodev" name="vgic_register_redist_iodev">
-<area shape="rect" id="node1" title=" " alt="" coords="5,99,156,141"/>
-<area shape="rect" id="node2" href="$kvm__main_8c.html#a0afe5ce3e9ff1105328b06ec985e3374" title=" " alt="" coords="204,31,392,57"/>
-<area shape="rect" id="node4" href="$vgic-v3_8c.html#a98c28ff2dc6b6965cef76e1be35233b1" title=" " alt="" coords="221,107,375,133"/>
-<area shape="rect" id="node8" href="$vgic-v3_8c.html#a481ec0006dfd5a7ea125b9913de7ba47" title=" " alt="" coords="212,183,384,209"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,74,156,115"/>
+<area shape="rect" id="node2" href="$kvm__main_8c.html#a0afe5ce3e9ff1105328b06ec985e3374" title=" " alt="" coords="204,5,392,32"/>
+<area shape="rect" id="node4" href="$iodev_8h.html#a8999defe529eb3e3870197ef8e39fad5" title=" " alt="" coords="227,56,369,83"/>
+<area shape="rect" id="node5" href="$vgic-v3_8c.html#a98c28ff2dc6b6965cef76e1be35233b1" title=" " alt="" coords="221,107,375,133"/>
+<area shape="rect" id="node9" href="$vgic-v3_8c.html#a481ec0006dfd5a7ea125b9913de7ba47" title=" " alt="" coords="212,183,384,209"/>
 <area shape="rect" id="node3" href="$kvm__main_8c.html#a75ccec7a81fef145fb3c3a3b5479a86f" title=" " alt="" coords="469,5,603,32"/>
-<area shape="rect" id="node5" href="$vgic-kvm-device_8c.html#af0cfcc44a93abc13df9a7e364c21cf32" title=" " alt="" coords="461,56,611,83"/>
-<area shape="rect" id="node6" href="$vgic_8h.html#a01a6c3c40680e43017d7ba8ec7aadbac" title=" " alt="" coords="680,132,853,159"/>
-<area shape="rect" id="node7" href="$vgic-v3_8c.html#a8bd03445507515b9722165814955f6fa" title=" " alt="" coords="454,157,618,184"/>
-<area shape="rect" id="node9" href="$vgic_8h.html#ab5518fe56ac149d185ee8dc4f1cbedcb" title=" " alt="" coords="440,208,632,235"/>
+<area shape="rect" id="node6" href="$vgic-kvm-device_8c.html#af0cfcc44a93abc13df9a7e364c21cf32" title=" " alt="" coords="461,56,611,83"/>
+<area shape="rect" id="node7" href="$vgic_8h.html#a01a6c3c40680e43017d7ba8ec7aadbac" title=" " alt="" coords="680,132,853,159"/>
+<area shape="rect" id="node8" href="$vgic-v3_8c.html#a8bd03445507515b9722165814955f6fa" title=" " alt="" coords="454,157,618,184"/>
+<area shape="rect" id="node10" href="$vgic_8h.html#ab5518fe56ac149d185ee8dc4f1cbedcb" title=" " alt="" coords="440,208,632,235"/>
 </map>

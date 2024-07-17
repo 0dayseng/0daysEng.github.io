@@ -1,7 +1,7 @@
 <map id="arch/arm64/kvm/hyp/include/nvhe/fixed_config.h" name="arch/arm64/kvm/hyp/include/nvhe/fixed_config.h">
 <area shape="rect" id="node1" title=" " alt="" coords="277,5,435,61"/>
-<area shape="rect" id="node2" href="$setup_8c.html" title=" " alt="" coords="5,109,163,151"/>
-<area shape="rect" id="node3" href="$hyp_2nvhe_2pkvm_8c.html" title=" " alt="" coords="187,109,344,151"/>
-<area shape="rect" id="node4" href="$hyp_2nvhe_2sys__regs_8c.html" title=" " alt="" coords="368,109,525,151"/>
-<area shape="rect" id="node5" href="$nvhe_2switch_8c.html" title=" " alt="" coords="549,109,707,151"/>
+<area shape="rect" id="node2" href="$hyp_2nvhe_2pkvm_8c.html" title=" " alt="" coords="5,109,163,151"/>
+<area shape="rect" id="node3" href="$setup_8c.html" title=" " alt="" coords="187,109,344,151"/>
+<area shape="rect" id="node4" href="$nvhe_2switch_8c.html" title=" " alt="" coords="368,109,525,151"/>
+<area shape="rect" id="node5" href="$hyp_2nvhe_2sys__regs_8c.html" title=" " alt="" coords="549,109,707,151"/>
 </map>

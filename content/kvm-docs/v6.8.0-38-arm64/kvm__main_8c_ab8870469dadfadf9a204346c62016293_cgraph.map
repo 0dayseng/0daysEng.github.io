@@ -34,8 +34,8 @@
 <area shape="rect" id="node23" href="$arch__timer_8c.html#abc4d9a1d61348137665ab9a6b18cfa5b" title=" " alt="" coords="1024,563,1179,589"/>
 <area shape="rect" id="node26" href="$vgic-mmio-v3_8c.html#a7c5d9bcbf29cb46bac8622d8bcc145b2" title=" " alt="" coords="778,629,929,670"/>
 <area shape="rect" id="node27" href="$kvm__main_8c.html#a0afe5ce3e9ff1105328b06ec985e3374" title=" " alt="" coords="1007,613,1195,640"/>
-<area shape="rect" id="node28" href="$vgic-v3_8c.html#a98c28ff2dc6b6965cef76e1be35233b1" title=" " alt="" coords="1024,664,1179,691"/>
-<area shape="rect" id="node29" href="$vgic-v3_8c.html#a481ec0006dfd5a7ea125b9913de7ba47" title=" " alt="" coords="1015,715,1187,741"/>
+<area shape="rect" id="node28" href="$iodev_8h.html#a8999defe529eb3e3870197ef8e39fad5" title=" " alt="" coords="1031,664,1172,691"/>
+<area shape="rect" id="node29" href="$vgic-v3_8c.html#a98c28ff2dc6b6965cef76e1be35233b1" title=" " alt="" coords="1024,715,1179,741"/>
 <area shape="rect" id="node31" href="$reset_8c.html#ae42f979a2e15b7e51c3e3dfc133cb473" title=" " alt="" coords="513,763,692,789"/>
 <area shape="rect" id="node34" href="$pmu-emul_8c.html#aca66e6898e68588135dbba11916ef625" title=" " alt="" coords="512,824,693,851"/>
 <area shape="rect" id="node37" href="$arch__timer_8c.html#a1910c992141ccc5e0753c9440f66292e" title=" " alt="" coords="501,881,704,908"/>

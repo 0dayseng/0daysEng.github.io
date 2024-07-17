@@ -1,13 +1,14 @@
 <map id="kvm_vcpu_put_vhe" name="kvm_vcpu_put_vhe">
-<area shape="rect" id="node1" title=" " alt="" coords="5,101,153,127"/>
-<area shape="rect" id="node2" href="$vhe_2switch_8c.html#ac68d88b7ec01728bde4737ec693bfe56" title=" " alt="" coords="217,35,387,76"/>
-<area shape="rect" id="node6" href="$vhe_2sysreg-sr_8c.html#af72c2efce509dabaacec4aa926055c81" title=" " alt="" coords="201,130,403,157"/>
-<area shape="rect" id="node3" href="$switch_8h.html#a35d28599759bc9cf3b045642fd7b9245" title=" " alt="" coords="470,5,615,47"/>
-<area shape="rect" id="node4" href="$switch_8h.html#a6c7c288e5cc7409e400d523eb9397313" title=" " alt="" coords="683,5,828,47"/>
-<area shape="rect" id="node5" href="$switch_8h.html#a4a6fdb32e965c228965f69fd51d57e04" title=" " alt="" coords="876,13,987,39"/>
-<area shape="rect" id="node7" href="$sysreg-sr_8h.html#acde179f1e225de3959af70fe7a992cdf" title=" " alt="" coords="456,71,629,98"/>
-<area shape="rect" id="node8" href="$sysreg-sr_8h.html#ad74b28a4d40908c74509b46536769507" title=" " alt="" coords="459,123,626,164"/>
-<area shape="rect" id="node9" href="$sysreg-sr_8h.html#a1e932d0c0c3f01c13d7994a981123812" title=" " alt="" coords="451,189,635,215"/>
-<area shape="rect" id="node11" href="$sysreg-sr_8h.html#aecf2f0bd080c9c61163de944c7ef75d6" title=" " alt="" coords="467,240,619,281"/>
-<area shape="rect" id="node10" href="$sysreg-sr_8h.html#af7ebccfbf2739befae3e99a282871ecf" title=" " alt="" coords="700,189,811,215"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,130,153,157"/>
+<area shape="rect" id="node2" href="$vhe_2switch_8c.html#ac68d88b7ec01728bde4737ec693bfe56" title=" " alt="" coords="217,64,387,105"/>
+<area shape="rect" id="node7" href="$vhe_2sysreg-sr_8c.html#af72c2efce509dabaacec4aa926055c81" title=" " alt="" coords="201,159,403,186"/>
+<area shape="rect" id="node3" href="$switch_8h.html#a35d28599759bc9cf3b045642fd7b9245" title=" " alt="" coords="470,35,615,76"/>
+<area shape="rect" id="node4" href="$switch_8h.html#a6c7c288e5cc7409e400d523eb9397313" title=" " alt="" coords="709,5,855,47"/>
+<area shape="rect" id="node6" href="$arm__pmu_8h.html#a7a4fb2cf1fb48c203893224b94564f63" title=" " alt="" coords="683,71,881,98"/>
+<area shape="rect" id="node5" href="$switch_8h.html#a4a6fdb32e965c228965f69fd51d57e04" title=" " alt="" coords="929,13,1040,39"/>
+<area shape="rect" id="node8" href="$sysreg-sr_8h.html#acde179f1e225de3959af70fe7a992cdf" title=" " alt="" coords="456,101,629,127"/>
+<area shape="rect" id="node9" href="$sysreg-sr_8h.html#ad74b28a4d40908c74509b46536769507" title=" " alt="" coords="459,152,626,193"/>
+<area shape="rect" id="node10" href="$sysreg-sr_8h.html#a1e932d0c0c3f01c13d7994a981123812" title=" " alt="" coords="451,218,635,245"/>
+<area shape="rect" id="node12" href="$sysreg-sr_8h.html#aecf2f0bd080c9c61163de944c7ef75d6" title=" " alt="" coords="467,269,619,311"/>
+<area shape="rect" id="node11" href="$sysreg-sr_8h.html#af7ebccfbf2739befae3e99a282871ecf" title=" " alt="" coords="727,218,837,245"/>
 </map>

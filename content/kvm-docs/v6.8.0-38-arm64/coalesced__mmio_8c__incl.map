@@ -1,8 +1,10 @@
 <map id="virt/kvm/coalesced_mmio.c" name="virt/kvm/coalesced_mmio.c">
-<area shape="rect" id="node1" title=" " alt="" coords="266,5,413,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,95,108,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="132,95,267,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="291,95,388,121"/>
-<area shape="rect" id="node5" title=" " alt="" coords="413,95,511,121"/>
-<area shape="rect" id="node6" href="$coalesced__mmio_8h.html" title=" " alt="" coords="535,95,679,121"/>
+<area shape="rect" id="node1" title=" " alt="" coords="359,5,506,47"/>
+<area shape="rect" id="node2" href="$iodev_8h.html" title=" " alt="" coords="99,95,201,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="225,95,360,121"/>
+<area shape="rect" id="node6" title=" " alt="" coords="384,95,481,121"/>
+<area shape="rect" id="node7" title=" " alt="" coords="506,95,605,121"/>
+<area shape="rect" id="node8" href="$coalesced__mmio_8h.html" title=" " alt="" coords="629,95,773,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,169,148,196"/>
+<area shape="rect" id="node4" title=" " alt="" coords="173,169,277,196"/>
 </map>

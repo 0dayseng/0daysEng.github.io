@@ -76,7 +76,7 @@ $(function() {
 <code>#include &lt;linux/sched/stat.h&gt;</code><br />
 <code>#include &lt;asm/kvm_mmu.h&gt;</code><br />
 <code>#include &lt;asm/pvclock-abi.h&gt;</code><br />
-<code>#include &lt;kvm/arm_hypercalls.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="arm__hypercalls_8h_source.html">kvm/arm_hypercalls.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for pvtime.c:</div>
 <div class="dyncontent">
@@ -88,7 +88,8 @@ Include dependency graph for pvtime.c:</div>
 <area shape="rect" title=" " alt="" coords="331,80,468,107"/>
 <area shape="rect" title=" " alt="" coords="493,80,629,107"/>
 <area shape="rect" title=" " alt="" coords="653,80,794,107"/>
-<area shape="rect" title=" " alt="" coords="819,80,985,107"/>
+<area shape="rect" href="arm__hypercalls_8h.html" title=" " alt="" coords="819,80,985,107"/>
+<area shape="rect" title=" " alt="" coords="824,155,980,181"/>
 </map>
 </div>
 </div>
@@ -386,7 +387,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="pvtime_8c_source.html#l00035">35</a> of file <a class="el" href="pvtime_8c_source.html">pvtime.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    u32 feature = smccc_get_arg1(vcpu);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    u32 feature = <a class="code" href="arm__hypercalls_8h.html#aab3de177147e0efb70c732a1ad3706dd">smccc_get_arg1</a>(vcpu);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">long</span> val = SMCCC_RET_NOT_SUPPORTED;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">switch</span> (feature) {</div>
@@ -399,7 +400,17 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> val;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="ttc" id="aarm__hypercalls_8h_html_aab3de177147e0efb70c732a1ad3706dd"><div class="ttname"><a href="arm__hypercalls_8h.html#aab3de177147e0efb70c732a1ad3706dd">smccc_get_arg1</a></div><div class="ttdeci">static unsigned long smccc_get_arg1(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="arm__hypercalls_8h_source.html#l00016">arm_hypercalls.h:16</a></div></div>
 </div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="pvtime_8c_a0a13c651b49c43a6139569798311764c_cgraph.png" border="0" usemap="#apvtime_8c_a0a13c651b49c43a6139569798311764c_cgraph" alt=""/></div>
+<map name="apvtime_8c_a0a13c651b49c43a6139569798311764c_cgraph" id="apvtime_8c_a0a13c651b49c43a6139569798311764c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,208,32"/>
+<area shape="rect" href="arm__hypercalls_8h.html#aab3de177147e0efb70c732a1ad3706dd" title=" " alt="" coords="256,5,383,32"/>
+</map>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="pvtime_8c_a0a13c651b49c43a6139569798311764c_icgraph.png" border="0" usemap="#apvtime_8c_a0a13c651b49c43a6139569798311764c_icgraph" alt=""/></div>

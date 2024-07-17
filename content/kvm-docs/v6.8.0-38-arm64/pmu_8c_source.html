@@ -110,7 +110,7 @@ $(function() {
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">struct </span>kvm_pmu_events *pmu = <a class="code" href="pmu_8c.html#abf97c7a6b0768cbe660dea1a404bc79b">kvm_get_pmu_events</a>();</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">if</span> (!kvm_arm_support_pmu_v3() || !<a class="code" href="pmu_8c.html#a0581da32a68cfc3bcc6dd0decf8a094e">kvm_pmu_switch_needed</a>(attr))</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="arm__pmu_8h.html#a7a4fb2cf1fb48c203893224b94564f63">kvm_arm_support_pmu_v3</a>() || !<a class="code" href="pmu_8c.html#a0581da32a68cfc3bcc6dd0decf8a094e">kvm_pmu_switch_needed</a>(attr))</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">if</span> (!attr-&gt;exclude_host)</div>
@@ -126,7 +126,7 @@ $(function() {
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">struct </span>kvm_pmu_events *pmu = <a class="code" href="pmu_8c.html#abf97c7a6b0768cbe660dea1a404bc79b">kvm_get_pmu_events</a>();</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span> (!kvm_arm_support_pmu_v3())</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="arm__pmu_8h.html#a7a4fb2cf1fb48c203893224b94564f63">kvm_arm_support_pmu_v3</a>())</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    pmu-&gt;events_host &amp;= ~clr;</div>
@@ -183,7 +183,7 @@ $(function() {
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;{</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">switch</span> (idx) {</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <a class="code" href="pmu_8c.html#a25a74f6dc0805bd8735c3eac393596aa">PMEVTYPER_CASES</a>(READ);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">case</span> ARMV8_PMU_CYCLE_IDX:</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="arm__pmu_8h.html#ac92e9580b7d1a79637fdfd64e9959794">ARMV8_PMU_CYCLE_IDX</a>:</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">return</span> read_sysreg(pmccfiltr_el0);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">default</span>:</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        WARN_ON(1);</div>
@@ -200,7 +200,7 @@ $(function() {
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;{</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordflow">switch</span> (idx) {</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <a class="code" href="pmu_8c.html#a25a74f6dc0805bd8735c3eac393596aa">PMEVTYPER_CASES</a>(WRITE);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">case</span> ARMV8_PMU_CYCLE_IDX:</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="arm__pmu_8h.html#ac92e9580b7d1a79637fdfd64e9959794">ARMV8_PMU_CYCLE_IDX</a>:</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        write_sysreg(val, pmccfiltr_el0);</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">default</span>:</div>
@@ -249,7 +249,7 @@ $(function() {
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keyword">struct </span>kvm_pmu_events *pmu;</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    u32 events_guest, events_host;</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keywordflow">if</span> (!kvm_arm_support_pmu_v3() || !has_vhe())</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="arm__pmu_8h.html#a7a4fb2cf1fb48c203893224b94564f63">kvm_arm_support_pmu_v3</a>() || !has_vhe())</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    preempt_disable();</div>
@@ -270,7 +270,7 @@ $(function() {
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keyword">struct </span>kvm_pmu_events *pmu;</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    u32 events_guest, events_host;</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordflow">if</span> (!kvm_arm_support_pmu_v3() || !has_vhe())</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="arm__pmu_8h.html#a7a4fb2cf1fb48c203893224b94564f63">kvm_arm_support_pmu_v3</a>() || !has_vhe())</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    pmu = <a class="code" href="pmu_8c.html#abf97c7a6b0768cbe660dea1a404bc79b">kvm_get_pmu_events</a>();</div>
@@ -296,7 +296,7 @@ $(function() {
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keyword">struct </span>kvm_cpu_context *hctxt;</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keyword">struct </span>kvm_vcpu *vcpu;</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordflow">if</span> (!kvm_arm_support_pmu_v3() || !has_vhe())</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="arm__pmu_8h.html#a7a4fb2cf1fb48c203893224b94564f63">kvm_arm_support_pmu_v3</a>() || !has_vhe())</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    vcpu = <a class="code" href="kvm__main_8c.html#ac5a3afd8e2d8d1139dc7711c4b9e07e3">kvm_get_running_vcpu</a>();</div>
@@ -325,6 +325,8 @@ $(function() {
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    kvm_make_request(KVM_REQ_RESYNC_PMU_EL0, vcpu);</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;}</div>
+<div class="ttc" id="aarm__pmu_8h_html_a7a4fb2cf1fb48c203893224b94564f63"><div class="ttname"><a href="arm__pmu_8h.html#a7a4fb2cf1fb48c203893224b94564f63">kvm_arm_support_pmu_v3</a></div><div class="ttdeci">static bool kvm_arm_support_pmu_v3(void)</div><div class="ttdef"><b>Definition:</b> <a href="arm__pmu_8h_source.html#l00113">arm_pmu.h:113</a></div></div>
+<div class="ttc" id="aarm__pmu_8h_html_ac92e9580b7d1a79637fdfd64e9959794"><div class="ttname"><a href="arm__pmu_8h.html#ac92e9580b7d1a79637fdfd64e9959794">ARMV8_PMU_CYCLE_IDX</a></div><div class="ttdeci">#define ARMV8_PMU_CYCLE_IDX</div><div class="ttdef"><b>Definition:</b> <a href="arm__pmu_8h_source.html#l00013">arm_pmu.h:13</a></div></div>
 <div class="ttc" id="akvm__main_8c_html_ac5a3afd8e2d8d1139dc7711c4b9e07e3"><div class="ttname"><a href="kvm__main_8c.html#ac5a3afd8e2d8d1139dc7711c4b9e07e3">kvm_get_running_vcpu</a></div><div class="ttdeci">struct kvm_vcpu * kvm_get_running_vcpu(void)</div><div class="ttdef"><b>Definition:</b> <a href="kvm__main_8c_source.html#l06338">kvm_main.c:6338</a></div></div>
 <div class="ttc" id="apmu_8c_html_a0581da32a68cfc3bcc6dd0decf8a094e"><div class="ttname"><a href="pmu_8c.html#a0581da32a68cfc3bcc6dd0decf8a094e">kvm_pmu_switch_needed</a></div><div class="ttdeci">static bool kvm_pmu_switch_needed(struct perf_event_attr *attr)</div><div class="ttdef"><b>Definition:</b> <a href="pmu_8c_source.html#l00015">pmu.c:15</a></div></div>
 <div class="ttc" id="apmu_8c_html_a22bac8d3daaa6dbd00f6a66d7765023d"><div class="ttname"><a href="pmu_8c.html#a22bac8d3daaa6dbd00f6a66d7765023d">DEFINE_PER_CPU</a></div><div class="ttdeci">static DEFINE_PER_CPU(struct kvm_pmu_events, kvm_pmu_events)</div></div>

@@ -1,5 +1,6 @@
 <map id="__deactivate_traps" name="__deactivate_traps">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,151,57"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,151,83"/>
 <area shape="rect" id="node2" href="$switch_8h.html#ac0230dd80fe718cd080b982a83ba74bb" title=" " alt="" coords="199,5,351,32"/>
 <area shape="rect" id="node3" href="$arch__timer_8c.html#ad7e756ea5077e85e2a10bfe35543ce21" title=" " alt="" coords="214,56,335,83"/>
+<area shape="rect" id="node4" href="$arm__arch__timer_8h.html#a656013ccf6829218e43edc9c3660c414" title=" " alt="" coords="226,107,323,133"/>
 </map>

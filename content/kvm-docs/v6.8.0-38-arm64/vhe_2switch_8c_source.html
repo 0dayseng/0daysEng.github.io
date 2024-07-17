@@ -84,7 +84,7 @@ $(function() {
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;linux/percpu.h&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;uapi/linux/psci.h&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;kvm/arm_psci.h&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="arm__psci_8h.html">kvm/arm_psci.h</a>&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;asm/barrier.h&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;asm/cpufeature.h&gt;</span></div>
@@ -110,8 +110,8 @@ $(function() {
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="switch_8h.html#ae4db28fc9e4c77f796cdabc06b7640d3">___activate_traps</a>(vcpu);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">if</span> (has_cntpoff()) {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">struct </span>timer_map map;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="arm__arch__timer_8h.html#a656013ccf6829218e43edc9c3660c414">has_cntpoff</a>()) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">struct </span><a class="code" href="structtimer__map.html">timer_map</a> map;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="arch__timer_8c.html#ad7e756ea5077e85e2a10bfe35543ce21">get_timer_map</a>(vcpu, &amp;map);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
@@ -119,12 +119,12 @@ $(function() {
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">         * We&#39;re entrering the guest. Reload the correct</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">         * values from memory now that TGE is clear.</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">if</span> (map.direct_ptimer == vcpu_ptimer(vcpu))</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">if</span> (map.<a class="code" href="structtimer__map.html#a1c5c90c0652f7c961e0f2ed7b658986b">direct_ptimer</a> == <a class="code" href="arm__arch__timer_8h.html#a4d166b83ceabb05615e40bf0c219cfbc">vcpu_ptimer</a>(vcpu))</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            val = __vcpu_sys_reg(vcpu, CNTP_CVAL_EL0);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">if</span> (map.direct_ptimer == vcpu_hptimer(vcpu))</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">if</span> (map.<a class="code" href="structtimer__map.html#a1c5c90c0652f7c961e0f2ed7b658986b">direct_ptimer</a> == <a class="code" href="arm__arch__timer_8h.html#ad5e47541b2bf1738cf450e0b5e00b5eb">vcpu_hptimer</a>(vcpu))</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            val = __vcpu_sys_reg(vcpu, CNTHP_CVAL_EL2);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">if</span> (map.direct_ptimer) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">if</span> (map.<a class="code" href="structtimer__map.html#a1c5c90c0652f7c961e0f2ed7b658986b">direct_ptimer</a>) {</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            write_sysreg_el0(val, SYS_CNTP_CVAL);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            isb();</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
@@ -168,8 +168,8 @@ $(function() {
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    write_sysreg(HCR_HOST_VHE_FLAGS, hcr_el2);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">if</span> (has_cntpoff()) {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keyword">struct </span>timer_map map;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="arm__arch__timer_8h.html#a656013ccf6829218e43edc9c3660c414">has_cntpoff</a>()) {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keyword">struct </span><a class="code" href="structtimer__map.html">timer_map</a> map;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        u64 val, offset;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="arch__timer_8c.html#ad7e756ea5077e85e2a10bfe35543ce21">get_timer_map</a>(vcpu, &amp;map);</div>
@@ -179,14 +179,14 @@ $(function() {
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">         * to memory and apply the offset now that TGE is set.</span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">         */</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        val = read_sysreg_el0(SYS_CNTP_CVAL);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">if</span> (map.direct_ptimer == vcpu_ptimer(vcpu))</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">if</span> (map.<a class="code" href="structtimer__map.html#a1c5c90c0652f7c961e0f2ed7b658986b">direct_ptimer</a> == <a class="code" href="arm__arch__timer_8h.html#a4d166b83ceabb05615e40bf0c219cfbc">vcpu_ptimer</a>(vcpu))</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            __vcpu_sys_reg(vcpu, CNTP_CVAL_EL0) = val;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordflow">if</span> (map.direct_ptimer == vcpu_hptimer(vcpu))</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordflow">if</span> (map.<a class="code" href="structtimer__map.html#a1c5c90c0652f7c961e0f2ed7b658986b">direct_ptimer</a> == <a class="code" href="arm__arch__timer_8h.html#ad5e47541b2bf1738cf450e0b5e00b5eb">vcpu_hptimer</a>(vcpu))</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            __vcpu_sys_reg(vcpu, CNTHP_CVAL_EL2) = val;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        offset = read_sysreg_s(SYS_CNTPOFF_EL2);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordflow">if</span> (map.direct_ptimer &amp;&amp; offset) {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordflow">if</span> (map.<a class="code" href="structtimer__map.html#a1c5c90c0652f7c961e0f2ed7b658986b">direct_ptimer</a> &amp;&amp; offset) {</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            write_sysreg_el0(val + offset, SYS_CNTP_CVAL);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            isb();</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        }</div>
@@ -405,6 +405,10 @@ $(function() {
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <a class="code" href="switch_8h.html#af87dbc6ad2095c54d929737fd585dcc5">__kvm_unexpected_el2_exception</a>();</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;}</div>
 <div class="ttc" id="aarch__timer_8c_html_ad7e756ea5077e85e2a10bfe35543ce21"><div class="ttname"><a href="arch__timer_8c.html#ad7e756ea5077e85e2a10bfe35543ce21">get_timer_map</a></div><div class="ttdeci">void get_timer_map(struct kvm_vcpu *vcpu, struct timer_map *map)</div><div class="ttdef"><b>Definition:</b> <a href="arch__timer_8c_source.html#l00178">arch_timer.c:178</a></div></div>
+<div class="ttc" id="aarm__arch__timer_8h_html_a4d166b83ceabb05615e40bf0c219cfbc"><div class="ttname"><a href="arm__arch__timer_8h.html#a4d166b83ceabb05615e40bf0c219cfbc">vcpu_ptimer</a></div><div class="ttdeci">#define vcpu_ptimer(v)</div><div class="ttdef"><b>Definition:</b> <a href="arm__arch__timer_8h_source.html#l00125">arm_arch_timer.h:125</a></div></div>
+<div class="ttc" id="aarm__arch__timer_8h_html_a656013ccf6829218e43edc9c3660c414"><div class="ttname"><a href="arm__arch__timer_8h.html#a656013ccf6829218e43edc9c3660c414">has_cntpoff</a></div><div class="ttdeci">static bool has_cntpoff(void)</div><div class="ttdef"><b>Definition:</b> <a href="arm__arch__timer_8h_source.html#l00150">arm_arch_timer.h:150</a></div></div>
+<div class="ttc" id="aarm__arch__timer_8h_html_ad5e47541b2bf1738cf450e0b5e00b5eb"><div class="ttname"><a href="arm__arch__timer_8h.html#ad5e47541b2bf1738cf450e0b5e00b5eb">vcpu_hptimer</a></div><div class="ttdeci">#define vcpu_hptimer(v)</div><div class="ttdef"><b>Definition:</b> <a href="arm__arch__timer_8h_source.html#l00127">arm_arch_timer.h:127</a></div></div>
+<div class="ttc" id="aarm__psci_8h_html"><div class="ttname"><a href="arm__psci_8h.html">arm_psci.h</a></div></div>
 <div class="ttc" id="aexception_8c_html_a69b40cbdae816f5cb612962c0f5da592"><div class="ttname"><a href="exception_8c.html#a69b40cbdae816f5cb612962c0f5da592">__kvm_adjust_pc</a></div><div class="ttdeci">void __kvm_adjust_pc(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="exception_8c_source.html#l00365">exception.c:365</a></div></div>
 <div class="ttc" id="anvhe_2debug-sr_8c_html_a8c8f1edc326e09e797135819102b6133"><div class="ttname"><a href="nvhe_2debug-sr_8c.html#a8c8f1edc326e09e797135819102b6133">__debug_switch_to_guest</a></div><div class="ttdeci">void __debug_switch_to_guest(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="nvhe_2debug-sr_8c_source.html#l00092">debug-sr.c:92</a></div></div>
 <div class="ttc" id="anvhe_2debug-sr_8c_html_ac7a33d6f090ef75379f22cd87f776d1d"><div class="ttname"><a href="nvhe_2debug-sr_8c.html#ac7a33d6f090ef75379f22cd87f776d1d">__debug_switch_to_host</a></div><div class="ttdeci">void __debug_switch_to_host(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="nvhe_2debug-sr_8c_source.html#l00105">debug-sr.c:105</a></div></div>
@@ -412,6 +416,8 @@ $(function() {
 <div class="ttc" id="anvhe_2switch_8c_html_ace310f31ba462b886f2a0ec52df6bfcb"><div class="ttname"><a href="nvhe_2switch_8c.html#ace310f31ba462b886f2a0ec52df6bfcb">DEFINE_PER_CPU</a></div><div class="ttdeci">DEFINE_PER_CPU(struct kvm_host_data, kvm_host_data)</div></div>
 <div class="ttc" id="anvhe_2switch_8c_html_ad0f5e1acbdbecb0deb82202371f23c8f"><div class="ttname"><a href="nvhe_2switch_8c.html#ad0f5e1acbdbecb0deb82202371f23c8f">hyp_panic</a></div><div class="ttdeci">asmlinkage void __noreturn hyp_panic(void)</div><div class="ttdef"><b>Definition:</b> <a href="nvhe_2switch_8c_source.html#l00362">switch.c:362</a></div></div>
 <div class="ttc" id="anvhe_2switch_8c_html_af2f5ac35e771dfefeec346aaa6a850fa"><div class="ttname"><a href="nvhe_2switch_8c.html#af2f5ac35e771dfefeec346aaa6a850fa">__kvm_vcpu_run</a></div><div class="ttdeci">int __kvm_vcpu_run(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="nvhe_2switch_8c_source.html#l00248">switch.c:248</a></div></div>
+<div class="ttc" id="astructtimer__map_html"><div class="ttname"><a href="structtimer__map.html">timer_map</a></div><div class="ttdef"><b>Definition:</b> <a href="arm__arch__timer_8h_source.html#l00078">arm_arch_timer.h:78</a></div></div>
+<div class="ttc" id="astructtimer__map_html_a1c5c90c0652f7c961e0f2ed7b658986b"><div class="ttname"><a href="structtimer__map.html#a1c5c90c0652f7c961e0f2ed7b658986b">timer_map::direct_ptimer</a></div><div class="ttdeci">struct arch_timer_context * direct_ptimer</div><div class="ttdef"><b>Definition:</b> <a href="arm__arch__timer_8h_source.html#l00080">arm_arch_timer.h:80</a></div></div>
 <div class="ttc" id="aswitch_8h_html"><div class="ttname"><a href="switch_8h.html">switch.h</a></div></div>
 <div class="ttc" id="aswitch_8h_html_a0aa933914e577aee4be5e6c3c62dd2ad"><div class="ttname"><a href="switch_8h.html#a0aa933914e577aee4be5e6c3c62dd2ad">kvm_hyp_handle_iabt_low</a></div><div class="ttdeci">static bool kvm_hyp_handle_iabt_low(struct kvm_vcpu *vcpu, u64 *exit_code) __alias(kvm_hyp_handle_memory_fault)</div></div>
 <div class="ttc" id="aswitch_8h_html_a0f6c8abddc56b8636ea4668083a35100"><div class="ttname"><a href="switch_8h.html#a0f6c8abddc56b8636ea4668083a35100">kvm_hyp_handle_fpsimd</a></div><div class="ttdeci">static bool kvm_hyp_handle_fpsimd(struct kvm_vcpu *vcpu, u64 *exit_code)</div><div class="ttdef"><b>Definition:</b> <a href="switch_8h_source.html#l00330">switch.h:330</a></div></div>

@@ -646,7 +646,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keyword">new</span>-&gt;nr_rt_entries = nr_rt_entries;</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; KVM_NR_IRQCHIPS; i++)</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">for</span> (j = 0; j &lt; KVM_IRQCHIP_NUM_PINS; j++)</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">for</span> (j = 0; j &lt; <a class="code" href="arm__vgic_8h.html#a51fde4189b74866c5fa5f3c77ee815a1">KVM_IRQCHIP_NUM_PINS</a>; j++)</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            new-&gt;chip[i][j] = -1;</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    for (i = 0; i &lt; nr; ++i) {</div>
@@ -694,6 +694,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keywordflow">return</span> r;</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;}</div>
+<div class="ttc" id="aarm__vgic_8h_html_a51fde4189b74866c5fa5f3c77ee815a1"><div class="ttname"><a href="arm__vgic_8h.html#a51fde4189b74866c5fa5f3c77ee815a1">KVM_IRQCHIP_NUM_PINS</a></div><div class="ttdeci">#define KVM_IRQCHIP_NUM_PINS</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00032">arm_vgic.h:32</a></div></div>
 <div class="ttc" id="airqchip_8c_html_ab06caa34c3a7189a433815036dd3ebb3"><div class="ttname"><a href="irqchip_8c.html#ab06caa34c3a7189a433815036dd3ebb3">setup_routing_entry</a></div><div class="ttdeci">static int setup_routing_entry(struct kvm *kvm, struct kvm_irq_routing_table *rt, struct kvm_kernel_irq_routing_entry *e, const struct kvm_irq_routing_entry *ue)</div><div class="ttdef"><b>Definition:</b> <a href="irqchip_8c_source.html#l00127">irqchip.c:127</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>

@@ -77,7 +77,7 @@ $(function() {
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;linux/kvm.h&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;linux/kvm_host.h&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;trace/events/kvm.h&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;kvm/arm_vgic.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="arm__vgic_8h.html">kvm/arm_vgic.h</a>&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="vgic_8h.html">vgic.h</a>&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/**</span></div>
@@ -90,9 +90,9 @@ $(function() {
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keyword">struct</span> kvm *kvm, <span class="keywordtype">int</span> irq_source_id,</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="keywordtype">int</span> level, <span class="keywordtype">bool</span> line_status)</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> spi_id = e-&gt;irqchip.pin + VGIC_NR_PRIVATE_IRQS;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> spi_id = e-&gt;irqchip.pin + <a class="code" href="arm__vgic_8h.html#ae9d406cdd3eafd831ee41ecf0e48011e">VGIC_NR_PRIVATE_IRQS</a>;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">if</span> (!vgic_valid_spi(kvm, spi_id))</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="arm__vgic_8h.html#adea629c518405f94a45bbe647ef71fcc">vgic_valid_spi</a>(kvm, spi_id))</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">return</span> -EINVAL;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="vgic_8c.html#a87038ce452e0054b853c10ccbbcc78a4">kvm_vgic_inject_irq</a>(kvm, NULL, spi_id, level, NULL);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
@@ -117,7 +117,7 @@ $(function() {
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        e-&gt;set = <a class="code" href="vgic-irqfd_8c.html#aaba342a8b6308d37735bc46dbf9a6828">vgic_irqfd_set_irq</a>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        e-&gt;irqchip.irqchip = ue-&gt;u.irqchip.irqchip;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        e-&gt;irqchip.pin = ue-&gt;u.irqchip.pin;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">if</span> ((e-&gt;irqchip.pin &gt;= KVM_IRQCHIP_NUM_PINS) ||</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">if</span> ((e-&gt;irqchip.pin &gt;= <a class="code" href="arm__vgic_8h.html#a51fde4189b74866c5fa5f3c77ee815a1">KVM_IRQCHIP_NUM_PINS</a>) ||</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            (e-&gt;irqchip.irqchip &gt;= KVM_NR_IRQCHIPS))</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">goto</span> out;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">break</span>;</div>
@@ -195,7 +195,7 @@ $(function() {
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">         * Injecting SPIs is always possible in atomic context</span></div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">         * as long as the damn vgic is initialized.</span></div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">if</span> (unlikely(!vgic_initialized(kvm)))</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">if</span> (unlikely(!<a class="code" href="arm__vgic_8h.html#a92f7a5b2fbbd6b57aaed08e61ba34d43">vgic_initialized</a>(kvm)))</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="vgic-irqfd_8c.html#aaba342a8b6308d37735bc46dbf9a6828">vgic_irqfd_set_irq</a>(e, kvm, irq_source_id, 1, line_status);</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    }</div>
@@ -206,8 +206,8 @@ $(function() {
 <div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="vgic-irqfd_8c.html#ab5dcaa98f287aec5083bd60daf115d71">  135</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="vgic-irqfd_8c.html#ab5dcaa98f287aec5083bd60daf115d71">kvm_vgic_setup_default_irq_routing</a>(<span class="keyword">struct</span> kvm *kvm)</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;{</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keyword">struct </span>kvm_irq_routing_entry *entries;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keyword">struct </span>vgic_dist *dist = &amp;kvm-&gt;arch.vgic;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    u32 nr = dist-&gt;nr_spis;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keyword">struct </span><a class="code" href="structvgic__dist.html">vgic_dist</a> *dist = &amp;kvm-&gt;arch.vgic;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    u32 nr = dist-&gt;<a class="code" href="structvgic__dist.html#a27c507dee00888a89811be38e7ac727e">nr_spis</a>;</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordtype">int</span> i, ret;</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    entries = kcalloc(nr, <span class="keyword">sizeof</span>(*entries), GFP_KERNEL_ACCOUNT);</div>
@@ -224,7 +224,14 @@ $(function() {
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    kfree(entries);</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordflow">return</span> ret;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;}</div>
+<div class="ttc" id="aarm__vgic_8h_html"><div class="ttname"><a href="arm__vgic_8h.html">arm_vgic.h</a></div></div>
+<div class="ttc" id="aarm__vgic_8h_html_a51fde4189b74866c5fa5f3c77ee815a1"><div class="ttname"><a href="arm__vgic_8h.html#a51fde4189b74866c5fa5f3c77ee815a1">KVM_IRQCHIP_NUM_PINS</a></div><div class="ttdeci">#define KVM_IRQCHIP_NUM_PINS</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00032">arm_vgic.h:32</a></div></div>
+<div class="ttc" id="aarm__vgic_8h_html_a92f7a5b2fbbd6b57aaed08e61ba34d43"><div class="ttname"><a href="arm__vgic_8h.html#a92f7a5b2fbbd6b57aaed08e61ba34d43">vgic_initialized</a></div><div class="ttdeci">#define vgic_initialized(k)</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00393">arm_vgic.h:393</a></div></div>
+<div class="ttc" id="aarm__vgic_8h_html_adea629c518405f94a45bbe647ef71fcc"><div class="ttname"><a href="arm__vgic_8h.html#adea629c518405f94a45bbe647ef71fcc">vgic_valid_spi</a></div><div class="ttdeci">#define vgic_valid_spi(k, i)</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00395">arm_vgic.h:395</a></div></div>
+<div class="ttc" id="aarm__vgic_8h_html_ae9d406cdd3eafd831ee41ecf0e48011e"><div class="ttname"><a href="arm__vgic_8h.html#ae9d406cdd3eafd831ee41ecf0e48011e">VGIC_NR_PRIVATE_IRQS</a></div><div class="ttdeci">#define VGIC_NR_PRIVATE_IRQS</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00027">arm_vgic.h:27</a></div></div>
 <div class="ttc" id="airqchip_8c_html_a2c54cf3c324c7d2b9190fffcf4a1f20a"><div class="ttname"><a href="irqchip_8c.html#a2c54cf3c324c7d2b9190fffcf4a1f20a">kvm_set_irq_routing</a></div><div class="ttdeci">int kvm_set_irq_routing(struct kvm *kvm, const struct kvm_irq_routing_entry *ue, unsigned nr, unsigned flags)</div><div class="ttdef"><b>Definition:</b> <a href="irqchip_8c_source.html#l00168">irqchip.c:168</a></div></div>
+<div class="ttc" id="astructvgic__dist_html"><div class="ttname"><a href="structvgic__dist.html">vgic_dist</a></div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00224">arm_vgic.h:224</a></div></div>
+<div class="ttc" id="astructvgic__dist_html_a27c507dee00888a89811be38e7ac727e"><div class="ttname"><a href="structvgic__dist.html#a27c507dee00888a89811be38e7ac727e">vgic_dist::nr_spis</a></div><div class="ttdeci">int nr_spis</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00244">arm_vgic.h:244</a></div></div>
 <div class="ttc" id="avgic-irqfd_8c_html_a93415dbe2d5c7166c8f3f91be7c5d5da"><div class="ttname"><a href="vgic-irqfd_8c.html#a93415dbe2d5c7166c8f3f91be7c5d5da">kvm_populate_msi</a></div><div class="ttdeci">static void kvm_populate_msi(struct kvm_kernel_irq_routing_entry *e, struct kvm_msi *msi)</div><div class="ttdef"><b>Definition:</b> <a href="vgic-irqfd_8c_source.html#l00069">vgic-irqfd.c:69</a></div></div>
 <div class="ttc" id="avgic-irqfd_8c_html_aaba342a8b6308d37735bc46dbf9a6828"><div class="ttname"><a href="vgic-irqfd_8c.html#aaba342a8b6308d37735bc46dbf9a6828">vgic_irqfd_set_irq</a></div><div class="ttdeci">static int vgic_irqfd_set_irq(struct kvm_kernel_irq_routing_entry *e, struct kvm *kvm, int irq_source_id, int level, bool line_status)</div><div class="ttdef"><b>Definition:</b> <a href="vgic-irqfd_8c_source.html#l00018">vgic-irqfd.c:18</a></div></div>
 <div class="ttc" id="avgic-irqfd_8c_html_ab5dcaa98f287aec5083bd60daf115d71"><div class="ttname"><a href="vgic-irqfd_8c.html#ab5dcaa98f287aec5083bd60daf115d71">kvm_vgic_setup_default_irq_routing</a></div><div class="ttdeci">int kvm_vgic_setup_default_irq_routing(struct kvm *kvm)</div><div class="ttdef"><b>Definition:</b> <a href="vgic-irqfd_8c_source.html#l00135">vgic-irqfd.c:135</a></div></div>

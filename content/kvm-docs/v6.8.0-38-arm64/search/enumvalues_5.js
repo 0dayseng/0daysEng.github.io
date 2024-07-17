@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['pkvm_5fid_5fffa_5414',['PKVM_ID_FFA',['../mem__protect_8h.html#acc66c682438b826d6b6b92bdc3462416adf50075ee4c5ffecf767cc7eeab7f19d',1,'mem_protect.h']]],
-  ['pkvm_5fid_5fhost_5415',['PKVM_ID_HOST',['../mem__protect_8h.html#acc66c682438b826d6b6b92bdc3462416a679aada21f0c1b86ab3d7cb820d6dc1e',1,'mem_protect.h']]],
-  ['pkvm_5fid_5fhyp_5416',['PKVM_ID_HYP',['../mem__protect_8h.html#acc66c682438b826d6b6b92bdc3462416ad66e69677c9c0ba36e17f09dcb973163',1,'mem_protect.h']]],
-  ['pkvm_5fnopage_5417',['PKVM_NOPAGE',['../mem__protect_8h.html#ae6773be949982e3a1162ceaef77bd8eea112d25a25112a30c82d51b7486ddb104',1,'mem_protect.h']]],
-  ['pkvm_5fpage_5fowned_5418',['PKVM_PAGE_OWNED',['../mem__protect_8h.html#ae6773be949982e3a1162ceaef77bd8eea0bbbb2e765899e5f69590eaa036e84a9',1,'mem_protect.h']]],
-  ['pkvm_5fpage_5fshared_5fborrowed_5419',['PKVM_PAGE_SHARED_BORROWED',['../mem__protect_8h.html#ae6773be949982e3a1162ceaef77bd8eeae0084c7c33c77c36bbef6e7ce9d49073',1,'mem_protect.h']]],
-  ['pkvm_5fpage_5fshared_5fowned_5420',['PKVM_PAGE_SHARED_OWNED',['../mem__protect_8h.html#ae6773be949982e3a1162ceaef77bd8eea849a7c91998d9d2255d8fa9cf7b070ce',1,'mem_protect.h']]]
+  ['iodev_5fcpuif_5797',['IODEV_CPUIF',['../arm__vgic_8h.html#a7d55542a11eb56d7d2c093ce5e75e885ac67dc30122cf1e2ff45ce17ead4d71db',1,'arm_vgic.h']]],
+  ['iodev_5fdist_5798',['IODEV_DIST',['../arm__vgic_8h.html#a7d55542a11eb56d7d2c093ce5e75e885ac68240095de34962ed690f571683d0df',1,'arm_vgic.h']]],
+  ['iodev_5fits_5799',['IODEV_ITS',['../arm__vgic_8h.html#a7d55542a11eb56d7d2c093ce5e75e885a3c8e2fe20770015f7d22a9a666e3a8fd',1,'arm_vgic.h']]],
+  ['iodev_5fredist_5800',['IODEV_REDIST',['../arm__vgic_8h.html#a7d55542a11eb56d7d2c093ce5e75e885a34e159d88b4995a38067b96166de01e3',1,'arm_vgic.h']]]
 ];

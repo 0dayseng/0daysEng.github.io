@@ -249,13 +249,16 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="vgic-sys-reg-v3_8c_source.html#l00218">218</a> of file <a class="el" href="vgic-sys-reg-v3_8c_source.html">vgic-sys-reg-v3.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;{</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keyword">struct </span>vgic_v3_cpu_if *vgicv3 = &amp;vcpu-&gt;arch.vgic_cpu.vgic_v3;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keyword">struct </span><a class="code" href="structvgic__v3__cpu__if.html">vgic_v3_cpu_if</a> *vgicv3 = &amp;vcpu-&gt;arch.vgic_cpu.vgic_v3;</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordflow">if</span> (apr)</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="keywordflow">return</span> vgicv3-&gt;vgic_ap1r[idx];</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="keywordflow">return</span> vgicv3-&gt;<a class="code" href="structvgic__v3__cpu__if.html#af9ae4462c26a658d09d511c3aaef77da">vgic_ap1r</a>[idx];</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordflow">return</span> vgicv3-&gt;vgic_ap0r[idx];</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordflow">return</span> vgicv3-&gt;<a class="code" href="structvgic__v3__cpu__if.html#ad8a1d5cd820babfcc176bb875e9a0f34">vgic_ap0r</a>[idx];</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;}</div>
+<div class="ttc" id="astructvgic__v3__cpu__if_html"><div class="ttname"><a href="structvgic__v3__cpu__if.html">vgic_v3_cpu_if</a></div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00306">arm_vgic.h:306</a></div></div>
+<div class="ttc" id="astructvgic__v3__cpu__if_html_ad8a1d5cd820babfcc176bb875e9a0f34"><div class="ttname"><a href="structvgic__v3__cpu__if.html#ad8a1d5cd820babfcc176bb875e9a0f34">vgic_v3_cpu_if::vgic_ap0r</a></div><div class="ttdeci">u32 vgic_ap0r[4]</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00310">arm_vgic.h:310</a></div></div>
+<div class="ttc" id="astructvgic__v3__cpu__if_html_af9ae4462c26a658d09d511c3aaef77da"><div class="ttname"><a href="structvgic__v3__cpu__if.html#af9ae4462c26a658d09d511c3aaef77da">vgic_v3_cpu_if::vgic_ap1r</a></div><div class="ttdeci">u32 vgic_ap1r[4]</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00311">arm_vgic.h:311</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -574,19 +577,19 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="vgic-sys-reg-v3_8c_source.html#l00059">59</a> of file <a class="el" href="vgic-sys-reg-v3_8c_source.html">vgic-sys-reg-v3.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">struct </span>vgic_cpu *vgic_v3_cpu = &amp;vcpu-&gt;arch.vgic_cpu;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">struct </span><a class="code" href="structvgic__cpu.html">vgic_cpu</a> *vgic_v3_cpu = &amp;vcpu-&gt;arch.vgic_cpu;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">struct </span><a class="code" href="structvgic__vmcr.html">vgic_vmcr</a> vmcr;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    u64 val;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="vgic-mmio_8c.html#ad275c2ef6d5f7f0d79f101a7dd6dda3a">vgic_get_vmcr</a>(vcpu, &amp;vmcr);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    val = 0;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    val |= FIELD_PREP(ICC_CTLR_EL1_PRI_BITS_MASK, vgic_v3_cpu-&gt;num_pri_bits - 1);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    val |= FIELD_PREP(ICC_CTLR_EL1_ID_BITS_MASK, vgic_v3_cpu-&gt;num_id_bits);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    val |= FIELD_PREP(ICC_CTLR_EL1_PRI_BITS_MASK, vgic_v3_cpu-&gt;<a class="code" href="structvgic__cpu.html#aa4f213707ba2fef674ba6714f51964cb">num_pri_bits</a> - 1);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    val |= FIELD_PREP(ICC_CTLR_EL1_ID_BITS_MASK, vgic_v3_cpu-&gt;<a class="code" href="structvgic__cpu.html#a014c7e7dec9a39dce3ef70598289a5cd">num_id_bits</a>);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    val |= FIELD_PREP(ICC_CTLR_EL1_SEIS_MASK,</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;              FIELD_GET(ICH_VTR_SEIS_MASK,</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                    kvm_vgic_global_state.ich_vtr_el2));</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                    <a class="code" href="arm__vgic_8h.html#a53b0ff890074ba3dc4b1bed11a236394">kvm_vgic_global_state</a>.<a class="code" href="structvgic__global.html#a1cab26f212bc4020051b5cccf8b3f707">ich_vtr_el2</a>));</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    val |= FIELD_PREP(ICC_CTLR_EL1_A3V_MASK,</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;              FIELD_GET(ICH_VTR_A3V_MASK, kvm_vgic_global_state.ich_vtr_el2));</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;              FIELD_GET(ICH_VTR_A3V_MASK, <a class="code" href="arm__vgic_8h.html#a53b0ff890074ba3dc4b1bed11a236394">kvm_vgic_global_state</a>.<a class="code" href="structvgic__global.html#a1cab26f212bc4020051b5cccf8b3f707">ich_vtr_el2</a>));</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">/*</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">     * The VMCR.CTLR value is in ICC_CTLR_EL1 layout.</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">     * Extract it directly using ICC_CTLR_EL1 reg definitions.</span></div>
@@ -598,6 +601,11 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
+<div class="ttc" id="aarm__vgic_8h_html_a53b0ff890074ba3dc4b1bed11a236394"><div class="ttname"><a href="arm__vgic_8h.html#a53b0ff890074ba3dc4b1bed11a236394">kvm_vgic_global_state</a></div><div class="ttdeci">struct vgic_global kvm_vgic_global_state</div></div>
+<div class="ttc" id="astructvgic__cpu_html"><div class="ttname"><a href="structvgic__cpu.html">vgic_cpu</a></div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00325">arm_vgic.h:325</a></div></div>
+<div class="ttc" id="astructvgic__cpu_html_a014c7e7dec9a39dce3ef70598289a5cd"><div class="ttname"><a href="structvgic__cpu.html#a014c7e7dec9a39dce3ef70598289a5cd">vgic_cpu::num_id_bits</a></div><div class="ttdeci">u32 num_id_bits</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00362">arm_vgic.h:362</a></div></div>
+<div class="ttc" id="astructvgic__cpu_html_aa4f213707ba2fef674ba6714f51964cb"><div class="ttname"><a href="structvgic__cpu.html#aa4f213707ba2fef674ba6714f51964cb">vgic_cpu::num_pri_bits</a></div><div class="ttdeci">u32 num_pri_bits</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00359">arm_vgic.h:359</a></div></div>
+<div class="ttc" id="astructvgic__global_html_a1cab26f212bc4020051b5cccf8b3f707"><div class="ttname"><a href="structvgic__global.html#a1cab26f212bc4020051b5cccf8b3f707">vgic_global::ich_vtr_el2</a></div><div class="ttdeci">u32 ich_vtr_el2</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00083">arm_vgic.h:83</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -843,12 +851,13 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="vgic-sys-reg-v3_8c_source.html#l00290">290</a> of file <a class="el" href="vgic-sys-reg-v3_8c_source.html">vgic-sys-reg-v3.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;{</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keyword">struct </span>vgic_v3_cpu_if *vgicv3 = &amp;vcpu-&gt;arch.vgic_cpu.vgic_v3;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keyword">struct </span><a class="code" href="structvgic__v3__cpu__if.html">vgic_v3_cpu_if</a> *vgicv3 = &amp;vcpu-&gt;arch.vgic_cpu.vgic_v3;</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    *val = vgicv3-&gt;vgic_sre;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    *val = vgicv3-&gt;<a class="code" href="structvgic__v3__cpu__if.html#a5f05a28245c89b73a2b39804f53e9729">vgic_sre</a>;</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;}</div>
+<div class="ttc" id="astructvgic__v3__cpu__if_html_a5f05a28245c89b73a2b39804f53e9729"><div class="ttname"><a href="structvgic__v3__cpu__if.html#a5f05a28245c89b73a2b39804f53e9729">vgic_v3_cpu_if::vgic_sre</a></div><div class="ttdeci">u32 vgic_sre</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00309">arm_vgic.h:309</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -900,12 +909,12 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="vgic-sys-reg-v3_8c_source.html#l00208">208</a> of file <a class="el" href="vgic-sys-reg-v3_8c_source.html">vgic-sys-reg-v3.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;{</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keyword">struct </span>vgic_v3_cpu_if *vgicv3 = &amp;vcpu-&gt;arch.vgic_cpu.vgic_v3;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keyword">struct </span><a class="code" href="structvgic__v3__cpu__if.html">vgic_v3_cpu_if</a> *vgicv3 = &amp;vcpu-&gt;arch.vgic_cpu.vgic_v3;</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordflow">if</span> (apr)</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        vgicv3-&gt;vgic_ap1r[idx] = val;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        vgicv3-&gt;<a class="code" href="structvgic__v3__cpu__if.html#af9ae4462c26a658d09d511c3aaef77da">vgic_ap1r</a>[idx] = val;</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        vgicv3-&gt;vgic_ap0r[idx] = val;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        vgicv3-&gt;<a class="code" href="structvgic__v3__cpu__if.html#ad8a1d5cd820babfcc176bb875e9a0f34">vgic_ap0r</a>[idx] = val;</div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1227,7 +1236,7 @@ Here is the call graph for this function:</div>
 <p class="definition">Definition at line <a class="el" href="vgic-sys-reg-v3_8c_source.html#l00013">13</a> of file <a class="el" href="vgic-sys-reg-v3_8c_source.html">vgic-sys-reg-v3.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    u32 host_pri_bits, host_id_bits, host_seis, host_a3v, seis, a3v;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">struct </span>vgic_cpu *vgic_v3_cpu = &amp;vcpu-&gt;arch.vgic_cpu;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">struct </span><a class="code" href="structvgic__cpu.html">vgic_cpu</a> *vgic_v3_cpu = &amp;vcpu-&gt;arch.vgic_cpu;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">struct </span><a class="code" href="structvgic__vmcr.html">vgic_vmcr</a> vmcr;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="vgic-mmio_8c.html#ad275c2ef6d5f7f0d79f101a7dd6dda3a">vgic_get_vmcr</a>(vcpu, &amp;vmcr);</div>
@@ -1237,23 +1246,23 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">     * hardware.</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">     */</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    host_pri_bits = FIELD_GET(ICC_CTLR_EL1_PRI_BITS_MASK, val) + 1;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">if</span> (host_pri_bits &gt; vgic_v3_cpu-&gt;num_pri_bits)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">if</span> (host_pri_bits &gt; vgic_v3_cpu-&gt;<a class="code" href="structvgic__cpu.html#aa4f213707ba2fef674ba6714f51964cb">num_pri_bits</a>)</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">return</span> -EINVAL;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    vgic_v3_cpu-&gt;num_pri_bits = host_pri_bits;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    vgic_v3_cpu-&gt;<a class="code" href="structvgic__cpu.html#aa4f213707ba2fef674ba6714f51964cb">num_pri_bits</a> = host_pri_bits;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    host_id_bits = FIELD_GET(ICC_CTLR_EL1_ID_BITS_MASK, val);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">if</span> (host_id_bits &gt; vgic_v3_cpu-&gt;num_id_bits)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">if</span> (host_id_bits &gt; vgic_v3_cpu-&gt;<a class="code" href="structvgic__cpu.html#a014c7e7dec9a39dce3ef70598289a5cd">num_id_bits</a>)</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">return</span> -EINVAL;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    vgic_v3_cpu-&gt;num_id_bits = host_id_bits;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    vgic_v3_cpu-&gt;<a class="code" href="structvgic__cpu.html#a014c7e7dec9a39dce3ef70598289a5cd">num_id_bits</a> = host_id_bits;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    host_seis = FIELD_GET(ICH_VTR_SEIS_MASK, kvm_vgic_global_state.ich_vtr_el2);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    host_seis = FIELD_GET(ICH_VTR_SEIS_MASK, <a class="code" href="arm__vgic_8h.html#a53b0ff890074ba3dc4b1bed11a236394">kvm_vgic_global_state</a>.<a class="code" href="structvgic__global.html#a1cab26f212bc4020051b5cccf8b3f707">ich_vtr_el2</a>);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    seis = FIELD_GET(ICC_CTLR_EL1_SEIS_MASK, val);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">if</span> (host_seis != seis)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">return</span> -EINVAL;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    host_a3v = FIELD_GET(ICH_VTR_A3V_MASK, kvm_vgic_global_state.ich_vtr_el2);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    host_a3v = FIELD_GET(ICH_VTR_A3V_MASK, <a class="code" href="arm__vgic_8h.html#a53b0ff890074ba3dc4b1bed11a236394">kvm_vgic_global_state</a>.<a class="code" href="structvgic__global.html#a1cab26f212bc4020051b5cccf8b3f707">ich_vtr_el2</a>);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    a3v = FIELD_GET(ICC_CTLR_EL1_A3V_MASK, val);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">if</span> (host_a3v != a3v)</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">return</span> -EINVAL;</div>

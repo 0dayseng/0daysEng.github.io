@@ -1,7 +1,8 @@
 <map id="vgic_v2_populate_lr" name="vgic_v2_populate_lr">
-<area shape="rect" id="node1" title=" " alt="" coords="5,33,157,60"/>
-<area shape="rect" id="node2" href="$vgic_8h.html#a1109d873011f89a4acb4fd461f9f0a45" title=" " alt="" coords="620,33,736,60"/>
-<area shape="rect" id="node3" href="$vgic_8h.html#a9c8f3a32a17b2384ea1cc0c6e0340ad7" title=" " alt="" coords="209,26,360,67"/>
-<area shape="rect" id="node4" href="$vgic_8h.html#a03246bc81a56f8f77c3ee4ea6e27047d" title=" " alt="" coords="205,92,364,118"/>
-<area shape="rect" id="node5" href="$vgic_8h.html#a9bdd8f789c7055ff9681448eecde7072" title=" " alt="" coords="412,58,572,85"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,72,157,99"/>
+<area shape="rect" id="node2" href="$vgic_8h.html#a1109d873011f89a4acb4fd461f9f0a45" title=" " alt="" coords="660,43,776,70"/>
+<area shape="rect" id="node3" href="$vgic_8h.html#a9c8f3a32a17b2384ea1cc0c6e0340ad7" title=" " alt="" coords="229,36,380,77"/>
+<area shape="rect" id="node4" href="$vgic_8h.html#a03246bc81a56f8f77c3ee4ea6e27047d" title=" " alt="" coords="225,102,384,128"/>
+<area shape="rect" id="node6" href="$arm__vgic_8h.html#ad8001fedb7a2cb065c38833241e86b5c" title=" " alt="" coords="205,152,404,179"/>
+<area shape="rect" id="node5" href="$vgic_8h.html#a9bdd8f789c7055ff9681448eecde7072" title=" " alt="" coords="452,68,612,95"/>
 </map>

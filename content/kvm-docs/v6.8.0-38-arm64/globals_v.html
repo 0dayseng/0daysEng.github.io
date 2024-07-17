@@ -76,8 +76,17 @@ $(function() {
 <li>vcpu_dy_runnable()
 : <a class="el" href="kvm__main_8c.html#a06ed191cebec13ce2c4a7d15fdeb5a60">kvm_main.c</a>
 </li>
+<li>vcpu_get_timer
+: <a class="el" href="arm__arch__timer_8h.html#ac8605bb196d5ea061e4acefd2b78046d">arm_arch_timer.h</a>
+</li>
 <li>vcpu_has_wfit_active()
 : <a class="el" href="arch__timer_8c.html#ad210f5f7b0361777290f8b36f023a518">arch_timer.c</a>
+</li>
+<li>vcpu_hptimer
+: <a class="el" href="arm__arch__timer_8h.html#ad5e47541b2bf1738cf450e0b5e00b5eb">arm_arch_timer.h</a>
+</li>
+<li>vcpu_hvtimer
+: <a class="el" href="arm__arch__timer_8h.html#aaa36c0380609fa4a76a912afb410024f">arm_arch_timer.h</a>
 </li>
 <li>vcpu_interrupt_line()
 : <a class="el" href="arm_8c.html#ad5c032f27748700c64b5091daa8ef801">arm.c</a>
@@ -87,6 +96,9 @@ $(function() {
 </li>
 <li>vcpu_mode_is_bad_32bit()
 : <a class="el" href="arm_8c.html#a681ca15cc61ed6524a27b0b1f112a246">arm.c</a>
+</li>
+<li>vcpu_ptimer
+: <a class="el" href="arm__arch__timer_8h.html#a4d166b83ceabb05615e40bf0c219cfbc">arm_arch_timer.h</a>
 </li>
 <li>vcpu_put()
 : <a class="el" href="kvm__main_8c.html#a16e0f63dd5f0d556ed1c9c9999256f85">kvm_main.c</a>
@@ -111,6 +123,12 @@ $(function() {
 </li>
 <li>vcpu_sve_slices
 : <a class="el" href="guest_8c.html#a740b5ac6ae6717a15e8ba03bb0b64ab0">guest.c</a>
+</li>
+<li>vcpu_timer
+: <a class="el" href="arm__arch__timer_8h.html#a0a8e9eb158c9a2fbc985fc1f47057b00">arm_arch_timer.h</a>
+</li>
+<li>vcpu_vtimer
+: <a class="el" href="arm__arch__timer_8h.html#ac0234ea189669eb84d8263946a9d60d6">arm_arch_timer.h</a>
 </li>
 <li>vcpu_write_sys_reg()
 : <a class="el" href="sys__regs_8c.html#adf66277e472bdae2cc839d450085bc4b">sys_regs.c</a>
@@ -170,14 +188,20 @@ $(function() {
 : <a class="el" href="vgic_8h.html#a318016c7ac3592e78d799e9785d4199c">vgic.h</a>
 </li>
 <li>vgic_check_iorange()
-: <a class="el" href="vgic_8h.html#af0cfcc44a93abc13df9a7e364c21cf32">vgic.h</a>
-, <a class="el" href="vgic-kvm-device_8c.html#af0cfcc44a93abc13df9a7e364c21cf32">vgic-kvm-device.c</a>
+: <a class="el" href="vgic-kvm-device_8c.html#af0cfcc44a93abc13df9a7e364c21cf32">vgic-kvm-device.c</a>
+, <a class="el" href="vgic_8h.html#af0cfcc44a93abc13df9a7e364c21cf32">vgic.h</a>
 </li>
 <li>vgic_check_type()
 : <a class="el" href="vgic-kvm-device_8c.html#aabe1882d024943ea3d42bd37678f437f">vgic-kvm-device.c</a>
 </li>
 <li>vgic_clear_lr()
 : <a class="el" href="vgic_8c.html#ae96881aedd2816f45a65d54bf223562d">vgic.c</a>
+</li>
+<li>VGIC_CONFIG_EDGE
+: <a class="el" href="arm__vgic_8h.html#a23952420a7fea6ce35df942e6b0783e7adc1b4a2895063d95a6a3aef89da15915">arm_vgic.h</a>
+</li>
+<li>VGIC_CONFIG_LEVEL
+: <a class="el" href="arm__vgic_8h.html#a23952420a7fea6ce35df942e6b0783e7aff766918bb2eff9dbb94c4edea188a2a">arm_vgic.h</a>
 </li>
 <li>vgic_copy_lpi_list()
 : <a class="el" href="vgic-its_8c.html#a40cc55ab76a861e01174f3b73f396afc">vgic-its.c</a>
@@ -191,16 +215,16 @@ $(function() {
 , <a class="el" href="vgic-mmio_8h.html#aa55fcd97077745e41b48036d59b1c5ce">vgic-mmio.h</a>
 </li>
 <li>vgic_data_mmio_bus_to_host()
-: <a class="el" href="vgic-mmio_8c.html#a9e6543f547732e647a50fab0cb55ba5b">vgic-mmio.c</a>
-, <a class="el" href="vgic-mmio_8h.html#a9e6543f547732e647a50fab0cb55ba5b">vgic-mmio.h</a>
+: <a class="el" href="vgic-mmio_8h.html#a9e6543f547732e647a50fab0cb55ba5b">vgic-mmio.h</a>
+, <a class="el" href="vgic-mmio_8c.html#a9e6543f547732e647a50fab0cb55ba5b">vgic-mmio.c</a>
 </li>
 <li>vgic_debug_destroy()
 : <a class="el" href="vgic-debug_8c.html#a09b8e6f769f95e9667a93dde826b0e1e">vgic-debug.c</a>
 , <a class="el" href="vgic_8h.html#a09b8e6f769f95e9667a93dde826b0e1e">vgic.h</a>
 </li>
 <li>vgic_debug_init()
-: <a class="el" href="vgic_8h.html#a42534d23071b4f3c441c5f82f9e5c1ce">vgic.h</a>
-, <a class="el" href="vgic-debug_8c.html#a42534d23071b4f3c441c5f82f9e5c1ce">vgic-debug.c</a>
+: <a class="el" href="vgic-debug_8c.html#a42534d23071b4f3c441c5f82f9e5c1ce">vgic-debug.c</a>
+, <a class="el" href="vgic_8h.html#a42534d23071b4f3c441c5f82f9e5c1ce">vgic.h</a>
 </li>
 <li>vgic_debug_next()
 : <a class="el" href="vgic-debug_8c.html#a0bd6344fdfc2e2518aa0402af53a4140">vgic-debug.c</a>
@@ -228,8 +252,8 @@ $(function() {
 , <a class="el" href="vgic_8h.html#a73bdb46182a608906704071dffe58b3d">vgic.h</a>
 </li>
 <li>vgic_find_mmio_region()
-: <a class="el" href="vgic-mmio_8c.html#a340c255c8c139816f1ce975f0bd15c64">vgic-mmio.c</a>
-, <a class="el" href="vgic-mmio_8h.html#a340c255c8c139816f1ce975f0bd15c64">vgic-mmio.h</a>
+: <a class="el" href="vgic-mmio_8h.html#a340c255c8c139816f1ce975f0bd15c64">vgic-mmio.h</a>
+, <a class="el" href="vgic-mmio_8c.html#a340c255c8c139816f1ce975f0bd15c64">vgic-mmio.c</a>
 </li>
 <li>vgic_flush_lr_state()
 : <a class="el" href="vgic_8c.html#a498227d2a82836ba11a046b68857e3a3">vgic.c</a>
@@ -269,12 +293,12 @@ $(function() {
 , <a class="el" href="vgic_8h.html#a44a31fe53851677c742d5b2a340e2f56">vgic.h</a>
 </li>
 <li>vgic_get_vmcr()
-: <a class="el" href="vgic-mmio_8c.html#ad275c2ef6d5f7f0d79f101a7dd6dda3a">vgic-mmio.c</a>
-, <a class="el" href="vgic_8h.html#ad275c2ef6d5f7f0d79f101a7dd6dda3a">vgic.h</a>
+: <a class="el" href="vgic_8h.html#ad275c2ef6d5f7f0d79f101a7dd6dda3a">vgic.h</a>
+, <a class="el" href="vgic-mmio_8c.html#ad275c2ef6d5f7f0d79f101a7dd6dda3a">vgic-mmio.c</a>
 </li>
 <li>vgic_has_its()
-: <a class="el" href="vgic_8h.html#a47708b59ddd94e03880996def466067e">vgic.h</a>
-, <a class="el" href="vgic-mmio-v3_8c.html#a47708b59ddd94e03880996def466067e">vgic-mmio-v3.c</a>
+: <a class="el" href="vgic-mmio-v3_8c.html#a47708b59ddd94e03880996def466067e">vgic-mmio-v3.c</a>
+, <a class="el" href="vgic_8h.html#a47708b59ddd94e03880996def466067e">vgic.h</a>
 </li>
 <li>vgic_hw_irq_change_active()
 : <a class="el" href="vgic-mmio_8c.html#a159c8e8099d0a63ede755ad8c31da2b0">vgic-mmio.c</a>
@@ -286,8 +310,14 @@ $(function() {
 : <a class="el" href="vgic-init_8c.html#a39a12fe5ed5534efda33bb215a320a57">vgic-init.c</a>
 , <a class="el" href="vgic_8h.html#a39a12fe5ed5534efda33bb215a320a57">vgic.h</a>
 </li>
+<li>vgic_initialized
+: <a class="el" href="arm__vgic_8h.html#a92f7a5b2fbbd6b57aaed08e61ba34d43">arm_vgic.h</a>
+</li>
 <li>vgic_irq_cmp()
 : <a class="el" href="vgic_8c.html#a74a26281729460bffc169b74551c50ad">vgic.c</a>
+</li>
+<li>vgic_irq_config
+: <a class="el" href="arm__vgic_8h.html#a23952420a7fea6ce35df942e6b0783e7">arm_vgic.h</a>
 </li>
 <li>vgic_irq_get_lr_count()
 : <a class="el" href="vgic_8h.html#a9bdd8f789c7055ff9681448eecde7072">vgic.h</a>
@@ -305,16 +335,22 @@ $(function() {
 <li>vgic_irq_is_sgi
 : <a class="el" href="vgic_8h.html#a67cef97460e9a4080ae437e5a30113a7">vgic.h</a>
 </li>
+<li>vgic_irq_needs_resampling()
+: <a class="el" href="arm__vgic_8h.html#ad8001fedb7a2cb065c38833241e86b5c">arm_vgic.h</a>
+</li>
 <li>vgic_irq_release()
 : <a class="el" href="vgic_8c.html#a7d513558f0ea4ecbc012c98b3522f797">vgic.c</a>
 </li>
 <li>vgic_irq_set_phys_active()
-: <a class="el" href="vgic_8h.html#a6daedd3eec82ca8b68db82b750a24f67">vgic.h</a>
-, <a class="el" href="vgic_8c.html#a6daedd3eec82ca8b68db82b750a24f67">vgic.c</a>
+: <a class="el" href="vgic_8c.html#a6daedd3eec82ca8b68db82b750a24f67">vgic.c</a>
+, <a class="el" href="vgic_8h.html#a6daedd3eec82ca8b68db82b750a24f67">vgic.h</a>
 </li>
 <li>vgic_irq_set_phys_pending()
 : <a class="el" href="vgic_8c.html#a1a63066504dcc87c4250f625d4337ac1">vgic.c</a>
 , <a class="el" href="vgic_8h.html#a1a63066504dcc87c4250f625d4337ac1">vgic.h</a>
+</li>
+<li>VGIC_IRQ_SW_RESAMPLE
+: <a class="el" href="arm__vgic_8h.html#a9c3e9820ba029d65cf7800d0cb4964be">arm_vgic.h</a>
 </li>
 <li>vgic_irqfd_set_irq()
 : <a class="el" href="vgic-irqfd_8c.html#aaba342a8b6308d37735bc46dbf9a6828">vgic-irqfd.c</a>
@@ -516,11 +552,23 @@ $(function() {
 , <a class="el" href="vgic_8h.html#afd97b5d03d2b30ae4481443cdea2e739">vgic.h</a>
 </li>
 <li>vgic_lpis_enabled()
-: <a class="el" href="vgic-mmio-v3_8c.html#aa37f9ed0ed7921675bc4167d4a9d9261">vgic-mmio-v3.c</a>
-, <a class="el" href="vgic_8h.html#aa37f9ed0ed7921675bc4167d4a9d9261">vgic.h</a>
+: <a class="el" href="vgic_8h.html#aa37f9ed0ed7921675bc4167d4a9d9261">vgic.h</a>
+, <a class="el" href="vgic-mmio-v3_8c.html#aa37f9ed0ed7921675bc4167d4a9d9261">vgic-mmio-v3.c</a>
 </li>
 <li>vgic_maintenance_handler()
 : <a class="el" href="vgic-init_8c.html#a489028c2499bdfbe87388b96a832b3ed">vgic-init.c</a>
+</li>
+<li>VGIC_MAX_PRIVATE
+: <a class="el" href="arm__vgic_8h.html#add3f1f00371cf528cb8ffac2642d4ee3">arm_vgic.h</a>
+</li>
+<li>VGIC_MAX_RESERVED
+: <a class="el" href="arm__vgic_8h.html#ad7342134b684299f69395eee1e4fbc05">arm_vgic.h</a>
+</li>
+<li>VGIC_MAX_SPI
+: <a class="el" href="arm__vgic_8h.html#aafd3fd440e6d69c6d2649cfe0023e34c">arm_vgic.h</a>
+</li>
+<li>VGIC_MIN_LPI
+: <a class="el" href="arm__vgic_8h.html#a34000cd3b6c53a8b7848df48d97271cb">arm_vgic.h</a>
 </li>
 <li>vgic_mmio_change_active()
 : <a class="el" href="vgic-mmio_8c.html#ae0e687d9272d9f9e52e4356c2732b289">vgic-mmio.c</a>
@@ -541,8 +589,8 @@ $(function() {
 , <a class="el" href="vgic-mmio_8h.html#ac251d3bc75b5bd5550798715b3f0cf21">vgic-mmio.h</a>
 </li>
 <li>vgic_mmio_read_group()
-: <a class="el" href="vgic-mmio_8c.html#a76a5cf658fa6075b5aa8de86d9ce4188">vgic-mmio.c</a>
-, <a class="el" href="vgic-mmio_8h.html#a76a5cf658fa6075b5aa8de86d9ce4188">vgic-mmio.h</a>
+: <a class="el" href="vgic-mmio_8h.html#a76a5cf658fa6075b5aa8de86d9ce4188">vgic-mmio.h</a>
+, <a class="el" href="vgic-mmio_8c.html#a76a5cf658fa6075b5aa8de86d9ce4188">vgic-mmio.c</a>
 </li>
 <li>vgic_mmio_read_irouter()
 : <a class="el" href="vgic-mmio-v3_8c.html#ab639844a1b212efe7c1c662fd3b686b6">vgic-mmio-v3.c</a>
@@ -586,12 +634,12 @@ $(function() {
 : <a class="el" href="vgic-mmio-v3_8c.html#ac1148d680725735c0fed8465f22931a1">vgic-mmio-v3.c</a>
 </li>
 <li>vgic_mmio_read_rao()
-: <a class="el" href="vgic-mmio_8c.html#af621e9df902480c811d708321e1e751f">vgic-mmio.c</a>
-, <a class="el" href="vgic-mmio_8h.html#af621e9df902480c811d708321e1e751f">vgic-mmio.h</a>
+: <a class="el" href="vgic-mmio_8h.html#af621e9df902480c811d708321e1e751f">vgic-mmio.h</a>
+, <a class="el" href="vgic-mmio_8c.html#af621e9df902480c811d708321e1e751f">vgic-mmio.c</a>
 </li>
 <li>vgic_mmio_read_raz()
-: <a class="el" href="vgic-mmio_8h.html#a24fa2d0b347644c4c901ee775f281056">vgic-mmio.h</a>
-, <a class="el" href="vgic-mmio_8c.html#a24fa2d0b347644c4c901ee775f281056">vgic-mmio.c</a>
+: <a class="el" href="vgic-mmio_8c.html#a24fa2d0b347644c4c901ee775f281056">vgic-mmio.c</a>
+, <a class="el" href="vgic-mmio_8h.html#a24fa2d0b347644c4c901ee775f281056">vgic-mmio.h</a>
 </li>
 <li>vgic_mmio_read_sgipend()
 : <a class="el" href="vgic-mmio-v2_8c.html#a8004c1add09524cf4aa88e910297dac7">vgic-mmio-v2.c</a>
@@ -701,19 +749,19 @@ $(function() {
 : <a class="el" href="vgic-mmio-v3_8c.html#a73464061dcd480eca919531655f1fe7d">vgic-mmio-v3.c</a>
 </li>
 <li>vgic_mmio_write_priority()
-: <a class="el" href="vgic-mmio_8h.html#a654979b0910066eac66257c945040ac1">vgic-mmio.h</a>
-, <a class="el" href="vgic-mmio_8c.html#a654979b0910066eac66257c945040ac1">vgic-mmio.c</a>
+: <a class="el" href="vgic-mmio_8c.html#a654979b0910066eac66257c945040ac1">vgic-mmio.c</a>
+, <a class="el" href="vgic-mmio_8h.html#a654979b0910066eac66257c945040ac1">vgic-mmio.h</a>
 </li>
 <li>vgic_mmio_write_propbase()
 : <a class="el" href="vgic-mmio-v3_8c.html#a16fe30f43e40da912459753baebddf3d">vgic-mmio-v3.c</a>
 </li>
 <li>vgic_mmio_write_sactive()
-: <a class="el" href="vgic-mmio_8h.html#af0464f992e9cc43ef209cfe598d4eb00">vgic-mmio.h</a>
-, <a class="el" href="vgic-mmio_8c.html#af0464f992e9cc43ef209cfe598d4eb00">vgic-mmio.c</a>
+: <a class="el" href="vgic-mmio_8c.html#af0464f992e9cc43ef209cfe598d4eb00">vgic-mmio.c</a>
+, <a class="el" href="vgic-mmio_8h.html#af0464f992e9cc43ef209cfe598d4eb00">vgic-mmio.h</a>
 </li>
 <li>vgic_mmio_write_senable()
-: <a class="el" href="vgic-mmio_8h.html#a0c1f43ac9c640684281b61fd45b48a67">vgic-mmio.h</a>
-, <a class="el" href="vgic-mmio_8c.html#a0c1f43ac9c640684281b61fd45b48a67">vgic-mmio.c</a>
+: <a class="el" href="vgic-mmio_8c.html#a0c1f43ac9c640684281b61fd45b48a67">vgic-mmio.c</a>
+, <a class="el" href="vgic-mmio_8h.html#a0c1f43ac9c640684281b61fd45b48a67">vgic-mmio.h</a>
 </li>
 <li>vgic_mmio_write_sgipendc()
 : <a class="el" href="vgic-mmio-v2_8c.html#a5dbc7437d7a969cd08af33810777e861">vgic-mmio-v2.c</a>
@@ -725,8 +773,8 @@ $(function() {
 : <a class="el" href="vgic-mmio-v2_8c.html#a5fbdffc6aa7bf13d7805dd8bd60842ca">vgic-mmio-v2.c</a>
 </li>
 <li>vgic_mmio_write_spending()
-: <a class="el" href="vgic-mmio_8c.html#a5a75938ee02f87306de4cc6200b830db">vgic-mmio.c</a>
-, <a class="el" href="vgic-mmio_8h.html#a5a75938ee02f87306de4cc6200b830db">vgic-mmio.h</a>
+: <a class="el" href="vgic-mmio_8h.html#a5a75938ee02f87306de4cc6200b830db">vgic-mmio.h</a>
+, <a class="el" href="vgic-mmio_8c.html#a5a75938ee02f87306de4cc6200b830db">vgic-mmio.c</a>
 </li>
 <li>vgic_mmio_write_target()
 : <a class="el" href="vgic-mmio-v2_8c.html#aee92fc893171f9f1de7b535b0abb93e1">vgic-mmio-v2.c</a>
@@ -751,6 +799,18 @@ $(function() {
 : <a class="el" href="vgic-its_8c.html#a94bbb30efc49ad5494a7f4b1410dbe01">vgic-its.c</a>
 , <a class="el" href="vgic_8h.html#a94bbb30efc49ad5494a7f4b1410dbe01">vgic.h</a>
 </li>
+<li>VGIC_NR_IRQS_LEGACY
+: <a class="el" href="arm__vgic_8h.html#a00cb0b5b22477a7cc824de820da0934a">arm_vgic.h</a>
+</li>
+<li>VGIC_NR_PPIS
+: <a class="el" href="arm__vgic_8h.html#a0030e1d724372943f190b24f0150b223">arm_vgic.h</a>
+</li>
+<li>VGIC_NR_PRIVATE_IRQS
+: <a class="el" href="arm__vgic_8h.html#ae9d406cdd3eafd831ee41ecf0e48011e">arm_vgic.h</a>
+</li>
+<li>VGIC_NR_SGIS
+: <a class="el" href="arm__vgic_8h.html#a8143b35cbc0236b1f9fd65b9062ae523">arm_vgic.h</a>
+</li>
 <li>vgic_populate_lr()
 : <a class="el" href="vgic_8c.html#a1d440ccc621cee03cf929f67f1fc5f6a">vgic.c</a>
 </li>
@@ -774,6 +834,9 @@ $(function() {
 <li>vgic_read_irq_line_level_info()
 : <a class="el" href="vgic-mmio_8c.html#a74de2333a13c0e99b703d65cab9666b3">vgic-mmio.c</a>
 , <a class="el" href="vgic-mmio_8h.html#a74de2333a13c0e99b703d65cab9666b3">vgic-mmio.h</a>
+</li>
+<li>vgic_ready
+: <a class="el" href="arm__vgic_8h.html#a8a1cb81c34b893dec2bef262c6fafb15">arm_vgic.h</a>
 </li>
 <li>vgic_register_all_redist_iodevs()
 : <a class="el" href="vgic-mmio-v3_8c.html#ab4506f3b3c9cd6a9a7bf0a909f93a722">vgic-mmio-v3.c</a>
@@ -817,8 +880,8 @@ $(function() {
 : <a class="el" href="vgic-mmio-v3_8c.html#acb01f2a924d79b1fc561becc46d3385c">vgic-mmio-v3.c</a>
 </li>
 <li>vgic_sanitise_shareability()
-: <a class="el" href="vgic-mmio_8h.html#a9095678b4b2a8f010f2e6ff463f50160">vgic-mmio.h</a>
-, <a class="el" href="vgic-mmio-v3_8c.html#a4edffc6494d7b269d406f2d4d1823988">vgic-mmio-v3.c</a>
+: <a class="el" href="vgic-mmio-v3_8c.html#a4edffc6494d7b269d406f2d4d1823988">vgic-mmio-v3.c</a>
+, <a class="el" href="vgic-mmio_8h.html#a9095678b4b2a8f010f2e6ff463f50160">vgic-mmio.h</a>
 </li>
 <li>vgic_save_state()
 : <a class="el" href="vgic_8c.html#a452e7612799aa3bf3f7819ca4c202ef7">vgic.c</a>
@@ -852,9 +915,12 @@ $(function() {
 <li>VGIC_TO_MPIDR
 : <a class="el" href="vgic_8h.html#a6cdd97958d32f8942e038e26dc313540">vgic.h</a>
 </li>
+<li>vgic_type
+: <a class="el" href="arm__vgic_8h.html#a6e40915cc9873f08ca702678ce237ff1">arm_vgic.h</a>
+</li>
 <li>vgic_uaccess()
-: <a class="el" href="vgic-mmio_8h.html#ae999933ae5e2cc6f0d3910bbe33386ba">vgic-mmio.h</a>
-, <a class="el" href="vgic-mmio_8c.html#ae999933ae5e2cc6f0d3910bbe33386ba">vgic-mmio.c</a>
+: <a class="el" href="vgic-mmio_8c.html#ae999933ae5e2cc6f0d3910bbe33386ba">vgic-mmio.c</a>
+, <a class="el" href="vgic-mmio_8h.html#ae999933ae5e2cc6f0d3910bbe33386ba">vgic-mmio.h</a>
 </li>
 <li>vgic_uaccess_read()
 : <a class="el" href="vgic-mmio_8c.html#ac361bf23479dea11a94946fb36408b29">vgic-mmio.c</a>
@@ -864,8 +930,8 @@ $(function() {
 , <a class="el" href="vgic-mmio_8c.html#a1e861d497ff3b956854a4594c66c86b9">vgic-mmio.c</a>
 </li>
 <li>vgic_uaccess_read_pending()
-: <a class="el" href="vgic-mmio_8c.html#a39de6f448012602b72fcc09860d1a0a3">vgic-mmio.c</a>
-, <a class="el" href="vgic-mmio_8h.html#a39de6f448012602b72fcc09860d1a0a3">vgic-mmio.h</a>
+: <a class="el" href="vgic-mmio_8h.html#a39de6f448012602b72fcc09860d1a0a3">vgic-mmio.h</a>
+, <a class="el" href="vgic-mmio_8c.html#a39de6f448012602b72fcc09860d1a0a3">vgic-mmio.c</a>
 </li>
 <li>vgic_uaccess_write()
 : <a class="el" href="vgic-mmio_8c.html#a9ae5f9a11d1a32e0fddb9409399b1d4a">vgic-mmio.c</a>
@@ -887,11 +953,14 @@ $(function() {
 , <a class="el" href="vgic-mmio_8h.html#a3c1f43b5ec001e615e4d50a3e088997d">vgic-mmio.h</a>
 </li>
 <li>vgic_unregister_redist_iodev()
-: <a class="el" href="vgic_8h.html#a4bfec769cd9fe2bddb14200a6147fccd">vgic.h</a>
-, <a class="el" href="vgic-mmio-v3_8c.html#a4bfec769cd9fe2bddb14200a6147fccd">vgic-mmio-v3.c</a>
+: <a class="el" href="vgic-mmio-v3_8c.html#a4bfec769cd9fe2bddb14200a6147fccd">vgic-mmio-v3.c</a>
+, <a class="el" href="vgic_8h.html#a4bfec769cd9fe2bddb14200a6147fccd">vgic.h</a>
 </li>
 <li>vgic_update_vsgi()
 : <a class="el" href="vgic-mmio_8c.html#a3be248161382bb544cfd55db2e3ee52b">vgic-mmio.c</a>
+</li>
+<li>VGIC_V2
+: <a class="el" href="arm__vgic_8h.html#a6e40915cc9873f08ca702678ce237ff1a9516eb794b5e9d2d4817bb361c699a60">arm_vgic.h</a>
 </li>
 <li>vgic_v2_attr_regs_access()
 : <a class="el" href="vgic-kvm-device_8c.html#a78d5c53181a4adf55a58d8277fb751af">vgic-kvm-device.c</a>
@@ -905,6 +974,9 @@ $(function() {
 </li>
 <li>vgic_v2_cpu_registers
 : <a class="el" href="vgic-mmio-v2_8c.html#ac4241542a1457fef0aca460136f5c7ba">vgic-mmio-v2.c</a>
+</li>
+<li>vgic_v2_cpuif_trap
+: <a class="el" href="arm__vgic_8h.html#a8f46deb903409e1ea643f0072ae1552e">arm_vgic.h</a>
 </li>
 <li>vgic_v2_cpuif_uaccess()
 : <a class="el" href="vgic-mmio-v2_8c.html#a47e01844cf58952fedaee31f59b759cc">vgic-mmio-v2.c</a>
@@ -929,8 +1001,8 @@ $(function() {
 : <a class="el" href="vgic-kvm-device_8c.html#a3bb10b83ef8325ecaa3671e9fe9c528c">vgic-kvm-device.c</a>
 </li>
 <li>vgic_v2_get_vmcr()
-: <a class="el" href="vgic-v2_8c.html#aa825011d5b7d02e6b8f6c21746a5af39">vgic-v2.c</a>
-, <a class="el" href="vgic_8h.html#aa740568c7a160fed9d2576ef2908a377">vgic.h</a>
+: <a class="el" href="vgic_8h.html#aa740568c7a160fed9d2576ef2908a377">vgic.h</a>
+, <a class="el" href="vgic-v2_8c.html#aa825011d5b7d02e6b8f6c21746a5af39">vgic-v2.c</a>
 </li>
 <li>vgic_v2_has_attr()
 : <a class="el" href="vgic-kvm-device_8c.html#a1901d2a2905a73826ea1287212aef248">vgic-kvm-device.c</a>
@@ -952,8 +1024,14 @@ $(function() {
 , <a class="el" href="vgic_8h.html#a8321cd156f283292cc531c7ca6358193">vgic.h</a>
 </li>
 <li>vgic_v2_map_resources()
-: <a class="el" href="vgic_8h.html#ac8de91a1f816dcd3b3edba1d074a1aca">vgic.h</a>
-, <a class="el" href="vgic-v2_8c.html#ac8de91a1f816dcd3b3edba1d074a1aca">vgic-v2.c</a>
+: <a class="el" href="vgic-v2_8c.html#ac8de91a1f816dcd3b3edba1d074a1aca">vgic-v2.c</a>
+, <a class="el" href="vgic_8h.html#ac8de91a1f816dcd3b3edba1d074a1aca">vgic.h</a>
+</li>
+<li>VGIC_V2_MAX_CPUS
+: <a class="el" href="arm__vgic_8h.html#a919dfd28be18085c0df4a1e66f3663f5">arm_vgic.h</a>
+</li>
+<li>VGIC_V2_MAX_LRS
+: <a class="el" href="arm__vgic_8h.html#abbc743cbfefbb1b95655e63b7505b48f">arm_vgic.h</a>
 </li>
 <li>vgic_v2_parse_attr()
 : <a class="el" href="vgic-kvm-device_8c.html#aa6e244467a63a98cec7698162df49572">vgic-kvm-device.c</a>
@@ -997,6 +1075,9 @@ $(function() {
 <li>vgic_v2_write_lr()
 : <a class="el" href="vgic-v2_8c.html#ad8c03dce2e41ca3c35de3897603bb9e0">vgic-v2.c</a>
 </li>
+<li>VGIC_V3
+: <a class="el" href="arm__vgic_8h.html#a6e40915cc9873f08ca702678ce237ff1a6556967af9084ab2c8d36e7faf368d1e">arm_vgic.h</a>
+</li>
 <li>vgic_v3_alloc_redist_region()
 : <a class="el" href="vgic-mmio-v3_8c.html#a78fb08dd130c0b8fc504e4725cd4f370">vgic-mmio-v3.c</a>
 </li>
@@ -1018,15 +1099,19 @@ $(function() {
 : <a class="el" href="vgic_8h.html#ae6c5f6437d5d194daa8d1485c3dfe27b">vgic.h</a>
 , <a class="el" href="vgic-sys-reg-v3_8c.html#ae6c5f6437d5d194daa8d1485c3dfe27b">vgic-sys-reg-v3.c</a>
 </li>
+<li>vgic_v3_cpuif_trap
+: <a class="el" href="arm__vgic_8h.html#a6659017e8f125c9d04cbef018aebf2be">arm_vgic.h</a>
+</li>
 <li>vgic_v3_dispatch_sgi()
 : <a class="el" href="vgic-mmio-v3_8c.html#a7df84da3229db55762dde7ac4e1b3e96">vgic-mmio-v3.c</a>
+, <a class="el" href="arm__vgic_8h.html#a7df84da3229db55762dde7ac4e1b3e96">arm_vgic.h</a>
 </li>
 <li>vgic_v3_dist_registers
 : <a class="el" href="vgic-mmio-v3_8c.html#a04f164757c56887adde5a7ba053db28f">vgic-mmio-v3.c</a>
 </li>
 <li>vgic_v3_dist_uaccess()
-: <a class="el" href="vgic_8h.html#a744d3ea323c85b7c3528ccc1a3fd6180">vgic.h</a>
-, <a class="el" href="vgic-mmio-v3_8c.html#a744d3ea323c85b7c3528ccc1a3fd6180">vgic-mmio-v3.c</a>
+: <a class="el" href="vgic-mmio-v3_8c.html#a744d3ea323c85b7c3528ccc1a3fd6180">vgic-mmio-v3.c</a>
+, <a class="el" href="vgic_8h.html#a744d3ea323c85b7c3528ccc1a3fd6180">vgic.h</a>
 </li>
 <li>vgic_v3_enable()
 : <a class="el" href="vgic-v3_8c.html#abe9a2245dfa0d76d61c99b60f714a513">vgic-v3.c</a>
@@ -1055,8 +1140,8 @@ $(function() {
 , <a class="el" href="vgic_8h.html#ab7ab2fb9c9721de227541e7cc6da7e3e">vgic.h</a>
 </li>
 <li>vgic_v3_has_cpu_sysregs_attr()
-: <a class="el" href="vgic_8h.html#af8d4c0e182ab36b9414c4dcaad810793">vgic.h</a>
-, <a class="el" href="vgic-sys-reg-v3_8c.html#af8d4c0e182ab36b9414c4dcaad810793">vgic-sys-reg-v3.c</a>
+: <a class="el" href="vgic-sys-reg-v3_8c.html#af8d4c0e182ab36b9414c4dcaad810793">vgic-sys-reg-v3.c</a>
+, <a class="el" href="vgic_8h.html#af8d4c0e182ab36b9414c4dcaad810793">vgic.h</a>
 </li>
 <li>vgic_v3_init_dist_iodev()
 : <a class="el" href="vgic-mmio-v3_8c.html#ab423a52c4f34cfe2d13a8da61cba66cb">vgic-mmio-v3.c</a>
@@ -1074,12 +1159,21 @@ $(function() {
 : <a class="el" href="vgic-v3_8c.html#ac8f115520573cc0407f90177aeccfed9">vgic-v3.c</a>
 , <a class="el" href="vgic_8h.html#ac8f115520573cc0407f90177aeccfed9">vgic.h</a>
 </li>
+<li>VGIC_V3_LR_INDEX
+: <a class="el" href="arm__vgic_8h.html#a5272f1910695fe8e411dc283b72faabc">arm_vgic.h</a>
+</li>
 <li>vgic_v3_map_resources()
 : <a class="el" href="vgic-v3_8c.html#a8c2e4753883533516b45a2bbf9dad1ce">vgic-v3.c</a>
 , <a class="el" href="vgic_8h.html#a8c2e4753883533516b45a2bbf9dad1ce">vgic.h</a>
 </li>
 <li>vgic_v3_max_apr_idx()
 : <a class="el" href="vgic_8h.html#a57d3462d7e7eac5b34b9fcbd18b69643">vgic.h</a>
+</li>
+<li>VGIC_V3_MAX_CPUS
+: <a class="el" href="arm__vgic_8h.html#a068e6ffdc2074e5125c730fb51f9f2ca">arm_vgic.h</a>
+</li>
+<li>VGIC_V3_MAX_LRS
+: <a class="el" href="arm__vgic_8h.html#ab7bff1a16cbcc734e62caae7ec19b36e">arm_vgic.h</a>
 </li>
 <li>vgic_v3_parse_attr()
 : <a class="el" href="vgic-kvm-device_8c.html#ae16a58808d1a84f4f378a2ff4343d200">vgic-kvm-device.c</a>
@@ -1152,7 +1246,8 @@ $(function() {
 , <a class="el" href="vgic_8h.html#aa3f97179d90d3ed6a8920d1c57496380">vgic.h</a>
 </li>
 <li>vgic_v4_commit()
-: <a class="el" href="vgic-v4_8c.html#a043911fe4b149ad2ca234282ce4e67df">vgic-v4.c</a>
+: <a class="el" href="arm__vgic_8h.html#a043911fe4b149ad2ca234282ce4e67df">arm_vgic.h</a>
+, <a class="el" href="vgic-v4_8c.html#a043911fe4b149ad2ca234282ce4e67df">vgic-v4.c</a>
 </li>
 <li>vgic_v4_configure_vsgis()
 : <a class="el" href="vgic-v4_8c.html#a822de9f2b97fbc48164c88a7c0ac68f1">vgic-v4.c</a>
@@ -1177,20 +1272,25 @@ $(function() {
 </li>
 <li>vgic_v4_load()
 : <a class="el" href="vgic-v4_8c.html#ac2966fbf90610bb8a0525cbd903f7477">vgic-v4.c</a>
+, <a class="el" href="arm__vgic_8h.html#ac2966fbf90610bb8a0525cbd903f7477">arm_vgic.h</a>
 </li>
 <li>vgic_v4_put()
 : <a class="el" href="vgic-v4_8c.html#aeafcb3e6b67ea32ed8e59d009252e565">vgic-v4.c</a>
+, <a class="el" href="arm__vgic_8h.html#aeafcb3e6b67ea32ed8e59d009252e565">arm_vgic.h</a>
 </li>
 <li>vgic_v4_request_vpe_irq()
-: <a class="el" href="vgic-v4_8c.html#af99c2f70dd91a57879b3a2f583e49a4a">vgic-v4.c</a>
-, <a class="el" href="vgic_8h.html#af99c2f70dd91a57879b3a2f583e49a4a">vgic.h</a>
+: <a class="el" href="vgic_8h.html#af99c2f70dd91a57879b3a2f583e49a4a">vgic.h</a>
+, <a class="el" href="vgic-v4_8c.html#af99c2f70dd91a57879b3a2f583e49a4a">vgic-v4.c</a>
 </li>
 <li>vgic_v4_sync_sgi_config()
 : <a class="el" href="vgic-v4_8c.html#a52ef6dc22d433838a0e9db0353a69cb1">vgic-v4.c</a>
 </li>
 <li>vgic_v4_teardown()
-: <a class="el" href="vgic_8h.html#ac805e466fa8f454112c11904ef8d41ce">vgic.h</a>
-, <a class="el" href="vgic-v4_8c.html#ac805e466fa8f454112c11904ef8d41ce">vgic-v4.c</a>
+: <a class="el" href="vgic-v4_8c.html#ac805e466fa8f454112c11904ef8d41ce">vgic-v4.c</a>
+, <a class="el" href="vgic_8h.html#ac805e466fa8f454112c11904ef8d41ce">vgic.h</a>
+</li>
+<li>vgic_valid_spi
+: <a class="el" href="arm__vgic_8h.html#adea629c518405f94a45bbe647ef71fcc">arm_vgic.h</a>
 </li>
 <li>vgic_validate_injection()
 : <a class="el" href="vgic_8c.html#a19d9c44a40cc76ccbd25bd8e0ec38a08">vgic.c</a>

@@ -1,8 +1,9 @@
 <map id="kvm_vcpu_pmu_restore_guest" name="kvm_vcpu_pmu_restore_guest">
-<area shape="rect" id="node1" title=" " alt="" coords="5,49,184,90"/>
-<area shape="rect" id="node2" href="$pmu_8c.html#abf97c7a6b0768cbe660dea1a404bc79b" title=" " alt="" coords="252,5,419,32"/>
-<area shape="rect" id="node3" href="$pmu_8c.html#ad4ce451e7a40f149ed26e7ce8d9700d4" title=" " alt="" coords="232,107,439,133"/>
-<area shape="rect" id="node6" href="$pmu_8c.html#a98e21a6fa41b3490e6b1356884b18d5f" title=" " alt="" coords="234,56,437,83"/>
-<area shape="rect" id="node4" href="$pmu_8c.html#a4fbb4321f3ca694d651e668bb064aa48" title=" " alt="" coords="487,41,700,82"/>
-<area shape="rect" id="node5" href="$pmu_8c.html#a78259b4926a270689ce9846f2d661c5d" title=" " alt="" coords="511,106,676,147"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,74,184,115"/>
+<area shape="rect" id="node2" href="$arm__pmu_8h.html#a7a4fb2cf1fb48c203893224b94564f63" title=" " alt="" coords="236,5,435,32"/>
+<area shape="rect" id="node3" href="$pmu_8c.html#abf97c7a6b0768cbe660dea1a404bc79b" title=" " alt="" coords="252,56,419,83"/>
+<area shape="rect" id="node4" href="$pmu_8c.html#ad4ce451e7a40f149ed26e7ce8d9700d4" title=" " alt="" coords="232,107,439,133"/>
+<area shape="rect" id="node7" href="$pmu_8c.html#a98e21a6fa41b3490e6b1356884b18d5f" title=" " alt="" coords="234,157,437,184"/>
+<area shape="rect" id="node5" href="$pmu_8c.html#a4fbb4321f3ca694d651e668bb064aa48" title=" " alt="" coords="487,91,700,133"/>
+<area shape="rect" id="node6" href="$pmu_8c.html#a78259b4926a270689ce9846f2d661c5d" title=" " alt="" coords="511,157,676,198"/>
 </map>

@@ -74,7 +74,7 @@ $(function() {
 <div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="trace__arm_8h.html#a12da7942ea959cbd96983f4001f8861e">    3</a></span>&#160;<span class="preprocessor">#define _TRACE_ARM_ARM64_KVM_H</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;asm/kvm_emulate.h&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;kvm/arm_arch_timer.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="arm__arch__timer_8h.html">kvm/arm_arch_timer.h</a>&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;linux/tracepoint.h&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#undef TRACE_SYSTEM</span></div>
@@ -295,7 +295,7 @@ $(function() {
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;);</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
 <div class="line"><a name="l00226"></a><span class="lineno"><a class="line" href="trace__arm_8h.html#adf774064a07dd43baf83011107ffcc97">  226</a></span>&#160;<a class="code" href="trace__arm_8h.html#af63d0f9d1e84ed3d4045b4ef03ece773">TRACE_EVENT</a>(kvm_get_timer_map,</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    TP_PROTO(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> vcpu_id, <span class="keyword">struct</span> timer_map *map),</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    TP_PROTO(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> vcpu_id, <span class="keyword">struct</span> <a class="code" href="structtimer__map.html">timer_map</a> *map),</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    TP_ARGS(vcpu_id, map),</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    TP_STRUCT__entry(</div>
@@ -308,13 +308,13 @@ $(function() {
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    TP_fast_assign(</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        __entry-&gt;vcpu_id        = vcpu_id;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        __entry-&gt;direct_vtimer      = arch_timer_ctx_index(map-&gt;direct_vtimer);</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        __entry-&gt;direct_vtimer      = <a class="code" href="arm__arch__timer_8h.html#ab00b3cec76a84a6026b16444312632c4">arch_timer_ctx_index</a>(map-&gt;<a class="code" href="structtimer__map.html#a1a657a149bb10d92618fa5409a793e56">direct_vtimer</a>);</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        __entry-&gt;direct_ptimer =</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            (map-&gt;direct_ptimer) ? arch_timer_ctx_index(map-&gt;direct_ptimer) : -1;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            (map-&gt;<a class="code" href="structtimer__map.html#a1c5c90c0652f7c961e0f2ed7b658986b">direct_ptimer</a>) ? <a class="code" href="arm__arch__timer_8h.html#ab00b3cec76a84a6026b16444312632c4">arch_timer_ctx_index</a>(map-&gt;<a class="code" href="structtimer__map.html#a1c5c90c0652f7c961e0f2ed7b658986b">direct_ptimer</a>) : -1;</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        __entry-&gt;emul_vtimer =</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;            (map-&gt;emul_vtimer) ? arch_timer_ctx_index(map-&gt;emul_vtimer) : -1;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;            (map-&gt;<a class="code" href="structtimer__map.html#ae411a9ed5e6336e94a819017949c3017">emul_vtimer</a>) ? <a class="code" href="arm__arch__timer_8h.html#ab00b3cec76a84a6026b16444312632c4">arch_timer_ctx_index</a>(map-&gt;<a class="code" href="structtimer__map.html#ae411a9ed5e6336e94a819017949c3017">emul_vtimer</a>) : -1;</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        __entry-&gt;emul_ptimer =</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            (map-&gt;emul_ptimer) ? arch_timer_ctx_index(map-&gt;emul_ptimer) : -1;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            (map-&gt;<a class="code" href="structtimer__map.html#a59595aeab087b1861cf6b39c284791f1">emul_ptimer</a>) ? <a class="code" href="arm__arch__timer_8h.html#ab00b3cec76a84a6026b16444312632c4">arch_timer_ctx_index</a>(map-&gt;<a class="code" href="structtimer__map.html#a59595aeab087b1861cf6b39c284791f1">emul_ptimer</a>) : -1;</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    ),</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    TP_printk(<span class="stringliteral">&quot;VCPU: %ld, dv: %d, dp: %d, ev: %d, ep: %d&quot;</span>,</div>
@@ -326,7 +326,7 @@ $(function() {
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;);</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
 <div class="line"><a name="l00257"></a><span class="lineno"><a class="line" href="trace__arm_8h.html#a78008dc40927b92d86a2666673348a9e">  257</a></span>&#160;<a class="code" href="trace__arm_8h.html#af63d0f9d1e84ed3d4045b4ef03ece773">TRACE_EVENT</a>(kvm_timer_save_state,</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    TP_PROTO(<span class="keyword">struct</span> arch_timer_context *ctx),</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    TP_PROTO(<span class="keyword">struct</span> <a class="code" href="structarch__timer__context.html">arch_timer_context</a> *ctx),</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    TP_ARGS(ctx),</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    TP_STRUCT__entry(</div>
@@ -338,7 +338,7 @@ $(function() {
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    TP_fast_assign(</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        __entry-&gt;ctl            = <a class="code" href="arch__timer_8c.html#ad7dab91af9f69654aa27010f96125c13">timer_get_ctl</a>(ctx);</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        __entry-&gt;cval           = <a class="code" href="arch__timer_8c.html#a848ba80b4ffee7a071e37abb241262cd">timer_get_cval</a>(ctx);</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        __entry-&gt;timer_idx      = arch_timer_ctx_index(ctx);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        __entry-&gt;timer_idx      = <a class="code" href="arm__arch__timer_8h.html#ab00b3cec76a84a6026b16444312632c4">arch_timer_ctx_index</a>(ctx);</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    ),</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    TP_printk(<span class="stringliteral">&quot;   CTL: %#08lx CVAL: %#16llx arch_timer_ctx_index: %d&quot;</span>,</div>
@@ -348,7 +348,7 @@ $(function() {
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;);</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
 <div class="line"><a name="l00279"></a><span class="lineno"><a class="line" href="trace__arm_8h.html#ad125470768ce85f39b81f5aa9a0183be">  279</a></span>&#160;<a class="code" href="trace__arm_8h.html#af63d0f9d1e84ed3d4045b4ef03ece773">TRACE_EVENT</a>(kvm_timer_restore_state,</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    TP_PROTO(<span class="keyword">struct</span> arch_timer_context *ctx),</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    TP_PROTO(<span class="keyword">struct</span> <a class="code" href="structarch__timer__context.html">arch_timer_context</a> *ctx),</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    TP_ARGS(ctx),</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160; </div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    TP_STRUCT__entry(</div>
@@ -360,7 +360,7 @@ $(function() {
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    TP_fast_assign(</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        __entry-&gt;ctl            = <a class="code" href="arch__timer_8c.html#ad7dab91af9f69654aa27010f96125c13">timer_get_ctl</a>(ctx);</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        __entry-&gt;cval           = <a class="code" href="arch__timer_8c.html#a848ba80b4ffee7a071e37abb241262cd">timer_get_cval</a>(ctx);</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        __entry-&gt;timer_idx      = arch_timer_ctx_index(ctx);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        __entry-&gt;timer_idx      = <a class="code" href="arm__arch__timer_8h.html#ab00b3cec76a84a6026b16444312632c4">arch_timer_ctx_index</a>(ctx);</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    ),</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    TP_printk(<span class="stringliteral">&quot;CTL: %#08lx CVAL: %#16llx arch_timer_ctx_index: %d&quot;</span>,</div>
@@ -370,7 +370,7 @@ $(function() {
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;);</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; </div>
 <div class="line"><a name="l00301"></a><span class="lineno"><a class="line" href="trace__arm_8h.html#ac02a519516c9376bce31c3c094ffb68f">  301</a></span>&#160;<a class="code" href="trace__arm_8h.html#af63d0f9d1e84ed3d4045b4ef03ece773">TRACE_EVENT</a>(kvm_timer_hrtimer_expire,</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    TP_PROTO(<span class="keyword">struct</span> arch_timer_context *ctx),</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    TP_PROTO(<span class="keyword">struct</span> <a class="code" href="structarch__timer__context.html">arch_timer_context</a> *ctx),</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    TP_ARGS(ctx),</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    TP_STRUCT__entry(</div>
@@ -378,14 +378,14 @@ $(function() {
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    ),</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160; </div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    TP_fast_assign(</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        __entry-&gt;timer_idx      = arch_timer_ctx_index(ctx);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        __entry-&gt;timer_idx      = <a class="code" href="arm__arch__timer_8h.html#ab00b3cec76a84a6026b16444312632c4">arch_timer_ctx_index</a>(ctx);</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    ),</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    TP_printk(<span class="stringliteral">&quot;arch_timer_ctx_index: %d&quot;</span>, __entry-&gt;timer_idx)</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;);</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
 <div class="line"><a name="l00316"></a><span class="lineno"><a class="line" href="trace__arm_8h.html#a255d5b2e434c20672ee4fa63e14918b2">  316</a></span>&#160;<a class="code" href="trace__arm_8h.html#af63d0f9d1e84ed3d4045b4ef03ece773">TRACE_EVENT</a>(kvm_timer_emulate,</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    TP_PROTO(<span class="keyword">struct</span> arch_timer_context *ctx, <span class="keywordtype">bool</span> should_fire),</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    TP_PROTO(<span class="keyword">struct</span> <a class="code" href="structarch__timer__context.html">arch_timer_context</a> *ctx, <span class="keywordtype">bool</span> should_fire),</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    TP_ARGS(ctx, should_fire),</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160; </div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    TP_STRUCT__entry(</div>
@@ -394,7 +394,7 @@ $(function() {
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    ),</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160; </div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    TP_fast_assign(</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        __entry-&gt;timer_idx      = arch_timer_ctx_index(ctx);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        __entry-&gt;timer_idx      = <a class="code" href="arm__arch__timer_8h.html#ab00b3cec76a84a6026b16444312632c4">arch_timer_ctx_index</a>(ctx);</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        __entry-&gt;should_fire        = should_fire;</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    ),</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160; </div>
@@ -498,9 +498,17 @@ $(function() {
 <div class="ttc" id="aarch__timer_8c_html_a5abc04b494763cd0814855753e56671f"><div class="ttname"><a href="arch__timer_8c.html#a5abc04b494763cd0814855753e56671f">kvm_timer_update_irq</a></div><div class="ttdeci">static void kvm_timer_update_irq(struct kvm_vcpu *vcpu, bool new_level, struct arch_timer_context *timer_ctx)</div><div class="ttdef"><b>Definition:</b> <a href="arch__timer_8c_source.html#l00445">arch_timer.c:445</a></div></div>
 <div class="ttc" id="aarch__timer_8c_html_a848ba80b4ffee7a071e37abb241262cd"><div class="ttname"><a href="arch__timer_8c.html#a848ba80b4ffee7a071e37abb241262cd">timer_get_cval</a></div><div class="ttdeci">u64 timer_get_cval(struct arch_timer_context *ctxt)</div><div class="ttdef"><b>Definition:</b> <a href="arch__timer_8c_source.html#l00085">arch_timer.c:85</a></div></div>
 <div class="ttc" id="aarch__timer_8c_html_ad7dab91af9f69654aa27010f96125c13"><div class="ttname"><a href="arch__timer_8c.html#ad7dab91af9f69654aa27010f96125c13">timer_get_ctl</a></div><div class="ttdeci">u32 timer_get_ctl(struct arch_timer_context *ctxt)</div><div class="ttdef"><b>Definition:</b> <a href="arch__timer_8c_source.html#l00066">arch_timer.c:66</a></div></div>
+<div class="ttc" id="aarm__arch__timer_8h_html"><div class="ttname"><a href="arm__arch__timer_8h.html">arm_arch_timer.h</a></div></div>
+<div class="ttc" id="aarm__arch__timer_8h_html_ab00b3cec76a84a6026b16444312632c4"><div class="ttname"><a href="arm__arch__timer_8h.html#ab00b3cec76a84a6026b16444312632c4">arch_timer_ctx_index</a></div><div class="ttdeci">#define arch_timer_ctx_index(ctx)</div><div class="ttdef"><b>Definition:</b> <a href="arm__arch__timer_8h_source.html#l00129">arm_arch_timer.h:129</a></div></div>
 <div class="ttc" id="akvm__main_8c_html_aa2c75d9780a1fec0d5f1351fe501392b"><div class="ttname"><a href="kvm__main_8c.html#aa2c75d9780a1fec0d5f1351fe501392b">kvm_exit</a></div><div class="ttdeci">void kvm_exit(void)</div><div class="ttdef"><b>Definition:</b> <a href="kvm__main_8c_source.html#l06495">kvm_main.c:6495</a></div></div>
 <div class="ttc" id="ammu_8c_html_a02fcf6f3335d5fa450266c18e6e8f0a5"><div class="ttname"><a href="mmu_8c.html#a02fcf6f3335d5fa450266c18e6e8f0a5">kvm_set_way_flush</a></div><div class="ttdeci">void kvm_set_way_flush(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="mmu_8c_source.html#l02102">mmu.c:2102</a></div></div>
 <div class="ttc" id="ammu_8c_html_a9b63a0026cbf8d3884da7ec58add5c0c"><div class="ttname"><a href="mmu_8c.html#a9b63a0026cbf8d3884da7ec58add5c0c">kvm_toggle_cache</a></div><div class="ttdeci">void kvm_toggle_cache(struct kvm_vcpu *vcpu, bool was_enabled)</div><div class="ttdef"><b>Definition:</b> <a href="mmu_8c_source.html#l02123">mmu.c:2123</a></div></div>
+<div class="ttc" id="astructarch__timer__context_html"><div class="ttname"><a href="structarch__timer__context.html">arch_timer_context</a></div><div class="ttdef"><b>Definition:</b> <a href="arm__arch__timer_8h_source.html#l00053">arm_arch_timer.h:53</a></div></div>
+<div class="ttc" id="astructtimer__map_html"><div class="ttname"><a href="structtimer__map.html">timer_map</a></div><div class="ttdef"><b>Definition:</b> <a href="arm__arch__timer_8h_source.html#l00078">arm_arch_timer.h:78</a></div></div>
+<div class="ttc" id="astructtimer__map_html_a1a657a149bb10d92618fa5409a793e56"><div class="ttname"><a href="structtimer__map.html#a1a657a149bb10d92618fa5409a793e56">timer_map::direct_vtimer</a></div><div class="ttdeci">struct arch_timer_context * direct_vtimer</div><div class="ttdef"><b>Definition:</b> <a href="arm__arch__timer_8h_source.html#l00079">arm_arch_timer.h:79</a></div></div>
+<div class="ttc" id="astructtimer__map_html_a1c5c90c0652f7c961e0f2ed7b658986b"><div class="ttname"><a href="structtimer__map.html#a1c5c90c0652f7c961e0f2ed7b658986b">timer_map::direct_ptimer</a></div><div class="ttdeci">struct arch_timer_context * direct_ptimer</div><div class="ttdef"><b>Definition:</b> <a href="arm__arch__timer_8h_source.html#l00080">arm_arch_timer.h:80</a></div></div>
+<div class="ttc" id="astructtimer__map_html_a59595aeab087b1861cf6b39c284791f1"><div class="ttname"><a href="structtimer__map.html#a59595aeab087b1861cf6b39c284791f1">timer_map::emul_ptimer</a></div><div class="ttdeci">struct arch_timer_context * emul_ptimer</div><div class="ttdef"><b>Definition:</b> <a href="arm__arch__timer_8h_source.html#l00082">arm_arch_timer.h:82</a></div></div>
+<div class="ttc" id="astructtimer__map_html_ae411a9ed5e6336e94a819017949c3017"><div class="ttname"><a href="structtimer__map.html#ae411a9ed5e6336e94a819017949c3017">timer_map::emul_vtimer</a></div><div class="ttdeci">struct arch_timer_context * emul_vtimer</div><div class="ttdef"><b>Definition:</b> <a href="arm__arch__timer_8h_source.html#l00081">arm_arch_timer.h:81</a></div></div>
 <div class="ttc" id="atrace__arm_8h_html_af63d0f9d1e84ed3d4045b4ef03ece773"><div class="ttname"><a href="trace__arm_8h.html#af63d0f9d1e84ed3d4045b4ef03ece773">TRACE_EVENT</a></div><div class="ttdeci">TRACE_EVENT(kvm_entry, TP_PROTO(unsigned long vcpu_pc), TP_ARGS(vcpu_pc), TP_STRUCT__entry(__field(unsigned long, vcpu_pc)), TP_fast_assign(__entry-&gt;vcpu_pc=vcpu_pc;), TP_printk(&quot;PC: 0x%016lx&quot;, __entry-&gt;vcpu_pc))</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

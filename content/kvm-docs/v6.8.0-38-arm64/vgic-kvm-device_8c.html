@@ -73,7 +73,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;linux/kvm_host.h&gt;</code><br />
-<code>#include &lt;kvm/arm_vgic.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="arm__vgic_8h_source.html">kvm/arm_vgic.h</a>&gt;</code><br />
 <code>#include &lt;linux/uaccess.h&gt;</code><br />
 <code>#include &lt;asm/kvm_mmu.h&gt;</code><br />
 <code>#include &lt;asm/cputype.h&gt;</code><br />
@@ -83,14 +83,28 @@ Include dependency graph for vgic-kvm-device.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="vgic-kvm-device_8c__incl.png" border="0" usemap="#aarch_2arm64_2kvm_2vgic_2vgic-kvm-device_8c" alt=""/></div>
 <map name="aarch_2arm64_2kvm_2vgic_2vgic-kvm-device_8c" id="aarch_2arm64_2kvm_2vgic_2vgic-kvm-device_8c">
-<area shape="rect" title=" " alt="" coords="346,5,506,47"/>
-<area shape="rect" title=" " alt="" coords="5,95,140,121"/>
-<area shape="rect" title=" " alt="" coords="164,95,291,121"/>
-<area shape="rect" title=" " alt="" coords="315,95,438,121"/>
-<area shape="rect" title=" " alt="" coords="429,177,565,203"/>
-<area shape="rect" title=" " alt="" coords="513,95,632,121"/>
-<area shape="rect" href="vgic_8h.html" title=" " alt="" coords="657,95,718,121"/>
-<area shape="rect" title=" " alt="" coords="609,169,765,211"/>
+<area shape="rect" title=" " alt="" coords="1214,5,1374,47"/>
+<area shape="rect" title=" " alt="" coords="719,95,853,121"/>
+<area shape="rect" href="arm__vgic_8h.html" title=" " alt="" coords="877,95,1004,121"/>
+<area shape="rect" title=" " alt="" coords="1183,95,1306,121"/>
+<area shape="rect" title=" " alt="" coords="1714,177,1850,203"/>
+<area shape="rect" title=" " alt="" coords="1381,95,1500,121"/>
+<area shape="rect" href="vgic_8h.html" title=" " alt="" coords="1751,95,1813,121"/>
+<area shape="rect" title=" " alt="" coords="5,177,100,203"/>
+<area shape="rect" title=" " alt="" coords="125,177,223,203"/>
+<area shape="rect" title=" " alt="" coords="248,177,375,203"/>
+<area shape="rect" title=" " alt="" coords="399,177,493,203"/>
+<area shape="rect" title=" " alt="" coords="518,177,630,203"/>
+<area shape="rect" title=" " alt="" coords="653,177,777,203"/>
+<area shape="rect" title=" " alt="" coords="801,177,936,203"/>
+<area shape="rect" title=" " alt="" coords="961,177,1067,203"/>
+<area shape="rect" href="iodev_8h.html" title=" " alt="" coords="1092,177,1195,203"/>
+<area shape="rect" title=" " alt="" coords="1219,177,1310,203"/>
+<area shape="rect" title=" " alt="" coords="1335,177,1477,203"/>
+<area shape="rect" title=" " alt="" coords="1501,177,1689,203"/>
+<area shape="rect" title=" " alt="" coords="997,259,1140,285"/>
+<area shape="rect" title=" " alt="" coords="1165,259,1269,285"/>
+<area shape="rect" title=" " alt="" coords="1875,169,2031,211"/>
 </map>
 </div>
 </div>
@@ -240,7 +254,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="vgic-kvm-device_8c_source.html#l00045">45</a> of file <a class="el" href="vgic-kvm-device_8c_source.html">vgic-kvm-device.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">struct </span>vgic_dist *vgic = &amp;kvm-&gt;arch.vgic;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">struct </span><a class="code" href="structvgic__dist.html">vgic_dist</a> *vgic = &amp;kvm-&gt;arch.vgic;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">int</span> r;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    mutex_lock(&amp;kvm-&gt;arch.config_lock);</div>
@@ -248,18 +262,18 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">case</span> KVM_VGIC_V2_ADDR_TYPE_DIST:</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        r = <a class="code" href="vgic-kvm-device_8c.html#aabe1882d024943ea3d42bd37678f437f">vgic_check_type</a>(kvm, KVM_DEV_TYPE_ARM_VGIC_V2);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">if</span> (!r)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            r = <a class="code" href="vgic-kvm-device_8c.html#af0cfcc44a93abc13df9a7e364c21cf32">vgic_check_iorange</a>(kvm, vgic-&gt;vgic_dist_base, dev_addr-&gt;addr,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            r = <a class="code" href="vgic-kvm-device_8c.html#af0cfcc44a93abc13df9a7e364c21cf32">vgic_check_iorange</a>(kvm, vgic-&gt;<a class="code" href="structvgic__dist.html#a64889fb78fa1c835d635165bdc9dbe6e">vgic_dist_base</a>, dev_addr-&gt;addr,</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                           SZ_4K, KVM_VGIC_V2_DIST_SIZE);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">if</span> (!r)</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            vgic-&gt;vgic_dist_base = dev_addr-&gt;addr;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            vgic-&gt;<a class="code" href="structvgic__dist.html#a64889fb78fa1c835d635165bdc9dbe6e">vgic_dist_base</a> = dev_addr-&gt;addr;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">case</span> KVM_VGIC_V2_ADDR_TYPE_CPU:</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        r = <a class="code" href="vgic-kvm-device_8c.html#aabe1882d024943ea3d42bd37678f437f">vgic_check_type</a>(kvm, KVM_DEV_TYPE_ARM_VGIC_V2);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">if</span> (!r)</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            r = <a class="code" href="vgic-kvm-device_8c.html#af0cfcc44a93abc13df9a7e364c21cf32">vgic_check_iorange</a>(kvm, vgic-&gt;vgic_cpu_base, dev_addr-&gt;addr,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            r = <a class="code" href="vgic-kvm-device_8c.html#af0cfcc44a93abc13df9a7e364c21cf32">vgic_check_iorange</a>(kvm, vgic-&gt;<a class="code" href="structvgic__dist.html#adfde4e406677fb7d0457aa686d4dfe86">vgic_cpu_base</a>, dev_addr-&gt;addr,</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                           SZ_4K, KVM_VGIC_V2_CPU_SIZE);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">if</span> (!r)</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            vgic-&gt;vgic_cpu_base = dev_addr-&gt;addr;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            vgic-&gt;<a class="code" href="structvgic__dist.html#adfde4e406677fb7d0457aa686d4dfe86">vgic_cpu_base</a> = dev_addr-&gt;addr;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">default</span>:</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        r = -ENODEV;</div>
@@ -269,6 +283,9 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">return</span> r;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
+<div class="ttc" id="astructvgic__dist_html"><div class="ttname"><a href="structvgic__dist.html">vgic_dist</a></div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00224">arm_vgic.h:224</a></div></div>
+<div class="ttc" id="astructvgic__dist_html_a64889fb78fa1c835d635165bdc9dbe6e"><div class="ttname"><a href="structvgic__dist.html#a64889fb78fa1c835d635165bdc9dbe6e">vgic_dist::vgic_dist_base</a></div><div class="ttdeci">gpa_t vgic_dist_base</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00247">arm_vgic.h:247</a></div></div>
+<div class="ttc" id="astructvgic__dist_html_adfde4e406677fb7d0457aa686d4dfe86"><div class="ttname"><a href="structvgic__dist.html#adfde4e406677fb7d0457aa686d4dfe86">vgic_dist::vgic_cpu_base</a></div><div class="ttdeci">gpa_t vgic_cpu_base</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00250">arm_vgic.h:250</a></div></div>
 <div class="ttc" id="avgic-kvm-device_8c_html_aabe1882d024943ea3d42bd37678f437f"><div class="ttname"><a href="vgic-kvm-device_8c.html#aabe1882d024943ea3d42bd37678f437f">vgic_check_type</a></div><div class="ttdeci">static int vgic_check_type(struct kvm *kvm, int type_needed)</div><div class="ttdef"><b>Definition:</b> <a href="vgic-kvm-device_8c_source.html#l00037">vgic-kvm-device.c:37</a></div></div>
 <div class="ttc" id="avgic-kvm-device_8c_html_af0cfcc44a93abc13df9a7e364c21cf32"><div class="ttname"><a href="vgic-kvm-device_8c.html#af0cfcc44a93abc13df9a7e364c21cf32">vgic_check_iorange</a></div><div class="ttdeci">int vgic_check_iorange(struct kvm *kvm, phys_addr_t ioaddr, phys_addr_t addr, phys_addr_t alignment, phys_addr_t size)</div><div class="ttdef"><b>Definition:</b> <a href="vgic-kvm-device_8c_source.html#l00017">vgic-kvm-device.c:17</a></div></div>
 </div><!-- fragment --><div class="dynheader">
@@ -339,7 +356,7 @@ Here is the caller graph for this function:</div>
 <p class="definition">Definition at line <a class="el" href="vgic-kvm-device_8c_source.html#l00092">92</a> of file <a class="el" href="vgic-kvm-device_8c_source.html">vgic-kvm-device.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    u64 __user *uaddr = (u64 __user *)attr-&gt;addr;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">struct</span> vgic_dist *vgic = &amp;kvm-&gt;arch.vgic;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">struct</span> <a class="code" href="structvgic__dist.html">vgic_dist</a> *vgic = &amp;kvm-&gt;arch.vgic;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    phys_addr_t *addr_ptr, alignment, <a class="code" href="gen-hyprel_8c.html#a854352f53b148adc24983a58a1866d66">size</a>;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    u64 undef_value = <a class="code" href="vgic_8h.html#ac91699b3ab8faf4d5222d998fb64b033">VGIC_ADDR_UNDEF</a>;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    u64 addr;</div>
@@ -375,7 +392,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <a class="code" href="gen-hyprel_8c.html#a854352f53b148adc24983a58a1866d66">size</a> = KVM_VGIC_V3_DIST_SIZE;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordflow">case</span> KVM_VGIC_V3_ADDR_TYPE_REDIST: {</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keyword">struct </span>vgic_redist_region *rdreg;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keyword">struct </span><a class="code" href="structvgic__redist__region.html">vgic_redist_region</a> *rdreg;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        r = <a class="code" href="vgic-kvm-device_8c.html#aabe1882d024943ea3d42bd37678f437f">vgic_check_type</a>(kvm, KVM_DEV_TYPE_ARM_VGIC_V3);</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordflow">if</span> (r)</div>
@@ -385,46 +402,46 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            <span class="keywordflow">goto</span> out;</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        }</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        rdreg = list_first_entry_or_null(&amp;vgic-&gt;rd_regions,</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                         <span class="keyword">struct</span> vgic_redist_region, list);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                         <span class="keyword">struct</span> <a class="code" href="structvgic__redist__region.html">vgic_redist_region</a>, <a class="code" href="structvgic__redist__region.html#ad6c95ce4c280f7691f57fc059a5dc187">list</a>);</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordflow">if</span> (!rdreg)</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            addr_ptr = &amp;undef_value;</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            addr_ptr = &amp;rdreg-&gt;base;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            addr_ptr = &amp;rdreg-&gt;<a class="code" href="structvgic__redist__region.html#a93b2def7658d5686e54eb8352104c2ee">base</a>;</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    }</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordflow">case</span> KVM_VGIC_V3_ADDR_TYPE_REDIST_REGION:</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    {</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keyword">struct </span>vgic_redist_region *rdreg;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        u8 index;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keyword">struct </span><a class="code" href="structvgic__redist__region.html">vgic_redist_region</a> *rdreg;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        u8 <a class="code" href="structvgic__redist__region.html#acfc4000de33efd7b5e580c782215492d">index</a>;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        r = <a class="code" href="vgic-kvm-device_8c.html#aabe1882d024943ea3d42bd37678f437f">vgic_check_type</a>(kvm, KVM_DEV_TYPE_ARM_VGIC_V3);</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordflow">if</span> (r)</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        index = addr &amp; <a class="code" href="vgic_8h.html#a780883d6e28680682a1dcd73b716eb78">KVM_VGIC_V3_RDIST_INDEX_MASK</a>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <a class="code" href="structvgic__redist__region.html#acfc4000de33efd7b5e580c782215492d">index</a> = addr &amp; <a class="code" href="vgic_8h.html#a780883d6e28680682a1dcd73b716eb78">KVM_VGIC_V3_RDIST_INDEX_MASK</a>;</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">if</span> (write) {</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            gpa_t <a class="code" href="early__alloc_8c.html#a74f95eab64fb23344e30879684489f6f">base</a> = addr &amp; <a class="code" href="vgic_8h.html#a4b3d85861547e0e8a06a9d459b8bc1f5">KVM_VGIC_V3_RDIST_BASE_MASK</a>;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            u32 count = FIELD_GET(<a class="code" href="vgic_8h.html#a39abc101c3e1c37577cc5140b5a6a0c5">KVM_VGIC_V3_RDIST_COUNT_MASK</a>, addr);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            u32 <a class="code" href="structvgic__redist__region.html#a4229606bfed800b26eedde32f3134734">count</a> = FIELD_GET(<a class="code" href="vgic_8h.html#a39abc101c3e1c37577cc5140b5a6a0c5">KVM_VGIC_V3_RDIST_COUNT_MASK</a>, addr);</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            u8 flags = FIELD_GET(<a class="code" href="vgic_8h.html#ae06d384979afe3ae035989ac1973f56a">KVM_VGIC_V3_RDIST_FLAGS_MASK</a>, addr);</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <span class="keywordflow">if</span> (!count || flags)</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="structvgic__redist__region.html#a4229606bfed800b26eedde32f3134734">count</a> || flags)</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                r = -EINVAL;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                r = <a class="code" href="vgic-mmio-v3_8c.html#a4a15ce4d47dcc08ccabdac23699bd8e0">vgic_v3_set_redist_base</a>(kvm, index,</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                                <a class="code" href="early__alloc_8c.html#a74f95eab64fb23344e30879684489f6f">base</a>, count);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                r = <a class="code" href="vgic-mmio-v3_8c.html#a4a15ce4d47dcc08ccabdac23699bd8e0">vgic_v3_set_redist_base</a>(kvm, <a class="code" href="structvgic__redist__region.html#acfc4000de33efd7b5e580c782215492d">index</a>,</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                                <a class="code" href="early__alloc_8c.html#a74f95eab64fb23344e30879684489f6f">base</a>, <a class="code" href="structvgic__redist__region.html#a4229606bfed800b26eedde32f3134734">count</a>);</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keywordflow">goto</span> out;</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        }</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        rdreg = <a class="code" href="vgic-v3_8c.html#a35e1a5cb345dbcb7d61a55467b083702">vgic_v3_rdist_region_from_index</a>(kvm, index);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        rdreg = <a class="code" href="vgic-v3_8c.html#a35e1a5cb345dbcb7d61a55467b083702">vgic_v3_rdist_region_from_index</a>(kvm, <a class="code" href="structvgic__redist__region.html#acfc4000de33efd7b5e580c782215492d">index</a>);</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordflow">if</span> (!rdreg) {</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            r = -ENOENT;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <span class="keywordflow">goto</span> out;</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        }</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        addr = index;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        addr |= rdreg-&gt;base;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        addr |= (u64)rdreg-&gt;count &lt;&lt; <a class="code" href="vgic_8h.html#a5e7ccc903e0370ac380bc78fbfae3d2b">KVM_VGIC_V3_RDIST_COUNT_SHIFT</a>;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        addr = <a class="code" href="structvgic__redist__region.html#acfc4000de33efd7b5e580c782215492d">index</a>;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        addr |= rdreg-&gt;<a class="code" href="structvgic__redist__region.html#a93b2def7658d5686e54eb8352104c2ee">base</a>;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        addr |= (u64)rdreg-&gt;<a class="code" href="structvgic__redist__region.html#a4229606bfed800b26eedde32f3134734">count</a> &lt;&lt; <a class="code" href="vgic_8h.html#a5e7ccc903e0370ac380bc78fbfae3d2b">KVM_VGIC_V3_RDIST_COUNT_SHIFT</a>;</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordflow">goto</span> out;</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    }</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keywordflow">default</span>:</div>
@@ -454,6 +471,11 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;}</div>
 <div class="ttc" id="aearly__alloc_8c_html_a74f95eab64fb23344e30879684489f6f"><div class="ttname"><a href="early__alloc_8c.html#a74f95eab64fb23344e30879684489f6f">base</a></div><div class="ttdeci">static unsigned long base</div><div class="ttdef"><b>Definition:</b> <a href="early__alloc_8c_source.html#l00015">early_alloc.c:15</a></div></div>
 <div class="ttc" id="agen-hyprel_8c_html_a854352f53b148adc24983a58a1866d66"><div class="ttname"><a href="gen-hyprel_8c.html#a854352f53b148adc24983a58a1866d66">size</a></div><div class="ttdeci">size_t size</div><div class="ttdef"><b>Definition:</b> <a href="gen-hyprel_8c_source.html#l00133">gen-hyprel.c:133</a></div></div>
+<div class="ttc" id="astructvgic__redist__region_html"><div class="ttname"><a href="structvgic__redist__region.html">vgic_redist_region</a></div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00216">arm_vgic.h:216</a></div></div>
+<div class="ttc" id="astructvgic__redist__region_html_a4229606bfed800b26eedde32f3134734"><div class="ttname"><a href="structvgic__redist__region.html#a4229606bfed800b26eedde32f3134734">vgic_redist_region::count</a></div><div class="ttdeci">u32 count</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00219">arm_vgic.h:219</a></div></div>
+<div class="ttc" id="astructvgic__redist__region_html_a93b2def7658d5686e54eb8352104c2ee"><div class="ttname"><a href="structvgic__redist__region.html#a93b2def7658d5686e54eb8352104c2ee">vgic_redist_region::base</a></div><div class="ttdeci">gpa_t base</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00218">arm_vgic.h:218</a></div></div>
+<div class="ttc" id="astructvgic__redist__region_html_acfc4000de33efd7b5e580c782215492d"><div class="ttname"><a href="structvgic__redist__region.html#acfc4000de33efd7b5e580c782215492d">vgic_redist_region::index</a></div><div class="ttdeci">u32 index</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00217">arm_vgic.h:217</a></div></div>
+<div class="ttc" id="astructvgic__redist__region_html_ad6c95ce4c280f7691f57fc059a5dc187"><div class="ttname"><a href="structvgic__redist__region.html#ad6c95ce4c280f7691f57fc059a5dc187">vgic_redist_region::list</a></div><div class="ttdeci">struct list_head list</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00220">arm_vgic.h:221</a></div></div>
 <div class="ttc" id="avgic-mmio-v3_8c_html_a4a15ce4d47dcc08ccabdac23699bd8e0"><div class="ttname"><a href="vgic-mmio-v3_8c.html#a4a15ce4d47dcc08ccabdac23699bd8e0">vgic_v3_set_redist_base</a></div><div class="ttdeci">int vgic_v3_set_redist_base(struct kvm *kvm, u32 index, u64 addr, u32 count)</div><div class="ttdef"><b>Definition:</b> <a href="vgic-mmio-v3_8c_source.html#l00928">vgic-mmio-v3.c:928</a></div></div>
 <div class="ttc" id="avgic-v3_8c_html_a35e1a5cb345dbcb7d61a55467b083702"><div class="ttname"><a href="vgic-v3_8c.html#a35e1a5cb345dbcb7d61a55467b083702">vgic_v3_rdist_region_from_index</a></div><div class="ttdeci">struct vgic_redist_region * vgic_v3_rdist_region_from_index(struct kvm *kvm, u32 index)</div><div class="ttdef"><b>Definition:</b> <a href="vgic-v3_8c_source.html#l00524">vgic-v3.c:524</a></div></div>
 <div class="ttc" id="avgic_8h_html_a39abc101c3e1c37577cc5140b5a6a0c5"><div class="ttname"><a href="vgic_8h.html#a39abc101c3e1c37577cc5140b5a6a0c5">KVM_VGIC_V3_RDIST_COUNT_MASK</a></div><div class="ttdeci">#define KVM_VGIC_V3_RDIST_COUNT_MASK</div><div class="ttdef"><b>Definition:</b> <a href="vgic_8h_source.html#l00093">vgic.h:93</a></div></div>
@@ -467,27 +489,28 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="vgic-kvm-device_8c_ada63b20fef4ef1cc52730143652f9cb9_cgraph.png" border="0" usemap="#avgic-kvm-device_8c_ada63b20fef4ef1cc52730143652f9cb9_cgraph" alt=""/></div>
 <map name="avgic-kvm-device_8c_ada63b20fef4ef1cc52730143652f9cb9_cgraph" id="avgic-kvm-device_8c_ada63b20fef4ef1cc52730143652f9cb9_cgraph">
-<area shape="rect" title=" " alt="" coords="5,260,127,287"/>
-<area shape="rect" href="vgic-kvm-device_8c.html#af0cfcc44a93abc13df9a7e364c21cf32" title=" " alt="" coords="1113,81,1263,108"/>
-<area shape="rect" href="vgic-kvm-device_8c.html#aabe1882d024943ea3d42bd37678f437f" title=" " alt="" coords="200,336,331,363"/>
-<area shape="rect" href="vgic-v3_8c.html#a35e1a5cb345dbcb7d61a55467b083702" title=" " alt="" coords="413,315,569,357"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#a4a15ce4d47dcc08ccabdac23699bd8e0" title=" " alt="" coords="175,235,356,261"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#ab4506f3b3c9cd6a9a7bf0a909f93a722" title=" " alt="" coords="404,133,577,174"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#a78fb08dd130c0b8fc504e4725cd4f370" title=" " alt="" coords="865,209,1019,250"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#ac2164da472839a705dfb81d3a3c477c5" title=" " alt="" coords="416,198,565,239"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#a7c5d9bcbf29cb46bac8622d8bcc145b2" title=" " alt="" coords="633,198,784,239"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#a4bfec769cd9fe2bddb14200a6147fccd" title=" " alt="" coords="625,133,792,174"/>
-<area shape="rect" href="kvm__main_8c.html#a0afe5ce3e9ff1105328b06ec985e3374" title=" " alt="" coords="848,280,1036,307"/>
-<area shape="rect" href="vgic-v3_8c.html#a98c28ff2dc6b6965cef76e1be35233b1" title=" " alt="" coords="865,140,1019,167"/>
-<area shape="rect" href="vgic-v3_8c.html#a481ec0006dfd5a7ea125b9913de7ba47" title=" " alt="" coords="856,331,1028,357"/>
-<area shape="rect" href="kvm__main_8c.html#a75ccec7a81fef145fb3c3a3b5479a86f" title=" " alt="" coords="1121,284,1255,311"/>
-<area shape="rect" href="vgic_8h.html#a01a6c3c40680e43017d7ba8ec7aadbac" title=" " alt="" coords="1339,157,1512,184"/>
-<area shape="rect" href="vgic-v3_8c.html#a8bd03445507515b9722165814955f6fa" title=" " alt="" coords="1106,183,1270,209"/>
-<area shape="rect" href="vgic_8h.html#ab5518fe56ac149d185ee8dc4f1cbedcb" title=" " alt="" coords="1092,335,1284,361"/>
-<area shape="rect" href="kvm__main_8c.html#a103c02eb7ca545106f3130776c2a8897" title=" " alt="" coords="840,31,1044,57"/>
-<area shape="rect" href="kvm__main_8c.html#a3089edf2c0e5790aab7e8ed723f34b5b" title=" " alt="" coords="1110,31,1266,57"/>
-<area shape="rect" href="kvm__main_8c.html#aa6d7dea09a0b657f29e92f424e5d0633" title=" " alt="" coords="1332,5,1519,32"/>
-<area shape="rect" href="vgic_8h.html#a1cdb698c97a7e5292716c24cd5a39d28" title=" " alt="" coords="1120,233,1256,260"/>
+<area shape="rect" title=" " alt="" coords="5,232,127,259"/>
+<area shape="rect" href="vgic-kvm-device_8c.html#af0cfcc44a93abc13df9a7e364c21cf32" title=" " alt="" coords="1113,5,1263,32"/>
+<area shape="rect" href="vgic-kvm-device_8c.html#aabe1882d024943ea3d42bd37678f437f" title=" " alt="" coords="200,308,331,335"/>
+<area shape="rect" href="vgic-v3_8c.html#a35e1a5cb345dbcb7d61a55467b083702" title=" " alt="" coords="413,297,569,338"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#a4a15ce4d47dcc08ccabdac23699bd8e0" title=" " alt="" coords="175,207,356,233"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#ab4506f3b3c9cd6a9a7bf0a909f93a722" title=" " alt="" coords="404,166,577,207"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#a78fb08dd130c0b8fc504e4725cd4f370" title=" " alt="" coords="865,107,1019,149"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#ac2164da472839a705dfb81d3a3c477c5" title=" " alt="" coords="416,231,565,273"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#a7c5d9bcbf29cb46bac8622d8bcc145b2" title=" " alt="" coords="633,166,784,207"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#a4bfec769cd9fe2bddb14200a6147fccd" title=" " alt="" coords="625,274,792,315"/>
+<area shape="rect" href="kvm__main_8c.html#a0afe5ce3e9ff1105328b06ec985e3374" title=" " alt="" coords="848,173,1036,200"/>
+<area shape="rect" href="iodev_8h.html#a8999defe529eb3e3870197ef8e39fad5" title=" " alt="" coords="871,224,1013,251"/>
+<area shape="rect" href="vgic-v3_8c.html#a98c28ff2dc6b6965cef76e1be35233b1" title=" " alt="" coords="865,56,1019,83"/>
+<area shape="rect" href="vgic-v3_8c.html#a481ec0006dfd5a7ea125b9913de7ba47" title=" " alt="" coords="856,275,1028,301"/>
+<area shape="rect" href="kvm__main_8c.html#a75ccec7a81fef145fb3c3a3b5479a86f" title=" " alt="" coords="1121,208,1255,235"/>
+<area shape="rect" href="vgic_8h.html#a01a6c3c40680e43017d7ba8ec7aadbac" title=" " alt="" coords="1339,81,1512,108"/>
+<area shape="rect" href="vgic-v3_8c.html#a8bd03445507515b9722165814955f6fa" title=" " alt="" coords="1106,107,1270,133"/>
+<area shape="rect" href="vgic_8h.html#ab5518fe56ac149d185ee8dc4f1cbedcb" title=" " alt="" coords="1092,275,1284,301"/>
+<area shape="rect" href="kvm__main_8c.html#a103c02eb7ca545106f3130776c2a8897" title=" " alt="" coords="840,325,1044,352"/>
+<area shape="rect" href="kvm__main_8c.html#a3089edf2c0e5790aab7e8ed723f34b5b" title=" " alt="" coords="1110,376,1266,403"/>
+<area shape="rect" href="kvm__main_8c.html#aa6d7dea09a0b657f29e92f424e5d0633" title=" " alt="" coords="1332,351,1519,377"/>
+<area shape="rect" href="vgic_8h.html#a1cdb698c97a7e5292716c24cd5a39d28" title=" " alt="" coords="1120,157,1256,184"/>
 </map>
 </div>
 <div class="dynheader">
@@ -796,41 +819,43 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        u32 __user *uaddr = (u32 __user *)(<span class="keywordtype">long</span>)attr-&gt;addr;</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        r = put_user(dev-&gt;kvm-&gt;arch.vgic.nr_spis +</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                 VGIC_NR_PRIVATE_IRQS, uaddr);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                 <a class="code" href="arm__vgic_8h.html#ae9d406cdd3eafd831ee41ecf0e48011e">VGIC_NR_PRIVATE_IRQS</a>, uaddr);</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    }</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    }</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keywordflow">return</span> r;</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;}</div>
+<div class="ttc" id="aarm__vgic_8h_html_ae9d406cdd3eafd831ee41ecf0e48011e"><div class="ttname"><a href="arm__vgic_8h.html#ae9d406cdd3eafd831ee41ecf0e48011e">VGIC_NR_PRIVATE_IRQS</a></div><div class="ttdeci">#define VGIC_NR_PRIVATE_IRQS</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00027">arm_vgic.h:27</a></div></div>
 <div class="ttc" id="avgic-kvm-device_8c_html_ada63b20fef4ef1cc52730143652f9cb9"><div class="ttname"><a href="vgic-kvm-device_8c.html#ada63b20fef4ef1cc52730143652f9cb9">kvm_vgic_addr</a></div><div class="ttdeci">static int kvm_vgic_addr(struct kvm *kvm, struct kvm_device_attr *attr, bool write)</div><div class="ttdef"><b>Definition:</b> <a href="vgic-kvm-device_8c_source.html#l00092">vgic-kvm-device.c:92</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="vgic-kvm-device_8c_aa811a4f5550c34be51d9c98440824a40_cgraph.png" border="0" usemap="#avgic-kvm-device_8c_aa811a4f5550c34be51d9c98440824a40_cgraph" alt=""/></div>
 <map name="avgic-kvm-device_8c_aa811a4f5550c34be51d9c98440824a40_cgraph" id="avgic-kvm-device_8c_aa811a4f5550c34be51d9c98440824a40_cgraph">
-<area shape="rect" title=" " alt="" coords="5,260,176,287"/>
-<area shape="rect" href="vgic-kvm-device_8c.html#ada63b20fef4ef1cc52730143652f9cb9" title=" " alt="" coords="224,260,345,287"/>
-<area shape="rect" href="vgic-kvm-device_8c.html#af0cfcc44a93abc13df9a7e364c21cf32" title=" " alt="" coords="1331,81,1482,108"/>
-<area shape="rect" href="vgic-kvm-device_8c.html#aabe1882d024943ea3d42bd37678f437f" title=" " alt="" coords="419,336,549,363"/>
-<area shape="rect" href="vgic-v3_8c.html#a35e1a5cb345dbcb7d61a55467b083702" title=" " alt="" coords="631,315,787,357"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#a4a15ce4d47dcc08ccabdac23699bd8e0" title=" " alt="" coords="393,235,575,261"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#ab4506f3b3c9cd6a9a7bf0a909f93a722" title=" " alt="" coords="623,133,796,174"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#a78fb08dd130c0b8fc504e4725cd4f370" title=" " alt="" coords="1083,209,1238,250"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#ac2164da472839a705dfb81d3a3c477c5" title=" " alt="" coords="635,198,784,239"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#a7c5d9bcbf29cb46bac8622d8bcc145b2" title=" " alt="" coords="852,198,1003,239"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#a4bfec769cd9fe2bddb14200a6147fccd" title=" " alt="" coords="844,133,1011,174"/>
-<area shape="rect" href="kvm__main_8c.html#a0afe5ce3e9ff1105328b06ec985e3374" title=" " alt="" coords="1067,280,1255,307"/>
-<area shape="rect" href="vgic-v3_8c.html#a98c28ff2dc6b6965cef76e1be35233b1" title=" " alt="" coords="1083,140,1238,167"/>
-<area shape="rect" href="vgic-v3_8c.html#a481ec0006dfd5a7ea125b9913de7ba47" title=" " alt="" coords="1075,331,1247,357"/>
-<area shape="rect" href="kvm__main_8c.html#a75ccec7a81fef145fb3c3a3b5479a86f" title=" " alt="" coords="1339,284,1474,311"/>
-<area shape="rect" href="vgic_8h.html#a01a6c3c40680e43017d7ba8ec7aadbac" title=" " alt="" coords="1557,157,1731,184"/>
-<area shape="rect" href="vgic-v3_8c.html#a8bd03445507515b9722165814955f6fa" title=" " alt="" coords="1325,183,1489,209"/>
-<area shape="rect" href="vgic_8h.html#ab5518fe56ac149d185ee8dc4f1cbedcb" title=" " alt="" coords="1311,335,1503,361"/>
-<area shape="rect" href="kvm__main_8c.html#a103c02eb7ca545106f3130776c2a8897" title=" " alt="" coords="1059,31,1263,57"/>
-<area shape="rect" href="kvm__main_8c.html#a3089edf2c0e5790aab7e8ed723f34b5b" title=" " alt="" coords="1329,31,1485,57"/>
-<area shape="rect" href="kvm__main_8c.html#aa6d7dea09a0b657f29e92f424e5d0633" title=" " alt="" coords="1551,5,1737,32"/>
-<area shape="rect" href="vgic_8h.html#a1cdb698c97a7e5292716c24cd5a39d28" title=" " alt="" coords="1339,233,1475,260"/>
+<area shape="rect" title=" " alt="" coords="5,232,176,259"/>
+<area shape="rect" href="vgic-kvm-device_8c.html#ada63b20fef4ef1cc52730143652f9cb9" title=" " alt="" coords="224,232,345,259"/>
+<area shape="rect" href="vgic-kvm-device_8c.html#af0cfcc44a93abc13df9a7e364c21cf32" title=" " alt="" coords="1331,5,1482,32"/>
+<area shape="rect" href="vgic-kvm-device_8c.html#aabe1882d024943ea3d42bd37678f437f" title=" " alt="" coords="419,308,549,335"/>
+<area shape="rect" href="vgic-v3_8c.html#a35e1a5cb345dbcb7d61a55467b083702" title=" " alt="" coords="631,297,787,338"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#a4a15ce4d47dcc08ccabdac23699bd8e0" title=" " alt="" coords="393,207,575,233"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#ab4506f3b3c9cd6a9a7bf0a909f93a722" title=" " alt="" coords="623,166,796,207"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#a78fb08dd130c0b8fc504e4725cd4f370" title=" " alt="" coords="1083,107,1238,149"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#ac2164da472839a705dfb81d3a3c477c5" title=" " alt="" coords="635,231,784,273"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#a7c5d9bcbf29cb46bac8622d8bcc145b2" title=" " alt="" coords="852,166,1003,207"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#a4bfec769cd9fe2bddb14200a6147fccd" title=" " alt="" coords="844,274,1011,315"/>
+<area shape="rect" href="kvm__main_8c.html#a0afe5ce3e9ff1105328b06ec985e3374" title=" " alt="" coords="1067,173,1255,200"/>
+<area shape="rect" href="iodev_8h.html#a8999defe529eb3e3870197ef8e39fad5" title=" " alt="" coords="1090,224,1231,251"/>
+<area shape="rect" href="vgic-v3_8c.html#a98c28ff2dc6b6965cef76e1be35233b1" title=" " alt="" coords="1083,56,1238,83"/>
+<area shape="rect" href="vgic-v3_8c.html#a481ec0006dfd5a7ea125b9913de7ba47" title=" " alt="" coords="1075,275,1247,301"/>
+<area shape="rect" href="kvm__main_8c.html#a75ccec7a81fef145fb3c3a3b5479a86f" title=" " alt="" coords="1339,208,1474,235"/>
+<area shape="rect" href="vgic_8h.html#a01a6c3c40680e43017d7ba8ec7aadbac" title=" " alt="" coords="1557,81,1731,108"/>
+<area shape="rect" href="vgic-v3_8c.html#a8bd03445507515b9722165814955f6fa" title=" " alt="" coords="1325,107,1489,133"/>
+<area shape="rect" href="vgic_8h.html#ab5518fe56ac149d185ee8dc4f1cbedcb" title=" " alt="" coords="1311,275,1503,301"/>
+<area shape="rect" href="kvm__main_8c.html#a103c02eb7ca545106f3130776c2a8897" title=" " alt="" coords="1059,325,1263,352"/>
+<area shape="rect" href="kvm__main_8c.html#a3089edf2c0e5790aab7e8ed723f34b5b" title=" " alt="" coords="1329,376,1485,403"/>
+<area shape="rect" href="kvm__main_8c.html#aa6d7dea09a0b657f29e92f424e5d0633" title=" " alt="" coords="1551,351,1737,377"/>
+<area shape="rect" href="vgic_8h.html#a1cdb698c97a7e5292716c24cd5a39d28" title=" " alt="" coords="1339,157,1475,184"/>
 </map>
 </div>
 <div class="dynheader">
@@ -902,18 +927,18 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment">         * - at most 1024 interrupts</span></div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="comment">         * - a multiple of 32 interrupts</span></div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="keywordflow">if</span> (val &lt; (VGIC_NR_PRIVATE_IRQS + 32) ||</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            val &gt; VGIC_MAX_RESERVED ||</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="keywordflow">if</span> (val &lt; (<a class="code" href="arm__vgic_8h.html#ae9d406cdd3eafd831ee41ecf0e48011e">VGIC_NR_PRIVATE_IRQS</a> + 32) ||</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            val &gt; <a class="code" href="arm__vgic_8h.html#ad7342134b684299f69395eee1e4fbc05">VGIC_MAX_RESERVED</a> ||</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            (val &amp; 31))</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            <span class="keywordflow">return</span> -EINVAL;</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        mutex_lock(&amp;dev-&gt;kvm-&gt;arch.config_lock);</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="keywordflow">if</span> (vgic_ready(dev-&gt;kvm) || dev-&gt;kvm-&gt;arch.vgic.nr_spis)</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="arm__vgic_8h.html#a8a1cb81c34b893dec2bef262c6fafb15">vgic_ready</a>(dev-&gt;kvm) || dev-&gt;kvm-&gt;arch.vgic.nr_spis)</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            ret = -EBUSY;</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            dev-&gt;kvm-&gt;arch.vgic.nr_spis =</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                val - VGIC_NR_PRIVATE_IRQS;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                val - <a class="code" href="arm__vgic_8h.html#ae9d406cdd3eafd831ee41ecf0e48011e">VGIC_NR_PRIVATE_IRQS</a>;</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        mutex_unlock(&amp;dev-&gt;kvm-&gt;arch.config_lock);</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
@@ -956,6 +981,8 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;}</div>
 <div class="ttc" id="aarm_8c_html_a02feef111fec875eb6382835eb2fb620"><div class="ttname"><a href="arm_8c.html#a02feef111fec875eb6382835eb2fb620">lock_all_vcpus</a></div><div class="ttdeci">bool lock_all_vcpus(struct kvm *kvm)</div><div class="ttdef"><b>Definition:</b> <a href="arm_8c_source.html#l01773">arm.c:1773</a></div></div>
 <div class="ttc" id="aarm_8c_html_a29e56a77bf87bcd1b20ed8a14d9b2778"><div class="ttname"><a href="arm_8c.html#a29e56a77bf87bcd1b20ed8a14d9b2778">unlock_all_vcpus</a></div><div class="ttdeci">void unlock_all_vcpus(struct kvm *kvm)</div><div class="ttdef"><b>Definition:</b> <a href="arm_8c_source.html#l01765">arm.c:1765</a></div></div>
+<div class="ttc" id="aarm__vgic_8h_html_a8a1cb81c34b893dec2bef262c6fafb15"><div class="ttname"><a href="arm__vgic_8h.html#a8a1cb81c34b893dec2bef262c6fafb15">vgic_ready</a></div><div class="ttdeci">#define vgic_ready(k)</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00394">arm_vgic.h:394</a></div></div>
+<div class="ttc" id="aarm__vgic_8h_html_ad7342134b684299f69395eee1e4fbc05"><div class="ttname"><a href="arm__vgic_8h.html#ad7342134b684299f69395eee1e4fbc05">VGIC_MAX_RESERVED</a></div><div class="ttdeci">#define VGIC_MAX_RESERVED</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00030">arm_vgic.h:30</a></div></div>
 <div class="ttc" id="avgic-init_8c_html_a39a12fe5ed5534efda33bb215a320a57"><div class="ttname"><a href="vgic-init_8c.html#a39a12fe5ed5534efda33bb215a320a57">vgic_init</a></div><div class="ttdeci">int vgic_init(struct kvm *kvm)</div><div class="ttdef"><b>Definition:</b> <a href="vgic-init_8c_source.html#l00262">vgic-init.c:262</a></div></div>
 <div class="ttc" id="avgic-v3_8c_html_af01c534c811a6787db01c7508a333d7c"><div class="ttname"><a href="vgic-v3_8c.html#af01c534c811a6787db01c7508a333d7c">vgic_v3_save_pending_tables</a></div><div class="ttdeci">int vgic_v3_save_pending_tables(struct kvm *kvm)</div><div class="ttdef"><b>Definition:</b> <a href="vgic-v3_8c_source.html#l00377">vgic-v3.c:377</a></div></div>
 </div><!-- fragment --><div class="dynheader">
@@ -963,56 +990,56 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="vgic-kvm-device_8c_a6aadc4684bf7ca54e4a3d91f9e10310c_cgraph.png" border="0" usemap="#avgic-kvm-device_8c_a6aadc4684bf7ca54e4a3d91f9e10310c_cgraph" alt=""/></div>
 <map name="avgic-kvm-device_8c_a6aadc4684bf7ca54e4a3d91f9e10310c_cgraph" id="avgic-kvm-device_8c_a6aadc4684bf7ca54e4a3d91f9e10310c_cgraph">
-<area shape="rect" title=" " alt="" coords="5,431,176,457"/>
-<area shape="rect" href="vgic-kvm-device_8c.html#ada63b20fef4ef1cc52730143652f9cb9" title=" " alt="" coords="248,304,369,331"/>
-<area shape="rect" href="vgic-kvm-device_8c.html#aabe1882d024943ea3d42bd37678f437f" title=" " alt="" coords="467,355,597,381"/>
-<area shape="rect" href="arm_8c.html#a02feef111fec875eb6382835eb2fb620" title=" " alt="" coords="250,405,367,432"/>
-<area shape="rect" href="arm_8c.html#a29e56a77bf87bcd1b20ed8a14d9b2778" title=" " alt="" coords="242,456,375,483"/>
-<area shape="rect" href="vgic-init_8c.html#a39a12fe5ed5534efda33bb215a320a57" title=" " alt="" coords="270,616,347,643"/>
-<area shape="rect" href="vgic-v3_8c.html#af01c534c811a6787db01c7508a333d7c" title=" " alt="" coords="224,937,393,978"/>
-<area shape="rect" href="vgic-kvm-device_8c.html#af0cfcc44a93abc13df9a7e364c21cf32" title=" " alt="" coords="1417,284,1567,311"/>
-<area shape="rect" href="vgic-v3_8c.html#a35e1a5cb345dbcb7d61a55467b083702" title=" " alt="" coords="684,57,840,98"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#a4a15ce4d47dcc08ccabdac23699bd8e0" title=" " alt="" coords="441,195,623,221"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#ab4506f3b3c9cd6a9a7bf0a909f93a722" title=" " alt="" coords="675,122,849,163"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#a78fb08dd130c0b8fc504e4725cd4f370" title=" " alt="" coords="1169,238,1323,279"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#ac2164da472839a705dfb81d3a3c477c5" title=" " alt="" coords="687,187,837,229"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#a7c5d9bcbf29cb46bac8622d8bcc145b2" title=" " alt="" coords="923,123,1074,165"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#a4bfec769cd9fe2bddb14200a6147fccd" title=" " alt="" coords="915,41,1082,82"/>
-<area shape="rect" href="kvm__main_8c.html#a0afe5ce3e9ff1105328b06ec985e3374" title=" " alt="" coords="1152,81,1340,108"/>
-<area shape="rect" href="vgic-v3_8c.html#a98c28ff2dc6b6965cef76e1be35233b1" title=" " alt="" coords="1169,184,1323,211"/>
-<area shape="rect" href="vgic-v3_8c.html#a481ec0006dfd5a7ea125b9913de7ba47" title=" " alt="" coords="1160,132,1332,159"/>
-<area shape="rect" href="kvm__main_8c.html#a75ccec7a81fef145fb3c3a3b5479a86f" title=" " alt="" coords="1425,81,1559,108"/>
-<area shape="rect" href="vgic_8h.html#a01a6c3c40680e43017d7ba8ec7aadbac" title=" " alt="" coords="1643,208,1816,235"/>
-<area shape="rect" href="vgic-v3_8c.html#a8bd03445507515b9722165814955f6fa" title=" " alt="" coords="1410,233,1574,260"/>
-<area shape="rect" href="vgic_8h.html#ab5518fe56ac149d185ee8dc4f1cbedcb" title=" " alt="" coords="1396,132,1588,159"/>
-<area shape="rect" href="kvm__main_8c.html#a103c02eb7ca545106f3130776c2a8897" title=" " alt="" coords="1144,31,1348,57"/>
-<area shape="rect" href="kvm__main_8c.html#a3089edf2c0e5790aab7e8ed723f34b5b" title=" " alt="" coords="1414,31,1570,57"/>
-<area shape="rect" href="kvm__main_8c.html#aa6d7dea09a0b657f29e92f424e5d0633" title=" " alt="" coords="1636,5,1823,32"/>
-<area shape="rect" href="vgic_8h.html#a1cdb698c97a7e5292716c24cd5a39d28" title=" " alt="" coords="1424,335,1560,361"/>
-<area shape="rect" href="arm_8c.html#ac85c173d1f7208735e68f95eec2aac14" title=" " alt="" coords="477,405,587,432"/>
-<area shape="rect" href="vgic-init_8c.html#a0f9be5cc88c88f6c0180c53b72818d3b" title=" " alt="" coords="460,557,604,584"/>
-<area shape="rect" href="vgic-irqfd_8c.html#ab5dcaa98f287aec5083bd60daf115d71" title=" " alt="" coords="441,609,623,650"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#a47708b59ddd94e03880996def466067e" title=" " alt="" coords="1678,569,1781,596"/>
-<area shape="rect" href="vgic-init_8c.html#a2eee0060a3bdcd2a9e8fe1451a3a3fc2" title=" " alt="" coords="445,456,619,483"/>
-<area shape="rect" href="vgic-debug_8c.html#a42534d23071b4f3c441c5f82f9e5c1ce" title=" " alt="" coords="470,776,594,803"/>
-<area shape="rect" href="vgic-its_8c.html#afd97b5d03d2b30ae4481443cdea2e739" title=" " alt="" coords="457,827,607,869"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#a839b15883ba8f9de35a03ffce32fdf7f" title=" " alt="" coords="901,509,1096,536"/>
-<area shape="rect" href="vgic-v4_8c.html#a802a906ad744a75b5af33bbd6b31237c" title=" " alt="" coords="482,725,582,752"/>
-<area shape="rect" href="irqchip_8c.html#a2c54cf3c324c7d2b9190fffcf4a1f20a" title=" " alt="" coords="685,616,839,643"/>
-<area shape="rect" href="irqchip_8c.html#a5ae37186e6e6d1594767f83df8bab64a" title=" " alt="" coords="916,620,1081,647"/>
-<area shape="rect" href="irqchip_8c.html#ab06caa34c3a7189a433815036dd3ebb3" title=" " alt="" coords="923,569,1075,596"/>
-<area shape="rect" href="vgic-irqfd_8c.html#aceb0f3f9718caf022b2ff6f982fee020" title=" " alt="" coords="1160,569,1332,596"/>
-<area shape="rect" href="vgic-irqfd_8c.html#affb5599a3efafc186b72e78e4b31e904" title=" " alt="" coords="1437,569,1547,596"/>
-<area shape="rect" href="vgic-v2_8c.html#a4e8ee3d5f7c8fadbf0a645df67a1c5a2" title=" " alt="" coords="701,405,823,432"/>
-<area shape="rect" href="vgic-v3_8c.html#abe9a2245dfa0d76d61c99b60f714a513" title=" " alt="" coords="701,456,823,483"/>
-<area shape="rect" href="vgic-v4_8c.html#af99c2f70dd91a57879b3a2f583e49a4a" title=" " alt="" coords="671,835,853,861"/>
-<area shape="rect" href="vgic-v4_8c.html#ac805e466fa8f454112c11904ef8d41ce" title=" " alt="" coords="692,725,832,752"/>
-<area shape="rect" href="vgic-v4_8c.html#ac22161596c9858cc700bab08c03fc422" title=" " alt="" coords="905,835,1093,861"/>
-<area shape="rect" href="kvm__main_8c.html#ac82f28c95da4a0cc137c5a37f08d1f44" title=" " alt="" coords="1185,835,1307,861"/>
-<area shape="rect" href="vgic-v3_8c.html#a62e3f2f0c8415cb67dc4117d1976f686" title=" " alt="" coords="476,893,588,920"/>
-<area shape="rect" href="vgic-v3_8c.html#aedeeaec282ec4507c45c8580a6cd3ff8" title=" " alt="" coords="468,1045,596,1072"/>
-<area shape="rect" href="vgic-v4_8c.html#a783964868bc841487af2392e07060c48" title=" " alt="" coords="447,944,617,971"/>
-<area shape="rect" href="vgic_8h.html#abb188bad2393aaaf40808283d5565b8a" title=" " alt="" coords="449,995,615,1021"/>
+<area shape="rect" title=" " alt="" coords="5,383,176,409"/>
+<area shape="rect" href="vgic-kvm-device_8c.html#ada63b20fef4ef1cc52730143652f9cb9" title=" " alt="" coords="248,256,369,283"/>
+<area shape="rect" href="vgic-kvm-device_8c.html#aabe1882d024943ea3d42bd37678f437f" title=" " alt="" coords="473,307,604,333"/>
+<area shape="rect" href="arm_8c.html#a02feef111fec875eb6382835eb2fb620" title=" " alt="" coords="250,357,367,384"/>
+<area shape="rect" href="arm_8c.html#a29e56a77bf87bcd1b20ed8a14d9b2778" title=" " alt="" coords="242,408,375,435"/>
+<area shape="rect" href="vgic-init_8c.html#a39a12fe5ed5534efda33bb215a320a57" title=" " alt="" coords="270,576,347,603"/>
+<area shape="rect" href="vgic-v3_8c.html#af01c534c811a6787db01c7508a333d7c" title=" " alt="" coords="224,889,393,930"/>
+<area shape="rect" href="vgic-kvm-device_8c.html#af0cfcc44a93abc13df9a7e364c21cf32" title=" " alt="" coords="1423,5,1574,32"/>
+<area shape="rect" href="vgic-v3_8c.html#a35e1a5cb345dbcb7d61a55467b083702" title=" " alt="" coords="697,297,853,338"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#a4a15ce4d47dcc08ccabdac23699bd8e0" title=" " alt="" coords="448,205,629,232"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#ab4506f3b3c9cd6a9a7bf0a909f93a722" title=" " alt="" coords="689,166,862,207"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#a78fb08dd130c0b8fc504e4725cd4f370" title=" " alt="" coords="1175,107,1330,149"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#ac2164da472839a705dfb81d3a3c477c5" title=" " alt="" coords="701,231,850,273"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#a7c5d9bcbf29cb46bac8622d8bcc145b2" title=" " alt="" coords="933,166,1084,207"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#a4bfec769cd9fe2bddb14200a6147fccd" title=" " alt="" coords="925,274,1092,315"/>
+<area shape="rect" href="kvm__main_8c.html#a0afe5ce3e9ff1105328b06ec985e3374" title=" " alt="" coords="1159,173,1347,200"/>
+<area shape="rect" href="iodev_8h.html#a8999defe529eb3e3870197ef8e39fad5" title=" " alt="" coords="1182,224,1323,251"/>
+<area shape="rect" href="vgic-v3_8c.html#a98c28ff2dc6b6965cef76e1be35233b1" title=" " alt="" coords="1175,56,1330,83"/>
+<area shape="rect" href="vgic-v3_8c.html#a481ec0006dfd5a7ea125b9913de7ba47" title=" " alt="" coords="1167,275,1339,301"/>
+<area shape="rect" href="kvm__main_8c.html#a75ccec7a81fef145fb3c3a3b5479a86f" title=" " alt="" coords="1431,208,1566,235"/>
+<area shape="rect" href="vgic_8h.html#a01a6c3c40680e43017d7ba8ec7aadbac" title=" " alt="" coords="1649,81,1823,108"/>
+<area shape="rect" href="vgic-v3_8c.html#a8bd03445507515b9722165814955f6fa" title=" " alt="" coords="1417,107,1581,133"/>
+<area shape="rect" href="vgic_8h.html#ab5518fe56ac149d185ee8dc4f1cbedcb" title=" " alt="" coords="1403,275,1595,301"/>
+<area shape="rect" href="kvm__main_8c.html#a103c02eb7ca545106f3130776c2a8897" title=" " alt="" coords="1151,325,1355,352"/>
+<area shape="rect" href="kvm__main_8c.html#a3089edf2c0e5790aab7e8ed723f34b5b" title=" " alt="" coords="1421,376,1577,403"/>
+<area shape="rect" href="kvm__main_8c.html#aa6d7dea09a0b657f29e92f424e5d0633" title=" " alt="" coords="1643,351,1829,377"/>
+<area shape="rect" href="vgic_8h.html#a1cdb698c97a7e5292716c24cd5a39d28" title=" " alt="" coords="1431,157,1567,184"/>
+<area shape="rect" href="arm_8c.html#ac85c173d1f7208735e68f95eec2aac14" title=" " alt="" coords="483,357,594,384"/>
+<area shape="rect" href="vgic-init_8c.html#a0f9be5cc88c88f6c0180c53b72818d3b" title=" " alt="" coords="467,408,611,435"/>
+<area shape="rect" href="vgic-irqfd_8c.html#ab5dcaa98f287aec5083bd60daf115d71" title=" " alt="" coords="448,459,629,501"/>
+<area shape="rect" href="vgic-init_8c.html#a2eee0060a3bdcd2a9e8fe1451a3a3fc2" title=" " alt="" coords="451,525,626,552"/>
+<area shape="rect" href="vgic-debug_8c.html#a42534d23071b4f3c441c5f82f9e5c1ce" title=" " alt="" coords="477,576,601,603"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#a47708b59ddd94e03880996def466067e" title=" " alt="" coords="724,652,827,679"/>
+<area shape="rect" href="vgic-its_8c.html#afd97b5d03d2b30ae4481443cdea2e739" title=" " alt="" coords="464,729,613,770"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#a839b15883ba8f9de35a03ffce32fdf7f" title=" " alt="" coords="441,677,636,704"/>
+<area shape="rect" href="vgic-v4_8c.html#a802a906ad744a75b5af33bbd6b31237c" title=" " alt="" coords="489,795,589,821"/>
+<area shape="rect" href="irqchip_8c.html#a2c54cf3c324c7d2b9190fffcf4a1f20a" title=" " alt="" coords="698,467,853,493"/>
+<area shape="rect" href="irqchip_8c.html#a5ae37186e6e6d1594767f83df8bab64a" title=" " alt="" coords="926,441,1091,468"/>
+<area shape="rect" href="irqchip_8c.html#ab06caa34c3a7189a433815036dd3ebb3" title=" " alt="" coords="933,492,1085,519"/>
+<area shape="rect" href="vgic-irqfd_8c.html#aceb0f3f9718caf022b2ff6f982fee020" title=" " alt="" coords="1167,492,1339,519"/>
+<area shape="rect" href="vgic-v2_8c.html#a4e8ee3d5f7c8fadbf0a645df67a1c5a2" title=" " alt="" coords="714,521,837,548"/>
+<area shape="rect" href="vgic-v3_8c.html#abe9a2245dfa0d76d61c99b60f714a513" title=" " alt="" coords="714,572,837,599"/>
+<area shape="rect" href="vgic-v4_8c.html#af99c2f70dd91a57879b3a2f583e49a4a" title=" " alt="" coords="684,845,867,872"/>
+<area shape="rect" href="vgic-v4_8c.html#ac805e466fa8f454112c11904ef8d41ce" title=" " alt="" coords="705,795,845,821"/>
+<area shape="rect" href="vgic-v4_8c.html#ac22161596c9858cc700bab08c03fc422" title=" " alt="" coords="915,845,1103,872"/>
+<area shape="rect" href="kvm__main_8c.html#ac82f28c95da4a0cc137c5a37f08d1f44" title=" " alt="" coords="1191,845,1314,872"/>
+<area shape="rect" href="vgic-v3_8c.html#a62e3f2f0c8415cb67dc4117d1976f686" title=" " alt="" coords="483,845,595,872"/>
+<area shape="rect" href="vgic-v3_8c.html#aedeeaec282ec4507c45c8580a6cd3ff8" title=" " alt="" coords="475,896,603,923"/>
+<area shape="rect" href="vgic-v4_8c.html#a783964868bc841487af2392e07060c48" title=" " alt="" coords="453,947,624,973"/>
+<area shape="rect" href="vgic_8h.html#abb188bad2393aaaf40808283d5565b8a" title=" " alt="" coords="455,997,622,1024"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1251,56 +1278,56 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="vgic-kvm-device_8c_a3bb10b83ef8325ecaa3671e9fe9c528c_cgraph.png" border="0" usemap="#avgic-kvm-device_8c_a3bb10b83ef8325ecaa3671e9fe9c528c_cgraph" alt=""/></div>
 <map name="avgic-kvm-device_8c_a3bb10b83ef8325ecaa3671e9fe9c528c_cgraph" id="avgic-kvm-device_8c_a3bb10b83ef8325ecaa3671e9fe9c528c_cgraph">
-<area shape="rect" title=" " alt="" coords="5,673,136,700"/>
-<area shape="rect" href="vgic-kvm-device_8c.html#aa811a4f5550c34be51d9c98440824a40" title=" " alt="" coords="193,425,363,452"/>
-<area shape="rect" href="vgic-kvm-device_8c.html#a78d5c53181a4adf55a58d8277fb751af" title=" " alt="" coords="184,699,372,725"/>
-<area shape="rect" href="vgic-kvm-device_8c.html#ada63b20fef4ef1cc52730143652f9cb9" title=" " alt="" coords="445,165,566,192"/>
-<area shape="rect" href="vgic-kvm-device_8c.html#af0cfcc44a93abc13df9a7e364c21cf32" title=" " alt="" coords="1607,191,1757,217"/>
-<area shape="rect" href="vgic-kvm-device_8c.html#aabe1882d024943ea3d42bd37678f437f" title=" " alt="" coords="671,115,801,141"/>
-<area shape="rect" href="vgic-v3_8c.html#a35e1a5cb345dbcb7d61a55467b083702" title=" " alt="" coords="895,27,1051,69"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#a4a15ce4d47dcc08ccabdac23699bd8e0" title=" " alt="" coords="645,165,827,192"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#ab4506f3b3c9cd6a9a7bf0a909f93a722" title=" " alt="" coords="886,93,1059,134"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#a78fb08dd130c0b8fc504e4725cd4f370" title=" " alt="" coords="1373,209,1527,250"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#ac2164da472839a705dfb81d3a3c477c5" title=" " alt="" coords="898,158,1047,199"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#a7c5d9bcbf29cb46bac8622d8bcc145b2" title=" " alt="" coords="1131,97,1281,138"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#a4bfec769cd9fe2bddb14200a6147fccd" title=" " alt="" coords="1123,14,1289,55"/>
-<area shape="rect" href="kvm__main_8c.html#a0afe5ce3e9ff1105328b06ec985e3374" title=" " alt="" coords="1356,157,1544,184"/>
-<area shape="rect" href="vgic-v3_8c.html#a98c28ff2dc6b6965cef76e1be35233b1" title=" " alt="" coords="1373,56,1527,83"/>
-<area shape="rect" href="vgic-v3_8c.html#a481ec0006dfd5a7ea125b9913de7ba47" title=" " alt="" coords="1364,107,1536,133"/>
-<area shape="rect" href="vgic_8h.html#a01a6c3c40680e43017d7ba8ec7aadbac" title=" " alt="" coords="1812,81,1985,108"/>
-<area shape="rect" href="vgic-v3_8c.html#a8bd03445507515b9722165814955f6fa" title=" " alt="" coords="1600,107,1764,133"/>
-<area shape="rect" href="kvm__main_8c.html#a103c02eb7ca545106f3130776c2a8897" title=" " alt="" coords="1348,5,1552,32"/>
-<area shape="rect" href="vgic_8h.html#a1cdb698c97a7e5292716c24cd5a39d28" title=" " alt="" coords="1614,241,1750,268"/>
-<area shape="rect" href="arm_8c.html#a02feef111fec875eb6382835eb2fb620" title=" " alt="" coords="447,749,564,776"/>
-<area shape="rect" href="arm_8c.html#a29e56a77bf87bcd1b20ed8a14d9b2778" title=" " alt="" coords="439,648,572,675"/>
-<area shape="rect" href="vgic-init_8c.html#a39a12fe5ed5534efda33bb215a320a57" title=" " alt="" coords="467,544,544,571"/>
-<area shape="rect" href="vgic-mmio-v2_8c.html#a47e01844cf58952fedaee31f59b759cc" title=" " alt="" coords="420,800,591,827"/>
-<area shape="rect" href="vgic-mmio-v2_8c.html#a172aa5542cf86982d7d2fc0c9948fa26" title=" " alt="" coords="424,851,587,877"/>
-<area shape="rect" href="vgic-kvm-device_8c.html#aa6e244467a63a98cec7698162df49572" title=" " alt="" coords="433,699,578,725"/>
-<area shape="rect" href="arm_8c.html#ac85c173d1f7208735e68f95eec2aac14" title=" " alt="" coords="681,763,791,789"/>
-<area shape="rect" href="vgic-init_8c.html#a0f9be5cc88c88f6c0180c53b72818d3b" title=" " alt="" coords="664,376,808,403"/>
-<area shape="rect" href="vgic-irqfd_8c.html#ab5dcaa98f287aec5083bd60daf115d71" title=" " alt="" coords="645,478,827,519"/>
-<area shape="rect" href="vgic-init_8c.html#a2eee0060a3bdcd2a9e8fe1451a3a3fc2" title=" " alt="" coords="649,595,823,621"/>
-<area shape="rect" href="vgic-debug_8c.html#a42534d23071b4f3c441c5f82f9e5c1ce" title=" " alt="" coords="674,544,798,571"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#a47708b59ddd94e03880996def466067e" title=" " alt="" coords="921,376,1024,403"/>
-<area shape="rect" href="vgic-its_8c.html#afd97b5d03d2b30ae4481443cdea2e739" title=" " alt="" coords="661,697,811,738"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html#a839b15883ba8f9de35a03ffce32fdf7f" title=" " alt="" coords="639,427,833,453"/>
-<area shape="rect" href="vgic-v4_8c.html#a802a906ad744a75b5af33bbd6b31237c" title=" " alt="" coords="686,645,786,672"/>
-<area shape="rect" href="irqchip_8c.html#a2c54cf3c324c7d2b9190fffcf4a1f20a" title=" " alt="" coords="895,485,1050,512"/>
-<area shape="rect" href="irqchip_8c.html#a5ae37186e6e6d1594767f83df8bab64a" title=" " alt="" coords="1123,460,1289,487"/>
-<area shape="rect" href="irqchip_8c.html#ab06caa34c3a7189a433815036dd3ebb3" title=" " alt="" coords="1130,511,1282,537"/>
-<area shape="rect" href="vgic-irqfd_8c.html#aceb0f3f9718caf022b2ff6f982fee020" title=" " alt="" coords="1364,511,1536,537"/>
-<area shape="rect" href="vgic-v2_8c.html#a4e8ee3d5f7c8fadbf0a645df67a1c5a2" title=" " alt="" coords="911,595,1034,621"/>
-<area shape="rect" href="vgic-v3_8c.html#abe9a2245dfa0d76d61c99b60f714a513" title=" " alt="" coords="911,544,1034,571"/>
-<area shape="rect" href="vgic-v4_8c.html#af99c2f70dd91a57879b3a2f583e49a4a" title=" " alt="" coords="881,696,1064,723"/>
-<area shape="rect" href="vgic-v4_8c.html#ac805e466fa8f454112c11904ef8d41ce" title=" " alt="" coords="903,645,1043,672"/>
-<area shape="rect" href="vgic-v4_8c.html#ac22161596c9858cc700bab08c03fc422" title=" " alt="" coords="1112,696,1300,723"/>
-<area shape="rect" href="kvm__main_8c.html#ac82f28c95da4a0cc137c5a37f08d1f44" title=" " alt="" coords="1389,696,1511,723"/>
-<area shape="rect" href="vgic-mmio_8c.html#ae999933ae5e2cc6f0d3910bbe33386ba" title=" " alt="" coords="682,825,790,852"/>
-<area shape="rect" href="vgic-mmio_8c.html#ac361bf23479dea11a94946fb36408b29" title=" " alt="" coords="901,800,1045,827"/>
-<area shape="rect" href="vgic-mmio_8c.html#a9ae5f9a11d1a32e0fddb9409399b1d4a" title=" " alt="" coords="899,851,1047,877"/>
-<area shape="rect" href="vgic-mmio_8c.html#af645443cfc0bc59f41881570759adcb5" title=" " alt="" coords="1121,825,1291,852"/>
-<area shape="rect" href="vgic-mmio_8c.html#a296fe3adbc190bcdb6fde5c708193b03" title=" " alt="" coords="1396,825,1504,852"/>
+<area shape="rect" title=" " alt="" coords="5,723,136,750"/>
+<area shape="rect" href="vgic-kvm-device_8c.html#aa811a4f5550c34be51d9c98440824a40" title=" " alt="" coords="193,447,363,474"/>
+<area shape="rect" href="vgic-kvm-device_8c.html#a78d5c53181a4adf55a58d8277fb751af" title=" " alt="" coords="184,749,372,775"/>
+<area shape="rect" href="vgic-kvm-device_8c.html#ada63b20fef4ef1cc52730143652f9cb9" title=" " alt="" coords="445,133,566,159"/>
+<area shape="rect" href="vgic-kvm-device_8c.html#af0cfcc44a93abc13df9a7e364c21cf32" title=" " alt="" coords="1607,198,1757,225"/>
+<area shape="rect" href="vgic-kvm-device_8c.html#aabe1882d024943ea3d42bd37678f437f" title=" " alt="" coords="671,82,801,109"/>
+<area shape="rect" href="vgic-v3_8c.html#a35e1a5cb345dbcb7d61a55467b083702" title=" " alt="" coords="895,8,1051,49"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#a4a15ce4d47dcc08ccabdac23699bd8e0" title=" " alt="" coords="645,133,827,159"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#ab4506f3b3c9cd6a9a7bf0a909f93a722" title=" " alt="" coords="886,191,1059,232"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#a78fb08dd130c0b8fc504e4725cd4f370" title=" " alt="" coords="1373,5,1527,47"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#ac2164da472839a705dfb81d3a3c477c5" title=" " alt="" coords="898,125,1047,167"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#a7c5d9bcbf29cb46bac8622d8bcc145b2" title=" " alt="" coords="1131,191,1281,232"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#a4bfec769cd9fe2bddb14200a6147fccd" title=" " alt="" coords="1123,125,1289,167"/>
+<area shape="rect" href="kvm__main_8c.html#a0afe5ce3e9ff1105328b06ec985e3374" title=" " alt="" coords="1356,173,1544,199"/>
+<area shape="rect" href="iodev_8h.html#a8999defe529eb3e3870197ef8e39fad5" title=" " alt="" coords="1379,274,1521,301"/>
+<area shape="rect" href="vgic-v3_8c.html#a98c28ff2dc6b6965cef76e1be35233b1" title=" " alt="" coords="1373,223,1527,250"/>
+<area shape="rect" href="vgic-v3_8c.html#a481ec0006dfd5a7ea125b9913de7ba47" title=" " alt="" coords="1364,122,1536,149"/>
+<area shape="rect" href="vgic_8h.html#a01a6c3c40680e43017d7ba8ec7aadbac" title=" " alt="" coords="1812,198,1985,225"/>
+<area shape="rect" href="vgic-v3_8c.html#a8bd03445507515b9722165814955f6fa" title=" " alt="" coords="1600,147,1764,174"/>
+<area shape="rect" href="kvm__main_8c.html#a103c02eb7ca545106f3130776c2a8897" title=" " alt="" coords="1348,71,1552,98"/>
+<area shape="rect" href="vgic_8h.html#a1cdb698c97a7e5292716c24cd5a39d28" title=" " alt="" coords="1614,13,1750,39"/>
+<area shape="rect" href="arm_8c.html#a02feef111fec875eb6382835eb2fb620" title=" " alt="" coords="447,799,564,826"/>
+<area shape="rect" href="arm_8c.html#a29e56a77bf87bcd1b20ed8a14d9b2778" title=" " alt="" coords="439,698,572,725"/>
+<area shape="rect" href="vgic-init_8c.html#a39a12fe5ed5534efda33bb215a320a57" title=" " alt="" coords="467,594,544,621"/>
+<area shape="rect" href="vgic-mmio-v2_8c.html#a47e01844cf58952fedaee31f59b759cc" title=" " alt="" coords="420,850,591,877"/>
+<area shape="rect" href="vgic-mmio-v2_8c.html#a172aa5542cf86982d7d2fc0c9948fa26" title=" " alt="" coords="424,901,587,927"/>
+<area shape="rect" href="vgic-kvm-device_8c.html#aa6e244467a63a98cec7698162df49572" title=" " alt="" coords="433,749,578,775"/>
+<area shape="rect" href="arm_8c.html#ac85c173d1f7208735e68f95eec2aac14" title=" " alt="" coords="681,813,791,839"/>
+<area shape="rect" href="vgic-init_8c.html#a0f9be5cc88c88f6c0180c53b72818d3b" title=" " alt="" coords="664,426,808,453"/>
+<area shape="rect" href="vgic-irqfd_8c.html#ab5dcaa98f287aec5083bd60daf115d71" title=" " alt="" coords="645,528,827,569"/>
+<area shape="rect" href="vgic-init_8c.html#a2eee0060a3bdcd2a9e8fe1451a3a3fc2" title=" " alt="" coords="649,645,823,671"/>
+<area shape="rect" href="vgic-debug_8c.html#a42534d23071b4f3c441c5f82f9e5c1ce" title=" " alt="" coords="674,594,798,621"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#a47708b59ddd94e03880996def466067e" title=" " alt="" coords="921,426,1024,453"/>
+<area shape="rect" href="vgic-its_8c.html#afd97b5d03d2b30ae4481443cdea2e739" title=" " alt="" coords="661,747,811,788"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html#a839b15883ba8f9de35a03ffce32fdf7f" title=" " alt="" coords="639,477,833,503"/>
+<area shape="rect" href="vgic-v4_8c.html#a802a906ad744a75b5af33bbd6b31237c" title=" " alt="" coords="686,695,786,722"/>
+<area shape="rect" href="irqchip_8c.html#a2c54cf3c324c7d2b9190fffcf4a1f20a" title=" " alt="" coords="895,535,1050,562"/>
+<area shape="rect" href="irqchip_8c.html#a5ae37186e6e6d1594767f83df8bab64a" title=" " alt="" coords="1123,510,1289,537"/>
+<area shape="rect" href="irqchip_8c.html#ab06caa34c3a7189a433815036dd3ebb3" title=" " alt="" coords="1130,561,1282,587"/>
+<area shape="rect" href="vgic-irqfd_8c.html#aceb0f3f9718caf022b2ff6f982fee020" title=" " alt="" coords="1364,561,1536,587"/>
+<area shape="rect" href="vgic-v2_8c.html#a4e8ee3d5f7c8fadbf0a645df67a1c5a2" title=" " alt="" coords="911,645,1034,671"/>
+<area shape="rect" href="vgic-v3_8c.html#abe9a2245dfa0d76d61c99b60f714a513" title=" " alt="" coords="911,594,1034,621"/>
+<area shape="rect" href="vgic-v4_8c.html#af99c2f70dd91a57879b3a2f583e49a4a" title=" " alt="" coords="881,746,1064,773"/>
+<area shape="rect" href="vgic-v4_8c.html#ac805e466fa8f454112c11904ef8d41ce" title=" " alt="" coords="903,695,1043,722"/>
+<area shape="rect" href="vgic-v4_8c.html#ac22161596c9858cc700bab08c03fc422" title=" " alt="" coords="1112,746,1300,773"/>
+<area shape="rect" href="kvm__main_8c.html#ac82f28c95da4a0cc137c5a37f08d1f44" title=" " alt="" coords="1389,746,1511,773"/>
+<area shape="rect" href="vgic-mmio_8c.html#ae999933ae5e2cc6f0d3910bbe33386ba" title=" " alt="" coords="682,875,790,902"/>
+<area shape="rect" href="vgic-mmio_8c.html#ac361bf23479dea11a94946fb36408b29" title=" " alt="" coords="901,850,1045,877"/>
+<area shape="rect" href="vgic-mmio_8c.html#a9ae5f9a11d1a32e0fddb9409399b1d4a" title=" " alt="" coords="899,901,1047,927"/>
+<area shape="rect" href="vgic-mmio_8c.html#af645443cfc0bc59f41881570759adcb5" title=" " alt="" coords="1121,875,1291,902"/>
 </map>
 </div>
 
@@ -1494,8 +1521,8 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="vgic-mmio-v3_8c.html#a7c5d9bcbf29cb46bac8622d8bcc145b2" title=" " alt="" coords="1129,188,1280,229"/>
 <area shape="rect" href="vgic-mmio-v3_8c.html#a4bfec769cd9fe2bddb14200a6147fccd" title=" " alt="" coords="1121,123,1288,164"/>
 <area shape="rect" href="kvm__main_8c.html#a0afe5ce3e9ff1105328b06ec985e3374" title=" " alt="" coords="1347,153,1535,179"/>
+<area shape="rect" href="iodev_8h.html#a8999defe529eb3e3870197ef8e39fad5" title=" " alt="" coords="1370,102,1511,129"/>
 <area shape="rect" href="vgic-v3_8c.html#a98c28ff2dc6b6965cef76e1be35233b1" title=" " alt="" coords="1363,203,1518,230"/>
-<area shape="rect" href="vgic-v3_8c.html#a481ec0006dfd5a7ea125b9913de7ba47" title=" " alt="" coords="1355,102,1527,129"/>
 <area shape="rect" href="vgic-v3_8c.html#a8bd03445507515b9722165814955f6fa" title=" " alt="" coords="1583,123,1747,150"/>
 <area shape="rect" href="vgic_8h.html#a1cdb698c97a7e5292716c24cd5a39d28" title=" " alt="" coords="1597,43,1733,70"/>
 <area shape="rect" href="arm_8c.html#ac85c173d1f7208735e68f95eec2aac14" title=" " alt="" coords="679,945,790,971"/>
@@ -1611,7 +1638,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160; </div>
 <div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    mutex_lock(&amp;dev-&gt;kvm-&gt;arch.config_lock);</div>
 <div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160; </div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;    <span class="keywordflow">if</span> (unlikely(!vgic_initialized(dev-&gt;kvm))) {</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;    <span class="keywordflow">if</span> (unlikely(!<a class="code" href="arm__vgic_8h.html#a92f7a5b2fbbd6b57aaed08e61ba34d43">vgic_initialized</a>(dev-&gt;kvm))) {</div>
 <div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;        ret = -EBUSY;</div>
 <div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;        <span class="keywordflow">goto</span> out;</div>
 <div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;    }</div>
@@ -1658,6 +1685,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160; </div>
 <div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;    <span class="keywordflow">return</span> ret;</div>
 <div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;}</div>
+<div class="ttc" id="aarm__vgic_8h_html_a92f7a5b2fbbd6b57aaed08e61ba34d43"><div class="ttname"><a href="arm__vgic_8h.html#a92f7a5b2fbbd6b57aaed08e61ba34d43">vgic_initialized</a></div><div class="ttdeci">#define vgic_initialized(k)</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00393">arm_vgic.h:393</a></div></div>
 <div class="ttc" id="avgic-kvm-device_8c_html_ae16a58808d1a84f4f378a2ff4343d200"><div class="ttname"><a href="vgic-kvm-device_8c.html#ae16a58808d1a84f4f378a2ff4343d200">vgic_v3_parse_attr</a></div><div class="ttdeci">int vgic_v3_parse_attr(struct kvm_device *dev, struct kvm_device_attr *attr, struct vgic_reg_attr *reg_attr)</div><div class="ttdef"><b>Definition:</b> <a href="vgic-kvm-device_8c_source.html#l00474">vgic-kvm-device.c:474</a></div></div>
 <div class="ttc" id="avgic-mmio-v3_8c_html_a6f0acf3ee53ee539acba5f1bce55cea2"><div class="ttname"><a href="vgic-mmio-v3_8c.html#a6f0acf3ee53ee539acba5f1bce55cea2">vgic_v3_redist_uaccess</a></div><div class="ttdeci">int vgic_v3_redist_uaccess(struct kvm_vcpu *vcpu, bool is_write, int offset, u32 *val)</div><div class="ttdef"><b>Definition:</b> <a href="vgic-mmio-v3_8c_source.html#l01106">vgic-mmio-v3.c:1106</a></div></div>
 <div class="ttc" id="avgic-mmio-v3_8c_html_a744d3ea323c85b7c3528ccc1a3fd6180"><div class="ttname"><a href="vgic-mmio-v3_8c.html#a744d3ea323c85b7c3528ccc1a3fd6180">vgic_v3_dist_uaccess</a></div><div class="ttdeci">int vgic_v3_dist_uaccess(struct kvm_vcpu *vcpu, bool is_write, int offset, u32 *val)</div><div class="ttdef"><b>Definition:</b> <a href="vgic-mmio-v3_8c_source.html#l01095">vgic-mmio-v3.c:1095</a></div></div>
@@ -1792,8 +1820,8 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="vgic-mmio-v3_8c.html#a7c5d9bcbf29cb46bac8622d8bcc145b2" title=" " alt="" coords="1112,79,1263,121"/>
 <area shape="rect" href="vgic-mmio-v3_8c.html#a4bfec769cd9fe2bddb14200a6147fccd" title=" " alt="" coords="1104,145,1271,186"/>
 <area shape="rect" href="kvm__main_8c.html#a0afe5ce3e9ff1105328b06ec985e3374" title=" " alt="" coords="1329,51,1517,77"/>
+<area shape="rect" href="iodev_8h.html#a8999defe529eb3e3870197ef8e39fad5" title=" " alt="" coords="1353,101,1494,128"/>
 <area shape="rect" href="vgic-v3_8c.html#a98c28ff2dc6b6965cef76e1be35233b1" title=" " alt="" coords="1346,152,1501,179"/>
-<area shape="rect" href="vgic-v3_8c.html#a481ec0006dfd5a7ea125b9913de7ba47" title=" " alt="" coords="1337,101,1509,128"/>
 <area shape="rect" href="vgic-v3_8c.html#a8bd03445507515b9722165814955f6fa" title=" " alt="" coords="1565,181,1729,208"/>
 <area shape="rect" href="vgic_8h.html#a1cdb698c97a7e5292716c24cd5a39d28" title=" " alt="" coords="1579,232,1715,259"/>
 <area shape="rect" href="arm_8c.html#a02feef111fec875eb6382835eb2fb620" title=" " alt="" coords="449,692,566,719"/>

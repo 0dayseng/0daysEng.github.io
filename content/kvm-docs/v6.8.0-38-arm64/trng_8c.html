@@ -75,17 +75,17 @@ $(function() {
 <div class="textblock"><code>#include &lt;linux/arm-smccc.h&gt;</code><br />
 <code>#include &lt;linux/kvm_host.h&gt;</code><br />
 <code>#include &lt;asm/kvm_emulate.h&gt;</code><br />
-<code>#include &lt;kvm/arm_hypercalls.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="arm__hypercalls_8h_source.html">kvm/arm_hypercalls.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for trng.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="trng_8c__incl.png" border="0" usemap="#aarch_2arm64_2kvm_2trng_8c" alt=""/></div>
 <map name="aarch_2arm64_2kvm_2trng_8c" id="aarch_2arm64_2kvm_2trng_8c">
-<area shape="rect" title=" " alt="" coords="238,5,409,32"/>
+<area shape="rect" title=" " alt="" coords="206,5,377,32"/>
 <area shape="rect" title=" " alt="" coords="5,80,148,107"/>
 <area shape="rect" title=" " alt="" coords="172,80,307,107"/>
-<area shape="rect" title=" " alt="" coords="331,80,487,107"/>
-<area shape="rect" title=" " alt="" coords="511,80,677,107"/>
+<area shape="rect" title=" " alt="" coords="327,155,483,181"/>
+<area shape="rect" href="arm__hypercalls_8h.html" title=" " alt="" coords="383,80,549,107"/>
 </map>
 </div>
 </div>
@@ -258,7 +258,7 @@ Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="trng_8c_source.html#l00051">51</a> of file <a class="el" href="trng_8c_source.html">trng.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">const</span> __le32 *u = (__le32 *)arm_smc_trng_uuid.b;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    u32 func_id = smccc_get_function(vcpu);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    u32 func_id = <a class="code" href="arm__hypercalls_8h.html#a8baef8e49dbce7b140c519845a20611f">smccc_get_function</a>(vcpu);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> val = <a class="code" href="trng_8c.html#ad325e83e8a6de051c2c0d5f601f507da">TRNG_NOT_SUPPORTED</a>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="gen-hyprel_8c.html#a854352f53b148adc24983a58a1866d66">size</a> = 64;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
@@ -267,7 +267,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        val = <a class="code" href="trng_8c.html#a846ac718ed895289c279640dfc1d800e">ARM_SMCCC_TRNG_VERSION_1_0</a>;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">case</span> ARM_SMCCC_TRNG_FEATURES:</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">switch</span> (smccc_get_arg1(vcpu)) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">switch</span> (<a class="code" href="arm__hypercalls_8h.html#aab3de177147e0efb70c732a1ad3706dd">smccc_get_arg1</a>(vcpu)) {</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">case</span> ARM_SMCCC_TRNG_VERSION:</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">case</span> ARM_SMCCC_TRNG_FEATURES:</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">case</span> ARM_SMCCC_TRNG_GET_UUID:</div>
@@ -277,7 +277,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">case</span> ARM_SMCCC_TRNG_GET_UUID:</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        smccc_set_retval(vcpu, le32_to_cpu(u[0]), le32_to_cpu(u[1]),</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="arm__hypercalls_8h.html#ae543f09c1c7681cec4e5d2dfa0e728a1">smccc_set_retval</a>(vcpu, le32_to_cpu(u[0]), le32_to_cpu(u[1]),</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                 le32_to_cpu(u[2]), le32_to_cpu(u[3]));</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">case</span> ARM_SMCCC_TRNG_RND32:</div>
@@ -287,9 +287,12 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="trng_8c.html#a3d1ac492ec1515ed0864e4e9b44e4221">kvm_trng_do_rnd</a>(vcpu, <a class="code" href="gen-hyprel_8c.html#a854352f53b148adc24983a58a1866d66">size</a>);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    smccc_set_retval(vcpu, val, 0, 0, 0);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="arm__hypercalls_8h.html#ae543f09c1c7681cec4e5d2dfa0e728a1">smccc_set_retval</a>(vcpu, val, 0, 0, 0);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
+<div class="ttc" id="aarm__hypercalls_8h_html_a8baef8e49dbce7b140c519845a20611f"><div class="ttname"><a href="arm__hypercalls_8h.html#a8baef8e49dbce7b140c519845a20611f">smccc_get_function</a></div><div class="ttdeci">static u32 smccc_get_function(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="arm__hypercalls_8h_source.html#l00011">arm_hypercalls.h:11</a></div></div>
+<div class="ttc" id="aarm__hypercalls_8h_html_aab3de177147e0efb70c732a1ad3706dd"><div class="ttname"><a href="arm__hypercalls_8h.html#aab3de177147e0efb70c732a1ad3706dd">smccc_get_arg1</a></div><div class="ttdeci">static unsigned long smccc_get_arg1(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="arm__hypercalls_8h_source.html#l00016">arm_hypercalls.h:16</a></div></div>
+<div class="ttc" id="aarm__hypercalls_8h_html_ae543f09c1c7681cec4e5d2dfa0e728a1"><div class="ttname"><a href="arm__hypercalls_8h.html#ae543f09c1c7681cec4e5d2dfa0e728a1">smccc_set_retval</a></div><div class="ttdeci">static void smccc_set_retval(struct kvm_vcpu *vcpu, unsigned long a0, unsigned long a1, unsigned long a2, unsigned long a3)</div><div class="ttdef"><b>Definition:</b> <a href="arm__hypercalls_8h_source.html#l00031">arm_hypercalls.h:31</a></div></div>
 <div class="ttc" id="agen-hyprel_8c_html_a854352f53b148adc24983a58a1866d66"><div class="ttname"><a href="gen-hyprel_8c.html#a854352f53b148adc24983a58a1866d66">size</a></div><div class="ttdeci">size_t size</div><div class="ttdef"><b>Definition:</b> <a href="gen-hyprel_8c_source.html#l00133">gen-hyprel.c:133</a></div></div>
 <div class="ttc" id="atrng_8c_html_a3d1ac492ec1515ed0864e4e9b44e4221"><div class="ttname"><a href="trng_8c.html#a3d1ac492ec1515ed0864e4e9b44e4221">kvm_trng_do_rnd</a></div><div class="ttdeci">static int kvm_trng_do_rnd(struct kvm_vcpu *vcpu, int size)</div><div class="ttdef"><b>Definition:</b> <a href="trng_8c_source.html#l00024">trng.c:24</a></div></div>
 <div class="ttc" id="atrng_8c_html_a5c49ef2095c7ffa623f1f8147db8db12"><div class="ttname"><a href="trng_8c.html#a5c49ef2095c7ffa623f1f8147db8db12">TRNG_SUCCESS</a></div><div class="ttdeci">#define TRNG_SUCCESS</div><div class="ttdef"><b>Definition:</b> <a href="trng_8c_source.html#l00014">trng.c:14</a></div></div>
@@ -300,8 +303,11 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="trng_8c_a77478bf42ec810a0e55387bf3a7997c2_cgraph.png" border="0" usemap="#atrng_8c_a77478bf42ec810a0e55387bf3a7997c2_cgraph" alt=""/></div>
 <map name="atrng_8c_a77478bf42ec810a0e55387bf3a7997c2_cgraph" id="atrng_8c_a77478bf42ec810a0e55387bf3a7997c2_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,120,32"/>
-<area shape="rect" href="trng_8c.html#a3d1ac492ec1515ed0864e4e9b44e4221" title=" " alt="" coords="168,5,303,32"/>
+<area shape="rect" title=" " alt="" coords="5,56,120,83"/>
+<area shape="rect" href="trng_8c.html#a3d1ac492ec1515ed0864e4e9b44e4221" title=" " alt="" coords="176,31,311,57"/>
+<area shape="rect" href="arm__hypercalls_8h.html#aab3de177147e0efb70c732a1ad3706dd" title=" " alt="" coords="371,5,497,32"/>
+<area shape="rect" href="arm__hypercalls_8h.html#ae543f09c1c7681cec4e5d2dfa0e728a1" title=" " alt="" coords="367,56,501,83"/>
+<area shape="rect" href="arm__hypercalls_8h.html#a8baef8e49dbce7b140c519845a20611f" title=" " alt="" coords="168,132,319,159"/>
 </map>
 </div>
 <div class="dynheader">
@@ -355,11 +361,11 @@ Here is the caller graph for this function:</div>
 <p class="definition">Definition at line <a class="el" href="trng_8c_source.html#l00024">24</a> of file <a class="el" href="trng_8c_source.html">trng.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    DECLARE_BITMAP(bits, <a class="code" href="trng_8c.html#a6ec902b4792a59b132c79aa00b02c339">TRNG_MAX_BITS64</a>);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    u32 num_bits = smccc_get_arg1(vcpu);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    u32 num_bits = <a class="code" href="arm__hypercalls_8h.html#aab3de177147e0efb70c732a1ad3706dd">smccc_get_arg1</a>(vcpu);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">if</span> (num_bits &gt; 3 * <a class="code" href="gen-hyprel_8c.html#a854352f53b148adc24983a58a1866d66">size</a>) {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        smccc_set_retval(vcpu, <a class="code" href="trng_8c.html#a3de4f0d444afee58d6ca5f4afddfe32e">TRNG_INVALID_PARAMETER</a>, 0, 0, 0);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="arm__hypercalls_8h.html#ae543f09c1c7681cec4e5d2dfa0e728a1">smccc_set_retval</a>(vcpu, <a class="code" href="trng_8c.html#a3de4f0d444afee58d6ca5f4afddfe32e">TRNG_INVALID_PARAMETER</a>, 0, 0, 0);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
@@ -370,10 +376,10 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    bitmap_clear(bits, num_bits, <a class="code" href="trng_8c.html#a6ec902b4792a59b132c79aa00b02c339">TRNG_MAX_BITS64</a> - num_bits);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="gen-hyprel_8c.html#a854352f53b148adc24983a58a1866d66">size</a> == 32)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        smccc_set_retval(vcpu, <a class="code" href="trng_8c.html#a5c49ef2095c7ffa623f1f8147db8db12">TRNG_SUCCESS</a>, lower_32_bits(bits[1]),</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="arm__hypercalls_8h.html#ae543f09c1c7681cec4e5d2dfa0e728a1">smccc_set_retval</a>(vcpu, <a class="code" href="trng_8c.html#a5c49ef2095c7ffa623f1f8147db8db12">TRNG_SUCCESS</a>, lower_32_bits(bits[1]),</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                 upper_32_bits(bits[0]), lower_32_bits(bits[0]));</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        smccc_set_retval(vcpu, <a class="code" href="trng_8c.html#a5c49ef2095c7ffa623f1f8147db8db12">TRNG_SUCCESS</a>, bits[2], bits[1], bits[0]);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="arm__hypercalls_8h.html#ae543f09c1c7681cec4e5d2dfa0e728a1">smccc_set_retval</a>(vcpu, <a class="code" href="trng_8c.html#a5c49ef2095c7ffa623f1f8147db8db12">TRNG_SUCCESS</a>, bits[2], bits[1], bits[0]);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    memzero_explicit(bits, <span class="keyword">sizeof</span>(bits));</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> 1;</div>
@@ -381,6 +387,16 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="atrng_8c_html_a3de4f0d444afee58d6ca5f4afddfe32e"><div class="ttname"><a href="trng_8c.html#a3de4f0d444afee58d6ca5f4afddfe32e">TRNG_INVALID_PARAMETER</a></div><div class="ttdeci">#define TRNG_INVALID_PARAMETER</div><div class="ttdef"><b>Definition:</b> <a href="trng_8c_source.html#l00016">trng.c:16</a></div></div>
 <div class="ttc" id="atrng_8c_html_a6ec902b4792a59b132c79aa00b02c339"><div class="ttname"><a href="trng_8c.html#a6ec902b4792a59b132c79aa00b02c339">TRNG_MAX_BITS64</a></div><div class="ttdeci">#define TRNG_MAX_BITS64</div><div class="ttdef"><b>Definition:</b> <a href="trng_8c_source.html#l00019">trng.c:19</a></div></div>
 </div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="trng_8c_a3d1ac492ec1515ed0864e4e9b44e4221_cgraph.png" border="0" usemap="#atrng_8c_a3d1ac492ec1515ed0864e4e9b44e4221_cgraph" alt=""/></div>
+<map name="atrng_8c_a3d1ac492ec1515ed0864e4e9b44e4221_cgraph" id="atrng_8c_a3d1ac492ec1515ed0864e4e9b44e4221_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,140,57"/>
+<area shape="rect" href="arm__hypercalls_8h.html#aab3de177147e0efb70c732a1ad3706dd" title=" " alt="" coords="192,5,319,32"/>
+<area shape="rect" href="arm__hypercalls_8h.html#ae543f09c1c7681cec4e5d2dfa0e728a1" title=" " alt="" coords="188,56,323,83"/>
+</map>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="trng_8c_a3d1ac492ec1515ed0864e4e9b44e4221_icgraph.png" border="0" usemap="#atrng_8c_a3d1ac492ec1515ed0864e4e9b44e4221_icgraph" alt=""/></div>

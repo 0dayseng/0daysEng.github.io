@@ -1,13 +1,15 @@
 <map id="kvm_vm_ioctl_enable_cap_generic" name="kvm_vm_ioctl_enable_cap_generic">
-<area shape="rect" id="node1" title=" " alt="" coords="5,68,171,109"/>
-<area shape="rect" id="node2" href="$kvm__main_8c.html#a0899e31586f3cac81aa5bd574a651fbf" title=" " alt="" coords="461,5,636,47"/>
-<area shape="rect" id="node3" href="$kvm__main_8c.html#af05b1274e9e33570d11f7f98bee8b839" title=" " alt="" coords="237,97,395,139"/>
-<area shape="rect" id="node8" href="$arm_8c.html#aaf3dbbe842e06195f2e46694ea837380" title=" " alt="" coords="219,46,413,73"/>
-<area shape="rect" id="node9" href="$kvm__main_8c.html#a407aa56167924ddd1a096c1c44583020" title=" " alt="" coords="233,163,399,204"/>
-<area shape="rect" id="node4" href="$arm_8c.html#a18efe0d4e70bef9cae70344f31f47cff" title=" " alt="" coords="469,87,628,128"/>
-<area shape="rect" id="node5" href="$reset_8c.html#a9412cd91f2536c51d45002e1e398b834" title=" " alt="" coords="717,23,860,50"/>
-<area shape="rect" id="node6" href="$arm_8c.html#a66d677aa2122d322c1bc69e20531cf58" title=" " alt="" coords="702,75,875,116"/>
-<area shape="rect" id="node7" href="$pvtime_8c.html#a1f2cc22ceb74b031293b406ee9811380" title=" " alt="" coords="684,141,893,167"/>
-<area shape="rect" id="node10" href="$dirty__ring_8c.html#a4dcfe0233e1bdb660fe9531dbb940e46" title=" " alt="" coords="475,163,623,204"/>
-<area shape="rect" id="node11" href="$dirty__ring_8c.html#a71527f4887a684702af35fcb5a573dca" title=" " alt="" coords="699,191,878,218"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,103,171,145"/>
+<area shape="rect" id="node2" href="$kvm__main_8c.html#a0899e31586f3cac81aa5bd574a651fbf" title=" " alt="" coords="461,37,636,78"/>
+<area shape="rect" id="node3" href="$kvm__main_8c.html#af05b1274e9e33570d11f7f98bee8b839" title=" " alt="" coords="237,133,395,174"/>
+<area shape="rect" id="node10" href="$arm_8c.html#aaf3dbbe842e06195f2e46694ea837380" title=" " alt="" coords="219,81,413,108"/>
+<area shape="rect" id="node11" href="$kvm__main_8c.html#a407aa56167924ddd1a096c1c44583020" title=" " alt="" coords="233,198,399,239"/>
+<area shape="rect" id="node4" href="$arm_8c.html#a18efe0d4e70bef9cae70344f31f47cff" title=" " alt="" coords="469,115,628,157"/>
+<area shape="rect" id="node5" href="$reset_8c.html#a9412cd91f2536c51d45002e1e398b834" title=" " alt="" coords="717,5,860,32"/>
+<area shape="rect" id="node6" href="$arm_8c.html#a66d677aa2122d322c1bc69e20531cf58" title=" " alt="" coords="702,57,875,98"/>
+<area shape="rect" id="node8" href="$pvtime_8c.html#a1f2cc22ceb74b031293b406ee9811380" title=" " alt="" coords="684,123,893,149"/>
+<area shape="rect" id="node9" href="$arm__pmu_8h.html#a7a4fb2cf1fb48c203893224b94564f63" title=" " alt="" coords="689,173,888,200"/>
+<area shape="rect" id="node7" href="$arm__vgic_8h.html#a3e5bae87fbacf924b25a9944b4f99e87" title=" " alt="" coords="941,64,1136,91"/>
+<area shape="rect" id="node12" href="$dirty__ring_8c.html#a4dcfe0233e1bdb660fe9531dbb940e46" title=" " alt="" coords="475,198,623,239"/>
+<area shape="rect" id="node13" href="$dirty__ring_8c.html#a71527f4887a684702af35fcb5a573dca" title=" " alt="" coords="699,224,878,251"/>
 </map>

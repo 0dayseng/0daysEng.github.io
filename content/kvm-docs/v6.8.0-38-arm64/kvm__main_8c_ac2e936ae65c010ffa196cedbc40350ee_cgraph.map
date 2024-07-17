@@ -1,7 +1,8 @@
 <map id="kvm_io_bus_write" name="kvm_io_bus_write">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,145,32"/>
-<area shape="rect" id="node2" href="$kvm__main_8c.html#a484b5f7e2c7e682cb49450f611319077" title=" " alt="" coords="193,5,348,32"/>
-<area shape="rect" id="node3" href="$kvm__main_8c.html#a75ccec7a81fef145fb3c3a3b5479a86f" title=" " alt="" coords="849,31,984,57"/>
-<area shape="rect" id="node4" href="$kvm__main_8c.html#a94bf2e0af8d9af8807a6a92ffb01cc1c" title=" " alt="" coords="396,31,587,57"/>
-<area shape="rect" id="node5" href="$kvm__main_8c.html#aa52366417ec3708a05183231a3227d9d" title=" " alt="" coords="635,81,801,108"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,28,145,55"/>
+<area shape="rect" id="node2" href="$kvm__main_8c.html#a484b5f7e2c7e682cb49450f611319077" title=" " alt="" coords="193,28,348,55"/>
+<area shape="rect" id="node3" href="$kvm__main_8c.html#a75ccec7a81fef145fb3c3a3b5479a86f" title=" " alt="" coords="849,28,984,55"/>
+<area shape="rect" id="node4" href="$kvm__main_8c.html#a94bf2e0af8d9af8807a6a92ffb01cc1c" title=" " alt="" coords="396,28,587,55"/>
+<area shape="rect" id="node6" href="$iodev_8h.html#a60b8903e245db48d9c5d7287ff781825" title=" " alt="" coords="415,79,568,106"/>
+<area shape="rect" id="node5" href="$kvm__main_8c.html#aa52366417ec3708a05183231a3227d9d" title=" " alt="" coords="635,79,801,106"/>
 </map>

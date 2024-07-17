@@ -1,8 +1,9 @@
 <map id="arch/arm64/kvm/hypercalls.c" name="arch/arm64/kvm/hypercalls.c">
-<area shape="rect" id="node1" title=" " alt="" coords="303,5,514,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="202,5,413,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,80,148,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="172,80,307,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="331,80,487,107"/>
-<area shape="rect" id="node5" title=" " alt="" coords="511,80,677,107"/>
-<area shape="rect" id="node6" title=" " alt="" coords="701,80,828,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="361,155,496,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="145,155,301,181"/>
+<area shape="rect" id="node5" href="$arm__hypercalls_8h.html" title=" " alt="" coords="224,80,391,107"/>
+<area shape="rect" id="node6" href="$arm__psci_8h.html" title=" " alt="" coords="467,80,593,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="521,155,649,181"/>
 </map>

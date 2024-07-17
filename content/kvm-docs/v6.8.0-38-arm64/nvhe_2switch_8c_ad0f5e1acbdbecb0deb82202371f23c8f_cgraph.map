@@ -1,20 +1,21 @@
 <map id="hyp_panic" name="hyp_panic">
 <area shape="rect" id="node1" title=" " alt="" coords="5,228,93,255"/>
 <area shape="rect" id="node2" href="$nvhe_2switch_8c.html#ae0a32b92b674eb6922cbfab5f8d22daf" title=" " alt="" coords="178,64,323,91"/>
-<area shape="rect" id="node7" href="$mem__protect_8h.html#a30e07c8d8daaddaecfb787562883f88d" title=" " alt="" coords="175,177,326,204"/>
-<area shape="rect" id="node8" href="$nvhe_2sysreg-sr_8c.html#a2e458ad5cb83d9b7eb6663209841f819" title=" " alt="" coords="145,228,356,255"/>
-<area shape="rect" id="node15" href="$nvhe_2timer-sr_8c.html#a2e65c3961f84632bd8c381e2aeca2924" title=" " alt="" coords="168,279,333,305"/>
-<area shape="rect" id="node16" href="$nvhe_2switch_8c.html#a979e800f0a5f7ed4e5cd96abe82b77ec" title=" " alt="" coords="141,384,360,411"/>
+<area shape="rect" id="node8" href="$mem__protect_8h.html#a30e07c8d8daaddaecfb787562883f88d" title=" " alt="" coords="175,177,326,204"/>
+<area shape="rect" id="node9" href="$nvhe_2sysreg-sr_8c.html#a2e458ad5cb83d9b7eb6663209841f819" title=" " alt="" coords="145,228,356,255"/>
+<area shape="rect" id="node16" href="$nvhe_2timer-sr_8c.html#a2e65c3961f84632bd8c381e2aeca2924" title=" " alt="" coords="168,279,333,305"/>
+<area shape="rect" id="node17" href="$nvhe_2switch_8c.html#a979e800f0a5f7ed4e5cd96abe82b77ec" title=" " alt="" coords="141,384,360,411"/>
 <area shape="rect" id="node3" href="$switch_8h.html#ac0230dd80fe718cd080b982a83ba74bb" title=" " alt="" coords="430,5,582,32"/>
 <area shape="rect" id="node4" href="$switch_8h.html#a35d28599759bc9cf3b045642fd7b9245" title=" " alt="" coords="433,57,579,98"/>
-<area shape="rect" id="node5" href="$switch_8h.html#a6c7c288e5cc7409e400d523eb9397313" title=" " alt="" coords="652,57,797,98"/>
-<area shape="rect" id="node6" href="$switch_8h.html#a4a6fdb32e965c228965f69fd51d57e04" title=" " alt="" coords="845,64,956,91"/>
-<area shape="rect" id="node9" href="$sysreg-sr_8h.html#a10fbf2ad00d7154a050f4e8a9bcc0847" title=" " alt="" coords="408,122,604,163"/>
-<area shape="rect" id="node10" href="$sysreg-sr_8h.html#a8306ba414fccbd1858488fbef3077850" title=" " alt="" coords="427,187,585,229"/>
-<area shape="rect" id="node12" href="$sysreg-sr_8h.html#a88ce6b108b162c6f245ffbf18767645d" title=" " alt="" coords="427,253,585,294"/>
-<area shape="rect" id="node14" href="$sysreg-sr_8h.html#ad74b28a4d40908c74509b46536769507" title=" " alt="" coords="423,318,589,359"/>
-<area shape="rect" id="node11" href="$sysreg-sr_8h.html#af7ebccfbf2739befae3e99a282871ecf" title=" " alt="" coords="669,195,780,221"/>
-<area shape="rect" id="node13" href="$sysreg-sr_8h.html#a8fb43c0785d92eb4dd5b82ac9246cb2b" title=" " alt="" coords="670,260,779,287"/>
-<area shape="rect" id="node17" href="$hyp_2nvhe_2stacktrace_8c.html#aaf2f118f13fdec05b2879f60e5d44085" title=" " alt="" coords="419,384,593,411"/>
-<area shape="rect" id="node18" href="$hyp_2nvhe_2stacktrace_8c.html#a7c7dcd86ba08721ea055a7f1675717ff" title=" " alt="" coords="422,435,590,461"/>
+<area shape="rect" id="node5" href="$switch_8h.html#a6c7c288e5cc7409e400d523eb9397313" title=" " alt="" coords="679,27,824,69"/>
+<area shape="rect" id="node7" href="$arm__pmu_8h.html#a7a4fb2cf1fb48c203893224b94564f63" title=" " alt="" coords="652,93,851,120"/>
+<area shape="rect" id="node6" href="$switch_8h.html#a4a6fdb32e965c228965f69fd51d57e04" title=" " alt="" coords="899,35,1009,61"/>
+<area shape="rect" id="node10" href="$sysreg-sr_8h.html#a10fbf2ad00d7154a050f4e8a9bcc0847" title=" " alt="" coords="408,122,604,163"/>
+<area shape="rect" id="node11" href="$sysreg-sr_8h.html#a8306ba414fccbd1858488fbef3077850" title=" " alt="" coords="427,187,585,229"/>
+<area shape="rect" id="node13" href="$sysreg-sr_8h.html#a88ce6b108b162c6f245ffbf18767645d" title=" " alt="" coords="427,253,585,294"/>
+<area shape="rect" id="node15" href="$sysreg-sr_8h.html#ad74b28a4d40908c74509b46536769507" title=" " alt="" coords="423,318,589,359"/>
+<area shape="rect" id="node12" href="$sysreg-sr_8h.html#af7ebccfbf2739befae3e99a282871ecf" title=" " alt="" coords="696,195,807,221"/>
+<area shape="rect" id="node14" href="$sysreg-sr_8h.html#a8fb43c0785d92eb4dd5b82ac9246cb2b" title=" " alt="" coords="697,260,806,287"/>
+<area shape="rect" id="node18" href="$hyp_2nvhe_2stacktrace_8c.html#aaf2f118f13fdec05b2879f60e5d44085" title=" " alt="" coords="419,384,593,411"/>
+<area shape="rect" id="node19" href="$hyp_2nvhe_2stacktrace_8c.html#a7c7dcd86ba08721ea055a7f1675717ff" title=" " alt="" coords="422,435,590,461"/>
 </map>

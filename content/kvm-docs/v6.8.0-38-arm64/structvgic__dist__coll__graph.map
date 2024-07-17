@@ -1,0 +1,11 @@
+<map id="vgic_dist" name="vgic_dist">
+<area shape="rect" id="node1" title=" " alt="" coords="122,273,202,300"/>
+<area shape="rect" id="node2" href="$structvgic__irq.html" title=" " alt="" coords="5,184,79,211"/>
+<area shape="rect" id="node3" href="$structirq__ops.html" title=" " alt="" coords="7,95,77,121"/>
+<area shape="rect" id="node4" href="$structvgic__io__device.html" title=" " alt="" coords="263,184,381,211"/>
+<area shape="rect" id="node5" href="$structvgic__its.html" title=" " alt="" coords="322,273,394,300"/>
+<area shape="rect" id="node6" href="$structkvm__io__device.html" title=" " alt="" coords="366,95,486,121"/>
+<area shape="rect" id="node7" href="$structkvm__io__device__ops.html" title=" " alt="" coords="351,5,501,32"/>
+<area shape="rect" id="node8" href="$structvgic__register__region.html" title=" " alt="" coords="187,95,342,121"/>
+<area shape="rect" id="node9" href="$structvgic__state__iter.html" title=" " alt="" coords="103,184,221,211"/>
+</map>

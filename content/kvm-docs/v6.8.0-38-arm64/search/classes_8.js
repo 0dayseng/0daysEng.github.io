@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['stage2_5fage_5fdata_2918',['stage2_age_data',['../structstage2__age__data.html',1,'']]],
-  ['stage2_5fattr_5fdata_2919',['stage2_attr_data',['../structstage2__attr__data.html',1,'']]],
-  ['stage2_5fmap_5fdata_2920',['stage2_map_data',['../structstage2__map__data.html',1,'']]],
-  ['sve_5fstate_5freg_5fregion_2921',['sve_state_reg_region',['../structsve__state__reg__region.html',1,'']]],
-  ['sys_5freg_5fdesc_2922',['sys_reg_desc',['../structsys__reg__desc.html',1,'']]],
-  ['sys_5freg_5fparams_2923',['sys_reg_params',['../structsys__reg__params.html',1,'']]]
+  ['pkvm_5fhyp_5fvcpu_3141',['pkvm_hyp_vcpu',['../structpkvm__hyp__vcpu.html',1,'']]],
+  ['pkvm_5fhyp_5fvm_3142',['pkvm_hyp_vm',['../structpkvm__hyp__vm.html',1,'']]],
+  ['pkvm_5fmem_5fdonation_3143',['pkvm_mem_donation',['../structpkvm__mem__donation.html',1,'']]],
+  ['pkvm_5fmem_5fshare_3144',['pkvm_mem_share',['../structpkvm__mem__share.html',1,'']]],
+  ['pkvm_5fmem_5ftransition_3145',['pkvm_mem_transition',['../structpkvm__mem__transition.html',1,'']]],
+  ['psci_5fboot_5fargs_3146',['psci_boot_args',['../structpsci__boot__args.html',1,'']]]
 ];

@@ -80,9 +80,9 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="center"><img src="vgic-mmio_8h__dep__incl.png" border="0" usemap="#aarch_2arm64_2kvm_2vgic_2vgic-mmio_8hdep" alt=""/></div>
 <map name="aarch_2arm64_2kvm_2vgic_2vgic-mmio_8hdep" id="aarch_2arm64_2kvm_2vgic_2vgic-mmio_8hdep">
 <area shape="rect" title=" " alt="" coords="281,5,441,47"/>
-<area shape="rect" href="vgic-mmio-v2_8c.html" title=" " alt="" coords="5,95,165,136"/>
-<area shape="rect" href="vgic-mmio_8c.html" title=" " alt="" coords="189,95,349,136"/>
-<area shape="rect" href="vgic-mmio-v3_8c.html" title=" " alt="" coords="373,95,533,136"/>
+<area shape="rect" href="vgic-mmio-v3_8c.html" title=" " alt="" coords="5,95,165,136"/>
+<area shape="rect" href="vgic-mmio-v2_8c.html" title=" " alt="" coords="189,95,349,136"/>
+<area shape="rect" href="vgic-mmio_8c.html" title=" " alt="" coords="373,95,533,136"/>
 <area shape="rect" href="vgic-its_8c.html" title=" " alt="" coords="557,95,717,136"/>
 </map>
 </div>
@@ -177,15 +177,15 @@ Functions</h2></td></tr>
 <tr class="separator:a7fac20eacde0df9000d09b67f9300c16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe0c52fb86ae2728c808545ce2955101"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vgic-mmio_8h.html#abe0c52fb86ae2728c808545ce2955101">vgic_mmio_write_config</a> (struct kvm_vcpu *vcpu, gpa_t addr, unsigned int len, unsigned long val)</td></tr>
 <tr class="separator:abe0c52fb86ae2728c808545ce2955101"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae999933ae5e2cc6f0d3910bbe33386ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vgic-mmio_8h.html#ae999933ae5e2cc6f0d3910bbe33386ba">vgic_uaccess</a> (struct kvm_vcpu *vcpu, struct vgic_io_device *dev, bool is_write, int offset, u32 *val)</td></tr>
+<tr class="memitem:ae999933ae5e2cc6f0d3910bbe33386ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vgic-mmio_8h.html#ae999933ae5e2cc6f0d3910bbe33386ba">vgic_uaccess</a> (struct kvm_vcpu *vcpu, struct <a class="el" href="structvgic__io__device.html">vgic_io_device</a> *dev, bool is_write, int offset, u32 *val)</td></tr>
 <tr class="separator:ae999933ae5e2cc6f0d3910bbe33386ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74de2333a13c0e99b703d65cab9666b3"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vgic-mmio_8h.html#a74de2333a13c0e99b703d65cab9666b3">vgic_read_irq_line_level_info</a> (struct kvm_vcpu *vcpu, u32 intid)</td></tr>
 <tr class="separator:a74de2333a13c0e99b703d65cab9666b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28964cd75c2483a30f9743d35507bbce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vgic-mmio_8h.html#a28964cd75c2483a30f9743d35507bbce">vgic_write_irq_line_level_info</a> (struct kvm_vcpu *vcpu, u32 intid, const u32 val)</td></tr>
 <tr class="separator:a28964cd75c2483a30f9743d35507bbce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99781f95ebe917fea2537d762dded6e9"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vgic-mmio_8h.html#a99781f95ebe917fea2537d762dded6e9">vgic_v2_init_dist_iodev</a> (struct vgic_io_device *dev)</td></tr>
+<tr class="memitem:a99781f95ebe917fea2537d762dded6e9"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vgic-mmio_8h.html#a99781f95ebe917fea2537d762dded6e9">vgic_v2_init_dist_iodev</a> (struct <a class="el" href="structvgic__io__device.html">vgic_io_device</a> *dev)</td></tr>
 <tr class="separator:a99781f95ebe917fea2537d762dded6e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab423a52c4f34cfe2d13a8da61cba66cb"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vgic-mmio_8h.html#ab423a52c4f34cfe2d13a8da61cba66cb">vgic_v3_init_dist_iodev</a> (struct vgic_io_device *dev)</td></tr>
+<tr class="memitem:ab423a52c4f34cfe2d13a8da61cba66cb"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vgic-mmio_8h.html#ab423a52c4f34cfe2d13a8da61cba66cb">vgic_v3_init_dist_iodev</a> (struct <a class="el" href="structvgic__io__device.html">vgic_io_device</a> *dev)</td></tr>
 <tr class="separator:ab423a52c4f34cfe2d13a8da61cba66cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affcaab167798829f4df49438876e7d80"><td class="memItemLeft" align="right" valign="top">u64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vgic-mmio_8h.html#affcaab167798829f4df49438876e7d80">vgic_sanitise_outer_cacheability</a> (u64 reg)</td></tr>
 <tr class="separator:affcaab167798829f4df49438876e7d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,7 +200,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:aec0428e9a13ae48d45af461ec92b8005"><td class="memItemLeft" align="right" valign="top">const struct kvm_io_device_ops&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vgic-mmio_8h.html#aec0428e9a13ae48d45af461ec92b8005">kvm_io_gic_ops</a></td></tr>
+<tr class="memitem:aec0428e9a13ae48d45af461ec92b8005"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structkvm__io__device__ops.html">kvm_io_device_ops</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vgic-mmio_8h.html#aec0428e9a13ae48d45af461ec92b8005">kvm_io_gic_ops</a></td></tr>
 <tr class="separator:aec0428e9a13ae48d45af461ec92b8005"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -956,16 +956,21 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;    <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160; </div>
 <div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; len * 4; i++) {</div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;        <span class="keyword">struct </span>vgic_irq *irq = <a class="code" href="vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516">vgic_get_irq</a>(vcpu-&gt;kvm, vcpu, intid + i);</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;        <span class="keyword">struct </span><a class="code" href="structvgic__irq.html">vgic_irq</a> *irq = <a class="code" href="vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516">vgic_get_irq</a>(<a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>-&gt;kvm, <a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>, <a class="code" href="structvgic__irq.html#a52b9a2e701d89765fc16feb0323ef277">intid</a> + i);</div>
 <div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160; </div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;        <span class="keywordflow">if</span> (irq-&gt;config == VGIC_CONFIG_EDGE)</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;        <span class="keywordflow">if</span> (irq-&gt;<a class="code" href="structvgic__irq.html#afb2bd15c9dd315e5617a243d13eb5f79">config</a> == <a class="code" href="arm__vgic_8h.html#a23952420a7fea6ce35df942e6b0783e7adc1b4a2895063d95a6a3aef89da15915">VGIC_CONFIG_EDGE</a>)</div>
 <div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;            value |= (2U &lt;&lt; (i * 2));</div>
 <div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160; </div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;        <a class="code" href="vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5">vgic_put_irq</a>(vcpu-&gt;kvm, irq);</div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;        <a class="code" href="vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5">vgic_put_irq</a>(<a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>-&gt;kvm, irq);</div>
 <div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;    }</div>
 <div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160; </div>
 <div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;    <span class="keywordflow">return</span> value;</div>
 <div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;}</div>
+<div class="ttc" id="aarm__vgic_8h_html_a23952420a7fea6ce35df942e6b0783e7adc1b4a2895063d95a6a3aef89da15915"><div class="ttname"><a href="arm__vgic_8h.html#a23952420a7fea6ce35df942e6b0783e7adc1b4a2895063d95a6a3aef89da15915">VGIC_CONFIG_EDGE</a></div><div class="ttdeci">@ VGIC_CONFIG_EDGE</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00093">arm_vgic.h:93</a></div></div>
+<div class="ttc" id="astructvgic__irq_html"><div class="ttname"><a href="structvgic__irq.html">vgic_irq</a></div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00117">arm_vgic.h:117</a></div></div>
+<div class="ttc" id="astructvgic__irq_html_a52b9a2e701d89765fc16feb0323ef277"><div class="ttname"><a href="structvgic__irq.html#a52b9a2e701d89765fc16feb0323ef277">vgic_irq::intid</a></div><div class="ttdeci">u32 intid</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00133">arm_vgic.h:133</a></div></div>
+<div class="ttc" id="astructvgic__irq_html_a86c5cfe30a81ea5690f075fb2fcd9af1"><div class="ttname"><a href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vgic_irq::vcpu</a></div><div class="ttdeci">struct kvm_vcpu * vcpu</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00122">arm_vgic.h:122</a></div></div>
+<div class="ttc" id="astructvgic__irq_html_afb2bd15c9dd315e5617a243d13eb5f79"><div class="ttname"><a href="structvgic__irq.html#afb2bd15c9dd315e5617a243d13eb5f79">vgic_irq::config</a></div><div class="ttdeci">enum vgic_irq_config config</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00151">arm_vgic.h:152</a></div></div>
 <div class="ttc" id="avgic_8c_html_a7f38a266ef3def3202e7e04aa40fd516"><div class="ttname"><a href="vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516">vgic_get_irq</a></div><div class="ttdeci">struct vgic_irq * vgic_get_irq(struct kvm *kvm, struct kvm_vcpu *vcpu, u32 intid)</div><div class="ttdef"><b>Definition:</b> <a href="vgic_8c_source.html#l00092">vgic.c:92</a></div></div>
 <div class="ttc" id="avgic_8c_html_ac055f2fa0d463d3d287ee975bb80a9c5"><div class="ttname"><a href="vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5">vgic_put_irq</a></div><div class="ttdeci">void vgic_put_irq(struct kvm *kvm, struct vgic_irq *irq)</div><div class="ttdef"><b>Definition:</b> <a href="vgic_8c_source.html#l00139">vgic.c:139</a></div></div>
 </div><!-- fragment --><div class="dynheader">
@@ -1025,16 +1030,17 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="comment">/* Loop over all IRQs affected by this read */</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; len * 8; i++) {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keyword">struct </span>vgic_irq *irq = <a class="code" href="vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516">vgic_get_irq</a>(vcpu-&gt;kvm, vcpu, intid + i);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keyword">struct </span><a class="code" href="structvgic__irq.html">vgic_irq</a> *irq = <a class="code" href="vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516">vgic_get_irq</a>(<a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>-&gt;kvm, <a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>, <a class="code" href="structvgic__irq.html#a52b9a2e701d89765fc16feb0323ef277">intid</a> + i);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">if</span> (irq-&gt;enabled)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">if</span> (irq-&gt;<a class="code" href="structvgic__irq.html#a95ddef5ecf585bc624234ce4c9f13102">enabled</a>)</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            value |= (1U &lt;&lt; i);</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <a class="code" href="vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5">vgic_put_irq</a>(vcpu-&gt;kvm, irq);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <a class="code" href="vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5">vgic_put_irq</a>(<a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>-&gt;kvm, irq);</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">return</span> value;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
+<div class="ttc" id="astructvgic__irq_html_a95ddef5ecf585bc624234ce4c9f13102"><div class="ttname"><a href="structvgic__irq.html#a95ddef5ecf585bc624234ce4c9f13102">vgic_irq::enabled</a></div><div class="ttdeci">bool enabled</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00139">arm_vgic.h:139</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1092,16 +1098,17 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">/* Loop over all IRQs affected by this read */</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; len * 8; i++) {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">struct </span>vgic_irq *irq = <a class="code" href="vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516">vgic_get_irq</a>(vcpu-&gt;kvm, vcpu, intid + i);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">struct </span><a class="code" href="structvgic__irq.html">vgic_irq</a> *irq = <a class="code" href="vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516">vgic_get_irq</a>(<a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>-&gt;kvm, <a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>, <a class="code" href="structvgic__irq.html#a52b9a2e701d89765fc16feb0323ef277">intid</a> + i);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">if</span> (irq-&gt;group)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">if</span> (irq-&gt;<a class="code" href="structvgic__irq.html#af3f1934d452b43a3e07f389fae8b6f63">group</a>)</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            value |= BIT(i);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5">vgic_put_irq</a>(vcpu-&gt;kvm, irq);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5">vgic_put_irq</a>(<a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>-&gt;kvm, irq);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> value;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="ttc" id="astructvgic__irq_html_af3f1934d452b43a3e07f389fae8b6f63"><div class="ttname"><a href="structvgic__irq.html#af3f1934d452b43a3e07f389fae8b6f63">vgic_irq::group</a></div><div class="ttdeci">u8 group</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00151">arm_vgic.h:151</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1216,15 +1223,16 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;    u64 val = 0;</div>
 <div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160; </div>
 <div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; len; i++) {</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;        <span class="keyword">struct </span>vgic_irq *irq = <a class="code" href="vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516">vgic_get_irq</a>(vcpu-&gt;kvm, vcpu, intid + i);</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;        <span class="keyword">struct </span><a class="code" href="structvgic__irq.html">vgic_irq</a> *irq = <a class="code" href="vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516">vgic_get_irq</a>(<a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>-&gt;kvm, <a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>, <a class="code" href="structvgic__irq.html#a52b9a2e701d89765fc16feb0323ef277">intid</a> + i);</div>
 <div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160; </div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;        val |= (u64)irq-&gt;priority &lt;&lt; (i * 8);</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;        val |= (u64)irq-&gt;<a class="code" href="structvgic__irq.html#a32b80991e10a1755a169bb40892ad26b">priority</a> &lt;&lt; (i * 8);</div>
 <div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160; </div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;        <a class="code" href="vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5">vgic_put_irq</a>(vcpu-&gt;kvm, irq);</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;        <a class="code" href="vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5">vgic_put_irq</a>(<a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>-&gt;kvm, irq);</div>
 <div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;    }</div>
 <div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160; </div>
 <div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;    <span class="keywordflow">return</span> val;</div>
 <div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;}</div>
+<div class="ttc" id="astructvgic__irq_html_a32b80991e10a1755a169bb40892ad26b"><div class="ttname"><a href="structvgic__irq.html#a32b80991e10a1755a169bb40892ad26b">vgic_irq::priority</a></div><div class="ttdeci">u8 priority</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00150">arm_vgic.h:150</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1643,18 +1651,21 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> flags;</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    for_each_set_bit(i, &amp;val, len * 8) {</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keyword">struct </span>vgic_irq *irq = <a class="code" href="vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516">vgic_get_irq</a>(vcpu-&gt;kvm, vcpu, intid + i);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keyword">struct </span><a class="code" href="structvgic__irq.html">vgic_irq</a> *irq = <a class="code" href="vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516">vgic_get_irq</a>(<a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>-&gt;kvm, <a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>, <a class="code" href="structvgic__irq.html#a52b9a2e701d89765fc16feb0323ef277">intid</a> + i);</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        raw_spin_lock_irqsave(&amp;irq-&gt;irq_lock, flags);</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="keywordflow">if</span> (irq-&gt;hw &amp;&amp; <a class="code" href="vgic_8h.html#a67cef97460e9a4080ae437e5a30113a7">vgic_irq_is_sgi</a>(irq-&gt;intid) &amp;&amp; irq-&gt;enabled)</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            disable_irq_nosync(irq-&gt;host_irq);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        raw_spin_lock_irqsave(&amp;irq-&gt;<a class="code" href="structvgic__irq.html#af1912aedc19eddddbe24a26fe5814a27">irq_lock</a>, flags);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="keywordflow">if</span> (irq-&gt;<a class="code" href="structvgic__irq.html#ac7e3ed05f0fea2733e1db86963e697e1">hw</a> &amp;&amp; <a class="code" href="vgic_8h.html#a67cef97460e9a4080ae437e5a30113a7">vgic_irq_is_sgi</a>(irq-&gt;<a class="code" href="structvgic__irq.html#a52b9a2e701d89765fc16feb0323ef277">intid</a>) &amp;&amp; irq-&gt;<a class="code" href="structvgic__irq.html#a95ddef5ecf585bc624234ce4c9f13102">enabled</a>)</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            disable_irq_nosync(irq-&gt;<a class="code" href="structvgic__irq.html#a73308ba335a3372d0ca5cbe918b95622">host_irq</a>);</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        irq-&gt;enabled = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        irq-&gt;<a class="code" href="structvgic__irq.html#a95ddef5ecf585bc624234ce4c9f13102">enabled</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        raw_spin_unlock_irqrestore(&amp;irq-&gt;irq_lock, flags);</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <a class="code" href="vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5">vgic_put_irq</a>(vcpu-&gt;kvm, irq);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        raw_spin_unlock_irqrestore(&amp;irq-&gt;<a class="code" href="structvgic__irq.html#af1912aedc19eddddbe24a26fe5814a27">irq_lock</a>, flags);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <a class="code" href="vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5">vgic_put_irq</a>(<a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>-&gt;kvm, irq);</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    }</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;}</div>
+<div class="ttc" id="astructvgic__irq_html_a73308ba335a3372d0ca5cbe918b95622"><div class="ttname"><a href="structvgic__irq.html#a73308ba335a3372d0ca5cbe918b95622">vgic_irq::host_irq</a></div><div class="ttdeci">unsigned int host_irq</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00143">arm_vgic.h:143</a></div></div>
+<div class="ttc" id="astructvgic__irq_html_ac7e3ed05f0fea2733e1db86963e697e1"><div class="ttname"><a href="structvgic__irq.html#ac7e3ed05f0fea2733e1db86963e697e1">vgic_irq::hw</a></div><div class="ttdeci">bool hw</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00140">arm_vgic.h:140</a></div></div>
+<div class="ttc" id="astructvgic__irq_html_af1912aedc19eddddbe24a26fe5814a27"><div class="ttname"><a href="structvgic__irq.html#af1912aedc19eddddbe24a26fe5814a27">vgic_irq::irq_lock</a></div><div class="ttdeci">raw_spinlock_t irq_lock</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00118">arm_vgic.h:118</a></div></div>
 <div class="ttc" id="avgic_8h_html_a67cef97460e9a4080ae437e5a30113a7"><div class="ttname"><a href="vgic_8h.html#a67cef97460e9a4080ae437e5a30113a7">vgic_irq_is_sgi</a></div><div class="ttdeci">#define vgic_irq_is_sgi(intid)</div><div class="ttdef"><b>Definition:</b> <a href="vgic_8h_source.html#l00021">vgic.h:21</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1718,7 +1729,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> flags;</div>
 <div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160; </div>
 <div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; len * 4; i++) {</div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;        <span class="keyword">struct </span>vgic_irq *irq;</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;        <span class="keyword">struct </span><a class="code" href="structvgic__irq.html">vgic_irq</a> *irq;</div>
 <div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160; </div>
 <div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;        <span class="comment">/*</span></div>
 <div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;<span class="comment">         * The configuration cannot be changed for SGIs in general,</span></div>
@@ -1726,21 +1737,23 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;<span class="comment">         * code relies on PPIs being level triggered, so we also</span></div>
 <div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;<span class="comment">         * make them read-only here.</span></div>
 <div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;        <span class="keywordflow">if</span> (intid + i &lt; VGIC_NR_PRIVATE_IRQS)</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="structvgic__irq.html#a52b9a2e701d89765fc16feb0323ef277">intid</a> + i &lt; <a class="code" href="arm__vgic_8h.html#ae9d406cdd3eafd831ee41ecf0e48011e">VGIC_NR_PRIVATE_IRQS</a>)</div>
 <div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;            <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160; </div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;        irq = <a class="code" href="vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516">vgic_get_irq</a>(vcpu-&gt;kvm, vcpu, intid + i);</div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;        raw_spin_lock_irqsave(&amp;irq-&gt;irq_lock, flags);</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;        irq = <a class="code" href="vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516">vgic_get_irq</a>(<a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>-&gt;kvm, <a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>, <a class="code" href="structvgic__irq.html#a52b9a2e701d89765fc16feb0323ef277">intid</a> + i);</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;        raw_spin_lock_irqsave(&amp;irq-&gt;<a class="code" href="structvgic__irq.html#af1912aedc19eddddbe24a26fe5814a27">irq_lock</a>, flags);</div>
 <div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160; </div>
 <div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;        <span class="keywordflow">if</span> (test_bit(i * 2 + 1, &amp;val))</div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;            irq-&gt;config = VGIC_CONFIG_EDGE;</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;            irq-&gt;<a class="code" href="structvgic__irq.html#afb2bd15c9dd315e5617a243d13eb5f79">config</a> = <a class="code" href="arm__vgic_8h.html#a23952420a7fea6ce35df942e6b0783e7adc1b4a2895063d95a6a3aef89da15915">VGIC_CONFIG_EDGE</a>;</div>
 <div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;            irq-&gt;config = VGIC_CONFIG_LEVEL;</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;            irq-&gt;<a class="code" href="structvgic__irq.html#afb2bd15c9dd315e5617a243d13eb5f79">config</a> = <a class="code" href="arm__vgic_8h.html#a23952420a7fea6ce35df942e6b0783e7aff766918bb2eff9dbb94c4edea188a2a">VGIC_CONFIG_LEVEL</a>;</div>
 <div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160; </div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;        raw_spin_unlock_irqrestore(&amp;irq-&gt;irq_lock, flags);</div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;        <a class="code" href="vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5">vgic_put_irq</a>(vcpu-&gt;kvm, irq);</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;        raw_spin_unlock_irqrestore(&amp;irq-&gt;<a class="code" href="structvgic__irq.html#af1912aedc19eddddbe24a26fe5814a27">irq_lock</a>, flags);</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;        <a class="code" href="vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5">vgic_put_irq</a>(<a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>-&gt;kvm, irq);</div>
 <div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;    }</div>
 <div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;}</div>
+<div class="ttc" id="aarm__vgic_8h_html_a23952420a7fea6ce35df942e6b0783e7aff766918bb2eff9dbb94c4edea188a2a"><div class="ttname"><a href="arm__vgic_8h.html#a23952420a7fea6ce35df942e6b0783e7aff766918bb2eff9dbb94c4edea188a2a">VGIC_CONFIG_LEVEL</a></div><div class="ttdeci">@ VGIC_CONFIG_LEVEL</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00095">arm_vgic.h:94</a></div></div>
+<div class="ttc" id="aarm__vgic_8h_html_ae9d406cdd3eafd831ee41ecf0e48011e"><div class="ttname"><a href="arm__vgic_8h.html#ae9d406cdd3eafd831ee41ecf0e48011e">VGIC_NR_PRIVATE_IRQS</a></div><div class="ttdeci">#define VGIC_NR_PRIVATE_IRQS</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00027">arm_vgic.h:27</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1868,18 +1881,18 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> flags;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; len * 8; i++) {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keyword">struct </span>vgic_irq *irq = <a class="code" href="vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516">vgic_get_irq</a>(vcpu-&gt;kvm, vcpu, intid + i);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keyword">struct </span><a class="code" href="structvgic__irq.html">vgic_irq</a> *irq = <a class="code" href="vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516">vgic_get_irq</a>(<a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>-&gt;kvm, <a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>, <a class="code" href="structvgic__irq.html#a52b9a2e701d89765fc16feb0323ef277">intid</a> + i);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        raw_spin_lock_irqsave(&amp;irq-&gt;irq_lock, flags);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        irq-&gt;group = !!(val &amp; BIT(i));</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">if</span> (irq-&gt;hw &amp;&amp; <a class="code" href="vgic_8h.html#a67cef97460e9a4080ae437e5a30113a7">vgic_irq_is_sgi</a>(irq-&gt;intid)) {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        raw_spin_lock_irqsave(&amp;irq-&gt;<a class="code" href="structvgic__irq.html#af1912aedc19eddddbe24a26fe5814a27">irq_lock</a>, flags);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        irq-&gt;<a class="code" href="structvgic__irq.html#af3f1934d452b43a3e07f389fae8b6f63">group</a> = !!(val &amp; BIT(i));</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">if</span> (irq-&gt;<a class="code" href="structvgic__irq.html#ac7e3ed05f0fea2733e1db86963e697e1">hw</a> &amp;&amp; <a class="code" href="vgic_8h.html#a67cef97460e9a4080ae437e5a30113a7">vgic_irq_is_sgi</a>(irq-&gt;<a class="code" href="structvgic__irq.html#a52b9a2e701d89765fc16feb0323ef277">intid</a>)) {</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <a class="code" href="vgic-mmio_8c.html#a3be248161382bb544cfd55db2e3ee52b">vgic_update_vsgi</a>(irq);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            raw_spin_unlock_irqrestore(&amp;irq-&gt;irq_lock, flags);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            raw_spin_unlock_irqrestore(&amp;irq-&gt;<a class="code" href="structvgic__irq.html#af1912aedc19eddddbe24a26fe5814a27">irq_lock</a>, flags);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <a class="code" href="vgic_8c.html#a1e208ac24f54fa95ba74797758c5b84c">vgic_queue_irq_unlock</a>(vcpu-&gt;kvm, irq, flags);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <a class="code" href="vgic_8c.html#a1e208ac24f54fa95ba74797758c5b84c">vgic_queue_irq_unlock</a>(<a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>-&gt;kvm, irq, flags);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5">vgic_put_irq</a>(vcpu-&gt;kvm, irq);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5">vgic_put_irq</a>(<a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>-&gt;kvm, irq);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
 <div class="ttc" id="avgic-mmio_8c_html_a3be248161382bb544cfd55db2e3ee52b"><div class="ttname"><a href="vgic-mmio_8c.html#a3be248161382bb544cfd55db2e3ee52b">vgic_update_vsgi</a></div><div class="ttdeci">static void vgic_update_vsgi(struct vgic_irq *irq)</div><div class="ttdef"><b>Definition:</b> <a href="vgic-mmio_8c_source.html#l00064">vgic-mmio.c:64</a></div></div>
@@ -1962,16 +1975,16 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> flags;</div>
 <div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160; </div>
 <div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; len; i++) {</div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;        <span class="keyword">struct </span>vgic_irq *irq = <a class="code" href="vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516">vgic_get_irq</a>(vcpu-&gt;kvm, vcpu, intid + i);</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;        <span class="keyword">struct </span><a class="code" href="structvgic__irq.html">vgic_irq</a> *irq = <a class="code" href="vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516">vgic_get_irq</a>(<a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>-&gt;kvm, <a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>, <a class="code" href="structvgic__irq.html#a52b9a2e701d89765fc16feb0323ef277">intid</a> + i);</div>
 <div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160; </div>
-<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;        raw_spin_lock_irqsave(&amp;irq-&gt;irq_lock, flags);</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;        raw_spin_lock_irqsave(&amp;irq-&gt;<a class="code" href="structvgic__irq.html#af1912aedc19eddddbe24a26fe5814a27">irq_lock</a>, flags);</div>
 <div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;        <span class="comment">/* Narrow the priority range to what we actually support */</span></div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;        irq-&gt;priority = (val &gt;&gt; (i * 8)) &amp; GENMASK(7, 8 - <a class="code" href="vgic_8h.html#a4ca1aec9664009bf017af6d31b590600">VGIC_PRI_BITS</a>);</div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;        <span class="keywordflow">if</span> (irq-&gt;hw &amp;&amp; <a class="code" href="vgic_8h.html#a67cef97460e9a4080ae437e5a30113a7">vgic_irq_is_sgi</a>(irq-&gt;intid))</div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;        irq-&gt;<a class="code" href="structvgic__irq.html#a32b80991e10a1755a169bb40892ad26b">priority</a> = (val &gt;&gt; (i * 8)) &amp; GENMASK(7, 8 - <a class="code" href="vgic_8h.html#a4ca1aec9664009bf017af6d31b590600">VGIC_PRI_BITS</a>);</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;        <span class="keywordflow">if</span> (irq-&gt;<a class="code" href="structvgic__irq.html#ac7e3ed05f0fea2733e1db86963e697e1">hw</a> &amp;&amp; <a class="code" href="vgic_8h.html#a67cef97460e9a4080ae437e5a30113a7">vgic_irq_is_sgi</a>(irq-&gt;<a class="code" href="structvgic__irq.html#a52b9a2e701d89765fc16feb0323ef277">intid</a>))</div>
 <div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;            <a class="code" href="vgic-mmio_8c.html#a3be248161382bb544cfd55db2e3ee52b">vgic_update_vsgi</a>(irq);</div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;        raw_spin_unlock_irqrestore(&amp;irq-&gt;irq_lock, flags);</div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;        raw_spin_unlock_irqrestore(&amp;irq-&gt;<a class="code" href="structvgic__irq.html#af1912aedc19eddddbe24a26fe5814a27">irq_lock</a>, flags);</div>
 <div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160; </div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;        <a class="code" href="vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5">vgic_put_irq</a>(vcpu-&gt;kvm, irq);</div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;        <a class="code" href="vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5">vgic_put_irq</a>(<a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>-&gt;kvm, irq);</div>
 <div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;    }</div>
 <div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;}</div>
 <div class="ttc" id="avgic_8h_html_a4ca1aec9664009bf017af6d31b590600"><div class="ttname"><a href="vgic_8h.html#a4ca1aec9664009bf017af6d31b590600">VGIC_PRI_BITS</a></div><div class="ttdeci">#define VGIC_PRI_BITS</div><div class="ttdef"><b>Definition:</b> <a href="vgic_8h_source.html#l00019">vgic.h:19</a></div></div>
@@ -2126,45 +2139,47 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> flags;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    for_each_set_bit(i, &amp;val, len * 8) {</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keyword">struct </span>vgic_irq *irq = <a class="code" href="vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516">vgic_get_irq</a>(vcpu-&gt;kvm, vcpu, intid + i);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keyword">struct </span><a class="code" href="structvgic__irq.html">vgic_irq</a> *irq = <a class="code" href="vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516">vgic_get_irq</a>(<a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>-&gt;kvm, <a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>, <a class="code" href="structvgic__irq.html#a52b9a2e701d89765fc16feb0323ef277">intid</a> + i);</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        raw_spin_lock_irqsave(&amp;irq-&gt;irq_lock, flags);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordflow">if</span> (irq-&gt;hw &amp;&amp; <a class="code" href="vgic_8h.html#a67cef97460e9a4080ae437e5a30113a7">vgic_irq_is_sgi</a>(irq-&gt;intid)) {</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <span class="keywordflow">if</span> (!irq-&gt;enabled) {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        raw_spin_lock_irqsave(&amp;irq-&gt;<a class="code" href="structvgic__irq.html#af1912aedc19eddddbe24a26fe5814a27">irq_lock</a>, flags);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordflow">if</span> (irq-&gt;<a class="code" href="structvgic__irq.html#ac7e3ed05f0fea2733e1db86963e697e1">hw</a> &amp;&amp; <a class="code" href="vgic_8h.html#a67cef97460e9a4080ae437e5a30113a7">vgic_irq_is_sgi</a>(irq-&gt;<a class="code" href="structvgic__irq.html#a52b9a2e701d89765fc16feb0323ef277">intid</a>)) {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <span class="keywordflow">if</span> (!irq-&gt;<a class="code" href="structvgic__irq.html#a95ddef5ecf585bc624234ce4c9f13102">enabled</a>) {</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                <span class="keyword">struct </span>irq_data *data;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                irq-&gt;enabled = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                data = &amp;irq_to_desc(irq-&gt;host_irq)-&gt;irq_data;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                irq-&gt;<a class="code" href="structvgic__irq.html#a95ddef5ecf585bc624234ce4c9f13102">enabled</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                data = &amp;irq_to_desc(irq-&gt;<a class="code" href="structvgic__irq.html#a73308ba335a3372d0ca5cbe918b95622">host_irq</a>)-&gt;irq_data;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                <span class="keywordflow">while</span> (irqd_irq_disabled(data))</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                    enable_irq(irq-&gt;host_irq);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                    enable_irq(irq-&gt;<a class="code" href="structvgic__irq.html#a73308ba335a3372d0ca5cbe918b95622">host_irq</a>);</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            }</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            raw_spin_unlock_irqrestore(&amp;irq-&gt;irq_lock, flags);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            raw_spin_unlock_irqrestore(&amp;irq-&gt;<a class="code" href="structvgic__irq.html#af1912aedc19eddddbe24a26fe5814a27">irq_lock</a>, flags);</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <a class="code" href="vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5">vgic_put_irq</a>(vcpu-&gt;kvm, irq);</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="vgic_8h.html#a9c8f3a32a17b2384ea1cc0c6e0340ad7">vgic_irq_is_mapped_level</a>(irq)) {</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <span class="keywordtype">bool</span> was_high = irq-&gt;line_level;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <span class="keywordtype">bool</span> was_high = irq-&gt;<a class="code" href="structvgic__irq.html#a7dfb2c22e8a6c749facfdf07c70e7cf3">line_level</a>;</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <span class="comment">/*</span></div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment">             * We need to update the state of the interrupt because</span></div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment">             * the guest might have changed the state of the device</span></div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment">             * while the interrupt was disabled at the VGIC level.</span></div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment">             */</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            irq-&gt;line_level = <a class="code" href="vgic_8c.html#a44a31fe53851677c742d5b2a340e2f56">vgic_get_phys_line_level</a>(irq);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            irq-&gt;<a class="code" href="structvgic__irq.html#a7dfb2c22e8a6c749facfdf07c70e7cf3">line_level</a> = <a class="code" href="vgic_8c.html#a44a31fe53851677c742d5b2a340e2f56">vgic_get_phys_line_level</a>(irq);</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <span class="comment">/*</span></div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment">             * Deactivate the physical interrupt so the GIC will let</span></div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment">             * us know when it is asserted again.</span></div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="comment">             */</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="keywordflow">if</span> (!irq-&gt;active &amp;&amp; was_high &amp;&amp; !irq-&gt;line_level)</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="keywordflow">if</span> (!irq-&gt;<a class="code" href="structvgic__irq.html#af53995a2a87457dedc6950c3143cfa05">active</a> &amp;&amp; was_high &amp;&amp; !irq-&gt;<a class="code" href="structvgic__irq.html#a7dfb2c22e8a6c749facfdf07c70e7cf3">line_level</a>)</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                <a class="code" href="vgic_8c.html#a6daedd3eec82ca8b68db82b750a24f67">vgic_irq_set_phys_active</a>(irq, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        }</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        irq-&gt;enabled = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        irq-&gt;<a class="code" href="structvgic__irq.html#a95ddef5ecf585bc624234ce4c9f13102">enabled</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <a class="code" href="vgic_8c.html#a1e208ac24f54fa95ba74797758c5b84c">vgic_queue_irq_unlock</a>(vcpu-&gt;kvm, irq, flags);</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <a class="code" href="vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5">vgic_put_irq</a>(vcpu-&gt;kvm, irq);</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;}</div>
+<div class="ttc" id="astructvgic__irq_html_a7dfb2c22e8a6c749facfdf07c70e7cf3"><div class="ttname"><a href="structvgic__irq.html#a7dfb2c22e8a6c749facfdf07c70e7cf3">vgic_irq::line_level</a></div><div class="ttdeci">bool line_level</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00134">arm_vgic.h:134</a></div></div>
+<div class="ttc" id="astructvgic__irq_html_af53995a2a87457dedc6950c3143cfa05"><div class="ttname"><a href="structvgic__irq.html#af53995a2a87457dedc6950c3143cfa05">vgic_irq::active</a></div><div class="ttdeci">bool active</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00138">arm_vgic.h:138</a></div></div>
 <div class="ttc" id="avgic_8c_html_a44a31fe53851677c742d5b2a340e2f56"><div class="ttname"><a href="vgic_8c.html#a44a31fe53851677c742d5b2a340e2f56">vgic_get_phys_line_level</a></div><div class="ttdeci">bool vgic_get_phys_line_level(struct vgic_irq *irq)</div><div class="ttdef"><b>Definition:</b> <a href="vgic_8c_source.html#l00180">vgic.c:180</a></div></div>
 <div class="ttc" id="avgic_8c_html_a6daedd3eec82ca8b68db82b750a24f67"><div class="ttname"><a href="vgic_8c.html#a6daedd3eec82ca8b68db82b750a24f67">vgic_irq_set_phys_active</a></div><div class="ttdeci">void vgic_irq_set_phys_active(struct vgic_irq *irq, bool active)</div><div class="ttdef"><b>Definition:</b> <a href="vgic_8c_source.html#l00196">vgic.c:196</a></div></div>
 <div class="ttc" id="avgic_8h_html_a9c8f3a32a17b2384ea1cc0c6e0340ad7"><div class="ttname"><a href="vgic_8h.html#a9c8f3a32a17b2384ea1cc0c6e0340ad7">vgic_irq_is_mapped_level</a></div><div class="ttdeci">static bool vgic_irq_is_mapped_level(struct vgic_irq *irq)</div><div class="ttdef"><b>Definition:</b> <a href="vgic_8h_source.html#l00116">vgic.h:116</a></div></div>
@@ -2338,23 +2353,24 @@ Here is the call graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;{</div>
 <div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;    <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;    u32 val = 0;</div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;    <span class="keywordtype">int</span> nr_irqs = vcpu-&gt;kvm-&gt;arch.vgic.nr_spis + VGIC_NR_PRIVATE_IRQS;</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;    <span class="keywordtype">int</span> nr_irqs = vcpu-&gt;kvm-&gt;arch.vgic.nr_spis + <a class="code" href="arm__vgic_8h.html#ae9d406cdd3eafd831ee41ecf0e48011e">VGIC_NR_PRIVATE_IRQS</a>;</div>
 <div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160; </div>
 <div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; 32; i++) {</div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;        <span class="keyword">struct </span>vgic_irq *irq;</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;        <span class="keyword">struct </span><a class="code" href="structvgic__irq.html">vgic_irq</a> *irq;</div>
 <div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160; </div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;        <span class="keywordflow">if</span> ((intid + i) &lt; VGIC_NR_SGIS || (intid + i) &gt;= nr_irqs)</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;        <span class="keywordflow">if</span> ((<a class="code" href="structvgic__irq.html#a52b9a2e701d89765fc16feb0323ef277">intid</a> + i) &lt; <a class="code" href="arm__vgic_8h.html#a8143b35cbc0236b1f9fd65b9062ae523">VGIC_NR_SGIS</a> || (<a class="code" href="structvgic__irq.html#a52b9a2e701d89765fc16feb0323ef277">intid</a> + i) &gt;= nr_irqs)</div>
 <div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;            <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160; </div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;        irq = <a class="code" href="vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516">vgic_get_irq</a>(vcpu-&gt;kvm, vcpu, intid + i);</div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;        <span class="keywordflow">if</span> (irq-&gt;config == VGIC_CONFIG_LEVEL &amp;&amp; irq-&gt;line_level)</div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;        irq = <a class="code" href="vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516">vgic_get_irq</a>(<a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>-&gt;kvm, <a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>, <a class="code" href="structvgic__irq.html#a52b9a2e701d89765fc16feb0323ef277">intid</a> + i);</div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;        <span class="keywordflow">if</span> (irq-&gt;<a class="code" href="structvgic__irq.html#afb2bd15c9dd315e5617a243d13eb5f79">config</a> == <a class="code" href="arm__vgic_8h.html#a23952420a7fea6ce35df942e6b0783e7aff766918bb2eff9dbb94c4edea188a2a">VGIC_CONFIG_LEVEL</a> &amp;&amp; irq-&gt;<a class="code" href="structvgic__irq.html#a7dfb2c22e8a6c749facfdf07c70e7cf3">line_level</a>)</div>
 <div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;            val |= (1U &lt;&lt; i);</div>
 <div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160; </div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;        <a class="code" href="vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5">vgic_put_irq</a>(vcpu-&gt;kvm, irq);</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;        <a class="code" href="vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5">vgic_put_irq</a>(<a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>-&gt;kvm, irq);</div>
 <div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;    }</div>
 <div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160; </div>
 <div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;    <span class="keywordflow">return</span> val;</div>
 <div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;}</div>
+<div class="ttc" id="aarm__vgic_8h_html_a8143b35cbc0236b1f9fd65b9062ae523"><div class="ttname"><a href="arm__vgic_8h.html#a8143b35cbc0236b1f9fd65b9062ae523">VGIC_NR_SGIS</a></div><div class="ttdeci">#define VGIC_NR_SGIS</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00025">arm_vgic.h:25</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2597,7 +2613,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct vgic_io_device *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structvgic__io__device.html">vgic_io_device</a> *&#160;</td>
           <td class="paramname"><em>dev</em>, </td>
         </tr>
         <tr>
@@ -2826,13 +2842,13 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> flags;</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    for_each_set_bit(i, &amp;val, len * 8) {</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keyword">struct </span>vgic_irq *irq = <a class="code" href="vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516">vgic_get_irq</a>(vcpu-&gt;kvm, vcpu, intid + i);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keyword">struct </span><a class="code" href="structvgic__irq.html">vgic_irq</a> *irq = <a class="code" href="vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516">vgic_get_irq</a>(<a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>-&gt;kvm, <a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>, <a class="code" href="structvgic__irq.html#a52b9a2e701d89765fc16feb0323ef277">intid</a> + i);</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        raw_spin_lock_irqsave(&amp;irq-&gt;irq_lock, flags);</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        irq-&gt;enabled = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        raw_spin_unlock_irqrestore(&amp;irq-&gt;irq_lock, flags);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        raw_spin_lock_irqsave(&amp;irq-&gt;<a class="code" href="structvgic__irq.html#af1912aedc19eddddbe24a26fe5814a27">irq_lock</a>, flags);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        irq-&gt;<a class="code" href="structvgic__irq.html#a95ddef5ecf585bc624234ce4c9f13102">enabled</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        raw_spin_unlock_irqrestore(&amp;irq-&gt;<a class="code" href="structvgic__irq.html#af1912aedc19eddddbe24a26fe5814a27">irq_lock</a>, flags);</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <a class="code" href="vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5">vgic_put_irq</a>(vcpu-&gt;kvm, irq);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <a class="code" href="vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5">vgic_put_irq</a>(<a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>-&gt;kvm, irq);</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    }</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordflow">return</span> 0;</div>
@@ -2973,13 +2989,13 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> flags;</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    for_each_set_bit(i, &amp;val, len * 8) {</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keyword">struct </span>vgic_irq *irq = <a class="code" href="vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516">vgic_get_irq</a>(vcpu-&gt;kvm, vcpu, intid + i);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keyword">struct </span><a class="code" href="structvgic__irq.html">vgic_irq</a> *irq = <a class="code" href="vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516">vgic_get_irq</a>(<a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>-&gt;kvm, <a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>, <a class="code" href="structvgic__irq.html#a52b9a2e701d89765fc16feb0323ef277">intid</a> + i);</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        raw_spin_lock_irqsave(&amp;irq-&gt;irq_lock, flags);</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        irq-&gt;enabled = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <a class="code" href="vgic_8c.html#a1e208ac24f54fa95ba74797758c5b84c">vgic_queue_irq_unlock</a>(vcpu-&gt;kvm, irq, flags);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        raw_spin_lock_irqsave(&amp;irq-&gt;<a class="code" href="structvgic__irq.html#af1912aedc19eddddbe24a26fe5814a27">irq_lock</a>, flags);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        irq-&gt;<a class="code" href="structvgic__irq.html#a95ddef5ecf585bc624234ce4c9f13102">enabled</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <a class="code" href="vgic_8c.html#a1e208ac24f54fa95ba74797758c5b84c">vgic_queue_irq_unlock</a>(<a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>-&gt;kvm, irq, flags);</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <a class="code" href="vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5">vgic_put_irq</a>(vcpu-&gt;kvm, irq);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <a class="code" href="vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5">vgic_put_irq</a>(<a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>-&gt;kvm, irq);</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    }</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">return</span> 0;</div>
@@ -3094,7 +3110,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">unsigned int vgic_v2_init_dist_iodev </td>
           <td>(</td>
-          <td class="paramtype">struct vgic_io_device *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structvgic__io__device.html">vgic_io_device</a> *&#160;</td>
           <td class="paramname"><em>dev</em></td><td>)</td>
           <td></td>
         </tr>
@@ -3103,16 +3119,29 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="vgic-mmio-v2_8c_source.html#l00487">487</a> of file <a class="el" href="vgic-mmio-v2_8c_source.html">vgic-mmio-v2.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;{</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    dev-&gt;regions = <a class="code" href="vgic-mmio-v2_8c.html#aee710f1eefb272d4376680d9f2ecccad">vgic_v2_dist_registers</a>;</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    dev-&gt;nr_regions = ARRAY_SIZE(<a class="code" href="vgic-mmio-v2_8c.html#aee710f1eefb272d4376680d9f2ecccad">vgic_v2_dist_registers</a>);</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    dev-&gt;<a class="code" href="structvgic__io__device.html#a5e7676c09be33adfcc890cc249b22756">regions</a> = <a class="code" href="vgic-mmio-v2_8c.html#aee710f1eefb272d4376680d9f2ecccad">vgic_v2_dist_registers</a>;</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    dev-&gt;<a class="code" href="structvgic__io__device.html#aa31a362a06f9bb10daa073eaf94a3a6c">nr_regions</a> = ARRAY_SIZE(<a class="code" href="vgic-mmio-v2_8c.html#aee710f1eefb272d4376680d9f2ecccad">vgic_v2_dist_registers</a>);</div>
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160; </div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    kvm_iodevice_init(&amp;dev-&gt;dev, &amp;<a class="code" href="vgic-mmio_8c.html#aec0428e9a13ae48d45af461ec92b8005">kvm_io_gic_ops</a>);</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    <a class="code" href="iodev_8h.html#a8999defe529eb3e3870197ef8e39fad5">kvm_iodevice_init</a>(&amp;dev-&gt;<a class="code" href="structvgic__io__device.html#ad9921637d188a0f8c3f53e877ae24f41">dev</a>, &amp;<a class="code" href="vgic-mmio_8c.html#aec0428e9a13ae48d45af461ec92b8005">kvm_io_gic_ops</a>);</div>
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160; </div>
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    <span class="keywordflow">return</span> SZ_4K;</div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;}</div>
+<div class="ttc" id="aiodev_8h_html_a8999defe529eb3e3870197ef8e39fad5"><div class="ttname"><a href="iodev_8h.html#a8999defe529eb3e3870197ef8e39fad5">kvm_iodevice_init</a></div><div class="ttdeci">static void kvm_iodevice_init(struct kvm_io_device *dev, const struct kvm_io_device_ops *ops)</div><div class="ttdef"><b>Definition:</b> <a href="iodev_8h_source.html#l00036">iodev.h:36</a></div></div>
+<div class="ttc" id="astructvgic__io__device_html_a5e7676c09be33adfcc890cc249b22756"><div class="ttname"><a href="structvgic__io__device.html#a5e7676c09be33adfcc890cc249b22756">vgic_io_device::regions</a></div><div class="ttdeci">const struct vgic_register_region * regions</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00181">arm_vgic.h:181</a></div></div>
+<div class="ttc" id="astructvgic__io__device_html_aa31a362a06f9bb10daa073eaf94a3a6c"><div class="ttname"><a href="structvgic__io__device.html#aa31a362a06f9bb10daa073eaf94a3a6c">vgic_io_device::nr_regions</a></div><div class="ttdeci">int nr_regions</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00183">arm_vgic.h:183</a></div></div>
+<div class="ttc" id="astructvgic__io__device_html_ad9921637d188a0f8c3f53e877ae24f41"><div class="ttname"><a href="structvgic__io__device.html#ad9921637d188a0f8c3f53e877ae24f41">vgic_io_device::dev</a></div><div class="ttdeci">struct kvm_io_device dev</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00183">arm_vgic.h:184</a></div></div>
 <div class="ttc" id="avgic-mmio-v2_8c_html_aee710f1eefb272d4376680d9f2ecccad"><div class="ttname"><a href="vgic-mmio-v2_8c.html#aee710f1eefb272d4376680d9f2ecccad">vgic_v2_dist_registers</a></div><div class="ttdeci">static const struct vgic_register_region vgic_v2_dist_registers[]</div><div class="ttdef"><b>Definition:</b> <a href="vgic-mmio-v2_8c_source.html#l00387">vgic-mmio-v2.c:413</a></div></div>
 <div class="ttc" id="avgic-mmio_8c_html_aec0428e9a13ae48d45af461ec92b8005"><div class="ttname"><a href="vgic-mmio_8c.html#aec0428e9a13ae48d45af461ec92b8005">kvm_io_gic_ops</a></div><div class="ttdeci">const struct kvm_io_device_ops kvm_io_gic_ops</div><div class="ttdef"><b>Definition:</b> <a href="vgic-mmio_8c_source.html#l01046">vgic-mmio.c:1075</a></div></div>
 </div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="vgic-mmio_8h_a99781f95ebe917fea2537d762dded6e9_cgraph.png" border="0" usemap="#avgic-mmio_8h_a99781f95ebe917fea2537d762dded6e9_cgraph" alt=""/></div>
+<map name="avgic-mmio_8h_a99781f95ebe917fea2537d762dded6e9_cgraph" id="avgic-mmio_8h_a99781f95ebe917fea2537d762dded6e9_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,180,32"/>
+<area shape="rect" href="iodev_8h.html#a8999defe529eb3e3870197ef8e39fad5" title=" " alt="" coords="228,5,369,32"/>
+</map>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="vgic-mmio_8h_a99781f95ebe917fea2537d762dded6e9_icgraph.png" border="0" usemap="#avgic-mmio_8h_a99781f95ebe917fea2537d762dded6e9_icgraph" alt=""/></div>
@@ -3136,7 +3165,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">unsigned int vgic_v3_init_dist_iodev </td>
           <td>(</td>
-          <td class="paramtype">struct vgic_io_device *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structvgic__io__device.html">vgic_io_device</a> *&#160;</td>
           <td class="paramname"><em>dev</em></td><td>)</td>
           <td></td>
         </tr>
@@ -3145,15 +3174,24 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="vgic-mmio-v3_8c_source.html#l00727">727</a> of file <a class="el" href="vgic-mmio-v3_8c_source.html">vgic-mmio-v3.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;{</div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;    dev-&gt;regions = <a class="code" href="vgic-mmio-v3_8c.html#a04f164757c56887adde5a7ba053db28f">vgic_v3_dist_registers</a>;</div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;    dev-&gt;nr_regions = ARRAY_SIZE(<a class="code" href="vgic-mmio-v3_8c.html#a04f164757c56887adde5a7ba053db28f">vgic_v3_dist_registers</a>);</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;    dev-&gt;<a class="code" href="structvgic__io__device.html#a5e7676c09be33adfcc890cc249b22756">regions</a> = <a class="code" href="vgic-mmio-v3_8c.html#a04f164757c56887adde5a7ba053db28f">vgic_v3_dist_registers</a>;</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;    dev-&gt;<a class="code" href="structvgic__io__device.html#aa31a362a06f9bb10daa073eaf94a3a6c">nr_regions</a> = ARRAY_SIZE(<a class="code" href="vgic-mmio-v3_8c.html#a04f164757c56887adde5a7ba053db28f">vgic_v3_dist_registers</a>);</div>
 <div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160; </div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;    kvm_iodevice_init(&amp;dev-&gt;dev, &amp;<a class="code" href="vgic-mmio_8c.html#aec0428e9a13ae48d45af461ec92b8005">kvm_io_gic_ops</a>);</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;    <a class="code" href="iodev_8h.html#a8999defe529eb3e3870197ef8e39fad5">kvm_iodevice_init</a>(&amp;dev-&gt;<a class="code" href="structvgic__io__device.html#ad9921637d188a0f8c3f53e877ae24f41">dev</a>, &amp;<a class="code" href="vgic-mmio_8c.html#aec0428e9a13ae48d45af461ec92b8005">kvm_io_gic_ops</a>);</div>
 <div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160; </div>
 <div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;    <span class="keywordflow">return</span> SZ_64K;</div>
 <div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;}</div>
 <div class="ttc" id="avgic-mmio-v3_8c_html_a04f164757c56887adde5a7ba053db28f"><div class="ttname"><a href="vgic-mmio-v3_8c.html#a04f164757c56887adde5a7ba053db28f">vgic_v3_dist_registers</a></div><div class="ttdeci">static const struct vgic_register_region vgic_v3_dist_registers[]</div><div class="ttdef"><b>Definition:</b> <a href="vgic-mmio-v3_8c_source.html#l00555">vgic-mmio-v3.c:594</a></div></div>
 </div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="vgic-mmio_8h_ab423a52c4f34cfe2d13a8da61cba66cb_cgraph.png" border="0" usemap="#avgic-mmio_8h_ab423a52c4f34cfe2d13a8da61cba66cb_cgraph" alt=""/></div>
+<map name="avgic-mmio_8h_ab423a52c4f34cfe2d13a8da61cba66cb_cgraph" id="avgic-mmio_8h_ab423a52c4f34cfe2d13a8da61cba66cb_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,180,32"/>
+<area shape="rect" href="iodev_8h.html#a8999defe529eb3e3870197ef8e39fad5" title=" " alt="" coords="228,5,369,32"/>
+</map>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="vgic-mmio_8h_ab423a52c4f34cfe2d13a8da61cba66cb_icgraph.png" border="0" usemap="#avgic-mmio_8h_ab423a52c4f34cfe2d13a8da61cba66cb_icgraph" alt=""/></div>
@@ -3203,17 +3241,17 @@ Here is the caller graph for this function:</div>
 <p class="definition">Definition at line <a class="el" href="vgic-mmio_8c_source.html#l00788">788</a> of file <a class="el" href="vgic-mmio_8c_source.html">vgic-mmio.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;{</div>
 <div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;    <span class="keywordtype">int</span> i;</div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;    <span class="keywordtype">int</span> nr_irqs = vcpu-&gt;kvm-&gt;arch.vgic.nr_spis + VGIC_NR_PRIVATE_IRQS;</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;    <span class="keywordtype">int</span> nr_irqs = vcpu-&gt;kvm-&gt;arch.vgic.nr_spis + <a class="code" href="arm__vgic_8h.html#ae9d406cdd3eafd831ee41ecf0e48011e">VGIC_NR_PRIVATE_IRQS</a>;</div>
 <div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> flags;</div>
 <div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160; </div>
 <div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; 32; i++) {</div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;        <span class="keyword">struct </span>vgic_irq *irq;</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;        <span class="keyword">struct </span><a class="code" href="structvgic__irq.html">vgic_irq</a> *irq;</div>
 <div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;        <span class="keywordtype">bool</span> new_level;</div>
 <div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160; </div>
-<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;        <span class="keywordflow">if</span> ((intid + i) &lt; VGIC_NR_SGIS || (intid + i) &gt;= nr_irqs)</div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;        <span class="keywordflow">if</span> ((<a class="code" href="structvgic__irq.html#a52b9a2e701d89765fc16feb0323ef277">intid</a> + i) &lt; <a class="code" href="arm__vgic_8h.html#a8143b35cbc0236b1f9fd65b9062ae523">VGIC_NR_SGIS</a> || (<a class="code" href="structvgic__irq.html#a52b9a2e701d89765fc16feb0323ef277">intid</a> + i) &gt;= nr_irqs)</div>
 <div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;            <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160; </div>
-<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;        irq = <a class="code" href="vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516">vgic_get_irq</a>(vcpu-&gt;kvm, vcpu, intid + i);</div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;        irq = <a class="code" href="vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516">vgic_get_irq</a>(<a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>-&gt;kvm, <a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>, <a class="code" href="structvgic__irq.html#a52b9a2e701d89765fc16feb0323ef277">intid</a> + i);</div>
 <div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160; </div>
 <div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;        <span class="comment">/*</span></div>
 <div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;<span class="comment">         * Line level is set irrespective of irq type</span></div>
@@ -3221,14 +3259,14 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;<span class="comment">         * restore irq config before line level.</span></div>
 <div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;<span class="comment">         */</span></div>
 <div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;        new_level = !!(val &amp; (1U &lt;&lt; i));</div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;        raw_spin_lock_irqsave(&amp;irq-&gt;irq_lock, flags);</div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;        irq-&gt;line_level = new_level;</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;        raw_spin_lock_irqsave(&amp;irq-&gt;<a class="code" href="structvgic__irq.html#af1912aedc19eddddbe24a26fe5814a27">irq_lock</a>, flags);</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;        irq-&gt;<a class="code" href="structvgic__irq.html#a7dfb2c22e8a6c749facfdf07c70e7cf3">line_level</a> = new_level;</div>
 <div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;        <span class="keywordflow">if</span> (new_level)</div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;            <a class="code" href="vgic_8c.html#a1e208ac24f54fa95ba74797758c5b84c">vgic_queue_irq_unlock</a>(vcpu-&gt;kvm, irq, flags);</div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;            <a class="code" href="vgic_8c.html#a1e208ac24f54fa95ba74797758c5b84c">vgic_queue_irq_unlock</a>(<a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>-&gt;kvm, irq, flags);</div>
 <div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;            raw_spin_unlock_irqrestore(&amp;irq-&gt;irq_lock, flags);</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;            raw_spin_unlock_irqrestore(&amp;irq-&gt;<a class="code" href="structvgic__irq.html#af1912aedc19eddddbe24a26fe5814a27">irq_lock</a>, flags);</div>
 <div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160; </div>
-<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;        <a class="code" href="vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5">vgic_put_irq</a>(vcpu-&gt;kvm, irq);</div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;        <a class="code" href="vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5">vgic_put_irq</a>(<a class="code" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vcpu</a>-&gt;kvm, irq);</div>
 <div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;    }</div>
 <div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
@@ -3277,7 +3315,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const struct kvm_io_device_ops kvm_io_gic_ops</td>
+          <td class="memname">const struct <a class="el" href="structkvm__io__device__ops.html">kvm_io_device_ops</a> kvm_io_gic_ops</td>
         </tr>
       </table>
   </td>

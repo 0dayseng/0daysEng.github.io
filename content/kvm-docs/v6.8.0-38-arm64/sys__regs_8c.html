@@ -123,9 +123,11 @@ Include dependency graph for sys_regs.c:</div>
 <area shape="rect" href="trace_8h.html" title=" " alt="" coords="493,95,560,121"/>
 <area shape="rect" href="trace__arm_8h.html" title=" " alt="" coords="477,169,577,196"/>
 <area shape="rect" href="trace__handle__exit_8h.html" title=" " alt="" coords="302,169,453,196"/>
-<area shape="rect" title=" " alt="" coords="645,244,814,271"/>
+<area shape="rect" href="arm__arch__timer_8h.html" title=" " alt="" coords="645,244,814,271"/>
 <area shape="rect" title=" " alt="" coords="309,244,445,271"/>
 <area shape="rect" title=" " alt="" coords="470,244,621,271"/>
+<area shape="rect" title=" " alt="" coords="733,319,880,345"/>
+<area shape="rect" title=" " alt="" coords="592,319,709,345"/>
 </map>
 </div>
 </div>
@@ -1775,31 +1777,31 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="sys__regs_8c_source.html#l01368">1368</a> of file <a class="el" href="sys__regs_8c_source.html">sys_regs.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;{</div>
-<div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;    <span class="keyword">enum</span> kvm_arch_timers tmr;</div>
-<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;    <span class="keyword">enum</span> kvm_arch_timer_regs treg;</div>
+<div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;    <span class="keyword">enum</span> <a class="code" href="arm__arch__timer_8h.html#a45e32a5c828e24615921bc1b8fe5d31f">kvm_arch_timers</a> tmr;</div>
+<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;    <span class="keyword">enum</span> <a class="code" href="arm__arch__timer_8h.html#ab2af7bc65f7a3380f7bd930614dd1876">kvm_arch_timer_regs</a> treg;</div>
 <div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;    u64 reg = <a class="code" href="sys__regs_8h.html#a2a67e99c288b572250f936d156c5d316">reg_to_encoding</a>(r);</div>
 <div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160; </div>
 <div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;    <span class="keywordflow">switch</span> (reg) {</div>
 <div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;    <span class="keywordflow">case</span> SYS_CNTP_TVAL_EL0:</div>
 <div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;    <span class="keywordflow">case</span> SYS_AARCH32_CNTP_TVAL:</div>
-<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;        tmr = TIMER_PTIMER;</div>
-<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;        treg = TIMER_REG_TVAL;</div>
+<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;        tmr = <a class="code" href="arm__arch__timer_8h.html#a45e32a5c828e24615921bc1b8fe5d31fa7463dc5411bf81d52f397ef53551b852">TIMER_PTIMER</a>;</div>
+<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;        treg = <a class="code" href="arm__arch__timer_8h.html#ab2af7bc65f7a3380f7bd930614dd1876a281f876deda17f10a9dbad780faf7dbb">TIMER_REG_TVAL</a>;</div>
 <div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;    <span class="keywordflow">case</span> SYS_CNTP_CTL_EL0:</div>
 <div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;    <span class="keywordflow">case</span> SYS_AARCH32_CNTP_CTL:</div>
-<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;        tmr = TIMER_PTIMER;</div>
-<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;        treg = TIMER_REG_CTL;</div>
+<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;        tmr = <a class="code" href="arm__arch__timer_8h.html#a45e32a5c828e24615921bc1b8fe5d31fa7463dc5411bf81d52f397ef53551b852">TIMER_PTIMER</a>;</div>
+<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;        treg = <a class="code" href="arm__arch__timer_8h.html#ab2af7bc65f7a3380f7bd930614dd1876a225e0f5c3e8379a2610f2271feb0931a">TIMER_REG_CTL</a>;</div>
 <div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;    <span class="keywordflow">case</span> SYS_CNTP_CVAL_EL0:</div>
 <div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;    <span class="keywordflow">case</span> SYS_AARCH32_CNTP_CVAL:</div>
-<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;        tmr = TIMER_PTIMER;</div>
-<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;        treg = TIMER_REG_CVAL;</div>
+<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;        tmr = <a class="code" href="arm__arch__timer_8h.html#a45e32a5c828e24615921bc1b8fe5d31fa7463dc5411bf81d52f397ef53551b852">TIMER_PTIMER</a>;</div>
+<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;        treg = <a class="code" href="arm__arch__timer_8h.html#ab2af7bc65f7a3380f7bd930614dd1876af4a421c472caa2b4130082881694fe55">TIMER_REG_CVAL</a>;</div>
 <div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;    <span class="keywordflow">case</span> SYS_CNTPCT_EL0:</div>
 <div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;    <span class="keywordflow">case</span> SYS_CNTPCTSS_EL0:</div>
 <div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;    <span class="keywordflow">case</span> SYS_AARCH32_CNTPCT:</div>
-<div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;        tmr = TIMER_PTIMER;</div>
-<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;        treg = TIMER_REG_CNT;</div>
+<div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;        tmr = <a class="code" href="arm__arch__timer_8h.html#a45e32a5c828e24615921bc1b8fe5d31fa7463dc5411bf81d52f397ef53551b852">TIMER_PTIMER</a>;</div>
+<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;        treg = <a class="code" href="arm__arch__timer_8h.html#ab2af7bc65f7a3380f7bd930614dd1876ae7d273d51748bdb350680fab17039aed">TIMER_REG_CNT</a>;</div>
 <div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;    <span class="keywordflow">default</span>:</div>
 <div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;        print_sys_reg_msg(p, <span class="stringliteral">&quot;%s&quot;</span>, <span class="stringliteral">&quot;Unhandled trapped timer register&quot;</span>);</div>
@@ -1816,62 +1818,69 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;}</div>
 <div class="ttc" id="aarch__timer_8c_html_a0209ad4256c7a1fd5ea70b6abe030954"><div class="ttname"><a href="arch__timer_8c.html#a0209ad4256c7a1fd5ea70b6abe030954">kvm_arm_timer_write_sysreg</a></div><div class="ttdeci">void kvm_arm_timer_write_sysreg(struct kvm_vcpu *vcpu, enum kvm_arch_timers tmr, enum kvm_arch_timer_regs treg, u64 val)</div><div class="ttdef"><b>Definition:</b> <a href="arch__timer_8c_source.html#l01219">arch_timer.c:1219</a></div></div>
 <div class="ttc" id="aarch__timer_8c_html_a4b6d62f10023e1b1effbf51b28d46d3c"><div class="ttname"><a href="arch__timer_8c.html#a4b6d62f10023e1b1effbf51b28d46d3c">kvm_arm_timer_read_sysreg</a></div><div class="ttdeci">u64 kvm_arm_timer_read_sysreg(struct kvm_vcpu *vcpu, enum kvm_arch_timers tmr, enum kvm_arch_timer_regs treg)</div><div class="ttdef"><b>Definition:</b> <a href="arch__timer_8c_source.html#l01167">arch_timer.c:1167</a></div></div>
+<div class="ttc" id="aarm__arch__timer_8h_html_a45e32a5c828e24615921bc1b8fe5d31f"><div class="ttname"><a href="arm__arch__timer_8h.html#a45e32a5c828e24615921bc1b8fe5d31f">kvm_arch_timers</a></div><div class="ttdeci">kvm_arch_timers</div><div class="ttdef"><b>Definition:</b> <a href="arm__arch__timer_8h_source.html#l00013">arm_arch_timer.h:13</a></div></div>
+<div class="ttc" id="aarm__arch__timer_8h_html_a45e32a5c828e24615921bc1b8fe5d31fa7463dc5411bf81d52f397ef53551b852"><div class="ttname"><a href="arm__arch__timer_8h.html#a45e32a5c828e24615921bc1b8fe5d31fa7463dc5411bf81d52f397ef53551b852">TIMER_PTIMER</a></div><div class="ttdeci">@ TIMER_PTIMER</div><div class="ttdef"><b>Definition:</b> <a href="arm__arch__timer_8h_source.html#l00014">arm_arch_timer.h:14</a></div></div>
+<div class="ttc" id="aarm__arch__timer_8h_html_ab2af7bc65f7a3380f7bd930614dd1876"><div class="ttname"><a href="arm__arch__timer_8h.html#ab2af7bc65f7a3380f7bd930614dd1876">kvm_arch_timer_regs</a></div><div class="ttdeci">kvm_arch_timer_regs</div><div class="ttdef"><b>Definition:</b> <a href="arm__arch__timer_8h_source.html#l00022">arm_arch_timer.h:22</a></div></div>
+<div class="ttc" id="aarm__arch__timer_8h_html_ab2af7bc65f7a3380f7bd930614dd1876a225e0f5c3e8379a2610f2271feb0931a"><div class="ttname"><a href="arm__arch__timer_8h.html#ab2af7bc65f7a3380f7bd930614dd1876a225e0f5c3e8379a2610f2271feb0931a">TIMER_REG_CTL</a></div><div class="ttdeci">@ TIMER_REG_CTL</div><div class="ttdef"><b>Definition:</b> <a href="arm__arch__timer_8h_source.html#l00026">arm_arch_timer.h:26</a></div></div>
+<div class="ttc" id="aarm__arch__timer_8h_html_ab2af7bc65f7a3380f7bd930614dd1876a281f876deda17f10a9dbad780faf7dbb"><div class="ttname"><a href="arm__arch__timer_8h.html#ab2af7bc65f7a3380f7bd930614dd1876a281f876deda17f10a9dbad780faf7dbb">TIMER_REG_TVAL</a></div><div class="ttdeci">@ TIMER_REG_TVAL</div><div class="ttdef"><b>Definition:</b> <a href="arm__arch__timer_8h_source.html#l00025">arm_arch_timer.h:25</a></div></div>
+<div class="ttc" id="aarm__arch__timer_8h_html_ab2af7bc65f7a3380f7bd930614dd1876ae7d273d51748bdb350680fab17039aed"><div class="ttname"><a href="arm__arch__timer_8h.html#ab2af7bc65f7a3380f7bd930614dd1876ae7d273d51748bdb350680fab17039aed">TIMER_REG_CNT</a></div><div class="ttdeci">@ TIMER_REG_CNT</div><div class="ttdef"><b>Definition:</b> <a href="arm__arch__timer_8h_source.html#l00023">arm_arch_timer.h:23</a></div></div>
+<div class="ttc" id="aarm__arch__timer_8h_html_ab2af7bc65f7a3380f7bd930614dd1876af4a421c472caa2b4130082881694fe55"><div class="ttname"><a href="arm__arch__timer_8h.html#ab2af7bc65f7a3380f7bd930614dd1876af4a421c472caa2b4130082881694fe55">TIMER_REG_CVAL</a></div><div class="ttdeci">@ TIMER_REG_CVAL</div><div class="ttdef"><b>Definition:</b> <a href="arm__arch__timer_8h_source.html#l00024">arm_arch_timer.h:24</a></div></div>
 <div class="ttc" id="ainject__fault_8c_html_aece14f61701021b17e9cf5521f7946fb"><div class="ttname"><a href="inject__fault_8c.html#aece14f61701021b17e9cf5521f7946fb">kvm_inject_undefined</a></div><div class="ttdeci">void kvm_inject_undefined(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="inject__fault_8c_source.html#l00225">inject_fault.c:225</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="sys__regs_8c_a9457451d95fa776f653cff6c2a8d31f9_cgraph.png" border="0" usemap="#asys__regs_8c_a9457451d95fa776f653cff6c2a8d31f9_cgraph" alt=""/></div>
 <map name="asys__regs_8c_a9457451d95fa776f653cff6c2a8d31f9_cgraph" id="asys__regs_8c_a9457451d95fa776f653cff6c2a8d31f9_cgraph">
-<area shape="rect" title=" " alt="" coords="5,932,148,959"/>
-<area shape="rect" href="arch__timer_8c.html#a4b6d62f10023e1b1effbf51b28d46d3c" title=" " alt="" coords="197,925,360,966"/>
-<area shape="rect" href="arch__timer_8c.html#a0209ad4256c7a1fd5ea70b6abe030954" title=" " alt="" coords="409,795,576,837"/>
-<area shape="rect" href="inject__fault_8c.html#aece14f61701021b17e9cf5521f7946fb" title=" " alt="" coords="196,1081,361,1108"/>
-<area shape="rect" href="arch__timer_8c.html#ad7e756ea5077e85e2a10bfe35543ce21" title=" " alt="" coords="645,904,766,931"/>
-<area shape="rect" href="arch__timer_8c.html#a3873c5e4f0eb8a0fa2a466d8e2b9a894" title=" " alt="" coords="411,600,574,627"/>
-<area shape="rect" href="arch__timer_8c.html#a7e1e1c3a85e2d375519e32f57a54e301" title=" " alt="" coords="858,955,1009,981"/>
-<area shape="rect" href="arch__timer_8c.html#a08b7dad9cb511eeaec5ab08e2a2ae1af" title=" " alt="" coords="866,853,1001,880"/>
-<area shape="rect" href="arch__timer_8c.html#ac9f7917175f1d6031a77dcbc82f9ee98" title=" " alt="" coords="1313,436,1479,463"/>
-<area shape="rect" href="arch__timer_8c.html#a2fb3bc59ad8d869dc692674f2db4bfe9" title=" " alt="" coords="647,549,763,576"/>
-<area shape="rect" href="arch__timer_8c.html#a7f5f777b74b5c9ec6e13d4f7576d7f43" title=" " alt="" coords="1331,777,1461,804"/>
-<area shape="rect" href="arch__timer_8c.html#a848ba80b4ffee7a071e37abb241262cd" title=" " alt="" coords="1108,600,1227,627"/>
-<area shape="rect" href="arch__timer_8c.html#aeed64583773b01dafc949df326d17db3" title=" " alt="" coords="835,495,1032,521"/>
-<area shape="rect" href="arch__timer_8c.html#ad7dab91af9f69654aa27010f96125c13" title=" " alt="" coords="1342,549,1450,576"/>
-<area shape="rect" href="arch__timer_8c.html#a6c290bf8212ea1388cdb4a839eae7228" title=" " alt="" coords="1082,483,1253,525"/>
-<area shape="rect" href="arch__timer_8c.html#a6fcfce8307e73b5ae888edca334508aa" title=" " alt="" coords="1120,1005,1215,1032"/>
-<area shape="rect" href="arch__timer_8c.html#a207ce56a4fe08e050e49e49334548e15" title=" " alt="" coords="1120,955,1215,981"/>
-<area shape="rect" href="nvhe_2timer-sr_8c.html#a73539c3eaa37749e44c40351913b9efb" title=" " alt="" coords="1303,955,1489,981"/>
-<area shape="rect" href="arch__timer_8c.html#a2e57f3714ec062699e29ae4e13d80dac" title=" " alt="" coords="1114,752,1221,779"/>
-<area shape="rect" href="arch__timer_8c.html#ab50c2af796cc5134fa3942c857dd4fb7" title=" " alt="" coords="1108,803,1227,829"/>
-<area shape="rect" href="arch__timer_8c.html#affb5181064df0b30b53f567189e15771" title=" " alt="" coords="850,701,1017,728"/>
-<area shape="rect" href="arch__timer_8c.html#ad19b9cbace853dd534bf572a35f83710" title=" " alt="" coords="637,368,774,395"/>
-<area shape="rect" href="arch__timer_8c.html#acea899fae895cedf39458ed51af3cb1a" title=" " alt="" coords="646,419,765,445"/>
-<area shape="rect" href="arch__timer_8c.html#ae722c5e3eba2098c012b2cdc4d74bf9f" title=" " alt="" coords="1080,331,1255,357"/>
-<area shape="rect" href="arch__timer_8c.html#a64a4d2f3d2a9b83524edda4b27246092" title=" " alt="" coords="848,419,1019,445"/>
-<area shape="rect" href="arch__timer_8c.html#a5abc04b494763cd0814855753e56671f" title=" " alt="" coords="849,229,1018,256"/>
-<area shape="rect" href="arch__timer_8c.html#a00de950346bea7137e0f06522d67ab2b" title=" " alt="" coords="871,179,996,205"/>
-<area shape="rect" href="vgic_8c.html#a87038ce452e0054b853c10ccbbcc78a4" title=" " alt="" coords="1091,179,1243,205"/>
-<area shape="rect" href="arch__timer_8c.html#a4f7db088b5aab3a8a6013b7f6fd12fa0" title=" " alt="" coords="1098,229,1237,256"/>
-<area shape="rect" href="vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516" title=" " alt="" coords="1345,128,1447,155"/>
-<area shape="rect" href="vgic-init_8c.html#a3c860e1d043352d9a02f4780b58e5af6" title=" " alt="" coords="1341,280,1451,307"/>
-<area shape="rect" href="vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5" title=" " alt="" coords="1345,179,1447,205"/>
-<area shape="rect" href="vgic_8c.html#a1e208ac24f54fa95ba74797758c5b84c" title=" " alt="" coords="1311,52,1481,79"/>
-<area shape="rect" href="vgic_8c.html#a19d9c44a40cc76ccbd25bd8e0ec38a08" title=" " alt="" coords="1310,229,1482,256"/>
-<area shape="rect" href="vgic_8c.html#afeaf79de85450ed5fb52dbd7bd8c6617" title=" " alt="" coords="1569,128,1669,155"/>
-<area shape="rect" href="vgic_8h.html#a43d39599f0fd2d973c5af8d6045e0f91" title=" " alt="" coords="1771,51,1906,77"/>
-<area shape="rect" href="vgic-init_8c.html#a39a12fe5ed5534efda33bb215a320a57" title=" " alt="" coords="1580,280,1657,307"/>
-<area shape="rect" href="vgic-init_8c.html#a0f9be5cc88c88f6c0180c53b72818d3b" title=" " alt="" coords="1767,225,1911,252"/>
-<area shape="rect" href="vgic-irqfd_8c.html#ab5dcaa98f287aec5083bd60daf115d71" title=" " alt="" coords="1748,277,1929,318"/>
-<area shape="rect" href="vgic-init_8c.html#a2eee0060a3bdcd2a9e8fe1451a3a3fc2" title=" " alt="" coords="1751,343,1926,369"/>
-<area shape="rect" href="vgic-debug_8c.html#a42534d23071b4f3c441c5f82f9e5c1ce" title=" " alt="" coords="1777,175,1901,201"/>
-<area shape="rect" href="vgic_8c.html#affa1a20a5bd9d67dc546c1ccaace3406" title=" " alt="" coords="1537,179,1700,205"/>
-<area shape="rect" href="kvm__main_8c.html#ac82f28c95da4a0cc137c5a37f08d1f44" title=" " alt="" coords="1557,27,1680,53"/>
-<area shape="rect" href="vgic_8c.html#a10a21280f37c620b743df86980f6d247" title=" " alt="" coords="1547,77,1690,104"/>
-<area shape="rect" href="inject__fault_8c.html#ae6fc8db83ad0518fddd2e485687e0f7d" title=" " alt="" coords="433,1132,552,1159"/>
-<area shape="rect" href="inject__fault_8c.html#a846082def00d9a7db3f28b1b7fb2a07a" title=" " alt="" coords="433,1081,552,1108"/>
-<area shape="rect" href="inject__fault_8c.html#a326fe690ce371beb7496d3ed3cbe1a6e" title=" " alt="" coords="641,1056,769,1083"/>
-<area shape="rect" href="inject__fault_8c.html#a887586bbc6bac834ae37cbf84711288c" title=" " alt="" coords="624,1107,787,1133"/>
-<area shape="rect" href="sys__regs_8c.html#adf66277e472bdae2cc839d450085bc4b" title=" " alt="" coords="630,1157,781,1184"/>
-<area shape="rect" href="sys__regs_8c.html#a8f5bcf4d21c4d9b1881dd3fec5bd6178" title=" " alt="" coords="843,1157,1024,1184"/>
+<area shape="rect" title=" " alt="" coords="5,923,148,949"/>
+<area shape="rect" href="arch__timer_8c.html#a4b6d62f10023e1b1effbf51b28d46d3c" title=" " alt="" coords="197,915,360,957"/>
+<area shape="rect" href="arch__timer_8c.html#a0209ad4256c7a1fd5ea70b6abe030954" title=" " alt="" coords="409,786,576,827"/>
+<area shape="rect" href="inject__fault_8c.html#aece14f61701021b17e9cf5521f7946fb" title=" " alt="" coords="196,1072,361,1099"/>
+<area shape="rect" href="arch__timer_8c.html#ad7e756ea5077e85e2a10bfe35543ce21" title=" " alt="" coords="645,895,766,921"/>
+<area shape="rect" href="arch__timer_8c.html#a3873c5e4f0eb8a0fa2a466d8e2b9a894" title=" " alt="" coords="411,616,574,643"/>
+<area shape="rect" href="arch__timer_8c.html#a7e1e1c3a85e2d375519e32f57a54e301" title=" " alt="" coords="858,945,1009,972"/>
+<area shape="rect" href="arch__timer_8c.html#a08b7dad9cb511eeaec5ab08e2a2ae1af" title=" " alt="" coords="866,996,1001,1023"/>
+<area shape="rect" href="arch__timer_8c.html#ac9f7917175f1d6031a77dcbc82f9ee98" title=" " alt="" coords="1313,452,1479,479"/>
+<area shape="rect" href="arch__timer_8c.html#a2fb3bc59ad8d869dc692674f2db4bfe9" title=" " alt="" coords="647,565,763,592"/>
+<area shape="rect" href="arch__timer_8c.html#a7f5f777b74b5c9ec6e13d4f7576d7f43" title=" " alt="" coords="1331,717,1461,744"/>
+<area shape="rect" href="arch__timer_8c.html#a848ba80b4ffee7a071e37abb241262cd" title=" " alt="" coords="1108,616,1227,643"/>
+<area shape="rect" href="arch__timer_8c.html#aeed64583773b01dafc949df326d17db3" title=" " alt="" coords="835,511,1032,537"/>
+<area shape="rect" href="arch__timer_8c.html#ad7dab91af9f69654aa27010f96125c13" title=" " alt="" coords="1342,565,1450,592"/>
+<area shape="rect" href="arch__timer_8c.html#a6c290bf8212ea1388cdb4a839eae7228" title=" " alt="" coords="1082,499,1253,541"/>
+<area shape="rect" href="arch__timer_8c.html#a6fcfce8307e73b5ae888edca334508aa" title=" " alt="" coords="1120,1123,1215,1149"/>
+<area shape="rect" href="arch__timer_8c.html#a207ce56a4fe08e050e49e49334548e15" title=" " alt="" coords="1120,1021,1215,1048"/>
+<area shape="rect" href="arm__arch__timer_8h.html#a656013ccf6829218e43edc9c3660c414" title=" " alt="" coords="1347,1123,1445,1149"/>
+<area shape="rect" href="nvhe_2timer-sr_8c.html#a73539c3eaa37749e44c40351913b9efb" title=" " alt="" coords="1303,1021,1489,1048"/>
+<area shape="rect" href="arch__timer_8c.html#a2e57f3714ec062699e29ae4e13d80dac" title=" " alt="" coords="1114,819,1221,845"/>
+<area shape="rect" href="arch__timer_8c.html#ab50c2af796cc5134fa3942c857dd4fb7" title=" " alt="" coords="1108,869,1227,896"/>
+<area shape="rect" href="arch__timer_8c.html#affb5181064df0b30b53f567189e15771" title=" " alt="" coords="850,768,1017,795"/>
+<area shape="rect" href="arch__timer_8c.html#ad19b9cbace853dd534bf572a35f83710" title=" " alt="" coords="637,385,774,412"/>
+<area shape="rect" href="arch__timer_8c.html#acea899fae895cedf39458ed51af3cb1a" title=" " alt="" coords="646,436,765,463"/>
+<area shape="rect" href="arch__timer_8c.html#ae722c5e3eba2098c012b2cdc4d74bf9f" title=" " alt="" coords="1080,347,1255,373"/>
+<area shape="rect" href="arch__timer_8c.html#a64a4d2f3d2a9b83524edda4b27246092" title=" " alt="" coords="848,436,1019,463"/>
+<area shape="rect" href="arch__timer_8c.html#a5abc04b494763cd0814855753e56671f" title=" " alt="" coords="849,245,1018,272"/>
+<area shape="rect" href="arch__timer_8c.html#a00de950346bea7137e0f06522d67ab2b" title=" " alt="" coords="871,195,996,221"/>
+<area shape="rect" href="vgic_8c.html#a87038ce452e0054b853c10ccbbcc78a4" title=" " alt="" coords="1091,195,1243,221"/>
+<area shape="rect" href="arch__timer_8c.html#a4f7db088b5aab3a8a6013b7f6fd12fa0" title=" " alt="" coords="1098,245,1237,272"/>
+<area shape="rect" href="vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516" title=" " alt="" coords="1345,31,1447,57"/>
+<area shape="rect" href="vgic-init_8c.html#a3c860e1d043352d9a02f4780b58e5af6" title=" " alt="" coords="1341,195,1451,221"/>
+<area shape="rect" href="vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5" title=" " alt="" coords="1345,245,1447,272"/>
+<area shape="rect" href="vgic_8c.html#a1e208ac24f54fa95ba74797758c5b84c" title=" " alt="" coords="1311,119,1481,145"/>
+<area shape="rect" href="vgic_8c.html#a19d9c44a40cc76ccbd25bd8e0ec38a08" title=" " alt="" coords="1310,296,1482,323"/>
+<area shape="rect" href="vgic_8c.html#afeaf79de85450ed5fb52dbd7bd8c6617" title=" " alt="" coords="1569,5,1669,32"/>
+<area shape="rect" href="vgic_8h.html#a43d39599f0fd2d973c5af8d6045e0f91" title=" " alt="" coords="1771,31,1906,57"/>
+<area shape="rect" href="vgic-init_8c.html#a39a12fe5ed5534efda33bb215a320a57" title=" " alt="" coords="1580,208,1657,235"/>
+<area shape="rect" href="vgic-init_8c.html#a0f9be5cc88c88f6c0180c53b72818d3b" title=" " alt="" coords="1767,208,1911,235"/>
+<area shape="rect" href="vgic-irqfd_8c.html#ab5dcaa98f287aec5083bd60daf115d71" title=" " alt="" coords="1748,259,1929,301"/>
+<area shape="rect" href="vgic-init_8c.html#a2eee0060a3bdcd2a9e8fe1451a3a3fc2" title=" " alt="" coords="1751,157,1926,184"/>
+<area shape="rect" href="vgic_8c.html#affa1a20a5bd9d67dc546c1ccaace3406" title=" " alt="" coords="1537,259,1700,285"/>
+<area shape="rect" href="kvm__main_8c.html#ac82f28c95da4a0cc137c5a37f08d1f44" title=" " alt="" coords="1557,107,1680,133"/>
+<area shape="rect" href="vgic_8c.html#a10a21280f37c620b743df86980f6d247" title=" " alt="" coords="1547,157,1690,184"/>
+<area shape="rect" href="inject__fault_8c.html#ae6fc8db83ad0518fddd2e485687e0f7d" title=" " alt="" coords="433,1123,552,1149"/>
+<area shape="rect" href="inject__fault_8c.html#a846082def00d9a7db3f28b1b7fb2a07a" title=" " alt="" coords="433,1072,552,1099"/>
+<area shape="rect" href="inject__fault_8c.html#a326fe690ce371beb7496d3ed3cbe1a6e" title=" " alt="" coords="641,1047,769,1073"/>
+<area shape="rect" href="inject__fault_8c.html#a887586bbc6bac834ae37cbf84711288c" title=" " alt="" coords="624,1097,787,1124"/>
+<area shape="rect" href="sys__regs_8c.html#adf66277e472bdae2cc839d450085bc4b" title=" " alt="" coords="630,1148,781,1175"/>
+<area shape="rect" href="sys__regs_8c.html#a8f5bcf4d21c4d9b1881dd3fec5bd6178" title=" " alt="" coords="843,1148,1024,1175"/>
 </map>
 </div>
 
@@ -2839,43 +2848,44 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="pmu-emul_8c.html#a4ad466b516d040694a5b25e1c9eef495" title=" " alt="" coords="184,72,424,99"/>
 <area shape="rect" href="pmu-emul_8c.html#a4d7ab7f63f8cc0a899fb45ebfeb851d6" title=" " alt="" coords="185,148,423,175"/>
 <area shape="rect" href="pmu-emul_8c.html#a48da2aca99c9f2f7728c108ebfe1aab6" title=" " alt="" coords="1511,47,1736,73"/>
-<area shape="rect" href="pmu_8c.html#a928d4df1b401e9b41f92dd2aa2744529" title=" " alt="" coords="215,1067,393,1109"/>
-<area shape="rect" href="sys__regs_8c.html#ad26d1f2daf27a368a7f05c6b738f3f7a" title=" " alt="" coords="209,1180,399,1207"/>
+<area shape="rect" href="pmu_8c.html#a928d4df1b401e9b41f92dd2aa2744529" title=" " alt="" coords="215,1051,393,1093"/>
+<area shape="rect" href="sys__regs_8c.html#ad26d1f2daf27a368a7f05c6b738f3f7a" title=" " alt="" coords="209,1164,399,1191"/>
 <area shape="rect" href="pmu-emul_8c.html#af0e28bffa2a3c2ed1f5e6405b8284638" title=" " alt="" coords="1273,97,1444,124"/>
-<area shape="rect" href="pmu-emul_8c.html#a0d8ed834b14cf4fb055173129b978fed" title=" " alt="" coords="493,689,661,730"/>
-<area shape="rect" href="pmu-emul_8c.html#adf428205295b3bc4fec2e00fb2c50fa6" title=" " alt="" coords="1784,339,1949,365"/>
-<area shape="rect" href="pmu-emul_8c.html#a7f03e9b6af2651bb2bcc5471953076e6" title=" " alt="" coords="1035,721,1162,748"/>
-<area shape="rect" href="pmu-emul_8c.html#a10ab89dbf42da547c48fc7a7ad9fc2f4" title=" " alt="" coords="1795,772,1939,799"/>
-<area shape="rect" href="pmu-emul_8c.html#a25e7862bfe86692b32844810dbe3d6a3" title=" " alt="" coords="1287,772,1431,799"/>
-<area shape="rect" href="pmu-emul_8c.html#a507cc0978c12a18465f8f5d3987db1f3" title=" " alt="" coords="1267,671,1450,697"/>
-<area shape="rect" href="pmu-emul_8c.html#ab5c66bf309304f71e8b9450e35983307" title=" " alt="" coords="1543,453,1704,494"/>
-<area shape="rect" href="pmu-emul_8c.html#a4d63c2f53e5548109d366a7e08be43ae" title=" " alt="" coords="1271,569,1446,596"/>
-<area shape="rect" href="pmu-emul_8c.html#acb35ae097b8b697c84c55e519566fb6a" title=" " alt="" coords="1002,823,1195,849"/>
-<area shape="rect" href="pmu-emul_8c.html#a1b6c636b23b4bafd5809116ae997c71d" title=" " alt="" coords="745,519,927,545"/>
-<area shape="rect" href="pmu-emul_8c.html#ab7d35d75d609bb5ca09226888f2bd096" title=" " alt="" coords="747,881,925,908"/>
-<area shape="rect" href="pmu-emul_8c.html#a4262ee1559f306136fd3b9374f3ae9d3" title=" " alt="" coords="1514,519,1733,545"/>
-<area shape="rect" href="pmu-emul_8c.html#a94af260df1767fa3e538518c9e6436ff" title=" " alt="" coords="1529,569,1717,596"/>
-<area shape="rect" href="pmu-emul_8c.html#a450695105665f1fe0e9d2db927315c5a" title=" " alt="" coords="1277,873,1440,900"/>
-<area shape="rect" href="pmu-emul_8c.html#a07f848e7e5bf226439a5ee53c941eafc" title=" " alt="" coords="1272,402,1445,443"/>
-<area shape="rect" href="pmu-emul_8c.html#a1698d35e55cb9b3545159fbfae5121d2" title=" " alt="" coords="991,519,1207,545"/>
+<area shape="rect" href="pmu-emul_8c.html#a0d8ed834b14cf4fb055173129b978fed" title=" " alt="" coords="493,622,661,663"/>
+<area shape="rect" href="pmu-emul_8c.html#adf428205295b3bc4fec2e00fb2c50fa6" title=" " alt="" coords="1784,364,1949,391"/>
+<area shape="rect" href="pmu-emul_8c.html#a7f03e9b6af2651bb2bcc5471953076e6" title=" " alt="" coords="1035,655,1162,681"/>
+<area shape="rect" href="pmu-emul_8c.html#a10ab89dbf42da547c48fc7a7ad9fc2f4" title=" " alt="" coords="1795,823,1939,849"/>
+<area shape="rect" href="pmu-emul_8c.html#a25e7862bfe86692b32844810dbe3d6a3" title=" " alt="" coords="1287,873,1431,900"/>
+<area shape="rect" href="pmu-emul_8c.html#a507cc0978c12a18465f8f5d3987db1f3" title=" " alt="" coords="1267,351,1450,377"/>
+<area shape="rect" href="pmu-emul_8c.html#ab5c66bf309304f71e8b9450e35983307" title=" " alt="" coords="1543,714,1704,755"/>
+<area shape="rect" href="pmu-emul_8c.html#a4d63c2f53e5548109d366a7e08be43ae" title=" " alt="" coords="1271,401,1446,428"/>
+<area shape="rect" href="pmu-emul_8c.html#acb35ae097b8b697c84c55e519566fb6a" title=" " alt="" coords="1002,873,1195,900"/>
+<area shape="rect" href="pmu-emul_8c.html#a1b6c636b23b4bafd5809116ae997c71d" title=" " alt="" coords="745,503,927,529"/>
+<area shape="rect" href="pmu-emul_8c.html#ab7d35d75d609bb5ca09226888f2bd096" title=" " alt="" coords="747,764,925,791"/>
+<area shape="rect" href="pmu-emul_8c.html#a4262ee1559f306136fd3b9374f3ae9d3" title=" " alt="" coords="1514,561,1733,588"/>
+<area shape="rect" href="pmu-emul_8c.html#a94af260df1767fa3e538518c9e6436ff" title=" " alt="" coords="1529,401,1717,428"/>
+<area shape="rect" href="pmu-emul_8c.html#a450695105665f1fe0e9d2db927315c5a" title=" " alt="" coords="1277,772,1440,799"/>
+<area shape="rect" href="pmu-emul_8c.html#a07f848e7e5bf226439a5ee53c941eafc" title=" " alt="" coords="1272,554,1445,595"/>
+<area shape="rect" href="pmu-emul_8c.html#a1698d35e55cb9b3545159fbfae5121d2" title=" " alt="" coords="991,452,1207,479"/>
 <area shape="rect" href="pmu-emul_8c.html#a4115d1a923a4a0f28962cbd9dc0b2359" title=" " alt="" coords="1525,275,1722,301"/>
 <area shape="rect" href="kvm__main_8c.html#ac82f28c95da4a0cc137c5a37f08d1f44" title=" " alt="" coords="1037,300,1160,327"/>
 <area shape="rect" href="arm_8c.html#a42500cdc8706ebf4fa3ec21645530097" title=" " alt="" coords="1255,300,1463,327"/>
 <area shape="rect" href="kvm__main_8c.html#ad9f0140eebcdef9a9ebae54431d2fba5" title=" " alt="" coords="1282,249,1435,276"/>
-<area shape="rect" href="pmu-emul_8c.html#aa8b667a7c4c404322fa2f145e656b4a4" title=" " alt="" coords="1011,874,1186,915"/>
-<area shape="rect" href="pmu_8c.html#abf97c7a6b0768cbe660dea1a404bc79b" title=" " alt="" coords="493,1049,660,1076"/>
-<area shape="rect" href="pmu_8c.html#ad4ce451e7a40f149ed26e7ce8d9700d4" title=" " alt="" coords="473,1151,680,1177"/>
-<area shape="rect" href="pmu_8c.html#a98e21a6fa41b3490e6b1356884b18d5f" title=" " alt="" coords="475,1100,678,1127"/>
-<area shape="rect" href="pmu_8c.html#a4fbb4321f3ca694d651e668bb064aa48" title=" " alt="" coords="729,1158,943,1199"/>
-<area shape="rect" href="pmu_8c.html#a78259b4926a270689ce9846f2d661c5d" title=" " alt="" coords="753,1093,919,1134"/>
-<area shape="rect" href="sys__regs_8c.html#a6825971b50ae688a266906875f787c12" title=" " alt="" coords="472,1212,681,1239"/>
-<area shape="rect" href="inject__fault_8c.html#aece14f61701021b17e9cf5521f7946fb" title=" " alt="" coords="753,1224,919,1251"/>
-<area shape="rect" href="inject__fault_8c.html#ae6fc8db83ad0518fddd2e485687e0f7d" title=" " alt="" coords="1039,1199,1158,1225"/>
-<area shape="rect" href="inject__fault_8c.html#a846082def00d9a7db3f28b1b7fb2a07a" title=" " alt="" coords="1039,1249,1158,1276"/>
-<area shape="rect" href="inject__fault_8c.html#a326fe690ce371beb7496d3ed3cbe1a6e" title=" " alt="" coords="1295,1300,1423,1327"/>
-<area shape="rect" href="inject__fault_8c.html#a887586bbc6bac834ae37cbf84711288c" title=" " alt="" coords="1277,1199,1440,1225"/>
-<area shape="rect" href="sys__regs_8c.html#adf66277e472bdae2cc839d450085bc4b" title=" " alt="" coords="1283,1249,1434,1276"/>
-<area shape="rect" href="sys__regs_8c.html#a8f5bcf4d21c4d9b1881dd3fec5bd6178" title=" " alt="" coords="1533,1249,1714,1276"/>
+<area shape="rect" href="pmu-emul_8c.html#aa8b667a7c4c404322fa2f145e656b4a4" title=" " alt="" coords="1011,757,1186,798"/>
+<area shape="rect" href="arm__pmu_8h.html#a7a4fb2cf1fb48c203893224b94564f63" title=" " alt="" coords="477,1109,676,1136"/>
+<area shape="rect" href="pmu_8c.html#abf97c7a6b0768cbe660dea1a404bc79b" title=" " alt="" coords="493,1160,660,1187"/>
+<area shape="rect" href="pmu_8c.html#ad4ce451e7a40f149ed26e7ce8d9700d4" title=" " alt="" coords="473,1059,680,1085"/>
+<area shape="rect" href="pmu_8c.html#a98e21a6fa41b3490e6b1356884b18d5f" title=" " alt="" coords="475,1008,678,1035"/>
+<area shape="rect" href="pmu_8c.html#a4fbb4321f3ca694d651e668bb064aa48" title=" " alt="" coords="729,1091,943,1133"/>
+<area shape="rect" href="pmu_8c.html#a78259b4926a270689ce9846f2d661c5d" title=" " alt="" coords="753,1026,919,1067"/>
+<area shape="rect" href="sys__regs_8c.html#a6825971b50ae688a266906875f787c12" title=" " alt="" coords="472,1211,681,1237"/>
+<area shape="rect" href="inject__fault_8c.html#aece14f61701021b17e9cf5521f7946fb" title=" " alt="" coords="753,1211,919,1237"/>
+<area shape="rect" href="inject__fault_8c.html#ae6fc8db83ad0518fddd2e485687e0f7d" title=" " alt="" coords="1039,1236,1158,1263"/>
+<area shape="rect" href="inject__fault_8c.html#a846082def00d9a7db3f28b1b7fb2a07a" title=" " alt="" coords="1039,1185,1158,1212"/>
+<area shape="rect" href="inject__fault_8c.html#a326fe690ce371beb7496d3ed3cbe1a6e" title=" " alt="" coords="1295,1185,1423,1212"/>
+<area shape="rect" href="inject__fault_8c.html#a887586bbc6bac834ae37cbf84711288c" title=" " alt="" coords="1277,1236,1440,1263"/>
+<area shape="rect" href="sys__regs_8c.html#adf66277e472bdae2cc839d450085bc4b" title=" " alt="" coords="1283,1135,1434,1161"/>
+<area shape="rect" href="sys__regs_8c.html#a8f5bcf4d21c4d9b1881dd3fec5bd6178" title=" " alt="" coords="1533,1135,1714,1161"/>
 </map>
 </div>
 
@@ -2955,50 +2965,51 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="sys__regs_8c_ae72951c06b3847653660caea2df30434_cgraph.png" border="0" usemap="#asys__regs_8c_ae72951c06b3847653660caea2df30434_cgraph" alt=""/></div>
 <map name="asys__regs_8c_ae72951c06b3847653660caea2df30434_cgraph" id="asys__regs_8c_ae72951c06b3847653660caea2df30434_cgraph">
-<area shape="rect" title=" " alt="" coords="5,1392,112,1419"/>
-<area shape="rect" href="pmu-emul_8c.html#a78f7241a751047d73f010db81b33a975" title=" " alt="" coords="166,1143,345,1169"/>
-<area shape="rect" href="pmu-emul_8c.html#adf428205295b3bc4fec2e00fb2c50fa6" title=" " alt="" coords="2257,936,2423,963"/>
-<area shape="rect" href="sys__regs_8c.html#ad26d1f2daf27a368a7f05c6b738f3f7a" title=" " alt="" coords="160,1443,351,1469"/>
-<area shape="rect" href="pmu-emul_8c.html#a4ad466b516d040694a5b25e1c9eef495" title=" " alt="" coords="399,1104,639,1131"/>
-<area shape="rect" href="pmu-emul_8c.html#af0e28bffa2a3c2ed1f5e6405b8284638" title=" " alt="" coords="1747,1037,1917,1064"/>
-<area shape="rect" href="pmu-emul_8c.html#a4d7ab7f63f8cc0a899fb45ebfeb851d6" title=" " alt="" coords="687,947,924,973"/>
-<area shape="rect" href="pmu-emul_8c.html#a73de9042a2fa76e79cc6d9103b914b59" title=" " alt="" coords="433,1030,604,1071"/>
-<area shape="rect" href="pmu-emul_8c.html#a6347b7f1221bf9ecfeab143625e8391f" title=" " alt="" coords="709,279,901,305"/>
-<area shape="rect" href="pmu-emul_8c.html#a48da2aca99c9f2f7728c108ebfe1aab6" title=" " alt="" coords="1984,1189,2209,1216"/>
-<area shape="rect" href="pmu_8c.html#a928d4df1b401e9b41f92dd2aa2744529" title=" " alt="" coords="429,1173,608,1214"/>
-<area shape="rect" href="pmu-emul_8c.html#a0d8ed834b14cf4fb055173129b978fed" title=" " alt="" coords="995,406,1163,447"/>
-<area shape="rect" href="pmu-emul_8c.html#a7f03e9b6af2651bb2bcc5471953076e6" title=" " alt="" coords="1509,413,1635,440"/>
-<area shape="rect" href="pmu-emul_8c.html#a10ab89dbf42da547c48fc7a7ad9fc2f4" title=" " alt="" coords="2268,337,2412,364"/>
-<area shape="rect" href="pmu-emul_8c.html#a25e7862bfe86692b32844810dbe3d6a3" title=" " alt="" coords="1760,363,1904,389"/>
-<area shape="rect" href="pmu-emul_8c.html#a507cc0978c12a18465f8f5d3987db1f3" title=" " alt="" coords="1741,683,1923,709"/>
-<area shape="rect" href="pmu-emul_8c.html#ab5c66bf309304f71e8b9450e35983307" title=" " alt="" coords="2016,726,2177,767"/>
-<area shape="rect" href="pmu-emul_8c.html#a4d63c2f53e5548109d366a7e08be43ae" title=" " alt="" coords="1745,835,1919,861"/>
-<area shape="rect" href="pmu-emul_8c.html#acb35ae097b8b697c84c55e519566fb6a" title=" " alt="" coords="1475,312,1669,339"/>
-<area shape="rect" href="pmu-emul_8c.html#a1b6c636b23b4bafd5809116ae997c71d" title=" " alt="" coords="1233,523,1416,549"/>
-<area shape="rect" href="pmu-emul_8c.html#ab7d35d75d609bb5ca09226888f2bd096" title=" " alt="" coords="1235,261,1414,288"/>
-<area shape="rect" href="pmu-emul_8c.html#a4262ee1559f306136fd3b9374f3ae9d3" title=" " alt="" coords="1987,523,2206,549"/>
-<area shape="rect" href="pmu-emul_8c.html#a94af260df1767fa3e538518c9e6436ff" title=" " alt="" coords="2003,835,2191,861"/>
-<area shape="rect" href="pmu-emul_8c.html#a450695105665f1fe0e9d2db927315c5a" title=" " alt="" coords="1751,261,1913,288"/>
-<area shape="rect" href="pmu-emul_8c.html#a07f848e7e5bf226439a5ee53c941eafc" title=" " alt="" coords="1745,515,1919,557"/>
-<area shape="rect" href="pmu-emul_8c.html#a1698d35e55cb9b3545159fbfae5121d2" title=" " alt="" coords="1464,581,1680,608"/>
-<area shape="rect" href="pmu-emul_8c.html#a4115d1a923a4a0f28962cbd9dc0b2359" title=" " alt="" coords="1998,936,2195,963"/>
-<area shape="rect" href="kvm__main_8c.html#ac82f28c95da4a0cc137c5a37f08d1f44" title=" " alt="" coords="1511,784,1633,811"/>
-<area shape="rect" href="arm_8c.html#a42500cdc8706ebf4fa3ec21645530097" title=" " alt="" coords="1728,885,1936,912"/>
-<area shape="rect" href="kvm__main_8c.html#ad9f0140eebcdef9a9ebae54431d2fba5" title=" " alt="" coords="1755,784,1909,811"/>
-<area shape="rect" href="pmu-emul_8c.html#aa8b667a7c4c404322fa2f145e656b4a4" title=" " alt="" coords="1485,145,1659,186"/>
-<area shape="rect" href="pmu_8c.html#abf97c7a6b0768cbe660dea1a404bc79b" title=" " alt="" coords="722,1189,889,1216"/>
-<area shape="rect" href="pmu_8c.html#ad4ce451e7a40f149ed26e7ce8d9700d4" title=" " alt="" coords="702,1240,909,1267"/>
-<area shape="rect" href="pmu_8c.html#a98e21a6fa41b3490e6b1356884b18d5f" title=" " alt="" coords="704,1139,907,1165"/>
-<area shape="rect" href="pmu_8c.html#a4fbb4321f3ca694d651e668bb064aa48" title=" " alt="" coords="972,1145,1185,1186"/>
-<area shape="rect" href="pmu_8c.html#a78259b4926a270689ce9846f2d661c5d" title=" " alt="" coords="996,1219,1161,1261"/>
-<area shape="rect" href="sys__regs_8c.html#a6825971b50ae688a266906875f787c12" title=" " alt="" coords="414,1443,623,1469"/>
-<area shape="rect" href="inject__fault_8c.html#aece14f61701021b17e9cf5521f7946fb" title=" " alt="" coords="723,1468,888,1495"/>
-<area shape="rect" href="inject__fault_8c.html#ae6fc8db83ad0518fddd2e485687e0f7d" title=" " alt="" coords="1019,1519,1138,1545"/>
-<area shape="rect" href="inject__fault_8c.html#a846082def00d9a7db3f28b1b7fb2a07a" title=" " alt="" coords="1019,1468,1138,1495"/>
-<area shape="rect" href="inject__fault_8c.html#a326fe690ce371beb7496d3ed3cbe1a6e" title=" " alt="" coords="1261,1443,1389,1469"/>
-<area shape="rect" href="inject__fault_8c.html#a887586bbc6bac834ae37cbf84711288c" title=" " alt="" coords="1243,1493,1406,1520"/>
-<area shape="rect" href="sys__regs_8c.html#adf66277e472bdae2cc839d450085bc4b" title=" " alt="" coords="1249,1544,1400,1571"/>
-<area shape="rect" href="sys__regs_8c.html#a8f5bcf4d21c4d9b1881dd3fec5bd6178" title=" " alt="" coords="1481,1544,1663,1571"/>
+<area shape="rect" title=" " alt="" coords="5,528,112,555"/>
+<area shape="rect" href="pmu-emul_8c.html#a78f7241a751047d73f010db81b33a975" title=" " alt="" coords="166,385,345,412"/>
+<area shape="rect" href="pmu-emul_8c.html#adf428205295b3bc4fec2e00fb2c50fa6" title=" " alt="" coords="2257,563,2423,589"/>
+<area shape="rect" href="sys__regs_8c.html#ad26d1f2daf27a368a7f05c6b738f3f7a" title=" " alt="" coords="160,604,351,631"/>
+<area shape="rect" href="pmu-emul_8c.html#a4ad466b516d040694a5b25e1c9eef495" title=" " alt="" coords="399,309,639,336"/>
+<area shape="rect" href="pmu-emul_8c.html#af0e28bffa2a3c2ed1f5e6405b8284638" title=" " alt="" coords="1747,360,1917,387"/>
+<area shape="rect" href="pmu-emul_8c.html#a4d7ab7f63f8cc0a899fb45ebfeb851d6" title=" " alt="" coords="687,360,924,387"/>
+<area shape="rect" href="pmu-emul_8c.html#a73de9042a2fa76e79cc6d9103b914b59" title=" " alt="" coords="433,462,604,503"/>
+<area shape="rect" href="pmu-emul_8c.html#a6347b7f1221bf9ecfeab143625e8391f" title=" " alt="" coords="709,1111,901,1137"/>
+<area shape="rect" href="pmu-emul_8c.html#a48da2aca99c9f2f7728c108ebfe1aab6" title=" " alt="" coords="1984,461,2209,488"/>
+<area shape="rect" href="pmu_8c.html#a928d4df1b401e9b41f92dd2aa2744529" title=" " alt="" coords="429,99,608,141"/>
+<area shape="rect" href="pmu-emul_8c.html#a0d8ed834b14cf4fb055173129b978fed" title=" " alt="" coords="995,1027,1163,1069"/>
+<area shape="rect" href="pmu-emul_8c.html#a7f03e9b6af2651bb2bcc5471953076e6" title=" " alt="" coords="1509,1035,1635,1061"/>
+<area shape="rect" href="pmu-emul_8c.html#a10ab89dbf42da547c48fc7a7ad9fc2f4" title=" " alt="" coords="2268,1161,2412,1188"/>
+<area shape="rect" href="pmu-emul_8c.html#a25e7862bfe86692b32844810dbe3d6a3" title=" " alt="" coords="1760,1136,1904,1163"/>
+<area shape="rect" href="pmu-emul_8c.html#a507cc0978c12a18465f8f5d3987db1f3" title=" " alt="" coords="1741,613,1923,640"/>
+<area shape="rect" href="pmu-emul_8c.html#ab5c66bf309304f71e8b9450e35983307" title=" " alt="" coords="2016,699,2177,741"/>
+<area shape="rect" href="pmu-emul_8c.html#a4d63c2f53e5548109d366a7e08be43ae" title=" " alt="" coords="1745,664,1919,691"/>
+<area shape="rect" href="pmu-emul_8c.html#acb35ae097b8b697c84c55e519566fb6a" title=" " alt="" coords="1475,1136,1669,1163"/>
+<area shape="rect" href="pmu-emul_8c.html#a1b6c636b23b4bafd5809116ae997c71d" title=" " alt="" coords="1233,933,1416,960"/>
+<area shape="rect" href="pmu-emul_8c.html#ab7d35d75d609bb5ca09226888f2bd096" title=" " alt="" coords="1235,1237,1414,1264"/>
+<area shape="rect" href="pmu-emul_8c.html#a4262ee1559f306136fd3b9374f3ae9d3" title=" " alt="" coords="1987,875,2206,901"/>
+<area shape="rect" href="pmu-emul_8c.html#a94af260df1767fa3e538518c9e6436ff" title=" " alt="" coords="2003,648,2191,675"/>
+<area shape="rect" href="pmu-emul_8c.html#a450695105665f1fe0e9d2db927315c5a" title=" " alt="" coords="1751,1237,1913,1264"/>
+<area shape="rect" href="pmu-emul_8c.html#a07f848e7e5bf226439a5ee53c941eafc" title=" " alt="" coords="1745,867,1919,909"/>
+<area shape="rect" href="pmu-emul_8c.html#a1698d35e55cb9b3545159fbfae5121d2" title=" " alt="" coords="1464,816,1680,843"/>
+<area shape="rect" href="pmu-emul_8c.html#a4115d1a923a4a0f28962cbd9dc0b2359" title=" " alt="" coords="1998,563,2195,589"/>
+<area shape="rect" href="kvm__main_8c.html#ac82f28c95da4a0cc137c5a37f08d1f44" title=" " alt="" coords="1511,933,1633,960"/>
+<area shape="rect" href="arm_8c.html#a42500cdc8706ebf4fa3ec21645530097" title=" " alt="" coords="1728,984,1936,1011"/>
+<area shape="rect" href="kvm__main_8c.html#ad9f0140eebcdef9a9ebae54431d2fba5" title=" " alt="" coords="1755,933,1909,960"/>
+<area shape="rect" href="pmu-emul_8c.html#aa8b667a7c4c404322fa2f145e656b4a4" title=" " alt="" coords="1485,1390,1659,1431"/>
+<area shape="rect" href="arm__pmu_8h.html#a7a4fb2cf1fb48c203893224b94564f63" title=" " alt="" coords="706,56,905,83"/>
+<area shape="rect" href="pmu_8c.html#abf97c7a6b0768cbe660dea1a404bc79b" title=" " alt="" coords="722,107,889,133"/>
+<area shape="rect" href="pmu_8c.html#ad4ce451e7a40f149ed26e7ce8d9700d4" title=" " alt="" coords="702,5,909,32"/>
+<area shape="rect" href="pmu_8c.html#a98e21a6fa41b3490e6b1356884b18d5f" title=" " alt="" coords="704,157,907,184"/>
+<area shape="rect" href="pmu_8c.html#a4fbb4321f3ca694d651e668bb064aa48" title=" " alt="" coords="972,18,1185,59"/>
+<area shape="rect" href="pmu_8c.html#a78259b4926a270689ce9846f2d661c5d" title=" " alt="" coords="996,103,1161,145"/>
+<area shape="rect" href="sys__regs_8c.html#a6825971b50ae688a266906875f787c12" title=" " alt="" coords="414,1287,623,1313"/>
+<area shape="rect" href="inject__fault_8c.html#aece14f61701021b17e9cf5521f7946fb" title=" " alt="" coords="723,1532,888,1559"/>
+<area shape="rect" href="inject__fault_8c.html#ae6fc8db83ad0518fddd2e485687e0f7d" title=" " alt="" coords="1019,1583,1138,1609"/>
+<area shape="rect" href="inject__fault_8c.html#a846082def00d9a7db3f28b1b7fb2a07a" title=" " alt="" coords="1019,1532,1138,1559"/>
+<area shape="rect" href="inject__fault_8c.html#a326fe690ce371beb7496d3ed3cbe1a6e" title=" " alt="" coords="1261,1557,1389,1584"/>
+<area shape="rect" href="inject__fault_8c.html#a887586bbc6bac834ae37cbf84711288c" title=" " alt="" coords="1243,1608,1406,1635"/>
+<area shape="rect" href="sys__regs_8c.html#adf66277e472bdae2cc839d450085bc4b" title=" " alt="" coords="1249,1507,1400,1533"/>
+<area shape="rect" href="sys__regs_8c.html#a8f5bcf4d21c4d9b1881dd3fec5bd6178" title=" " alt="" coords="1481,1507,1663,1533"/>
 </map>
 </div>
 
@@ -3395,14 +3406,14 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="sys__regs_8c.html#a6b0bb9716262e47f62b72b0622bc3362">pmu_access_cycle_counter_el0_disabled</a>(vcpu))</div>
 <div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160; </div>
-<div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;            idx = ARMV8_PMU_CYCLE_IDX;</div>
+<div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;            idx = <a class="code" href="arm__pmu_8h.html#ac92e9580b7d1a79637fdfd64e9959794">ARMV8_PMU_CYCLE_IDX</a>;</div>
 <div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;        }</div>
 <div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (r-&gt;<a class="code" href="structsys__reg__desc.html#a2788b87d4da525a57ff87f86ed40fb56">CRn</a> == 0 &amp;&amp; r-&gt;<a class="code" href="structsys__reg__desc.html#a470f57057f534f266f63561efa10ca8d">CRm</a> == 9) {</div>
 <div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;        <span class="comment">/* PMCCNTR */</span></div>
 <div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="sys__regs_8c.html#ae4374d3eb2bf5e2fb0db220979fba3a6">pmu_access_event_counter_el0_disabled</a>(vcpu))</div>
 <div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160; </div>
-<div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;        idx = ARMV8_PMU_CYCLE_IDX;</div>
+<div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;        idx = <a class="code" href="arm__pmu_8h.html#ac92e9580b7d1a79637fdfd64e9959794">ARMV8_PMU_CYCLE_IDX</a>;</div>
 <div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (r-&gt;<a class="code" href="structsys__reg__desc.html#a2788b87d4da525a57ff87f86ed40fb56">CRn</a> == 14 &amp;&amp; (r-&gt;<a class="code" href="structsys__reg__desc.html#a470f57057f534f266f63561efa10ca8d">CRm</a> &amp; 12) == 8) {</div>
 <div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;        <span class="comment">/* PMEVCNTRn_EL0 */</span></div>
 <div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="sys__regs_8c.html#ae4374d3eb2bf5e2fb0db220979fba3a6">pmu_access_event_counter_el0_disabled</a>(vcpu))</div>
@@ -3428,6 +3439,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160; </div>
 <div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;}</div>
+<div class="ttc" id="aarm__pmu_8h_html_ac92e9580b7d1a79637fdfd64e9959794"><div class="ttname"><a href="arm__pmu_8h.html#ac92e9580b7d1a79637fdfd64e9959794">ARMV8_PMU_CYCLE_IDX</a></div><div class="ttdeci">#define ARMV8_PMU_CYCLE_IDX</div><div class="ttdef"><b>Definition:</b> <a href="arm__pmu_8h_source.html#l00013">arm_pmu.h:13</a></div></div>
 <div class="ttc" id="apmu-emul_8c_html_a57b710f17cc1fc314f8f1e297bcb85f3"><div class="ttname"><a href="pmu-emul_8c.html#a57b710f17cc1fc314f8f1e297bcb85f3">kvm_pmu_get_counter_value</a></div><div class="ttdeci">u64 kvm_pmu_get_counter_value(struct kvm_vcpu *vcpu, u64 select_idx)</div><div class="ttdef"><b>Definition:</b> <a href="pmu-emul_8c_source.html#l00141">pmu-emul.c:141</a></div></div>
 <div class="ttc" id="apmu-emul_8c_html_a73de9042a2fa76e79cc6d9103b914b59"><div class="ttname"><a href="pmu-emul_8c.html#a73de9042a2fa76e79cc6d9103b914b59">kvm_pmu_set_counter_value</a></div><div class="ttdeci">void kvm_pmu_set_counter_value(struct kvm_vcpu *vcpu, u64 select_idx, u64 val)</div><div class="ttdef"><b>Definition:</b> <a href="pmu-emul_8c_source.html#l00182">pmu-emul.c:182</a></div></div>
 <div class="ttc" id="astructsys__reg__desc_html_a2788b87d4da525a57ff87f86ed40fb56"><div class="ttname"><a href="structsys__reg__desc.html#a2788b87d4da525a57ff87f86ed40fb56">sys_reg_desc::CRn</a></div><div class="ttdeci">u8 CRn</div><div class="ttdef"><b>Definition:</b> <a href="sys__regs_8h_source.html#l00065">sys_regs.h:65</a></div></div>
@@ -3534,7 +3546,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;        reg = PMEVTYPER0_EL0 + idx;</div>
 <div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (r-&gt;<a class="code" href="structsys__reg__desc.html#a2788b87d4da525a57ff87f86ed40fb56">CRn</a> == 14 &amp;&amp; (r-&gt;<a class="code" href="structsys__reg__desc.html#a470f57057f534f266f63561efa10ca8d">CRm</a> &amp; 12) == 12) {</div>
 <div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;        idx = ((r-&gt;<a class="code" href="structsys__reg__desc.html#a470f57057f534f266f63561efa10ca8d">CRm</a> &amp; 3) &lt;&lt; 3) | (r-&gt;<a class="code" href="structsys__reg__desc.html#a2c409db28db7235af0c8e5b6d7dfdc0f">Op2</a> &amp; 7);</div>
-<div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;        <span class="keywordflow">if</span> (idx == ARMV8_PMU_CYCLE_IDX)</div>
+<div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;        <span class="keywordflow">if</span> (idx == <a class="code" href="arm__pmu_8h.html#ac92e9580b7d1a79637fdfd64e9959794">ARMV8_PMU_CYCLE_IDX</a>)</div>
 <div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;            reg = PMCCFILTR_EL0;</div>
 <div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;            <span class="comment">/* PMEVTYPERn_EL0 */</span></div>
@@ -3561,47 +3573,48 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="sys__regs_8c_ae0260b12f95bb7f271037d3e4b18b22b_cgraph.png" border="0" usemap="#asys__regs_8c_ae0260b12f95bb7f271037d3e4b18b22b_cgraph" alt=""/></div>
 <map name="asys__regs_8c_ae0260b12f95bb7f271037d3e4b18b22b_cgraph" id="asys__regs_8c_ae0260b12f95bb7f271037d3e4b18b22b_cgraph">
-<area shape="rect" title=" " alt="" coords="5,1012,164,1039"/>
-<area shape="rect" href="pmu-emul_8c.html#a22f1aab98d3f43c3b6d5a33d1886d474" title=" " alt="" coords="222,507,393,549"/>
-<area shape="rect" href="pmu_8c.html#a928d4df1b401e9b41f92dd2aa2744529" title=" " alt="" coords="218,1110,397,1151"/>
-<area shape="rect" href="sys__regs_8c.html#ad26d1f2daf27a368a7f05c6b738f3f7a" title=" " alt="" coords="212,1037,403,1064"/>
-<area shape="rect" href="sys__regs_8c.html#ad9997b5fac75ffbb762473aefcb99d6b" title=" " alt="" coords="469,987,642,1013"/>
-<area shape="rect" href="pmu-emul_8c.html#a507cc0978c12a18465f8f5d3987db1f3" title=" " alt="" coords="1246,464,1429,491"/>
-<area shape="rect" href="pmu-emul_8c.html#a0d8ed834b14cf4fb055173129b978fed" title=" " alt="" coords="471,381,639,422"/>
-<area shape="rect" href="pmu-emul_8c.html#af0e28bffa2a3c2ed1f5e6405b8284638" title=" " alt="" coords="1252,733,1423,760"/>
-<area shape="rect" href="pmu-emul_8c.html#a1c22f46a919c0c1d2de50384f7a33ed4" title=" " alt="" coords="721,211,908,237"/>
-<area shape="rect" href="pmu-emul_8c.html#a7f03e9b6af2651bb2bcc5471953076e6" title=" " alt="" coords="1014,413,1141,440"/>
-<area shape="rect" href="pmu-emul_8c.html#a10ab89dbf42da547c48fc7a7ad9fc2f4" title=" " alt="" coords="1767,363,1911,389"/>
-<area shape="rect" href="pmu-emul_8c.html#a25e7862bfe86692b32844810dbe3d6a3" title=" " alt="" coords="1265,363,1409,389"/>
-<area shape="rect" href="pmu-emul_8c.html#ab5c66bf309304f71e8b9450e35983307" title=" " alt="" coords="1518,722,1679,763"/>
-<area shape="rect" href="pmu-emul_8c.html#a4d63c2f53e5548109d366a7e08be43ae" title=" " alt="" coords="1250,312,1425,339"/>
-<area shape="rect" href="pmu-emul_8c.html#acb35ae097b8b697c84c55e519566fb6a" title=" " alt="" coords="981,211,1174,237"/>
-<area shape="rect" href="pmu-emul_8c.html#a1b6c636b23b4bafd5809116ae997c71d" title=" " alt="" coords="723,616,906,643"/>
-<area shape="rect" href="pmu-emul_8c.html#ab7d35d75d609bb5ca09226888f2bd096" title=" " alt="" coords="725,152,904,179"/>
-<area shape="rect" href="pmu-emul_8c.html#a4262ee1559f306136fd3b9374f3ae9d3" title=" " alt="" coords="1489,515,1708,541"/>
-<area shape="rect" href="pmu-emul_8c.html#adf428205295b3bc4fec2e00fb2c50fa6" title=" " alt="" coords="1756,729,1921,756"/>
-<area shape="rect" href="pmu-emul_8c.html#a94af260df1767fa3e538518c9e6436ff" title=" " alt="" coords="1505,312,1693,339"/>
-<area shape="rect" href="pmu-emul_8c.html#a450695105665f1fe0e9d2db927315c5a" title=" " alt="" coords="1256,261,1419,288"/>
-<area shape="rect" href="pmu-emul_8c.html#a07f848e7e5bf226439a5ee53c941eafc" title=" " alt="" coords="1251,667,1424,709"/>
-<area shape="rect" href="pmu-emul_8c.html#a1698d35e55cb9b3545159fbfae5121d2" title=" " alt="" coords="969,565,1185,592"/>
-<area shape="rect" href="pmu-emul_8c.html#a4115d1a923a4a0f28962cbd9dc0b2359" title=" " alt="" coords="1500,835,1697,861"/>
-<area shape="rect" href="kvm__main_8c.html#ac82f28c95da4a0cc137c5a37f08d1f44" title=" " alt="" coords="1016,835,1139,861"/>
-<area shape="rect" href="arm_8c.html#a42500cdc8706ebf4fa3ec21645530097" title=" " alt="" coords="1233,885,1441,912"/>
-<area shape="rect" href="kvm__main_8c.html#ad9f0140eebcdef9a9ebae54431d2fba5" title=" " alt="" coords="1261,835,1414,861"/>
-<area shape="rect" href="pmu-emul_8c.html#aa8b667a7c4c404322fa2f145e656b4a4" title=" " alt="" coords="990,145,1165,186"/>
-<area shape="rect" href="pmu_8c.html#abf97c7a6b0768cbe660dea1a404bc79b" title=" " alt="" coords="472,1088,639,1115"/>
-<area shape="rect" href="pmu_8c.html#ad4ce451e7a40f149ed26e7ce8d9700d4" title=" " alt="" coords="452,1139,659,1165"/>
-<area shape="rect" href="pmu_8c.html#a98e21a6fa41b3490e6b1356884b18d5f" title=" " alt="" coords="454,1189,657,1216"/>
-<area shape="rect" href="pmu_8c.html#a4fbb4321f3ca694d651e668bb064aa48" title=" " alt="" coords="708,1123,921,1165"/>
-<area shape="rect" href="pmu_8c.html#a78259b4926a270689ce9846f2d661c5d" title=" " alt="" coords="732,1189,897,1230"/>
-<area shape="rect" href="sys__regs_8c.html#a6825971b50ae688a266906875f787c12" title=" " alt="" coords="451,1037,660,1064"/>
-<area shape="rect" href="inject__fault_8c.html#aece14f61701021b17e9cf5521f7946fb" title=" " alt="" coords="732,1037,897,1064"/>
-<area shape="rect" href="inject__fault_8c.html#ae6fc8db83ad0518fddd2e485687e0f7d" title=" " alt="" coords="1018,1088,1137,1115"/>
-<area shape="rect" href="inject__fault_8c.html#a846082def00d9a7db3f28b1b7fb2a07a" title=" " alt="" coords="1018,1037,1137,1064"/>
-<area shape="rect" href="inject__fault_8c.html#a326fe690ce371beb7496d3ed3cbe1a6e" title=" " alt="" coords="1273,1088,1401,1115"/>
-<area shape="rect" href="inject__fault_8c.html#a887586bbc6bac834ae37cbf84711288c" title=" " alt="" coords="1256,1139,1419,1165"/>
-<area shape="rect" href="sys__regs_8c.html#adf66277e472bdae2cc839d450085bc4b" title=" " alt="" coords="1262,1037,1413,1064"/>
-<area shape="rect" href="sys__regs_8c.html#a8f5bcf4d21c4d9b1881dd3fec5bd6178" title=" " alt="" coords="1508,1037,1689,1064"/>
+<area shape="rect" title=" " alt="" coords="5,1001,164,1028"/>
+<area shape="rect" href="pmu-emul_8c.html#a22f1aab98d3f43c3b6d5a33d1886d474" title=" " alt="" coords="222,867,393,909"/>
+<area shape="rect" href="pmu_8c.html#a928d4df1b401e9b41f92dd2aa2744529" title=" " alt="" coords="218,1121,397,1162"/>
+<area shape="rect" href="sys__regs_8c.html#ad26d1f2daf27a368a7f05c6b738f3f7a" title=" " alt="" coords="212,1027,403,1053"/>
+<area shape="rect" href="sys__regs_8c.html#ad9997b5fac75ffbb762473aefcb99d6b" title=" " alt="" coords="469,976,642,1003"/>
+<area shape="rect" href="pmu-emul_8c.html#a507cc0978c12a18465f8f5d3987db1f3" title=" " alt="" coords="1246,723,1429,749"/>
+<area shape="rect" href="pmu-emul_8c.html#a0d8ed834b14cf4fb055173129b978fed" title=" " alt="" coords="471,374,639,415"/>
+<area shape="rect" href="pmu-emul_8c.html#af0e28bffa2a3c2ed1f5e6405b8284638" title=" " alt="" coords="1252,773,1423,800"/>
+<area shape="rect" href="pmu-emul_8c.html#a1c22f46a919c0c1d2de50384f7a33ed4" title=" " alt="" coords="721,925,908,952"/>
+<area shape="rect" href="pmu-emul_8c.html#a7f03e9b6af2651bb2bcc5471953076e6" title=" " alt="" coords="1014,317,1141,344"/>
+<area shape="rect" href="pmu-emul_8c.html#a10ab89dbf42da547c48fc7a7ad9fc2f4" title=" " alt="" coords="1767,149,1911,176"/>
+<area shape="rect" href="pmu-emul_8c.html#a25e7862bfe86692b32844810dbe3d6a3" title=" " alt="" coords="1265,99,1409,125"/>
+<area shape="rect" href="pmu-emul_8c.html#ab5c66bf309304f71e8b9450e35983307" title=" " alt="" coords="1518,673,1679,714"/>
+<area shape="rect" href="pmu-emul_8c.html#a4d63c2f53e5548109d366a7e08be43ae" title=" " alt="" coords="1250,824,1425,851"/>
+<area shape="rect" href="pmu-emul_8c.html#acb35ae097b8b697c84c55e519566fb6a" title=" " alt="" coords="981,99,1174,125"/>
+<area shape="rect" href="pmu-emul_8c.html#a1b6c636b23b4bafd5809116ae997c71d" title=" " alt="" coords="723,419,906,445"/>
+<area shape="rect" href="pmu-emul_8c.html#ab7d35d75d609bb5ca09226888f2bd096" title=" " alt="" coords="725,200,904,227"/>
+<area shape="rect" href="pmu-emul_8c.html#a4262ee1559f306136fd3b9374f3ae9d3" title=" " alt="" coords="1489,461,1708,488"/>
+<area shape="rect" href="pmu-emul_8c.html#adf428205295b3bc4fec2e00fb2c50fa6" title=" " alt="" coords="1756,621,1921,648"/>
+<area shape="rect" href="pmu-emul_8c.html#a94af260df1767fa3e538518c9e6436ff" title=" " alt="" coords="1505,824,1693,851"/>
+<area shape="rect" href="pmu-emul_8c.html#a450695105665f1fe0e9d2db927315c5a" title=" " alt="" coords="1256,200,1419,227"/>
+<area shape="rect" href="pmu-emul_8c.html#a07f848e7e5bf226439a5ee53c941eafc" title=" " alt="" coords="1251,454,1424,495"/>
+<area shape="rect" href="pmu-emul_8c.html#a1698d35e55cb9b3545159fbfae5121d2" title=" " alt="" coords="969,520,1185,547"/>
+<area shape="rect" href="pmu-emul_8c.html#a4115d1a923a4a0f28962cbd9dc0b2359" title=" " alt="" coords="1500,621,1697,648"/>
+<area shape="rect" href="kvm__main_8c.html#ac82f28c95da4a0cc137c5a37f08d1f44" title=" " alt="" coords="1016,419,1139,445"/>
+<area shape="rect" href="arm_8c.html#a42500cdc8706ebf4fa3ec21645530097" title=" " alt="" coords="1233,403,1441,429"/>
+<area shape="rect" href="kvm__main_8c.html#ad9f0140eebcdef9a9ebae54431d2fba5" title=" " alt="" coords="1261,352,1414,379"/>
+<area shape="rect" href="pmu-emul_8c.html#aa8b667a7c4c404322fa2f145e656b4a4" title=" " alt="" coords="990,251,1165,293"/>
+<area shape="rect" href="arm__pmu_8h.html#a7a4fb2cf1fb48c203893224b94564f63" title=" " alt="" coords="456,1077,655,1104"/>
+<area shape="rect" href="pmu_8c.html#abf97c7a6b0768cbe660dea1a404bc79b" title=" " alt="" coords="472,1128,639,1155"/>
+<area shape="rect" href="pmu_8c.html#ad4ce451e7a40f149ed26e7ce8d9700d4" title=" " alt="" coords="452,1229,659,1256"/>
+<area shape="rect" href="pmu_8c.html#a98e21a6fa41b3490e6b1356884b18d5f" title=" " alt="" coords="454,1179,657,1205"/>
+<area shape="rect" href="pmu_8c.html#a4fbb4321f3ca694d651e668bb064aa48" title=" " alt="" coords="708,1229,921,1270"/>
+<area shape="rect" href="pmu_8c.html#a78259b4926a270689ce9846f2d661c5d" title=" " alt="" coords="732,1163,897,1205"/>
+<area shape="rect" href="sys__regs_8c.html#a6825971b50ae688a266906875f787c12" title=" " alt="" coords="451,1027,660,1053"/>
+<area shape="rect" href="inject__fault_8c.html#aece14f61701021b17e9cf5521f7946fb" title=" " alt="" coords="732,1027,897,1053"/>
+<area shape="rect" href="inject__fault_8c.html#ae6fc8db83ad0518fddd2e485687e0f7d" title=" " alt="" coords="1018,1077,1137,1104"/>
+<area shape="rect" href="inject__fault_8c.html#a846082def00d9a7db3f28b1b7fb2a07a" title=" " alt="" coords="1018,1027,1137,1053"/>
+<area shape="rect" href="inject__fault_8c.html#a326fe690ce371beb7496d3ed3cbe1a6e" title=" " alt="" coords="1273,1077,1401,1104"/>
+<area shape="rect" href="inject__fault_8c.html#a887586bbc6bac834ae37cbf84711288c" title=" " alt="" coords="1256,1128,1419,1155"/>
+<area shape="rect" href="sys__regs_8c.html#adf66277e472bdae2cc839d450085bc4b" title=" " alt="" coords="1262,1027,1413,1053"/>
+<area shape="rect" href="sys__regs_8c.html#a8f5bcf4d21c4d9b1881dd3fec5bd6178" title=" " alt="" coords="1508,1027,1689,1053"/>
 </map>
 </div>
 
@@ -5090,7 +5103,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="sys__regs_8c_source.html#l00355">355</a> of file <a class="el" href="sys__regs_8c_source.html">sys_regs.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;{</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="keywordflow">switch</span> (r-&gt;<a class="code" href="structsys__reg__desc.html#a10ad75877fb2b37451edd0ed5cf95472">aarch32_map</a>) {</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="keywordflow">switch</span> (r-&gt;<a class="code" href="structsys__reg__desc.html#a4cc29887afa6444509a6a8957574eff8">aarch32_map</a>) {</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keywordflow">case</span> AA32_LO:</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        *mask = GENMASK_ULL(31, 0);</div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        *shift = 0;</div>
@@ -5105,7 +5118,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    }</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;}</div>
-<div class="ttc" id="astructsys__reg__desc_html_a10ad75877fb2b37451edd0ed5cf95472"><div class="ttname"><a href="structsys__reg__desc.html#a10ad75877fb2b37451edd0ed5cf95472">sys_reg_desc::aarch32_map</a></div><div class="ttdeci">enum sys_reg_desc::@4 aarch32_map</div></div>
+<div class="ttc" id="astructsys__reg__desc_html_a4cc29887afa6444509a6a8957574eff8"><div class="ttname"><a href="structsys__reg__desc.html#a4cc29887afa6444509a6a8957574eff8">sys_reg_desc::aarch32_map</a></div><div class="ttdeci">enum sys_reg_desc::@9 aarch32_map</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -5874,7 +5887,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160; </div>
 <div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;    <span class="keywordflow">if</span> (r-&gt;<a class="code" href="structsys__reg__desc.html#a2788b87d4da525a57ff87f86ed40fb56">CRn</a> == 9 &amp;&amp; r-&gt;<a class="code" href="structsys__reg__desc.html#a470f57057f534f266f63561efa10ca8d">CRm</a> == 13 &amp;&amp; r-&gt;<a class="code" href="structsys__reg__desc.html#a2c409db28db7235af0c8e5b6d7dfdc0f">Op2</a> == 0)</div>
 <div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;        <span class="comment">/* PMCCNTR_EL0 */</span></div>
-<div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;        idx = ARMV8_PMU_CYCLE_IDX;</div>
+<div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;        idx = <a class="code" href="arm__pmu_8h.html#ac92e9580b7d1a79637fdfd64e9959794">ARMV8_PMU_CYCLE_IDX</a>;</div>
 <div class="line"><a name="l01023"></a><span class="lineno"> 1023</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l01024"></a><span class="lineno"> 1024</span>&#160;        <span class="comment">/* PMEVCNTRn_EL0 */</span></div>
 <div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160;        idx = ((r-&gt;<a class="code" href="structsys__reg__desc.html#a470f57057f534f266f63561efa10ca8d">CRm</a> &amp; 3) &lt;&lt; 3) | (r-&gt;<a class="code" href="structsys__reg__desc.html#a2c409db28db7235af0c8e5b6d7dfdc0f">Op2</a> &amp; 7);</div>
@@ -8769,7 +8782,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160; </div>
 <div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;    pmcr = <a class="code" href="pmu-emul_8c.html#adf428205295b3bc4fec2e00fb2c50fa6">kvm_vcpu_read_pmcr</a>(vcpu);</div>
 <div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;    val = FIELD_GET(ARMV8_PMU_PMCR_N, pmcr);</div>
-<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;    <span class="keywordflow">if</span> (idx &gt;= val &amp;&amp; idx != ARMV8_PMU_CYCLE_IDX) {</div>
+<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;    <span class="keywordflow">if</span> (idx &gt;= val &amp;&amp; idx != <a class="code" href="arm__pmu_8h.html#ac92e9580b7d1a79637fdfd64e9959794">ARMV8_PMU_CYCLE_IDX</a>) {</div>
 <div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;        <a class="code" href="inject__fault_8c.html#aece14f61701021b17e9cf5521f7946fb">kvm_inject_undefined</a>(vcpu);</div>
 <div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;    }</div>
@@ -8841,11 +8854,12 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="sys__regs_8c_source.html#l00837">837</a> of file <a class="el" href="sys__regs_8c_source.html">sys_regs.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;{</div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;    <span class="keywordflow">if</span> (kvm_vcpu_has_pmu(vcpu))</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="arm__pmu_8h.html#ac0c0da3675eab6f5afdaa944c779d332">kvm_vcpu_has_pmu</a>(vcpu))</div>
 <div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160; </div>
 <div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="sys__regs_8h.html#adfaaefd051ca94abdae398a38d7c81c0">REG_HIDDEN</a>;</div>
 <div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;}</div>
+<div class="ttc" id="aarm__pmu_8h_html_ac0c0da3675eab6f5afdaa944c779d332"><div class="ttname"><a href="arm__pmu_8h.html#ac0c0da3675eab6f5afdaa944c779d332">kvm_vcpu_has_pmu</a></div><div class="ttdeci">#define kvm_vcpu_has_pmu(vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="arm__pmu_8h_source.html#l00170">arm_pmu.h:170</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -9211,7 +9225,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l01700"></a><span class="lineno"> 1700</span>&#160;<span class="comment">     * Only initialize the PMU version if the vCPU was configured with one.</span></div>
 <div class="line"><a name="l01701"></a><span class="lineno"> 1701</span>&#160;<span class="comment">     */</span></div>
 <div class="line"><a name="l01702"></a><span class="lineno"> 1702</span>&#160;    val &amp;= ~ID_AA64DFR0_EL1_PMUVer_MASK;</div>
-<div class="line"><a name="l01703"></a><span class="lineno"> 1703</span>&#160;    <span class="keywordflow">if</span> (kvm_vcpu_has_pmu(vcpu))</div>
+<div class="line"><a name="l01703"></a><span class="lineno"> 1703</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="arm__pmu_8h.html#ac0c0da3675eab6f5afdaa944c779d332">kvm_vcpu_has_pmu</a>(vcpu))</div>
 <div class="line"><a name="l01704"></a><span class="lineno"> 1704</span>&#160;        val |= SYS_FIELD_PREP(ID_AA64DFR0_EL1, PMUVer,</div>
 <div class="line"><a name="l01705"></a><span class="lineno"> 1705</span>&#160;                      <a class="code" href="pmu-emul_8c.html#a354060fe62ba5fb3f6f3967232f15ddf">kvm_arm_pmu_get_pmuver_limit</a>());</div>
 <div class="line"><a name="l01706"></a><span class="lineno"> 1706</span>&#160; </div>
@@ -9292,7 +9306,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l01670"></a><span class="lineno"> 1670</span>&#160;        val |= SYS_FIELD_PREP_ENUM(ID_AA64PFR0_EL1, CSV3, IMP);</div>
 <div class="line"><a name="l01671"></a><span class="lineno"> 1671</span>&#160;    }</div>
 <div class="line"><a name="l01672"></a><span class="lineno"> 1672</span>&#160; </div>
-<div class="line"><a name="l01673"></a><span class="lineno"> 1673</span>&#160;    <span class="keywordflow">if</span> (kvm_vgic_global_state.type == VGIC_V3) {</div>
+<div class="line"><a name="l01673"></a><span class="lineno"> 1673</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="arm__vgic_8h.html#a53b0ff890074ba3dc4b1bed11a236394">kvm_vgic_global_state</a>.<a class="code" href="structvgic__global.html#ae7d700dc38bbca3ed33730267652d87f">type</a> == <a class="code" href="arm__vgic_8h.html#a6e40915cc9873f08ca702678ce237ff1a6556967af9084ab2c8d36e7faf368d1e">VGIC_V3</a>) {</div>
 <div class="line"><a name="l01674"></a><span class="lineno"> 1674</span>&#160;        val &amp;= ~ID_AA64PFR0_EL1_GIC_MASK;</div>
 <div class="line"><a name="l01675"></a><span class="lineno"> 1675</span>&#160;        val |= SYS_FIELD_PREP_ENUM(ID_AA64PFR0_EL1, GIC, IMP);</div>
 <div class="line"><a name="l01676"></a><span class="lineno"> 1676</span>&#160;    }</div>
@@ -9301,6 +9315,9 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l01679"></a><span class="lineno"> 1679</span>&#160; </div>
 <div class="line"><a name="l01680"></a><span class="lineno"> 1680</span>&#160;    <span class="keywordflow">return</span> val;</div>
 <div class="line"><a name="l01681"></a><span class="lineno"> 1681</span>&#160;}</div>
+<div class="ttc" id="aarm__vgic_8h_html_a53b0ff890074ba3dc4b1bed11a236394"><div class="ttname"><a href="arm__vgic_8h.html#a53b0ff890074ba3dc4b1bed11a236394">kvm_vgic_global_state</a></div><div class="ttdeci">struct vgic_global kvm_vgic_global_state</div></div>
+<div class="ttc" id="aarm__vgic_8h_html_a6e40915cc9873f08ca702678ce237ff1a6556967af9084ab2c8d36e7faf368d1e"><div class="ttname"><a href="arm__vgic_8h.html#a6e40915cc9873f08ca702678ce237ff1a6556967af9084ab2c8d36e7faf368d1e">VGIC_V3</a></div><div class="ttdeci">@ VGIC_V3</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00040">arm_vgic.h:40</a></div></div>
+<div class="ttc" id="astructvgic__global_html_ae7d700dc38bbca3ed33730267652d87f"><div class="ttname"><a href="structvgic__global.html#ae7d700dc38bbca3ed33730267652d87f">vgic_global::type</a></div><div class="ttdeci">enum vgic_type type</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00438">arm_vgic.h:46</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -9344,7 +9361,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l01751"></a><span class="lineno"> 1751</span>&#160;    u64 val = read_sanitised_ftr_reg(SYS_ID_DFR0_EL1);</div>
 <div class="line"><a name="l01752"></a><span class="lineno"> 1752</span>&#160; </div>
 <div class="line"><a name="l01753"></a><span class="lineno"> 1753</span>&#160;    val &amp;= ~ID_DFR0_EL1_PerfMon_MASK;</div>
-<div class="line"><a name="l01754"></a><span class="lineno"> 1754</span>&#160;    <span class="keywordflow">if</span> (kvm_vcpu_has_pmu(vcpu))</div>
+<div class="line"><a name="l01754"></a><span class="lineno"> 1754</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="arm__pmu_8h.html#ac0c0da3675eab6f5afdaa944c779d332">kvm_vcpu_has_pmu</a>(vcpu))</div>
 <div class="line"><a name="l01755"></a><span class="lineno"> 1755</span>&#160;        val |= SYS_FIELD_PREP(ID_DFR0_EL1, PerfMon, perfmon);</div>
 <div class="line"><a name="l01756"></a><span class="lineno"> 1756</span>&#160; </div>
 <div class="line"><a name="l01757"></a><span class="lineno"> 1757</span>&#160;    val = <a class="code" href="sys__regs_8c.html#ae119f35f966f3351f44f6de8899bd5ff">ID_REG_LIMIT_FIELD_ENUM</a>(val, ID_DFR0_EL1, CopDbg, Debugv8p8);</div>
@@ -9934,7 +9951,7 @@ Here is the call graph for this function:</div>
 <p class="definition">Definition at line <a class="el" href="sys__regs_8c_source.html#l00868">868</a> of file <a class="el" href="sys__regs_8c_source.html">sys_regs.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;{</div>
 <div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;    <span class="comment">/* This thing will UNDEF, who cares about the reset value? */</span></div>
-<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;    <span class="keywordflow">if</span> (!kvm_vcpu_has_pmu(vcpu))</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="arm__pmu_8h.html#ac0c0da3675eab6f5afdaa944c779d332">kvm_vcpu_has_pmu</a>(vcpu))</div>
 <div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160; </div>
 <div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;    <a class="code" href="sys__regs_8h.html#a9921b6cef7bc6e2b9652395bab5d39c1">reset_unknown</a>(vcpu, r);</div>
@@ -10047,7 +10064,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="sys__regs_8c_source.html#l00846">846</a> of file <a class="el" href="sys__regs_8c_source.html">sys_regs.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;{</div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;    u64 mask = BIT(ARMV8_PMU_CYCLE_IDX);</div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;    u64 mask = BIT(<a class="code" href="arm__pmu_8h.html#ac92e9580b7d1a79637fdfd64e9959794">ARMV8_PMU_CYCLE_IDX</a>);</div>
 <div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;    u8 n = vcpu-&gt;kvm-&gt;arch.pmcr_n;</div>
 <div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160; </div>
 <div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;    <span class="keywordflow">if</span> (n)</div>

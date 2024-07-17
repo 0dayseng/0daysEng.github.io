@@ -79,7 +79,7 @@ $(function() {
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;asm/kvm_mmu.h&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;asm/pvclock-abi.h&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;kvm/arm_hypercalls.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="arm__hypercalls_8h.html">kvm/arm_hypercalls.h</a>&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="pvtime_8c.html#a9b8ff3ed98adc6eda51df35cfa38602d">   13</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="pvtime_8c.html#a9b8ff3ed98adc6eda51df35cfa38602d">kvm_update_stolen_time</a>(<span class="keyword">struct</span> kvm_vcpu *vcpu)</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
@@ -105,7 +105,7 @@ $(function() {
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="pvtime_8c.html#a0a13c651b49c43a6139569798311764c">   35</a></span>&#160;<span class="keywordtype">long</span> <a class="code" href="pvtime_8c.html#a0a13c651b49c43a6139569798311764c">kvm_hypercall_pv_features</a>(<span class="keyword">struct</span> kvm_vcpu *vcpu)</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    u32 feature = smccc_get_arg1(vcpu);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    u32 feature = <a class="code" href="arm__hypercalls_8h.html#aab3de177147e0efb70c732a1ad3706dd">smccc_get_arg1</a>(vcpu);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">long</span> val = SMCCC_RET_NOT_SUPPORTED;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">switch</span> (feature) {</div>
@@ -202,6 +202,8 @@ $(function() {
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">return</span> -ENXIO;</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
+<div class="ttc" id="aarm__hypercalls_8h_html"><div class="ttname"><a href="arm__hypercalls_8h.html">arm_hypercalls.h</a></div></div>
+<div class="ttc" id="aarm__hypercalls_8h_html_aab3de177147e0efb70c732a1ad3706dd"><div class="ttname"><a href="arm__hypercalls_8h.html#aab3de177147e0efb70c732a1ad3706dd">smccc_get_arg1</a></div><div class="ttdeci">static unsigned long smccc_get_arg1(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="arm__hypercalls_8h_source.html#l00016">arm_hypercalls.h:16</a></div></div>
 <div class="ttc" id="aearly__alloc_8c_html_a74f95eab64fb23344e30879684489f6f"><div class="ttname"><a href="early__alloc_8c.html#a74f95eab64fb23344e30879684489f6f">base</a></div><div class="ttdeci">static unsigned long base</div><div class="ttdef"><b>Definition:</b> <a href="early__alloc_8c_source.html#l00015">early_alloc.c:15</a></div></div>
 <div class="ttc" id="akvm__main_8c_html_ab474cb739a386f922b7ec39313e4e09e"><div class="ttname"><a href="kvm__main_8c.html#ab474cb739a386f922b7ec39313e4e09e">gfn_to_hva</a></div><div class="ttdeci">unsigned long gfn_to_hva(struct kvm *kvm, gfn_t gfn)</div><div class="ttdef"><b>Definition:</b> <a href="kvm__main_8c_source.html#l02742">kvm_main.c:2742</a></div></div>
 <div class="ttc" id="apvtime_8c_html_a0a13c651b49c43a6139569798311764c"><div class="ttname"><a href="pvtime_8c.html#a0a13c651b49c43a6139569798311764c">kvm_hypercall_pv_features</a></div><div class="ttdeci">long kvm_hypercall_pv_features(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="pvtime_8c_source.html#l00035">pvtime.c:35</a></div></div>

@@ -1,4 +1,5 @@
 <map id="kvm_set_pmuserenr" name="kvm_set_pmuserenr">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,160,32"/>
-<area shape="rect" id="node2" href="$kvm__main_8c.html#ac5a3afd8e2d8d1139dc7711c4b9e07e3" title=" " alt="" coords="208,5,381,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,160,57"/>
+<area shape="rect" id="node2" href="$arm__pmu_8h.html#a7a4fb2cf1fb48c203893224b94564f63" title=" " alt="" coords="208,5,407,32"/>
+<area shape="rect" id="node3" href="$kvm__main_8c.html#ac5a3afd8e2d8d1139dc7711c4b9e07e3" title=" " alt="" coords="221,56,394,83"/>
 </map>

@@ -1,9 +1,10 @@
 <map id="hyp_panic" name="hyp_panic">
-<area shape="rect" id="node1" title=" " alt="" coords="5,85,93,112"/>
-<area shape="rect" id="node2" href="$vhe_2switch_8c.html#a2c3f13ae3d0d6c0cee03845c35c31da8" title=" " alt="" coords="141,85,273,112"/>
-<area shape="rect" id="node3" href="$vhe_2switch_8c.html#ae0a32b92b674eb6922cbfab5f8d22daf" title=" " alt="" coords="325,56,471,83"/>
-<area shape="rect" id="node6" href="$vhe_2sysreg-sr_8c.html#a4e283fb77ab5c8a9511107f69ee5d58b" title=" " alt="" coords="321,107,475,149"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,111,93,137"/>
+<area shape="rect" id="node2" href="$vhe_2switch_8c.html#a2c3f13ae3d0d6c0cee03845c35c31da8" title=" " alt="" coords="141,111,273,137"/>
+<area shape="rect" id="node3" href="$vhe_2switch_8c.html#ae0a32b92b674eb6922cbfab5f8d22daf" title=" " alt="" coords="325,69,471,96"/>
+<area shape="rect" id="node7" href="$vhe_2sysreg-sr_8c.html#a4e283fb77ab5c8a9511107f69ee5d58b" title=" " alt="" coords="321,133,475,174"/>
 <area shape="rect" id="node4" href="$switch_8h.html#ac0230dd80fe718cd080b982a83ba74bb" title=" " alt="" coords="545,5,697,32"/>
 <area shape="rect" id="node5" href="$arch__timer_8c.html#ad7e756ea5077e85e2a10bfe35543ce21" title=" " alt="" coords="560,56,681,83"/>
-<area shape="rect" id="node7" href="$sysreg-sr_8h.html#a10fbf2ad00d7154a050f4e8a9bcc0847" title=" " alt="" coords="523,107,719,149"/>
+<area shape="rect" id="node6" href="$arm__arch__timer_8h.html#a656013ccf6829218e43edc9c3660c414" title=" " alt="" coords="572,107,669,133"/>
+<area shape="rect" id="node8" href="$sysreg-sr_8h.html#a10fbf2ad00d7154a050f4e8a9bcc0847" title=" " alt="" coords="523,158,719,199"/>
 </map>

@@ -6,7 +6,7 @@
 <area shape="rect" id="node26" href="$pmu-emul_8c.html#a73de9042a2fa76e79cc6d9103b914b59" title=" " alt="" coords="259,163,430,205"/>
 <area shape="rect" id="node27" href="$pmu-emul_8c.html#a6347b7f1221bf9ecfeab143625e8391f" title=" " alt="" coords="528,959,720,985"/>
 <area shape="rect" id="node28" href="$pmu-emul_8c.html#a48da2aca99c9f2f7728c108ebfe1aab6" title=" " alt="" coords="232,5,457,32"/>
-<area shape="rect" id="node29" href="$pmu_8c.html#a928d4df1b401e9b41f92dd2aa2744529" title=" " alt="" coords="255,1279,434,1321"/>
+<area shape="rect" id="node29" href="$pmu_8c.html#a928d4df1b401e9b41f92dd2aa2744529" title=" " alt="" coords="255,1355,434,1397"/>
 <area shape="rect" id="node5" href="$pmu-emul_8c.html#a0d8ed834b14cf4fb055173129b978fed" title=" " alt="" coords="813,825,981,866"/>
 <area shape="rect" id="node9" href="$pmu-emul_8c.html#adf428205295b3bc4fec2e00fb2c50fa6" title=" " alt="" coords="2127,475,2292,501"/>
 <area shape="rect" id="node6" href="$pmu-emul_8c.html#a7f03e9b6af2651bb2bcc5471953076e6" title=" " alt="" coords="1385,781,1511,808"/>
@@ -28,9 +28,10 @@
 <area shape="rect" id="node22" href="$arm_8c.html#a42500cdc8706ebf4fa3ec21645530097" title=" " alt="" coords="1604,411,1812,437"/>
 <area shape="rect" id="node23" href="$kvm__main_8c.html#ad9f0140eebcdef9a9ebae54431d2fba5" title=" " alt="" coords="1631,360,1785,387"/>
 <area shape="rect" id="node25" href="$pmu-emul_8c.html#aa8b667a7c4c404322fa2f145e656b4a4" title=" " alt="" coords="1361,1137,1535,1178"/>
-<area shape="rect" id="node30" href="$pmu_8c.html#abf97c7a6b0768cbe660dea1a404bc79b" title=" " alt="" coords="541,1261,707,1288"/>
-<area shape="rect" id="node31" href="$pmu_8c.html#ad4ce451e7a40f149ed26e7ce8d9700d4" title=" " alt="" coords="521,1363,727,1389"/>
-<area shape="rect" id="node34" href="$pmu_8c.html#a98e21a6fa41b3490e6b1356884b18d5f" title=" " alt="" coords="523,1312,725,1339"/>
-<area shape="rect" id="node32" href="$pmu_8c.html#a4fbb4321f3ca694d651e668bb064aa48" title=" " alt="" coords="791,1305,1004,1346"/>
-<area shape="rect" id="node33" href="$pmu_8c.html#a78259b4926a270689ce9846f2d661c5d" title=" " alt="" coords="815,1370,980,1411"/>
+<area shape="rect" id="node30" href="$arm__pmu_8h.html#a7a4fb2cf1fb48c203893224b94564f63" title=" " alt="" coords="525,1413,723,1440"/>
+<area shape="rect" id="node31" href="$pmu_8c.html#abf97c7a6b0768cbe660dea1a404bc79b" title=" " alt="" coords="541,1464,707,1491"/>
+<area shape="rect" id="node32" href="$pmu_8c.html#ad4ce451e7a40f149ed26e7ce8d9700d4" title=" " alt="" coords="521,1312,727,1339"/>
+<area shape="rect" id="node35" href="$pmu_8c.html#a98e21a6fa41b3490e6b1356884b18d5f" title=" " alt="" coords="523,1363,725,1389"/>
+<area shape="rect" id="node33" href="$pmu_8c.html#a4fbb4321f3ca694d651e668bb064aa48" title=" " alt="" coords="791,1305,1004,1346"/>
+<area shape="rect" id="node34" href="$pmu_8c.html#a78259b4926a270689ce9846f2d661c5d" title=" " alt="" coords="815,1370,980,1411"/>
 </map>

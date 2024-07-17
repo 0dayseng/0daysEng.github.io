@@ -1,5 +1,6 @@
 <map id="kvm_set_pmu_events" name="kvm_set_pmu_events">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,171,57"/>
-<area shape="rect" id="node2" href="$pmu_8c.html#abf97c7a6b0768cbe660dea1a404bc79b" title=" " alt="" coords="231,5,397,32"/>
-<area shape="rect" id="node3" href="$pmu_8c.html#a0581da32a68cfc3bcc6dd0decf8a094e" title=" " alt="" coords="219,56,409,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,171,83"/>
+<area shape="rect" id="node2" href="$arm__pmu_8h.html#a7a4fb2cf1fb48c203893224b94564f63" title=" " alt="" coords="219,5,417,32"/>
+<area shape="rect" id="node3" href="$pmu_8c.html#abf97c7a6b0768cbe660dea1a404bc79b" title=" " alt="" coords="235,56,401,83"/>
+<area shape="rect" id="node4" href="$pmu_8c.html#a0581da32a68cfc3bcc6dd0decf8a094e" title=" " alt="" coords="223,107,413,133"/>
 </map>

@@ -1945,10 +1945,11 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="hyp-main_8c_source.html#l00208">208</a> of file <a class="el" href="hyp-main_8c_source.html">hyp-main.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;{</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <a class="code" href="trap__handler_8h.html#ae27223bcdcc6df4a2023f918ba46916a">DECLARE_REG</a>(<span class="keyword">struct</span> vgic_v3_cpu_if *, cpu_if, host_ctxt, 1);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <a class="code" href="trap__handler_8h.html#ae27223bcdcc6df4a2023f918ba46916a">DECLARE_REG</a>(<span class="keyword">struct</span> <a class="code" href="structvgic__v3__cpu__if.html">vgic_v3_cpu_if</a> *, cpu_if, host_ctxt, 1);</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <a class="code" href="vgic-v3-sr_8c.html#a1f2bd7ee89ce38236b148eed5aaffbe3">__vgic_v3_restore_aprs</a>(kern_hyp_va(cpu_if));</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;}</div>
+<div class="ttc" id="astructvgic__v3__cpu__if_html"><div class="ttname"><a href="structvgic__v3__cpu__if.html">vgic_v3_cpu_if</a></div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00306">arm_vgic.h:306</a></div></div>
 <div class="ttc" id="avgic-v3-sr_8c_html_a1f2bd7ee89ce38236b148eed5aaffbe3"><div class="ttname"><a href="vgic-v3-sr_8c.html#a1f2bd7ee89ce38236b148eed5aaffbe3">__vgic_v3_restore_aprs</a></div><div class="ttdeci">void __vgic_v3_restore_aprs(struct vgic_v3_cpu_if *cpu_if)</div><div class="ttdef"><b>Definition:</b> <a href="vgic-v3-sr_8c_source.html#l00366">vgic-v3-sr.c:366</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1990,7 +1991,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="hyp-main_8c_source.html#l00201">201</a> of file <a class="el" href="hyp-main_8c_source.html">hyp-main.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;{</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <a class="code" href="trap__handler_8h.html#ae27223bcdcc6df4a2023f918ba46916a">DECLARE_REG</a>(<span class="keyword">struct</span> vgic_v3_cpu_if *, cpu_if, host_ctxt, 1);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <a class="code" href="trap__handler_8h.html#ae27223bcdcc6df4a2023f918ba46916a">DECLARE_REG</a>(<span class="keyword">struct</span> <a class="code" href="structvgic__v3__cpu__if.html">vgic_v3_cpu_if</a> *, cpu_if, host_ctxt, 1);</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <a class="code" href="vgic-v3-sr_8c.html#a6809b3241d8a98933f3df9eec4948e8b">__vgic_v3_save_aprs</a>(kern_hyp_va(cpu_if));</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;}</div>
@@ -2370,8 +2371,8 @@ Here is the call graph for this function:</div>
 <p class="definition">Definition at line <a class="el" href="hyp-main_8c_source.html#l00052">52</a> of file <a class="el" href="hyp-main_8c_source.html">hyp-main.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">struct </span>kvm_vcpu *host_vcpu = hyp_vcpu-&gt;<a class="code" href="structpkvm__hyp__vcpu.html#a9b0affdb0c9ee12180c3c2aae044da01">host_vcpu</a>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">struct </span>vgic_v3_cpu_if *hyp_cpu_if = &amp;hyp_vcpu-&gt;<a class="code" href="structpkvm__hyp__vcpu.html#a4c0a73fea5ae1993444129cf102451a6">vcpu</a>.arch.vgic_cpu.vgic_v3;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">struct </span>vgic_v3_cpu_if *host_cpu_if = &amp;host_vcpu-&gt;arch.vgic_cpu.vgic_v3;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">struct </span><a class="code" href="structvgic__v3__cpu__if.html">vgic_v3_cpu_if</a> *hyp_cpu_if = &amp;hyp_vcpu-&gt;<a class="code" href="structpkvm__hyp__vcpu.html#a4c0a73fea5ae1993444129cf102451a6">vcpu</a>.arch.vgic_cpu.vgic_v3;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">struct </span><a class="code" href="structvgic__v3__cpu__if.html">vgic_v3_cpu_if</a> *host_cpu_if = &amp;host_vcpu-&gt;arch.vgic_cpu.vgic_v3;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    host_vcpu-&gt;arch.ctxt        = hyp_vcpu-&gt;<a class="code" href="structpkvm__hyp__vcpu.html#a4c0a73fea5ae1993444129cf102451a6">vcpu</a>.arch.ctxt;</div>
@@ -2384,10 +2385,13 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    host_vcpu-&gt;arch.iflags      = hyp_vcpu-&gt;<a class="code" href="structpkvm__hyp__vcpu.html#a4c0a73fea5ae1993444129cf102451a6">vcpu</a>.arch.iflags;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    host_vcpu-&gt;arch.fp_state    = hyp_vcpu-&gt;<a class="code" href="structpkvm__hyp__vcpu.html#a4c0a73fea5ae1993444129cf102451a6">vcpu</a>.arch.fp_state;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    host_cpu_if-&gt;vgic_hcr       = hyp_cpu_if-&gt;vgic_hcr;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; hyp_cpu_if-&gt;used_lrs; ++i)</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        host_cpu_if-&gt;vgic_lr[i] = hyp_cpu_if-&gt;vgic_lr[i];</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    host_cpu_if-&gt;<a class="code" href="structvgic__v3__cpu__if.html#ad39ac6e157867e1a089214a93b09ba15">vgic_hcr</a>       = hyp_cpu_if-&gt;<a class="code" href="structvgic__v3__cpu__if.html#ad39ac6e157867e1a089214a93b09ba15">vgic_hcr</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; hyp_cpu_if-&gt;<a class="code" href="structvgic__v3__cpu__if.html#a62d19c1d66a5cd010d592b4ac437f4b8">used_lrs</a>; ++i)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        host_cpu_if-&gt;<a class="code" href="structvgic__v3__cpu__if.html#ab1231c3a281b72d86790bf5a6d7915d8">vgic_lr</a>[i] = hyp_cpu_if-&gt;<a class="code" href="structvgic__v3__cpu__if.html#ab1231c3a281b72d86790bf5a6d7915d8">vgic_lr</a>[i];</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="ttc" id="astructvgic__v3__cpu__if_html_a62d19c1d66a5cd010d592b4ac437f4b8"><div class="ttname"><a href="structvgic__v3__cpu__if.html#a62d19c1d66a5cd010d592b4ac437f4b8">vgic_v3_cpu_if::used_lrs</a></div><div class="ttdeci">unsigned int used_lrs</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00322">arm_vgic.h:322</a></div></div>
+<div class="ttc" id="astructvgic__v3__cpu__if_html_ab1231c3a281b72d86790bf5a6d7915d8"><div class="ttname"><a href="structvgic__v3__cpu__if.html#ab1231c3a281b72d86790bf5a6d7915d8">vgic_v3_cpu_if::vgic_lr</a></div><div class="ttdeci">u64 vgic_lr[VGIC_V3_MAX_LRS]</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00312">arm_vgic.h:312</a></div></div>
+<div class="ttc" id="astructvgic__v3__cpu__if_html_ad39ac6e157867e1a089214a93b09ba15"><div class="ttname"><a href="structvgic__v3__cpu__if.html#ad39ac6e157867e1a089214a93b09ba15">vgic_v3_cpu_if::vgic_hcr</a></div><div class="ttdeci">u32 vgic_hcr</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00307">arm_vgic.h:307</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">

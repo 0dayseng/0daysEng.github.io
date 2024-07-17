@@ -85,31 +85,31 @@ $(function() {
 <code>#include &lt;asm/debug-monitors.h&gt;</code><br />
 <code>#include &lt;asm/stacktrace/nvhe.h&gt;</code><br />
 <code>#include &lt;asm/traps.h&gt;</code><br />
-<code>#include &lt;kvm/arm_hypercalls.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="arm__hypercalls_8h_source.html">kvm/arm_hypercalls.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="trace__handle__exit_8h_source.html">trace_handle_exit.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for handle_exit.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="handle__exit_8c__incl.png" border="0" usemap="#aarch_2arm64_2kvm_2handle__exit_8c" alt=""/></div>
 <map name="aarch_2arm64_2kvm_2handle__exit_8c" id="aarch_2arm64_2kvm_2handle__exit_8c">
-<area shape="rect" title=" " alt="" coords="867,5,1045,47"/>
+<area shape="rect" title=" " alt="" coords="737,5,914,47"/>
 <area shape="rect" title=" " alt="" coords="5,95,104,121"/>
 <area shape="rect" title=" " alt="" coords="129,95,263,121"/>
 <area shape="rect" title=" " alt="" coords="288,95,373,121"/>
 <area shape="rect" title=" " alt="" coords="397,95,528,121"/>
 <area shape="rect" title=" " alt="" coords="552,95,683,121"/>
-<area shape="rect" title=" " alt="" coords="707,95,863,121"/>
-<area shape="rect" title=" " alt="" coords="888,95,1024,121"/>
-<area shape="rect" title=" " alt="" coords="1048,95,1195,121"/>
-<area shape="rect" title=" " alt="" coords="1219,95,1389,121"/>
-<area shape="rect" title=" " alt="" coords="1413,95,1584,121"/>
-<area shape="rect" title=" " alt="" coords="1608,95,1707,121"/>
-<area shape="rect" title=" " alt="" coords="1731,95,1898,121"/>
-<area shape="rect" href="trace__handle__exit_8h.html" title=" " alt="" coords="1922,95,2073,121"/>
-<area shape="rect" title=" " alt="" coords="1792,169,1928,196"/>
-<area shape="rect" href="sys__regs_8h.html" title=" " alt="" coords="1952,169,2043,196"/>
-<area shape="rect" title=" " alt="" coords="2067,169,2218,196"/>
-<area shape="rect" title=" " alt="" coords="1937,244,2058,271"/>
+<area shape="rect" title=" " alt="" coords="1062,169,1218,196"/>
+<area shape="rect" title=" " alt="" coords="757,95,893,121"/>
+<area shape="rect" title=" " alt="" coords="917,95,1064,121"/>
+<area shape="rect" title=" " alt="" coords="1089,95,1258,121"/>
+<area shape="rect" title=" " alt="" coords="1283,95,1453,121"/>
+<area shape="rect" title=" " alt="" coords="1477,95,1576,121"/>
+<area shape="rect" href="arm__hypercalls_8h.html" title=" " alt="" coords="1601,95,1767,121"/>
+<area shape="rect" href="trace__handle__exit_8h.html" title=" " alt="" coords="1791,95,1942,121"/>
+<area shape="rect" title=" " alt="" coords="1661,169,1797,196"/>
+<area shape="rect" href="sys__regs_8h.html" title=" " alt="" coords="1821,169,1912,196"/>
+<area shape="rect" title=" " alt="" coords="1937,169,2087,196"/>
+<area shape="rect" title=" " alt="" coords="1806,244,1927,271"/>
 </map>
 </div>
 </div>
@@ -416,56 +416,56 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="handle__exit_8c_a5c24d46393da9651d3133e2377fd7a69_cgraph.png" border="0" usemap="#ahandle__exit_8c_a5c24d46393da9651d3133e2377fd7a69_cgraph" alt=""/></div>
 <map name="ahandle__exit_8c_a5c24d46393da9651d3133e2377fd7a69_cgraph" id="ahandle__exit_8c_a5c24d46393da9651d3133e2377fd7a69_cgraph">
-<area shape="rect" title=" " alt="" coords="5,893,101,920"/>
-<area shape="rect" href="emulate-nested_8c.html#af5e2eb745d8ac6415fe941ebe754171d" title=" " alt="" coords="151,725,333,752"/>
-<area shape="rect" href="inject__fault_8c.html#aece14f61701021b17e9cf5521f7946fb" title=" " alt="" coords="159,843,325,869"/>
-<area shape="rect" href="hypercalls_8c.html#a62d0b161cae45d4a2f865203301f7ac4" title=" " alt="" coords="149,1235,335,1261"/>
-<area shape="rect" href="sys__regs_8c.html#a79848758fc91bd6081326514833ffafa" title=" " alt="" coords="169,919,315,945"/>
-<area shape="rect" href="emulate-nested_8c.html#a1c3e31bd85e9c0590a018ada20a5e4bf" title=" " alt="" coords="413,669,559,696"/>
+<area shape="rect" title=" " alt="" coords="5,855,101,881"/>
+<area shape="rect" href="emulate-nested_8c.html#af5e2eb745d8ac6415fe941ebe754171d" title=" " alt="" coords="151,703,333,729"/>
+<area shape="rect" href="inject__fault_8c.html#aece14f61701021b17e9cf5521f7946fb" title=" " alt="" coords="159,829,325,856"/>
+<area shape="rect" href="hypercalls_8c.html#a62d0b161cae45d4a2f865203301f7ac4" title=" " alt="" coords="149,1336,335,1363"/>
+<area shape="rect" href="sys__regs_8c.html#a79848758fc91bd6081326514833ffafa" title=" " alt="" coords="169,880,315,907"/>
+<area shape="rect" href="emulate-nested_8c.html#a1c3e31bd85e9c0590a018ada20a5e4bf" title=" " alt="" coords="413,621,559,648"/>
 <area shape="rect" href="exception_8c.html#a69b40cbdae816f5cb612962c0f5da592" title=" " alt="" coords="675,56,810,83"/>
 <area shape="rect" href="arm_8c.html#aaa51abf3d06fdaa95794b27f273278fb" title=" " alt="" coords="663,300,822,327"/>
-<area shape="rect" href="arm_8c.html#a9235365ce64f215b1e024f26d96537cc" title=" " alt="" coords="667,669,819,696"/>
-<area shape="rect" href="emulate-nested_8c.html#a5c0ef76a2f1feaeb264f0d4957c8f527" title=" " alt="" coords="647,724,839,751"/>
+<area shape="rect" href="arm_8c.html#a9235365ce64f215b1e024f26d96537cc" title=" " alt="" coords="667,621,819,648"/>
+<area shape="rect" href="emulate-nested_8c.html#a5c0ef76a2f1feaeb264f0d4957c8f527" title=" " alt="" coords="647,673,839,700"/>
 <area shape="rect" href="exception_8c.html#a5951865f1186392f5e4f0bc260c3b840" title=" " alt="" coords="920,5,1085,32"/>
 <area shape="rect" href="adjust__pc_8h.html#a3a6ebd94aaf8bbd3c8461a2ca19a0d0d" title=" " alt="" coords="942,56,1063,83"/>
-<area shape="rect" href="nvhe_2tlb_8c.html#ae52fe3c4f97b5b56e65233015785a6ec" title=" " alt="" coords="908,157,1097,184"/>
-<area shape="rect" href="debug_8c.html#aae61f6ee77424b3eb0cb727586a694eb" title=" " alt="" coords="923,209,1082,250"/>
-<area shape="rect" href="fpsimd_8c.html#a6d3b97095b4e6a0d7799fe50eb3fb762" title=" " alt="" coords="913,275,1092,301"/>
-<area shape="rect" href="arch__timer_8c.html#a4bf6ac76380146820b45b06feb3eab27" title=" " alt="" coords="919,325,1086,352"/>
-<area shape="rect" href="vhe_2switch_8c.html#ae2827f745640cc27776384fbe890f8e4" title=" " alt="" coords="925,376,1080,403"/>
-<area shape="rect" href="pmu_8c.html#a928d4df1b401e9b41f92dd2aa2744529" title=" " alt="" coords="913,427,1092,469"/>
-<area shape="rect" href="vgic_8c.html#a54d5d884ac662357df5661d80f5160e3" title=" " alt="" coords="943,107,1063,133"/>
-<area shape="rect" href="debug_8c.html#a40ab178c06775c17444821f2b88d89c9" title=" " alt="" coords="903,545,1102,586"/>
-<area shape="rect" href="fpsimd_8c.html#a315297a309db16c8cbbe1ab46c7413ba" title=" " alt="" coords="917,611,1089,637"/>
-<area shape="rect" href="vmid_8c.html#a2de0128c579224dac8d0964d383122cf" title=" " alt="" coords="921,662,1084,703"/>
-<area shape="rect" href="arch__timer_8c.html#a0006e1b52ff819dd99be6dca260e52d6" title=" " alt="" coords="923,728,1082,755"/>
-<area shape="rect" href="pmu_8c.html#a4e027f0c751f9cc01fa6d3c3f082216b" title=" " alt="" coords="896,779,1109,805"/>
-<area shape="rect" href="vhe_2switch_8c.html#acecfb29f871562a6288b28ba84a8150e" title=" " alt="" coords="929,829,1077,856"/>
-<area shape="rect" href="vgic_8c.html#a96f93a2405989082e3693577b6b2eb5d" title=" " alt="" coords="946,493,1059,520"/>
-<area shape="rect" href="sys__regs_8c.html#adf66277e472bdae2cc839d450085bc4b" title=" " alt="" coords="927,880,1078,907"/>
-<area shape="rect" href="sys__regs_8c.html#a8f5bcf4d21c4d9b1881dd3fec5bd6178" title=" " alt="" coords="1163,901,1345,928"/>
-<area shape="rect" href="inject__fault_8c.html#ae6fc8db83ad0518fddd2e485687e0f7d" title=" " alt="" coords="427,792,545,819"/>
-<area shape="rect" href="inject__fault_8c.html#a846082def00d9a7db3f28b1b7fb2a07a" title=" " alt="" coords="427,843,545,869"/>
-<area shape="rect" href="inject__fault_8c.html#a326fe690ce371beb7496d3ed3cbe1a6e" title=" " alt="" coords="679,880,807,907"/>
-<area shape="rect" href="inject__fault_8c.html#a887586bbc6bac834ae37cbf84711288c" title=" " alt="" coords="661,779,824,805"/>
-<area shape="rect" href="pvtime_8c.html#a0a13c651b49c43a6139569798311764c" title=" " alt="" coords="385,1311,587,1337"/>
-<area shape="rect" href="pvtime_8c.html#a816827bb2ed919f4679817bc707665f8" title=" " alt="" coords="405,1361,567,1388"/>
-<area shape="rect" href="hypercalls_8c.html#aeee8a70cfdf2a25b0f80f785fdf449c6" title=" " alt="" coords="383,1412,589,1439"/>
-<area shape="rect" href="psci_8c.html#a3daa8000eb9717dde07d817c306b052b" title=" " alt="" coords="429,1083,543,1109"/>
-<area shape="rect" href="hypercalls_8c.html#a74c79c1b9740674575ae30970f11fcfa" title=" " alt="" coords="414,1159,558,1185"/>
-<area shape="rect" href="hypercalls_8c.html#a33c0affb2c4abb0f0012206bb7e3d378" title=" " alt="" coords="399,1209,573,1236"/>
-<area shape="rect" href="trng_8c.html#a77478bf42ec810a0e55387bf3a7997c2" title=" " alt="" coords="429,1260,543,1287"/>
-<area shape="rect" href="psci_8c.html#af18cf22560595f1da5e34ea244b0b51b" title=" " alt="" coords="931,981,1075,1008"/>
-<area shape="rect" href="psci_8c.html#ac7522f6e0d1805f44a3e932397de4582" title=" " alt="" coords="931,1032,1075,1059"/>
-<area shape="rect" href="psci_8c.html#a8f59d47a1b54f561b8c42f509798142e" title=" " alt="" coords="671,1083,815,1109"/>
-<area shape="rect" href="psci_8c.html#a3b9f15ff62c952f20de3ed44aaf4edbc" title=" " alt="" coords="909,1134,1096,1175"/>
-<area shape="rect" href="arm_8c.html#a8a5659b8fc302d5b435957306e3541b4" title=" " alt="" coords="1157,977,1351,1004"/>
-<area shape="rect" href="psci_8c.html#a092eeee0e7b54c50ebc3d0cf66ea8ef5" title=" " alt="" coords="1181,1028,1327,1055"/>
-<area shape="rect" href="psci_8c.html#a6fe2f9e365c9a9948351f718015ce651" title=" " alt="" coords="1176,1079,1332,1121"/>
-<area shape="rect" href="hypercalls_8c.html#ac9f33ca9d642c7231be25e02e9da450a" title=" " alt="" coords="637,1235,848,1261"/>
-<area shape="rect" href="hypercalls_8c.html#af93c35a0fd5825a99b62189ae5024a45" title=" " alt="" coords="661,1286,825,1327"/>
-<area shape="rect" href="hypercalls_8c.html#aa8aa7ec82883c6c825b0373750c779a2" title=" " alt="" coords="644,1184,841,1211"/>
-<area shape="rect" href="trng_8c.html#a3d1ac492ec1515ed0864e4e9b44e4221" title=" " alt="" coords="675,1352,810,1379"/>
+<area shape="rect" href="nvhe_2tlb_8c.html#ae52fe3c4f97b5b56e65233015785a6ec" title=" " alt="" coords="908,325,1097,352"/>
+<area shape="rect" href="debug_8c.html#aae61f6ee77424b3eb0cb727586a694eb" title=" " alt="" coords="923,377,1082,418"/>
+<area shape="rect" href="fpsimd_8c.html#a6d3b97095b4e6a0d7799fe50eb3fb762" title=" " alt="" coords="913,443,1092,469"/>
+<area shape="rect" href="arch__timer_8c.html#a4bf6ac76380146820b45b06feb3eab27" title=" " alt="" coords="919,107,1086,133"/>
+<area shape="rect" href="vhe_2switch_8c.html#ae2827f745640cc27776384fbe890f8e4" title=" " alt="" coords="925,157,1080,184"/>
+<area shape="rect" href="pmu_8c.html#a928d4df1b401e9b41f92dd2aa2744529" title=" " alt="" coords="913,209,1092,250"/>
+<area shape="rect" href="vgic_8c.html#a54d5d884ac662357df5661d80f5160e3" title=" " alt="" coords="943,275,1063,301"/>
+<area shape="rect" href="debug_8c.html#a40ab178c06775c17444821f2b88d89c9" title=" " alt="" coords="903,494,1102,535"/>
+<area shape="rect" href="fpsimd_8c.html#a315297a309db16c8cbbe1ab46c7413ba" title=" " alt="" coords="917,560,1089,587"/>
+<area shape="rect" href="vmid_8c.html#a2de0128c579224dac8d0964d383122cf" title=" " alt="" coords="921,611,1084,653"/>
+<area shape="rect" href="arch__timer_8c.html#a0006e1b52ff819dd99be6dca260e52d6" title=" " alt="" coords="923,677,1082,704"/>
+<area shape="rect" href="pmu_8c.html#a4e027f0c751f9cc01fa6d3c3f082216b" title=" " alt="" coords="896,728,1109,755"/>
+<area shape="rect" href="vhe_2switch_8c.html#acecfb29f871562a6288b28ba84a8150e" title=" " alt="" coords="929,779,1077,805"/>
+<area shape="rect" href="sys__regs_8c.html#adf66277e472bdae2cc839d450085bc4b" title=" " alt="" coords="927,829,1078,856"/>
+<area shape="rect" href="sys__regs_8c.html#a8f5bcf4d21c4d9b1881dd3fec5bd6178" title=" " alt="" coords="1157,855,1339,881"/>
+<area shape="rect" href="inject__fault_8c.html#ae6fc8db83ad0518fddd2e485687e0f7d" title=" " alt="" coords="427,829,545,856"/>
+<area shape="rect" href="inject__fault_8c.html#a846082def00d9a7db3f28b1b7fb2a07a" title=" " alt="" coords="427,779,545,805"/>
+<area shape="rect" href="inject__fault_8c.html#a326fe690ce371beb7496d3ed3cbe1a6e" title=" " alt="" coords="679,779,807,805"/>
+<area shape="rect" href="inject__fault_8c.html#a887586bbc6bac834ae37cbf84711288c" title=" " alt="" coords="661,829,824,856"/>
+<area shape="rect" href="pvtime_8c.html#a0a13c651b49c43a6139569798311764c" title=" " alt="" coords="385,1387,587,1413"/>
+<area shape="rect" href="arm__hypercalls_8h.html#aab3de177147e0efb70c732a1ad3706dd" title=" " alt="" coords="939,1463,1066,1489"/>
+<area shape="rect" href="pvtime_8c.html#a816827bb2ed919f4679817bc707665f8" title=" " alt="" coords="405,1108,567,1135"/>
+<area shape="rect" href="hypercalls_8c.html#aeee8a70cfdf2a25b0f80f785fdf449c6" title=" " alt="" coords="383,1159,589,1185"/>
+<area shape="rect" href="psci_8c.html#a3daa8000eb9717dde07d817c306b052b" title=" " alt="" coords="429,1209,543,1236"/>
+<area shape="rect" href="arm__hypercalls_8h.html#a8baef8e49dbce7b140c519845a20611f" title=" " alt="" coords="1173,1091,1323,1117"/>
+<area shape="rect" href="arm__hypercalls_8h.html#ae543f09c1c7681cec4e5d2dfa0e728a1" title=" " alt="" coords="1181,1301,1315,1328"/>
+<area shape="rect" href="hypercalls_8c.html#a74c79c1b9740674575ae30970f11fcfa" title=" " alt="" coords="414,1437,558,1464"/>
+<area shape="rect" href="hypercalls_8c.html#a33c0affb2c4abb0f0012206bb7e3d378" title=" " alt="" coords="399,1779,573,1805"/>
+<area shape="rect" href="trng_8c.html#a77478bf42ec810a0e55387bf3a7997c2" title=" " alt="" coords="429,1589,543,1616"/>
+<area shape="rect" href="psci_8c.html#af18cf22560595f1da5e34ea244b0b51b" title=" " alt="" coords="931,1032,1075,1059"/>
+<area shape="rect" href="psci_8c.html#ac7522f6e0d1805f44a3e932397de4582" title=" " alt="" coords="931,1200,1075,1227"/>
+<area shape="rect" href="psci_8c.html#a8f59d47a1b54f561b8c42f509798142e" title=" " alt="" coords="671,1235,815,1261"/>
+<area shape="rect" href="psci_8c.html#a3b9f15ff62c952f20de3ed44aaf4edbc" title=" " alt="" coords="909,1083,1096,1125"/>
+<area shape="rect" href="arm__psci_8h.html#ae8e32b0627b1dc8c12a32d279c1a3bf4" title=" " alt="" coords="673,1032,812,1059"/>
+<area shape="rect" href="hypercalls_8c.html#ac9f33ca9d642c7231be25e02e9da450a" title=" " alt="" coords="637,1859,848,1885"/>
+<area shape="rect" href="hypercalls_8c.html#af93c35a0fd5825a99b62189ae5024a45" title=" " alt="" coords="661,1742,825,1783"/>
+<area shape="rect" href="hypercalls_8c.html#aa8aa7ec82883c6c825b0373750c779a2" title=" " alt="" coords="644,1808,841,1835"/>
+<area shape="rect" href="trng_8c.html#a3d1ac492ec1515ed0864e4e9b44e4221" title=" " alt="" coords="675,1589,810,1616"/>
 </map>
 </div>
 
@@ -579,56 +579,56 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="handle__exit_8c_ad2545fb9f7329ef0604715b9af4a1746_cgraph.png" border="0" usemap="#ahandle__exit_8c_ad2545fb9f7329ef0604715b9af4a1746_cgraph" alt=""/></div>
 <map name="ahandle__exit_8c_ad2545fb9f7329ef0604715b9af4a1746_cgraph" id="ahandle__exit_8c_ad2545fb9f7329ef0604715b9af4a1746_cgraph">
-<area shape="rect" title=" " alt="" coords="5,411,105,437"/>
-<area shape="rect" href="hypercalls_8c.html#a62d0b161cae45d4a2f865203301f7ac4" title=" " alt="" coords="153,411,339,437"/>
-<area shape="rect" href="pvtime_8c.html#a0a13c651b49c43a6139569798311764c" title=" " alt="" coords="389,259,591,285"/>
-<area shape="rect" href="pvtime_8c.html#a816827bb2ed919f4679817bc707665f8" title=" " alt="" coords="409,309,571,336"/>
-<area shape="rect" href="hypercalls_8c.html#aeee8a70cfdf2a25b0f80f785fdf449c6" title=" " alt="" coords="387,360,593,387"/>
-<area shape="rect" href="psci_8c.html#a3daa8000eb9717dde07d817c306b052b" title=" " alt="" coords="433,411,547,437"/>
-<area shape="rect" href="hypercalls_8c.html#a74c79c1b9740674575ae30970f11fcfa" title=" " alt="" coords="418,461,562,488"/>
-<area shape="rect" href="hypercalls_8c.html#a33c0affb2c4abb0f0012206bb7e3d378" title=" " alt="" coords="403,529,577,556"/>
-<area shape="rect" href="trng_8c.html#a77478bf42ec810a0e55387bf3a7997c2" title=" " alt="" coords="433,609,547,636"/>
-<area shape="rect" href="psci_8c.html#af18cf22560595f1da5e34ea244b0b51b" title=" " alt="" coords="933,157,1077,184"/>
-<area shape="rect" href="psci_8c.html#ac7522f6e0d1805f44a3e932397de4582" title=" " alt="" coords="933,284,1077,311"/>
-<area shape="rect" href="psci_8c.html#a8f59d47a1b54f561b8c42f509798142e" title=" " alt="" coords="675,385,819,412"/>
-<area shape="rect" href="psci_8c.html#a3b9f15ff62c952f20de3ed44aaf4edbc" title=" " alt="" coords="912,487,1099,529"/>
-<area shape="rect" href="arm_8c.html#a8a5659b8fc302d5b435957306e3541b4" title=" " alt="" coords="1165,107,1359,133"/>
-<area shape="rect" href="psci_8c.html#a092eeee0e7b54c50ebc3d0cf66ea8ef5" title=" " alt="" coords="1189,157,1335,184"/>
+<area shape="rect" title=" " alt="" coords="5,1009,105,1036"/>
+<area shape="rect" href="hypercalls_8c.html#a62d0b161cae45d4a2f865203301f7ac4" title=" " alt="" coords="153,1009,339,1036"/>
+<area shape="rect" href="pvtime_8c.html#a0a13c651b49c43a6139569798311764c" title=" " alt="" coords="645,1136,848,1163"/>
+<area shape="rect" href="arm__hypercalls_8h.html#aab3de177147e0efb70c732a1ad3706dd" title=" " alt="" coords="1453,1111,1580,1137"/>
+<area shape="rect" href="pvtime_8c.html#a816827bb2ed919f4679817bc707665f8" title=" " alt="" coords="409,883,571,909"/>
+<area shape="rect" href="hypercalls_8c.html#aeee8a70cfdf2a25b0f80f785fdf449c6" title=" " alt="" coords="387,933,593,960"/>
+<area shape="rect" href="psci_8c.html#a3daa8000eb9717dde07d817c306b052b" title=" " alt="" coords="433,488,547,515"/>
+<area shape="rect" href="arm__hypercalls_8h.html#a8baef8e49dbce7b140c519845a20611f" title=" " alt="" coords="1187,705,1337,732"/>
+<area shape="rect" href="arm__hypercalls_8h.html#ae543f09c1c7681cec4e5d2dfa0e728a1" title=" " alt="" coords="1195,933,1329,960"/>
+<area shape="rect" href="hypercalls_8c.html#a74c79c1b9740674575ae30970f11fcfa" title=" " alt="" coords="418,1288,562,1315"/>
+<area shape="rect" href="hypercalls_8c.html#a33c0affb2c4abb0f0012206bb7e3d378" title=" " alt="" coords="403,1364,577,1391"/>
+<area shape="rect" href="trng_8c.html#a77478bf42ec810a0e55387bf3a7997c2" title=" " alt="" coords="689,1035,804,1061"/>
+<area shape="rect" href="psci_8c.html#af18cf22560595f1da5e34ea244b0b51b" title=" " alt="" coords="933,309,1077,336"/>
+<area shape="rect" href="arm__psci_8h.html#ae8e32b0627b1dc8c12a32d279c1a3bf4" title=" " alt="" coords="1447,56,1586,83"/>
+<area shape="rect" href="psci_8c.html#ac7522f6e0d1805f44a3e932397de4582" title=" " alt="" coords="933,360,1077,387"/>
+<area shape="rect" href="psci_8c.html#a8f59d47a1b54f561b8c42f509798142e" title=" " alt="" coords="675,528,819,555"/>
+<area shape="rect" href="psci_8c.html#a3b9f15ff62c952f20de3ed44aaf4edbc" title=" " alt="" coords="912,411,1099,453"/>
+<area shape="rect" href="arm_8c.html#a8a5659b8fc302d5b435957306e3541b4" title=" " alt="" coords="1165,208,1359,235"/>
+<area shape="rect" href="psci_8c.html#a092eeee0e7b54c50ebc3d0cf66ea8ef5" title=" " alt="" coords="1189,259,1335,285"/>
 <area shape="rect" href="arm_8c.html#afc3949baef2cd8a5749b2d0095959de1" title=" " alt="" coords="1413,5,1620,32"/>
-<area shape="rect" href="kvm__main_8c.html#ac82f28c95da4a0cc137c5a37f08d1f44" title=" " alt="" coords="1712,5,1835,32"/>
-<area shape="rect" href="arm_8c.html#a42500cdc8706ebf4fa3ec21645530097" title=" " alt="" coords="1928,5,2136,32"/>
-<area shape="rect" href="kvm__main_8c.html#ad9f0140eebcdef9a9ebae54431d2fba5" title=" " alt="" coords="1955,56,2109,83"/>
-<area shape="rect" href="arm_8c.html#a371c5c68ee659e4815a4af50d0161c8a" title=" " alt="" coords="1426,208,1607,235"/>
+<area shape="rect" href="kvm__main_8c.html#ac82f28c95da4a0cc137c5a37f08d1f44" title=" " alt="" coords="1712,44,1835,71"/>
+<area shape="rect" href="arm_8c.html#a42500cdc8706ebf4fa3ec21645530097" title=" " alt="" coords="1928,44,2136,71"/>
+<area shape="rect" href="kvm__main_8c.html#ad9f0140eebcdef9a9ebae54431d2fba5" title=" " alt="" coords="1955,171,2109,197"/>
+<area shape="rect" href="arm_8c.html#a371c5c68ee659e4815a4af50d0161c8a" title=" " alt="" coords="1426,360,1607,387"/>
 <area shape="rect" href="arm_8c.html#a0be215e1642483c65818bd994b13a421" title=" " alt="" coords="1439,107,1594,133"/>
-<area shape="rect" href="psci_8c.html#ac9f7ca89512ea60ace6ea961a60354a4" title=" " alt="" coords="1429,157,1605,184"/>
-<area shape="rect" href="psci_8c.html#a6fe2f9e365c9a9948351f718015ce651" title=" " alt="" coords="1184,411,1340,453"/>
-<area shape="rect" href="psci_8c.html#a9119f27fea8a008787ddbc93e8b1bded" title=" " alt="" coords="1181,259,1343,285"/>
-<area shape="rect" href="psci_8c.html#ad8f7f33f1397e347a67599f67ac2f39c" title=" " alt="" coords="1173,309,1351,336"/>
-<area shape="rect" href="psci_8c.html#afd3d020adc6118dbd290a2770d897439" title=" " alt="" coords="1159,208,1365,235"/>
+<area shape="rect" href="psci_8c.html#ac9f7ca89512ea60ace6ea961a60354a4" title=" " alt="" coords="1429,259,1605,285"/>
+<area shape="rect" href="arm__hypercalls_8h.html#a0d87528a8f6002c42509bd1280a00eaa" title=" " alt="" coords="1453,309,1580,336"/>
+<area shape="rect" href="arm__hypercalls_8h.html#a365000fe74829ee0bdc59b28c8b8802f" title=" " alt="" coords="1453,157,1580,184"/>
+<area shape="rect" href="psci_8c.html#a6fe2f9e365c9a9948351f718015ce651" title=" " alt="" coords="1184,513,1340,554"/>
+<area shape="rect" href="psci_8c.html#a9119f27fea8a008787ddbc93e8b1bded" title=" " alt="" coords="1181,411,1343,437"/>
+<area shape="rect" href="psci_8c.html#ad8f7f33f1397e347a67599f67ac2f39c" title=" " alt="" coords="1173,461,1351,488"/>
+<area shape="rect" href="psci_8c.html#afd3d020adc6118dbd290a2770d897439" title=" " alt="" coords="1159,309,1365,336"/>
 <area shape="rect" href="psci_8c.html#abe7d85200e79143f87dab785a204fb3a" title=" " alt="" coords="1171,360,1353,387"/>
-<area shape="rect" href="psci_8c.html#a44cba757038eb3abdf93db5dc6c7ae3e" title=" " alt="" coords="1435,310,1598,351"/>
-<area shape="rect" href="kvm__main_8c.html#abaa3f5ff00150487b52dd21c1617bab6" title=" " alt="" coords="1668,297,1879,324"/>
-<area shape="rect" href="kvm__main_8c.html#ac46e1a0e43c0784194a451a7e7394c02" title=" " alt="" coords="1927,253,2137,294"/>
-<area shape="rect" href="psci_8c.html#aa30b461609a71770efab6a5045274e5e" title=" " alt="" coords="1445,259,1589,285"/>
-<area shape="rect" href="arm_8c.html#a68df8c6f1b7134e9f23857f092d50056" title=" " alt="" coords="1459,452,1574,479"/>
-<area shape="rect" href="kvm__main_8c.html#a7256a8615584a9ae83a46c071f6aa0e9" title=" " alt="" coords="1713,452,1834,479"/>
-<area shape="rect" href="vgic_8c.html#a751661541b39c02532a54736db22a929" title=" " alt="" coords="1692,503,1855,529"/>
-<area shape="rect" href="vgic-v4_8c.html#ac2966fbf90610bb8a0525cbd903f7477" title=" " alt="" coords="1720,553,1827,580"/>
-<area shape="rect" href="vgic-v4_8c.html#aeafcb3e6b67ea32ed8e59d009252e565" title=" " alt="" coords="1723,401,1823,428"/>
-<area shape="rect" href="kvm__main_8c.html#a1045a615093ccd8e87dcd6f6a0e03e9e" title=" " alt="" coords="1963,572,2101,599"/>
-<area shape="rect" href="kvm__main_8c.html#a8e18df0287ddedfd516454aeeb669807" title=" " alt="" coords="1967,369,2097,396"/>
-<area shape="rect" href="kvm__main_8c.html#a3de4d6991bdd1a714e8afa6a55136cdd" title=" " alt="" coords="2185,344,2361,371"/>
-<area shape="rect" href="kvm__main_8c.html#afc3c9c56d305921c317259e18c9c8a59" title=" " alt="" coords="1927,420,2137,447"/>
-<area shape="rect" href="kvm__main_8c.html#a22600b8a76a84f58d97f1a465293e63c" title=" " alt="" coords="1959,471,2105,497"/>
-<area shape="rect" href="kvm__main_8c.html#aaa76576c021037e516218db81c147ca0" title=" " alt="" coords="1947,521,2117,548"/>
-<area shape="rect" href="vgic-v2_8c.html#aa92110fc4f1e453fde0e8e720845854f" title=" " alt="" coords="1957,623,2107,649"/>
-<area shape="rect" href="psci_8c.html#a340319ef6e70b6396954990199f5dfd2" title=" " alt="" coords="912,385,1099,412"/>
-<area shape="rect" href="psci_8c.html#a203f6ca47f969e84b5ce50a61f08e9ae" title=" " alt="" coords="905,436,1105,463"/>
-<area shape="rect" href="hypercalls_8c.html#ac9f33ca9d642c7231be25e02e9da450a" title=" " alt="" coords="641,487,852,513"/>
-<area shape="rect" href="hypercalls_8c.html#af93c35a0fd5825a99b62189ae5024a45" title=" " alt="" coords="665,538,829,579"/>
-<area shape="rect" href="hypercalls_8c.html#aa8aa7ec82883c6c825b0373750c779a2" title=" " alt="" coords="648,604,845,631"/>
-<area shape="rect" href="hypercalls_8c.html#a85e917257bf25c8f6d66f031cd79cbca" title=" " alt="" coords="900,553,1111,580"/>
-<area shape="rect" href="trng_8c.html#a3d1ac492ec1515ed0864e4e9b44e4221" title=" " alt="" coords="679,655,814,681"/>
+<area shape="rect" href="psci_8c.html#a44cba757038eb3abdf93db5dc6c7ae3e" title=" " alt="" coords="1435,534,1598,575"/>
+<area shape="rect" href="kvm__main_8c.html#abaa3f5ff00150487b52dd21c1617bab6" title=" " alt="" coords="1668,563,1879,589"/>
+<area shape="rect" href="kvm__main_8c.html#ac46e1a0e43c0784194a451a7e7394c02" title=" " alt="" coords="1927,555,2137,597"/>
+<area shape="rect" href="psci_8c.html#aa30b461609a71770efab6a5045274e5e" title=" " alt="" coords="1445,411,1589,437"/>
+<area shape="rect" href="arm_8c.html#a68df8c6f1b7134e9f23857f092d50056" title=" " alt="" coords="1459,461,1574,488"/>
+<area shape="rect" href="kvm__main_8c.html#a7256a8615584a9ae83a46c071f6aa0e9" title=" " alt="" coords="1713,360,1834,387"/>
+<area shape="rect" href="vgic_8c.html#a751661541b39c02532a54736db22a929" title=" " alt="" coords="1692,411,1855,437"/>
+<area shape="rect" href="vgic-v4_8c.html#ac2966fbf90610bb8a0525cbd903f7477" title=" " alt="" coords="1720,461,1827,488"/>
+<area shape="rect" href="vgic-v4_8c.html#aeafcb3e6b67ea32ed8e59d009252e565" title=" " alt="" coords="1723,512,1823,539"/>
+<area shape="rect" href="kvm__main_8c.html#a1045a615093ccd8e87dcd6f6a0e03e9e" title=" " alt="" coords="1963,360,2101,387"/>
+<area shape="rect" href="psci_8c.html#a340319ef6e70b6396954990199f5dfd2" title=" " alt="" coords="912,528,1099,555"/>
+<area shape="rect" href="psci_8c.html#a203f6ca47f969e84b5ce50a61f08e9ae" title=" " alt="" coords="905,579,1105,605"/>
+<area shape="rect" href="hypercalls_8c.html#ac9f33ca9d642c7231be25e02e9da450a" title=" " alt="" coords="641,1389,852,1416"/>
+<area shape="rect" href="hypercalls_8c.html#af93c35a0fd5825a99b62189ae5024a45" title=" " alt="" coords="665,1441,829,1482"/>
+<area shape="rect" href="hypercalls_8c.html#aa8aa7ec82883c6c825b0373750c779a2" title=" " alt="" coords="648,1339,845,1365"/>
+<area shape="rect" href="hypercalls_8c.html#a85e917257bf25c8f6d66f031cd79cbca" title=" " alt="" coords="900,1448,1111,1475"/>
+<area shape="rect" href="trng_8c.html#a3d1ac492ec1515ed0864e4e9b44e4221" title=" " alt="" coords="938,1085,1073,1112"/>
 </map>
 </div>
 
@@ -673,56 +673,56 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="handle__exit_8c_aeaf983f5c40202edc8b07a76603330cd_cgraph.png" border="0" usemap="#ahandle__exit_8c_aeaf983f5c40202edc8b07a76603330cd_cgraph" alt=""/></div>
 <map name="ahandle__exit_8c_aeaf983f5c40202edc8b07a76603330cd_cgraph" id="ahandle__exit_8c_aeaf983f5c40202edc8b07a76603330cd_cgraph">
-<area shape="rect" title=" " alt="" coords="5,911,100,937"/>
-<area shape="rect" href="emulate-nested_8c.html#af5e2eb745d8ac6415fe941ebe754171d" title=" " alt="" coords="148,911,331,937"/>
-<area shape="rect" href="emulate-nested_8c.html#a1c3e31bd85e9c0590a018ada20a5e4bf" title=" " alt="" coords="379,911,524,937"/>
-<area shape="rect" href="exception_8c.html#a69b40cbdae816f5cb612962c0f5da592" title=" " alt="" coords="601,107,735,133"/>
-<area shape="rect" href="arm_8c.html#aaa51abf3d06fdaa95794b27f273278fb" title=" " alt="" coords="589,696,747,723"/>
-<area shape="rect" href="arm_8c.html#a9235365ce64f215b1e024f26d96537cc" title=" " alt="" coords="592,1121,744,1148"/>
-<area shape="rect" href="emulate-nested_8c.html#a5c0ef76a2f1feaeb264f0d4957c8f527" title=" " alt="" coords="572,1256,764,1283"/>
-<area shape="rect" href="exception_8c.html#a5951865f1186392f5e4f0bc260c3b840" title=" " alt="" coords="836,56,1001,83"/>
-<area shape="rect" href="adjust__pc_8h.html#a3a6ebd94aaf8bbd3c8461a2ca19a0d0d" title=" " alt="" coords="858,107,979,133"/>
+<area shape="rect" title=" " alt="" coords="5,957,100,984"/>
+<area shape="rect" href="emulate-nested_8c.html#af5e2eb745d8ac6415fe941ebe754171d" title=" " alt="" coords="148,957,331,984"/>
+<area shape="rect" href="emulate-nested_8c.html#a1c3e31bd85e9c0590a018ada20a5e4bf" title=" " alt="" coords="379,957,524,984"/>
+<area shape="rect" href="exception_8c.html#a69b40cbdae816f5cb612962c0f5da592" title=" " alt="" coords="601,95,735,121"/>
+<area shape="rect" href="arm_8c.html#aaa51abf3d06fdaa95794b27f273278fb" title=" " alt="" coords="589,704,747,731"/>
+<area shape="rect" href="arm_8c.html#a9235365ce64f215b1e024f26d96537cc" title=" " alt="" coords="592,1211,744,1237"/>
+<area shape="rect" href="emulate-nested_8c.html#a5c0ef76a2f1feaeb264f0d4957c8f527" title=" " alt="" coords="572,1349,764,1376"/>
+<area shape="rect" href="exception_8c.html#a5951865f1186392f5e4f0bc260c3b840" title=" " alt="" coords="836,95,1001,121"/>
+<area shape="rect" href="adjust__pc_8h.html#a3a6ebd94aaf8bbd3c8461a2ca19a0d0d" title=" " alt="" coords="858,19,979,45"/>
 <area shape="rect" href="exception_8c.html#a915e81f46f11cc1767049dbbf071923f" title=" " alt="" coords="1105,56,1248,83"/>
-<area shape="rect" href="exception_8c.html#a0bd428ba7b098cc3417dca2f3f3bc9bf" title=" " alt="" coords="1105,5,1248,32"/>
-<area shape="rect" href="aarch32_8c.html#a1b8e30a6e24795d6b69e6ff5f0e50563" title=" " alt="" coords="1108,107,1245,133"/>
-<area shape="rect" href="nvhe_2tlb_8c.html#ae52fe3c4f97b5b56e65233015785a6ec" title=" " alt="" coords="824,827,1013,853"/>
-<area shape="rect" href="debug_8c.html#aae61f6ee77424b3eb0cb727586a694eb" title=" " alt="" coords="839,325,998,366"/>
-<area shape="rect" href="fpsimd_8c.html#a6d3b97095b4e6a0d7799fe50eb3fb762" title=" " alt="" coords="829,391,1008,417"/>
-<area shape="rect" href="arch__timer_8c.html#a4bf6ac76380146820b45b06feb3eab27" title=" " alt="" coords="835,441,1002,468"/>
-<area shape="rect" href="vhe_2switch_8c.html#ae2827f745640cc27776384fbe890f8e4" title=" " alt="" coords="841,667,996,693"/>
-<area shape="rect" href="pmu_8c.html#a928d4df1b401e9b41f92dd2aa2744529" title=" " alt="" coords="829,917,1008,958"/>
-<area shape="rect" href="vgic_8c.html#a54d5d884ac662357df5661d80f5160e3" title=" " alt="" coords="859,725,979,752"/>
-<area shape="rect" href="nvhe_2tlb_8c.html#ac4dc226b1ecb9bca38c3096eb27c4c1d" title=" " alt="" coords="1094,827,1259,853"/>
-<area shape="rect" href="nvhe_2tlb_8c.html#afffa64d5f9de2ef7a026837a2b9a0629" title=" " alt="" coords="1098,877,1255,904"/>
-<area shape="rect" href="arch__timer_8c.html#ad7e756ea5077e85e2a10bfe35543ce21" title=" " alt="" coords="1336,1248,1457,1275"/>
-<area shape="rect" href="arch__timer_8c.html#aabed21346a0fc6b04d9fc11ee754d19a" title=" " alt="" coords="1091,289,1262,316"/>
+<area shape="rect" href="exception_8c.html#a0bd428ba7b098cc3417dca2f3f3bc9bf" title=" " alt="" coords="1105,107,1248,133"/>
+<area shape="rect" href="aarch32_8c.html#a1b8e30a6e24795d6b69e6ff5f0e50563" title=" " alt="" coords="1108,5,1245,32"/>
+<area shape="rect" href="nvhe_2tlb_8c.html#ae52fe3c4f97b5b56e65233015785a6ec" title=" " alt="" coords="824,441,1013,468"/>
+<area shape="rect" href="debug_8c.html#aae61f6ee77424b3eb0cb727586a694eb" title=" " alt="" coords="839,726,998,767"/>
+<area shape="rect" href="fpsimd_8c.html#a6d3b97095b4e6a0d7799fe50eb3fb762" title=" " alt="" coords="829,792,1008,819"/>
+<area shape="rect" href="arch__timer_8c.html#a4bf6ac76380146820b45b06feb3eab27" title=" " alt="" coords="835,675,1002,701"/>
+<area shape="rect" href="vhe_2switch_8c.html#ae2827f745640cc27776384fbe890f8e4" title=" " alt="" coords="841,231,996,257"/>
+<area shape="rect" href="pmu_8c.html#a928d4df1b401e9b41f92dd2aa2744529" title=" " alt="" coords="829,967,1008,1009"/>
+<area shape="rect" href="vgic_8c.html#a54d5d884ac662357df5661d80f5160e3" title=" " alt="" coords="859,340,979,367"/>
+<area shape="rect" href="nvhe_2tlb_8c.html#ac4dc226b1ecb9bca38c3096eb27c4c1d" title=" " alt="" coords="1094,441,1259,468"/>
+<area shape="rect" href="nvhe_2tlb_8c.html#afffa64d5f9de2ef7a026837a2b9a0629" title=" " alt="" coords="1098,391,1255,417"/>
+<area shape="rect" href="arch__timer_8c.html#ad7e756ea5077e85e2a10bfe35543ce21" title=" " alt="" coords="1336,1181,1457,1208"/>
+<area shape="rect" href="arch__timer_8c.html#aabed21346a0fc6b04d9fc11ee754d19a" title=" " alt="" coords="1091,827,1262,853"/>
 <area shape="rect" href="arch__timer_8c.html#a1c4f03de391e27f5ba91d10b6dfab0bf" title=" " alt="" coords="1081,492,1273,519"/>
-<area shape="rect" href="arch__timer_8c.html#a9f34b892b5c9b1e79065006b4353c76e" title=" " alt="" coords="1093,158,1260,199"/>
-<area shape="rect" href="arch__timer_8c.html#a8fb06d125602c5b00fa9c213aa7e2520" title=" " alt="" coords="1093,223,1260,265"/>
-<area shape="rect" href="arch__timer_8c.html#acea899fae895cedf39458ed51af3cb1a" title=" " alt="" coords="1117,340,1236,367"/>
-<area shape="rect" href="arch__timer_8c.html#a7e1e1c3a85e2d375519e32f57a54e301" title=" " alt="" coords="1101,391,1252,417"/>
-<area shape="rect" href="arch__timer_8c.html#af19caca81734fff66363042c1e8e2181" title=" " alt="" coords="1115,441,1239,468"/>
-<area shape="rect" href="arch__timer_8c.html#ad19b9cbace853dd534bf572a35f83710" title=" " alt="" coords="1328,744,1465,771"/>
-<area shape="rect" href="vhe_2switch_8c.html#a4195df34813c51f5d20656ca62d92086" title=" " alt="" coords="1095,594,1258,635"/>
-<area shape="rect" href="vhe_2sysreg-sr_8c.html#ab64a6924327aef108d280fb973db4fea" title=" " alt="" coords="1101,659,1252,701"/>
-<area shape="rect" href="pmu_8c.html#abf97c7a6b0768cbe660dea1a404bc79b" title=" " alt="" coords="1093,1029,1260,1056"/>
+<area shape="rect" href="arch__timer_8c.html#a9f34b892b5c9b1e79065006b4353c76e" title=" " alt="" coords="1093,543,1260,585"/>
+<area shape="rect" href="arch__timer_8c.html#a8fb06d125602c5b00fa9c213aa7e2520" title=" " alt="" coords="1093,609,1260,650"/>
+<area shape="rect" href="arch__timer_8c.html#acea899fae895cedf39458ed51af3cb1a" title=" " alt="" coords="1117,675,1236,701"/>
+<area shape="rect" href="arch__timer_8c.html#a7e1e1c3a85e2d375519e32f57a54e301" title=" " alt="" coords="1101,725,1252,752"/>
+<area shape="rect" href="arch__timer_8c.html#af19caca81734fff66363042c1e8e2181" title=" " alt="" coords="1115,776,1239,803"/>
+<area shape="rect" href="arch__timer_8c.html#ad19b9cbace853dd534bf572a35f83710" title=" " alt="" coords="1328,979,1465,1005"/>
+<area shape="rect" href="vhe_2switch_8c.html#a4195df34813c51f5d20656ca62d92086" title=" " alt="" coords="1095,223,1258,265"/>
+<area shape="rect" href="vhe_2sysreg-sr_8c.html#ab64a6924327aef108d280fb973db4fea" title=" " alt="" coords="1101,158,1252,199"/>
+<area shape="rect" href="arm__pmu_8h.html#a7a4fb2cf1fb48c203893224b94564f63" title=" " alt="" coords="1077,1029,1276,1056"/>
+<area shape="rect" href="pmu_8c.html#abf97c7a6b0768cbe660dea1a404bc79b" title=" " alt="" coords="1093,1080,1260,1107"/>
 <area shape="rect" href="pmu_8c.html#ad4ce451e7a40f149ed26e7ce8d9700d4" title=" " alt="" coords="1073,928,1280,955"/>
 <area shape="rect" href="pmu_8c.html#a98e21a6fa41b3490e6b1356884b18d5f" title=" " alt="" coords="1075,979,1278,1005"/>
-<area shape="rect" href="vgic-v2_8c.html#a8321cd156f283292cc531c7ca6358193" title=" " alt="" coords="1123,725,1230,752"/>
-<area shape="rect" href="vgic-v3_8c.html#aec2311d8e88bcd485c7baf083b65876e" title=" " alt="" coords="1123,776,1230,803"/>
-<area shape="rect" href="debug_8c.html#a40ab178c06775c17444821f2b88d89c9" title=" " alt="" coords="819,1303,1018,1345"/>
-<area shape="rect" href="fpsimd_8c.html#a315297a309db16c8cbbe1ab46c7413ba" title=" " alt="" coords="833,1033,1005,1060"/>
-<area shape="rect" href="vmid_8c.html#a2de0128c579224dac8d0964d383122cf" title=" " alt="" coords="837,1085,1000,1126"/>
-<area shape="rect" href="arch__timer_8c.html#a0006e1b52ff819dd99be6dca260e52d6" title=" " alt="" coords="839,1201,998,1228"/>
-<area shape="rect" href="pmu_8c.html#a4e027f0c751f9cc01fa6d3c3f082216b" title=" " alt="" coords="812,983,1025,1009"/>
-<area shape="rect" href="vhe_2switch_8c.html#acecfb29f871562a6288b28ba84a8150e" title=" " alt="" coords="845,1151,993,1177"/>
-<area shape="rect" href="vgic_8c.html#a96f93a2405989082e3693577b6b2eb5d" title=" " alt="" coords="862,1252,975,1279"/>
-<area shape="rect" href="arch__timer_8c.html#a0abce4d3df0f10be896c5ff0cb489041" title=" " alt="" coords="1099,1248,1254,1275"/>
-<area shape="rect" href="arch__timer_8c.html#a08b7dad9cb511eeaec5ab08e2a2ae1af" title=" " alt="" coords="1109,1349,1244,1376"/>
-<area shape="rect" href="vhe_2switch_8c.html#ac68d88b7ec01728bde4737ec693bfe56" title=" " alt="" coords="1091,1131,1262,1173"/>
-<area shape="rect" href="vhe_2sysreg-sr_8c.html#af72c2efce509dabaacec4aa926055c81" title=" " alt="" coords="1076,1080,1277,1107"/>
-<area shape="rect" href="vgic-v2_8c.html#a7c82d0c75692973442f9002861867d9c" title=" " alt="" coords="1127,1400,1227,1427"/>
-<area shape="rect" href="sys__regs_8c.html#adf66277e472bdae2cc839d450085bc4b" title=" " alt="" coords="843,1369,994,1396"/>
+<area shape="rect" href="vgic-v2_8c.html#a8321cd156f283292cc531c7ca6358193" title=" " alt="" coords="1123,340,1230,367"/>
+<area shape="rect" href="vgic-v3_8c.html#aec2311d8e88bcd485c7baf083b65876e" title=" " alt="" coords="1123,289,1230,316"/>
+<area shape="rect" href="debug_8c.html#a40ab178c06775c17444821f2b88d89c9" title=" " alt="" coords="819,1233,1018,1274"/>
+<area shape="rect" href="fpsimd_8c.html#a315297a309db16c8cbbe1ab46c7413ba" title=" " alt="" coords="833,1299,1005,1325"/>
+<area shape="rect" href="vmid_8c.html#a2de0128c579224dac8d0964d383122cf" title=" " alt="" coords="837,1350,1000,1391"/>
+<area shape="rect" href="arch__timer_8c.html#a0006e1b52ff819dd99be6dca260e52d6" title=" " alt="" coords="839,1131,998,1157"/>
+<area shape="rect" href="pmu_8c.html#a4e027f0c751f9cc01fa6d3c3f082216b" title=" " alt="" coords="812,1033,1025,1060"/>
+<area shape="rect" href="vhe_2switch_8c.html#acecfb29f871562a6288b28ba84a8150e" title=" " alt="" coords="845,1416,993,1443"/>
+<area shape="rect" href="vgic_8c.html#a96f93a2405989082e3693577b6b2eb5d" title=" " alt="" coords="862,1181,975,1208"/>
+<area shape="rect" href="arch__timer_8c.html#a0abce4d3df0f10be896c5ff0cb489041" title=" " alt="" coords="1099,1181,1254,1208"/>
+<area shape="rect" href="arch__timer_8c.html#a08b7dad9cb511eeaec5ab08e2a2ae1af" title=" " alt="" coords="1109,1283,1244,1309"/>
+<area shape="rect" href="vhe_2switch_8c.html#ac68d88b7ec01728bde4737ec693bfe56" title=" " alt="" coords="1091,1438,1262,1479"/>
+<area shape="rect" href="vhe_2sysreg-sr_8c.html#af72c2efce509dabaacec4aa926055c81" title=" " alt="" coords="1076,1387,1277,1413"/>
+<area shape="rect" href="sys__regs_8c.html#adf66277e472bdae2cc839d450085bc4b" title=" " alt="" coords="843,1467,994,1493"/>
 </map>
 </div>
 
@@ -945,56 +945,56 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="handle__exit_8c_ae96aab7918301d55b908034db5855e3d_cgraph.png" border="0" usemap="#ahandle__exit_8c_ae96aab7918301d55b908034db5855e3d_cgraph" alt=""/></div>
 <map name="ahandle__exit_8c_ae96aab7918301d55b908034db5855e3d_cgraph" id="ahandle__exit_8c_ae96aab7918301d55b908034db5855e3d_cgraph">
-<area shape="rect" title=" " alt="" coords="5,906,140,933"/>
-<area shape="rect" href="emulate-nested_8c.html#a1920c02a997dd9975bec0ee02f6ae2c4" title=" " alt="" coords="419,906,615,933"/>
-<area shape="rect" href="handle__exit_8c.html#a0a50407175f0512dcb278e198ce16254" title=" " alt="" coords="201,986,357,1013"/>
-<area shape="rect" href="emulate-nested_8c.html#af5e2eb745d8ac6415fe941ebe754171d" title=" " alt="" coords="188,685,371,711"/>
-<area shape="rect" href="arm_8c.html#aaa51abf3d06fdaa95794b27f273278fb" title=" " alt="" coords="691,517,849,543"/>
-<area shape="rect" href="arm_8c.html#a9235365ce64f215b1e024f26d96537cc" title=" " alt="" coords="694,877,846,903"/>
-<area shape="rect" href="emulate-nested_8c.html#af25f30062c2caed4964ca9e442162772" title=" " alt="" coords="663,928,877,969"/>
-<area shape="rect" href="sys__regs_8c.html#a79848758fc91bd6081326514833ffafa" title=" " alt="" coords="697,994,843,1021"/>
+<area shape="rect" title=" " alt="" coords="5,931,140,958"/>
+<area shape="rect" href="emulate-nested_8c.html#a1920c02a997dd9975bec0ee02f6ae2c4" title=" " alt="" coords="419,931,615,958"/>
+<area shape="rect" href="handle__exit_8c.html#a0a50407175f0512dcb278e198ce16254" title=" " alt="" coords="201,1011,357,1038"/>
+<area shape="rect" href="emulate-nested_8c.html#af5e2eb745d8ac6415fe941ebe754171d" title=" " alt="" coords="188,714,371,741"/>
+<area shape="rect" href="arm_8c.html#aaa51abf3d06fdaa95794b27f273278fb" title=" " alt="" coords="691,525,849,551"/>
+<area shape="rect" href="arm_8c.html#a9235365ce64f215b1e024f26d96537cc" title=" " alt="" coords="694,902,846,929"/>
+<area shape="rect" href="emulate-nested_8c.html#af25f30062c2caed4964ca9e442162772" title=" " alt="" coords="663,953,877,995"/>
+<area shape="rect" href="sys__regs_8c.html#a79848758fc91bd6081326514833ffafa" title=" " alt="" coords="697,1019,843,1046"/>
 <area shape="rect" href="nvhe_2tlb_8c.html#ae52fe3c4f97b5b56e65233015785a6ec" title=" " alt="" coords="937,289,1127,315"/>
-<area shape="rect" href="debug_8c.html#aae61f6ee77424b3eb0cb727586a694eb" title=" " alt="" coords="953,425,1111,467"/>
-<area shape="rect" href="fpsimd_8c.html#a6d3b97095b4e6a0d7799fe50eb3fb762" title=" " alt="" coords="943,491,1121,518"/>
-<area shape="rect" href="arch__timer_8c.html#a4bf6ac76380146820b45b06feb3eab27" title=" " alt="" coords="949,542,1115,569"/>
+<area shape="rect" href="debug_8c.html#aae61f6ee77424b3eb0cb727586a694eb" title=" " alt="" coords="953,433,1111,475"/>
+<area shape="rect" href="fpsimd_8c.html#a6d3b97095b4e6a0d7799fe50eb3fb762" title=" " alt="" coords="943,499,1121,526"/>
+<area shape="rect" href="arch__timer_8c.html#a4bf6ac76380146820b45b06feb3eab27" title=" " alt="" coords="949,550,1115,577"/>
 <area shape="rect" href="vhe_2switch_8c.html#ae2827f745640cc27776384fbe890f8e4" title=" " alt="" coords="955,78,1109,105"/>
-<area shape="rect" href="pmu_8c.html#a928d4df1b401e9b41f92dd2aa2744529" title=" " alt="" coords="943,709,1121,751"/>
+<area shape="rect" href="pmu_8c.html#a928d4df1b401e9b41f92dd2aa2744529" title=" " alt="" coords="943,735,1121,776"/>
 <area shape="rect" href="vgic_8c.html#a54d5d884ac662357df5661d80f5160e3" title=" " alt="" coords="972,187,1092,214"/>
 <area shape="rect" href="nvhe_2tlb_8c.html#ac4dc226b1ecb9bca38c3096eb27c4c1d" title=" " alt="" coords="1207,238,1373,265"/>
 <area shape="rect" href="nvhe_2tlb_8c.html#afffa64d5f9de2ef7a026837a2b9a0629" title=" " alt="" coords="1211,289,1369,315"/>
-<area shape="rect" href="arch__timer_8c.html#ad7e756ea5077e85e2a10bfe35543ce21" title=" " alt="" coords="1449,1107,1571,1134"/>
+<area shape="rect" href="arch__timer_8c.html#ad7e756ea5077e85e2a10bfe35543ce21" title=" " alt="" coords="1449,1074,1571,1101"/>
 <area shape="rect" href="arch__timer_8c.html#aabed21346a0fc6b04d9fc11ee754d19a" title=" " alt="" coords="1205,491,1375,518"/>
-<area shape="rect" href="arch__timer_8c.html#a1c4f03de391e27f5ba91d10b6dfab0bf" title=" " alt="" coords="1194,542,1386,569"/>
-<area shape="rect" href="arch__timer_8c.html#a9f34b892b5c9b1e79065006b4353c76e" title=" " alt="" coords="1207,593,1373,635"/>
-<area shape="rect" href="arch__timer_8c.html#a8fb06d125602c5b00fa9c213aa7e2520" title=" " alt="" coords="1207,659,1373,700"/>
-<area shape="rect" href="arch__timer_8c.html#acea899fae895cedf39458ed51af3cb1a" title=" " alt="" coords="1231,339,1349,366"/>
-<area shape="rect" href="arch__timer_8c.html#a7e1e1c3a85e2d375519e32f57a54e301" title=" " alt="" coords="1215,390,1365,417"/>
-<area shape="rect" href="arch__timer_8c.html#af19caca81734fff66363042c1e8e2181" title=" " alt="" coords="1228,441,1352,467"/>
-<area shape="rect" href="arch__timer_8c.html#ad19b9cbace853dd534bf572a35f83710" title=" " alt="" coords="1441,747,1579,774"/>
-<area shape="rect" href="vhe_2switch_8c.html#a4195df34813c51f5d20656ca62d92086" title=" " alt="" coords="1209,71,1371,112"/>
-<area shape="rect" href="vhe_2sysreg-sr_8c.html#ab64a6924327aef108d280fb973db4fea" title=" " alt="" coords="1215,5,1365,47"/>
-<area shape="rect" href="pmu_8c.html#abf97c7a6b0768cbe660dea1a404bc79b" title=" " alt="" coords="1207,826,1373,853"/>
-<area shape="rect" href="pmu_8c.html#ad4ce451e7a40f149ed26e7ce8d9700d4" title=" " alt="" coords="1187,877,1393,903"/>
-<area shape="rect" href="pmu_8c.html#a98e21a6fa41b3490e6b1356884b18d5f" title=" " alt="" coords="1189,775,1391,802"/>
+<area shape="rect" href="arch__timer_8c.html#a1c4f03de391e27f5ba91d10b6dfab0bf" title=" " alt="" coords="1194,441,1386,467"/>
+<area shape="rect" href="arch__timer_8c.html#a9f34b892b5c9b1e79065006b4353c76e" title=" " alt="" coords="1207,543,1373,584"/>
+<area shape="rect" href="arch__timer_8c.html#a8fb06d125602c5b00fa9c213aa7e2520" title=" " alt="" coords="1207,608,1373,649"/>
+<area shape="rect" href="arch__timer_8c.html#acea899fae895cedf39458ed51af3cb1a" title=" " alt="" coords="1231,674,1349,701"/>
+<area shape="rect" href="arch__timer_8c.html#a7e1e1c3a85e2d375519e32f57a54e301" title=" " alt="" coords="1215,339,1365,366"/>
+<area shape="rect" href="arch__timer_8c.html#af19caca81734fff66363042c1e8e2181" title=" " alt="" coords="1228,390,1352,417"/>
+<area shape="rect" href="arch__timer_8c.html#ad19b9cbace853dd534bf572a35f83710" title=" " alt="" coords="1441,1007,1579,1034"/>
+<area shape="rect" href="vhe_2switch_8c.html#a4195df34813c51f5d20656ca62d92086" title=" " alt="" coords="1209,5,1371,47"/>
+<area shape="rect" href="vhe_2sysreg-sr_8c.html#ab64a6924327aef108d280fb973db4fea" title=" " alt="" coords="1215,71,1365,112"/>
+<area shape="rect" href="arm__pmu_8h.html#a7a4fb2cf1fb48c203893224b94564f63" title=" " alt="" coords="1191,877,1389,903"/>
+<area shape="rect" href="pmu_8c.html#abf97c7a6b0768cbe660dea1a404bc79b" title=" " alt="" coords="1207,927,1373,954"/>
+<area shape="rect" href="pmu_8c.html#ad4ce451e7a40f149ed26e7ce8d9700d4" title=" " alt="" coords="1187,775,1393,802"/>
+<area shape="rect" href="pmu_8c.html#a98e21a6fa41b3490e6b1356884b18d5f" title=" " alt="" coords="1189,826,1391,853"/>
 <area shape="rect" href="vgic-v2_8c.html#a8321cd156f283292cc531c7ca6358193" title=" " alt="" coords="1237,137,1343,163"/>
 <area shape="rect" href="vgic-v3_8c.html#aec2311d8e88bcd485c7baf083b65876e" title=" " alt="" coords="1237,187,1343,214"/>
-<area shape="rect" href="debug_8c.html#a40ab178c06775c17444821f2b88d89c9" title=" " alt="" coords="933,928,1131,969"/>
-<area shape="rect" href="fpsimd_8c.html#a315297a309db16c8cbbe1ab46c7413ba" title=" " alt="" coords="946,994,1118,1021"/>
-<area shape="rect" href="vmid_8c.html#a2de0128c579224dac8d0964d383122cf" title=" " alt="" coords="951,1045,1113,1087"/>
-<area shape="rect" href="arch__timer_8c.html#a0006e1b52ff819dd99be6dca260e52d6" title=" " alt="" coords="953,1111,1111,1138"/>
-<area shape="rect" href="pmu_8c.html#a4e027f0c751f9cc01fa6d3c3f082216b" title=" " alt="" coords="925,775,1139,802"/>
-<area shape="rect" href="vhe_2switch_8c.html#acecfb29f871562a6288b28ba84a8150e" title=" " alt="" coords="958,826,1106,853"/>
-<area shape="rect" href="vgic_8c.html#a96f93a2405989082e3693577b6b2eb5d" title=" " alt="" coords="975,877,1089,903"/>
-<area shape="rect" href="arch__timer_8c.html#a0abce4d3df0f10be896c5ff0cb489041" title=" " alt="" coords="1213,1107,1367,1134"/>
-<area shape="rect" href="arch__timer_8c.html#a08b7dad9cb511eeaec5ab08e2a2ae1af" title=" " alt="" coords="1223,1057,1357,1083"/>
-<area shape="rect" href="vhe_2switch_8c.html#ac68d88b7ec01728bde4737ec693bfe56" title=" " alt="" coords="1205,928,1375,969"/>
-<area shape="rect" href="sys__regs_8c.html#a8f5bcf4d21c4d9b1881dd3fec5bd6178" title=" " alt="" coords="941,1162,1123,1189"/>
-<area shape="rect" href="inject__fault_8c.html#aece14f61701021b17e9cf5521f7946fb" title=" " alt="" coords="434,1045,599,1071"/>
-<area shape="rect" href="inject__fault_8c.html#ae6fc8db83ad0518fddd2e485687e0f7d" title=" " alt="" coords="711,1045,829,1071"/>
-<area shape="rect" href="inject__fault_8c.html#a846082def00d9a7db3f28b1b7fb2a07a" title=" " alt="" coords="711,1095,829,1122"/>
-<area shape="rect" href="emulate-nested_8c.html#a1c3e31bd85e9c0590a018ada20a5e4bf" title=" " alt="" coords="444,517,589,543"/>
-<area shape="rect" href="exception_8c.html#a69b40cbdae816f5cb612962c0f5da592" title=" " alt="" coords="703,415,837,442"/>
-<area shape="rect" href="emulate-nested_8c.html#a5c0ef76a2f1feaeb264f0d4957c8f527" title=" " alt="" coords="674,466,866,493"/>
+<area shape="rect" href="debug_8c.html#a40ab178c06775c17444821f2b88d89c9" title=" " alt="" coords="933,953,1131,995"/>
+<area shape="rect" href="fpsimd_8c.html#a315297a309db16c8cbbe1ab46c7413ba" title=" " alt="" coords="946,1019,1118,1046"/>
+<area shape="rect" href="vmid_8c.html#a2de0128c579224dac8d0964d383122cf" title=" " alt="" coords="951,1071,1113,1112"/>
+<area shape="rect" href="arch__timer_8c.html#a0006e1b52ff819dd99be6dca260e52d6" title=" " alt="" coords="953,1137,1111,1163"/>
+<area shape="rect" href="pmu_8c.html#a4e027f0c751f9cc01fa6d3c3f082216b" title=" " alt="" coords="925,801,1139,827"/>
+<area shape="rect" href="vhe_2switch_8c.html#acecfb29f871562a6288b28ba84a8150e" title=" " alt="" coords="958,851,1106,878"/>
+<area shape="rect" href="vgic_8c.html#a96f93a2405989082e3693577b6b2eb5d" title=" " alt="" coords="975,902,1089,929"/>
+<area shape="rect" href="arch__timer_8c.html#a0abce4d3df0f10be896c5ff0cb489041" title=" " alt="" coords="1213,1074,1367,1101"/>
+<area shape="rect" href="arch__timer_8c.html#a08b7dad9cb511eeaec5ab08e2a2ae1af" title=" " alt="" coords="1223,1125,1357,1151"/>
+<area shape="rect" href="sys__regs_8c.html#a8f5bcf4d21c4d9b1881dd3fec5bd6178" title=" " alt="" coords="941,1187,1123,1214"/>
+<area shape="rect" href="inject__fault_8c.html#aece14f61701021b17e9cf5521f7946fb" title=" " alt="" coords="434,1070,599,1097"/>
+<area shape="rect" href="inject__fault_8c.html#ae6fc8db83ad0518fddd2e485687e0f7d" title=" " alt="" coords="711,1070,829,1097"/>
+<area shape="rect" href="inject__fault_8c.html#a846082def00d9a7db3f28b1b7fb2a07a" title=" " alt="" coords="711,1121,829,1147"/>
+<area shape="rect" href="emulate-nested_8c.html#a1c3e31bd85e9c0590a018ada20a5e4bf" title=" " alt="" coords="444,525,589,551"/>
+<area shape="rect" href="exception_8c.html#a69b40cbdae816f5cb612962c0f5da592" title=" " alt="" coords="703,423,837,450"/>
+<area shape="rect" href="emulate-nested_8c.html#a5c0ef76a2f1feaeb264f0d4957c8f527" title=" " alt="" coords="674,474,866,501"/>
 </map>
 </div>
 

@@ -2,6 +2,7 @@
 <area shape="rect" id="node1" title=" " alt="" coords="5,49,143,90"/>
 <area shape="rect" id="node2" href="$kvm__main_8c.html#a0afe5ce3e9ff1105328b06ec985e3374" title=" " alt="" coords="191,5,379,32"/>
 <area shape="rect" id="node4" href="$vgic-mmio-v2_8c.html#a99781f95ebe917fea2537d762dded6e9" title=" " alt="" coords="197,56,372,83"/>
-<area shape="rect" id="node5" href="$vgic-mmio-v3_8c.html#ab423a52c4f34cfe2d13a8da61cba66cb" title=" " alt="" coords="197,107,372,133"/>
-<area shape="rect" id="node3" href="$kvm__main_8c.html#a75ccec7a81fef145fb3c3a3b5479a86f" title=" " alt="" coords="427,5,561,32"/>
+<area shape="rect" id="node6" href="$vgic-mmio-v3_8c.html#ab423a52c4f34cfe2d13a8da61cba66cb" title=" " alt="" coords="197,107,372,133"/>
+<area shape="rect" id="node3" href="$kvm__main_8c.html#a75ccec7a81fef145fb3c3a3b5479a86f" title=" " alt="" coords="430,5,565,32"/>
+<area shape="rect" id="node5" href="$iodev_8h.html#a8999defe529eb3e3870197ef8e39fad5" title=" " alt="" coords="427,81,568,108"/>
 </map>

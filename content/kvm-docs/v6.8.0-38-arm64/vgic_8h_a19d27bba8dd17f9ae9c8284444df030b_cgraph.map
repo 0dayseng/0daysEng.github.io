@@ -1,6 +1,7 @@
 <map id="vgic_irq_handle_resampling" name="vgic_irq_handle_resampling">
-<area shape="rect" id="node1" title=" " alt="" coords="5,78,209,105"/>
-<area shape="rect" id="node2" href="$vgic_8c.html#a44a31fe53851677c742d5b2a340e2f56" title=" " alt="" coords="277,5,423,47"/>
-<area shape="rect" id="node3" href="$vgic_8h.html#a9c8f3a32a17b2384ea1cc0c6e0340ad7" title=" " alt="" coords="275,71,425,112"/>
-<area shape="rect" id="node4" href="$vgic_8c.html#a6daedd3eec82ca8b68db82b750a24f67" title=" " alt="" coords="257,137,443,163"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,209,134"/>
+<area shape="rect" id="node2" href="$vgic_8c.html#a44a31fe53851677c742d5b2a340e2f56" title=" " alt="" coords="283,5,430,47"/>
+<area shape="rect" id="node3" href="$vgic_8h.html#a9c8f3a32a17b2384ea1cc0c6e0340ad7" title=" " alt="" coords="281,71,432,112"/>
+<area shape="rect" id="node4" href="$arm__vgic_8h.html#ad8001fedb7a2cb065c38833241e86b5c" title=" " alt="" coords="257,137,456,163"/>
+<area shape="rect" id="node5" href="$vgic_8c.html#a6daedd3eec82ca8b68db82b750a24f67" title=" " alt="" coords="264,187,449,214"/>
 </map>

@@ -1,6 +1,7 @@
 <map id="kvm_assign_ioeventfd_idx" name="kvm_assign_ioeventfd_idx">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,201,57"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,201,83"/>
 <area shape="rect" id="node2" href="$eventfd_8c.html#ab783ca75fd2a0b380875fa0fbe6297f1" title=" " alt="" coords="249,5,440,32"/>
 <area shape="rect" id="node3" href="$kvm__main_8c.html#a0afe5ce3e9ff1105328b06ec985e3374" title=" " alt="" coords="251,56,439,83"/>
+<area shape="rect" id="node5" href="$iodev_8h.html#a8999defe529eb3e3870197ef8e39fad5" title=" " alt="" coords="274,107,415,133"/>
 <area shape="rect" id="node4" href="$kvm__main_8c.html#a75ccec7a81fef145fb3c3a3b5479a86f" title=" " alt="" coords="488,56,623,83"/>
 </map>

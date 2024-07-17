@@ -1,4 +1,5 @@
 <map id="timer_set_traps" name="timer_set_traps">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,129,32"/>
-<area shape="rect" id="node2" href="$arch__timer_8c.html#a7f5f777b74b5c9ec6e13d4f7576d7f43" title=" " alt="" coords="177,5,307,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,129,57"/>
+<area shape="rect" id="node2" href="$arm__arch__timer_8h.html#a656013ccf6829218e43edc9c3660c414" title=" " alt="" coords="193,5,291,32"/>
+<area shape="rect" id="node3" href="$arch__timer_8c.html#a7f5f777b74b5c9ec6e13d4f7576d7f43" title=" " alt="" coords="177,56,307,83"/>
 </map>
