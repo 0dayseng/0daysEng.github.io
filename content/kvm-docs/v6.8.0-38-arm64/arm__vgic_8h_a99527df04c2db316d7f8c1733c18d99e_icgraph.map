@@ -1,0 +1,12 @@
+<map id="kvm_vgic_set_owner" name="kvm_vgic_set_owner">
+<area shape="rect" id="node1" title=" " alt="" coords="1340,35,1499,61"/>
+<area shape="rect" id="node2" href="$pmu-emul_8c.html#a711e10b6fe664801230c4856c3840e90" title=" " alt="" coords="1121,9,1292,36"/>
+<area shape="rect" id="node8" href="$arch__timer_8c.html#a7a37a6f350a857f42fe872aeebc8e2e4" title=" " alt="" coords="1129,60,1284,87"/>
+<area shape="rect" id="node3" href="$pmu-emul_8c.html#af3085467d010c2e9c3abfcfbf086156a" title=" " alt="" coords="873,9,1073,36"/>
+<area shape="rect" id="node4" href="$guest_8c.html#a932910ec1cc3b5a552da035d4d74a4eb" title=" " alt="" coords="611,8,825,35"/>
+<area shape="rect" id="node5" href="$arm_8c.html#adcf63ac6c9c7383fcf0dcb2ce097afbe" title=" " alt="" coords="384,5,563,32"/>
+<area shape="rect" id="node6" href="$arm_8c.html#ab4ac4d44dfa1ed8985130249d6a8385e" title=" " alt="" coords="177,8,336,35"/>
+<area shape="rect" id="node7" href="$kvm__main_8c.html#a2f2d3734c4cf61a1f4f94e9d47c37d55" title=" " alt="" coords="5,35,129,61"/>
+<area shape="rect" id="node9" href="$arch__timer_8c.html#a6eb7255c40d5b43938e99918b3d9d06a" title=" " alt="" coords="901,60,1045,87"/>
+<area shape="rect" id="node10" href="$arm_8c.html#a163f3db5fe1d973be2855f4a479a5c8c" title=" " alt="" coords="384,57,563,98"/>
+</map>

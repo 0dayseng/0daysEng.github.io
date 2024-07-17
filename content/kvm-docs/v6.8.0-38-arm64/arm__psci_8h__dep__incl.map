@@ -1,0 +1,9 @@
+<map id="include/kvm/arm_psci.h" name="include/kvm/arm_psci.h">
+<area shape="rect" id="node1" title=" " alt="" coords="265,5,442,32"/>
+<area shape="rect" id="node2" href="$switch_8h.html" title=" " alt="" coords="95,80,254,121"/>
+<area shape="rect" id="node3" href="$nvhe_2switch_8c.html" title=" " alt="" coords="5,169,163,211"/>
+<area shape="rect" id="node4" href="$vhe_2switch_8c.html" title=" " alt="" coords="200,169,357,211"/>
+<area shape="rect" id="node5" href="$arm_8c.html" title=" " alt="" coords="329,87,500,114"/>
+<area shape="rect" id="node6" href="$hypercalls_8c.html" title=" " alt="" coords="524,87,735,114"/>
+<area shape="rect" id="node7" href="$psci_8c.html" title=" " alt="" coords="759,87,929,114"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="kvm_vgic_vcpu_pending_irq" name="kvm_vgic_vcpu_pending_irq">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,212,57"/>
+<area shape="rect" id="node2" href="$vgic_8h.html#a1109d873011f89a4acb4fd461f9f0a45" title=" " alt="" coords="261,5,377,32"/>
+<area shape="rect" id="node3" href="$vgic-mmio_8c.html#ad275c2ef6d5f7f0d79f101a7dd6dda3a" title=" " alt="" coords="260,56,377,83"/>
+<area shape="rect" id="node4" href="$vgic-v2_8c.html#aa825011d5b7d02e6b8f6c21746a5af39" title=" " alt="" coords="425,31,565,57"/>
+<area shape="rect" id="node5" href="$vgic-v3_8c.html#a20f69ea757569fa58158ed4f097c1987" title=" " alt="" coords="425,81,565,108"/>
+</map>

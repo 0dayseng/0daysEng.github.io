@@ -1,0 +1,5 @@
+<map id="kvm_arm_get_fw_reg" name="kvm_arm_get_fw_reg">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,168,57"/>
+<area shape="rect" id="node2" href="$hypercalls_8c.html#a572ae0aeccb4707e2ba837700a5d73a3" title=" " alt="" coords="216,5,371,32"/>
+<area shape="rect" id="node3" href="$arm__psci_8h.html#ae8e32b0627b1dc8c12a32d279c1a3bf4" title=" " alt="" coords="224,56,363,83"/>
+</map>

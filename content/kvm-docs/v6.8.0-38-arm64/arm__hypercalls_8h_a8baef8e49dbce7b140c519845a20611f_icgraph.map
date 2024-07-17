@@ -1,0 +1,11 @@
+<map id="smccc_get_function" name="smccc_get_function">
+<area shape="rect" id="node1" title=" " alt="" coords="933,109,1084,136"/>
+<area shape="rect" id="node2" href="$psci_8c.html#af18cf22560595f1da5e34ea244b0b51b" title=" " alt="" coords="549,33,693,60"/>
+<area shape="rect" id="node3" href="$psci_8c.html#a3daa8000eb9717dde07d817c306b052b" title=" " alt="" coords="387,109,501,136"/>
+<area shape="rect" id="node4" href="$hypercalls_8c.html#a62d0b161cae45d4a2f865203301f7ac4" title=" " alt="" coords="153,109,339,136"/>
+<area shape="rect" id="node7" href="$psci_8c.html#ac7522f6e0d1805f44a3e932397de4582" title=" " alt="" coords="741,134,885,161"/>
+<area shape="rect" id="node8" href="$psci_8c.html#a8f59d47a1b54f561b8c42f509798142e" title=" " alt="" coords="549,185,693,212"/>
+<area shape="rect" id="node9" href="$trng_8c.html#a77478bf42ec810a0e55387bf3a7997c2" title=" " alt="" coords="387,210,501,237"/>
+<area shape="rect" id="node5" href="$handle__exit_8c.html#a5c24d46393da9651d3133e2377fd7a69" title=" " alt="" coords="7,84,103,110"/>
+<area shape="rect" id="node6" href="$handle__exit_8c.html#ad2545fb9f7329ef0604715b9af4a1746" title=" " alt="" coords="5,134,105,161"/>
+</map>

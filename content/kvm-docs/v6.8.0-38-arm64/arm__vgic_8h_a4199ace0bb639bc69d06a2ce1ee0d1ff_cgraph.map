@@ -1,0 +1,10 @@
+<map id="kvm_vgic_unmap_phys_irq" name="kvm_vgic_unmap_phys_irq">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,204,83"/>
+<area shape="rect" id="node2" href="$vgic_8c.html#aeaf2d7fa188efb40aab886a1e19f14d8" title=" " alt="" coords="252,5,413,32"/>
+<area shape="rect" id="node3" href="$vgic_8c.html#a7f38a266ef3def3202e7e04aa40fd516" title=" " alt="" coords="282,56,383,83"/>
+<area shape="rect" id="node6" href="$vgic_8c.html#ac055f2fa0d463d3d287ee975bb80a9c5" title=" " alt="" coords="282,107,383,133"/>
+<area shape="rect" id="node4" href="$vgic_8c.html#afeaf79de85450ed5fb52dbd7bd8c6617" title=" " alt="" coords="493,56,593,83"/>
+<area shape="rect" id="node5" href="$vgic_8h.html#a43d39599f0fd2d973c5af8d6045e0f91" title=" " alt="" coords="672,56,807,83"/>
+<area shape="rect" id="node7" href="$vgic_8c.html#affa1a20a5bd9d67dc546c1ccaace3406" title=" " alt="" coords="461,107,624,133"/>
+<area shape="rect" id="node8" href="$vgic_8c.html#a7d513558f0ea4ecbc012c98b3522f797" title=" " alt="" coords="675,107,803,133"/>
+</map>

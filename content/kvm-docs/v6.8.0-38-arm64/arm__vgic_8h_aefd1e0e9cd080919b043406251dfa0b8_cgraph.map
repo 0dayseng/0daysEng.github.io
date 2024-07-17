@@ -1,0 +1,7 @@
+<map id="kvm_vgic_init_cpu_hardware" name="kvm_vgic_init_cpu_hardware">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,216,57"/>
+<area shape="rect" id="node2" href="$vgic-v3-sr_8c.html#a412786aabffbbfab73264334c0a45f1d" title=" " alt="" coords="264,5,401,32"/>
+<area shape="rect" id="node4" href="$vgic-v2_8c.html#a1e2191b7a20d4cf12614106efac5ced2" title=" " alt="" coords="271,56,394,83"/>
+<area shape="rect" id="node3" href="$vgic-v3-sr_8c.html#a161e7bd7fc63e0a7fdb5fab98711d711" title=" " alt="" coords="453,5,574,32"/>
+<area shape="rect" id="node5" href="$vgic-v2_8c.html#ad8c03dce2e41ca3c35de3897603bb9e0" title=" " alt="" coords="449,56,577,83"/>
+</map>
