@@ -118,16 +118,16 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="svm_8h__dep__incl.png" border="0" usemap="#aarch_2x86_2kvm_2svm_2svm_8hdep" alt=""/></div>
 <map name="aarch_2x86_2kvm_2svm_2svm_8hdep" id="aarch_2x86_2kvm_2svm_2svm_8hdep">
-<area shape="rect" title=" " alt="" coords="470,5,657,32"/>
-<area shape="rect" href="kvm-asm-offsets_8c.html" title=" " alt="" coords="5,80,183,121"/>
-<area shape="rect" href="svm_2hyperv_8h.html" title=" " alt="" coords="258,87,461,114"/>
-<area shape="rect" href="svm__onhyperv_8c.html" title=" " alt="" coords="59,169,233,211"/>
-<area shape="rect" href="svm_2nested_8c.html" title=" " alt="" coords="485,177,687,203"/>
-<area shape="rect" href="svm_2pmu_8c.html" title=" " alt="" coords="535,87,722,114"/>
-<area shape="rect" href="avic_8c.html" title=" " alt="" coords="747,87,932,114"/>
-<area shape="rect" href="sev_8c.html" title=" " alt="" coords="956,87,1136,114"/>
-<area shape="rect" href="svm_8c.html" title=" " alt="" coords="1161,87,1347,114"/>
-<area shape="rect" href="svm_2hyperv_8c.html" title=" " alt="" coords="258,177,461,203"/>
+<area shape="rect" title=" " alt="" coords="476,5,663,32"/>
+<area shape="rect" href="svm_2pmu_8c.html" title=" " alt="" coords="5,87,192,114"/>
+<area shape="rect" href="svm_2hyperv_8h.html" title=" " alt="" coords="267,87,469,114"/>
+<area shape="rect" href="svm__onhyperv_8c.html" title=" " alt="" coords="67,169,242,211"/>
+<area shape="rect" href="svm_2nested_8c.html" title=" " alt="" coords="493,177,696,203"/>
+<area shape="rect" href="kvm-asm-offsets_8c.html" title=" " alt="" coords="545,80,722,121"/>
+<area shape="rect" href="avic_8c.html" title=" " alt="" coords="746,87,931,114"/>
+<area shape="rect" href="sev_8c.html" title=" " alt="" coords="955,87,1135,114"/>
+<area shape="rect" href="svm_8c.html" title=" " alt="" coords="1160,87,1347,114"/>
+<area shape="rect" href="svm_2hyperv_8c.html" title=" " alt="" coords="267,177,469,203"/>
 </map>
 </div>
 </div>
@@ -168,7 +168,7 @@ Macros</h2></td></tr>
 <tr class="separator:aecb0b82114f9d516a3ee502c0054e0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a317277564d2351c6695a358504311483"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svm_8h.html#a317277564d2351c6695a358504311483">VMCB_ALL_CLEAN_MASK</a></td></tr>
 <tr class="separator:a317277564d2351c6695a358504311483"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a987416bb1857b96f97af2391d1008c5a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svm_8h.html#a987416bb1857b96f97af2391d1008c5a">VMCB_ALWAYS_DIRTY_MASK</a>&#160;&#160;&#160;((1U &lt;&lt; <a class="el" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a47e03f1935e6feea250cf3d13fa4c71e">VMCB_INTR</a>) | (1U &lt;&lt; <a class="el" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13ac328b9fd73e1b9d219f9890f938509e1">VMCB_CR2</a>))</td></tr>
+<tr class="memitem:a987416bb1857b96f97af2391d1008c5a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svm_8h.html#a987416bb1857b96f97af2391d1008c5a">VMCB_ALWAYS_DIRTY_MASK</a>&#160;&#160;&#160;((1U &lt;&lt; <a class="el" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a47e03f1935e6feea250cf3d13fa4c71e">VMCB_INTR</a>) | (1U &lt;&lt; <a class="el" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4ac328b9fd73e1b9d219f9890f938509e1">VMCB_CR2</a>))</td></tr>
 <tr class="separator:a987416bb1857b96f97af2391d1008c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45c751b4204124bee221bec64ada4d72"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svm_8h.html#a45c751b4204124bee221bec64ada4d72">SVM_REGS_LAZY_LOAD_SET</a>&#160;&#160;&#160;(1 &lt;&lt; VCPU_EXREG_PDPTR)</td></tr>
 <tr class="separator:a45c751b4204124bee221bec64ada4d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,26 +193,26 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a39fca1837c5ce7715cbf571669660c13"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13aa5c3bcc8811c26fdc5e7cda9a9b213e1">VMCB_INTERCEPTS</a>
-, <a class="el" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a0b96a6cb7dc2eb2f1e2471f9fdfa6972">VMCB_PERM_MAP</a>
-, <a class="el" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13ace538c75028034c3e121fd96a0bdaf64">VMCB_ASID</a>
-, <a class="el" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a47e03f1935e6feea250cf3d13fa4c71e">VMCB_INTR</a>
+<tr class="memitem:aaf8fd5f0e57d456151c951e0f3715fc4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4aa5c3bcc8811c26fdc5e7cda9a9b213e1">VMCB_INTERCEPTS</a>
+, <a class="el" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a0b96a6cb7dc2eb2f1e2471f9fdfa6972">VMCB_PERM_MAP</a>
+, <a class="el" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4ace538c75028034c3e121fd96a0bdaf64">VMCB_ASID</a>
+, <a class="el" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a47e03f1935e6feea250cf3d13fa4c71e">VMCB_INTR</a>
 , <br />
-&#160;&#160;<a class="el" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a7c9727e792c945164c49fbd9793c4e97">VMCB_NPT</a>
-, <a class="el" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a4c1bf85b59430883fd2a9f4eebbac975">VMCB_CR</a>
-, <a class="el" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13ac7c020c96383ecc6a3d358e1fdd99be7">VMCB_DR</a>
-, <a class="el" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a1c1bbe2afa896e3b5fc2f2d850eb41b3">VMCB_DT</a>
+&#160;&#160;<a class="el" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a7c9727e792c945164c49fbd9793c4e97">VMCB_NPT</a>
+, <a class="el" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a4c1bf85b59430883fd2a9f4eebbac975">VMCB_CR</a>
+, <a class="el" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4ac7c020c96383ecc6a3d358e1fdd99be7">VMCB_DR</a>
+, <a class="el" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a1c1bbe2afa896e3b5fc2f2d850eb41b3">VMCB_DT</a>
 , <br />
-&#160;&#160;<a class="el" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13ab13d3c949ef62a4213fe70e2ed836b91">VMCB_SEG</a>
-, <a class="el" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13ac328b9fd73e1b9d219f9890f938509e1">VMCB_CR2</a>
-, <a class="el" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a7ffead4bb2fd939a3b453692fdc4664a">VMCB_LBR</a>
-, <a class="el" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a3d33483aba8bab1af6c7a3a56141cd8f">VMCB_AVIC</a>
+&#160;&#160;<a class="el" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4ab13d3c949ef62a4213fe70e2ed836b91">VMCB_SEG</a>
+, <a class="el" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4ac328b9fd73e1b9d219f9890f938509e1">VMCB_CR2</a>
+, <a class="el" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a7ffead4bb2fd939a3b453692fdc4664a">VMCB_LBR</a>
+, <a class="el" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a3d33483aba8bab1af6c7a3a56141cd8f">VMCB_AVIC</a>
 , <br />
-&#160;&#160;<a class="el" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13aadb6ebcdeea82b3c1ad950e8e2433d8c">VMCB_SW</a> = 31
+&#160;&#160;<a class="el" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4aadb6ebcdeea82b3c1ad950e8e2433d8c">VMCB_SW</a> = 31
 <br />
  }</td></tr>
-<tr class="separator:a39fca1837c5ce7715cbf571669660c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:aaf8fd5f0e57d456151c951e0f3715fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -750,25 +750,25 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    (                   \</div>
-<div class="line">    (1U &lt;&lt; <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13aa5c3bcc8811c26fdc5e7cda9a9b213e1">VMCB_INTERCEPTS</a>) | (1U &lt;&lt; <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a0b96a6cb7dc2eb2f1e2471f9fdfa6972">VMCB_PERM_MAP</a>) |   \</div>
-<div class="line">    (1U &lt;&lt; <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13ace538c75028034c3e121fd96a0bdaf64">VMCB_ASID</a>) | (1U &lt;&lt; <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a47e03f1935e6feea250cf3d13fa4c71e">VMCB_INTR</a>) |         \</div>
-<div class="line">    (1U &lt;&lt; <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a7c9727e792c945164c49fbd9793c4e97">VMCB_NPT</a>) | (1U &lt;&lt; <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a4c1bf85b59430883fd2a9f4eebbac975">VMCB_CR</a>) | (1U &lt;&lt; <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13ac7c020c96383ecc6a3d358e1fdd99be7">VMCB_DR</a>) |  \</div>
-<div class="line">    (1U &lt;&lt; <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a1c1bbe2afa896e3b5fc2f2d850eb41b3">VMCB_DT</a>) | (1U &lt;&lt; <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13ab13d3c949ef62a4213fe70e2ed836b91">VMCB_SEG</a>) | (1U &lt;&lt; <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13ac328b9fd73e1b9d219f9890f938509e1">VMCB_CR2</a>) | \</div>
-<div class="line">    (1U &lt;&lt; <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a7ffead4bb2fd939a3b453692fdc4664a">VMCB_LBR</a>) | (1U &lt;&lt; <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a3d33483aba8bab1af6c7a3a56141cd8f">VMCB_AVIC</a>) |          \</div>
-<div class="line">    (1U &lt;&lt; <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13aadb6ebcdeea82b3c1ad950e8e2433d8c">VMCB_SW</a>))</div>
-<div class="ttc" id="asvm_8h_html_a39fca1837c5ce7715cbf571669660c13a0b96a6cb7dc2eb2f1e2471f9fdfa6972"><div class="ttname"><a href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a0b96a6cb7dc2eb2f1e2471f9fdfa6972">VMCB_PERM_MAP</a></div><div class="ttdeci">@ VMCB_PERM_MAP</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00051">svm.h:51</a></div></div>
-<div class="ttc" id="asvm_8h_html_a39fca1837c5ce7715cbf571669660c13a1c1bbe2afa896e3b5fc2f2d850eb41b3"><div class="ttname"><a href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a1c1bbe2afa896e3b5fc2f2d850eb41b3">VMCB_DT</a></div><div class="ttdeci">@ VMCB_DT</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00057">svm.h:57</a></div></div>
-<div class="ttc" id="asvm_8h_html_a39fca1837c5ce7715cbf571669660c13a3d33483aba8bab1af6c7a3a56141cd8f"><div class="ttname"><a href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a3d33483aba8bab1af6c7a3a56141cd8f">VMCB_AVIC</a></div><div class="ttdeci">@ VMCB_AVIC</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00061">svm.h:61</a></div></div>
-<div class="ttc" id="asvm_8h_html_a39fca1837c5ce7715cbf571669660c13a47e03f1935e6feea250cf3d13fa4c71e"><div class="ttname"><a href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a47e03f1935e6feea250cf3d13fa4c71e">VMCB_INTR</a></div><div class="ttdeci">@ VMCB_INTR</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00053">svm.h:53</a></div></div>
-<div class="ttc" id="asvm_8h_html_a39fca1837c5ce7715cbf571669660c13a4c1bf85b59430883fd2a9f4eebbac975"><div class="ttname"><a href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a4c1bf85b59430883fd2a9f4eebbac975">VMCB_CR</a></div><div class="ttdeci">@ VMCB_CR</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00055">svm.h:55</a></div></div>
-<div class="ttc" id="asvm_8h_html_a39fca1837c5ce7715cbf571669660c13a7c9727e792c945164c49fbd9793c4e97"><div class="ttname"><a href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a7c9727e792c945164c49fbd9793c4e97">VMCB_NPT</a></div><div class="ttdeci">@ VMCB_NPT</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00054">svm.h:54</a></div></div>
-<div class="ttc" id="asvm_8h_html_a39fca1837c5ce7715cbf571669660c13a7ffead4bb2fd939a3b453692fdc4664a"><div class="ttname"><a href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a7ffead4bb2fd939a3b453692fdc4664a">VMCB_LBR</a></div><div class="ttdeci">@ VMCB_LBR</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00060">svm.h:60</a></div></div>
-<div class="ttc" id="asvm_8h_html_a39fca1837c5ce7715cbf571669660c13aa5c3bcc8811c26fdc5e7cda9a9b213e1"><div class="ttname"><a href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13aa5c3bcc8811c26fdc5e7cda9a9b213e1">VMCB_INTERCEPTS</a></div><div class="ttdeci">@ VMCB_INTERCEPTS</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00049">svm.h:49</a></div></div>
-<div class="ttc" id="asvm_8h_html_a39fca1837c5ce7715cbf571669660c13aadb6ebcdeea82b3c1ad950e8e2433d8c"><div class="ttname"><a href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13aadb6ebcdeea82b3c1ad950e8e2433d8c">VMCB_SW</a></div><div class="ttdeci">@ VMCB_SW</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00065">svm.h:65</a></div></div>
-<div class="ttc" id="asvm_8h_html_a39fca1837c5ce7715cbf571669660c13ab13d3c949ef62a4213fe70e2ed836b91"><div class="ttname"><a href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13ab13d3c949ef62a4213fe70e2ed836b91">VMCB_SEG</a></div><div class="ttdeci">@ VMCB_SEG</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00058">svm.h:58</a></div></div>
-<div class="ttc" id="asvm_8h_html_a39fca1837c5ce7715cbf571669660c13ac328b9fd73e1b9d219f9890f938509e1"><div class="ttname"><a href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13ac328b9fd73e1b9d219f9890f938509e1">VMCB_CR2</a></div><div class="ttdeci">@ VMCB_CR2</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00059">svm.h:59</a></div></div>
-<div class="ttc" id="asvm_8h_html_a39fca1837c5ce7715cbf571669660c13ac7c020c96383ecc6a3d358e1fdd99be7"><div class="ttname"><a href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13ac7c020c96383ecc6a3d358e1fdd99be7">VMCB_DR</a></div><div class="ttdeci">@ VMCB_DR</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00056">svm.h:56</a></div></div>
-<div class="ttc" id="asvm_8h_html_a39fca1837c5ce7715cbf571669660c13ace538c75028034c3e121fd96a0bdaf64"><div class="ttname"><a href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13ace538c75028034c3e121fd96a0bdaf64">VMCB_ASID</a></div><div class="ttdeci">@ VMCB_ASID</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00052">svm.h:52</a></div></div>
+<div class="line">    (1U &lt;&lt; <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4aa5c3bcc8811c26fdc5e7cda9a9b213e1">VMCB_INTERCEPTS</a>) | (1U &lt;&lt; <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a0b96a6cb7dc2eb2f1e2471f9fdfa6972">VMCB_PERM_MAP</a>) |   \</div>
+<div class="line">    (1U &lt;&lt; <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4ace538c75028034c3e121fd96a0bdaf64">VMCB_ASID</a>) | (1U &lt;&lt; <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a47e03f1935e6feea250cf3d13fa4c71e">VMCB_INTR</a>) |         \</div>
+<div class="line">    (1U &lt;&lt; <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a7c9727e792c945164c49fbd9793c4e97">VMCB_NPT</a>) | (1U &lt;&lt; <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a4c1bf85b59430883fd2a9f4eebbac975">VMCB_CR</a>) | (1U &lt;&lt; <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4ac7c020c96383ecc6a3d358e1fdd99be7">VMCB_DR</a>) |  \</div>
+<div class="line">    (1U &lt;&lt; <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a1c1bbe2afa896e3b5fc2f2d850eb41b3">VMCB_DT</a>) | (1U &lt;&lt; <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4ab13d3c949ef62a4213fe70e2ed836b91">VMCB_SEG</a>) | (1U &lt;&lt; <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4ac328b9fd73e1b9d219f9890f938509e1">VMCB_CR2</a>) | \</div>
+<div class="line">    (1U &lt;&lt; <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a7ffead4bb2fd939a3b453692fdc4664a">VMCB_LBR</a>) | (1U &lt;&lt; <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a3d33483aba8bab1af6c7a3a56141cd8f">VMCB_AVIC</a>) |          \</div>
+<div class="line">    (1U &lt;&lt; <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4aadb6ebcdeea82b3c1ad950e8e2433d8c">VMCB_SW</a>))</div>
+<div class="ttc" id="asvm_8h_html_aaf8fd5f0e57d456151c951e0f3715fc4a0b96a6cb7dc2eb2f1e2471f9fdfa6972"><div class="ttname"><a href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a0b96a6cb7dc2eb2f1e2471f9fdfa6972">VMCB_PERM_MAP</a></div><div class="ttdeci">@ VMCB_PERM_MAP</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00051">svm.h:51</a></div></div>
+<div class="ttc" id="asvm_8h_html_aaf8fd5f0e57d456151c951e0f3715fc4a1c1bbe2afa896e3b5fc2f2d850eb41b3"><div class="ttname"><a href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a1c1bbe2afa896e3b5fc2f2d850eb41b3">VMCB_DT</a></div><div class="ttdeci">@ VMCB_DT</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00057">svm.h:57</a></div></div>
+<div class="ttc" id="asvm_8h_html_aaf8fd5f0e57d456151c951e0f3715fc4a3d33483aba8bab1af6c7a3a56141cd8f"><div class="ttname"><a href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a3d33483aba8bab1af6c7a3a56141cd8f">VMCB_AVIC</a></div><div class="ttdeci">@ VMCB_AVIC</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00061">svm.h:61</a></div></div>
+<div class="ttc" id="asvm_8h_html_aaf8fd5f0e57d456151c951e0f3715fc4a47e03f1935e6feea250cf3d13fa4c71e"><div class="ttname"><a href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a47e03f1935e6feea250cf3d13fa4c71e">VMCB_INTR</a></div><div class="ttdeci">@ VMCB_INTR</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00053">svm.h:53</a></div></div>
+<div class="ttc" id="asvm_8h_html_aaf8fd5f0e57d456151c951e0f3715fc4a4c1bf85b59430883fd2a9f4eebbac975"><div class="ttname"><a href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a4c1bf85b59430883fd2a9f4eebbac975">VMCB_CR</a></div><div class="ttdeci">@ VMCB_CR</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00055">svm.h:55</a></div></div>
+<div class="ttc" id="asvm_8h_html_aaf8fd5f0e57d456151c951e0f3715fc4a7c9727e792c945164c49fbd9793c4e97"><div class="ttname"><a href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a7c9727e792c945164c49fbd9793c4e97">VMCB_NPT</a></div><div class="ttdeci">@ VMCB_NPT</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00054">svm.h:54</a></div></div>
+<div class="ttc" id="asvm_8h_html_aaf8fd5f0e57d456151c951e0f3715fc4a7ffead4bb2fd939a3b453692fdc4664a"><div class="ttname"><a href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a7ffead4bb2fd939a3b453692fdc4664a">VMCB_LBR</a></div><div class="ttdeci">@ VMCB_LBR</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00060">svm.h:60</a></div></div>
+<div class="ttc" id="asvm_8h_html_aaf8fd5f0e57d456151c951e0f3715fc4aa5c3bcc8811c26fdc5e7cda9a9b213e1"><div class="ttname"><a href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4aa5c3bcc8811c26fdc5e7cda9a9b213e1">VMCB_INTERCEPTS</a></div><div class="ttdeci">@ VMCB_INTERCEPTS</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00049">svm.h:49</a></div></div>
+<div class="ttc" id="asvm_8h_html_aaf8fd5f0e57d456151c951e0f3715fc4aadb6ebcdeea82b3c1ad950e8e2433d8c"><div class="ttname"><a href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4aadb6ebcdeea82b3c1ad950e8e2433d8c">VMCB_SW</a></div><div class="ttdeci">@ VMCB_SW</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00065">svm.h:65</a></div></div>
+<div class="ttc" id="asvm_8h_html_aaf8fd5f0e57d456151c951e0f3715fc4ab13d3c949ef62a4213fe70e2ed836b91"><div class="ttname"><a href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4ab13d3c949ef62a4213fe70e2ed836b91">VMCB_SEG</a></div><div class="ttdeci">@ VMCB_SEG</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00058">svm.h:58</a></div></div>
+<div class="ttc" id="asvm_8h_html_aaf8fd5f0e57d456151c951e0f3715fc4ac328b9fd73e1b9d219f9890f938509e1"><div class="ttname"><a href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4ac328b9fd73e1b9d219f9890f938509e1">VMCB_CR2</a></div><div class="ttdeci">@ VMCB_CR2</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00059">svm.h:59</a></div></div>
+<div class="ttc" id="asvm_8h_html_aaf8fd5f0e57d456151c951e0f3715fc4ac7c020c96383ecc6a3d358e1fdd99be7"><div class="ttname"><a href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4ac7c020c96383ecc6a3d358e1fdd99be7">VMCB_DR</a></div><div class="ttdeci">@ VMCB_DR</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00056">svm.h:56</a></div></div>
+<div class="ttc" id="asvm_8h_html_aaf8fd5f0e57d456151c951e0f3715fc4ace538c75028034c3e121fd96a0bdaf64"><div class="ttname"><a href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4ace538c75028034c3e121fd96a0bdaf64">VMCB_ASID</a></div><div class="ttdeci">@ VMCB_ASID</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00052">svm.h:52</a></div></div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="svm_8h_source.html#l00068">68</a> of file <a class="el" href="svm_8h_source.html">svm.h</a>.</p>
 
@@ -781,7 +781,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define VMCB_ALWAYS_DIRTY_MASK&#160;&#160;&#160;((1U &lt;&lt; <a class="el" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a47e03f1935e6feea250cf3d13fa4c71e">VMCB_INTR</a>) | (1U &lt;&lt; <a class="el" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13ac328b9fd73e1b9d219f9890f938509e1">VMCB_CR2</a>))</td>
+          <td class="memname">#define VMCB_ALWAYS_DIRTY_MASK&#160;&#160;&#160;((1U &lt;&lt; <a class="el" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a47e03f1935e6feea250cf3d13fa4c71e">VMCB_INTR</a>) | (1U &lt;&lt; <a class="el" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4ac328b9fd73e1b9d219f9890f938509e1">VMCB_CR2</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -791,8 +791,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a39fca1837c5ce7715cbf571669660c13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39fca1837c5ce7715cbf571669660c13">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="aaf8fd5f0e57d456151c951e0f3715fc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf8fd5f0e57d456151c951e0f3715fc4">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -803,40 +803,40 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a39fca1837c5ce7715cbf571669660c13aa5c3bcc8811c26fdc5e7cda9a9b213e1"></a>VMCB_INTERCEPTS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a39fca1837c5ce7715cbf571669660c13a0b96a6cb7dc2eb2f1e2471f9fdfa6972"></a>VMCB_PERM_MAP&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a39fca1837c5ce7715cbf571669660c13ace538c75028034c3e121fd96a0bdaf64"></a>VMCB_ASID&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a39fca1837c5ce7715cbf571669660c13a47e03f1935e6feea250cf3d13fa4c71e"></a>VMCB_INTR&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a39fca1837c5ce7715cbf571669660c13a7c9727e792c945164c49fbd9793c4e97"></a>VMCB_NPT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a39fca1837c5ce7715cbf571669660c13a4c1bf85b59430883fd2a9f4eebbac975"></a>VMCB_CR&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a39fca1837c5ce7715cbf571669660c13ac7c020c96383ecc6a3d358e1fdd99be7"></a>VMCB_DR&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a39fca1837c5ce7715cbf571669660c13a1c1bbe2afa896e3b5fc2f2d850eb41b3"></a>VMCB_DT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a39fca1837c5ce7715cbf571669660c13ab13d3c949ef62a4213fe70e2ed836b91"></a>VMCB_SEG&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a39fca1837c5ce7715cbf571669660c13ac328b9fd73e1b9d219f9890f938509e1"></a>VMCB_CR2&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a39fca1837c5ce7715cbf571669660c13a7ffead4bb2fd939a3b453692fdc4664a"></a>VMCB_LBR&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a39fca1837c5ce7715cbf571669660c13a3d33483aba8bab1af6c7a3a56141cd8f"></a>VMCB_AVIC&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a39fca1837c5ce7715cbf571669660c13aadb6ebcdeea82b3c1ad950e8e2433d8c"></a>VMCB_SW&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aaf8fd5f0e57d456151c951e0f3715fc4aa5c3bcc8811c26fdc5e7cda9a9b213e1"></a>VMCB_INTERCEPTS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf8fd5f0e57d456151c951e0f3715fc4a0b96a6cb7dc2eb2f1e2471f9fdfa6972"></a>VMCB_PERM_MAP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf8fd5f0e57d456151c951e0f3715fc4ace538c75028034c3e121fd96a0bdaf64"></a>VMCB_ASID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf8fd5f0e57d456151c951e0f3715fc4a47e03f1935e6feea250cf3d13fa4c71e"></a>VMCB_INTR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf8fd5f0e57d456151c951e0f3715fc4a7c9727e792c945164c49fbd9793c4e97"></a>VMCB_NPT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf8fd5f0e57d456151c951e0f3715fc4a4c1bf85b59430883fd2a9f4eebbac975"></a>VMCB_CR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf8fd5f0e57d456151c951e0f3715fc4ac7c020c96383ecc6a3d358e1fdd99be7"></a>VMCB_DR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf8fd5f0e57d456151c951e0f3715fc4a1c1bbe2afa896e3b5fc2f2d850eb41b3"></a>VMCB_DT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf8fd5f0e57d456151c951e0f3715fc4ab13d3c949ef62a4213fe70e2ed836b91"></a>VMCB_SEG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf8fd5f0e57d456151c951e0f3715fc4ac328b9fd73e1b9d219f9890f938509e1"></a>VMCB_CR2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf8fd5f0e57d456151c951e0f3715fc4a7ffead4bb2fd939a3b453692fdc4664a"></a>VMCB_LBR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf8fd5f0e57d456151c951e0f3715fc4a3d33483aba8bab1af6c7a3a56141cd8f"></a>VMCB_AVIC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf8fd5f0e57d456151c951e0f3715fc4aadb6ebcdeea82b3c1ad950e8e2433d8c"></a>VMCB_SW&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="svm_8h_source.html#l00048">48</a> of file <a class="el" href="svm_8h_source.html">svm.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;     {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13aa5c3bcc8811c26fdc5e7cda9a9b213e1">VMCB_INTERCEPTS</a>, <span class="comment">/* Intercept vectors, TSC offset,</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4aa5c3bcc8811c26fdc5e7cda9a9b213e1">VMCB_INTERCEPTS</a>, <span class="comment">/* Intercept vectors, TSC offset,</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">                pause filter count */</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a0b96a6cb7dc2eb2f1e2471f9fdfa6972">VMCB_PERM_MAP</a>,   <span class="comment">/* IOPM Base and MSRPM Base */</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13ace538c75028034c3e121fd96a0bdaf64">VMCB_ASID</a>,   <span class="comment">/* ASID */</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a47e03f1935e6feea250cf3d13fa4c71e">VMCB_INTR</a>,   <span class="comment">/* int_ctl, int_vector */</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a7c9727e792c945164c49fbd9793c4e97">VMCB_NPT</a>,        <span class="comment">/* npt_en, nCR3, gPAT */</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a4c1bf85b59430883fd2a9f4eebbac975">VMCB_CR</a>,     <span class="comment">/* CR0, CR3, CR4, EFER */</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13ac7c020c96383ecc6a3d358e1fdd99be7">VMCB_DR</a>,         <span class="comment">/* DR6, DR7 */</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a1c1bbe2afa896e3b5fc2f2d850eb41b3">VMCB_DT</a>,         <span class="comment">/* GDT, IDT */</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13ab13d3c949ef62a4213fe70e2ed836b91">VMCB_SEG</a>,        <span class="comment">/* CS, DS, SS, ES, CPL */</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13ac328b9fd73e1b9d219f9890f938509e1">VMCB_CR2</a>,        <span class="comment">/* CR2 only */</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a7ffead4bb2fd939a3b453692fdc4664a">VMCB_LBR</a>,        <span class="comment">/* DBGCTL, BR_FROM, BR_TO, LAST_EX_FROM, LAST_EX_TO */</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a3d33483aba8bab1af6c7a3a56141cd8f">VMCB_AVIC</a>,       <span class="comment">/* AVIC APIC_BAR, AVIC APIC_BACKING_PAGE,</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a0b96a6cb7dc2eb2f1e2471f9fdfa6972">VMCB_PERM_MAP</a>,   <span class="comment">/* IOPM Base and MSRPM Base */</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4ace538c75028034c3e121fd96a0bdaf64">VMCB_ASID</a>,   <span class="comment">/* ASID */</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a47e03f1935e6feea250cf3d13fa4c71e">VMCB_INTR</a>,   <span class="comment">/* int_ctl, int_vector */</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a7c9727e792c945164c49fbd9793c4e97">VMCB_NPT</a>,        <span class="comment">/* npt_en, nCR3, gPAT */</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a4c1bf85b59430883fd2a9f4eebbac975">VMCB_CR</a>,     <span class="comment">/* CR0, CR3, CR4, EFER */</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4ac7c020c96383ecc6a3d358e1fdd99be7">VMCB_DR</a>,         <span class="comment">/* DR6, DR7 */</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a1c1bbe2afa896e3b5fc2f2d850eb41b3">VMCB_DT</a>,         <span class="comment">/* GDT, IDT */</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4ab13d3c949ef62a4213fe70e2ed836b91">VMCB_SEG</a>,        <span class="comment">/* CS, DS, SS, ES, CPL */</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4ac328b9fd73e1b9d219f9890f938509e1">VMCB_CR2</a>,        <span class="comment">/* CR2 only */</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a7ffead4bb2fd939a3b453692fdc4664a">VMCB_LBR</a>,        <span class="comment">/* DBGCTL, BR_FROM, BR_TO, LAST_EX_FROM, LAST_EX_TO */</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a3d33483aba8bab1af6c7a3a56141cd8f">VMCB_AVIC</a>,       <span class="comment">/* AVIC APIC_BAR, AVIC APIC_BACKING_PAGE,</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">              * AVIC PHYSICAL_TABLE pointer,</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">              * AVIC LOGICAL_TABLE pointer</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">              */</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13aadb6ebcdeea82b3c1ad950e8e2433d8c">VMCB_SW</a> = 31,    <span class="comment">/* Reserved for hypervisor/software use */</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4aadb6ebcdeea82b3c1ad950e8e2433d8c">VMCB_SW</a> = 31,    <span class="comment">/* Reserved for hypervisor/software use */</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
 </div><!-- fragment -->
 </div>
@@ -1260,7 +1260,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;    <span class="keywordtype">int</span> ret;</div>
 <div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;    <span class="keyword">struct </span>kvm_vcpu *vcpu = &amp;svm-&gt;<a class="code" href="structvcpu__svm.html#af164d8d741d9ea90dae6a46974d29f9e">vcpu</a>;</div>
 <div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160; </div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="x86_8c.html#a04af9ab3eee510b54cba17a6fa94ee04">enable_apicv</a> || !<a class="code" href="irq_8h.html#a96951e3a1bfa402d8bee67713e267b39">irqchip_in_kernel</a>(vcpu-&gt;kvm))</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="x86_8c.html#a04af9ab3eee510b54cba17a6fa94ee04">enable_apicv</a> || !<a class="code" href="arm__vgic_8h.html#a28961fa9a6313f335b274e0fac503bcf">irqchip_in_kernel</a>(vcpu-&gt;kvm))</div>
 <div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160; </div>
 <div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;    ret = <a class="code" href="avic_8c.html#aefc63eafb35c1efd94f6d53e7d0b20d5">avic_init_backing_page</a>(vcpu);</div>
@@ -1273,8 +1273,8 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160; </div>
 <div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    <span class="keywordflow">return</span> ret;</div>
 <div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;}</div>
+<div class="ttc" id="aarm__vgic_8h_html_a28961fa9a6313f335b274e0fac503bcf"><div class="ttname"><a href="arm__vgic_8h.html#a28961fa9a6313f335b274e0fac503bcf">irqchip_in_kernel</a></div><div class="ttdeci">#define irqchip_in_kernel(k)</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00392">arm_vgic.h:392</a></div></div>
 <div class="ttc" id="aavic_8c_html_aefc63eafb35c1efd94f6d53e7d0b20d5"><div class="ttname"><a href="avic_8c.html#aefc63eafb35c1efd94f6d53e7d0b20d5">avic_init_backing_page</a></div><div class="ttdeci">static int avic_init_backing_page(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="avic_8c_source.html#l00277">avic.c:277</a></div></div>
-<div class="ttc" id="airq_8h_html_a96951e3a1bfa402d8bee67713e267b39"><div class="ttname"><a href="irq_8h.html#a96951e3a1bfa402d8bee67713e267b39">irqchip_in_kernel</a></div><div class="ttdeci">static int irqchip_in_kernel(struct kvm *kvm)</div><div class="ttdef"><b>Definition:</b> <a href="irq_8h_source.html#l00090">irq.h:90</a></div></div>
 <div class="ttc" id="astructvcpu__svm_html_ae08ffe38b03c1c44686c57c274553f59"><div class="ttname"><a href="structvcpu__svm.html#ae08ffe38b03c1c44686c57c274553f59">vcpu_svm::dfr_reg</a></div><div class="ttdeci">u32 dfr_reg</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00268">svm.h:268</a></div></div>
 <div class="ttc" id="astructvcpu__svm_html_af217181f505db1b71c48743233032539"><div class="ttname"><a href="structvcpu__svm.html#af217181f505db1b71c48743233032539">vcpu_svm::ir_list</a></div><div class="ttdeci">struct list_head ir_list</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00270">svm.h:278</a></div></div>
 <div class="ttc" id="astructvcpu__svm_html_af38f3c63a81a10aae69b308aa175d618"><div class="ttname"><a href="structvcpu__svm.html#af38f3c63a81a10aae69b308aa175d618">vcpu_svm::ir_list_lock</a></div><div class="ttdeci">spinlock_t ir_list_lock</div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00279">svm.h:279</a></div></div>
@@ -1284,23 +1284,22 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="svm_8h_a8e0a22138080054f4ac064064402f74a_cgraph.png" border="0" usemap="#asvm_8h_a8e0a22138080054f4ac064064402f74a_cgraph" alt=""/></div>
 <map name="asvm_8h_a8e0a22138080054f4ac064064402f74a_cgraph" id="asvm_8h_a8e0a22138080054f4ac064064402f74a_cgraph">
-<area shape="rect" title=" " alt="" coords="5,547,120,574"/>
-<area shape="rect" href="avic_8c.html#aefc63eafb35c1efd94f6d53e7d0b20d5" title=" " alt="" coords="168,522,343,549"/>
-<area shape="rect" href="irq_8h.html#a96951e3a1bfa402d8bee67713e267b39" title=" " alt="" coords="189,573,321,599"/>
-<area shape="rect" href="avic_8c.html#a8cfb06497cbd5960a4a909c44e701f06" title=" " alt="" coords="419,431,576,472"/>
-<area shape="rect" href="lapic_8c.html#a8c6616d2cbae35632aa5debb15b552ec" title=" " alt="" coords="391,497,604,523"/>
-<area shape="rect" href="x86_8c.html#a21212b8e1a82cdc8ac696137981d8d7a" title=" " alt="" coords="417,547,578,574"/>
-<area shape="rect" href="svm_8h.html#a83e420c88631faf9613ea3caa72c63b7" title=" " alt="" coords="462,598,533,625"/>
-<area shape="rect" href="svm_8h.html#ac27f6fe2ff4beeb5ad1b11681d0386fd" title=" " alt="" coords="697,438,804,465"/>
-<area shape="rect" href="x86_8c.html#a0c0c5e35bc626e4140927bf15b4881f9" title=" " alt="" coords="652,493,849,519"/>
-<area shape="rect" href="kvm__main_8c.html#a5132836c5be1763ca353ca2489a7fe23" title=" " alt="" coords="699,787,802,814"/>
+<area shape="rect" title=" " alt="" coords="5,526,120,553"/>
+<area shape="rect" href="avic_8c.html#aefc63eafb35c1efd94f6d53e7d0b20d5" title=" " alt="" coords="168,526,343,553"/>
+<area shape="rect" href="avic_8c.html#a8cfb06497cbd5960a4a909c44e701f06" title=" " alt="" coords="419,435,576,476"/>
+<area shape="rect" href="lapic_8c.html#a8c6616d2cbae35632aa5debb15b552ec" title=" " alt="" coords="391,501,604,527"/>
+<area shape="rect" href="x86_8c.html#a21212b8e1a82cdc8ac696137981d8d7a" title=" " alt="" coords="417,551,578,578"/>
+<area shape="rect" href="svm_8h.html#a83e420c88631faf9613ea3caa72c63b7" title=" " alt="" coords="462,602,533,629"/>
+<area shape="rect" href="svm_8h.html#ac27f6fe2ff4beeb5ad1b11681d0386fd" title=" " alt="" coords="697,442,804,469"/>
+<area shape="rect" href="x86_8c.html#a0c0c5e35bc626e4140927bf15b4881f9" title=" " alt="" coords="652,497,849,523"/>
+<area shape="rect" href="kvm__main_8c.html#a5132836c5be1763ca353ca2489a7fe23" title=" " alt="" coords="699,791,802,818"/>
 <area shape="rect" href="kvm__main_8c.html#ac76f506181e49aa4800bb202e11cb2b3" title=" " alt="" coords="903,147,1106,174"/>
 <area shape="rect" href="kvm__main_8c.html#ab790fe1e5bd86339acfc80a95efddf4c" title=" " alt="" coords="1183,5,1354,47"/>
 <area shape="rect" href="kvm__main_8c.html#a8f5a06af032a1edb199b4ae393b2de8e" title=" " alt="" coords="1160,71,1377,98"/>
 <area shape="rect" href="guest__memfd_8c.html#abaf64b8cb9e32ccb368d1d9c49d0bb02" title=" " alt="" coords="1201,122,1336,149"/>
 <area shape="rect" href="guest__memfd_8c.html#a905ecfa162a290dceb1c7d5678e2a70f" title=" " alt="" coords="1975,198,2126,225"/>
 <area shape="rect" href="kvm__main_8c.html#ac81a7d714d0668ccea6d0c2ddfd0fed5" title=" " alt="" coords="1197,610,1340,637"/>
-<area shape="rect" href="guest__memfd_8c.html#a2eab57d9fb8529d3751b5c8179d881c9" title=" " alt="" coords="2232,198,2387,225"/>
+<area shape="rect" href="guest__memfd_8c.html#a2eab57d9fb8529d3751b5c8179d881c9" title=" " alt="" coords="2236,198,2391,225"/>
 <area shape="rect" href="kvm__main_8c.html#a52d56a5dc447602839375289b5bbffb2" title=" " alt="" coords="1707,610,1883,637"/>
 <area shape="rect" href="kvm__main_8c.html#a05eed662dd45e4e4f7485e3158d95a3b" title=" " alt="" coords="1425,303,1644,330"/>
 <area shape="rect" href="kvm__main_8c.html#a8c9bd99a64bbedb0930e29ed4dcc7897" title=" " alt="" coords="1453,610,1617,637"/>
@@ -1309,31 +1308,32 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="kvm__main_8c.html#afdb5cea8958921b2ea9bd3a29cf9d7a6" title=" " alt="" coords="1455,711,1615,738"/>
 <area shape="rect" href="kvm__main_8c.html#a6dd13a049fee9663450eebbf2ac16faa" title=" " alt="" coords="1449,493,1620,535"/>
 <area shape="rect" href="kvm__main_8c.html#a192569033b972982f6b53e13666ef82b" title=" " alt="" coords="1431,762,1638,789"/>
-<area shape="rect" href="kvm__main_8c.html#aa89329e461345f4a586065895ca072c6" title=" " alt="" coords="2213,610,2405,637"/>
-<area shape="rect" href="kvm__main_8c.html#a115855e32d0da82706ba0bf22d90d8f1" title=" " alt="" coords="1965,711,2136,738"/>
-<area shape="rect" href="kvm__main_8c.html#a6178ec8efee3ce8e53d84403b2a25401" title=" " alt="" coords="1945,661,2156,687"/>
-<area shape="rect" href="kvm__main_8c.html#ada893d7e7d49d1023d23653b23944572" title=" " alt="" coords="2229,711,2390,738"/>
-<area shape="rect" href="kvm__main_8c.html#a1a0266e85b304bdbde46a83f921d9606" title=" " alt="" coords="2204,661,2415,687"/>
-<area shape="rect" href="kvm__main_8c.html#a578857fc65c8fabf9b425ff0b55a5fd3" title=" " alt="" coords="2228,762,2391,789"/>
-<area shape="rect" href="kvm__main_8c.html#aa3b1664c58e5dab933e8659d884d56f3" title=" " alt="" coords="2223,813,2396,839"/>
+<area shape="rect" href="kvm__main_8c.html#aa89329e461345f4a586065895ca072c6" title=" " alt="" coords="2217,599,2409,626"/>
+<area shape="rect" href="kvm__main_8c.html#a115855e32d0da82706ba0bf22d90d8f1" title=" " alt="" coords="1965,739,2136,766"/>
+<area shape="rect" href="kvm__main_8c.html#a6178ec8efee3ce8e53d84403b2a25401" title=" " alt="" coords="1945,669,2156,695"/>
+<area shape="rect" href="kvm__main_8c.html#ada893d7e7d49d1023d23653b23944572" title=" " alt="" coords="2233,751,2394,778"/>
+<area shape="rect" href="kvm__main_8c.html#a1a0266e85b304bdbde46a83f921d9606" title=" " alt="" coords="2208,701,2419,727"/>
+<area shape="rect" href="kvm__main_8c.html#a578857fc65c8fabf9b425ff0b55a5fd3" title=" " alt="" coords="2232,802,2395,829"/>
+<area shape="rect" href="kvm__main_8c.html#aa3b1664c58e5dab933e8659d884d56f3" title=" " alt="" coords="2227,853,2400,879"/>
+<area shape="rect" href="x86_8c.html#ae7e25dec8e0af366fb3db41dc9881970" title=" " alt="" coords="2204,650,2423,677"/>
 <area shape="rect" href="x86_8c.html#af7325960c06aa482e6f168f881d83069" title=" " alt="" coords="1692,325,1897,367"/>
 <area shape="rect" href="kvm__main_8c.html#aab592fb3a4d6204c86d8f99caa0986ba" title=" " alt="" coords="1952,274,2149,301"/>
 <area shape="rect" href="kvm__main_8c.html#ae2d9291adcda0ba0f7a20350dabdd418" title=" " alt="" coords="1720,223,1869,250"/>
-<area shape="rect" href="mmu_8c.html#a58fe7b43995ae8c20c597e1bb9c4c007" title=" " alt="" coords="1960,787,2141,828"/>
-<area shape="rect" href="kvm__main_8c.html#a31dbd36d8363fc2e5979b3976ebc0dbb" title=" " alt="" coords="1955,852,2146,893"/>
-<area shape="rect" href="kvm__main_8c.html#aa87d0b55e37a312b7291fa9b5c83634c" title=" " alt="" coords="1973,918,2128,945"/>
+<area shape="rect" href="mmu_8c.html#a58fe7b43995ae8c20c597e1bb9c4c007" title=" " alt="" coords="1960,791,2141,832"/>
+<area shape="rect" href="kvm__main_8c.html#a31dbd36d8363fc2e5979b3976ebc0dbb" title=" " alt="" coords="1955,856,2146,897"/>
+<area shape="rect" href="kvm__main_8c.html#aa87d0b55e37a312b7291fa9b5c83634c" title=" " alt="" coords="1973,922,2128,949"/>
 <area shape="rect" href="kvm__main_8c.html#a40ed7705420af10446677d1c99a0978e" title=" " alt="" coords="1705,442,1884,469"/>
 <area shape="rect" href="x86_8c.html#a14568e065745512e03b3088070848289" title=" " alt="" coords="1692,493,1897,535"/>
 <area shape="rect" href="dirty__ring_8c.html#a38d9bd671fa9181708075184e77eca3a" title=" " alt="" coords="1709,559,1880,586"/>
-<area shape="rect" href="kvm__main_8c.html#a055190afb6bce32ba87e7fea907ec1ec" title=" " alt="" coords="959,787,1050,814"/>
-<area shape="rect" href="kvm__main_8c.html#a99f99281cc81d5cd69f5825ccb8793b4" title=" " alt="" coords="897,838,1112,865"/>
-<area shape="rect" href="kvm__main_8c.html#a7c20e0f654f0b4472c3833f0a563e11e" title=" " alt="" coords="1205,762,1333,789"/>
-<area shape="rect" href="kvm__main_8c.html#aa77d8fc2ee9fe5965c45f1d0989eb266" title=" " alt="" coords="1191,813,1347,839"/>
-<area shape="rect" href="kvm__main_8c.html#a63ec3e18db03a212e6e84391b5025689" title=" " alt="" coords="1449,943,1620,970"/>
-<area shape="rect" href="kvm__main_8c.html#ab58025ccc253a102c64561fa61c2a514" title=" " alt="" coords="1719,969,1871,995"/>
-<area shape="rect" href="kvm__main_8c.html#a77ec4b9140d69a05f3b4e7836cc03a96" title=" " alt="" coords="1969,969,2132,995"/>
-<area shape="rect" href="kvm__main_8c.html#adfbe9f59cac426f2ff01ab4fcfd631a7" title=" " alt="" coords="1747,1019,1842,1046"/>
-<area shape="rect" href="kvm__main_8c.html#a6c7165822622ebbd29159771905bd317" title=" " alt="" coords="1171,863,1367,890"/>
+<area shape="rect" href="kvm__main_8c.html#a055190afb6bce32ba87e7fea907ec1ec" title=" " alt="" coords="959,791,1050,818"/>
+<area shape="rect" href="kvm__main_8c.html#a99f99281cc81d5cd69f5825ccb8793b4" title=" " alt="" coords="897,842,1112,869"/>
+<area shape="rect" href="kvm__main_8c.html#a7c20e0f654f0b4472c3833f0a563e11e" title=" " alt="" coords="1205,766,1333,793"/>
+<area shape="rect" href="kvm__main_8c.html#aa77d8fc2ee9fe5965c45f1d0989eb266" title=" " alt="" coords="1191,817,1347,843"/>
+<area shape="rect" href="kvm__main_8c.html#a63ec3e18db03a212e6e84391b5025689" title=" " alt="" coords="1449,947,1620,974"/>
+<area shape="rect" href="kvm__main_8c.html#ab58025ccc253a102c64561fa61c2a514" title=" " alt="" coords="1719,973,1871,999"/>
+<area shape="rect" href="kvm__main_8c.html#a77ec4b9140d69a05f3b4e7836cc03a96" title=" " alt="" coords="1969,973,2132,999"/>
+<area shape="rect" href="kvm__main_8c.html#adfbe9f59cac426f2ff01ab4fcfd631a7" title=" " alt="" coords="1747,1023,1842,1050"/>
+<area shape="rect" href="kvm__main_8c.html#a6c7165822622ebbd29159771905bd317" title=" " alt="" coords="1171,867,1367,894"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1758,7 +1758,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l01130"></a><span class="lineno"> 1130</span>&#160;    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l01131"></a><span class="lineno"> 1131</span>&#160;        <a class="code" href="avic_8c.html#ac41a57fe4f855076b5c5718def5bd6d3">avic_deactivate_vmcb</a>(svm);</div>
 <div class="line"><a name="l01132"></a><span class="lineno"> 1132</span>&#160;    }</div>
-<div class="line"><a name="l01133"></a><span class="lineno"> 1133</span>&#160;    <a class="code" href="svm_8h.html#ab83edec724698a20d66a086a1900aa27">vmcb_mark_dirty</a>(vmcb, <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a3d33483aba8bab1af6c7a3a56141cd8f">VMCB_AVIC</a>);</div>
+<div class="line"><a name="l01133"></a><span class="lineno"> 1133</span>&#160;    <a class="code" href="svm_8h.html#ab83edec724698a20d66a086a1900aa27">vmcb_mark_dirty</a>(vmcb, <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a3d33483aba8bab1af6c7a3a56141cd8f">VMCB_AVIC</a>);</div>
 <div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160;}</div>
 <div class="ttc" id="aavic_8c_html_ae9f162404fdb37bba372d0c9cdc043ee"><div class="ttname"><a href="avic_8c.html#ae9f162404fdb37bba372d0c9cdc043ee">avic_apicv_post_state_restore</a></div><div class="ttdeci">void avic_apicv_post_state_restore(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="avic_8c_source.html#l00738">avic.c:738</a></div></div>
 <div class="ttc" id="alapic_8h_html_a1d8c9378fcbf62390a89dc3b7f0bdbd4"><div class="ttname"><a href="lapic_8h.html#a1d8c9378fcbf62390a89dc3b7f0bdbd4">lapic_in_kernel</a></div><div class="ttdeci">static bool lapic_in_kernel(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="lapic_8h_source.html#l00186">lapic.h:186</a></div></div>
@@ -4282,7 +4282,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160; </div>
 <div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="x86_8h.html#ab226ac0135835109146350d5db3d4031">kvm_pause_in_guest</a>(vcpu-&gt;kvm)) {</div>
 <div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;        vmcb01-&gt;control.pause_filter_count = vmcb02-&gt;control.pause_filter_count;</div>
-<div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;        <a class="code" href="svm_8h.html#ab83edec724698a20d66a086a1900aa27">vmcb_mark_dirty</a>(vmcb01, <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13aa5c3bcc8811c26fdc5e7cda9a9b213e1">VMCB_INTERCEPTS</a>);</div>
+<div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;        <a class="code" href="svm_8h.html#ab83edec724698a20d66a086a1900aa27">vmcb_mark_dirty</a>(vmcb01, <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4aa5c3bcc8811c26fdc5e7cda9a9b213e1">VMCB_INTERCEPTS</a>);</div>
 <div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160; </div>
 <div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;    }</div>
 <div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160; </div>
@@ -4345,7 +4345,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;    svm-&gt;<a class="code" href="structvcpu__svm.html#af164d8d741d9ea90dae6a46974d29f9e">vcpu</a>.arch.tsc_offset = svm-&gt;<a class="code" href="structvcpu__svm.html#af164d8d741d9ea90dae6a46974d29f9e">vcpu</a>.arch.l1_tsc_offset;</div>
 <div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;    <span class="keywordflow">if</span> (vmcb01-&gt;control.tsc_offset != svm-&gt;<a class="code" href="structvcpu__svm.html#af164d8d741d9ea90dae6a46974d29f9e">vcpu</a>.arch.tsc_offset) {</div>
 <div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;        vmcb01-&gt;control.tsc_offset = svm-&gt;<a class="code" href="structvcpu__svm.html#af164d8d741d9ea90dae6a46974d29f9e">vcpu</a>.arch.tsc_offset;</div>
-<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;        <a class="code" href="svm_8h.html#ab83edec724698a20d66a086a1900aa27">vmcb_mark_dirty</a>(vmcb01, <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13aa5c3bcc8811c26fdc5e7cda9a9b213e1">VMCB_INTERCEPTS</a>);</div>
+<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;        <a class="code" href="svm_8h.html#ab83edec724698a20d66a086a1900aa27">vmcb_mark_dirty</a>(vmcb01, <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4aa5c3bcc8811c26fdc5e7cda9a9b213e1">VMCB_INTERCEPTS</a>);</div>
 <div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;    }</div>
 <div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160; </div>
 <div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="structkvm__caps.html">kvm_caps</a>.<a class="code" href="structkvm__caps.html#abcc6bf2008df1844dba6d861c15712a7">has_tsc_control</a> &amp;&amp;</div>
@@ -5043,7 +5043,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l02663"></a><span class="lineno"> 2663</span>&#160; </div>
 <div class="line"><a name="l02664"></a><span class="lineno"> 2664</span>&#160;    sd-&gt;<a class="code" href="structsvm__cpu__data.html#af89c94b4ad75ed4396bb2f85415fcf38">sev_vmcbs</a>[asid] = svm-&gt;<a class="code" href="structvcpu__svm.html#af095ed7bcc31c036e28e533582723a60">vmcb</a>;</div>
 <div class="line"><a name="l02665"></a><span class="lineno"> 2665</span>&#160;    svm-&gt;<a class="code" href="structvcpu__svm.html#af095ed7bcc31c036e28e533582723a60">vmcb</a>-&gt;control.tlb_ctl = TLB_CONTROL_FLUSH_ASID;</div>
-<div class="line"><a name="l02666"></a><span class="lineno"> 2666</span>&#160;    <a class="code" href="svm_8h.html#ab83edec724698a20d66a086a1900aa27">vmcb_mark_dirty</a>(svm-&gt;<a class="code" href="structvcpu__svm.html#af095ed7bcc31c036e28e533582723a60">vmcb</a>, <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13ace538c75028034c3e121fd96a0bdaf64">VMCB_ASID</a>);</div>
+<div class="line"><a name="l02666"></a><span class="lineno"> 2666</span>&#160;    <a class="code" href="svm_8h.html#ab83edec724698a20d66a086a1900aa27">vmcb_mark_dirty</a>(svm-&gt;<a class="code" href="structvcpu__svm.html#af095ed7bcc31c036e28e533582723a60">vmcb</a>, <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4ace538c75028034c3e121fd96a0bdaf64">VMCB_ASID</a>);</div>
 <div class="line"><a name="l02667"></a><span class="lineno"> 2667</span>&#160;}</div>
 <div class="ttc" id="asev_8c_html_a66cc6caa9f6331de794476e911d4ce53"><div class="ttname"><a href="sev_8c.html#a66cc6caa9f6331de794476e911d4ce53">sev_get_asid</a></div><div class="ttdeci">static unsigned int sev_get_asid(struct kvm *kvm)</div><div class="ttdef"><b>Definition:</b> <a href="sev_8c_source.html#l00197">sev.c:197</a></div></div>
 <div class="ttc" id="astructsvm__cpu__data_html"><div class="ttname"><a href="structsvm__cpu__data.html">svm_cpu_data</a></div><div class="ttdef"><b>Definition:</b> <a href="svm_8h_source.html#l00297">svm.h:297</a></div></div>
@@ -5095,7 +5095,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">struct </span><a class="code" href="structvmcb__ctrl__area__cached.html">vmcb_ctrl_area_cached</a> *g;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="svm_8h.html#ab83edec724698a20d66a086a1900aa27">vmcb_mark_dirty</a>(svm-&gt;<a class="code" href="structvcpu__svm.html#af095ed7bcc31c036e28e533582723a60">vmcb</a>, <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13aa5c3bcc8811c26fdc5e7cda9a9b213e1">VMCB_INTERCEPTS</a>);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="svm_8h.html#ab83edec724698a20d66a086a1900aa27">vmcb_mark_dirty</a>(svm-&gt;<a class="code" href="structvcpu__svm.html#af095ed7bcc31c036e28e533582723a60">vmcb</a>, <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4aa5c3bcc8811c26fdc5e7cda9a9b213e1">VMCB_INTERCEPTS</a>);</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="kvm__cache__regs_8h.html#afbcfc413ceedb460734eb5fd7c5c4fbc">is_guest_mode</a>(&amp;svm-&gt;<a class="code" href="structvcpu__svm.html#af164d8d741d9ea90dae6a46974d29f9e">vcpu</a>))</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordflow">return</span>;</div>
@@ -5739,33 +5739,35 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="svm_8h_a8381dc2e2d38fd331490bbb2fd097d0a_cgraph.png" border="0" usemap="#asvm_8h_a8381dc2e2d38fd331490bbb2fd097d0a_cgraph" alt=""/></div>
 <map name="asvm_8h_a8381dc2e2d38fd331490bbb2fd097d0a_cgraph" id="asvm_8h_a8381dc2e2d38fd331490bbb2fd097d0a_cgraph">
-<area shape="rect" title=" " alt="" coords="5,271,136,297"/>
-<area shape="rect" href="x86_8c.html#ac4b95013b15c215fb1fcfd251d2e006d" title=" " alt="" coords="187,233,354,260"/>
-<area shape="rect" href="sev_8c.html#a0ed13e39856158b838d1f124dc65ad42" title=" " alt="" coords="184,296,357,323"/>
-<area shape="rect" href="x86_8c.html#a4bb05cc4f2b01054d01e1947197a74c9" title=" " alt="" coords="410,233,539,260"/>
-<area shape="rect" href="x86_8c.html#a3e2127cd416ed691ddc9be7200f8e3e3" title=" " alt="" coords="405,56,544,83"/>
-<area shape="rect" href="x86_8c.html#a684cc35eda9d78893704d166a59fa8ac" title=" " alt="" coords="879,208,1104,235"/>
-<area shape="rect" href="x86_8c.html#a7174438319d810240ac051141ea5b435" title=" " alt="" coords="596,259,827,285"/>
-<area shape="rect" href="x86_8c.html#a43503f268738cc53b4acd43b0f5ea8cb" title=" " alt="" coords="648,157,775,184"/>
-<area shape="rect" href="x86_8c.html#a5a201bc6a602db52b7b19b9697b64c6e" title=" " alt="" coords="894,259,1089,285"/>
-<area shape="rect" href="x86_8c.html#a32a23cfa29cb51dd82289fb67939180c" title=" " alt="" coords="914,151,1069,177"/>
-<area shape="rect" href="kvm__main_8c.html#a32f50a4f2293b3acdeece0c22abe8ecc" title=" " alt="" coords="1180,199,1316,225"/>
-<area shape="rect" href="kvm__main_8c.html#ac2e936ae65c010ffa196cedbc40350ee" title=" " alt="" coords="1178,148,1318,175"/>
-<area shape="rect" href="kvm__main_8c.html#a7561a833c4222778fb37a7e0f9e97e96" title=" " alt="" coords="1394,199,1545,225"/>
-<area shape="rect" href="kvm__main_8c.html#a75ccec7a81fef145fb3c3a3b5479a86f" title=" " alt="" coords="2048,196,2183,223"/>
-<area shape="rect" href="kvm__main_8c.html#a94bf2e0af8d9af8807a6a92ffb01cc1c" title=" " alt="" coords="1595,197,1785,224"/>
-<area shape="rect" href="kvm__main_8c.html#aa52366417ec3708a05183231a3227d9d" title=" " alt="" coords="1833,171,2000,197"/>
-<area shape="rect" href="kvm__main_8c.html#a484b5f7e2c7e682cb49450f611319077" title=" " alt="" coords="1392,148,1547,175"/>
-<area shape="rect" href="x86_8c.html#a4b29efacd5ee390615f3c810441c9922" title=" " alt="" coords="592,56,831,83"/>
-<area shape="rect" href="x86_8c.html#a0d15cd39b8133363394c2b55a06d52b8" title=" " alt="" coords="643,5,779,32"/>
-<area shape="rect" href="kvm__main_8c.html#a3cc887a9ecfdd6e9f5ab90dc2ce8de4a" title=" " alt="" coords="409,309,540,336"/>
-<area shape="rect" href="kvm__main_8c.html#a2a95905782c4136bdf6d9861f937b0ef" title=" " alt="" coords="627,309,796,336"/>
-<area shape="rect" href="kvm__main_8c.html#a03aae88de564edba8a3a2d10bc5e7b20" title=" " alt="" coords="654,360,769,387"/>
-<area shape="rect" href="kvm__main_8c.html#acc4698e3f076cdbbd5d8ca788a94decf" title=" " alt="" coords="900,360,1083,387"/>
-<area shape="rect" href="kvm__main_8c.html#a7c20e0f654f0b4472c3833f0a563e11e" title=" " alt="" coords="927,309,1055,336"/>
-<area shape="rect" href="kvm__main_8c.html#adb8a0a4f675ca16ea81acd3b88089f13" title=" " alt="" coords="1152,360,1344,387"/>
-<area shape="rect" href="kvm__main_8c.html#ab58025ccc253a102c64561fa61c2a514" title=" " alt="" coords="1393,372,1545,399"/>
-<area shape="rect" href="kvm__main_8c.html#a77ec4b9140d69a05f3b4e7836cc03a96" title=" " alt="" coords="1609,347,1771,373"/>
+<area shape="rect" title=" " alt="" coords="5,343,136,369"/>
+<area shape="rect" href="x86_8c.html#ac4b95013b15c215fb1fcfd251d2e006d" title=" " alt="" coords="187,305,354,332"/>
+<area shape="rect" href="sev_8c.html#a0ed13e39856158b838d1f124dc65ad42" title=" " alt="" coords="184,368,357,395"/>
+<area shape="rect" href="x86_8c.html#a4bb05cc4f2b01054d01e1947197a74c9" title=" " alt="" coords="410,305,539,332"/>
+<area shape="rect" href="x86_8c.html#a3e2127cd416ed691ddc9be7200f8e3e3" title=" " alt="" coords="405,128,544,155"/>
+<area shape="rect" href="x86_8c.html#a684cc35eda9d78893704d166a59fa8ac" title=" " alt="" coords="879,280,1104,307"/>
+<area shape="rect" href="x86_8c.html#a7174438319d810240ac051141ea5b435" title=" " alt="" coords="596,331,827,357"/>
+<area shape="rect" href="x86_8c.html#a43503f268738cc53b4acd43b0f5ea8cb" title=" " alt="" coords="648,229,775,256"/>
+<area shape="rect" href="x86_8c.html#a5a201bc6a602db52b7b19b9697b64c6e" title=" " alt="" coords="894,331,1089,357"/>
+<area shape="rect" href="x86_8c.html#a32a23cfa29cb51dd82289fb67939180c" title=" " alt="" coords="914,153,1069,180"/>
+<area shape="rect" href="kvm__main_8c.html#a32f50a4f2293b3acdeece0c22abe8ecc" title=" " alt="" coords="1180,185,1316,212"/>
+<area shape="rect" href="kvm__main_8c.html#ac2e936ae65c010ffa196cedbc40350ee" title=" " alt="" coords="1178,123,1318,149"/>
+<area shape="rect" href="kvm__main_8c.html#a7561a833c4222778fb37a7e0f9e97e96" title=" " alt="" coords="1394,201,1545,228"/>
+<area shape="rect" href="kvm__main_8c.html#a75ccec7a81fef145fb3c3a3b5479a86f" title=" " alt="" coords="2048,132,2183,159"/>
+<area shape="rect" href="kvm__main_8c.html#a94bf2e0af8d9af8807a6a92ffb01cc1c" title=" " alt="" coords="1595,123,1785,149"/>
+<area shape="rect" href="iodev_8h.html#a4546415d4264729008dd23c55a07545a" title=" " alt="" coords="1615,259,1765,285"/>
+<area shape="rect" href="kvm__main_8c.html#aa52366417ec3708a05183231a3227d9d" title=" " alt="" coords="1833,107,2000,133"/>
+<area shape="rect" href="kvm__main_8c.html#a484b5f7e2c7e682cb49450f611319077" title=" " alt="" coords="1392,97,1547,124"/>
+<area shape="rect" href="iodev_8h.html#a60b8903e245db48d9c5d7287ff781825" title=" " alt="" coords="1613,5,1767,32"/>
+<area shape="rect" href="x86_8c.html#a4b29efacd5ee390615f3c810441c9922" title=" " alt="" coords="592,128,831,155"/>
+<area shape="rect" href="x86_8c.html#a0d15cd39b8133363394c2b55a06d52b8" title=" " alt="" coords="643,77,779,104"/>
+<area shape="rect" href="kvm__main_8c.html#a3cc887a9ecfdd6e9f5ab90dc2ce8de4a" title=" " alt="" coords="409,381,540,408"/>
+<area shape="rect" href="kvm__main_8c.html#a2a95905782c4136bdf6d9861f937b0ef" title=" " alt="" coords="627,381,796,408"/>
+<area shape="rect" href="kvm__main_8c.html#a03aae88de564edba8a3a2d10bc5e7b20" title=" " alt="" coords="654,432,769,459"/>
+<area shape="rect" href="kvm__main_8c.html#acc4698e3f076cdbbd5d8ca788a94decf" title=" " alt="" coords="900,432,1083,459"/>
+<area shape="rect" href="kvm__main_8c.html#a7c20e0f654f0b4472c3833f0a563e11e" title=" " alt="" coords="927,381,1055,408"/>
+<area shape="rect" href="kvm__main_8c.html#adb8a0a4f675ca16ea81acd3b88089f13" title=" " alt="" coords="1152,432,1344,459"/>
+<area shape="rect" href="kvm__main_8c.html#ab58025ccc253a102c64561fa61c2a514" title=" " alt="" coords="1393,457,1545,484"/>
+<area shape="rect" href="kvm__main_8c.html#a77ec4b9140d69a05f3b4e7836cc03a96" title=" " alt="" coords="1609,457,1771,484"/>
 </map>
 </div>
 <div class="dynheader">
@@ -7943,7 +7945,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;    to_vmcb-&gt;save.last_excp_from    = from_vmcb-&gt;save.last_excp_from;</div>
 <div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;    to_vmcb-&gt;save.last_excp_to  = from_vmcb-&gt;save.last_excp_to;</div>
 <div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160; </div>
-<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;    <a class="code" href="svm_8h.html#ab83edec724698a20d66a086a1900aa27">vmcb_mark_dirty</a>(to_vmcb, <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a7ffead4bb2fd939a3b453692fdc4664a">VMCB_LBR</a>);</div>
+<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;    <a class="code" href="svm_8h.html#ab83edec724698a20d66a086a1900aa27">vmcb_mark_dirty</a>(to_vmcb, <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a7ffead4bb2fd939a3b453692fdc4664a">VMCB_LBR</a>);</div>
 <div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -8805,7 +8807,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l01887"></a><span class="lineno"> 1887</span>&#160;        hcr0 &amp;= ~(X86_CR0_CD | X86_CR0_NW);</div>
 <div class="line"><a name="l01888"></a><span class="lineno"> 1888</span>&#160; </div>
 <div class="line"><a name="l01889"></a><span class="lineno"> 1889</span>&#160;    svm-&gt;<a class="code" href="structvcpu__svm.html#af095ed7bcc31c036e28e533582723a60">vmcb</a>-&gt;save.cr0 = hcr0;</div>
-<div class="line"><a name="l01890"></a><span class="lineno"> 1890</span>&#160;    <a class="code" href="svm_8h.html#ab83edec724698a20d66a086a1900aa27">vmcb_mark_dirty</a>(svm-&gt;<a class="code" href="structvcpu__svm.html#af095ed7bcc31c036e28e533582723a60">vmcb</a>, <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a4c1bf85b59430883fd2a9f4eebbac975">VMCB_CR</a>);</div>
+<div class="line"><a name="l01890"></a><span class="lineno"> 1890</span>&#160;    <a class="code" href="svm_8h.html#ab83edec724698a20d66a086a1900aa27">vmcb_mark_dirty</a>(svm-&gt;<a class="code" href="structvcpu__svm.html#af095ed7bcc31c036e28e533582723a60">vmcb</a>, <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a4c1bf85b59430883fd2a9f4eebbac975">VMCB_CR</a>);</div>
 <div class="line"><a name="l01891"></a><span class="lineno"> 1891</span>&#160; </div>
 <div class="line"><a name="l01892"></a><span class="lineno"> 1892</span>&#160;    <span class="comment">/*</span></div>
 <div class="line"><a name="l01893"></a><span class="lineno"> 1893</span>&#160;<span class="comment">     * SEV-ES guests must always keep the CR intercepts cleared. CR</span></div>
@@ -8957,7 +8959,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l01928"></a><span class="lineno"> 1928</span>&#160;    }</div>
 <div class="line"><a name="l01929"></a><span class="lineno"> 1929</span>&#160;    cr4 |= host_cr4_mce;</div>
 <div class="line"><a name="l01930"></a><span class="lineno"> 1930</span>&#160;    <a class="code" href="svm_8h.html#a83e420c88631faf9613ea3caa72c63b7">to_svm</a>(vcpu)-&gt;<a class="code" href="structvcpu__svm.html#af095ed7bcc31c036e28e533582723a60">vmcb</a>-&gt;save.cr4 = cr4;</div>
-<div class="line"><a name="l01931"></a><span class="lineno"> 1931</span>&#160;    <a class="code" href="svm_8h.html#ab83edec724698a20d66a086a1900aa27">vmcb_mark_dirty</a>(<a class="code" href="svm_8h.html#a83e420c88631faf9613ea3caa72c63b7">to_svm</a>(vcpu)-&gt;vmcb, <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a4c1bf85b59430883fd2a9f4eebbac975">VMCB_CR</a>);</div>
+<div class="line"><a name="l01931"></a><span class="lineno"> 1931</span>&#160;    <a class="code" href="svm_8h.html#ab83edec724698a20d66a086a1900aa27">vmcb_mark_dirty</a>(<a class="code" href="svm_8h.html#a83e420c88631faf9613ea3caa72c63b7">to_svm</a>(vcpu)-&gt;vmcb, <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a4c1bf85b59430883fd2a9f4eebbac975">VMCB_CR</a>);</div>
 <div class="line"><a name="l01932"></a><span class="lineno"> 1932</span>&#160; </div>
 <div class="line"><a name="l01933"></a><span class="lineno"> 1933</span>&#160;    <span class="keywordflow">if</span> ((cr4 ^ old_cr4) &amp; (X86_CR4_OSXSAVE | X86_CR4_PKE))</div>
 <div class="line"><a name="l01934"></a><span class="lineno"> 1934</span>&#160;        <a class="code" href="cpuid_8c.html#a537512099e11c7ab0553aeae5e38d9ea">kvm_update_cpuid_runtime</a>(vcpu);</div>
@@ -9110,7 +9112,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    }</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160; </div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    svm-&gt;<a class="code" href="structvcpu__svm.html#af095ed7bcc31c036e28e533582723a60">vmcb</a>-&gt;save.efer = efer | EFER_SVME;</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <a class="code" href="svm_8h.html#ab83edec724698a20d66a086a1900aa27">vmcb_mark_dirty</a>(svm-&gt;<a class="code" href="structvcpu__svm.html#af095ed7bcc31c036e28e533582723a60">vmcb</a>, <a class="code" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a4c1bf85b59430883fd2a9f4eebbac975">VMCB_CR</a>);</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <a class="code" href="svm_8h.html#ab83edec724698a20d66a086a1900aa27">vmcb_mark_dirty</a>(svm-&gt;<a class="code" href="structvcpu__svm.html#af095ed7bcc31c036e28e533582723a60">vmcb</a>, <a class="code" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a4c1bf85b59430883fd2a9f4eebbac975">VMCB_CR</a>);</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;}</div>
 <div class="ttc" id="asvm_2nested_8c_html_a690337312a648d2948b22540da6f031e"><div class="ttname"><a href="svm_2nested_8c.html#a690337312a648d2948b22540da6f031e">svm_free_nested</a></div><div class="ttdeci">void svm_free_nested(struct vcpu_svm *svm)</div><div class="ttdef"><b>Definition:</b> <a href="svm_2nested_8c_source.html#l01203">nested.c:1203</a></div></div>

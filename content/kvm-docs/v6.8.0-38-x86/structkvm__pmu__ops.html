@@ -75,7 +75,7 @@ $(function() {
 Public Attributes</h2></td></tr>
 <tr class="memitem:a9cd0a322fbe07c5199bf1643ffe94e20"><td class="memItemLeft" align="right" valign="top">bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkvm__pmu__ops.html#a9cd0a322fbe07c5199bf1643ffe94e20">hw_event_available</a> )(struct kvm_pmc *pmc)</td></tr>
 <tr class="separator:a9cd0a322fbe07c5199bf1643ffe94e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6809ccf2d84223ac6407349258048830"><td class="memItemLeft" align="right" valign="top">struct kvm_pmc *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkvm__pmu__ops.html#a6809ccf2d84223ac6407349258048830">pmc_idx_to_pmc</a> )(struct kvm_pmu *pmu, int pmc_idx)</td></tr>
+<tr class="memitem:a6809ccf2d84223ac6407349258048830"><td class="memItemLeft" align="right" valign="top">struct kvm_pmc *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkvm__pmu__ops.html#a6809ccf2d84223ac6407349258048830">pmc_idx_to_pmc</a> )(struct <a class="el" href="structkvm__pmu.html">kvm_pmu</a> *pmu, int pmc_idx)</td></tr>
 <tr class="separator:a6809ccf2d84223ac6407349258048830"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb17fca5697fd6ba74aa2640f781f56a"><td class="memItemLeft" align="right" valign="top">struct kvm_pmc *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkvm__pmu__ops.html#aeb17fca5697fd6ba74aa2640f781f56a">rdpmc_ecx_to_pmc</a> )(struct kvm_vcpu *vcpu, unsigned int idx, u64 *mask)</td></tr>
 <tr class="separator:aeb17fca5697fd6ba74aa2640f781f56a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -293,7 +293,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct kvm_pmc*(* kvm_pmu_ops::pmc_idx_to_pmc) (struct kvm_pmu *pmu, int pmc_idx)</td>
+          <td class="memname">struct kvm_pmc*(* kvm_pmu_ops::pmc_idx_to_pmc) (struct <a class="el" href="structkvm__pmu.html">kvm_pmu</a> *pmu, int pmc_idx)</td>
         </tr>
       </table>
 </div><div class="memdoc">

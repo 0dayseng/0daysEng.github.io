@@ -72,7 +72,7 @@ $(function() {
 <div class="title">coalesced_mmio.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;kvm/iodev.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="iodev_8h_source.html">kvm/iodev.h</a>&gt;</code><br />
 <code>#include &lt;linux/kvm_host.h&gt;</code><br />
 <code>#include &lt;linux/slab.h&gt;</code><br />
 <code>#include &lt;linux/kvm.h&gt;</code><br />
@@ -82,12 +82,14 @@ Include dependency graph for coalesced_mmio.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="coalesced__mmio_8c__incl.png" border="0" usemap="#avirt_2kvm_2coalesced__mmio_8c" alt=""/></div>
 <map name="avirt_2kvm_2coalesced__mmio_8c" id="avirt_2kvm_2coalesced__mmio_8c">
-<area shape="rect" title=" " alt="" coords="266,5,413,47"/>
-<area shape="rect" title=" " alt="" coords="5,95,108,121"/>
-<area shape="rect" title=" " alt="" coords="132,95,267,121"/>
-<area shape="rect" title=" " alt="" coords="291,95,388,121"/>
-<area shape="rect" title=" " alt="" coords="413,95,511,121"/>
-<area shape="rect" href="coalesced__mmio_8h.html" title=" " alt="" coords="535,95,679,121"/>
+<area shape="rect" title=" " alt="" coords="359,5,506,47"/>
+<area shape="rect" href="iodev_8h.html" title=" " alt="" coords="99,95,201,121"/>
+<area shape="rect" title=" " alt="" coords="225,95,360,121"/>
+<area shape="rect" title=" " alt="" coords="384,95,481,121"/>
+<area shape="rect" title=" " alt="" coords="506,95,605,121"/>
+<area shape="rect" href="coalesced__mmio_8h.html" title=" " alt="" coords="629,95,773,121"/>
+<area shape="rect" title=" " alt="" coords="5,169,148,196"/>
+<area shape="rect" title=" " alt="" coords="173,169,277,196"/>
 </map>
 </div>
 </div>
@@ -95,15 +97,15 @@ Include dependency graph for coalesced_mmio.c:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac29690074dc3350052a8b3587ed5aade"><td class="memItemLeft" align="right" valign="top">static struct kvm_coalesced_mmio_dev *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coalesced__mmio_8c.html#ac29690074dc3350052a8b3587ed5aade">to_mmio</a> (struct kvm_io_device *dev)</td></tr>
+<tr class="memitem:ac29690074dc3350052a8b3587ed5aade"><td class="memItemLeft" align="right" valign="top">static struct kvm_coalesced_mmio_dev *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coalesced__mmio_8c.html#ac29690074dc3350052a8b3587ed5aade">to_mmio</a> (struct <a class="el" href="structkvm__io__device.html">kvm_io_device</a> *dev)</td></tr>
 <tr class="separator:ac29690074dc3350052a8b3587ed5aade"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad283e278282d8d1ff5ee53accf03d802"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coalesced__mmio_8c.html#ad283e278282d8d1ff5ee53accf03d802">coalesced_mmio_in_range</a> (struct kvm_coalesced_mmio_dev *dev, gpa_t addr, int len)</td></tr>
 <tr class="separator:ad283e278282d8d1ff5ee53accf03d802"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55777df6157ed960d749503a102e1d17"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coalesced__mmio_8c.html#a55777df6157ed960d749503a102e1d17">coalesced_mmio_has_room</a> (struct kvm_coalesced_mmio_dev *dev, u32 last)</td></tr>
 <tr class="separator:a55777df6157ed960d749503a102e1d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad76fdae4b5a7eb78457a6556faad27ef"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coalesced__mmio_8c.html#ad76fdae4b5a7eb78457a6556faad27ef">coalesced_mmio_write</a> (struct kvm_vcpu *vcpu, struct kvm_io_device *this, gpa_t addr, int len, const void *val)</td></tr>
+<tr class="memitem:ad76fdae4b5a7eb78457a6556faad27ef"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coalesced__mmio_8c.html#ad76fdae4b5a7eb78457a6556faad27ef">coalesced_mmio_write</a> (struct kvm_vcpu *vcpu, struct <a class="el" href="structkvm__io__device.html">kvm_io_device</a> *this, gpa_t addr, int len, const void *val)</td></tr>
 <tr class="separator:ad76fdae4b5a7eb78457a6556faad27ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5dc0ac75df45e8c457e14d2d895eaf8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coalesced__mmio_8c.html#ab5dc0ac75df45e8c457e14d2d895eaf8">coalesced_mmio_destructor</a> (struct kvm_io_device *this)</td></tr>
+<tr class="memitem:ab5dc0ac75df45e8c457e14d2d895eaf8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coalesced__mmio_8c.html#ab5dc0ac75df45e8c457e14d2d895eaf8">coalesced_mmio_destructor</a> (struct <a class="el" href="structkvm__io__device.html">kvm_io_device</a> *this)</td></tr>
 <tr class="separator:ab5dc0ac75df45e8c457e14d2d895eaf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8ed1183aab4dd475a72bac108ec8fcf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coalesced__mmio_8c.html#af8ed1183aab4dd475a72bac108ec8fcf">kvm_coalesced_mmio_init</a> (struct kvm *kvm)</td></tr>
 <tr class="separator:af8ed1183aab4dd475a72bac108ec8fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,7 +118,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ae6b00dc4dccc8fc620406ec3136f17c9"><td class="memItemLeft" align="right" valign="top">static const struct kvm_io_device_ops&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coalesced__mmio_8c.html#ae6b00dc4dccc8fc620406ec3136f17c9">coalesced_mmio_ops</a></td></tr>
+<tr class="memitem:ae6b00dc4dccc8fc620406ec3136f17c9"><td class="memItemLeft" align="right" valign="top">static const struct <a class="el" href="structkvm__io__device__ops.html">kvm_io_device_ops</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coalesced__mmio_8c.html#ae6b00dc4dccc8fc620406ec3136f17c9">coalesced_mmio_ops</a></td></tr>
 <tr class="separator:ae6b00dc4dccc8fc620406ec3136f17c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -132,7 +134,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static void coalesced_mmio_destructor </td>
           <td>(</td>
-          <td class="paramtype">struct kvm_io_device *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structkvm__io__device.html">kvm_io_device</a> *&#160;</td>
           <td class="paramname"><em>this</em></td><td>)</td>
           <td></td>
         </tr>
@@ -318,7 +320,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct kvm_io_device *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structkvm__io__device.html">kvm_io_device</a> *&#160;</td>
           <td class="paramname"><em>this</em>, </td>
         </tr>
         <tr>
@@ -532,7 +534,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordflow">if</span> (!dev)</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">return</span> -ENOMEM;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    kvm_iodevice_init(&amp;dev-&gt;dev, &amp;<a class="code" href="coalesced__mmio_8c.html#ae6b00dc4dccc8fc620406ec3136f17c9">coalesced_mmio_ops</a>);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <a class="code" href="iodev_8h.html#a8999defe529eb3e3870197ef8e39fad5">kvm_iodevice_init</a>(&amp;dev-&gt;dev, &amp;<a class="code" href="coalesced__mmio_8c.html#ae6b00dc4dccc8fc620406ec3136f17c9">coalesced_mmio_ops</a>);</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    dev-&gt;kvm = kvm;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    dev-&gt;zone = *zone;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
@@ -554,15 +556,17 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordflow">return</span> ret;</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;}</div>
 <div class="ttc" id="acoalesced__mmio_8c_html_ae6b00dc4dccc8fc620406ec3136f17c9"><div class="ttname"><a href="coalesced__mmio_8c.html#ae6b00dc4dccc8fc620406ec3136f17c9">coalesced_mmio_ops</a></div><div class="ttdeci">static const struct kvm_io_device_ops coalesced_mmio_ops</div><div class="ttdef"><b>Definition:</b> <a href="coalesced__mmio_8c_source.html#l00096">coalesced_mmio.c:105</a></div></div>
+<div class="ttc" id="aiodev_8h_html_a8999defe529eb3e3870197ef8e39fad5"><div class="ttname"><a href="iodev_8h.html#a8999defe529eb3e3870197ef8e39fad5">kvm_iodevice_init</a></div><div class="ttdeci">static void kvm_iodevice_init(struct kvm_io_device *dev, const struct kvm_io_device_ops *ops)</div><div class="ttdef"><b>Definition:</b> <a href="iodev_8h_source.html#l00036">iodev.h:36</a></div></div>
 <div class="ttc" id="akvm__main_8c_html_a0afe5ce3e9ff1105328b06ec985e3374"><div class="ttname"><a href="kvm__main_8c.html#a0afe5ce3e9ff1105328b06ec985e3374">kvm_io_bus_register_dev</a></div><div class="ttdeci">int kvm_io_bus_register_dev(struct kvm *kvm, enum kvm_bus bus_idx, gpa_t addr, int len, struct kvm_io_device *dev)</div><div class="ttdef"><b>Definition:</b> <a href="kvm__main_8c_source.html#l05897">kvm_main.c:5897</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="coalesced__mmio_8c_a64ae64eb1c8e004cad978fc94adef042_cgraph.png" border="0" usemap="#acoalesced__mmio_8c_a64ae64eb1c8e004cad978fc94adef042_cgraph" alt=""/></div>
 <map name="acoalesced__mmio_8c_a64ae64eb1c8e004cad978fc94adef042_cgraph" id="acoalesced__mmio_8c_a64ae64eb1c8e004cad978fc94adef042_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,176,47"/>
-<area shape="rect" href="kvm__main_8c.html#a0afe5ce3e9ff1105328b06ec985e3374" title=" " alt="" coords="224,13,412,39"/>
-<area shape="rect" href="kvm__main_8c.html#a75ccec7a81fef145fb3c3a3b5479a86f" title=" " alt="" coords="460,13,595,39"/>
+<area shape="rect" title=" " alt="" coords="5,23,176,65"/>
+<area shape="rect" href="kvm__main_8c.html#a0afe5ce3e9ff1105328b06ec985e3374" title=" " alt="" coords="224,5,412,32"/>
+<area shape="rect" href="iodev_8h.html#a8999defe529eb3e3870197ef8e39fad5" title=" " alt="" coords="247,56,389,83"/>
+<area shape="rect" href="kvm__main_8c.html#a75ccec7a81fef145fb3c3a3b5479a86f" title=" " alt="" coords="460,5,595,32"/>
 </map>
 </div>
 
@@ -655,7 +659,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">static struct kvm_coalesced_mmio_dev* to_mmio </td>
           <td>(</td>
-          <td class="paramtype">struct kvm_io_device *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structkvm__io__device.html">kvm_io_device</a> *&#160;</td>
           <td class="paramname"><em>dev</em></td><td>)</td>
           <td></td>
         </tr>
@@ -695,7 +699,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const struct kvm_io_device_ops coalesced_mmio_ops</td>
+          <td class="memname">const struct <a class="el" href="structkvm__io__device__ops.html">kvm_io_device_ops</a> coalesced_mmio_ops</td>
         </tr>
       </table>
   </td>

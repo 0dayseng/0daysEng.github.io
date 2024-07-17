@@ -1,5 +1,4 @@
 <map id="kvm_arch_irqfd_allowed" name="kvm_arch_irqfd_allowed">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,187,57"/>
-<area shape="rect" id="node2" href="$irq_8h.html#a96951e3a1bfa402d8bee67713e267b39" title=" " alt="" coords="235,5,367,32"/>
-<area shape="rect" id="node3" href="$irq_8h.html#aeedc8b3b9e709414b2db2436224b75e8" title=" " alt="" coords="244,56,357,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,187,32"/>
+<area shape="rect" id="node2" href="$irq_8h.html#aeedc8b3b9e709414b2db2436224b75e8" title=" " alt="" coords="235,5,348,32"/>
 </map>

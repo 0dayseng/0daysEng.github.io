@@ -1,6 +1,5 @@
 <map id="kvm_vm_ioctl_irq_line" name="kvm_vm_ioctl_irq_line">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,175,57"/>
-<area shape="rect" id="node2" href="$irq_8h.html#a96951e3a1bfa402d8bee67713e267b39" title=" " alt="" coords="223,5,355,32"/>
-<area shape="rect" id="node3" href="$irqchip_8c.html#ae74716a6aebb89cbf4203d125f4afcf1" title=" " alt="" coords="237,56,340,83"/>
-<area shape="rect" id="node4" href="$irqchip_8c.html#acc7a240bd02576a1c110b95979b88790" title=" " alt="" coords="403,56,540,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,175,32"/>
+<area shape="rect" id="node2" href="$irqchip_8c.html#ae74716a6aebb89cbf4203d125f4afcf1" title=" " alt="" coords="223,5,325,32"/>
+<area shape="rect" id="node3" href="$irqchip_8c.html#acc7a240bd02576a1c110b95979b88790" title=" " alt="" coords="373,5,511,32"/>
 </map>

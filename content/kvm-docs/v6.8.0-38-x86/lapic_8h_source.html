@@ -73,7 +73,7 @@ $(function() {
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef __KVM_X86_LAPIC_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define __KVM_X86_LAPIC_H</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;kvm/iodev.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iodev_8h.html">kvm/iodev.h</a>&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;linux/kvm_host.h&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
@@ -129,7 +129,7 @@ $(function() {
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="structkvm__lapic.html">   59</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structkvm__lapic.html">kvm_lapic</a> {</div>
 <div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="structkvm__lapic.html#a830e2e9bd5c55c17f48b72a0157a6fa2">   60</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="structkvm__lapic.html#a830e2e9bd5c55c17f48b72a0157a6fa2">base_address</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">struct </span>kvm_io_device <a class="code" href="structkvm__lapic.html#a64110f6330456e8272b6e96539d168e1">dev</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">struct </span><a class="code" href="structkvm__io__device.html">kvm_io_device</a> <a class="code" href="structkvm__lapic.html#a64110f6330456e8272b6e96539d168e1">dev</a>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">struct </span><a class="code" href="structkvm__timer.html">kvm_timer</a> <a class="code" href="structkvm__lapic.html#a2e61dc072b6f41497ade5b4a59b2c52a">lapic_timer</a>;</div>
 <div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="structkvm__lapic.html#a31c3efc5b365f96580ea975272c3f277">   63</a></span>&#160;    u32 <a class="code" href="structkvm__lapic.html#a31c3efc5b365f96580ea975272c3f277">divide_count</a>;</div>
 <div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="structkvm__lapic.html#a54741597d07b2792d2da72ea301ad648">   64</a></span>&#160;    <span class="keyword">struct </span>kvm_vcpu *<a class="code" href="structkvm__lapic.html#a54741597d07b2792d2da72ea301ad648">vcpu</a>;</div>
@@ -350,6 +350,7 @@ $(function() {
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;}</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aiodev_8h_html"><div class="ttname"><a href="iodev_8h.html">iodev.h</a></div></div>
 <div class="ttc" id="alapic_8h_html_a017e57adbc721d98d26099f1a431a22c"><div class="ttname"><a href="lapic_8h.html#a017e57adbc721d98d26099f1a431a22c">kvm_inhibit_apic_access_page</a></div><div class="ttdeci">void kvm_inhibit_apic_access_page(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="lapic_8c_source.html#l02634">lapic.c:2634</a></div></div>
 <div class="ttc" id="alapic_8h_html_a054dd145c5435c8bfe1dea1adf2ed1e1"><div class="ttname"><a href="lapic_8h.html#a054dd145c5435c8bfe1dea1adf2ed1e1">kvm_lapic_hv_timer_in_use</a></div><div class="ttdeci">bool kvm_lapic_hv_timer_in_use(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="lapic_8c_source.html#l02083">lapic.c:2083</a></div></div>
 <div class="ttc" id="alapic_8h_html_a07d3e1e4090a62753325dfa11d232cea"><div class="ttname"><a href="lapic_8h.html#a07d3e1e4090a62753325dfa11d232cea">apic_x2apic_mode</a></div><div class="ttdeci">static int apic_x2apic_mode(struct kvm_lapic *apic)</div><div class="ttdef"><b>Definition:</b> <a href="lapic_8h_source.html#l00221">lapic.h:221</a></div></div>
@@ -452,6 +453,7 @@ $(function() {
 <div class="ttc" id="asmm_8h_html"><div class="ttname"><a href="smm_8h.html">smm.h</a></div></div>
 <div class="ttc" id="asmm_8h_html_aa0d6bb14bef67edc441fccd36d205a67"><div class="ttname"><a href="smm_8h.html#aa0d6bb14bef67edc441fccd36d205a67">is_smm</a></div><div class="ttdeci">static bool is_smm(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="smm_8h_source.html#l00160">smm.h:160</a></div></div>
 <div class="ttc" id="astructdest__map_html"><div class="ttname"><a href="structdest__map.html">dest_map</a></div><div class="ttdef"><b>Definition:</b> <a href="ioapic_8h_source.html#l00040">ioapic.h:40</a></div></div>
+<div class="ttc" id="astructkvm__io__device_html"><div class="ttname"><a href="structkvm__io__device.html">kvm_io_device</a></div><div class="ttdef"><b>Definition:</b> <a href="iodev_8h_source.html#l00032">iodev.h:32</a></div></div>
 <div class="ttc" id="astructkvm__lapic_html"><div class="ttname"><a href="structkvm__lapic.html">kvm_lapic</a></div><div class="ttdef"><b>Definition:</b> <a href="lapic_8h_source.html#l00059">lapic.h:59</a></div></div>
 <div class="ttc" id="astructkvm__lapic_html_a10b091cd5ea6402115f0352a5528d830"><div class="ttname"><a href="structkvm__lapic.html#a10b091cd5ea6402115f0352a5528d830">kvm_lapic::vapic_cache</a></div><div class="ttdeci">struct gfn_to_hva_cache vapic_cache</div><div class="ttdef"><b>Definition:</b> <a href="lapic_8h_source.html#l00079">lapic.h:80</a></div></div>
 <div class="ttc" id="astructkvm__lapic_html_a2e61dc072b6f41497ade5b4a59b2c52a"><div class="ttname"><a href="structkvm__lapic.html#a2e61dc072b6f41497ade5b4a59b2c52a">kvm_lapic::lapic_timer</a></div><div class="ttdeci">struct kvm_timer lapic_timer</div><div class="ttdef"><b>Definition:</b> <a href="lapic_8h_source.html#l00060">lapic.h:62</a></div></div>

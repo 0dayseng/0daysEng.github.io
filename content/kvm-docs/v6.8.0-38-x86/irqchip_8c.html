@@ -463,10 +463,9 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="irqchip_8c_a2440f4d2a02137c955ea1d22eeb13c8f_cgraph.png" border="0" usemap="#airqchip_8c_a2440f4d2a02137c955ea1d22eeb13c8f_cgraph" alt=""/></div>
 <map name="airqchip_8c_a2440f4d2a02137c955ea1d22eeb13c8f_cgraph" id="airqchip_8c_a2440f4d2a02137c955ea1d22eeb13c8f_cgraph">
-<area shape="rect" title=" " alt="" coords="5,558,199,585"/>
-<area shape="rect" href="irq_8c.html#aa358b67270ecafc289b5b385505c91ed" title=" " alt="" coords="247,511,403,552"/>
-<area shape="rect" href="irq__comm_8c.html#affb5599a3efafc186b72e78e4b31e904" title=" " alt="" coords="270,588,379,614"/>
-<area shape="rect" href="irq_8h.html#a96951e3a1bfa402d8bee67713e267b39" title=" " alt="" coords="479,508,611,534"/>
+<area shape="rect" title=" " alt="" coords="5,580,199,606"/>
+<area shape="rect" href="irq_8c.html#aa358b67270ecafc289b5b385505c91ed" title=" " alt="" coords="247,543,403,584"/>
+<area shape="rect" href="irq__comm_8c.html#affb5599a3efafc186b72e78e4b31e904" title=" " alt="" coords="270,609,379,636"/>
 <area shape="rect" href="irq__comm_8c.html#a50293a78b5c0b6715243dc7854bcb210" title=" " alt="" coords="451,558,640,585"/>
 <area shape="rect" href="irq__comm_8c.html#a8df04bdfde7c5b2ced40084fa4a7452b" title=" " alt="" coords="458,609,633,636"/>
 <area shape="rect" href="irq__comm_8c.html#a6270cddb139f2ca4f42d21f8caaa1224" title=" " alt="" coords="479,660,612,686"/>
@@ -664,7 +663,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keyword">new</span>-&gt;nr_rt_entries = nr_rt_entries;</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; KVM_NR_IRQCHIPS; i++)</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">for</span> (j = 0; j &lt; KVM_IRQCHIP_NUM_PINS; j++)</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">for</span> (j = 0; j &lt; <a class="code" href="arm__vgic_8h.html#a51fde4189b74866c5fa5f3c77ee815a1">KVM_IRQCHIP_NUM_PINS</a>; j++)</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            new-&gt;chip[i][j] = -1;</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    for (i = 0; i &lt; nr; ++i) {</div>
@@ -712,6 +711,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keywordflow">return</span> r;</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;}</div>
+<div class="ttc" id="aarm__vgic_8h_html_a51fde4189b74866c5fa5f3c77ee815a1"><div class="ttname"><a href="arm__vgic_8h.html#a51fde4189b74866c5fa5f3c77ee815a1">KVM_IRQCHIP_NUM_PINS</a></div><div class="ttdeci">#define KVM_IRQCHIP_NUM_PINS</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00032">arm_vgic.h:32</a></div></div>
 <div class="ttc" id="airq__comm_8c_html_a5063eb30fea1b0dfb950639197e5d363"><div class="ttname"><a href="irq__comm_8c.html#a5063eb30fea1b0dfb950639197e5d363">kvm_arch_irq_routing_update</a></div><div class="ttdeci">void kvm_arch_irq_routing_update(struct kvm *kvm)</div><div class="ttdef"><b>Definition:</b> <a href="irq__comm_8c_source.html#l00444">irq_comm.c:444</a></div></div>
 <div class="ttc" id="airq__comm_8c_html_afa5491dcaa56edc5b103a489cabb671e"><div class="ttname"><a href="irq__comm_8c.html#afa5491dcaa56edc5b103a489cabb671e">kvm_arch_post_irq_routing_update</a></div><div class="ttdeci">void kvm_arch_post_irq_routing_update(struct kvm *kvm)</div><div class="ttdef"><b>Definition:</b> <a href="irq__comm_8c_source.html#l00405">irq_comm.c:405</a></div></div>
 <div class="ttc" id="airqchip_8c_html_ab06caa34c3a7189a433815036dd3ebb3"><div class="ttname"><a href="irqchip_8c.html#ab06caa34c3a7189a433815036dd3ebb3">setup_routing_entry</a></div><div class="ttdeci">static int setup_routing_entry(struct kvm *kvm, struct kvm_irq_routing_table *rt, struct kvm_kernel_irq_routing_entry *e, const struct kvm_irq_routing_entry *ue)</div><div class="ttdef"><b>Definition:</b> <a href="irqchip_8c_source.html#l00127">irqchip.c:127</a></div></div>

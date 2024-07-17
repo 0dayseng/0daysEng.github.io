@@ -1,0 +1,5 @@
+<map id="timer_map" name="timer_map">
+<area shape="rect" id="node1" title=" " alt="" coords="33,228,126,255"/>
+<area shape="rect" id="node2" href="$structarch__timer__context.html" title=" " alt="" coords="5,95,153,121"/>
+<area shape="rect" id="node3" href="$structarch__timer__offset.html" title=" " alt="" coords="11,5,147,32"/>
+</map>

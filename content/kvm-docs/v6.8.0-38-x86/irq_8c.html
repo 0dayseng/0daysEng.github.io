@@ -83,34 +83,36 @@ Include dependency graph for irq.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="irq_8c__incl.png" border="0" usemap="#aarch_2x86_2kvm_2irq_8c" alt=""/></div>
 <map name="aarch_2x86_2kvm_2irq_8c" id="aarch_2x86_2kvm_2irq_8c">
-<area shape="rect" title=" " alt="" coords="589,5,731,32"/>
+<area shape="rect" title=" " alt="" coords="581,5,723,32"/>
 <area shape="rect" title=" " alt="" coords="5,80,117,107"/>
-<area shape="rect" title=" " alt="" coords="622,453,757,480"/>
-<area shape="rect" href="irq_8h.html" title=" " alt="" coords="535,80,585,107"/>
-<area shape="rect" href="x86_8h.html" title=" " alt="" coords="1016,304,1075,331"/>
-<area shape="rect" href="i8254_8h.html" title=" " alt="" coords="725,80,795,107"/>
-<area shape="rect" href="xen_8h.html" title=" " alt="" coords="1307,80,1365,107"/>
-<area shape="rect" title=" " alt="" coords="243,155,381,181"/>
-<area shape="rect" title=" " alt="" coords="405,155,523,181"/>
-<area shape="rect" title=" " alt="" coords="598,155,722,181"/>
-<area shape="rect" title=" " alt="" coords="522,229,625,256"/>
-<area shape="rect" href="lapic_8h.html" title=" " alt="" coords="798,155,863,181"/>
-<area shape="rect" href="hyperv_8h.html" title=" " alt="" coords="831,229,910,256"/>
-<area shape="rect" href="smm_8h.html" title=" " alt="" coords="737,229,804,256"/>
-<area shape="rect" title=" " alt="" coords="1271,379,1403,405"/>
-<area shape="rect" title=" " alt="" coords="1427,379,1522,405"/>
-<area shape="rect" title=" " alt="" coords="1131,379,1247,405"/>
-<area shape="rect" href="kvm__cache__regs_8h.html" title=" " alt="" coords="817,379,959,405"/>
-<area shape="rect" href="kvm__emulate_8h.html" title=" " alt="" coords="983,379,1107,405"/>
-<area shape="rect" title=" " alt="" coords="921,453,1052,480"/>
-<area shape="rect" href="fpu_8h.html" title=" " alt="" coords="1077,453,1131,480"/>
-<area shape="rect" title=" " alt="" coords="1049,528,1159,555"/>
-<area shape="rect" title=" " alt="" coords="700,304,833,331"/>
-<area shape="rect" title=" " alt="" coords="888,155,1008,181"/>
-<area shape="rect" title=" " alt="" coords="1438,155,1599,181"/>
-<area shape="rect" title=" " alt="" coords="1624,155,1765,181"/>
-<area shape="rect" title=" " alt="" coords="1083,155,1234,181"/>
-<area shape="rect" title=" " alt="" coords="1259,155,1413,181"/>
+<area shape="rect" title=" " alt="" coords="787,453,922,480"/>
+<area shape="rect" href="irq_8h.html" title=" " alt="" coords="520,80,571,107"/>
+<area shape="rect" href="x86_8h.html" title=" " alt="" coords="1109,304,1168,331"/>
+<area shape="rect" href="i8254_8h.html" title=" " alt="" coords="723,80,794,107"/>
+<area shape="rect" href="xen_8h.html" title=" " alt="" coords="1369,80,1426,107"/>
+<area shape="rect" title=" " alt="" coords="583,155,721,181"/>
+<area shape="rect" title=" " alt="" coords="192,155,309,181"/>
+<area shape="rect" title=" " alt="" coords="333,155,457,181"/>
+<area shape="rect" href="iodev_8h.html" title=" " alt="" coords="669,229,771,256"/>
+<area shape="rect" href="lapic_8h.html" title=" " alt="" coords="797,155,862,181"/>
+<area shape="rect" title=" " alt="" coords="649,304,791,331"/>
+<area shape="rect" title=" " alt="" coords="520,304,624,331"/>
+<area shape="rect" href="hyperv_8h.html" title=" " alt="" coords="986,229,1065,256"/>
+<area shape="rect" href="smm_8h.html" title=" " alt="" coords="883,229,949,256"/>
+<area shape="rect" title=" " alt="" coords="969,379,1101,405"/>
+<area shape="rect" title=" " alt="" coords="1125,379,1219,405"/>
+<area shape="rect" title=" " alt="" coords="1410,379,1526,405"/>
+<area shape="rect" href="kvm__cache__regs_8h.html" title=" " alt="" coords="1243,379,1386,405"/>
+<area shape="rect" href="kvm__emulate_8h.html" title=" " alt="" coords="1550,379,1674,405"/>
+<area shape="rect" title=" " alt="" coords="1605,453,1736,480"/>
+<area shape="rect" href="fpu_8h.html" title=" " alt="" coords="1526,453,1581,480"/>
+<area shape="rect" title=" " alt="" coords="1498,528,1609,555"/>
+<area shape="rect" title=" " alt="" coords="867,304,1000,331"/>
+<area shape="rect" title=" " alt="" coords="887,155,1007,181"/>
+<area shape="rect" title=" " alt="" coords="1141,155,1302,181"/>
+<area shape="rect" title=" " alt="" coords="1327,155,1468,181"/>
+<area shape="rect" title=" " alt="" coords="1493,155,1643,181"/>
+<area shape="rect" title=" " alt="" coords="1668,155,1823,181"/>
 </map>
 </div>
 </div>
@@ -300,19 +302,10 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="irq_8c_source.html#l00170">170</a> of file <a class="el" href="irq_8c_source.html">irq.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;{</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="irq_8h.html#a96951e3a1bfa402d8bee67713e267b39">irqchip_in_kernel</a>(kvm);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="arm__vgic_8h.html#a28961fa9a6313f335b274e0fac503bcf">irqchip_in_kernel</a>(kvm);</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;}</div>
-<div class="ttc" id="airq_8h_html_a96951e3a1bfa402d8bee67713e267b39"><div class="ttname"><a href="irq_8h.html#a96951e3a1bfa402d8bee67713e267b39">irqchip_in_kernel</a></div><div class="ttdeci">static int irqchip_in_kernel(struct kvm *kvm)</div><div class="ttdef"><b>Definition:</b> <a href="irq_8h_source.html#l00090">irq.h:90</a></div></div>
+<div class="ttc" id="aarm__vgic_8h_html_a28961fa9a6313f335b274e0fac503bcf"><div class="ttname"><a href="arm__vgic_8h.html#a28961fa9a6313f335b274e0fac503bcf">irqchip_in_kernel</a></div><div class="ttdeci">#define irqchip_in_kernel(k)</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00392">arm_vgic.h:392</a></div></div>
 </div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="irq_8c_aa358b67270ecafc289b5b385505c91ed_cgraph.png" border="0" usemap="#airq_8c_aa358b67270ecafc289b5b385505c91ed_cgraph" alt=""/></div>
-<map name="airq_8c_aa358b67270ecafc289b5b385505c91ed_cgraph" id="airq_8c_aa358b67270ecafc289b5b385505c91ed_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,161,47"/>
-<area shape="rect" href="irq_8h.html#a96951e3a1bfa402d8bee67713e267b39" title=" " alt="" coords="209,13,341,39"/>
-</map>
-</div>
-<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="irq_8c_aa358b67270ecafc289b5b385505c91ed_icgraph.png" border="0" usemap="#airq_8c_aa358b67270ecafc289b5b385505c91ed_icgraph" alt=""/></div>
@@ -354,7 +347,7 @@ Here is the caller graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;{</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordtype">bool</span> resample = args-&gt;flags &amp; KVM_IRQFD_FLAG_RESAMPLE;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordflow">return</span> resample ? <a class="code" href="irq_8h.html#aeedc8b3b9e709414b2db2436224b75e8">irqchip_kernel</a>(kvm) : <a class="code" href="irq_8h.html#a96951e3a1bfa402d8bee67713e267b39">irqchip_in_kernel</a>(kvm);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordflow">return</span> resample ? <a class="code" href="irq_8h.html#aeedc8b3b9e709414b2db2436224b75e8">irqchip_kernel</a>(kvm) : <a class="code" href="arm__vgic_8h.html#a28961fa9a6313f335b274e0fac503bcf">irqchip_in_kernel</a>(kvm);</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;}</div>
 <div class="ttc" id="airq_8h_html_aeedc8b3b9e709414b2db2436224b75e8"><div class="ttname"><a href="irq_8h.html#aeedc8b3b9e709414b2db2436224b75e8">irqchip_kernel</a></div><div class="ttdeci">static int irqchip_kernel(struct kvm *kvm)</div><div class="ttdef"><b>Definition:</b> <a href="irq_8h_source.html#l00076">irq.h:76</a></div></div>
 </div><!-- fragment --><div class="dynheader">
@@ -362,9 +355,8 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="irq_8c_a920ca6ca1db7aade3d2d2f94c35ee62b_cgraph.png" border="0" usemap="#airq_8c_a920ca6ca1db7aade3d2d2f94c35ee62b_cgraph" alt=""/></div>
 <map name="airq_8c_a920ca6ca1db7aade3d2d2f94c35ee62b_cgraph" id="airq_8c_a920ca6ca1db7aade3d2d2f94c35ee62b_cgraph">
-<area shape="rect" title=" " alt="" coords="5,31,187,57"/>
-<area shape="rect" href="irq_8h.html#a96951e3a1bfa402d8bee67713e267b39" title=" " alt="" coords="235,5,367,32"/>
-<area shape="rect" href="irq_8h.html#aeedc8b3b9e709414b2db2436224b75e8" title=" " alt="" coords="244,56,357,83"/>
+<area shape="rect" title=" " alt="" coords="5,5,187,32"/>
+<area shape="rect" href="irq_8h.html#aeedc8b3b9e709414b2db2436224b75e8" title=" " alt="" coords="235,5,348,32"/>
 </map>
 </div>
 

@@ -1,0 +1,14 @@
+<map id="kvm_iodevice_init" name="kvm_iodevice_init">
+<area shape="rect" id="node1" title=" " alt="" coords="717,132,859,159"/>
+<area shape="rect" id="node2" href="$eventfd_8c.html#a46079ad3fe618a5fca3c22b0c9305af2" title=" " alt="" coords="473,5,669,32"/>
+<area shape="rect" id="node5" href="$lapic_8c.html#a1d54fd094860a96cad1af17c18f6904c" title=" " alt="" coords="503,56,640,83"/>
+<area shape="rect" id="node8" href="$i8254_8c.html#a13a38debbd4e494ffd488ef8abb5406c" title=" " alt="" coords="510,107,633,133"/>
+<area shape="rect" id="node10" href="$ioapic_8c.html#a21c528e901ef596bba3f882ed5ac9597" title=" " alt="" coords="509,157,634,184"/>
+<area shape="rect" id="node11" href="$i8259_8c.html#ac5080582d1831f8ec6bf2b3264e6c3e0" title=" " alt="" coords="519,208,624,235"/>
+<area shape="rect" id="node12" href="$coalesced__mmio_8c.html#a64ae64eb1c8e004cad978fc94adef042" title=" " alt="" coords="486,259,657,301"/>
+<area shape="rect" id="node3" href="$eventfd_8c.html#a44b8446616a1733fba0a4c40fda0ddb4" title=" " alt="" coords="255,5,424,32"/>
+<area shape="rect" id="node4" href="$eventfd_8c.html#aa2691b2aa7e23317062a2b1be7e0fc30" title=" " alt="" coords="45,5,165,32"/>
+<area shape="rect" id="node6" href="$x86_8c.html#ae2ebf37d8daf1a8b43a9823bae4ab32b" title=" " alt="" coords="253,56,425,83"/>
+<area shape="rect" id="node7" href="$kvm__main_8c.html#ab8870469dadfadf9a204346c62016293" title=" " alt="" coords="5,56,205,83"/>
+<area shape="rect" id="node9" href="$x86_8c.html#a10224987f77e7370dd9f2b80352544ab" title=" " alt="" coords="265,157,414,184"/>
+</map>

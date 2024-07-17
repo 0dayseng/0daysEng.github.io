@@ -75,8 +75,10 @@ Collaboration diagram for kvm_pic:</div>
 <div class="dyncontent">
 <div class="center"><img src="structkvm__pic__coll__graph.png" border="0" usemap="#akvm__pic_coll__map" alt="Collaboration graph"/></div>
 <map name="akvm__pic_coll__map" id="akvm__pic_coll__map">
-<area shape="rect" title=" " alt="" coords="29,5,107,32"/>
-<area shape="rect" href="structkvm__kpic__state.html" title=" " alt="" coords="5,95,131,121"/>
+<area shape="rect" title=" " alt="" coords="42,213,119,240"/>
+<area shape="rect" href="structkvm__kpic__state.html" title=" " alt="" coords="18,303,143,329"/>
+<area shape="rect" href="structkvm__io__device.html" title=" " alt="" coords="21,95,141,121"/>
+<area shape="rect" href="structkvm__io__device__ops.html" title=" " alt="" coords="5,5,156,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -94,11 +96,11 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a02a4c44326718fd7525588d5223f90c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7983474ab21ffba30a1687d3451d6c35"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkvm__pic.html#a7983474ab21ffba30a1687d3451d6c35">output</a></td></tr>
 <tr class="separator:a7983474ab21ffba30a1687d3451d6c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a192628551372bf9be962e8d6e931f135"><td class="memItemLeft" align="right" valign="top">struct kvm_io_device&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkvm__pic.html#a192628551372bf9be962e8d6e931f135">dev_master</a></td></tr>
+<tr class="memitem:a192628551372bf9be962e8d6e931f135"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structkvm__io__device.html">kvm_io_device</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkvm__pic.html#a192628551372bf9be962e8d6e931f135">dev_master</a></td></tr>
 <tr class="separator:a192628551372bf9be962e8d6e931f135"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e6e3c9bffa5564c4866e3b81f96136f"><td class="memItemLeft" align="right" valign="top">struct kvm_io_device&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkvm__pic.html#a4e6e3c9bffa5564c4866e3b81f96136f">dev_slave</a></td></tr>
+<tr class="memitem:a4e6e3c9bffa5564c4866e3b81f96136f"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structkvm__io__device.html">kvm_io_device</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkvm__pic.html#a4e6e3c9bffa5564c4866e3b81f96136f">dev_slave</a></td></tr>
 <tr class="separator:a4e6e3c9bffa5564c4866e3b81f96136f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32ff6b714dcdcdba65eed1f27857ba90"><td class="memItemLeft" align="right" valign="top">struct kvm_io_device&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkvm__pic.html#a32ff6b714dcdcdba65eed1f27857ba90">dev_elcr</a></td></tr>
+<tr class="memitem:a32ff6b714dcdcdba65eed1f27857ba90"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structkvm__io__device.html">kvm_io_device</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkvm__pic.html#a32ff6b714dcdcdba65eed1f27857ba90">dev_elcr</a></td></tr>
 <tr class="separator:a32ff6b714dcdcdba65eed1f27857ba90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc47ed8138813a259460bbb6cb1407b0"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkvm__pic.html#adc47ed8138813a259460bbb6cb1407b0">irq_states</a> [<a class="el" href="irq_8h.html#a80ce9c55d9566830e9ce89ef1cf4f91f">PIC_NUM_PINS</a>]</td></tr>
 <tr class="separator:adc47ed8138813a259460bbb6cb1407b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,7 +116,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct kvm_io_device kvm_pic::dev_elcr</td>
+          <td class="memname">struct <a class="el" href="structkvm__io__device.html">kvm_io_device</a> kvm_pic::dev_elcr</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -130,7 +132,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct kvm_io_device kvm_pic::dev_master</td>
+          <td class="memname">struct <a class="el" href="structkvm__io__device.html">kvm_io_device</a> kvm_pic::dev_master</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -146,7 +148,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct kvm_io_device kvm_pic::dev_slave</td>
+          <td class="memname">struct <a class="el" href="structkvm__io__device.html">kvm_io_device</a> kvm_pic::dev_slave</td>
         </tr>
       </table>
 </div><div class="memdoc">

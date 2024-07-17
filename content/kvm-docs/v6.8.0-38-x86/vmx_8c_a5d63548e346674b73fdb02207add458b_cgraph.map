@@ -1,7 +1,6 @@
 <map id="vmx_vcpu_precreate" name="vmx_vcpu_precreate">
-<area shape="rect" id="node1" title=" " alt="" coords="5,56,164,83"/>
-<area shape="rect" id="node2" href="$vmx_8c.html#aedc92a1ef6b997475c61b81f64db8033" title=" " alt="" coords="212,49,359,90"/>
-<area shape="rect" id="node3" href="$irq_8h.html#a96951e3a1bfa402d8bee67713e267b39" title=" " alt="" coords="434,5,566,32"/>
-<area shape="rect" id="node4" href="$vmx_8h.html#a0100af676b8116ac3f8cc0ba1ed54f4c" title=" " alt="" coords="641,81,748,108"/>
-<area shape="rect" id="node5" href="$vmx_8c.html#a393561ca276a555871b2d0aa15f61a9f" title=" " alt="" coords="407,107,593,133"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,13,164,39"/>
+<area shape="rect" id="node2" href="$vmx_8c.html#aedc92a1ef6b997475c61b81f64db8033" title=" " alt="" coords="212,5,359,47"/>
+<area shape="rect" id="node3" href="$vmx_8h.html#a0100af676b8116ac3f8cc0ba1ed54f4c" title=" " alt="" coords="641,13,748,39"/>
+<area shape="rect" id="node4" href="$vmx_8c.html#a393561ca276a555871b2d0aa15f61a9f" title=" " alt="" coords="407,38,593,65"/>
 </map>

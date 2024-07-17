@@ -88,32 +88,34 @@ Include dependency graph for i8259.c:</div>
 <area shape="rect" title=" " alt="" coords="5,80,101,107"/>
 <area shape="rect" title=" " alt="" coords="126,80,223,107"/>
 <area shape="rect" title=" " alt="" coords="247,80,358,107"/>
-<area shape="rect" href="irq_8h.html" title=" " alt="" coords="725,80,776,107"/>
-<area shape="rect" title=" " alt="" coords="730,453,865,480"/>
-<area shape="rect" href="trace_8h.html" title=" " alt="" coords="1372,80,1439,107"/>
-<area shape="rect" title=" " alt="" coords="433,155,572,181"/>
-<area shape="rect" title=" " alt="" coords="596,155,713,181"/>
-<area shape="rect" title=" " alt="" coords="930,155,1054,181"/>
-<area shape="rect" title=" " alt="" coords="1005,229,1107,256"/>
-<area shape="rect" href="lapic_8h.html" title=" " alt="" coords="789,155,854,181"/>
-<area shape="rect" href="hyperv_8h.html" title=" " alt="" coords="810,229,889,256"/>
-<area shape="rect" href="smm_8h.html" title=" " alt="" coords="913,229,980,256"/>
-<area shape="rect" href="x86_8h.html" title=" " alt="" coords="1033,304,1092,331"/>
-<area shape="rect" title=" " alt="" coords="1078,379,1210,405"/>
-<area shape="rect" title=" " alt="" coords="1234,379,1329,405"/>
-<area shape="rect" title=" " alt="" coords="1353,379,1469,405"/>
-<area shape="rect" href="kvm__cache__regs_8h.html" title=" " alt="" coords="911,379,1054,405"/>
-<area shape="rect" href="kvm__emulate_8h.html" title=" " alt="" coords="1493,379,1617,405"/>
-<area shape="rect" title=" " alt="" coords="1431,453,1561,480"/>
-<area shape="rect" href="fpu_8h.html" title=" " alt="" coords="1586,453,1641,480"/>
-<area shape="rect" title=" " alt="" coords="1558,528,1669,555"/>
-<area shape="rect" title=" " alt="" coords="1116,304,1249,331"/>
-<area shape="rect" title=" " alt="" coords="1079,155,1215,181"/>
-<area shape="rect" title=" " alt="" coords="1239,155,1334,181"/>
-<area shape="rect" title=" " alt="" coords="1358,155,1453,181"/>
-<area shape="rect" title=" " alt="" coords="1477,155,1619,181"/>
-<area shape="rect" title=" " alt="" coords="1644,155,1785,181"/>
-<area shape="rect" title=" " alt="" coords="1810,155,1961,181"/>
+<area shape="rect" href="irq_8h.html" title=" " alt="" coords="717,80,768,107"/>
+<area shape="rect" title=" " alt="" coords="781,453,915,480"/>
+<area shape="rect" href="trace_8h.html" title=" " alt="" coords="1840,80,1907,107"/>
+<area shape="rect" title=" " alt="" coords="948,155,1087,181"/>
+<area shape="rect" title=" " alt="" coords="517,155,635,181"/>
+<area shape="rect" title=" " alt="" coords="799,155,923,181"/>
+<area shape="rect" href="iodev_8h.html" title=" " alt="" coords="602,229,705,256"/>
+<area shape="rect" href="lapic_8h.html" title=" " alt="" coords="710,155,775,181"/>
+<area shape="rect" title=" " alt="" coords="434,304,577,331"/>
+<area shape="rect" title=" " alt="" coords="601,304,705,331"/>
+<area shape="rect" href="hyperv_8h.html" title=" " alt="" coords="781,229,859,256"/>
+<area shape="rect" href="smm_8h.html" title=" " alt="" coords="992,229,1059,256"/>
+<area shape="rect" href="x86_8h.html" title=" " alt="" coords="1035,304,1093,331"/>
+<area shape="rect" title=" " alt="" coords="1050,379,1182,405"/>
+<area shape="rect" title=" " alt="" coords="1206,379,1301,405"/>
+<area shape="rect" title=" " alt="" coords="1325,379,1441,405"/>
+<area shape="rect" href="kvm__cache__regs_8h.html" title=" " alt="" coords="831,379,974,405"/>
+<area shape="rect" href="kvm__emulate_8h.html" title=" " alt="" coords="1517,379,1641,405"/>
+<area shape="rect" title=" " alt="" coords="1572,453,1703,480"/>
+<area shape="rect" href="fpu_8h.html" title=" " alt="" coords="1493,453,1547,480"/>
+<area shape="rect" title=" " alt="" coords="1465,528,1575,555"/>
+<area shape="rect" title=" " alt="" coords="1117,304,1251,331"/>
+<area shape="rect" title=" " alt="" coords="2144,155,2280,181"/>
+<area shape="rect" title=" " alt="" coords="2305,155,2399,181"/>
+<area shape="rect" title=" " alt="" coords="1517,155,1611,181"/>
+<area shape="rect" title=" " alt="" coords="1635,155,1778,181"/>
+<area shape="rect" title=" " alt="" coords="1803,155,1944,181"/>
+<area shape="rect" title=" " alt="" coords="1969,155,2119,181"/>
 </map>
 </div>
 </div>
@@ -170,17 +172,17 @@ Functions</h2></td></tr>
 <tr class="separator:ad3cc418e9d82e9cca43e01425f76b366"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1484dfc37fa586b115d6645c7dcc88b2"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i8259_8c.html#a1484dfc37fa586b115d6645c7dcc88b2">picdev_read</a> (struct <a class="el" href="structkvm__pic.html">kvm_pic</a> *s, gpa_t addr, int len, void *val)</td></tr>
 <tr class="separator:a1484dfc37fa586b115d6645c7dcc88b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af278e56bd6082ee3f6573cf2e4f23543"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i8259_8c.html#af278e56bd6082ee3f6573cf2e4f23543">picdev_master_write</a> (struct kvm_vcpu *vcpu, struct kvm_io_device *dev, gpa_t addr, int len, const void *val)</td></tr>
+<tr class="memitem:af278e56bd6082ee3f6573cf2e4f23543"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i8259_8c.html#af278e56bd6082ee3f6573cf2e4f23543">picdev_master_write</a> (struct kvm_vcpu *vcpu, struct <a class="el" href="structkvm__io__device.html">kvm_io_device</a> *dev, gpa_t addr, int len, const void *val)</td></tr>
 <tr class="separator:af278e56bd6082ee3f6573cf2e4f23543"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8a7faf6a5b5c72ce0ecf20f7beda6ba"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i8259_8c.html#ac8a7faf6a5b5c72ce0ecf20f7beda6ba">picdev_master_read</a> (struct kvm_vcpu *vcpu, struct kvm_io_device *dev, gpa_t addr, int len, void *val)</td></tr>
+<tr class="memitem:ac8a7faf6a5b5c72ce0ecf20f7beda6ba"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i8259_8c.html#ac8a7faf6a5b5c72ce0ecf20f7beda6ba">picdev_master_read</a> (struct kvm_vcpu *vcpu, struct <a class="el" href="structkvm__io__device.html">kvm_io_device</a> *dev, gpa_t addr, int len, void *val)</td></tr>
 <tr class="separator:ac8a7faf6a5b5c72ce0ecf20f7beda6ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64b171826283830f6a0b3ed866b7931c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i8259_8c.html#a64b171826283830f6a0b3ed866b7931c">picdev_slave_write</a> (struct kvm_vcpu *vcpu, struct kvm_io_device *dev, gpa_t addr, int len, const void *val)</td></tr>
+<tr class="memitem:a64b171826283830f6a0b3ed866b7931c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i8259_8c.html#a64b171826283830f6a0b3ed866b7931c">picdev_slave_write</a> (struct kvm_vcpu *vcpu, struct <a class="el" href="structkvm__io__device.html">kvm_io_device</a> *dev, gpa_t addr, int len, const void *val)</td></tr>
 <tr class="separator:a64b171826283830f6a0b3ed866b7931c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dcc0815ffa7a5cc6aa28327488d8f82"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i8259_8c.html#a6dcc0815ffa7a5cc6aa28327488d8f82">picdev_slave_read</a> (struct kvm_vcpu *vcpu, struct kvm_io_device *dev, gpa_t addr, int len, void *val)</td></tr>
+<tr class="memitem:a6dcc0815ffa7a5cc6aa28327488d8f82"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i8259_8c.html#a6dcc0815ffa7a5cc6aa28327488d8f82">picdev_slave_read</a> (struct kvm_vcpu *vcpu, struct <a class="el" href="structkvm__io__device.html">kvm_io_device</a> *dev, gpa_t addr, int len, void *val)</td></tr>
 <tr class="separator:a6dcc0815ffa7a5cc6aa28327488d8f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dc9bd64afa719e7b8253ee3db6fa85b"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i8259_8c.html#a1dc9bd64afa719e7b8253ee3db6fa85b">picdev_elcr_write</a> (struct kvm_vcpu *vcpu, struct kvm_io_device *dev, gpa_t addr, int len, const void *val)</td></tr>
+<tr class="memitem:a1dc9bd64afa719e7b8253ee3db6fa85b"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i8259_8c.html#a1dc9bd64afa719e7b8253ee3db6fa85b">picdev_elcr_write</a> (struct kvm_vcpu *vcpu, struct <a class="el" href="structkvm__io__device.html">kvm_io_device</a> *dev, gpa_t addr, int len, const void *val)</td></tr>
 <tr class="separator:a1dc9bd64afa719e7b8253ee3db6fa85b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90b8b13ef894f381c91ad0a92ef4b2c9"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i8259_8c.html#a90b8b13ef894f381c91ad0a92ef4b2c9">picdev_elcr_read</a> (struct kvm_vcpu *vcpu, struct kvm_io_device *dev, gpa_t addr, int len, void *val)</td></tr>
+<tr class="memitem:a90b8b13ef894f381c91ad0a92ef4b2c9"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i8259_8c.html#a90b8b13ef894f381c91ad0a92ef4b2c9">picdev_elcr_read</a> (struct kvm_vcpu *vcpu, struct <a class="el" href="structkvm__io__device.html">kvm_io_device</a> *dev, gpa_t addr, int len, void *val)</td></tr>
 <tr class="separator:a90b8b13ef894f381c91ad0a92ef4b2c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5080582d1831f8ec6bf2b3264e6c3e0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i8259_8c.html#ac5080582d1831f8ec6bf2b3264e6c3e0">kvm_pic_init</a> (struct kvm *kvm)</td></tr>
 <tr class="separator:ac5080582d1831f8ec6bf2b3264e6c3e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,11 +191,11 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:aa35cc43aa9c63a40093c425bba59c1c5"><td class="memItemLeft" align="right" valign="top">static const struct kvm_io_device_ops&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i8259_8c.html#aa35cc43aa9c63a40093c425bba59c1c5">picdev_master_ops</a></td></tr>
+<tr class="memitem:aa35cc43aa9c63a40093c425bba59c1c5"><td class="memItemLeft" align="right" valign="top">static const struct <a class="el" href="structkvm__io__device__ops.html">kvm_io_device_ops</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i8259_8c.html#aa35cc43aa9c63a40093c425bba59c1c5">picdev_master_ops</a></td></tr>
 <tr class="separator:aa35cc43aa9c63a40093c425bba59c1c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7f4d85fe684c66dc6ddf104baa1d9c9"><td class="memItemLeft" align="right" valign="top">static const struct kvm_io_device_ops&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i8259_8c.html#af7f4d85fe684c66dc6ddf104baa1d9c9">picdev_slave_ops</a></td></tr>
+<tr class="memitem:af7f4d85fe684c66dc6ddf104baa1d9c9"><td class="memItemLeft" align="right" valign="top">static const struct <a class="el" href="structkvm__io__device__ops.html">kvm_io_device_ops</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i8259_8c.html#af7f4d85fe684c66dc6ddf104baa1d9c9">picdev_slave_ops</a></td></tr>
 <tr class="separator:af7f4d85fe684c66dc6ddf104baa1d9c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8404f46dab645805283ac1cdbf2d37aa"><td class="memItemLeft" align="right" valign="top">static const struct kvm_io_device_ops&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i8259_8c.html#a8404f46dab645805283ac1cdbf2d37aa">picdev_elcr_ops</a></td></tr>
+<tr class="memitem:a8404f46dab645805283ac1cdbf2d37aa"><td class="memItemLeft" align="right" valign="top">static const struct <a class="el" href="structkvm__io__device__ops.html">kvm_io_device_ops</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i8259_8c.html#a8404f46dab645805283ac1cdbf2d37aa">picdev_elcr_ops</a></td></tr>
 <tr class="separator:a8404f46dab645805283ac1cdbf2d37aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -651,9 +653,9 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;    <span class="comment">/*</span></div>
 <div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;<span class="comment">     * Initialize PIO device</span></div>
 <div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;    kvm_iodevice_init(&amp;s-&gt;<a class="code" href="structkvm__pic.html#a192628551372bf9be962e8d6e931f135">dev_master</a>, &amp;<a class="code" href="i8259_8c.html#aa35cc43aa9c63a40093c425bba59c1c5">picdev_master_ops</a>);</div>
-<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;    kvm_iodevice_init(&amp;s-&gt;<a class="code" href="structkvm__pic.html#a4e6e3c9bffa5564c4866e3b81f96136f">dev_slave</a>, &amp;<a class="code" href="i8259_8c.html#af7f4d85fe684c66dc6ddf104baa1d9c9">picdev_slave_ops</a>);</div>
-<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;    kvm_iodevice_init(&amp;s-&gt;<a class="code" href="structkvm__pic.html#a32ff6b714dcdcdba65eed1f27857ba90">dev_elcr</a>, &amp;<a class="code" href="i8259_8c.html#a8404f46dab645805283ac1cdbf2d37aa">picdev_elcr_ops</a>);</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;    <a class="code" href="iodev_8h.html#a8999defe529eb3e3870197ef8e39fad5">kvm_iodevice_init</a>(&amp;s-&gt;<a class="code" href="structkvm__pic.html#a192628551372bf9be962e8d6e931f135">dev_master</a>, &amp;<a class="code" href="i8259_8c.html#aa35cc43aa9c63a40093c425bba59c1c5">picdev_master_ops</a>);</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;    <a class="code" href="iodev_8h.html#a8999defe529eb3e3870197ef8e39fad5">kvm_iodevice_init</a>(&amp;s-&gt;<a class="code" href="structkvm__pic.html#a4e6e3c9bffa5564c4866e3b81f96136f">dev_slave</a>, &amp;<a class="code" href="i8259_8c.html#af7f4d85fe684c66dc6ddf104baa1d9c9">picdev_slave_ops</a>);</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;    <a class="code" href="iodev_8h.html#a8999defe529eb3e3870197ef8e39fad5">kvm_iodevice_init</a>(&amp;s-&gt;<a class="code" href="structkvm__pic.html#a32ff6b714dcdcdba65eed1f27857ba90">dev_elcr</a>, &amp;<a class="code" href="i8259_8c.html#a8404f46dab645805283ac1cdbf2d37aa">picdev_elcr_ops</a>);</div>
 <div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;    mutex_lock(&amp;<a class="code" href="structkvm__pic.html#a697ced0835fd6f64e36410164db9db28">kvm</a>-&gt;slots_lock);</div>
 <div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;    ret = <a class="code" href="kvm__main_8c.html#a0afe5ce3e9ff1105328b06ec985e3374">kvm_io_bus_register_dev</a>(<a class="code" href="structkvm__pic.html#a697ced0835fd6f64e36410164db9db28">kvm</a>, KVM_PIO_BUS, 0x20, 2,</div>
 <div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;                      &amp;s-&gt;<a class="code" href="structkvm__pic.html#a192628551372bf9be962e8d6e931f135">dev_master</a>);</div>
@@ -690,6 +692,7 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="ai8259_8c_html_a8404f46dab645805283ac1cdbf2d37aa"><div class="ttname"><a href="i8259_8c.html#a8404f46dab645805283ac1cdbf2d37aa">picdev_elcr_ops</a></div><div class="ttdeci">static const struct kvm_io_device_ops picdev_elcr_ops</div><div class="ttdef"><b>Definition:</b> <a href="i8259_8c_source.html#l00566">i8259.c:585</a></div></div>
 <div class="ttc" id="ai8259_8c_html_aa35cc43aa9c63a40093c425bba59c1c5"><div class="ttname"><a href="i8259_8c.html#aa35cc43aa9c63a40093c425bba59c1c5">picdev_master_ops</a></div><div class="ttdeci">static const struct kvm_io_device_ops picdev_master_ops</div><div class="ttdef"><b>Definition:</b> <a href="i8259_8c_source.html#l00566">i8259.c:575</a></div></div>
 <div class="ttc" id="ai8259_8c_html_af7f4d85fe684c66dc6ddf104baa1d9c9"><div class="ttname"><a href="i8259_8c.html#af7f4d85fe684c66dc6ddf104baa1d9c9">picdev_slave_ops</a></div><div class="ttdeci">static const struct kvm_io_device_ops picdev_slave_ops</div><div class="ttdef"><b>Definition:</b> <a href="i8259_8c_source.html#l00566">i8259.c:580</a></div></div>
+<div class="ttc" id="aiodev_8h_html_a8999defe529eb3e3870197ef8e39fad5"><div class="ttname"><a href="iodev_8h.html#a8999defe529eb3e3870197ef8e39fad5">kvm_iodevice_init</a></div><div class="ttdeci">static void kvm_iodevice_init(struct kvm_io_device *dev, const struct kvm_io_device_ops *ops)</div><div class="ttdef"><b>Definition:</b> <a href="iodev_8h_source.html#l00036">iodev.h:36</a></div></div>
 <div class="ttc" id="akvm__main_8c_html_a0afe5ce3e9ff1105328b06ec985e3374"><div class="ttname"><a href="kvm__main_8c.html#a0afe5ce3e9ff1105328b06ec985e3374">kvm_io_bus_register_dev</a></div><div class="ttdeci">int kvm_io_bus_register_dev(struct kvm *kvm, enum kvm_bus bus_idx, gpa_t addr, int len, struct kvm_io_device *dev)</div><div class="ttdef"><b>Definition:</b> <a href="kvm__main_8c_source.html#l05897">kvm_main.c:5897</a></div></div>
 <div class="ttc" id="astructkvm__kpic__state_html_a1931404cd9d16f15239bf4517009a800"><div class="ttname"><a href="structkvm__kpic__state.html#a1931404cd9d16f15239bf4517009a800">kvm_kpic_state::pics_state</a></div><div class="ttdeci">struct kvm_pic * pics_state</div><div class="ttdef"><b>Definition:</b> <a href="irq_8h_source.html#l00046">irq.h:46</a></div></div>
 <div class="ttc" id="astructkvm__pic_html_a02a4c44326718fd7525588d5223f90c6"><div class="ttname"><a href="structkvm__pic.html#a02a4c44326718fd7525588d5223f90c6">kvm_pic::pics</a></div><div class="ttdeci">struct kvm_kpic_state pics[2]</div><div class="ttdef"><b>Definition:</b> <a href="irq_8h_source.html#l00053">irq.h:54</a></div></div>
@@ -699,9 +702,10 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="i8259_8c_ac5080582d1831f8ec6bf2b3264e6c3e0_cgraph.png" border="0" usemap="#ai8259_8c_ac5080582d1831f8ec6bf2b3264e6c3e0_cgraph" alt=""/></div>
 <map name="ai8259_8c_ac5080582d1831f8ec6bf2b3264e6c3e0_cgraph" id="ai8259_8c_ac5080582d1831f8ec6bf2b3264e6c3e0_cgraph">
-<area shape="rect" title=" " alt="" coords="5,31,111,57"/>
+<area shape="rect" title=" " alt="" coords="5,56,111,83"/>
 <area shape="rect" href="kvm__main_8c.html#a0afe5ce3e9ff1105328b06ec985e3374" title=" " alt="" coords="167,5,355,32"/>
 <area shape="rect" href="kvm__main_8c.html#a103c02eb7ca545106f3130776c2a8897" title=" " alt="" coords="159,56,363,83"/>
+<area shape="rect" href="iodev_8h.html#a8999defe529eb3e3870197ef8e39fad5" title=" " alt="" coords="190,107,331,133"/>
 <area shape="rect" href="kvm__main_8c.html#a75ccec7a81fef145fb3c3a3b5479a86f" title=" " alt="" coords="421,5,556,32"/>
 <area shape="rect" href="kvm__main_8c.html#a3089edf2c0e5790aab7e8ed723f34b5b" title=" " alt="" coords="411,56,567,83"/>
 <area shape="rect" href="kvm__main_8c.html#aa6d7dea09a0b657f29e92f424e5d0633" title=" " alt="" coords="615,81,801,108"/>
@@ -2371,7 +2375,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct kvm_io_device *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structkvm__io__device.html">kvm_io_device</a> *&#160;</td>
           <td class="paramname"><em>dev</em>, </td>
         </tr>
         <tr>
@@ -2459,7 +2463,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct kvm_io_device *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structkvm__io__device.html">kvm_io_device</a> *&#160;</td>
           <td class="paramname"><em>dev</em>, </td>
         </tr>
         <tr>
@@ -2549,7 +2553,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct kvm_io_device *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structkvm__io__device.html">kvm_io_device</a> *&#160;</td>
           <td class="paramname"><em>dev</em>, </td>
         </tr>
         <tr>
@@ -2636,7 +2640,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct kvm_io_device *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structkvm__io__device.html">kvm_io_device</a> *&#160;</td>
           <td class="paramname"><em>dev</em>, </td>
         </tr>
         <tr>
@@ -2842,7 +2846,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct kvm_io_device *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structkvm__io__device.html">kvm_io_device</a> *&#160;</td>
           <td class="paramname"><em>dev</em>, </td>
         </tr>
         <tr>
@@ -2929,7 +2933,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct kvm_io_device *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structkvm__io__device.html">kvm_io_device</a> *&#160;</td>
           <td class="paramname"><em>dev</em>, </td>
         </tr>
         <tr>
@@ -3133,7 +3137,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const struct kvm_io_device_ops picdev_elcr_ops</td>
+          <td class="memname">const struct <a class="el" href="structkvm__io__device__ops.html">kvm_io_device_ops</a> picdev_elcr_ops</td>
         </tr>
       </table>
   </td>
@@ -3163,7 +3167,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const struct kvm_io_device_ops picdev_master_ops</td>
+          <td class="memname">const struct <a class="el" href="structkvm__io__device__ops.html">kvm_io_device_ops</a> picdev_master_ops</td>
         </tr>
       </table>
   </td>
@@ -3193,7 +3197,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const struct kvm_io_device_ops picdev_slave_ops</td>
+          <td class="memname">const struct <a class="el" href="structkvm__io__device__ops.html">kvm_io_device_ops</a> picdev_slave_ops</td>
         </tr>
       </table>
   </td>

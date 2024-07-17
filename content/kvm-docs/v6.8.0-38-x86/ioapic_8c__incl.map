@@ -15,21 +15,23 @@
 <area shape="rect" id="node14" title=" " alt="" coords="1447,80,1559,107"/>
 <area shape="rect" id="node15" title=" " alt="" coords="1582,80,1730,107"/>
 <area shape="rect" id="node16" href="$ioapic_8h.html" title=" " alt="" coords="567,80,641,107"/>
-<area shape="rect" id="node18" href="$irq_8h.html" title=" " alt="" coords="1787,155,1837,181"/>
-<area shape="rect" id="node21" href="$lapic_8h.html" title=" " alt="" coords="1850,229,1915,256"/>
-<area shape="rect" id="node17" title=" " alt="" coords="1398,304,1501,331"/>
-<area shape="rect" id="node19" title=" " alt="" coords="1487,229,1625,256"/>
-<area shape="rect" id="node20" title=" " alt="" coords="1650,229,1774,256"/>
-<area shape="rect" id="node22" href="$hyperv_8h.html" title=" " alt="" coords="2031,304,2110,331"/>
-<area shape="rect" id="node32" href="$smm_8h.html" title=" " alt="" coords="1917,304,1984,331"/>
-<area shape="rect" id="node23" href="$x86_8h.html" title=" " alt="" coords="2285,379,2344,405"/>
-<area shape="rect" id="node24" title=" " alt="" coords="2249,453,2381,480"/>
-<area shape="rect" id="node25" title=" " alt="" coords="2405,453,2499,480"/>
-<area shape="rect" id="node26" title=" " alt="" coords="2523,453,2639,480"/>
-<area shape="rect" id="node27" href="$kvm__cache__regs_8h.html" title=" " alt="" coords="2030,453,2173,480"/>
-<area shape="rect" id="node28" href="$kvm__emulate_8h.html" title=" " alt="" coords="2663,453,2787,480"/>
-<area shape="rect" id="node29" title=" " alt="" coords="2719,528,2849,555"/>
-<area shape="rect" id="node30" href="$fpu_8h.html" title=" " alt="" coords="2639,528,2694,555"/>
-<area shape="rect" id="node31" title=" " alt="" coords="2611,603,2722,629"/>
-<area shape="rect" id="node33" title=" " alt="" coords="1900,379,2033,405"/>
+<area shape="rect" id="node20" href="$irq_8h.html" title=" " alt="" coords="1787,155,1837,181"/>
+<area shape="rect" id="node23" href="$lapic_8h.html" title=" " alt="" coords="1850,229,1915,256"/>
+<area shape="rect" id="node17" href="$iodev_8h.html" title=" " alt="" coords="1398,304,1501,331"/>
+<area shape="rect" id="node18" title=" " alt="" coords="1451,379,1594,405"/>
+<area shape="rect" id="node19" title=" " alt="" coords="1323,379,1427,405"/>
+<area shape="rect" id="node21" title=" " alt="" coords="1487,229,1625,256"/>
+<area shape="rect" id="node22" title=" " alt="" coords="1650,229,1774,256"/>
+<area shape="rect" id="node24" href="$hyperv_8h.html" title=" " alt="" coords="2031,304,2110,331"/>
+<area shape="rect" id="node34" href="$smm_8h.html" title=" " alt="" coords="1916,304,1983,331"/>
+<area shape="rect" id="node25" href="$x86_8h.html" title=" " alt="" coords="2285,379,2344,405"/>
+<area shape="rect" id="node26" title=" " alt="" coords="2249,453,2381,480"/>
+<area shape="rect" id="node27" title=" " alt="" coords="2405,453,2499,480"/>
+<area shape="rect" id="node28" title=" " alt="" coords="2523,453,2639,480"/>
+<area shape="rect" id="node29" href="$kvm__cache__regs_8h.html" title=" " alt="" coords="2030,453,2173,480"/>
+<area shape="rect" id="node30" href="$kvm__emulate_8h.html" title=" " alt="" coords="2663,453,2787,480"/>
+<area shape="rect" id="node31" title=" " alt="" coords="2719,528,2849,555"/>
+<area shape="rect" id="node32" href="$fpu_8h.html" title=" " alt="" coords="2639,528,2694,555"/>
+<area shape="rect" id="node33" title=" " alt="" coords="2611,603,2722,629"/>
+<area shape="rect" id="node35" title=" " alt="" coords="1900,379,2033,405"/>
 </map>

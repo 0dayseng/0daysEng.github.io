@@ -84,7 +84,7 @@ $(function() {
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *   Yaniv Kamay  &lt;yaniv@qumranet.com&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;kvm/iodev.h&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iodev_8h.html">kvm/iodev.h</a>&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;linux/kvm_host.h&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;linux/kvm.h&gt;</span></div>
@@ -5782,10 +5782,10 @@ $(function() {
 <div class="line"><a name="l05711"></a><span class="lineno"> 5711</span>&#160;}</div>
 <div class="line"><a name="l05712"></a><span class="lineno"> 5712</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CONFIG_KVM_GENERIC_HARDWARE_ENABLING */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l05713"></a><span class="lineno"> 5713</span>&#160; </div>
-<div class="line"><a name="l05714"></a><span class="lineno"><a class="line" href="kvm__main_8c.html#aa6d7dea09a0b657f29e92f424e5d0633"> 5714</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="kvm__main_8c.html#aa6d7dea09a0b657f29e92f424e5d0633">kvm_iodevice_destructor</a>(<span class="keyword">struct</span> kvm_io_device *dev)</div>
+<div class="line"><a name="l05714"></a><span class="lineno"><a class="line" href="kvm__main_8c.html#aa6d7dea09a0b657f29e92f424e5d0633"> 5714</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="kvm__main_8c.html#aa6d7dea09a0b657f29e92f424e5d0633">kvm_iodevice_destructor</a>(<span class="keyword">struct</span> <a class="code" href="structkvm__io__device.html">kvm_io_device</a> *dev)</div>
 <div class="line"><a name="l05715"></a><span class="lineno"> 5715</span>&#160;{</div>
-<div class="line"><a name="l05716"></a><span class="lineno"> 5716</span>&#160;    <span class="keywordflow">if</span> (dev-&gt;ops-&gt;destructor)</div>
-<div class="line"><a name="l05717"></a><span class="lineno"> 5717</span>&#160;        dev-&gt;ops-&gt;destructor(dev);</div>
+<div class="line"><a name="l05716"></a><span class="lineno"> 5716</span>&#160;    <span class="keywordflow">if</span> (dev-&gt;<a class="code" href="structkvm__io__device.html#a79da96aa51f9f84cf939ef7437602b3d">ops</a>-&gt;<a class="code" href="structkvm__io__device__ops.html#a0464444b47c8c4d9a647209b740eaea0">destructor</a>)</div>
+<div class="line"><a name="l05717"></a><span class="lineno"> 5717</span>&#160;        dev-&gt;<a class="code" href="structkvm__io__device.html#a79da96aa51f9f84cf939ef7437602b3d">ops</a>-&gt;<a class="code" href="structkvm__io__device__ops.html#a0464444b47c8c4d9a647209b740eaea0">destructor</a>(dev);</div>
 <div class="line"><a name="l05718"></a><span class="lineno"> 5718</span>&#160;}</div>
 <div class="line"><a name="l05719"></a><span class="lineno"> 5719</span>&#160; </div>
 <div class="line"><a name="l05720"></a><span class="lineno"><a class="line" href="kvm__main_8c.html#a3089edf2c0e5790aab7e8ed723f34b5b"> 5720</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="kvm__main_8c.html#a3089edf2c0e5790aab7e8ed723f34b5b">kvm_io_bus_destroy</a>(<span class="keyword">struct</span> kvm_io_bus *bus)</div>
@@ -5793,7 +5793,7 @@ $(function() {
 <div class="line"><a name="l05722"></a><span class="lineno"> 5722</span>&#160;    <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l05723"></a><span class="lineno"> 5723</span>&#160; </div>
 <div class="line"><a name="l05724"></a><span class="lineno"> 5724</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; bus-&gt;dev_count; i++) {</div>
-<div class="line"><a name="l05725"></a><span class="lineno"> 5725</span>&#160;        <span class="keyword">struct </span>kvm_io_device *pos = bus-&gt;range[i].dev;</div>
+<div class="line"><a name="l05725"></a><span class="lineno"> 5725</span>&#160;        <span class="keyword">struct </span><a class="code" href="structkvm__io__device.html">kvm_io_device</a> *pos = bus-&gt;range[i].dev;</div>
 <div class="line"><a name="l05726"></a><span class="lineno"> 5726</span>&#160; </div>
 <div class="line"><a name="l05727"></a><span class="lineno"> 5727</span>&#160;        <a class="code" href="kvm__main_8c.html#aa6d7dea09a0b657f29e92f424e5d0633">kvm_iodevice_destructor</a>(pos);</div>
 <div class="line"><a name="l05728"></a><span class="lineno"> 5728</span>&#160;    }</div>
@@ -5865,7 +5865,7 @@ $(function() {
 <div class="line"><a name="l05794"></a><span class="lineno"> 5794</span>&#160; </div>
 <div class="line"><a name="l05795"></a><span class="lineno"> 5795</span>&#160;    <span class="keywordflow">while</span> (idx &lt; bus-&gt;dev_count &amp;&amp;</div>
 <div class="line"><a name="l05796"></a><span class="lineno"> 5796</span>&#160;        <a class="code" href="kvm__main_8c.html#a75ccec7a81fef145fb3c3a3b5479a86f">kvm_io_bus_cmp</a>(range, &amp;bus-&gt;range[idx]) == 0) {</div>
-<div class="line"><a name="l05797"></a><span class="lineno"> 5797</span>&#160;        <span class="keywordflow">if</span> (!kvm_iodevice_write(vcpu, bus-&gt;range[idx].dev, range-&gt;addr,</div>
+<div class="line"><a name="l05797"></a><span class="lineno"> 5797</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="iodev_8h.html#a60b8903e245db48d9c5d7287ff781825">kvm_iodevice_write</a>(vcpu, bus-&gt;range[idx].dev, range-&gt;addr,</div>
 <div class="line"><a name="l05798"></a><span class="lineno"> 5798</span>&#160;                    range-&gt;len, val))</div>
 <div class="line"><a name="l05799"></a><span class="lineno"> 5799</span>&#160;            <span class="keywordflow">return</span> idx;</div>
 <div class="line"><a name="l05800"></a><span class="lineno"> 5800</span>&#160;        idx++;</div>
@@ -5914,7 +5914,7 @@ $(function() {
 <div class="line"><a name="l05843"></a><span class="lineno"> 5843</span>&#160;    <span class="comment">/* First try the device referenced by cookie. */</span></div>
 <div class="line"><a name="l05844"></a><span class="lineno"> 5844</span>&#160;    <span class="keywordflow">if</span> ((cookie &gt;= 0) &amp;&amp; (cookie &lt; bus-&gt;dev_count) &amp;&amp;</div>
 <div class="line"><a name="l05845"></a><span class="lineno"> 5845</span>&#160;        (<a class="code" href="kvm__main_8c.html#a75ccec7a81fef145fb3c3a3b5479a86f">kvm_io_bus_cmp</a>(&amp;range, &amp;bus-&gt;range[cookie]) == 0))</div>
-<div class="line"><a name="l05846"></a><span class="lineno"> 5846</span>&#160;        <span class="keywordflow">if</span> (!kvm_iodevice_write(vcpu, bus-&gt;range[cookie].dev, addr, len,</div>
+<div class="line"><a name="l05846"></a><span class="lineno"> 5846</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="iodev_8h.html#a60b8903e245db48d9c5d7287ff781825">kvm_iodevice_write</a>(vcpu, bus-&gt;range[cookie].dev, addr, len,</div>
 <div class="line"><a name="l05847"></a><span class="lineno"> 5847</span>&#160;                    val))</div>
 <div class="line"><a name="l05848"></a><span class="lineno"> 5848</span>&#160;            <span class="keywordflow">return</span> cookie;</div>
 <div class="line"><a name="l05849"></a><span class="lineno"> 5849</span>&#160; </div>
@@ -5936,7 +5936,7 @@ $(function() {
 <div class="line"><a name="l05865"></a><span class="lineno"> 5865</span>&#160; </div>
 <div class="line"><a name="l05866"></a><span class="lineno"> 5866</span>&#160;    <span class="keywordflow">while</span> (idx &lt; bus-&gt;dev_count &amp;&amp;</div>
 <div class="line"><a name="l05867"></a><span class="lineno"> 5867</span>&#160;        <a class="code" href="kvm__main_8c.html#a75ccec7a81fef145fb3c3a3b5479a86f">kvm_io_bus_cmp</a>(range, &amp;bus-&gt;range[idx]) == 0) {</div>
-<div class="line"><a name="l05868"></a><span class="lineno"> 5868</span>&#160;        <span class="keywordflow">if</span> (!kvm_iodevice_read(vcpu, bus-&gt;range[idx].dev, range-&gt;addr,</div>
+<div class="line"><a name="l05868"></a><span class="lineno"> 5868</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="iodev_8h.html#a4546415d4264729008dd23c55a07545a">kvm_iodevice_read</a>(vcpu, bus-&gt;range[idx].dev, range-&gt;addr,</div>
 <div class="line"><a name="l05869"></a><span class="lineno"> 5869</span>&#160;                       range-&gt;len, val))</div>
 <div class="line"><a name="l05870"></a><span class="lineno"> 5870</span>&#160;            <span class="keywordflow">return</span> idx;</div>
 <div class="line"><a name="l05871"></a><span class="lineno"> 5871</span>&#160;        idx++;</div>
@@ -5966,7 +5966,7 @@ $(function() {
 <div class="line"><a name="l05895"></a><span class="lineno"> 5895</span>&#160;}</div>
 <div class="line"><a name="l05896"></a><span class="lineno"> 5896</span>&#160; </div>
 <div class="line"><a name="l05897"></a><span class="lineno"><a class="line" href="kvm__main_8c.html#a0afe5ce3e9ff1105328b06ec985e3374"> 5897</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="kvm__main_8c.html#a0afe5ce3e9ff1105328b06ec985e3374">kvm_io_bus_register_dev</a>(<span class="keyword">struct</span> kvm *kvm, <span class="keyword">enum</span> kvm_bus bus_idx, gpa_t addr,</div>
-<div class="line"><a name="l05898"></a><span class="lineno"> 5898</span>&#160;                <span class="keywordtype">int</span> len, <span class="keyword">struct</span> kvm_io_device *dev)</div>
+<div class="line"><a name="l05898"></a><span class="lineno"> 5898</span>&#160;                <span class="keywordtype">int</span> len, <span class="keyword">struct</span> <a class="code" href="structkvm__io__device.html">kvm_io_device</a> *dev)</div>
 <div class="line"><a name="l05899"></a><span class="lineno"> 5899</span>&#160;{</div>
 <div class="line"><a name="l05900"></a><span class="lineno"> 5900</span>&#160;    <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l05901"></a><span class="lineno"> 5901</span>&#160;    <span class="keyword">struct </span>kvm_io_bus *new_bus, *bus;</div>
@@ -6010,7 +6010,7 @@ $(function() {
 <div class="line"><a name="l05939"></a><span class="lineno"> 5939</span>&#160;}</div>
 <div class="line"><a name="l05940"></a><span class="lineno"> 5940</span>&#160; </div>
 <div class="line"><a name="l05941"></a><span class="lineno"><a class="line" href="kvm__main_8c.html#a103c02eb7ca545106f3130776c2a8897"> 5941</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="kvm__main_8c.html#a103c02eb7ca545106f3130776c2a8897">kvm_io_bus_unregister_dev</a>(<span class="keyword">struct</span> kvm *kvm, <span class="keyword">enum</span> kvm_bus bus_idx,</div>
-<div class="line"><a name="l05942"></a><span class="lineno"> 5942</span>&#160;                  <span class="keyword">struct</span> kvm_io_device *dev)</div>
+<div class="line"><a name="l05942"></a><span class="lineno"> 5942</span>&#160;                  <span class="keyword">struct</span> <a class="code" href="structkvm__io__device.html">kvm_io_device</a> *dev)</div>
 <div class="line"><a name="l05943"></a><span class="lineno"> 5943</span>&#160;{</div>
 <div class="line"><a name="l05944"></a><span class="lineno"> 5944</span>&#160;    <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l05945"></a><span class="lineno"> 5945</span>&#160;    <span class="keyword">struct </span>kvm_io_bus *new_bus, *bus;</div>
@@ -6057,12 +6057,12 @@ $(function() {
 <div class="line"><a name="l05986"></a><span class="lineno"> 5986</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l05987"></a><span class="lineno"> 5987</span>&#160;}</div>
 <div class="line"><a name="l05988"></a><span class="lineno"> 5988</span>&#160; </div>
-<div class="line"><a name="l05989"></a><span class="lineno"><a class="line" href="kvm__main_8c.html#acb4d46ae6cc918253046320805f63a95"> 5989</a></span>&#160;<span class="keyword">struct </span>kvm_io_device *<a class="code" href="kvm__main_8c.html#acb4d46ae6cc918253046320805f63a95">kvm_io_bus_get_dev</a>(<span class="keyword">struct</span> kvm *kvm, <span class="keyword">enum</span> kvm_bus bus_idx,</div>
+<div class="line"><a name="l05989"></a><span class="lineno"><a class="line" href="kvm__main_8c.html#acb4d46ae6cc918253046320805f63a95"> 5989</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structkvm__io__device.html">kvm_io_device</a> *<a class="code" href="kvm__main_8c.html#acb4d46ae6cc918253046320805f63a95">kvm_io_bus_get_dev</a>(<span class="keyword">struct</span> kvm *kvm, <span class="keyword">enum</span> kvm_bus bus_idx,</div>
 <div class="line"><a name="l05990"></a><span class="lineno"> 5990</span>&#160;                     gpa_t addr)</div>
 <div class="line"><a name="l05991"></a><span class="lineno"> 5991</span>&#160;{</div>
 <div class="line"><a name="l05992"></a><span class="lineno"> 5992</span>&#160;    <span class="keyword">struct </span>kvm_io_bus *bus;</div>
 <div class="line"><a name="l05993"></a><span class="lineno"> 5993</span>&#160;    <span class="keywordtype">int</span> dev_idx, srcu_idx;</div>
-<div class="line"><a name="l05994"></a><span class="lineno"> 5994</span>&#160;    <span class="keyword">struct </span>kvm_io_device *iodev = NULL;</div>
+<div class="line"><a name="l05994"></a><span class="lineno"> 5994</span>&#160;    <span class="keyword">struct </span><a class="code" href="structkvm__io__device.html">kvm_io_device</a> *iodev = NULL;</div>
 <div class="line"><a name="l05995"></a><span class="lineno"> 5995</span>&#160; </div>
 <div class="line"><a name="l05996"></a><span class="lineno"> 5996</span>&#160;    srcu_idx = srcu_read_lock(&amp;kvm-&gt;srcu);</div>
 <div class="line"><a name="l05997"></a><span class="lineno"> 5997</span>&#160; </div>
@@ -6716,6 +6716,9 @@ $(function() {
 <div class="ttc" id="aguest__memfd_8c_html_a68c040b0b6a5e2b2ab09b08948e52bdf"><div class="ttname"><a href="guest__memfd_8c.html#a68c040b0b6a5e2b2ab09b08948e52bdf">kvm_gmem_init</a></div><div class="ttdeci">void kvm_gmem_init(struct module *module)</div><div class="ttdef"><b>Definition:</b> <a href="guest__memfd_8c_source.html#l00257">guest_memfd.c:257</a></div></div>
 <div class="ttc" id="aguest__memfd_8c_html_a905ecfa162a290dceb1c7d5678e2a70f"><div class="ttname"><a href="guest__memfd_8c.html#a905ecfa162a290dceb1c7d5678e2a70f">kvm_gmem_unbind</a></div><div class="ttdeci">void kvm_gmem_unbind(struct kvm_memory_slot *slot)</div><div class="ttdef"><b>Definition:</b> <a href="guest__memfd_8c_source.html#l00459">guest_memfd.c:459</a></div></div>
 <div class="ttc" id="aguest__memfd_8c_html_abaf64b8cb9e32ccb368d1d9c49d0bb02"><div class="ttname"><a href="guest__memfd_8c.html#abaf64b8cb9e32ccb368d1d9c49d0bb02">kvm_gmem_bind</a></div><div class="ttdeci">int kvm_gmem_bind(struct kvm *kvm, struct kvm_memory_slot *slot, unsigned int fd, loff_t offset)</div><div class="ttdef"><b>Definition:</b> <a href="guest__memfd_8c_source.html#l00397">guest_memfd.c:397</a></div></div>
+<div class="ttc" id="aiodev_8h_html"><div class="ttname"><a href="iodev_8h.html">iodev.h</a></div></div>
+<div class="ttc" id="aiodev_8h_html_a4546415d4264729008dd23c55a07545a"><div class="ttname"><a href="iodev_8h.html#a4546415d4264729008dd23c55a07545a">kvm_iodevice_read</a></div><div class="ttdeci">static int kvm_iodevice_read(struct kvm_vcpu *vcpu, struct kvm_io_device *dev, gpa_t addr, int l, void *v)</div><div class="ttdef"><b>Definition:</b> <a href="iodev_8h_source.html#l00042">iodev.h:42</a></div></div>
+<div class="ttc" id="aiodev_8h_html_a60b8903e245db48d9c5d7287ff781825"><div class="ttname"><a href="iodev_8h.html#a60b8903e245db48d9c5d7287ff781825">kvm_iodevice_write</a></div><div class="ttdeci">static int kvm_iodevice_write(struct kvm_vcpu *vcpu, struct kvm_io_device *dev, gpa_t addr, int l, const void *v)</div><div class="ttdef"><b>Definition:</b> <a href="iodev_8h_source.html#l00050">iodev.h:50</a></div></div>
 <div class="ttc" id="airq_8c_html_a78e23e83bece8c269268f3a263fbb114"><div class="ttname"><a href="irq_8c.html#a78e23e83bece8c269268f3a263fbb114">kvm_cpu_has_pending_timer</a></div><div class="ttdeci">int kvm_cpu_has_pending_timer(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="irq_8c_source.html#l00024">irq.c:24</a></div></div>
 <div class="ttc" id="airq__comm_8c_html_a6ef078780421d90eb1e54bff02f6abd0"><div class="ttname"><a href="irq__comm_8c.html#a6ef078780421d90eb1e54bff02f6abd0">kvm_arch_can_set_irq_routing</a></div><div class="ttdeci">bool kvm_arch_can_set_irq_routing(struct kvm *kvm)</div><div class="ttdef"><b>Definition:</b> <a href="irq__comm_8c_source.html#l00274">irq_comm.c:274</a></div></div>
 <div class="ttc" id="airqchip_8c_html_a2440f4d2a02137c955ea1d22eeb13c8f"><div class="ttname"><a href="irqchip_8c.html#a2440f4d2a02137c955ea1d22eeb13c8f">kvm_send_userspace_msi</a></div><div class="ttdeci">int kvm_send_userspace_msi(struct kvm *kvm, struct kvm_msi *msi)</div><div class="ttdef"><b>Definition:</b> <a href="irqchip_8c_source.html#l00048">irqchip.c:48</a></div></div>
@@ -6985,6 +6988,9 @@ $(function() {
 <div class="ttc" id="ammu_8c_html_a978186d69e4a1b753b9650294d80ca7d"><div class="ttname"><a href="mmu_8c.html#a978186d69e4a1b753b9650294d80ca7d">kvm_set_spte_gfn</a></div><div class="ttdeci">bool kvm_set_spte_gfn(struct kvm *kvm, struct kvm_gfn_range *range)</div><div class="ttdef"><b>Definition:</b> <a href="mmu_8c_source.html#l01599">mmu.c:1599</a></div></div>
 <div class="ttc" id="ammu_8c_html_aa37fc9ea36d6c97e97d77af76eca5767"><div class="ttname"><a href="mmu_8c.html#aa37fc9ea36d6c97e97d77af76eca5767">kvm_unmap_gfn_range</a></div><div class="ttdeci">bool kvm_unmap_gfn_range(struct kvm *kvm, struct kvm_gfn_range *range)</div><div class="ttdef"><b>Definition:</b> <a href="mmu_8c_source.html#l01582">mmu.c:1582</a></div></div>
 <div class="ttc" id="apfncache_8c_html_a630a53d012932e7f305703169fe7e8c0"><div class="ttname"><a href="pfncache_8c.html#a630a53d012932e7f305703169fe7e8c0">gfn_to_pfn_cache_invalidate_start</a></div><div class="ttdeci">void gfn_to_pfn_cache_invalidate_start(struct kvm *kvm, unsigned long start, unsigned long end, bool may_block)</div><div class="ttdef"><b>Definition:</b> <a href="pfncache_8c_source.html#l00025">pfncache.c:25</a></div></div>
+<div class="ttc" id="astructkvm__io__device__ops_html_a0464444b47c8c4d9a647209b740eaea0"><div class="ttname"><a href="structkvm__io__device__ops.html#a0464444b47c8c4d9a647209b740eaea0">kvm_io_device_ops::destructor</a></div><div class="ttdeci">void(* destructor)(struct kvm_io_device *this)</div><div class="ttdef"><b>Definition:</b> <a href="iodev_8h_source.html#l00028">iodev.h:28</a></div></div>
+<div class="ttc" id="astructkvm__io__device_html"><div class="ttname"><a href="structkvm__io__device.html">kvm_io_device</a></div><div class="ttdef"><b>Definition:</b> <a href="iodev_8h_source.html#l00032">iodev.h:32</a></div></div>
+<div class="ttc" id="astructkvm__io__device_html_a79da96aa51f9f84cf939ef7437602b3d"><div class="ttname"><a href="structkvm__io__device.html#a79da96aa51f9f84cf939ef7437602b3d">kvm_io_device::ops</a></div><div class="ttdeci">const struct kvm_io_device_ops * ops</div><div class="ttdef"><b>Definition:</b> <a href="iodev_8h_source.html#l00033">iodev.h:33</a></div></div>
 <div class="ttc" id="astructkvm__vm__worker__thread__context_html"><div class="ttname"><a href="structkvm__vm__worker__thread__context.html">kvm_vm_worker_thread_context</a></div><div class="ttdef"><b>Definition:</b> <a href="kvm__main_8c_source.html#l06520">kvm_main.c:6520</a></div></div>
 <div class="ttc" id="astructkvm__vm__worker__thread__context_html_a20fd6afa620d4458db0df1ecf739106e"><div class="ttname"><a href="structkvm__vm__worker__thread__context.html#a20fd6afa620d4458db0df1ecf739106e">kvm_vm_worker_thread_context::init_done</a></div><div class="ttdeci">struct completion init_done</div><div class="ttdef"><b>Definition:</b> <a href="kvm__main_8c_source.html#l06522">kvm_main.c:6523</a></div></div>
 <div class="ttc" id="astructkvm__vm__worker__thread__context_html_a4ddc931fd0aec8ae00259747f495f2dc"><div class="ttname"><a href="structkvm__vm__worker__thread__context.html#a4ddc931fd0aec8ae00259747f495f2dc">kvm_vm_worker_thread_context::kvm</a></div><div class="ttdeci">struct kvm * kvm</div><div class="ttdef"><b>Definition:</b> <a href="kvm__main_8c_source.html#l06521">kvm_main.c:6521</a></div></div>

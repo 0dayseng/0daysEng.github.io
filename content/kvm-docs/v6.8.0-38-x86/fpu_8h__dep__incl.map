@@ -1,7 +1,7 @@
 <map id="arch/x86/kvm/fpu.h" name="arch/x86/kvm/fpu.h">
 <area shape="rect" id="node1" title=" " alt="" coords="3462,5,3610,32"/>
 <area shape="rect" id="node2" href="$kvm__emulate_8h.html" title=" " alt="" coords="2212,80,2430,107"/>
-<area shape="rect" id="node16" href="$hyperv_8c.html" title=" " alt="" coords="4230,475,4401,502"/>
+<area shape="rect" id="node17" href="$hyperv_8c.html" title=" " alt="" coords="4230,475,4401,502"/>
 <area shape="rect" id="node3" href="$emulate_8c.html" title=" " alt="" coords="5278,475,5458,502"/>
 <area shape="rect" id="node4" href="$smm_8c.html" title=" " alt="" coords="496,386,655,413"/>
 <area shape="rect" id="node5" href="$svm_2nested_8c.html" title=" " alt="" coords="944,565,1146,591"/>
@@ -9,10 +9,10 @@
 <area shape="rect" id="node7" href="$x86_8h.html" title=" " alt="" coords="2728,155,2879,181"/>
 <area shape="rect" id="node22" href="$x86_8c.html" title=" " alt="" coords="2778,475,2928,502"/>
 <area shape="rect" id="node8" href="$hyperv_8h.html" title=" " alt="" coords="3074,229,3245,256"/>
-<area shape="rect" id="node12" href="$irq__comm_8c.html" title=" " alt="" coords="4658,475,4848,502"/>
-<area shape="rect" id="node13" href="$irq_8c.html" title=" " alt="" coords="4872,475,5015,502"/>
-<area shape="rect" id="node14" href="$i8254_8c.html" title=" " alt="" coords="5040,475,5202,502"/>
-<area shape="rect" id="node17" href="$lapic_8c.html" title=" " alt="" coords="4425,475,4582,502"/>
+<area shape="rect" id="node12" href="$irq_8c.html" title=" " alt="" coords="4872,475,5015,502"/>
+<area shape="rect" id="node13" href="$i8254_8c.html" title=" " alt="" coords="5040,475,5202,502"/>
+<area shape="rect" id="node14" href="$irq__comm_8c.html" title=" " alt="" coords="4658,475,4848,502"/>
+<area shape="rect" id="node16" href="$lapic_8c.html" title=" " alt="" coords="4425,475,4582,502"/>
 <area shape="rect" id="node18" href="$avic_8c.html" title=" " alt="" coords="3679,475,3864,502"/>
 <area shape="rect" id="node20" href="$svm_8c.html" title=" " alt="" coords="456,475,642,502"/>
 <area shape="rect" id="node21" href="$vmx_8c.html" title=" " alt="" coords="3416,818,3604,845"/>

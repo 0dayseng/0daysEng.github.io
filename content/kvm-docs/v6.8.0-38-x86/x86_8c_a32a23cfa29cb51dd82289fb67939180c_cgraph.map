@@ -1,10 +1,12 @@
 <map id="emulator_pio_in_out" name="emulator_pio_in_out">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,160,57"/>
-<area shape="rect" id="node2" href="$kvm__main_8c.html#a32f50a4f2293b3acdeece0c22abe8ecc" title=" " alt="" coords="210,5,346,32"/>
-<area shape="rect" id="node7" href="$kvm__main_8c.html#ac2e936ae65c010ffa196cedbc40350ee" title=" " alt="" coords="208,56,348,83"/>
-<area shape="rect" id="node3" href="$kvm__main_8c.html#a7561a833c4222778fb37a7e0f9e97e96" title=" " alt="" coords="398,5,549,32"/>
-<area shape="rect" id="node4" href="$kvm__main_8c.html#a75ccec7a81fef145fb3c3a3b5479a86f" title=" " alt="" coords="1052,31,1187,57"/>
-<area shape="rect" id="node5" href="$kvm__main_8c.html#a94bf2e0af8d9af8807a6a92ffb01cc1c" title=" " alt="" coords="599,31,789,57"/>
-<area shape="rect" id="node6" href="$kvm__main_8c.html#aa52366417ec3708a05183231a3227d9d" title=" " alt="" coords="837,56,1004,83"/>
-<area shape="rect" id="node8" href="$kvm__main_8c.html#a484b5f7e2c7e682cb49450f611319077" title=" " alt="" coords="396,56,551,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,80,160,107"/>
+<area shape="rect" id="node2" href="$kvm__main_8c.html#a32f50a4f2293b3acdeece0c22abe8ecc" title=" " alt="" coords="210,55,346,81"/>
+<area shape="rect" id="node8" href="$kvm__main_8c.html#ac2e936ae65c010ffa196cedbc40350ee" title=" " alt="" coords="208,105,348,132"/>
+<area shape="rect" id="node3" href="$kvm__main_8c.html#a7561a833c4222778fb37a7e0f9e97e96" title=" " alt="" coords="398,55,549,81"/>
+<area shape="rect" id="node4" href="$kvm__main_8c.html#a75ccec7a81fef145fb3c3a3b5479a86f" title=" " alt="" coords="1052,55,1187,81"/>
+<area shape="rect" id="node5" href="$kvm__main_8c.html#a94bf2e0af8d9af8807a6a92ffb01cc1c" title=" " alt="" coords="599,80,789,107"/>
+<area shape="rect" id="node7" href="$iodev_8h.html#a4546415d4264729008dd23c55a07545a" title=" " alt="" coords="619,29,769,56"/>
+<area shape="rect" id="node6" href="$kvm__main_8c.html#aa52366417ec3708a05183231a3227d9d" title=" " alt="" coords="837,80,1004,107"/>
+<area shape="rect" id="node9" href="$kvm__main_8c.html#a484b5f7e2c7e682cb49450f611319077" title=" " alt="" coords="396,131,551,157"/>
+<area shape="rect" id="node10" href="$iodev_8h.html#a60b8903e245db48d9c5d7287ff781825" title=" " alt="" coords="617,181,771,208"/>
 </map>

@@ -106,6 +106,9 @@ $(function() {
 <li>vcpu_get_perf_capabilities()
 : <a class="el" href="pmu__intel_8c.html#af5e61d1da37d7d1f8ba119c07a676bfb">pmu_intel.c</a>
 </li>
+<li>vcpu_get_timer
+: <a class="el" href="arm__arch__timer_8h.html#ac8605bb196d5ea061e4acefd2b78046d">arm_arch_timer.h</a>
+</li>
 <li>vcpu_get_timer_advance_ns()
 : <a class="el" href="debugfs_8c.html#ae43c13ceb59f3f204d773d4409f04a34">debugfs.c</a>
 </li>
@@ -117,6 +120,12 @@ $(function() {
 </li>
 <li>vcpu_get_tsc_scaling_ratio()
 : <a class="el" href="debugfs_8c.html#aec45a97732014f5dc57a404359651350">debugfs.c</a>
+</li>
+<li>vcpu_hptimer
+: <a class="el" href="arm__arch__timer_8h.html#ad5e47541b2bf1738cf450e0b5e00b5eb">arm_arch_timer.h</a>
+</li>
+<li>vcpu_hvtimer
+: <a class="el" href="arm__arch__timer_8h.html#aaa36c0380609fa4a76a912afb410024f">arm_arch_timer.h</a>
 </li>
 <li>vcpu_ioctl_tpr_access_reporting()
 : <a class="el" href="x86_8c.html#ace8f129b3dc40be57519d49e6da680dc">x86.c</a>
@@ -148,6 +157,9 @@ $(function() {
 <li>vcpu_mmio_write()
 : <a class="el" href="x86_8c.html#a9943ed62434f7ce829337b1a7c91f12c">x86.c</a>
 </li>
+<li>vcpu_ptimer
+: <a class="el" href="arm__arch__timer_8h.html#a4d166b83ceabb05615e40bf0c219cfbc">arm_arch_timer.h</a>
+</li>
 <li>vcpu_put()
 : <a class="el" href="kvm__main_8c.html#a16e0f63dd5f0d556ed1c9c9999256f85">kvm_main.c</a>
 </li>
@@ -167,6 +179,9 @@ $(function() {
 <li>vcpu_stat_get()
 : <a class="el" href="kvm__main_8c.html#ac4898eec65a6d4452e18b1c7a4a5102f">kvm_main.c</a>
 </li>
+<li>vcpu_timer
+: <a class="el" href="arm__arch__timer_8h.html#a0a8e9eb158c9a2fbc985fc1f47057b00">arm_arch_timer.h</a>
+</li>
 <li>vcpu_to_lbr_desc()
 : <a class="el" href="vmx_8h.html#aa3f9a4735e6ff00497c0086664b433bd">vmx.h</a>
 </li>
@@ -185,6 +200,9 @@ $(function() {
 <li>vcpu_virt_addr_bits()
 : <a class="el" href="x86_8h.html#af360aa7bd1f33ab25089b12431f11773">x86.h</a>
 </li>
+<li>vcpu_vtimer
+: <a class="el" href="arm__arch__timer_8h.html#ac0234ea189669eb84d8263946a9d60d6">arm_arch_timer.h</a>
+</li>
 <li>VEC_POS
 : <a class="el" href="lapic_8h.html#a9c7a9b90f9a68f13aa4b9395a275ca96">lapic.h</a>
 </li>
@@ -194,9 +212,99 @@ $(function() {
 <li>vendor_intel()
 : <a class="el" href="emulate_8c.html#a1900e2ae78a8a8c9adb4af8e539b819e">emulate.c</a>
 </li>
+<li>VGIC_CONFIG_EDGE
+: <a class="el" href="arm__vgic_8h.html#a23952420a7fea6ce35df942e6b0783e7adc1b4a2895063d95a6a3aef89da15915">arm_vgic.h</a>
+</li>
+<li>VGIC_CONFIG_LEVEL
+: <a class="el" href="arm__vgic_8h.html#a23952420a7fea6ce35df942e6b0783e7aff766918bb2eff9dbb94c4edea188a2a">arm_vgic.h</a>
+</li>
+<li>vgic_initialized
+: <a class="el" href="arm__vgic_8h.html#a92f7a5b2fbbd6b57aaed08e61ba34d43">arm_vgic.h</a>
+</li>
+<li>vgic_irq_config
+: <a class="el" href="arm__vgic_8h.html#a23952420a7fea6ce35df942e6b0783e7">arm_vgic.h</a>
+</li>
+<li>vgic_irq_needs_resampling()
+: <a class="el" href="arm__vgic_8h.html#ad8001fedb7a2cb065c38833241e86b5c">arm_vgic.h</a>
+</li>
+<li>VGIC_IRQ_SW_RESAMPLE
+: <a class="el" href="arm__vgic_8h.html#a9c3e9820ba029d65cf7800d0cb4964be">arm_vgic.h</a>
+</li>
+<li>VGIC_MAX_PRIVATE
+: <a class="el" href="arm__vgic_8h.html#add3f1f00371cf528cb8ffac2642d4ee3">arm_vgic.h</a>
+</li>
+<li>VGIC_MAX_RESERVED
+: <a class="el" href="arm__vgic_8h.html#ad7342134b684299f69395eee1e4fbc05">arm_vgic.h</a>
+</li>
+<li>VGIC_MAX_SPI
+: <a class="el" href="arm__vgic_8h.html#aafd3fd440e6d69c6d2649cfe0023e34c">arm_vgic.h</a>
+</li>
+<li>VGIC_MIN_LPI
+: <a class="el" href="arm__vgic_8h.html#a34000cd3b6c53a8b7848df48d97271cb">arm_vgic.h</a>
+</li>
+<li>VGIC_NR_IRQS_LEGACY
+: <a class="el" href="arm__vgic_8h.html#a00cb0b5b22477a7cc824de820da0934a">arm_vgic.h</a>
+</li>
+<li>VGIC_NR_PPIS
+: <a class="el" href="arm__vgic_8h.html#a0030e1d724372943f190b24f0150b223">arm_vgic.h</a>
+</li>
+<li>VGIC_NR_PRIVATE_IRQS
+: <a class="el" href="arm__vgic_8h.html#ae9d406cdd3eafd831ee41ecf0e48011e">arm_vgic.h</a>
+</li>
+<li>VGIC_NR_SGIS
+: <a class="el" href="arm__vgic_8h.html#a8143b35cbc0236b1f9fd65b9062ae523">arm_vgic.h</a>
+</li>
+<li>vgic_ready
+: <a class="el" href="arm__vgic_8h.html#a8a1cb81c34b893dec2bef262c6fafb15">arm_vgic.h</a>
+</li>
+<li>vgic_type
+: <a class="el" href="arm__vgic_8h.html#a6e40915cc9873f08ca702678ce237ff1">arm_vgic.h</a>
+</li>
+<li>VGIC_V2
+: <a class="el" href="arm__vgic_8h.html#a6e40915cc9873f08ca702678ce237ff1a9516eb794b5e9d2d4817bb361c699a60">arm_vgic.h</a>
+</li>
+<li>vgic_v2_cpuif_trap
+: <a class="el" href="arm__vgic_8h.html#a8f46deb903409e1ea643f0072ae1552e">arm_vgic.h</a>
+</li>
+<li>VGIC_V2_MAX_CPUS
+: <a class="el" href="arm__vgic_8h.html#a919dfd28be18085c0df4a1e66f3663f5">arm_vgic.h</a>
+</li>
+<li>VGIC_V2_MAX_LRS
+: <a class="el" href="arm__vgic_8h.html#abbc743cbfefbb1b95655e63b7505b48f">arm_vgic.h</a>
+</li>
+<li>VGIC_V3
+: <a class="el" href="arm__vgic_8h.html#a6e40915cc9873f08ca702678ce237ff1a6556967af9084ab2c8d36e7faf368d1e">arm_vgic.h</a>
+</li>
+<li>vgic_v3_cpuif_trap
+: <a class="el" href="arm__vgic_8h.html#a6659017e8f125c9d04cbef018aebf2be">arm_vgic.h</a>
+</li>
+<li>vgic_v3_dispatch_sgi()
+: <a class="el" href="arm__vgic_8h.html#a7df84da3229db55762dde7ac4e1b3e96">arm_vgic.h</a>
+</li>
+<li>VGIC_V3_LR_INDEX
+: <a class="el" href="arm__vgic_8h.html#a5272f1910695fe8e411dc283b72faabc">arm_vgic.h</a>
+</li>
+<li>VGIC_V3_MAX_CPUS
+: <a class="el" href="arm__vgic_8h.html#a068e6ffdc2074e5125c730fb51f9f2ca">arm_vgic.h</a>
+</li>
+<li>VGIC_V3_MAX_LRS
+: <a class="el" href="arm__vgic_8h.html#ab7bff1a16cbcc734e62caae7ec19b36e">arm_vgic.h</a>
+</li>
+<li>vgic_v4_commit()
+: <a class="el" href="arm__vgic_8h.html#a043911fe4b149ad2ca234282ce4e67df">arm_vgic.h</a>
+</li>
+<li>vgic_v4_load()
+: <a class="el" href="arm__vgic_8h.html#ac2966fbf90610bb8a0525cbd903f7477">arm_vgic.h</a>
+</li>
+<li>vgic_v4_put()
+: <a class="el" href="arm__vgic_8h.html#aeafcb3e6b67ea32ed8e59d009252e565">arm_vgic.h</a>
+</li>
+<li>vgic_valid_spi
+: <a class="el" href="arm__vgic_8h.html#adea629c518405f94a45bbe647ef71fcc">arm_vgic.h</a>
+</li>
 <li>vgif
-: <a class="el" href="svm_8h.html#ab0a8ab91829811c7705c6455fb294bbc">svm.h</a>
-, <a class="el" href="svm_8c.html#ab0a8ab91829811c7705c6455fb294bbc">svm.c</a>
+: <a class="el" href="svm_8c.html#ab0a8ab91829811c7705c6455fb294bbc">svm.c</a>
+, <a class="el" href="svm_8h.html#ab0a8ab91829811c7705c6455fb294bbc">svm.h</a>
 </li>
 <li>vls
 : <a class="el" href="svm_8c.html#a3ad937a1fd2ef8fcdd87953c6a5db405">svm.c</a>
@@ -220,31 +328,31 @@ $(function() {
 : <a class="el" href="svm_8h.html#a987416bb1857b96f97af2391d1008c5a">svm.h</a>
 </li>
 <li>VMCB_ASID
-: <a class="el" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13ace538c75028034c3e121fd96a0bdaf64">svm.h</a>
+: <a class="el" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4ace538c75028034c3e121fd96a0bdaf64">svm.h</a>
 </li>
 <li>VMCB_AVIC
-: <a class="el" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a3d33483aba8bab1af6c7a3a56141cd8f">svm.h</a>
+: <a class="el" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a3d33483aba8bab1af6c7a3a56141cd8f">svm.h</a>
 </li>
 <li>vmcb_clr_intercept()
 : <a class="el" href="svm_8h.html#a83e4cd1b591935133506abf6724051c4">svm.h</a>
 </li>
 <li>VMCB_CR
-: <a class="el" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a4c1bf85b59430883fd2a9f4eebbac975">svm.h</a>
+: <a class="el" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a4c1bf85b59430883fd2a9f4eebbac975">svm.h</a>
 </li>
 <li>VMCB_CR2
-: <a class="el" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13ac328b9fd73e1b9d219f9890f938509e1">svm.h</a>
+: <a class="el" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4ac328b9fd73e1b9d219f9890f938509e1">svm.h</a>
 </li>
 <li>VMCB_DR
-: <a class="el" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13ac7c020c96383ecc6a3d358e1fdd99be7">svm.h</a>
+: <a class="el" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4ac7c020c96383ecc6a3d358e1fdd99be7">svm.h</a>
 </li>
 <li>VMCB_DT
-: <a class="el" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a1c1bbe2afa896e3b5fc2f2d850eb41b3">svm.h</a>
+: <a class="el" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a1c1bbe2afa896e3b5fc2f2d850eb41b3">svm.h</a>
 </li>
 <li>VMCB_INTERCEPTS
-: <a class="el" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13aa5c3bcc8811c26fdc5e7cda9a9b213e1">svm.h</a>
+: <a class="el" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4aa5c3bcc8811c26fdc5e7cda9a9b213e1">svm.h</a>
 </li>
 <li>VMCB_INTR
-: <a class="el" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a47e03f1935e6feea250cf3d13fa4c71e">svm.h</a>
+: <a class="el" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a47e03f1935e6feea250cf3d13fa4c71e">svm.h</a>
 </li>
 <li>vmcb_is_dirty()
 : <a class="el" href="svm_8h.html#af08dd89f5ee519835337165e9060f526">svm.h</a>
@@ -253,7 +361,7 @@ $(function() {
 : <a class="el" href="svm_8h.html#a6eb37bb9efc32f45f75055de8ba4fc79">svm.h</a>
 </li>
 <li>VMCB_LBR
-: <a class="el" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a7ffead4bb2fd939a3b453692fdc4664a">svm.h</a>
+: <a class="el" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a7ffead4bb2fd939a3b453692fdc4664a">svm.h</a>
 </li>
 <li>vmcb_mark_all_clean()
 : <a class="el" href="svm_8h.html#a64fd8d98c29189b4f4e47f96958aeeca">svm.h</a>
@@ -265,19 +373,19 @@ $(function() {
 : <a class="el" href="svm_8h.html#ab83edec724698a20d66a086a1900aa27">svm.h</a>
 </li>
 <li>VMCB_NPT
-: <a class="el" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a7c9727e792c945164c49fbd9793c4e97">svm.h</a>
+: <a class="el" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a7c9727e792c945164c49fbd9793c4e97">svm.h</a>
 </li>
 <li>VMCB_PERM_MAP
-: <a class="el" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13a0b96a6cb7dc2eb2f1e2471f9fdfa6972">svm.h</a>
+: <a class="el" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4a0b96a6cb7dc2eb2f1e2471f9fdfa6972">svm.h</a>
 </li>
 <li>VMCB_SEG
-: <a class="el" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13ab13d3c949ef62a4213fe70e2ed836b91">svm.h</a>
+: <a class="el" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4ab13d3c949ef62a4213fe70e2ed836b91">svm.h</a>
 </li>
 <li>vmcb_set_intercept()
 : <a class="el" href="svm_8h.html#afdbe781b81d2ae90e81d9bb9e9750789">svm.h</a>
 </li>
 <li>VMCB_SW
-: <a class="el" href="svm_8h.html#a39fca1837c5ce7715cbf571669660c13aadb6ebcdeea82b3c1ad950e8e2433d8c">svm.h</a>
+: <a class="el" href="svm_8h.html#aaf8fd5f0e57d456151c951e0f3715fc4aadb6ebcdeea82b3c1ad950e8e2433d8c">svm.h</a>
 </li>
 <li>vmclear_error()
 : <a class="el" href="vmx_8c.html#a7af485388ff3c21b195ef5d8804cec30">vmx.c</a>
@@ -415,7 +523,7 @@ $(function() {
 : <a class="el" href="vmx_8c.html#adef68a57f3f13773a0e5034b1b811cf4">vmx.c</a>
 </li>
 <li>vmentry_l1d_param
-: <a class="el" href="vmx_8c.html#a3bbc2088f658c9bc79c913b19119f732">vmx.c</a>
+: <a class="el" href="vmx_8c.html#a354d319c601543e78d8bf7ffc7581e8c">vmx.c</a>
 </li>
 <li>vmload_interception()
 : <a class="el" href="svm_8c.html#a21c0c414304458bb0fdecde7cc8eeb2d">svm.c</a>
@@ -463,8 +571,8 @@ $(function() {
 : <a class="el" href="emulate_8c.html#a0e3ab1a23c65489c9222d9bb4c9a1c83">emulate.c</a>
 </li>
 <li>vmwrite_error()
-: <a class="el" href="vmx__ops_8h.html#aaeb3468ee3c494c5fd862994dab86548">vmx_ops.h</a>
-, <a class="el" href="vmx_8c.html#acbd11cdd25f2063ed39d66f1fc799536">vmx.c</a>
+: <a class="el" href="vmx_8c.html#acbd11cdd25f2063ed39d66f1fc799536">vmx.c</a>
+, <a class="el" href="vmx__ops_8h.html#aaeb3468ee3c494c5fd862994dab86548">vmx_ops.h</a>
 </li>
 <li>vmx_adjust_sec_exec_control
 : <a class="el" href="vmx_8c.html#a5b65361a45afd92bfa976d193e355ade">vmx.c</a>
@@ -497,7 +605,7 @@ $(function() {
 : <a class="el" href="vmx_2nested_8c.html#acad8c4d53e3049d4e4a357235b26b450">nested.c</a>
 </li>
 <li>VMX_BITMAP_NR
-: <a class="el" href="vmx_2nested_8c.html#af715e26dfffd1f8de1c18449e2770cffa9a2d55aff0588a394d75afdc0bd73111">nested.c</a>
+: <a class="el" href="vmx_2nested_8c.html#ae6dceca96ec2c7a1b4aa211264a87ef6a9a2d55aff0588a394d75afdc0bd73111">nested.c</a>
 </li>
 <li>vmx_cache_reg()
 : <a class="el" href="vmx_8c.html#a2c4d6e59c045e49243d6c4a2812999b8">vmx.c</a>
@@ -604,8 +712,8 @@ $(function() {
 : <a class="el" href="vmx_8c.html#a25d113b1aec08ce831d68721f70b9f44">vmx.c</a>
 </li>
 <li>vmx_enable_intercept_for_msr()
-: <a class="el" href="vmx_8c.html#a3db9d3d67497234d969c753d0b1093ab">vmx.c</a>
-, <a class="el" href="vmx_8h.html#a3db9d3d67497234d969c753d0b1093ab">vmx.h</a>
+: <a class="el" href="vmx_8h.html#a3db9d3d67497234d969c753d0b1093ab">vmx.h</a>
+, <a class="el" href="vmx_8c.html#a3db9d3d67497234d969c753d0b1093ab">vmx.c</a>
 </li>
 <li>vmx_enable_irq_window()
 : <a class="el" href="vmx_8c.html#aa87f69a46bd4c186a892d28838385ac2">vmx.c</a>
@@ -687,19 +795,19 @@ $(function() {
 : <a class="el" href="vmx_8h.html#a70be8e9321dc97600b63443befb6641a">vmx.h</a>
 </li>
 <li>vmx_get_interrupt_shadow()
-: <a class="el" href="vmx_8h.html#a2bec7af421bd0dc5f26cbf0209a81390">vmx.h</a>
-, <a class="el" href="vmx_8c.html#a2bec7af421bd0dc5f26cbf0209a81390">vmx.c</a>
+: <a class="el" href="vmx_8c.html#a2bec7af421bd0dc5f26cbf0209a81390">vmx.c</a>
+, <a class="el" href="vmx_8h.html#a2bec7af421bd0dc5f26cbf0209a81390">vmx.h</a>
 </li>
 <li>vmx_get_intr_info()
 : <a class="el" href="vmx_8h.html#af7e940dce21b0a53e1eadac452b8ddf1">vmx.h</a>
 </li>
 <li>vmx_get_l2_tsc_multiplier()
-: <a class="el" href="vmx_8h.html#ac02364004e8e3f247ba9a3c3ca79a460">vmx.h</a>
-, <a class="el" href="vmx_8c.html#ac02364004e8e3f247ba9a3c3ca79a460">vmx.c</a>
+: <a class="el" href="vmx_8c.html#ac02364004e8e3f247ba9a3c3ca79a460">vmx.c</a>
+, <a class="el" href="vmx_8h.html#ac02364004e8e3f247ba9a3c3ca79a460">vmx.h</a>
 </li>
 <li>vmx_get_l2_tsc_offset()
-: <a class="el" href="vmx_8h.html#a46c1e27ec7a8197f1194b6cc37db30ef">vmx.h</a>
-, <a class="el" href="vmx_8c.html#a46c1e27ec7a8197f1194b6cc37db30ef">vmx.c</a>
+: <a class="el" href="vmx_8c.html#a46c1e27ec7a8197f1194b6cc37db30ef">vmx.c</a>
+, <a class="el" href="vmx_8h.html#a46c1e27ec7a8197f1194b6cc37db30ef">vmx.h</a>
 </li>
 <li>vmx_get_max_ept_level()
 : <a class="el" href="vmx_8c.html#a46a2e84ec9cc960b4adb52431ef40e05">vmx.c</a>
@@ -881,15 +989,15 @@ $(function() {
 : <a class="el" href="posted__intr_8c.html#a1ac88cefc219cac7155a9b532ce5ace3">posted_intr.c</a>
 </li>
 <li>vmx_nested_ops
-: <a class="el" href="nested_8h.html#a6729479f193f8edbe2215b4d439cb421">nested.h</a>
-, <a class="el" href="vmx_2nested_8c.html#a6729479f193f8edbe2215b4d439cb421">nested.c</a>
+: <a class="el" href="vmx_2nested_8c.html#a6729479f193f8edbe2215b4d439cb421">nested.c</a>
+, <a class="el" href="nested_8h.html#a6729479f193f8edbe2215b4d439cb421">nested.h</a>
 </li>
 <li>vmx_nmi_allowed()
 : <a class="el" href="vmx_8c.html#a4546be655e5968c462322858ecf68c49">vmx.c</a>
 </li>
 <li>vmx_nmi_blocked()
-: <a class="el" href="vmx_8c.html#ae92f23c5709cc4f9fe4fe2d794deef50">vmx.c</a>
-, <a class="el" href="vmx_8h.html#ae92f23c5709cc4f9fe4fe2d794deef50">vmx.h</a>
+: <a class="el" href="vmx_8h.html#ae92f23c5709cc4f9fe4fe2d794deef50">vmx.h</a>
+, <a class="el" href="vmx_8c.html#ae92f23c5709cc4f9fe4fe2d794deef50">vmx.c</a>
 </li>
 <li>vmx_passthrough_lbr_msrs()
 : <a class="el" href="pmu__intel_8c.html#aafa008ad34eb88ebd13aa2f76375cad2">pmu_intel.c</a>
@@ -1030,8 +1138,8 @@ $(function() {
 , <a class="el" href="vmx_8h.html#acf9f5acdb0b2a5b2778c853846cfa09f">vmx.h</a>
 </li>
 <li>vmx_set_cr4()
-: <a class="el" href="vmx_8h.html#adda41e5ad7d9839a1fd3e01efc608c37">vmx.h</a>
-, <a class="el" href="vmx_8c.html#adda41e5ad7d9839a1fd3e01efc608c37">vmx.c</a>
+: <a class="el" href="vmx_8c.html#adda41e5ad7d9839a1fd3e01efc608c37">vmx.c</a>
+, <a class="el" href="vmx_8h.html#adda41e5ad7d9839a1fd3e01efc608c37">vmx.h</a>
 </li>
 <li>vmx_set_dr7()
 : <a class="el" href="vmx_8c.html#aa29f089cae02b9599e2412fe42df96e0">vmx.c</a>
@@ -1047,8 +1155,8 @@ $(function() {
 : <a class="el" href="vmx_8c.html#ad5ba698148b2e15f0b7edcdd61007bce">vmx.c</a>
 </li>
 <li>vmx_set_host_fs_gs()
-: <a class="el" href="vmx_8c.html#a632e0045640f1fb4b490db30ca2baabf">vmx.c</a>
-, <a class="el" href="vmx_8h.html#a632e0045640f1fb4b490db30ca2baabf">vmx.h</a>
+: <a class="el" href="vmx_8h.html#a632e0045640f1fb4b490db30ca2baabf">vmx.h</a>
+, <a class="el" href="vmx_8c.html#a632e0045640f1fb4b490db30ca2baabf">vmx.c</a>
 </li>
 <li>vmx_set_identity_map_addr()
 : <a class="el" href="vmx_8c.html#a5fb828ef1ffa8c6dcc1fdcbfc93996a9">vmx.c</a>
@@ -1060,8 +1168,8 @@ $(function() {
 : <a class="el" href="vmx_8h.html#a5f203a8d867ee0e3830ee06de5fbea20">vmx.h</a>
 </li>
 <li>vmx_set_interrupt_shadow()
-: <a class="el" href="vmx_8h.html#ae2d73f838a404b569a5c51da5ee2ce68">vmx.h</a>
-, <a class="el" href="vmx_8c.html#ae2d73f838a404b569a5c51da5ee2ce68">vmx.c</a>
+: <a class="el" href="vmx_8c.html#ae2d73f838a404b569a5c51da5ee2ce68">vmx.c</a>
+, <a class="el" href="vmx_8h.html#ae2d73f838a404b569a5c51da5ee2ce68">vmx.h</a>
 </li>
 <li>vmx_set_msr()
 : <a class="el" href="vmx_8c.html#a0fb610ce041405729e4296dfc871c30e">vmx.c</a>
@@ -1091,8 +1199,8 @@ $(function() {
 , <a class="el" href="vmx_8h.html#a3f6e91eedb4d7eefd8f4007389aaac7b">vmx.h</a>
 </li>
 <li>vmx_set_vmx_msr()
-: <a class="el" href="nested_8h.html#adadb0a6ac35df97508835dab926cf82c">nested.h</a>
-, <a class="el" href="vmx_2nested_8c.html#adadb0a6ac35df97508835dab926cf82c">nested.c</a>
+: <a class="el" href="vmx_2nested_8c.html#adadb0a6ac35df97508835dab926cf82c">nested.c</a>
+, <a class="el" href="nested_8h.html#adadb0a6ac35df97508835dab926cf82c">nested.h</a>
 </li>
 <li>vmx_setup_l1d_flush()
 : <a class="el" href="vmx_8c.html#a8028dd90861c752de83b617cf1609757">vmx.c</a>
@@ -1116,8 +1224,8 @@ $(function() {
 : <a class="el" href="vmx_8c.html#a2036cf325e433da555987b14058374f2">vmx.c</a>
 </li>
 <li>vmx_spec_ctrl_restore_host()
-: <a class="el" href="vmx_8c.html#abbf493a1a58f0d71401562ef9222022b">vmx.c</a>
-, <a class="el" href="vmx_8h.html#a0b6c0e9c7b484761a132ec953d096492">vmx.h</a>
+: <a class="el" href="vmx_8h.html#a0b6c0e9c7b484761a132ec953d096492">vmx.h</a>
+, <a class="el" href="vmx_8c.html#abbf493a1a58f0d71401562ef9222022b">vmx.c</a>
 </li>
 <li>vmx_start_preemption_timer()
 : <a class="el" href="vmx_2nested_8c.html#ade51fb9eae0a746b161b6633557dd118">nested.c</a>
@@ -1158,8 +1266,8 @@ $(function() {
 : <a class="el" href="vmx_8c.html#ad76f06cc76f6b73950e0f5f571756144">vmx.c</a>
 </li>
 <li>vmx_update_host_rsp()
-: <a class="el" href="vmx_8c.html#a91d038ab1631c30996cd224720b183c5">vmx.c</a>
-, <a class="el" href="vmx_8h.html#ae503a24f01885d9e4044034cf2e709cb">vmx.h</a>
+: <a class="el" href="vmx_8h.html#ae503a24f01885d9e4044034cf2e709cb">vmx.h</a>
+, <a class="el" href="vmx_8c.html#a91d038ab1631c30996cd224720b183c5">vmx.c</a>
 </li>
 <li>vmx_update_hv_timer()
 : <a class="el" href="vmx_8c.html#af578f107a379dc93cc2a6326634b6650">vmx.c</a>
@@ -1231,13 +1339,13 @@ $(function() {
 : <a class="el" href="vmx_2nested_8c.html#acb2ad45a648782fa62671a63d0e7c0e1">nested.c</a>
 </li>
 <li>VMX_VMREAD_BITMAP
-: <a class="el" href="vmx_2nested_8c.html#af715e26dfffd1f8de1c18449e2770cffa2d62ba9ca55f5e0d14d6705f3c37de91">nested.c</a>
+: <a class="el" href="vmx_2nested_8c.html#ae6dceca96ec2c7a1b4aa211264a87ef6a2d62ba9ca55f5e0d14d6705f3c37de91">nested.c</a>
 </li>
 <li>vmx_vmwrite_bitmap
 : <a class="el" href="vmx_2nested_8c.html#a80d15edeeab9928f4c2a0a51f2823c5e">nested.c</a>
 </li>
 <li>VMX_VMWRITE_BITMAP
-: <a class="el" href="vmx_2nested_8c.html#af715e26dfffd1f8de1c18449e2770cffaa5f26d56405e0205f199e0c498e829c8">nested.c</a>
+: <a class="el" href="vmx_2nested_8c.html#ae6dceca96ec2c7a1b4aa211264a87ef6aa5f26d56405e0205f199e0c498e829c8">nested.c</a>
 </li>
 <li>VMX_VPID_EXTENT_SUPPORTED_MASK
 : <a class="el" href="vmx_2nested_8c.html#ac2d0a0e6827f16b0c703a624f6a6fe06">nested.c</a>

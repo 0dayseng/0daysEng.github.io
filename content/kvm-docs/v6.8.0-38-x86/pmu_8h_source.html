@@ -91,7 +91,7 @@ $(function() {
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structkvm__pmu__ops.html">   21</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structkvm__pmu__ops.html">kvm_pmu_ops</a> {</div>
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structkvm__pmu__ops.html#a9cd0a322fbe07c5199bf1643ffe94e20">   22</a></span>&#160;    bool (*<a class="code" href="structkvm__pmu__ops.html#a9cd0a322fbe07c5199bf1643ffe94e20">hw_event_available</a>)(<span class="keyword">struct </span>kvm_pmc *pmc);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">struct </span>kvm_pmc *(*pmc_idx_to_pmc)(<span class="keyword">struct </span>kvm_pmu *pmu, <span class="keywordtype">int</span> pmc_idx);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">struct </span>kvm_pmc *(*pmc_idx_to_pmc)(<span class="keyword">struct </span><a class="code" href="structkvm__pmu.html">kvm_pmu</a> *pmu, <span class="keywordtype">int</span> pmc_idx);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">struct </span>kvm_pmc *(*rdpmc_ecx_to_pmc)(<span class="keyword">struct </span>kvm_vcpu *vcpu,</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> idx, u64 *mask);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">struct </span>kvm_pmc *(*msr_idx_to_pmc)(<span class="keyword">struct </span>kvm_vcpu *vcpu, u32 msr);</div>
@@ -112,7 +112,7 @@ $(function() {
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">void</span> <a class="code" href="pmu_8h.html#ab6a04a6aaa464ed44c535053e6684029">kvm_pmu_ops_update</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structkvm__pmu__ops.html">kvm_pmu_ops</a> *pmu_ops);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="pmu_8h.html#ad8246d56b5d561e26e120ebcc9f2c2e7">   44</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="pmu_8h.html#ad8246d56b5d561e26e120ebcc9f2c2e7">kvm_pmu_has_perf_global_ctrl</a>(<span class="keyword">struct</span> kvm_pmu *pmu)</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="pmu_8h.html#ad8246d56b5d561e26e120ebcc9f2c2e7">   44</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="pmu_8h.html#ad8246d56b5d561e26e120ebcc9f2c2e7">kvm_pmu_has_perf_global_ctrl</a>(<span class="keyword">struct</span> <a class="code" href="structkvm__pmu.html">kvm_pmu</a> *pmu)</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">/*</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">     * Architecturally, Intel&#39;s SDM states that IA32_PERF_GLOBAL_CTRL is</span></div>
@@ -128,7 +128,7 @@ $(function() {
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="pmu_8h.html#aab3e4e18d6f095fb645e7eede49e33fe">   58</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> u64 <a class="code" href="pmu_8h.html#aab3e4e18d6f095fb645e7eede49e33fe">pmc_bitmask</a>(<span class="keyword">struct</span> kvm_pmc *pmc)</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">struct </span>kvm_pmu *pmu = <a class="code" href="pmu_8h.html#ab33529496fc6858acc9ba4dd89ece216">pmc_to_pmu</a>(pmc);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">struct </span><a class="code" href="structkvm__pmu.html">kvm_pmu</a> *pmu = <a class="code" href="pmu_8h.html#ab33529496fc6858acc9ba4dd89ece216">pmc_to_pmu</a>(pmc);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> pmu-&gt;counter_bitmask[pmc-&gt;type];</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
@@ -158,7 +158,7 @@ $(function() {
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">return</span> pmc-&gt;type == KVM_PMC_FIXED;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="pmu_8h.html#a0e447892ca7232f8ce51022b01e20b13">   90</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="pmu_8h.html#a0e447892ca7232f8ce51022b01e20b13">kvm_valid_perf_global_ctrl</a>(<span class="keyword">struct</span> kvm_pmu *pmu,</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="pmu_8h.html#a0e447892ca7232f8ce51022b01e20b13">   90</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="pmu_8h.html#a0e447892ca7232f8ce51022b01e20b13">kvm_valid_perf_global_ctrl</a>(<span class="keyword">struct</span> <a class="code" href="structkvm__pmu.html">kvm_pmu</a> *pmu,</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                         u64 data)</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;{</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">return</span> !(pmu-&gt;global_ctrl_mask &amp; data);</div>
@@ -168,7 +168,7 @@ $(function() {
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"> * used for both PERFCTRn and EVNTSELn; that is why it accepts base as a</span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment"> * parameter to tell them apart.</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="pmu_8h.html#a2b79b8fb6193827abb0684e3ea503f1e">  100</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">struct </span>kvm_pmc *<a class="code" href="pmu_8h.html#a2b79b8fb6193827abb0684e3ea503f1e">get_gp_pmc</a>(<span class="keyword">struct</span> kvm_pmu *pmu, u32 msr,</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="pmu_8h.html#a2b79b8fb6193827abb0684e3ea503f1e">  100</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">struct </span>kvm_pmc *<a class="code" href="pmu_8h.html#a2b79b8fb6193827abb0684e3ea503f1e">get_gp_pmc</a>(<span class="keyword">struct</span> <a class="code" href="structkvm__pmu.html">kvm_pmu</a> *pmu, u32 msr,</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                     u32 base)</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">if</span> (msr &gt;= base &amp;&amp; msr &lt; base + pmu-&gt;nr_arch_gp_counters) {</div>
@@ -182,7 +182,7 @@ $(function() {
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">/* returns fixed PMC with the specified MSR */</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="pmu_8h.html#af9689b1f5e45afe7a28677c6ed441395">  114</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">struct </span>kvm_pmc *<a class="code" href="pmu_8h.html#af9689b1f5e45afe7a28677c6ed441395">get_fixed_pmc</a>(<span class="keyword">struct</span> kvm_pmu *pmu, u32 msr)</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="pmu_8h.html#af9689b1f5e45afe7a28677c6ed441395">  114</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">struct </span>kvm_pmc *<a class="code" href="pmu_8h.html#af9689b1f5e45afe7a28677c6ed441395">get_fixed_pmc</a>(<span class="keyword">struct</span> <a class="code" href="structkvm__pmu.html">kvm_pmu</a> *pmu, u32 msr)</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;{</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">int</span> base = MSR_CORE_PERF_FIXED_CTR0;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
@@ -198,7 +198,7 @@ $(function() {
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
 <div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="pmu_8h.html#a276700643eefb3c6911a7ae0dc0e3809">  128</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="pmu_8h.html#a276700643eefb3c6911a7ae0dc0e3809">pmc_speculative_in_use</a>(<span class="keyword">struct</span> kvm_pmc *pmc)</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;{</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keyword">struct </span>kvm_pmu *pmu = <a class="code" href="pmu_8h.html#ab33529496fc6858acc9ba4dd89ece216">pmc_to_pmu</a>(pmc);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keyword">struct </span><a class="code" href="structkvm__pmu.html">kvm_pmu</a> *pmu = <a class="code" href="pmu_8h.html#ab33529496fc6858acc9ba4dd89ece216">pmc_to_pmu</a>(pmc);</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="pmu_8h.html#a121f90ace23861db2f644f0b36a08be6">pmc_is_fixed</a>(pmc))</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="pmu_8h.html#af815baeadb4b5e52a2a2b68790f3b127">fixed_ctrl_field</a>(pmu-&gt;fixed_ctr_ctrl,</div>
@@ -257,7 +257,7 @@ $(function() {
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    kvm_make_request(KVM_REQ_PMU, pmc-&gt;vcpu);</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;}</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
-<div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="pmu_8h.html#af11722d5f4c63f7662bb0bf3777f15c8">  189</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="pmu_8h.html#af11722d5f4c63f7662bb0bf3777f15c8">reprogram_counters</a>(<span class="keyword">struct</span> kvm_pmu *pmu, u64 diff)</div>
+<div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="pmu_8h.html#af11722d5f4c63f7662bb0bf3777f15c8">  189</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="pmu_8h.html#af11722d5f4c63f7662bb0bf3777f15c8">reprogram_counters</a>(<span class="keyword">struct</span> <a class="code" href="structkvm__pmu.html">kvm_pmu</a> *pmu, u64 diff)</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;{</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordtype">int</span> bit;</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
@@ -276,7 +276,7 @@ $(function() {
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00206"></a><span class="lineno"><a class="line" href="pmu_8h.html#a156ede05e2f3b40ccf7a68f471f574b2">  206</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="pmu_8h.html#a156ede05e2f3b40ccf7a68f471f574b2">pmc_is_globally_enabled</a>(<span class="keyword">struct</span> kvm_pmc *pmc)</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;{</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keyword">struct </span>kvm_pmu *pmu = <a class="code" href="pmu_8h.html#ab33529496fc6858acc9ba4dd89ece216">pmc_to_pmu</a>(pmc);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keyword">struct </span><a class="code" href="structkvm__pmu.html">kvm_pmu</a> *pmu = <a class="code" href="pmu_8h.html#ab33529496fc6858acc9ba4dd89ece216">pmc_to_pmu</a>(pmc);</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="pmu_8h.html#ad8246d56b5d561e26e120ebcc9f2c2e7">kvm_pmu_has_perf_global_ctrl</a>(pmu))</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -352,6 +352,7 @@ $(function() {
 <div class="ttc" id="astructkvm__pmu__ops_html_ab40b5ba98f47d83b7bee6347ab260d6b"><div class="ttname"><a href="structkvm__pmu__ops.html#ab40b5ba98f47d83b7bee6347ab260d6b">kvm_pmu_ops::cleanup</a></div><div class="ttdeci">void(* cleanup)(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="pmu_8h_source.html#l00035">pmu.h:35</a></div></div>
 <div class="ttc" id="astructkvm__pmu__ops_html_af6dbbe977ca0bc9bbf8b6983ca8cd086"><div class="ttname"><a href="structkvm__pmu__ops.html#af6dbbe977ca0bc9bbf8b6983ca8cd086">kvm_pmu_ops::init</a></div><div class="ttdeci">void(* init)(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="pmu_8h_source.html#l00032">pmu.h:32</a></div></div>
 <div class="ttc" id="astructkvm__pmu__ops_html_af6e04346857abf46055d30684dc40009"><div class="ttname"><a href="structkvm__pmu__ops.html#af6e04346857abf46055d30684dc40009">kvm_pmu_ops::reset</a></div><div class="ttdeci">void(* reset)(struct kvm_vcpu *vcpu)</div><div class="ttdef"><b>Definition:</b> <a href="pmu_8h_source.html#l00033">pmu.h:33</a></div></div>
+<div class="ttc" id="astructkvm__pmu_html"><div class="ttname"><a href="structkvm__pmu.html">kvm_pmu</a></div><div class="ttdef"><b>Definition:</b> <a href="arm__pmu_8h_source.html#l00110">arm_pmu.h:110</a></div></div>
 <div class="ttc" id="ax86_8c_html_a868c360a5f6eb018cc1d24ecd766d971"><div class="ttname"><a href="x86_8c.html#a868c360a5f6eb018cc1d24ecd766d971">enable_pmu</a></div><div class="ttdeci">bool __read_mostly enable_pmu</div><div class="ttdef"><b>Definition:</b> <a href="x86_8c_source.html#l00192">x86.c:192</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

@@ -1,4 +1,6 @@
 <map id="kvm_pic" name="kvm_pic">
-<area shape="rect" id="node1" title=" " alt="" coords="29,5,107,32"/>
-<area shape="rect" id="node2" href="$structkvm__kpic__state.html" title=" " alt="" coords="5,95,131,121"/>
+<area shape="rect" id="node1" title=" " alt="" coords="42,213,119,240"/>
+<area shape="rect" id="node4" href="$structkvm__kpic__state.html" title=" " alt="" coords="18,303,143,329"/>
+<area shape="rect" id="node2" href="$structkvm__io__device.html" title=" " alt="" coords="21,95,141,121"/>
+<area shape="rect" id="node3" href="$structkvm__io__device__ops.html" title=" " alt="" coords="5,5,156,32"/>
 </map>

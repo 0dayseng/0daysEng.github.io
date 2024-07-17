@@ -260,7 +260,7 @@ $(function() {
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keyword">new</span>-&gt;nr_rt_entries = nr_rt_entries;</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; KVM_NR_IRQCHIPS; i++)</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">for</span> (j = 0; j &lt; KVM_IRQCHIP_NUM_PINS; j++)</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">for</span> (j = 0; j &lt; <a class="code" href="arm__vgic_8h.html#a51fde4189b74866c5fa5f3c77ee815a1">KVM_IRQCHIP_NUM_PINS</a>; j++)</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            new-&gt;chip[i][j] = -1;</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    for (i = 0; i &lt; nr; ++i) {</div>
@@ -308,6 +308,7 @@ $(function() {
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keywordflow">return</span> r;</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;}</div>
+<div class="ttc" id="aarm__vgic_8h_html_a51fde4189b74866c5fa5f3c77ee815a1"><div class="ttname"><a href="arm__vgic_8h.html#a51fde4189b74866c5fa5f3c77ee815a1">KVM_IRQCHIP_NUM_PINS</a></div><div class="ttdeci">#define KVM_IRQCHIP_NUM_PINS</div><div class="ttdef"><b>Definition:</b> <a href="arm__vgic_8h_source.html#l00032">arm_vgic.h:32</a></div></div>
 <div class="ttc" id="airq_8c_html_aa358b67270ecafc289b5b385505c91ed"><div class="ttname"><a href="irq_8c.html#aa358b67270ecafc289b5b385505c91ed">kvm_arch_irqchip_in_kernel</a></div><div class="ttdeci">bool kvm_arch_irqchip_in_kernel(struct kvm *kvm)</div><div class="ttdef"><b>Definition:</b> <a href="irq_8c_source.html#l00170">irq.c:170</a></div></div>
 <div class="ttc" id="airq__comm_8c_html_a5063eb30fea1b0dfb950639197e5d363"><div class="ttname"><a href="irq__comm_8c.html#a5063eb30fea1b0dfb950639197e5d363">kvm_arch_irq_routing_update</a></div><div class="ttdeci">void kvm_arch_irq_routing_update(struct kvm *kvm)</div><div class="ttdef"><b>Definition:</b> <a href="irq__comm_8c_source.html#l00444">irq_comm.c:444</a></div></div>
 <div class="ttc" id="airq__comm_8c_html_aceb0f3f9718caf022b2ff6f982fee020"><div class="ttname"><a href="irq__comm_8c.html#aceb0f3f9718caf022b2ff6f982fee020">kvm_set_routing_entry</a></div><div class="ttdeci">int kvm_set_routing_entry(struct kvm *kvm, struct kvm_kernel_irq_routing_entry *e, const struct kvm_irq_routing_entry *ue)</div><div class="ttdef"><b>Definition:</b> <a href="irq__comm_8c_source.html#l00279">irq_comm.c:279</a></div></div>

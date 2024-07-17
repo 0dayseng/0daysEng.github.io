@@ -1,10 +1,12 @@
 <map id="arch/x86/kvm" name="arch/x86/kvm">
 <area shape="rect" id="node2" href="dir_5b5419bab78eb3e26ed0c43edf6fed27.html" title="mmu" alt="" coords="37,159,109,207"/>
-<area shape="rect" id="edge2-headlabel" href="dir_000002_000005.html" title="2" alt="" coords="111,145,120,159"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000002_000005.html" title="2" alt="" coords="124,148,133,163"/>
 <area shape="rect" id="node3" href="dir_59e270fee840b69a56de99d30906df9d.html" title="svm" alt="" coords="133,159,205,207"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000002_000003.html" title="1" alt="" coords="173,133,182,148"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000002_000003.html" title="1" alt="" coords="192,139,202,154"/>
 <area shape="rect" id="node4" href="dir_9793580f8dab032f23ee1d591e6cafd6.html" title="vmx" alt="" coords="229,159,301,207"/>
-<area shape="rect" id="edge3-headlabel" href="dir_000002_000004.html" title="1" alt="" coords="230,132,239,147"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000002_000004.html" title="1" alt="" coords="248,131,257,146"/>
+<area shape="rect" id="node5" href="dir_d44c64559bbebec7f509842c48db8b23.html" title="include" alt="" coords="333,159,405,207"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000002_000006.html" title="4" alt="" coords="317,135,327,150"/>
 <area shape="rect" id="clust2" href="dir_fde450fd4b58e2560c53a1e73bfa4d6d.html" alt="" coords="27,52,312,217"/>
 <area shape="rect" id="clust1" href="dir_c21774f8bc9f0de15163573e5f5fa2b5.html" title="x86" alt="" coords="16,16,323,228"/>
 </map>

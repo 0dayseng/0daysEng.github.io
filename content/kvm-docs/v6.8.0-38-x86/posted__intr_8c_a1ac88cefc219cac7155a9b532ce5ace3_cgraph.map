@@ -1,8 +1,7 @@
 <map id="vmx_needs_pi_wakeup" name="vmx_needs_pi_wakeup">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,179,57"/>
-<area shape="rect" id="node2" href="$vmx_8h.html#a1f6186445deafb0e6b3f6ffa22db11ef" title=" " alt="" coords="235,5,377,32"/>
-<area shape="rect" id="node4" href="$posted__intr_8c.html#ad67f7664e1ca92ca1973b1537f876020" title=" " alt="" coords="227,56,385,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,35,179,61"/>
+<area shape="rect" id="node2" href="$vmx_8h.html#a1f6186445deafb0e6b3f6ffa22db11ef" title=" " alt="" coords="235,8,377,35"/>
+<area shape="rect" id="node4" href="$posted__intr_8c.html#ad67f7664e1ca92ca1973b1537f876020" title=" " alt="" coords="227,60,385,87"/>
 <area shape="rect" id="node3" href="$lapic_8h.html#a1d8c9378fcbf62390a89dc3b7f0bdbd4" title=" " alt="" coords="465,5,583,32"/>
-<area shape="rect" id="node5" href="$irq_8h.html#a96951e3a1bfa402d8bee67713e267b39" title=" " alt="" coords="458,56,590,83"/>
-<area shape="rect" id="node6" href="$x86_8c.html#ae63567e9b665b34f8c84fc4dc594f3c8" title=" " alt="" coords="433,107,615,149"/>
+<area shape="rect" id="node5" href="$x86_8c.html#ae63567e9b665b34f8c84fc4dc594f3c8" title=" " alt="" coords="433,57,615,98"/>
 </map>

@@ -64,6 +64,9 @@ $(function() {
 &#160;
 
 <h3><a id="index_v"></a>- v -</h3><ul>
+<li>v2_groups_user_writable
+: <a class="el" href="structvgic__dist.html#a7bc8dd901afe32a9d2c163d79403d0ec">vgic_dist</a>
+</li>
 <li>val
 : <a class="el" href="structoperand.html#a8301ee9755bdf4e3636e8c9db9462620">operand</a>
 , <a class="el" href="structvmx__msrs.html#ab2a7da3278820cc5bce9ac08b5b9cea4">vmx_msrs</a>
@@ -93,13 +96,33 @@ $(function() {
 : <a class="el" href="structkvm__hv__hcall.html#a53f06c5c35a6b1506d23ce890a391bfa">kvm_hv_hcall</a>
 </li>
 <li>vcpu
-: <a class="el" href="structkvm__lapic.html#a54741597d07b2792d2da72ea301ad648">kvm_lapic</a>
+: <a class="el" href="structarch__timer__context.html#a9541e7a8583e8aa7ce9cbae677c7e595">arch_timer_context</a>
+, <a class="el" href="structkvm__lapic.html#a54741597d07b2792d2da72ea301ad648">kvm_lapic</a>
 , <a class="el" href="structvcpu__svm.html#af164d8d741d9ea90dae6a46974d29f9e">vcpu_svm</a>
 , <a class="el" href="structvcpu__vmx.html#a8a60fad06a6c03c5cc25e80d9a5b0203">vcpu_vmx</a>
+, <a class="el" href="structvgic__irq.html#a86c5cfe30a81ea5690f075fb2fcd9af1">vgic_irq</a>
 , <a class="el" href="structx86__emulate__ctxt.html#ab957da78003b9336cb805fad802aa4fb">x86_emulate_ctxt</a>
+</li>
+<li>vcpu_base
+: <a class="el" href="structvgic__global.html#a1554ef02da2a4c9bc1ad7da5bfad44cf">vgic_global</a>
+</li>
+<li>vcpu_base_va
+: <a class="el" href="structvgic__global.html#a21e33f869c12b80f0c53a31f1a467380">vgic_global</a>
+</li>
+<li>vcpu_hyp_va
+: <a class="el" href="structvgic__global.html#a39021361d3851b4ec26169c70d283722">vgic_global</a>
 </li>
 <li>vcpu_info
 : <a class="el" href="structcompat__shared__info.html#a98fec998af2641ea3ed7eb206fdb5d3d">compat_shared_info</a>
+</li>
+<li>vcpu_offset
+: <a class="el" href="structarch__timer__offset.html#aef75d8a753f81ef4b91da22e238c8937">arch_timer_offset</a>
+</li>
+<li>vctrl_base
+: <a class="el" href="structvgic__global.html#a9eaacd5615ba2aaae86e0727376540df">vgic_global</a>
+</li>
+<li>vctrl_hyp
+: <a class="el" href="structvgic__global.html#a42c7bf8cd2a26c5915893c6823874a9f">vgic_global</a>
 </li>
 <li>vec_val
 : <a class="el" href="structoperand.html#aa09f96086389cdb0d0a1144878e64509">operand</a>
@@ -110,6 +133,48 @@ $(function() {
 </li>
 <li>vectors
 : <a class="el" href="structdest__map.html#a138657a6c6b48bf8aea782ba1a7ccca4">dest_map</a>
+</li>
+<li>vgic_ap0r
+: <a class="el" href="structvgic__v3__cpu__if.html#ad8a1d5cd820babfcc176bb875e9a0f34">vgic_v3_cpu_if</a>
+</li>
+<li>vgic_ap1r
+: <a class="el" href="structvgic__v3__cpu__if.html#af9ae4462c26a658d09d511c3aaef77da">vgic_v3_cpu_if</a>
+</li>
+<li>vgic_apr
+: <a class="el" href="structvgic__v2__cpu__if.html#a278645662d04768290761b84d3dbb461">vgic_v2_cpu_if</a>
+</li>
+<li>vgic_cpu_base
+: <a class="el" href="structvgic__dist.html#adfde4e406677fb7d0457aa686d4dfe86">vgic_dist</a>
+</li>
+<li>vgic_dist_base
+: <a class="el" href="structvgic__dist.html#a64889fb78fa1c835d635165bdc9dbe6e">vgic_dist</a>
+</li>
+<li>vgic_hcr
+: <a class="el" href="structvgic__v2__cpu__if.html#a66f24579b3dcb928102ed17ded8ceeea">vgic_v2_cpu_if</a>
+, <a class="el" href="structvgic__v3__cpu__if.html#ad39ac6e157867e1a089214a93b09ba15">vgic_v3_cpu_if</a>
+</li>
+<li>vgic_its_base
+: <a class="el" href="structvgic__its.html#accb4aa53a7e8fa652b86e06555e7d605">vgic_its</a>
+</li>
+<li>vgic_lr
+: <a class="el" href="structvgic__v2__cpu__if.html#a413367a5c479140bb7baa9e573094c14">vgic_v2_cpu_if</a>
+, <a class="el" href="structvgic__v3__cpu__if.html#ab1231c3a281b72d86790bf5a6d7915d8">vgic_v3_cpu_if</a>
+</li>
+<li>vgic_model
+: <a class="el" href="structvgic__dist.html#a5d26cafc0800ef58cd37f4ab1c83dae7">vgic_dist</a>
+</li>
+<li>vgic_sre
+: <a class="el" href="structvgic__v3__cpu__if.html#a5f05a28245c89b73a2b39804f53e9729">vgic_v3_cpu_if</a>
+</li>
+<li>vgic_v2
+: <a class="el" href="structvgic__cpu.html#adae0a8201b645baf25e899f3bfac68a6">vgic_cpu</a>
+</li>
+<li>vgic_v3
+: <a class="el" href="structvgic__cpu.html#acc770517cfb635a8149f0183c5c65451">vgic_cpu</a>
+</li>
+<li>vgic_vmcr
+: <a class="el" href="structvgic__v2__cpu__if.html#abbd2d349a4b21914bddf945e030720ef">vgic_v2_cpu_if</a>
+, <a class="el" href="structvgic__v3__cpu__if.html#ab612f6df1dbb8582534c758619fcd02e">vgic_v3_cpu_if</a>
 </li>
 <li>virt_ext
 : <a class="el" href="structvmcb__ctrl__area__cached.html#a7c13a2a3665942eb4cc17fc335c4185f">vmcb_ctrl_area_cached</a>
@@ -192,6 +257,9 @@ $(function() {
 <li>vm_instruction_error
 : <a class="el" href="structvmcs12.html#a4e25c7a7799171e1d17e3497386e7606">vmcs12</a>
 </li>
+<li>vm_offset
+: <a class="el" href="structarch__timer__offset.html#a3965388f4164e1a5ad8ef64b7e17f4df">arch_timer_offset</a>
+</li>
 <li>vmcb
 : <a class="el" href="structvcpu__svm.html#af095ed7bcc31c036e28e533582723a60">vcpu_svm</a>
 </li>
@@ -257,6 +325,9 @@ $(function() {
 </li>
 <li>vnmi_blocked_time
 : <a class="el" href="structloaded__vmcs.html#a71f5e6f27a26821f7e3a45fd01fb31bf">loaded_vmcs</a>
+</li>
+<li>voffset
+: <a class="el" href="structarch__timer__vm__data.html#a2fb8f4625e74b38a725836e144564107">arch_timer_vm_data</a>
 </li>
 <li>vpid
 : <a class="el" href="structvcpu__vmx.html#a21897ebc1038c764be97767cc74095cf">vcpu_vmx</a>

@@ -1,5 +1,4 @@
 <map id="vmx_can_use_vtd_pi" name="vmx_can_use_vtd_pi">
-<area shape="rect" id="node1" title=" " alt="" coords="5,35,164,61"/>
-<area shape="rect" id="node2" href="$irq_8h.html#a96951e3a1bfa402d8bee67713e267b39" title=" " alt="" coords="237,5,369,32"/>
-<area shape="rect" id="node3" href="$x86_8c.html#ae63567e9b665b34f8c84fc4dc594f3c8" title=" " alt="" coords="212,57,393,98"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,13,164,39"/>
+<area shape="rect" id="node2" href="$x86_8c.html#ae63567e9b665b34f8c84fc4dc594f3c8" title=" " alt="" coords="212,5,393,47"/>
 </map>

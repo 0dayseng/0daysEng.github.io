@@ -1,7 +1,8 @@
 <map id="kvm_pic_init" name="kvm_pic_init">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,111,57"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,111,83"/>
 <area shape="rect" id="node2" href="$kvm__main_8c.html#a0afe5ce3e9ff1105328b06ec985e3374" title=" " alt="" coords="167,5,355,32"/>
 <area shape="rect" id="node4" href="$kvm__main_8c.html#a103c02eb7ca545106f3130776c2a8897" title=" " alt="" coords="159,56,363,83"/>
+<area shape="rect" id="node7" href="$iodev_8h.html#a8999defe529eb3e3870197ef8e39fad5" title=" " alt="" coords="190,107,331,133"/>
 <area shape="rect" id="node3" href="$kvm__main_8c.html#a75ccec7a81fef145fb3c3a3b5479a86f" title=" " alt="" coords="421,5,556,32"/>
 <area shape="rect" id="node5" href="$kvm__main_8c.html#a3089edf2c0e5790aab7e8ed723f34b5b" title=" " alt="" coords="411,56,567,83"/>
 <area shape="rect" id="node6" href="$kvm__main_8c.html#aa6d7dea09a0b657f29e92f424e5d0633" title=" " alt="" coords="615,81,801,108"/>
