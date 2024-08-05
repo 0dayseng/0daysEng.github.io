@@ -33,5 +33,12 @@
             <pubDate>Wed, 31 May 2024 07:30:00 GMT</pubDate>
         </item>
 
+        <item>
+            <title>New masterclass: "Hacking KVM"</title>
+            <link>https://zerodayengineering.com/training/masterclass/hypervisor-security-nightly.html#hackingkvm</link>
+            <description>Set up a Kernel Virtual Machine hacking platform, from zero to ready in four hours. Hands-on deep technical masterclass with essential theory. Livestream on Saturday 10th August, 12:00-16:00 UTC.</description>
+            <pubDate>Mon, 5 August 2024 12:55:00 GMT</pubDate>
+        </item>
+
     </channel>
 </rss>
