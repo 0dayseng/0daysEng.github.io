@@ -117,12 +117,13 @@
                            <h3 class="mb-4">Release: VM Escape Exploit for Parallels Desktop Hypervisor (Pwn2Own 2021)</h3>
                            <p class="date">March 20th, 2024 – Alisa Esage</p>
 
-                           <p>In April 2021 I participated in Pwn2Own Vancouvver competition as a single player, and successfully demonstrated a 0-day virtual machine escape exploit with code execution on Parallels hypervisor. Today I am finally releasing the exploit source code together with a technical walkthrough video talk that I gave on Zero Day Engineering livestream in November 2021.</p>
+                           <p>In April 2021 I participated in Pwn2Own Vancouvver competition as an independent solo player, and successfully demonstrated a 0-day virtual machine escape exploit with code execution on Parallels hypervisor. Today I am finally releasing the exploit source code together with a technical walkthrough video talk that I gave on Zero Day Engineering livestream in November 2021.</p>
 
                            <div align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/xZg0l7Cg2qg?si=zSpBwtPwL5NuP_o0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><p><i>Pwn, pwn!</i></p></div>
 
-                           <p style="text-align: center;"><img src="images/blog/pwn2own21-thezdi.png" alt="" title="" class="img-fluid" width="70%">                         
-                           <i>Pwn2Own rocks!</i></p>
+                           <p style="text-align: center;"><img src="images/blog/pwn2own21-thezdi.png" alt="" title="" class="img-fluid" width="70%">             
+                           <p style="text-align: center;"><img src="images/blog/pwn2own21-thezdi2.png" alt="" title="" class="img-fluid" width="70%">                                     
+                           <i>Organizer's reactions</i></p>
 
                            <a href=""><p style="text-align: center;"><img src="images/blog/pwn2own21-alisaesage.png" alt="" title="" class="img-fluid" width="70%"></a>            
                            <i>✅</i></p>
@@ -131,18 +132,21 @@
                            <i>Dragos Ruiu, Founder Pwn2Own</i></p>
 
                            <p style="text-align: center;"><img src="images/blog/pwn2own21-abdhariri.png" alt="" title="" class="img-fluid" width="70%">                         
-                           <i>Abdul Aziz Hariri, Pwn2Own staff (formerly)</i></p>
-
-                           <p>Fun fact: the exploit code was privately shared with attendees of my <a class="underline" href="training/universal-vulnerability-research.html">Zero Day Vulnerability Research</a> training since June 2022, and a few of them gently pointed out to me (seemingly in disbelief) that the code was not published on my github. :) This hints at the state of security trainings today: apparently, sharing novel research-grade information - which is the quality standard that I set for my own <a class="underline" href="training">vulnerability research trainings</a> from day 1 - as opposed to selling repackaged publicly available content, is uncommon. 
-
-                           <p style="text-align: center;"><img src="training/images/reviews/zdvr-kapil-khot.jpeg" alt="" title="" class="img-fluid" width="70%">                         
-                           <i>One of many raving reviews for my Zero Day VR training - thanks Kapil!</i></p>
+                           <i>Abdul Aziz Hariri, Pwn2Own staff at that time</i></p>
       
-                           <p>The specific Parallels hypervisor subsystem in which I found the vulnerability was since then publicly documented in community blogs, so I don't feel that it needs yet another technical writeup. Instead, I invite you to look at the code, and watch the technical walkthrough video, which covers the bug and the exploit through all the relevant aspects of my workflow, from attack surface modeling and reverse engineering, to vulnerability discovery and exploit development. And if you like hypervisors, I strongly recommend my <a class="underline" href="training/hypervisor-vulnerability-research.html">Hypervisor Vulnerability Research</a> course as the next step in your research journey. It is the most comprehensive and systematical source on hypervisor system internals and vulnerabilities knowledge today.
+                           <p>The specific Parallels hypervisor subsystem in which I found the vulnerability was since then publicly documented in community blogs, so I don't feel that it needs yet another technical writeup. Instead, I invite you to look at the code, and watch the technical walkthrough video, which covers the bug and the exploit through all the relevant aspects of my workflow, from attack surface modeling and reverse engineering, to vulnerability discovery and exploit development. And if you like hypervisors, I strongly recommend my <a class="underline" href="training/hypervisor-vulnerability-research.html">Hypervisor Vulnerability Research</a> course as the next step in your research journey, as well as the follow-up course <a class="underline" href="training/hypervisor-vulnerability-research.html">Advanced Hypervisor Exploit Development</a>. My training courses are the best systematic source of knowledge on specialized system internals and vulnerability exploitation ever, that will save you many months of reverse engineering and sifting through blogs while learning to pwn.
+
+                           It should be noted that my exploit entry was named a "partial win" solely because the bug was privately known to the Parallels staff. However, the bug remained unpatched in Parallels hypervisor and wasn't publicly disclosed at the moment of competition. My exploit thus demonstrated a fully successful 0-day virtual machine escape, as video record shows. As such, the "partial win" label does not represent any technical incompetence, but rather, it is due to an old policy quirk in the contest rules. This quirk is generally not considered fair by the security community, which <a class="underline" href="https://itwire.com/business-it-news/security/anger-as-woman-researcher-walks-away-empty-handed-from-hacking-contest.html">expressed a massive disapproval</a> of the rules, as I brought it into the spotlight. I hope that the organizers will consider updating the rules in the future to reflect the current state of the industry, where private bugs are a norm, and the exploit quality is the only thing that matters.
+
+                           As the first female participant in the 17-year history (as of 2024) of Pwn2Own competition, I am proud to break this historical record, and establish a blueprint for more women to follow. Gender diversity remains largely a theoretical concept in the upper tiers of cybersecurity industry, and while more women occupy management roles these days, top technical tiers of the industry are still overwhelmingly male-dominated. Despite the rumors in the press, I did receive my cash prize for the exploit, and I am grateful to the organizers for the opportunity to participate in the competition, and to the infosec community for their everlasting support and appreciation for my work. 
+
+                           With that being said, on to the technical part, and happy hacking!
 
                            <a class="underline" target="_blank" href="https://github.com/alisaesage/Pwn/tree/main/prl_pwn_v1.1">Exploit source code</a>
                            <a class="underline" target="_blank" href="https://youtu.be/6UhgLteN-PU">Technical walkthrough video</a>
                            <a class="underline" target="_blank" href="research/slides/ZDE2021_AdvancedEasyPwn2Own2021.pdf">Slides</a>
+
+                           <i>Updated (23-08-2024): Add remarks about "partial win" and gender diversity</i>
                            </p>
                                                             
                            <div class="pt-5 mb-5 categories_tags ">
