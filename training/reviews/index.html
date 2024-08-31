@@ -53,6 +53,25 @@
              margin-bottom: 15px; /* Space between cards */
              break-inside: avoid; /* Avoid breaking the card across columns */
          }
+/* Lightbox overlay styling */
+        .lightbox {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 1050; /* Ensure it’s on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
      </style>
    </head>
    <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
@@ -189,9 +208,10 @@
                                         </div>                                   
                                     </div>
                                     <p class="card-text mt-3">I had the chance to attend the "Masterclass: Hacking open source fuzzers for smarter bughunting" by <a class="underline" href="https://twitter.com/alisaesage">@alisaesage</a> An amazing class, giving different perspective and insights on fuzzing!
-                            As I have attended other fuzzing classes, getting a perspective from each person is for me the most valuable piece. Not only knowing how to use a tool, but also why, when and understanding the thought process
-                            <a class="underline" href="https://twitter.com/zerodaytraining">@zerodaytraining</a> is on its own an amazing resource as well, covering other aspects of binary analysis. The "0-day insights" are pure gold, research at the highest level.
-                            What a great way to start the year 🎉 Thrilled with almost completing the Hypervisor Vulnerability Research course by <a class="underline" href="https://twitter.com/zerodaytraining">@zerodaytraining</a>! Comprehensive content, engaging exercises, and expert insights by <a class="underline" href="https://twitter.com/alisaesage">@alisaesage</a> 💯 recommended!</p>
+                                    As I have attended other fuzzing classes, getting a perspective from each person is for me the most valuable piece. Not only knowing how to use a tool, but also why, when and understanding the thought process
+                                    <a class="underline" href="https://twitter.com/zerodaytraining">@zerodaytraining</a> is on its own an amazing resource as well, covering other aspects of binary analysis. The "0-day insights" are pure gold, research at the highest level.
+                                    ***
+                                    What a great way to start the year 🎉 Thrilled with almost completing the Hypervisor Vulnerability Research course by <a class="underline" href="https://twitter.com/zerodaytraining">@zerodaytraining</a>! Comprehensive content, engaging exercises, and expert insights by <a class="underline" href="https://twitter.com/alisaesage">@alisaesage</a> 💯 recommended!</p>
                                 </div>
                             </div>
                             
@@ -232,7 +252,7 @@
 
                             In the future, I’d love to try <a class="underline" href="https://t.co/wiq2B3D1HU">https://t.co/wiq2B3D1HU</a>
 
-                            @zerdaytraining</p>
+                            <a class="underline" href="https://twitter.com/zerodaytraining">@zerodaytraining</a></p>
                                 </div>
                             </div>
                             
@@ -333,7 +353,9 @@
                                     </div>
                                     <p class="card-text mt-3">I have been learning about vulnerability research from <a class="underline" href="https://twitter.com/zerodaytraining">@zerodaytraining</a> by <a class="underline" href="https://twitter.com/alisaesage">@alisaesage</a>, and it’s really good. 
                             The training instills the right mindset and sets you on the right path. The instructor shares her experience, methodology, and you’ll practice enough to progress after… <a class="underline" href="https://t.co/JPYdAj5NHK">https://t.co/JPYdAj5NHK</a>
+                            ***
                             I just finished the ‘Masterclass: Hacking Open Source Fuzzers for Smarter Bug Hunting’ from <a class="underline" href="https://twitter.com/zerodaytraining">@zerodaytraining</a>. Four hours very well spent. This is the second course I’ve taken, and once again, the instructor is exceptional. Thank you very much to <a class="underline" href="https://twitter.com/alisaesage">@alisaesage</a>. Highly recommended.
+                            ***
                             <a class="underline" href="https://twitter.com/alisaesage">@alisaesage</a> I have already completed the Zero Day Vulnerability Research training. It was a really useful experience. Fuzzers might not be directly within my field, but I think it would be a valuable experience and perhaps an opportunity to reconsider my future career path.
                             Thanks.</p>
                                 </div>
@@ -380,12 +402,13 @@
                                         </div>                                   
                                     </div>
                                     <p class="card-text mt-3">Just completed a 4-hour premium Fuzzing course (<a class="underline" href="https://t.co/dxtWFYzbBL)">https://t.co/dxtWFYzbBL)</a> with #ZeroDayEngineering by @AlisaEsage. The depth of knowledge and hands-on approach was unparalleled. Highly recommend to anyone looking to up their cybersecurity game.🚀 #CyberSecurity #Fuzzing
-                            Zero Day Engineering Uni course – it's an absolute game-changer🔥
+                                    ***
+                                        Zero Day Engineering Uni course – it's an absolute game-changer🔥
 
-                            I'm currently learning the course material, and I can't believe the insights I've gained already. This investment is easily one of the best decisions I've made for my VR career.
+                                    I'm currently learning the course material, and I can't believe the insights I've gained already. This investment is easily one of the best decisions I've made for my VR career.
 
-                            <a class="underline" href="https://twitter.com/zerodaytraining">@zerodaytraining</a> 
-                            <a class="underline" href="https://twitter.com/alisaesage">@alisaesage</a></p>
+                                    <a class="underline" href="https://twitter.com/zerodaytraining">@zerodaytraining</a> 
+                                    <a class="underline" href="https://twitter.com/alisaesage">@alisaesage</a></p>
                                 </div>
                             </div>
                             
@@ -434,7 +457,6 @@
                             (3/3) I am already applying the knowledge I have acquired and I am eager to continue learning from her. I'm sure I'll be taking some more of her courses. For now, I will enjoy the course for the second time.
 
                             Don't miss the opportunity to do it: <a class="underline" href="https://t.co/MrzAWf4z6x">https://t.co/MrzAWf4z6x</a>
-                            <a class="underline" href="https://twitter.com/alisaesage">@alisaesage</a> I really want this class because I already took the Zero Day Vulnerability Research training from <a class="underline" href="https://twitter.com/zerodaytraining">@zerodaytraining</a> and <a class="underline" href="https://twitter.com/alisaesage">@alisaesage</a> and I’m sure it will be at least as awesome as this one</p>
                                 </div>
                             </div>
                             
@@ -587,7 +609,8 @@
                                         </div>                                   
                                     </div>
                                     <p class="card-text mt-3"><a class="underline" href="https://twitter.com/zerodaytraining">@zerodaytraining</a> Completely agree with this take. I took the sel-paced and currently Im doing a second run while saving for the hypervisor exploit dev training too :)
-                            I want to take this class, and encourage you to take it because as a former student for the "Hypervisors Vulnerability research" training I can tell Alissa is an expert delivering top technical content and I have no doubts this class will be of the same superior quality. <a class="underline" href="https://t.co/IPitvJ1wpY">https://t.co/IPitvJ1wpY</a></p>
+                                        ***
+                                    I want to take this class, and encourage you to take it because as a former student for the "Hypervisors Vulnerability research" training I can tell Alisa is an expert delivering top technical content and I have no doubts this class will be of the same superior quality. <a class="underline" href="https://t.co/IPitvJ1wpY">https://t.co/IPitvJ1wpY</a></p>
                                 </div>
                             </div>
                             
@@ -701,7 +724,7 @@
                                             <p class="text-muted" style="margin-top: -3px; margin-bottom: 0"><a class="text-muted" href="https://twitter.com/rosako">@rosako</a></p>
                                         </div>                                   
                                     </div>
-                                    <p class="card-text mt-3">Been there done that couple of weeks ago. Puts you on the right direction &amp; gives you the right kick. Not only the content is GREAT, the teaching approach and follow up are remarkable! Definitely the place you want to look at if you are or want to get into smashing hypervisors💯 <a class="underline" href="https://t.co/7NmaSqOm4y">https://t.co/7NmaSqOm4y</a></p>
+                                    <p class="card-text mt-3"><a href="training/hypervisor-vulnerability-research.html">[HVR]</a> Been there done that couple of weeks ago. Puts you on the right direction &amp; gives you the right kick. Not only the content is GREAT, the teaching approach and follow up are remarkable! Definitely the place you want to look at if you are or want to get into smashing hypervisors💯 <a class="underline" href="https://t.co/7NmaSqOm4y">https://t.co/7NmaSqOm4y</a></p>
                                 </div>
                             </div>
                             
@@ -906,9 +929,86 @@
                                     <p class="card-text mt-3">Alisa's training completely changed my mindset and the way I was looking at hypervisors. I highly recommend the Advanced Hypervisor Exploitation training. Actually, if you're interested in hypervisors it's mandatory.</p>
                                 </div>
                             </div>
+
+                            <!-- Original post URL:  -->
+                            <div class="card h-100 bg-dark text-white card-custom-border">
+                                <div class="card-body">
+                                    <a class="lightbox-trigger" href="#" data-image="training/reviews/linkedin/1.jpg"><img src="training/reviews/linkedin/1.jpg" alt="" class="img-fluid"></a>
+                                </div>
+                            </div>    
                                          
+                            <!-- Original post URL:  -->
+                            <div class="card h-100 bg-dark text-white card-custom-border">
+                                <div class="card-body">
+                                    <a class="lightbox-trigger" href="#" data-image="training/reviews/linkedin/2-1.jpg"><img src="training/reviews/linkedin/2-1.jpg" alt="" class="img-fluid"></a><a class="lightbox-trigger" href="#" data-image="training/reviews/linkedin/2-2.jpg"><img src="training/reviews/linkedin/2-2.jpg" alt="" class="img-fluid"></a>
+                                </div>
+                            </div> 
+                            
+                            <!-- Original post URL:  -->
+                            <div class="card h-100 bg-dark text-white card-custom-border">
+                                <div class="card-body">
+                                    <a class="lightbox-trigger" href="#" data-image="training/reviews/linkedin/3-1.jpg"><img src="training/reviews/linkedin/3-1.jpg" alt="" class="img-fluid"></a><a class="lightbox-trigger" href="#" data-image="training/reviews/linkedin/3-2.jpg"><img src="training/reviews/linkedin/3-2.jpg" alt="" class="img-fluid"></a>
+                                </div>
+                            </div>    
+
+                            <!-- Original post URL:  -->
+                            <div class="card h-100 bg-dark text-white card-custom-border">
+                                <div class="card-body">
+                                    <a class="lightbox-trigger" href="#" data-image="training/reviews/linkedin/4.jpg"><img src="training/reviews/linkedin/4.jpg" alt="" class="img-fluid"></a>
+                                </div>
+                            </div>    
+
+                            <!-- Original post URL:  -->
+                            <div class="card h-100 bg-dark text-white card-custom-border">
+                                <div class="card-body">
+                                    <a class="lightbox-trigger" href="#" data-image="training/reviews/linkedin/5.jpg"><img src="training/reviews/linkedin/5.jpg" alt="" class="img-fluid"></a>
+                                </div>
+                            </div>    
+
+                            <!-- Original post URL:  -->
+                            <div class="card h-100 bg-dark text-white card-custom-border">
+                                <div class="card-body">
+                                    <a class="lightbox-trigger" href="#" data-image="training/reviews/linkedin/6.jpg"><img src="training/reviews/linkedin/6.jpg" alt="" class="img-fluid"></a>
+                                </div>
+                            </div>    
+
+                            <!-- Original post URL:  -->
+                            <div class="card h-100 bg-dark text-white card-custom-border">
+                                <div class="card-body">
+                                    <a class="lightbox-trigger" href="#" data-image="training/reviews/linkedin/7.jpg"><img src="training/reviews/linkedin/7.jpg" alt="" class="img-fluid"></a>
+                                </div>
+                            </div>    
+
+                            <!-- Original post URL:  -->
+                            <div class="card h-100 bg-dark text-white card-custom-border">
+                                <div class="card-body">
+                                    <a class="lightbox-trigger" href="#" data-image="training/reviews/linkedin/8.jpg"><img src="training/reviews/linkedin/8.jpg" alt="" class="img-fluid"></a>
+                                </div>
+                            </div>    
+
+                            <!-- Original post URL:  -->
+                            <div class="card h-100 bg-dark text-white card-custom-border">
+                                <div class="card-body">
+                                    <a class="lightbox-trigger" href="#" data-image="training/reviews/linkedin/9-1.jpg"><img src="training/reviews/linkedin/9-1.jpg" alt="" class="img-fluid"></a><a class="lightbox-trigger" href="#" data-image="training/reviews/linkedin/9-2.jpg"><img src="training/reviews/linkedin/9-2.jpg" alt="" class="img-fluid"></a>
+                                </div>
+                            </div>    
+
+                            <!-- Original post URL:  -->
+                            <div class="card h-100 bg-dark text-white card-custom-border">
+                                <div class="card-body">
+                                    <a class="lightbox-trigger" href="#" data-image="training/reviews/linkedin/10.jpg"><img src="training/reviews/linkedin/10.jpg" alt="" class="img-fluid"></a>
+                                </div>
+                            </div>    
+
+                            
                          <!-- Continue adding more testimonials as needed -->
                      </div>
+
+                     <!-- Lightbox for displaying enlarged image -->
+                    <div id="lightbox" class="lightbox">
+                        <img id="lightbox-img" src="" alt="Enlarged screenshot">
+                    </div>
+
                      <p>P.S. Old reviews page is <a class="underline" href="https://zerodayengineering.com/training/feedback.html">here</a></p>
                  </div>
                </div>
@@ -982,6 +1082,30 @@
             for (var i = cards.length - 1; i >= 0; i--) {
                 $('#testimonial-grid').append(cards.splice(Math.floor(Math.random() * (i + 1)), 1)[0]);
             }
+        });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+            // Select all elements that are intended to trigger the lightbox
+            document.querySelectorAll('.lightbox-trigger').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault(); // Prevent the default anchor behavior
+                    const imageSrc = this.getAttribute('data-image'); // Get the image URL from the data attribute
+                    const lightbox = document.getElementById('lightbox');
+                    const lightboxImage = document.getElementById('lightbox-img');
+                    
+                    // Set the lightbox image src and show the lightbox
+                    lightboxImage.src = imageSrc;
+                    lightbox.style.display = 'flex'; // Display the lightbox
+                });
+            });
+
+            // Close lightbox when clicking on the lightbox (outside the image)
+            document.getElementById('lightbox').addEventListener('click', function (e) {
+                if (e.target === this) {
+                    this.style.display = 'none'; // Hide the lightbox when clicking outside the image
+                }
+            });
         });
         </script>
     
