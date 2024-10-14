@@ -1,0 +1,422 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-RBMCFM6G1Z"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'G-RBMCFM6G1Z');
+      </script>
+      <!--Meta Tags-->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content=""/>
+      <meta name="keywords" content=""/>
+      <meta name="author" content=""/>
+      <base href="../"> 
+      <!--Favicons-->
+      <link rel="shortcut icon" href="images/favicon.png">
+      <!--Page Title-->
+      <title>Discussion: Fuzzing from First Principles – Zero Day Engineering Project</title>
+      <!-- Stylesheets -->
+      <!-- bootstrap -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Animate -->
+      <link rel="stylesheet" href="css/animate.min.css">
+      <!-- Owl carusel -->
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <!-- Aos Css-->
+      <link rel="stylesheet" href="css/aos.css"/>
+      <!-- font awesome -->
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <!-- main css -->
+      <link rel="stylesheet" href="css/style_20231213.css">
+   </head>
+   <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
+
+      <!-- Nav mobile -->
+      <nav class="site-mobile-menu">
+         <div class="close-wrap d-flex">
+            <a href="#" class="d-flex ml-auto js-menu-toggle">
+               <span class="close-label">Close</span>
+               <div class="close-times">
+                  <span class="bar1"></span>
+                  <span class="bar2"></span>
+               </div>
+            </a>
+         </div>
+         <div class="site-mobile-inner"></div>
+      </nav>
+      <!-- Nav mobile end -->
+
+      <!-- Main content wrap -->
+      <div class="site-wrap">
+         <!-- Main content inner -->
+         <div class="site-inner">
+
+            <!-- Main Nav -->
+            <nav class="site-nav site-nav-target">
+               <div class="container">
+                  <div class="row align-items-center justify-content-between text-left">
+                     <div class="col-3">
+                        <div class="site-logo">
+                           <a href="index.html" class="site-logo main-logo"><img src="images/logo.png" class="logo-img light-logo img-fluid" alt=""><span></span></a>
+                        </div>
+                     </div>
+                     <div class="col text-right">
+                        <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
+                              <li><a href="index.html" class="nav-link cursor-item">Main</a></li>
+                              <li class="has-children">
+                                 <a href="research/index.html" class="nav-link cursor-item">Research</a>
+                                 <ul class="dropdown">
+                                    <li><a href="insights/index.html">0-Day Insights</a></li>
+                                    <li><a href="research/index.html">Vulnerabilities & Exploits</a></li>
+                                    <li><a href="research/index.html">Advanced Reverse Engineering</a></li>
+                                    <li><a href="research/index.html">Abstract Modeling</a></li>
+                                 </ul>
+                              </li>
+
+                              <li class="has-children">
+                                 <a href="training/index.html" class="nav-link cursor-item">Training</a>
+                                 <ul class="dropdown">
+                                    <li><a href="training/index.html">Courses</a></li>
+                                    <li><a href="training/index.html#nightly">Masterclasses</a></li>
+                                    <li><a href="training/reviews/index.html">Reviews & Buzz</a></li>
+                                 </ul>
+                              </li>
+
+                              <li class="has-children">
+                                 <a href="about.html" class="nav-link cursor-item">Company</a>
+                                 <ul class="dropdown">
+                                    <li><a href="about.html">About us</a></li>
+                                    <li><a href="work-with-us.html">Work with us</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                 </ul>
+                              </li>                           </ul>
+                           <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
+                           <li><a href="#" class="js-menu-toggle">Menu</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+            <!-- Main Nav end -->
+
+            <div class="section">
+               <div class="blog-single-inner">
+                  <div class="container">
+                     <div class="row justify-content-center">
+                        <div class="col-md-8">
+                           <div id="quote"></div>
+                           <h3 class="mb-4">Discussion: Fuzzing from First Principles</h3>
+                           <p class="date">October 14th, 2021 – Alisa Esage</p>
+
+                           <p>On September 14, 2024, I had the pleasure of participating in the Off By One Security Podcast by SANS, discussing "Fuzzing from First Principles". 
+                              
+                           The livestream had two parts: first, a concise theoretical presentation on the math behind fuzzing, covering cutting-edge models which underpin all of fuzzing practices, from basic fuzzing to modern coverage-guided evolutionary techniques. 
+                           
+                           The second part was a practical walkthrough of my successes and failures in 0-day vulnerability discovery across a wide range of popular software systems, as published in <a class="underline" target="_blank" href="https://github.com/alisaesage/Disclosures">my github</a>, which served as a basic demo of the model applications. You can find the <a class="underline" target="_blank" href="https://zerodayengineering.com/research/slides/FuzzingFromFirstPrinciples.pdf">slides here</a> and watch the livestream recording <a class="underline" target="_blank" href="https://www.youtube.com/watch?v=9U-FK_Qi1XQ">here</a>. 
+                           
+                           In this follow-up article, I’ll tackle some interesting questions and comments from the livestream chat that didn’t make it into the live Q&A due to time constraints.
+                           </p>
+
+
+                           <h6>Introduction</h6>
+
+                           <p>First, a shoutout to podcast host Stephen Sims for protecting my peace during the presentation. I didn’t realize how many questions flooded in the livestream chat until I opened the <a class="underline" target="_blank" href="https://www.youtube.com/watch?v=9U-FK_Qi1XQ">recording on YouTube</a>. Stephen expertly managed the chat and filtered a handful of relevant questions for our Q&A so, moving forward, I’ll address some more here.
+
+                           From the feedback, it’s clear that some viewers failed to understand my points and the math behind them. That’s not surprizing; my ideas in this presentation are extremely novel, therefore they are expected to provoke defensive reactions from narrow-minded individuals, leading to arrogant rejections based on false claims. As one commenter pointed out, the math seemed to trigger people. *Shrug*.
+                           
+                           Let’s be real: to grasp this presentation, you need a solid understanding of BOTH probability theory and advanced fuzzing practices. That’s not a common combo. But just because some aren't open to new ideas doesn’t mean I owe them repeated explanations, especially when they approach with offense. I do plan to publish a concrete text for those willing to learn.
+                           
+                           What thrilled me is that some viewers instantly connected with my ideas, evident from their relevant contributions to the livestream chat. Their questions showed general grasp of my theoretical framework, while struggling to connect it with advanced aspects of practical fuzzing that I didn't cover. I’ll discuss those meaningful contributions in this article, along with some off-topic but still meaningful questions about binary exploitation, and a bit of casual chat for completeness.
+                                                  
+                           Prerequisites: low-level fuzzing internals (as in <a class="underline" target="_blank" href="https://zerodayengineering.com/training/masterclass/vulnerability-research.html#fuzzing">this masterclass</a>), cutting-edge concepts in software/hardware exploitation, basic ideas of probability theory, <a class="underline" target="_blank" href="https://zerodayengineering.com/research/slides/FuzzingFromFirstPrinciples.pdf">Fuzzing from First Principles presentation.</a>
+                        
+                           Note: certain questions appear out of context as they reacted to a specific thing that I mentioned in the moment. Here, I respond generally.
+                        </p>
+
+
+                           <h6>Fuzzing, Symbolic Execution, and Math</h6>
+
+                           <p class="quote">L0u15> Thanks for the awesome talk, it is gold! Besides coverage feedback, what other kinds of feedback do you think fuzzers could use for targets like browsers?</p>
+                           
+                           <p>Program branch passing feedback is the only fundamental low-level metric in fuzzing. Note that I replaced your original term "coverage feedback" with a more specific term for a reason. In complex software like browsers (I think you meant JavaScript Engines in particular) it's not so much the code coverage that matters, but the context in which a particular piece of code executes; and other "meta" aspects of program at runtime.</p>
+                           
+                           <p>Example. Imagine that you have a piece of JIT compiler code that generates low-level encoding for primitive values. There is a bug that can somehow be triggered from a WASM frontend that uses this lowering backend, but not from a JS frontend that also uses it. It means that achieving code coverage on that procedure isn't a meaningful indicator of progress in your fuzzer, as it pertains to finding the bug, because it misses the high level context.  
+                              
+                           Similarly, one can think of a bug in JS runtime that can only be triggered from JIT-optimized JavaScript code, but not from interpreted code. In these sample scenarios you can technically achieve 100% code coverage on the whole source code and still miss a ton of bugs, with no hopes of getting closer to it with algorithmic optimization.  This is obviously a state-of-the-art research topic where no ready solutions exist.</p>
+                           
+                           <p class="quote">mesh3al32> if you know probability enough, fuzzing could be improved drastically. thanks for giving that to our attention</p>
+                           
+                           <p>Exactly this.  In fact, it's the core point of my presentation: use theoretical models to guide fuzzing improvement.</p>
+                           
+                           <p class="quote">Aaron Hernandez> Loved the presentation. What do you think about the future of fuzzing and vulnerability research, considering the shift towards memory safe programming? Will fuzzing for vulns still be effective?</p>
+                           
+                           <p>Fuzzing is as fundamental and inevitable as vulnerability. Also, it isn't just for memory safety issues. As technologies evolve, specific fuzzing techniques will change, but the core concept will remain relevant.</p>
+                           
+                           <p>One thing that will change in fuzzing, regardless of programming technologies that it will target, is the low-level success rate. Speaking in terms of this presentation, the probability distribution of fuzzer will be consistently improving through research and practical efforts, while reducing the low-level error rate. Symbolic execution assist is one way to do this, which is an active area of research. Another way is to leverage LLM to generate fuzzing inputs.</p>
+                           
+                           <p>An ideal fuzzer generates a single input and finds the bug with it, which is impossible - kind of like in low-level physics it's impossible to know a particle's location and speed at the same time, you can only approximate it. To the best of scientific knowledge, this (the principle of uncertainty) is a fundamental property of the universe. Similarly, vulnerability seems to be a fundamental property of systems. And so is fuzzing, as a way to uncover it.</p>
+                           
+                           <p class="quote">Hhhhhhhhhhgffrfghjkjhyh> Just curious in terms of this example, would symbolic execution not get us a higher rate? I am just a bit confused on the overall scenario I may be a bit wrong</p>
+                           
+                           <p>Yes, symbolic execution can greatly enhance the fuzzer's probability distribution in theory, increasing the success rate per execution (i.e., discovering new branches or finding bugs).  
+                              
+                           Ideally, if a branch can be deterministically resolved with an SMT solver, it gives a probability of P=1 for finding the right conditional value, compared to P=1/254 with stochastic blackbox fuzzing (assuming an 8-bit conditional value on branch and single-byte mutator with a true random generator, as an example; <i>Image 1</i>). So, going deeper into the program, the probabilities of finding the next branch correctly drop overall much slower that in random fuzzing and even in coverage guided fuzzing. This is in theory.</p>
+
+                           <p style="text-align: center;"><img src="research/media/ffp_simple.png" alt="" title="" class="img-fluid" width="70%">                                     
+                           <i>Image 1. Example of probabilities in stochastic blackbox fuzzing (singular branch)</i></p>
+                           
+                           <p>In practice, however, this comes with the cost of running the solver, that slows down the fuzzer; as well as other practical constraints. Especially facing the program path explosion, this slowdown accumulates exponentially, rendering symbolic execution-assisted fuzzers unproductive toward deeper program exploration. This is why, at present, symbolic execution-assisted fuzzers are only marginally useful. My model shows exactly why and how it can be improved, though much of the solution will depend on practical challenges.</p>
+                           
+                           <p>Note: This is purely theoretical reasoning; I might be overlooking specific implementation details, which I am not extensively familiar with.</p>
+                           
+                           <p class="quote">mesh3al32> will this [fuzzing] suffer from path explosion as the case with symbolic execution?</p>
+                           
+                           <p>Yes, fuzzing suffers from "path explosion" just as symbolic execution, but to a lesser degree. 
+                              
+                           In symbolic execution, the SMT solver overhead is substantial and it accumulates quickly, which at some point effectively halts the fuzzer. In contrast, in normal fuzzing it's the small probabilities of finding correct values which compound over time, while the cost of running the fuzzer and the fuzzed program is largely consistent throughout the program tree <i>(Image 2)</i>.</p>
+                           
+                           <p style="text-align: center;"><img src="research/media/ffp_complex.png" alt="" title="" class="img-fluid" width="70%">                                     
+                           <i>Image 2. Example of probabilities in stochastic blackbox fuzzing (compounding)</i></p>
+   
+                           <p>This means that a SE-assisted fuzzer may initially outperform a normal fuzzer, but its productivity drops sharply, while a normal fuzzer starts slower but excels deeper into the program.</p>
+                           
+                           <p>In practical terms, a SE-assisted fuzzer is better for quickly exploring medium-shallow surfaces, but a normal coverage-guided fuzzer is more productive in the long run, and generally better for targeting ultra-deep code. This is also a purely theoretical reasoning, based on the models that I presented in this livestream.</p>
+                           
+                           <p class="quote">Alek Say> What about side channels and transitive path that is not represented in program and happens because of lack of constraints knowledge of underlying levels: hw, stlib, os, firmware api</p>
+                           
+                           <p>First note that, while the root cause of side-channel attacks and speculative execution bugs isn't in software, they still require specific code constructs to exploit. Therefore, from the fuzzer's perspective, these attack surfaces aren't much different from software. You’re just shifting from fuzzing programs to fuzzing *with* programs, as you need to find the right code construct rather than a bug in the given code.</p>
+                           
+                           <p>Core challenge here is bug detection. In software fuzzing, bugs typically manifest as memory access violations (crashes, BSODs, segfaults), but for hardware-level transient issues, this indicator must be synthetically constructed.</p>
+                           
+                           <p>Another major challenge is low-level fuzzing optimization. As the root cause of bug lies beyond the code, it isn't possible to apply cutting edge techniques in this scenario, such as symbolic execution or <a class="underline" target="_blank" href="https://github.com/RUB-SysSec/redqueen">input-to-state correspondence</a>, nor even some basic coverage feedback; which restricts fuzzing to the old ways of random.</p>
+
+                           <p>There are additional challenges, but overall, the difference between software fuzzing and hardware fuzzing is less than most people think.</p>
+                           
+                           <p>Most importantly, there’s zero difference in the mathematical model I presented. Except the "probability distribution of program" will extend to "...of a set of programs", which is a purely practical difference.</p>
+                           
+                           <p class="quote">Janek> is fuzzing combined with RE the most effective way to discover vulnerabilities ?</p>
+
+                           <p>True in most cases.  With RE used to target the fuzzer to specific deep code, that otherwise would take forever or never to reach with scratch cov-guided fuzzing of the general input vector.</p>
+                           
+                           <p class="quote">Adam A> Q: in her experience with fuzzer probabilities vs those with vulnerability. Is there something to be said about the difference? IE vulnerabilities are more likely with Fuzz inputs > 5?</p>
+                           
+                           <p>Adding extra seed inputs (assuming coverage-guided fuzzing with valid inputs) immediately enhances the fuzzer’s probability distribution. However, it will only align this distribution with the bug space to the extent that it aligns with the full branch coverage distribution. This is beneficial but not ideal. As I mentioned in the presentation, matching P<sub>f</sub> to P<sub>v</sub> is the core challenge of fuzzing.</p>
+                           
+                           <p class="quote">Jack> This probability theory is really fascinating that I would like to visit some Mathematical things again to get fundamentals clear.</p>
+                           
+                           <p>100%.  I've included a couple of textbooks that I like on probability theory in the Reference section.</p>
+                           
+                           <p class="quote">1337's> Im dumb but doest this mean tldr fuzzing don't work ?</p>
+                           
+                           <p>Fuzzing works. Otherwise I wouldn't spare the effort on mathematical modeling it.</p>
+                           
+                           <p>At the same time, fuzzing fails at a rate of 99%+ under the hood. Meaning the fraction of fuzzing inputs, and therefore target program runs, that neither crash the program nor discover new branches. They just spin the CPU, and negatively contribute to the climate problem. This situation is normalized in the fuzzing culture, and here is my humble contribution to denormalize it. It isn't smart to scale a 99%+ failure, even if it works to some extent.</p>
+                           
+                           <p>If you can improve the <b>low-level efficiency of fuzzing</b>, as opposed to compensating it with scaling - the latter being a mainstream trend in fuzzing optimization research - then you will find the bug faster than anybody else. If, after that, you scale your improved fuzzer, you will beat the Google's cloudfuzzer at scale. Pun intended.</p>
+                                                      
+                           <p><i>Margin note: it isn't a shame to be dumb; it's a shame to *take pride* in being "dumb", by flaunting your arrogance with offense on those who work hard in silence to understand how things work, and develop solutions to problems that you don't even know exist - which isn't you. I don't think that you are actually dumb, either: science shows that awareness of one's own intellectual limitations is a sign of relatively high intelligence, while being able to discuss it publicly shows courage, independence of peer validation, and control of one's ego. A whole bunch of virtues, tbh.
+                           
+                           In contrast, those people who are actually "dumb" (I don't like the derogative connotation, I use the word quote-unquoted here as a purely technical term), say, below 70 IQ actually tend to be hyperconfident in their own limited judgments, and aggressively rejective of anything that doesn't agree with it; a familiar picture as an internet participant.</i></p>
+                           
+                           <p class="quote">Janek> How do you pick targets for fuzzing ? How to narrow down interesting targets ?</p>
+                           
+                           <p>Generally, an ideal target for fuzzing has three properties: 1) complex code with binary data parsing (or a simple grammar that is easy to generate) 2) compact size of input 3) easy to interface with the fuzzer. If the target satisfies, then fuzzing is a no-brainer. If some requirements are off, then you'll need to reverse engineer the target software anyways to tweak and specialize the fuzzer, so maybe find some bugs manually in the process.</p>
+                           
+                           <p>For open source software, manual code review will usually be the first choice. As someone with a lot of VR experience, I will likely spot the bug faster than it takes to set up the fuzzer.</p>
+                           
+                           <p>When the code is fairly simple, meaning low potential for security issues: fuzzing of such code doesn't make sense, as it will take longer to fuzz than to find the bug manually.</p>
+                           
+                           <p>In case of uncertainty get the fuzzer running first, meanwhile reverse engineer or manual analysis. Note that running "off the shelf" fuzzers rarely finds bugs in high-demand software, but at least you'll get a sense of how the program performs under harness and start collecting research feedback.</p>
+                           
+                           <p>To summarize, a normal workflow in bug hunting isn't so much about "picking the target for fuzzing", it's more about picking the target first and then considering: "what techniques are best suited to find bugs in this software, and how can I tweak my tools and techniques to differ from other researchers?".</p>
+                           
+                           <h6>Software Exploitation</h6>
+                           
+                           <p class="quote">A1 exe> Will she talk about how to get better at triaging crashes?</p>
+                           
+                           <p>Crash triage is a distinct topic which is unrelated to fuzzing, in terms of "how it works". Obviously, this wasn't the topic of discussion, but I'm happy to address it here.</p>
+                           
+                           <p>Assuming that your research platform basics are covered (symbolized binary or source code debugging, a snappy debugging setup, a stable crashing test case, etc.), you improve your crash triage by understanding the target software internals. Awareness of common vulnerabilities in target software is helpful, too, so studying the history of vulnerabilities at a mid to deep technical level. This forms the foundation of my specialized Vulnerability Research trainings (such as <a class="underline" target="_blank" href="training/hypervisor-vulnerability-research.html">Hypervisor Vulnerability Research</a>, with more target courses coming soon). Without this theory, you’ll struggle during triaging as well as exploit development, or waste excessive time debugging.</p>
+                           
+                           <p class="quote">صائدون البيض > And also I wish Alisa could explain how to make the exploit portable, like for a Linux kernel exploit how to make it work for other kernel versions etc</p>
+                           
+                           <p>How to make the exploit portable: a universal approach.</p>
+                           
+                           <p>The first thing to understand is the limitations imposed by the target software system. Sometimes, the system's internals change so drastically that you'll need a completely different bug trigger or heap grooming technique. If you can't determine the system's exact version - common in many scenarios - and you're restricted from crashing the target during brute-forcing (like with OS kernels), you're effectively stuck on one version.</p>
+                           
+                           <p>In a better scenario, you still can’t know the exact version, but the bug trigger is consistent, only the locations of system libraries vary, that you reuse in the exploit. Here, you can implement a dynamic assembler for ROP gadgets, as I did in <a class="underline" target="_blank" href="https://zerodayengineering.com/research/javascript-engines-exploitation-jscript9.html">my JScript9 exploit</a>.</p>
+                           
+                           <p>For OS kernels, a similar approach is possible using something like eBPF JIT compiler - not as the vulnerability target, but as a universal exploit engineering framework. The kernel memory space is unified; there’s no process separation. All threads can see each other, allowing you to use any kernel subsystem as a source of exploit primitives for vulnerabilities in other subsystems.</p>
+                           
+                           <p class="quote">Ibrahim Aymen> If no one asked yet, how AI will change the fuzzing game</p>
+                           
+                           <p>I will cover this topic in my upcoming keynote at VXCON. Hong Kong, 16th November 2024.</p>
+                           
+                           <p class="quote">Binary House> arent JIT bug already dead?</p>
+                           
+                           <p>JIT bugs (assuming JavaScript Engines context) are far from being dead. In fact, they keep evolving beyond mitigations, and will not die any time soon.</p>
+                           
+                           <p class="quote">Kush> Implementing rust in kernel will stop or somehow limit the attack area? at least for beginner researcher</p>
+                           
+                           <p>Kind of.  
+                              
+                           Implementations in Rust have a significantly reduced attack surface, which comes at the cost of poorly understood security implications of the unreduced fraction of the attack surface. So, it isn't necessarily a good idea to rewrite OS kernels in Rust. Rather, keeping a well audited open source C-code base with a small footprint may offer better security guarantees in this scenario, as vulnerability implications of memory-unsafe languages are well understood, and they can be effectively mitigated. A good example is KVM (Kernel Virtual Machine hypervisor in Linux Kernel), which is written in pure C, and it's rather hard to break.</p>
+                           
+                           <p class="quote">Claudius> binexp is literally magic</p>
+                           
+                           <p>I know it's a casual take but it's more relevant than you think.</p>
+                           
+                           <p>Low level hacking is a game (in the sense of game theory, not “video game”) where, as a hacker, you choose your balance between technology and magic as your strategy. You can rely entirely on technology, which is what most hackers do, but that won’t make you legendary. Pulling off 100% magic is tough and impractical in real life. A balance of around 80% technology and 20% magic is what elevates you to the elite level.</p>
+                           
+                           <p>I touched on this when discussing the “probability distribution collapse” scenario - spending weeks analyzing code without results, only to get an exploitable crash by accident under some tooling; a pure coincidence, apparently. That’s the essence of it.</p>
+                           
+                           <h6>Just Chat</h6>
+                           
+                           <p class="quote">Joshua J. Drake> please!! teach me how to hack ;-)</p>
+                           
+                           <p>My pleasure: <a class="underline" target="_blank" href="https://zerodayengineering.com/training">zerodayengineering.com/training</a></p>
+                           
+                           <p class="quote">Alek Say> Math proof last minute update before exam</p>
+                           
+                           <p>Literally.  I finalized the slides AND THE MATH MODELS in the last moments leading to the livestream, after a full week of hard intellectual work.  There are typos in the slides to prove it.</p>
+
+                           <p class="quote">Ethical Math> hi everyone!</p>
+                           
+                           <p>Ethical Math just entered the practical hacking podcast. You saw it here first!</p>
+                           
+                           <p class="quote">Adam A> Youtube's notifications are trash. just got here to support the stream</p>
+                           
+                           <p>Indeed, Youtube's notifications of a livestream going live aren't super convenient. Also, it turns out that Youtube doesn't count livestream visitors as views, so the ~10K views number that currently shows on <a class="underline" target="_blank" href="https://www.youtube.com/watch?v=9U-FK_Qi1XQ">my livestream recording</a> isn't inclusive of the original <a class="underline" target="_blank" href="https://t.me/alisaesage/180">7,500+ live viewers that broke Stephen's podcast record</a>!!</p>
+                           
+                           <p class="quote">J> are you people fkn serious ?  why dont you share some code</p>
+                           
+                           <p>People, don’t be fools.</p>
+                           
+                           <p>I’ve faced reactions like this during public presentations when I explain how a system works before revealing the exploit code: “Why do I need all this theory? When do we start finding the bug?” Then these people wonder why they <a class="underline" target="_blank" href="https://www.reddit.com/r/ExploitDev/comments/1dq7q6e/professional_vulnerability_researchers_i_want/">can’t find the bug for many months</a>. Here’s the reality: it’s not just because “it’s hard.” <b>Hardness doesn’t equal consistent failure</b>. You fail at it because you’re too lazy to learn the system internals and the theory of bug hunting, dismissing essential background knowledge. This limits your attempts to trivial attack vectors that someone else has already exploited after doing the real work, and dumped in public. That’s why.</p>
+                           
+                           <p>And be aware: some will gladly take your money in exchange for the thrill of “just finding the bug,” without giving any real knowledge of how to be consistently good at exploiting real life systems. There are plenty of opportunistic training programs out there – go check them out. I am not here for entertainment.</p>
+                           
+                           <p>I showed the code at the end of the presentation, too.</p>
+                           
+                           <p class="quote">ImDejaVu> The presentation is great, but i really need to know what is this relaxing water in the background.</p>
+                           
+                           <p>Already answered this question in the livestream, but it's worth answering twice: a cat drinking fountain.</p>
+                           
+                           <p>Turns out that a cat brain's pattern recognition system is trained to recognize running water as potentially fresher than standing water, so they drink more when given a fountain, which is good for health. A good "drinker" earnestly supports this bias with a water purification system, which is essential. Also, pets benefit from natural mineral water.</p>
+
+                           <div style="display: flex; justify-content: center; align-items: center; margin: 0;">
+                              <video width="70%" controls style="height: auto;">
+                                  <source src="research/media/cat-drinker.mov" type="video/mp4">
+                                  Your browser does not support the video tag.
+                              </video></div>
+                              <p style="text-align:center;"><i>Cat drinking fountain</i></p>
+                           </p>
+                           
+                           <br>
+                          
+                           
+                           <p class="quote">Kush> in her training, will she also teach about fuzzing?
+                           Maze> Id be looking at the v8 internals course</p>
+                           
+                           <p>My <a class="underline" target="_blank" href="training/universal-vulnerability-research.html">Zero Day Vulnerability Research course</a> has a module on fuzzing. It also explains the basics of attack surface modeling to decide where to target the fuzzer.</p>
+                           
+                           <p> <a class="underline" target="_blank" href="training/hypervisor-vulnerability-research.html">Hypervisor Vulnerability Research training</a> includes hypervisor-specific aspects of fuzzing in the general context of vulnerability discovery in hypervisors, while assuming familiarity with fuzzing foundations.</p>
+                           
+                           <p><a class="underline" target="_blank" href="https://zerodayengineering.com/training/masterclass/vulnerability-research.html#fuzzing">Fuzzing masterclass</a> shows how to level up your fuzzing game through understanding low-level internals of modern fuzzing tools, with a goal in mind to attack non-trivial software that either isn't supported by fuzzers out of the box, or is extensively fuzzed by the vendor so you need to outsmart them.</p>
+                           
+                           <p><a class="underline" target="_blank" href="https://zerodayengineering.com/training/masterclass/vulnerability-research.html#fuzzing">JavaScript Engines Internals masterclass</a> covers essential prerequisite knowledge for successful fuzzing of browser JavaScript Engines, not covering the fuzzing itself. </p>
+                           
+                           <h6>References</h6>
+                           
+                           <p>Fuzzing from First Principles, A.Esage, 2024, Off By One Security Podcast; <a class="underline" target="_blank" href="https://zerodayengineering.com/research/slides/FuzzingFromFirstPrinciples.pdf">slides</a>, <a class="underline" target="_blank" href="https://www.youtube.com/watch?v=9U-FK_Qi1XQ">recording</a></p>
+
+                           <p>Probability theory:
+                           - Introduction to Probability Models, 13th Edition, Sheldon M. Ross
+                           - Probability Theory: The Logic of Science, E.T. Jaynes
+                           </p>
+                           
+                           <p>Youtube chat comments extraction: <a class="underline" target="_blank" href="https://chromewebstore.google.com/detail/ycs-youtube-comment-searc/pmfhcilikeembgbiadjiojgfgcfbcoaa?pli=1">YCS Chrome extension</a></p>
+
+
+                           <div class="post-single-navigation d-flex align-items-stretch">
+                              <a href="research/index.html" class="mr-auto w-50 pr-4">
+                                 <span class="d-block cursor-item"><i class="fa fa-chevron-left mr-2"></i> Research</span></a>
+                              <a href="training/index.html" class="ml-auto w-50 text-right pl-4">
+                                 <span class="d-block cursor-item">Training <i class="fa fa-chevron-right ml-2"></i></span></a>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer section">
+               <div class="container">
+                  <div class="row justify-content-center">
+                     <div class="col-md-12">
+                        <div class="go-top cursor-item" id="go-to-top"><i class="fa fa-chevron-up"></i></div>
+                        <div class="hr-footer"></div>
+                        <div class="footer-site-logo"><a href="index.html" class="main-logo"><img src="images/logo.png" class="logo-img light-logo img-fluid" alt=""></a></div>                       
+                        <p class="site-copyright">
+                           <small>&copy; 2024 Zero Day Engineering LLC. All Rights Reserved. <a href="rss" class="social-icon"><i class="fa fa-rss"></i></a></small>
+                           
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </footer>
+            <!-- Footer end -->
+
+         </div>
+         <!-- Main content inner end -->
+      </div>
+      <!-- Main content wrap end -->
+
+      <!-- Back to top button -->
+      <a id="back-to-top" href="#" class="cursor-item desktop-only"><i class="fa fa-chevron-up"></i></a>
+
+      <div class="cursor"></div>
+      <div class="cursor-follower"></div>
+
+      <!-- jquery -->
+      <script src="js/query-3.4.1.min.js"></script>
+      <!-- bootstrap -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- aos -->
+      <script src="js/aos.js"></script>
+      <!-- owl.carusel js -->
+      <script src="js/owl.carousel.min.js"></script>
+      <!-- isotope js -->
+      <script src="js/isotope.pkgd.min.js"></script>
+      <!-- isotope image loader js -->
+      <script src="js/imagesloaded.pkgd.min.js"></script>
+      <!-- three -->
+      <script src="js/three.min.js"></script>
+      <!-- anime -->
+      <script src="js/anime.min.js"></script>
+      <!-- tweenmax -->
+      <script src="js/TweenMax.min.js"></script>
+      <!-- jquery.waypoints.min.js -->
+      <script src="js/jquery.waypoints.min.js"></script>
+      <!-- circletype-->
+      <script src="js/circletype.min.js"></script>
+      <!-- hover-effect -->
+      <script src="js/hover-effect.umd.js"></script>
+      <!-- gsap -->
+      <script src="js/gsap.min.js"></script>
+      <!-- ScrollMagic gsap -->
+      <script src="js/ScrollMagic.min.js"></script>
+      <script src="js/scrollmagic.animation.gsap.min.js"></script>
+      <!-- custom -->
+      <script src="js/custom.js"></script>
+   </body>
+</html>
