@@ -129,7 +129,7 @@
 
                            <p>First, a shoutout to podcast host Stephen Sims for protecting my peace during the presentation. I didn’t realize how many questions flooded in the livestream chat until I opened the <a class="underline" target="_blank" href="https://www.youtube.com/watch?v=9U-FK_Qi1XQ">recording on YouTube</a>. Stephen expertly managed the chat and filtered a handful of relevant questions for our Q&A so, moving forward, I’ll address some more here.
 
-                           From the feedback, it’s clear that some viewers failed to understand my points and the math behind them. That’s not surprizing; my ideas in this presentation are extremely novel, therefore they are expected to provoke defensive reactions from narrow-minded individuals, leading to arrogant rejections based on false claims. As one commenter pointed out, the math seemed to trigger people. *Shrug*.
+                           From the feedback, it’s clear that some viewers failed to understand my points and the math behind them. That’s not surprizing; my ideas in this presentation are extremely novel, therefore they are expected to provoke defensive reactions from narrow-minded individuals, leading to arrogant rejections based on false claims. As one commenter pointed out, the math seemed to trigger people. <i>Shrug</i>.
                            
                            Let’s be real: to grasp this presentation, you need a solid understanding of BOTH probability theory and advanced fuzzing practices. That’s not a common combo. But just because some aren't open to new ideas doesn’t mean I owe them repeated explanations, especially when they approach with offense. I do plan to publish a concrete text for those willing to learn.
                            
@@ -165,7 +165,7 @@
                            
                            <p class="quote">Hhhhhhhhhhgffrfghjkjhyh> Just curious in terms of this example, would symbolic execution not get us a higher rate? I am just a bit confused on the overall scenario I may be a bit wrong</p>
                            
-                           <p>Yes, symbolic execution can greatly enhance the fuzzer's probability distribution in theory, increasing the success rate per execution (i.e., discovering new branches or finding bugs).  
+                           <p>Symbolic execution can greatly enhance the fuzzer's probability distribution in theory, increasing the success rate per execution (i.e., discovering new branches or finding bugs).  
                               
                            Ideally, if a branch can be deterministically resolved with an SMT solver, it gives a probability of P=1 for finding the right conditional value, compared to P=1/254 with stochastic blackbox fuzzing (assuming an 8-bit conditional value on branch and single-byte mutator with a true random generator, as an example; <i>Image 1</i>). So, going deeper into the program, the probabilities of finding the next branch correctly drop overall much slower that in random fuzzing and even in coverage guided fuzzing. This is in theory.</p>
 
@@ -178,7 +178,7 @@
                            
                            <p class="quote">mesh3al32> will this [fuzzing] suffer from path explosion as the case with symbolic execution?</p>
                            
-                           <p>Yes, fuzzing suffers from "path explosion" just as symbolic execution, but to a lesser degree. 
+                           <p>Fuzzing suffers from "path explosion" just as symbolic execution, but to a lesser degree. 
                               
                            In symbolic execution, the SMT solver overhead is substantial and it accumulates quickly, which at some point effectively halts the fuzzer. In contrast, in normal fuzzing it's the small probabilities of finding correct values which compound over time, while the cost of running the fuzzer and the fuzzed program is largely consistent throughout the program tree <i>(Image 2)</i>.</p>
                            
@@ -221,10 +221,6 @@
                            
                            <p>If you can improve the <b>low-level efficiency of fuzzing</b>, as opposed to compensating it with scaling - the latter being a mainstream trend in fuzzing optimization research - then you will find the bug faster than anybody else. If, after that, you scale your improved fuzzer, you will beat the Google's cloudfuzzer at scale. Pun intended.</p>
                                                       
-                           <p><i>Margin note: it isn't a shame to be dumb; it's a shame to *take pride* in being "dumb", by flaunting your arrogance with offense on those who work hard in silence to understand how things work, and develop solutions to problems that you don't even know exist - which isn't you. I don't think that you are actually dumb, either: science shows that awareness of one's own intellectual limitations is a sign of relatively high intelligence, while being able to discuss it publicly shows courage, independence of peer validation, and control of one's ego. A whole bunch of virtues, tbh.
-                           
-                           In contrast, those people who are actually "dumb" (I don't like the derogative connotation, I use the word quote-unquoted here as a purely technical term), say, below 70 IQ actually tend to be hyperconfident in their own limited judgments, and aggressively rejective of anything that doesn't agree with it; a familiar picture as an internet participant.</i></p>
-                           
                            <p class="quote">Janek> How do you pick targets for fuzzing ? How to narrow down interesting targets ?</p>
                            
                            <p>Generally, an ideal target for fuzzing has three properties: 1) complex code with binary data parsing (or a simple grammar that is easy to generate) 2) compact size of input 3) easy to interface with the fuzzer. If the target satisfies, then fuzzing is a no-brainer. If some requirements are off, then you'll need to reverse engineer the target software anyways to tweak and specialize the fuzzer, so maybe find some bugs manually in the process.</p>
@@ -289,27 +285,17 @@
 
                            <p class="quote">Ethical Math> hi everyone!</p>
                            
-                           <p>Ethical Math just entered the practical hacking podcast. You saw it here first!</p>
+                           <p>Ethical Math just entered a practical hacking podcast. You saw it here first!</p>
                            
                            <p class="quote">Adam A> Youtube's notifications are trash. just got here to support the stream</p>
                            
                            <p>Indeed, Youtube's notifications of a livestream going live aren't super convenient. Also, it turns out that Youtube doesn't count livestream visitors as views, so the ~10K views number that currently shows on <a class="underline" target="_blank" href="https://www.youtube.com/watch?v=9U-FK_Qi1XQ">my livestream recording</a> isn't inclusive of the original <a class="underline" target="_blank" href="https://t.me/alisaesage/180">7,500+ live viewers that broke Stephen's podcast record</a>!!</p>
                            
-                           <p class="quote">J> are you people fkn serious ?  why dont you share some code</p>
-                           
-                           <p>People, don’t be fools.</p>
-                           
-                           <p>I’ve faced reactions like this during public presentations when I explain how a system works before revealing the exploit code: “Why do I need all this theory? When do we start finding the bug?” Then these people wonder why they <a class="underline" target="_blank" href="https://www.reddit.com/r/ExploitDev/comments/1dq7q6e/professional_vulnerability_researchers_i_want/">can’t find the bug for many months</a>. Here’s the reality: it’s not just because “it’s hard.” <b>Hardness doesn’t equal consistent failure</b>. You fail at it because you’re too lazy to learn the system internals and the theory of bug hunting, dismissing essential background knowledge. This limits your attempts to trivial attack vectors that someone else has already exploited after doing the real work, and dumped in public. That’s why.</p>
-                           
-                           <p>And be aware: some will gladly take your money in exchange for the thrill of “just finding the bug,” without giving any real knowledge of how to be consistently good at exploiting real life systems. There are plenty of opportunistic training programs out there – go check them out. I am not here for entertainment.</p>
-                           
-                           <p>I showed the code at the end of the presentation, too.</p>
-                           
                            <p class="quote">ImDejaVu> The presentation is great, but i really need to know what is this relaxing water in the background.</p>
                            
                            <p>Already answered this question in the livestream, but it's worth answering twice: a cat drinking fountain.</p>
                            
-                           <p>Turns out that a cat brain's pattern recognition system is trained to recognize running water as potentially fresher than standing water, so they drink more when given a fountain, which is good for health. A good "drinker" earnestly supports this bias with a water purification system, which is essential. Also, pets benefit from natural mineral water.</p>
+                           <p>Turns out that a cat brain's pattern recognition system is trained to identify running water as potentially fresher than standing water, so they drink more when given a fountain, which is good for health. A good "drinker" earnestly supports this bias with a water purification system, which is essential. Also, pets benefit from natural mineral water.</p>
 
                            <div style="display: flex; justify-content: center; align-items: center; margin: 0;">
                               <video width="70%" controls style="height: auto;">
@@ -342,7 +328,7 @@
                            - Probability Theory: The Logic of Science, E.T. Jaynes
                            </p>
                            
-                           <p>Youtube chat comments extraction: <a class="underline" target="_blank" href="https://chromewebstore.google.com/detail/ycs-youtube-comment-searc/pmfhcilikeembgbiadjiojgfgcfbcoaa?pli=1">YCS Chrome extension</a></p>
+                           <p>Youtube livestream chat export: <a class="underline" target="_blank" href="https://chromewebstore.google.com/detail/ycs-youtube-comment-searc/pmfhcilikeembgbiadjiojgfgcfbcoaa?pli=1">YCS Chrome extension</a></p>
 
 
                            <div class="post-single-navigation d-flex align-items-stretch">
