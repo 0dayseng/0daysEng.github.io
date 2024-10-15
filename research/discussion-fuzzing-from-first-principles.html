@@ -127,7 +127,7 @@
 
                            <h6>Introduction</h6>
 
-                           <p>First, a shoutout to podcast host Stephen Sims for protecting my peace during the presentation. I didn’t realize how many questions flooded in the livestream chat until I opened the <a class="underline" target="_blank" href="https://www.youtube.com/watch?v=9U-FK_Qi1XQ">recording on YouTube</a>. Stephen expertly managed the chat and filtered a handful of relevant questions for our Q&A so, moving forward, I’ll address some more here.
+                           <p>First, a shoutout to podcast host <a class="underline" target="_blank" href="https://x.com/Steph3nSim">Stephen Sims</a> for protecting my peace during the presentation. I didn’t realize how many questions flooded in the livestream chat until I opened the <a class="underline" target="_blank" href="https://www.youtube.com/watch?v=9U-FK_Qi1XQ">recording on YouTube</a>. Stephen expertly managed the chat and filtered a handful of relevant questions for our Q&A so, moving forward, I’ll address some more here.
 
                            From the feedback, it’s clear that some viewers failed to understand my points and the math behind them. That’s not surprizing; my ideas in this presentation are extremely novel, therefore they are expected to provoke defensive reactions from narrow-minded individuals, leading to arrogant rejections based on false claims. As one commenter pointed out, the math seemed to trigger people. <i>Shrug</i>.
                            
@@ -145,7 +145,7 @@
 
                            <p class="quote">L0u15> Thanks for the awesome talk, it is gold! Besides coverage feedback, what other kinds of feedback do you think fuzzers could use for targets like browsers?</p>
                            
-                           <p>Program branch passing feedback is the only fundamental low-level metric in fuzzing. Note that I replaced your original term "coverage feedback" with a more specific term for a reason. In complex software like browsers (I think you meant JavaScript Engines in particular) it's not so much the code coverage that matters, but the context in which a particular piece of code executes; and other "meta" aspects of program at runtime.</p>
+                           <p>Program branch passing feedback is the only fundamental low-level metric in fuzzing. Note that I replaced your original term "coverage feedback" with a more specific term for a reason. In complex software like browsers (I think you meant JavaScript Engines in particular) it's not so much the code coverage that matters, but the context in which a particular piece of code executes; and other <b>"meta" aspects of program at runtime</b>.</p>
                            
                            <p>Example. Imagine that you have a piece of JIT compiler code that generates low-level encoding for primitive values. There is a bug that can somehow be triggered from a WASM frontend that uses this lowering backend, but not from a JS frontend that also uses it. It means that achieving code coverage on that procedure isn't a meaningful indicator of progress in your fuzzer, as it pertains to finding the bug, because it misses the high level context.  
                               
@@ -153,13 +153,13 @@
                            
                            <p class="quote">mesh3al32> if you know probability enough, fuzzing could be improved drastically. thanks for giving that to our attention</p>
                            
-                           <p>Exactly this.  In fact, it's the core point of my presentation: use theoretical models to guide fuzzing improvement.</p>
+                           <p>Exactly this.  In fact, it's the core point of my presentation: <b>use theoretical models to guide fuzzing improvement</b>.</p>
                            
                            <p class="quote">Aaron Hernandez> Loved the presentation. What do you think about the future of fuzzing and vulnerability research, considering the shift towards memory safe programming? Will fuzzing for vulns still be effective?</p>
                            
                            <p>Fuzzing is as fundamental and inevitable as vulnerability. Also, it isn't just for memory safety issues. As technologies evolve, specific fuzzing techniques will change, but the core concept will remain relevant.</p>
                            
-                           <p>One thing that will change in fuzzing, regardless of programming technologies that it will target, is the low-level success rate. Speaking in terms of this presentation, the probability distribution of fuzzer will be consistently improving through research and practical efforts, while reducing the low-level error rate. Symbolic execution assist is one way to do this, which is an active area of research. Another way is to leverage LLM to generate fuzzing inputs.</p>
+                           <p>One thing that will change in fuzzing, regardless of programming technologies that it will target, is the low-level success rate. Speaking in terms of this presentation, the <b>probability distribution of fuzzer will be consistently improving</b> through research and practical efforts, while reducing the low-level error rate. Symbolic execution assist is one way to do this, which is an active area of research. Another way is to leverage LLM to generate fuzzing inputs.</p>
                            
                            <p>An ideal fuzzer generates a single input and finds the bug with it, which is impossible - kind of like in low-level physics it's impossible to know a particle's location and speed at the same time, you can only approximate it. To the best of scientific knowledge, this (the principle of uncertainty) is a fundamental property of the universe. Similarly, vulnerability seems to be a fundamental property of systems. And so is fuzzing, as a way to uncover it.</p>
                            
@@ -172,7 +172,7 @@
                            <p style="text-align: center;"><img src="research/media/ffp_simple.png" alt="" title="" class="img-fluid" width="70%">                                     
                            <i>Image 1. Example of probabilities in stochastic blackbox fuzzing (singular branch)</i></p>
                            
-                           <p>In practice, however, this comes with the cost of running the solver, that slows down the fuzzer; as well as other practical constraints. Especially facing the program path explosion, this slowdown accumulates exponentially, rendering symbolic execution-assisted fuzzers unproductive toward deeper program exploration. This is why, at present, symbolic execution-assisted fuzzers are only marginally useful. My model shows exactly why and how it can be improved, though much of the solution will depend on practical challenges.</p>
+                           <p>In practice, however, this comes with the cost of running the solver, that slows down the fuzzer; as well as other practical constraints. Especially facing the program path explosion, this slowdown accumulates exponentially, rendering symbolic execution-assisted fuzzers unproductive toward deeper program exploration. This is why, at present, symbolic execution-assisted fuzzers are only marginally useful. <b>My model shows exactly why and how it can be improved</b>, though much of the solution will depend on practical challenges.</p>
                            
                            <p>Note: This is purely theoretical reasoning; I might be overlooking specific implementation details, which I am not extensively familiar with.</p>
                            
@@ -187,7 +187,7 @@
    
                            <p>This means that a SE-assisted fuzzer may initially outperform a normal fuzzer, but its productivity drops sharply, while a normal fuzzer starts slower but excels deeper into the program.</p>
                            
-                           <p>In practical terms, a SE-assisted fuzzer is better for quickly exploring medium-shallow surfaces, but a normal coverage-guided fuzzer is more productive in the long run, and generally better for targeting ultra-deep code. This is also a purely theoretical reasoning, based on the models that I presented in this livestream.</p>
+                           <p>In practical terms, a <b>SE-assisted fuzzer is better for quickly exploring medium-shallow surfaces</b>, while a normal coverage-guided fuzzer is more productive in the long run, and <b>generally better for targeting ultra-deep code</b>. This is also a purely theoretical reasoning, based on the models that I presented in this livestream.</p>
                            
                            <p class="quote">Alek Say> What about side channels and transitive path that is not represented in program and happens because of lack of constraints knowledge of underlying levels: hw, stlib, os, firmware api</p>
                            
@@ -199,7 +199,7 @@
 
                            <p>There are additional challenges, but overall, the difference between software fuzzing and hardware fuzzing is less than most people think.</p>
                            
-                           <p>Most importantly, there’s zero difference in the mathematical model I presented. Except the "probability distribution of program" will extend to "...of a set of programs", which is a purely practical difference.</p>
+                           <p>Most importantly, there’s <b>zero difference in the mathematical model</b> I presented. Except the "probability distribution of program" will extend to "...of a set of programs", which is a purely practical difference.</p>
                            
                            <p class="quote">Janek> is fuzzing combined with RE the most effective way to discover vulnerabilities ?</p>
 
@@ -207,7 +207,7 @@
                            
                            <p class="quote">Adam A> Q: in her experience with fuzzer probabilities vs those with vulnerability. Is there something to be said about the difference? IE vulnerabilities are more likely with Fuzz inputs > 5?</p>
                            
-                           <p>Adding extra seed inputs (assuming coverage-guided fuzzing with valid inputs) immediately enhances the fuzzer’s probability distribution. However, it will only align this distribution with the bug space to the extent that it aligns with the full branch coverage distribution. This is beneficial but not ideal. As I mentioned in the presentation, matching P<sub>f</sub> to P<sub>v</sub> is the core challenge of fuzzing.</p>
+                           <p>Adding extra seed inputs (assuming coverage-guided fuzzing with valid inputs) <b>immediately enhances the fuzzer’s probability distribution</b>. However, it will only align this distribution with the bug space to the extent that it aligns with the full branch coverage distribution. This is beneficial but not ideal. As I mentioned in the presentation, matching P<sub>f</sub> to P<sub>v</sub> is the core challenge of fuzzing.</p>
                            
                            <p class="quote">Jack> This probability theory is really fascinating that I would like to visit some Mathematical things again to get fundamentals clear.</p>
                            
@@ -219,7 +219,7 @@
                            
                            <p>At the same time, fuzzing fails at a rate of 99%+ under the hood. Meaning the fraction of fuzzing inputs, and therefore target program runs, that neither crash the program nor discover new branches. They just spin the CPU, and negatively contribute to the climate problem. This situation is normalized in the fuzzing culture, and here is my humble contribution to denormalize it. It isn't smart to scale a 99%+ failure, even if it works to some extent.</p>
                            
-                           <p>If you can improve the <b>low-level efficiency of fuzzing</b>, as opposed to compensating it with scaling - the latter being a mainstream trend in fuzzing optimization research - then you will find the bug faster than anybody else. If, after that, you scale your improved fuzzer, you will beat the Google's cloudfuzzer at scale. Pun intended.</p>
+                           <p>If you can <b>improve low-level efficiency of fuzzing</b>, as opposed to compensating it with scaling - the latter being a mainstream trend in fuzzing optimization research - then you will find the bug faster than anybody else. If, after that, you scale your improved fuzzer, you will beat the Google's cloudfuzzer at scale. Pun intended.</p>
                                                       
                            <p class="quote">Janek> How do you pick targets for fuzzing ? How to narrow down interesting targets ?</p>
                            
@@ -231,15 +231,15 @@
                            
                            <p>In case of uncertainty get the fuzzer running first, meanwhile reverse engineer or manual analysis. Note that running "off the shelf" fuzzers rarely finds bugs in high-demand software, but at least you'll get a sense of how the program performs under harness and start collecting research feedback.</p>
                            
-                           <p>To summarize, a normal workflow in bug hunting isn't so much about "picking the target for fuzzing", it's more about picking the target first and then considering: "what techniques are best suited to find bugs in this software, and how can I tweak my tools and techniques to differ from other researchers?".</p>
+                           <p>To summarize, a normal workflow in bug hunting isn't so much about "picking the target for fuzzing", it's more about picking the target first and then considering: "<b>what techniques are best suited</b> to find security bugs in this attack vector, and <b>how to differ from other researchers</b>?".</p>
                            
-                           <h6>Software Exploitation</h6>
+                           <h6>Binary Exploitation</h6>
                            
                            <p class="quote">A1 exe> Will she talk about how to get better at triaging crashes?</p>
                            
                            <p>Crash triage is a distinct topic which is unrelated to fuzzing, in terms of "how it works". Obviously, this wasn't the topic of discussion, but I'm happy to address it here.</p>
                            
-                           <p>Assuming that your research platform basics are covered (symbolized binary or source code debugging, a snappy debugging setup, a stable crashing test case, etc.), you improve your crash triage by understanding the target software internals. Awareness of common vulnerabilities in target software is helpful, too, so studying the history of vulnerabilities at a mid to deep technical level. This forms the foundation of my specialized Vulnerability Research trainings (such as <a class="underline" target="_blank" href="training/hypervisor-vulnerability-research.html">Hypervisor Vulnerability Research</a>, with more target courses coming soon). Without this theory, you’ll struggle during triaging as well as exploit development, or waste excessive time debugging.</p>
+                           <p>Assuming that your research platform basics are covered (symbolized binary or source code debugging, a snappy debugging setup, a stable crashing test case, etc.), <b>you improve your crash triage by understanding the target software internals</b>. Awareness of common vulnerabilities in target software is helpful, too, so studying the history of vulnerabilities at a mid to deep technical level. This forms the foundation of my specialized Vulnerability Research trainings (such as <a class="underline" target="_blank" href="training/hypervisor-vulnerability-research.html">Hypervisor Vulnerability Research</a>, with more target courses coming soon). Without this theory, you’ll struggle during triaging as well as exploit development, or waste excessive time debugging.</p>
                            
                            <p class="quote">صائدون البيض > And also I wish Alisa could explain how to make the exploit portable, like for a Linux kernel exploit how to make it work for other kernel versions etc</p>
                            
@@ -247,7 +247,7 @@
                            
                            <p>The first thing to understand is the limitations imposed by the target software system. Sometimes, the system's internals change so drastically that you'll need a completely different bug trigger or heap grooming technique. If you can't determine the system's exact version - common in many scenarios - and you're restricted from crashing the target during brute-forcing (like with OS kernels), you're effectively stuck on one version.</p>
                            
-                           <p>In a better scenario, you still can’t know the exact version, but the bug trigger is consistent, only the locations of system libraries vary, that you reuse in the exploit. Here, you can implement a dynamic assembler for ROP gadgets, as I did in <a class="underline" target="_blank" href="https://zerodayengineering.com/research/javascript-engines-exploitation-jscript9.html">my JScript9 exploit</a>.</p>
+                           <p>In a better scenario, you still can’t know the exact version, but the bug trigger is consistent, only the locations of system libraries vary, that you reuse in the exploit. Here, you can implement a <b>dynamic assembler for ROP gadgets</b>, as I did in <a class="underline" target="_blank" href="https://zerodayengineering.com/research/javascript-engines-exploitation-jscript9.html">my JScript9 exploit</a>.</p>
                            
                            <p>For OS kernels, a similar approach is possible using something like eBPF JIT compiler - not as the vulnerability target, but as a universal exploit engineering framework. The kernel memory space is unified; there’s no process separation. All threads can see each other, allowing you to use any kernel subsystem as a source of exploit primitives for vulnerabilities in other subsystems.</p>
                            
@@ -263,13 +263,13 @@
                            
                            <p>Kind of.  
                               
-                           Implementations in Rust have a significantly reduced attack surface, which comes at the cost of poorly understood security implications of the unreduced fraction of the attack surface. So, it isn't necessarily a good idea to rewrite OS kernels in Rust. Rather, keeping a well audited open source C-code base with a small footprint may offer better security guarantees in this scenario, as vulnerability implications of memory-unsafe languages are well understood, and they can be effectively mitigated. A good example is KVM (Kernel Virtual Machine hypervisor in Linux Kernel), which is written in pure C, and it's rather hard to break.</p>
+                           Implementations in Rust have a significantly reduced attack surface, which comes at the cost of poorly understood security implications of the unreduced fraction of the attack surface. So, it isn't necessarily a good idea to rewrite OS kernels in Rust. Rather, maintainting <b>a well audited open source C-code base with a small footprint offers better security guarantees</b> in this scenario, as vulnerability implications of memory-unsafe languages are well understood, and they can be effectively mitigated. A good example is KVM (Kernel Virtual Machine hypervisor in Linux Kernel), which is written in pure C, and it's rather hard to break.</p>
                            
                            <p class="quote">Claudius> binexp is literally magic</p>
                            
                            <p>I know it's a casual take but it's more relevant than you think.</p>
                            
-                           <p>Low level hacking is a game (in the sense of game theory, not “video game”) where, as a hacker, you choose your balance between technology and magic as your strategy. You can rely entirely on technology, which is what most hackers do, but that won’t make you legendary. Pulling off 100% magic is tough and impractical in real life. A balance of around 80% technology and 20% magic is what elevates you to the elite level.</p>
+                           <p>Low level hacking is a game (in the sense of game theory, not “video game”) where, as a hacker, you choose your balance between technology and magic as your strategy. You can rely entirely on technology, which is what most hackers do, but that won’t make you legendary. Pulling off 100% magic is tough and impractical in real life. A balance of <b>around 80% technology and 20% magic elevates you to the elite level.</b></p>
                            
                            <p>I touched on this when discussing the “probability distribution collapse” scenario - spending weeks analyzing code without results, only to get an exploitable crash by accident under some tooling; a pure coincidence, apparently. That’s the essence of it.</p>
                            
@@ -289,7 +289,7 @@
                            
                            <p class="quote">Adam A> Youtube's notifications are trash. just got here to support the stream</p>
                            
-                           <p>Indeed, Youtube's notifications of a livestream going live aren't super convenient. Also, it turns out that Youtube doesn't count livestream visitors as views, so the ~10K views number that currently shows on <a class="underline" target="_blank" href="https://www.youtube.com/watch?v=9U-FK_Qi1XQ">my livestream recording</a> isn't inclusive of the original <a class="underline" target="_blank" href="https://t.me/alisaesage/180">7,500+ live viewers that broke Stephen's podcast record</a>!!</p>
+                           <p>Indeed, Youtube's notifications of a livestream going live aren't super convenient. Also, it turns out that Youtube doesn't count livestream visitors as views, so the ~10K views number that currently shows on <a class="underline" target="_blank" href="https://www.youtube.com/watch?v=9U-FK_Qi1XQ">my livestream recording</a> isn't inclusive of the original <a class="underline" target="_blank" href="https://t.me/alisaesage/180">7,500+ live viewers</a> that <a class="underline" target="_blank" href="https://x.com/Steph3nSims/status/1835003686243987808">broke Stephen's podcast record</a>!!</p>
                            
                            <p class="quote">ImDejaVu> The presentation is great, but i really need to know what is this relaxing water in the background.</p>
                            
