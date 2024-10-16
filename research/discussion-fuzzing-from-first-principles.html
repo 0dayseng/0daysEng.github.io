@@ -133,7 +133,7 @@
                            
                            Let’s be real: to grasp this presentation, you need a solid understanding of BOTH probability theory and advanced fuzzing practices. That’s not a common combo. But just because some aren't open to new ideas doesn’t mean I owe them repeated explanations, especially when they approach with offense. I do plan to publish a concrete text for those willing to learn.
                            
-                           What thrilled me is that some viewers instantly connected with my ideas, evident from their relevant contributions to the livestream chat. Their questions showed general grasp of my theoretical framework, while struggling to connect it with advanced aspects of practical fuzzing that I didn't cover. I’ll discuss those meaningful contributions in this article, along with some off-topic but still meaningful questions about binary exploitation, and a bit of casual chat for completeness.
+                           What thrilled me is that some viewers instantly connected with my ideas, evident from their relevant contributions to the livestream chat. Their questions showed general grasp of my theoretical framework, while struggling to connect it with advanced aspects of practical fuzzing that I didn't cover. I’ll discuss those meaningful contributions in this article, along with some off-topic but still interesting questions about binary exploitation, and a bit of casual chat for completeness.
                                                   
                            Prerequisites: low-level fuzzing internals (as in <a class="underline" target="_blank" href="https://zerodayengineering.com/training/masterclass/vulnerability-research.html#fuzzing">this masterclass</a>), cutting-edge concepts in software/hardware exploitation, basic ideas of probability theory, <a class="underline" target="_blank" href="https://zerodayengineering.com/research/slides/FuzzingFromFirstPrinciples.pdf">Fuzzing from First Principles presentation.</a>
                         
@@ -219,7 +219,9 @@
                            
                            <p>At the same time, fuzzing fails at a rate of 99%+ under the hood. Meaning the fraction of fuzzing inputs, and therefore target program runs, that neither crash the program nor discover new branches. They just spin the CPU, and negatively contribute to the climate problem. This situation is normalized in the fuzzing culture, and here is my humble contribution to denormalize it. It isn't smart to scale a 99%+ failure, even if it works to some extent.</p>
                            
-                           <p>If you can <b>improve low-level efficiency of fuzzing</b>, as opposed to compensating it with scaling - the latter being a mainstream trend in fuzzing optimization research - then you will find the bug faster than anybody else. If, after that, you scale your improved fuzzer, you will beat the Google's cloudfuzzer at scale. Pun intended.</p>
+                           <p>If you can <b>improve low-level efficiency of fuzzing</b>, as opposed to compensating it with scaling - the latter being a mainstream trend in fuzzing optimization research - then you will find the bug faster than anybody else. If, after that, you scale your improved fuzzer, you will beat the Google's cloudfuzzer at scale.</p>
+
+                           <p>I hope this makes sense.</p>
                                                       
                            <p class="quote">Janek> How do you pick targets for fuzzing ? How to narrow down interesting targets ?</p>
                            
@@ -245,7 +247,7 @@
                            
                            <p>How to make the exploit portable: a universal approach.</p>
                            
-                           <p>The first thing to understand is the limitations imposed by the target software system. Sometimes, the system's internals change so drastically that you'll need a completely different bug trigger or heap grooming technique. If you can't determine the system's exact version - common in many scenarios - and you're restricted from crashing the target during brute-forcing (like with OS kernels), you're effectively stuck on one version.</p>
+                           <p>The first thing to understand is the limitations imposed by the target software system. Sometimes, the system's internals change so drastically between versions that you'll need a completely different bug trigger or heap grooming technique. If you can't determine the system's exact version - common in many scenarios - and you're restricted from crashing the target with brute-force based exploit techniques (like with OS kernels), you're effectively stuck on one version.</p>
                            
                            <p>In a better scenario, you still can’t know the exact version, but the bug trigger is consistent, only the locations of system libraries vary, that you reuse in the exploit. Here, you can implement a <b>dynamic assembler for ROP gadgets</b>, as I did in <a class="underline" target="_blank" href="https://zerodayengineering.com/research/javascript-engines-exploitation-jscript9.html">my JScript9 exploit</a>.</p>
                            
@@ -263,7 +265,7 @@
                            
                            <p>Kind of.  
                               
-                           Implementations in Rust have a significantly reduced attack surface, which comes at the cost of poorly understood security implications of the unreduced fraction of the attack surface. So, it isn't necessarily a good idea to rewrite OS kernels in Rust. Rather, maintainting <b>a well audited open source C-code base with a small footprint offers better security guarantees</b> in this scenario, as vulnerability implications of memory-unsafe languages are well understood, and they can be effectively mitigated. A good example is KVM (Kernel Virtual Machine hypervisor in Linux Kernel), which is written in pure C, and it's rather hard to break.</p>
+                           Implementations in Rust have a significantly reduced attack surface, which comes at the cost of poorly understood security implications of the unreduced fraction of the attack surface. So, it isn't necessarily a good idea to rewrite OS kernels in Rust. Rather, maintainting <b>a well audited open source C-code base with a small footprint offers better security guarantees</b> in this scenario, as vulnerability implications of memory-unsafe languages are well understood, and they can be effectively mitigated, given a compact codebase. A good example is KVM (Kernel Virtual Machine hypervisor in Linux Kernel), which is written in pure C, and it's rather hard to break.</p>
                            
                            <p class="quote">Claudius> binexp is literally magic</p>
                            
